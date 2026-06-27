@@ -21,6 +21,7 @@ description: >
 - Criação de instrumentos avaliativos com curadoria docente
 - Organização de agendas, comunicações e relatórios pedagógicos
 - Geração de ideias e alternativas para atividades pedagógicas
+- **Inclusão do nível AIAS no plano de ensino** — para cada atividade avaliativa do semestre, declarar o nível de uso de IA permitido (1 a 5) e o racional pedagógico da escolha; isso é exigência de transparência alinhada ao Referencial MEC (2026) e à Resolução CEPEAd nº 17/2025; o nível deve constar no enunciado de cada atividade, não apenas no plano geral
 - Atenção a **direitos autorais** em materiais gerados por IA — o docente é responsável por verificar se o conteúdo produzido respeita a Lei de Direitos Autorais (Lei 9.610/1998) antes de usar com estudantes; obras reproduzidas parcialmente por IA sem indicação de autoria original podem configurar infração
 
 ## Workflow
@@ -49,6 +50,7 @@ description: >
 - Não substitui o planejamento pedagógico intencional e contextualizado do professor
 
 ## Dependências
+- `aias-consultant` — para diagnóstico do nível AIAS adequado a cada atividade e geração de enunciados com declaração de nível
 - `ia-educacao-fundamentos` — para compreensão de limitações da IA
 - `ia-educacao-avaliacao` — para criação de instrumentos avaliativos
 - `ia-educacao-pensamento-critico` — para atividades que desenvolvam análise crítica
@@ -62,3 +64,6 @@ description: >
 - CHILE. MINISTERIO DE EDUCACIÓN. Guía para docentes: cómo usar ChatGPT para potenciar el aprendizaje activo. Santiago: Mineduc, 2023.
 - WHITE, J. et al. A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT. arXiv:2302.11382, 2023.
 - BRASIL. Lei nº 9.610, de 19 de fevereiro de 1998 — Lei de Direitos Autorais.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026.
+- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.

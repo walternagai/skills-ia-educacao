@@ -22,6 +22,7 @@ description: >
 - Gamificação e simulações com IA
 - Aprendizagem baseada em problemas com IA como ferramenta de investigação
 - Aprendizagem Baseada em Projetos (PBL) enriquecida por IA
+- **Alinhamento entre metodologias ativas e níveis AIAS** — o nível da escala deve ser definido antes do design da atividade: Nível 2 (IA na ideação do projeto), Nível 3 (IA como colaboradora na produção do produto), Nível 4 (IA como ferramenta central em simulações profissionais), Nível 5 (projeto inovador co-criado com IA); a documentação do processo de uso de IA (diário de prompts, iterações) é evidência de aprendizagem ativa, não burocracia
 
 ## Workflow
 1. **Mapear metodologias ativas** compatíveis com integração de IA: PBL, investigação orientada, estudo de caso, gamificação, sala de aula invertida, aprendizagem entre pares
@@ -62,3 +63,5 @@ description: >
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - CIEB. Notas Técnicas #21: Inteligência artificial na educação básica: novas aplicações e tendências para o futuro. São Paulo: CIEB, 2024a.
 - CHILE. MINISTERIO DE EDUCACIÓN. Guía para docentes: cómo usar ChatGPT para potenciar el aprendizaje activo. Santiago: Mineduc, 2023.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.

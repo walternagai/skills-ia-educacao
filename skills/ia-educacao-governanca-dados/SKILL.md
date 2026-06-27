@@ -32,6 +32,7 @@ description: >
 6. **Comunicar políticas** de forma clara e acessível à comunidade escolar — linguagem simples, canais de contato, direitos dos titulares
 7. **Elaborar RIPD** (Relatório de Impacto à Proteção de Dados Pessoais) conforme Art. 38 da LGPD e orientação da ANPD — obrigatório para sistemas de IA que processam dados sensíveis ou de estudantes menores; o RIPD deve descrever o sistema, a finalidade, os dados coletados, os riscos identificados e as medidas de mitigação
 8. **Prever fluxos para contratação** de fornecedores com cláusulas de proteção de dados — análise de impacto, salvaguardas contratuais, auditoria
+9. **Alinhar política de dados à Escala AIAS** — nos Níveis 3, 4 e 5, estudantes interagem com ferramentas de IA generativa externas à instituição; verificar conformidade LGPD de cada ferramenta antes de incluí-la em avaliações; não exigir que estudantes criem contas em plataformas sem verificação de conformidade; preferir ferramentas institucionais ou com contratos de proteção de dados firmados com a instituição
 
 ## Formato de Saída
 - Template de política de governança de dados para instituições educacionais
@@ -63,5 +64,6 @@ description: >
 - ANPD. Nota Técnica nº 1/2022 — Tratamento de dados pessoais de crianças e adolescentes.
 - CIEB. Manual de proteção de dados pessoais para gestores e gestoras públicas educacionais. São Paulo: CIEB, 2020.
 - COMISSÃO EUROPEIA. Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators. Luxemburgo: Publicações da UE, 2022.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026. — Seção 10.1 (Privacidade e Proteção de Dados).
 - UNESCO. Recomendações sobre a ética da Inteligência Artificial. Paris: UNESCO, 2022b.
 - UNICEF. Policy guidance on AI for children. Nova Iorque: UNICEF, 2021.

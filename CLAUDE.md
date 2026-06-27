@@ -9,17 +9,9 @@ Este repositório é um **acervo documental e de skills** para orientar a integr
 Não há código-fonte, testes ou build system. O conteúdo é composto por:
 
 - **PDFs normativos** — Normas de Graduação da UNIFEI (Resoluções CEPEAd, INs PRG), Norma Disciplinar, Regimentos, PPC do Bacharelado em IA, Referencial MEC para IA na Educação, artigos acadêmicos sobre AIAS
-- **Documentos Markdown** — `guia-aias-unifei.md` e `rubrica-tcc-bia.md` são os dois artefatos editáveis principais
-- **Skills Claude** (`skills/*/SKILL.md`) — 30 skills temáticas em formato YAML+Markdown para uso no Claude Code
+- **Skills Claude** (`skills/*/SKILL.md`) — 31 skills temáticas em formato YAML+Markdown para uso no Claude Code; o conteúdo do Guia AIAS-UNIFEI e da Rubrica TCC-BIA foi distribuído para as skills relevantes e os arquivos Markdown originais foram removidos
 
 ## Arquitetura dos documentos
-
-### Documentos Markdown editáveis
-
-| Arquivo | Propósito |
-|---------|-----------|
-| `guia-aias-unifei.md` | Guia completo da Escala AIAS adaptada à UNIFEI (5 níveis de uso de IA em avaliações) |
-| `rubrica-tcc-bia.md` | Rubrica institucional de avaliação de TCC1 e TCC2 do Bacharelado em IA |
 
 ### Skills (`skills/*/SKILL.md`)
 
@@ -88,5 +80,4 @@ Os documentos e skills deste repositório derivam autoridade de:
 - Idioma: **Português do Brasil** em todos os documentos
 - Referências bibliográficas: formato **ABNT**
 - A escala AIAS tem 5 níveis fixos (Sem IA → Planejamento → Colaboração → IA Integral → Exploração de IA); não adicionar ou remover níveis sem revisar todos os documentos que os referenciam
-- Pesos das rubricas TCC1 e TCC2 são calibrados e devem somar 100%; alterar um peso exige rebalancear os demais
 - Skills novas devem seguir a estrutura de frontmatter e seções das existentes; o slug em `Dependências` deve corresponder exatamente ao campo `name` da skill referenciada

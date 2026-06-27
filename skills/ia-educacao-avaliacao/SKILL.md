@@ -17,7 +17,7 @@ description: >
 
 ## Quando usar
 - Reformulação de instrumentos avaliativos tradicionais (provas, trabalhos, redações)
-- **Definição do nível de uso de IA em avaliações (escala AIAS)** — usar o framework de 5 níveis (Sem IA / Planejamento assistido / Colaboração / IA Integral / Exploração) como ferramenta de decisão prévia ao redesenho de qualquer atividade avaliativa
+- **Definição do nível de uso de IA em avaliações (escala AIAS-UNIFEI)** — usar o framework de 5 níveis (Sem IA / Planejamento Assistido / Colaboração / IA Integral / Exploração) como ferramenta de decisão prévia ao redesenho de qualquer atividade avaliativa; a escala é **não hierárquica** (nenhum nível é superior) e **cumulativa** (níveis superiores permitem usos dos níveis inferiores, salvo indicação contrária); o nível é definido pelos objetivos de aprendizagem, não pela conveniência; a escolha deve ser declarada explicitamente no plano de ensino e no enunciado da atividade antes de sua realização — em conformidade com o Referencial MEC (2026) e a Resolução CEPEAd nº 17/2025 da UNIFEI
 - Criação de avaliações que valorizem processo sobre produto
 - Desenho de atividades que integrem IA como ferramenta de apoio (não substituta)
 - Desenvolvimento de rubricas para avaliação de interação com IA
@@ -49,6 +49,7 @@ description: >
 - Depende de adesão institucional e formação continuada dos educadores
 
 ## Dependências
+- `aias-consultant` — para diagnóstico de nível AIAS, enunciados prontos e rubricas alinhadas por atividade
 - `ia-educacao-integridade-academica` — para políticas de uso de IA e alinhamento entre avaliação e integridade
 - `ia-educacao-pensamento-critico` — para desenvolvimento de competências avaliadas
 - `ia-educacao-planejamento-didatico` — para integração nos planos de ensino
@@ -62,3 +63,5 @@ description: >
 - BASTANI, H. et al. Generative AI can harm learning. The Wharton School Research Paper, 2024.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 - PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026.
+- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.

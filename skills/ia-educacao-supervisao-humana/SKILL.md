@@ -21,6 +21,7 @@ description: >
 - Avaliação de risco para determinar nível de supervisão necessário
 - Garantia de que decisões pedagógicas críticas não sejam automatizadas
 - Auditoria de conformidade de sistemas de IA com requisitos de supervisão
+- **Mapeamento de supervisão por nível AIAS** — cada nível implica um regime de supervisão docente distinto: Nível 1 (supervisão total em ambiente controlado), Nível 2 (supervisão do processo de ideação, com diário de prompts), Nível 3 (supervisão da integração e da voz autoral), Nível 4 (supervisão estratégica e reflexão crítica sobre ferramentas), Nível 5 (supervisão como co-criador e avaliador de pares)
 
 ## Workflow
 1. **Distinguir três modelos de supervisão**: **HITL** (Human-in-the-Loop — humano valida cada decisão antes de executar; ex.: aprovação de intervenção pedagógica individualizada, lançamento de nota gerada por IA), **HOTL** (Human-on-the-Loop — IA age, humano monitora e pode intervir; ex.: sugestão automática de material de reforço com revisão semanal do docente), **HOOTL** (Human-out-of-the-Loop — automação sem intervenção humana imediata; **nunca recomendado para decisões de alto impacto educacional** como progressão, alocação, encaminhamento clínico)
@@ -63,3 +64,5 @@ description: >
 - AUSTRALIAN DEPARTMENT OF EDUCATION. Australian Framework for Generative Artificial Intelligence in Schools. Austrália: Commonwealth of Australia, 2023.
 - FENG, T. H. et al. From automation to cognition: redefining the roles of educators and generative AI in computing education. In: ACE Conference, 2025.
 - SHNEIDERMAN, B. Human-Centered AI. Oxford: Oxford University Press, 2022.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026.

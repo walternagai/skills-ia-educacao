@@ -16,7 +16,7 @@ description: >
 - A política institucional deve ser clara, comunicada e aplicada consistentemente
 
 ## Quando usar
-- **Definição prévia do nível de uso de IA em um trabalho (escala AIAS)** — usar os 5 níveis como ferramenta preventiva que elimina ambiguidades e reduz infrações não intencionais; o educador deve declarar o nível permitido antes da atividade
+- **Definição prévia do nível de uso de IA em um trabalho (escala AIAS-UNIFEI)** — usar os 5 níveis como ferramenta preventiva que elimina ambiguidades e reduz infrações não intencionais; o educador deve declarar o nível permitido antes da atividade; a violação de integridade ocorre quando o estudante usa IA em nível diferente do declarado, não quando usa IA per se; Nível 1 = nenhuma IA permitida; Nível 2 = IA apenas no planejamento; Nível 3 = IA na elaboração, com manutenção de voz autoral; Nível 4 = IA integral com reflexão crítica; Nível 5 = co-criação e inovação com IA
 - Elaboração de políticas institucionais de uso de IA por estudantes
 - Prevenção de plágio e plágio indireto com IA generativa
 - Discussão sobre direitos autorais e propriedade intelectual na produção com IA
@@ -61,3 +61,6 @@ description: >
 - FRANCO, D.; VIEGAS, L. E.; RÖHE, A. Guia ético para a Inteligência Artificial Generativa no Ensino Superior. TECCOGS, n. 28, 2023.
 - ABNT. NBR 10520:2023 — Informação e documentação — Citações em documentos — Apresentação (consultar versão vigente para atualizações sobre citação de IA).
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026. — Seção 10.4 (Integridade Acadêmica).
+- UNIFEI. Norma Disciplinar do Corpo Discente. Itajubá: UNIFEI, 2025.

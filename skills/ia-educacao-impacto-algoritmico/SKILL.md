@@ -21,6 +21,7 @@ description: >
 - Auditoria de algoritmos em plataformas educacionais
 - Documentação de processos de desenvolvimento e uso de IA
 - Reavaliação periódica de sistemas em operação
+- **AIA de ferramentas de IA generativa usadas em avaliações (Níveis 3-5 AIAS)** — quando uma avaliação exige que estudantes usem ferramentas como ChatGPT, Copilot ou Claude, a instituição deve realizar AIA da ferramenta: mapear dados processados, riscos de privacidade (LGPD), vieses dos modelos, impacto sobre equidade de acesso, e definir salvaguardas antes de incluir no plano de ensino
 
 ## Workflow
 1. **Identificar sistemas de IA** em uso ou previstos no contexto educacional — mapear finalidade, dados utilizados, nível de autonomia, impacto potencial

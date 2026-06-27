@@ -70,3 +70,6 @@ description: >
 - UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
 - UNIFEI. Projeto Pedagógico do Curso de Bacharelado em Inteligência Artificial. Itabira: UNIFEI, 2026.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026.
+- UNIFEI. Instrução Normativa PRG nº 02, de 03 de dezembro de 2025 — Trabalho de Conclusão de Curso. Itajubá: UNIFEI, 2025.

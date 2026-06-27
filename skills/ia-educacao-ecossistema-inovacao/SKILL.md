@@ -63,6 +63,9 @@ description: >
 - GONSALES, P.; SEBRIAM, D.; AVELAR, M. IA e Ensino Público Superior no Brasil: Recomendações para políticas institucionais de governança. Cátedra UNESCO, 2025.
 - CUGLER, E. et al. Contratos, Códigos e Controle: A Influência das Big Techs no Estado Brasileiro. São Paulo, 2025.
 - OEdvig. Observatório Educação Vigiada: Mapeamento da plataformização da educação pública superior na África e na América Latina, 2024.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026.
 - LEMANN. FUNDAÇÃO LEMANN; TELLES FOUNDATION. Perspectivas sobre IA e Educação Básica: Aliança IA para Educação. São Paulo: Fundação Lemann, 2024.
 - EDUTECIA. Guia sobre Inteligência Artificial na Educação. 2024.
 - SBIE. Simpósio Brasileiro de Informática na Educação. CEIE-SBC (evento anual). ISSN 2316-6533.

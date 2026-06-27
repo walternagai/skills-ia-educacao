@@ -21,6 +21,7 @@ description: >
 - Distinção entre IA generativa e IA preditiva para contextos educacionais
 - Explicação sobre limitações estruturais da IA (alucinações, falta de compreensão semântica)
 - Introdução ao tema para gestores, coordenadores pedagógicos e formuladores de políticas
+- **Compreensão dos fundamentos como base para uso da escala AIAS** — antes de definir o nível de uso de IA em avaliações, o docente precisa entender o que é IA generativa, como ela gera conteúdo, quais são suas limitações (alucinações, falta de compreensão semântica, vieses) e o que significa de fato cada nível da escala; fundamentos sólidos evitam tanto a proibição reativa quanto a adoção acrítica
 
 ## Workflow
 1. **Avaliar nível de conhecimento** do educador sobre IA — diagnosticar conceitos prévios, mitos comuns e nível de familiaridade técnica

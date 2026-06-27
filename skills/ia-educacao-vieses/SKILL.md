@@ -21,6 +21,7 @@ description: >
 - Prevenção de discriminação algorítmica contra grupos vulnerabilizados
 - Promoção de diversidade epistêmica em sistemas de IA educacional
 - Análise de impacto diferenciado de sistemas de IA por grupo
+- **Avaliação de risco de viés por nível AIAS** — os Níveis 3, 4 e 5 da escala AIAS expõem os estudantes diretamente ao conteúdo gerado por ferramentas de IA generativa; o docente deve alertar sobre vieses linguísticos (modelos treinados majoritariamente em inglês), culturais (sub-representação da realidade brasileira) e epistêmicos (ausência de perspectivas indígenas, quilombolas e periféricas) nas respostas geradas; nos Níveis 4 e 5, a reflexão crítica sobre vieses dos resultados deve ser critério avaliativo
 
 ## Workflow
 1. **Mapear fontes de viés**: dados de treinamento (sub-representação, desatualização), rotulagem (vieses dos anotadores), arquitetura do modelo (pressupostos de design), contexto de uso (aplicação fora do escopo previsto)
@@ -63,4 +64,6 @@ description: >
 - UNESCO. Recomendações sobre a ética da Inteligência Artificial. Paris: UNESCO, 2022b.
 - UNESCO. AI and education: guidance for policymakers. Paris: UNESCO, 2021.
 - NEES. Inteligência Artificial Generativa na Educação. Maceió: NEES, 2024.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026. — Seção 10.2 (Vieses e Equidade).
 - BUOLAMWINI, J.; GEBRU, T. Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. In: Proceedings of FAT* Conference, 2018.

@@ -25,7 +25,7 @@ description: >
 ## Workflow
 1. **Definir critérios pedagógicos**: alinhamento curricular, evidências de impacto educacional, adequação etária, acessibilidade, usabilidade pedagógica
 2. **Definir critérios técnicos**: interoperabilidade com sistemas existentes, segurança da informação, escalabilidade, disponibilidade, suporte técnico
-3. **Definir critérios éticos e legais**: conformidade com LGPD, ECA Digital, transparência, explicabilidade, não discriminação, supervisão humana; para contratações públicas, aplicar a **Lei 14.133/2021** (nova Lei de Licitações e Contratos Administrativos) — especificar critérios éticos e pedagógicos no edital; o Art. 11 permite inclusão de critérios de sustentabilidade que abrangem proteção de dados e conformidade com LGPD
+3. **Definir critérios éticos e legais**: conformidade com LGPD, ECA Digital, transparência, explicabilidade, não discriminação, supervisão humana; quando a plataforma for usada em avaliações dos Níveis 3, 4 ou 5 da escala AIAS, exigir contratualmente: (a) não uso de dados dos estudantes para treinar modelos de terceiros; (b) política de retenção de conversas; (c) transparência sobre a versão e atualização do modelo utilizado; para contratações públicas, aplicar a **Lei 14.133/2021** (nova Lei de Licitações e Contratos Administrativos) — especificar critérios éticos e pedagógicos no edital; o Art. 11 permite inclusão de critérios de sustentabilidade que abrangem proteção de dados e conformidade com LGPD
 4. **Exigir documentação**: política de privacidade e proteção de dados, avaliação de impacto algorítmico, termos de uso, relatório de transparência, certificações de segurança
 5. **Estabelecer cláusulas contratuais**: responsabilidade por incidentes, propriedade intelectual, confidencialidade, portabilidade de dados, cláusula de saída, proibição de uso secundário de dados
 6. **Implementar auditoria contínua**: conformidade legal, desempenho pedagógico, equidade de impacto, satisfação de usuários, atualizações e mudanças no sistema
@@ -61,4 +61,6 @@ description: >
 - BRASIL. Lei nº 15.211, de 22 de agosto de 2024 (ECA Digital).
 - BRASIL. Lei nº 14.133, de 1º de abril de 2021 — Lei de Licitações e Contratos Administrativos.
 - COLONNA, L. Artificial Intelligence in Education (AIED): Towards More Effective Regulation. European Journal of Risk Regulation, 2025.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026. — Seção 10.1 (LGPD e ferramentas externas em avaliações).
 - OEdvig. Observatório Educação Vigiada: Mapeamento da plataformização da educação pública superior na África e na América Latina, 2024.

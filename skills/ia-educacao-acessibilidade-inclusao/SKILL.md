@@ -30,6 +30,7 @@ description: >
 4. **Adaptar conteúdos**: simplificação textual, ajuste de velocidade de leitura, dicionários contextuais, recursos visuais e auditivos complementares
 5. **Considerar diversidade linguística**: tradução automática para línguas indígenas, materiais bilíngues, respeito às especificidades culturais
 6. **Garantir supervisão humana**: IA como apoio, não substituta de profissionais especializados — professor de AEE, intérprete de Libras, psicopedagogo
+7. **Alinhar uso de IA assistiva à Escala AIAS**: no **Nível 1** (Sem IA), distinguir IA que compromete a validade da avaliação de tecnologia assistiva que garante participação equitativa — leitores de tela, síntese de voz, eye tracking e comunicação alternativa são accommodations legítimas mesmo em avaliações Nível 1; nos **Níveis 4 e 5**, garantir equidade de acesso às ferramentas de IA generativa para estudantes com deficiência — a dependência de IA pode ser maior, não menor, para esses estudantes
 
 ## Formato de Saída
 - Checklist de acessibilidade para materiais educacionais com IA
@@ -62,3 +63,5 @@ description: >
 - COMISSÃO EUROPEIA. Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators. Luxemburgo: Publicações da UE, 2022.
 - BRASIL. Lei nº 15.211, de 22 de agosto de 2024 (ECA Digital).
 - GOVERNO FEDERAL. VLibras: Suíte de ferramentas de tradução automática de Libras. RNPI/Ministério dos Direitos Humanos. Disponível em: https://www.vlibras.gov.br.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026. — Seção 4.3 (Nível 1 — acessibilidade).

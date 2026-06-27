@@ -27,7 +27,8 @@ description: >
 2. **Mapear disparidades regionais**: urbano/rural, Norte/Sul/Centro-Oeste/Sudeste/Sul, classes socioeconômicas, redes pública/privada, comunidades tradicionais
 3. **Planejar intervenções articuladas**: ampliação de conectividade (Estratégia Nacional de Escolas Conectadas), provisão de dispositivos, formação de educadores, suporte técnico contínuo
 4. **Adotar IA desplugada** para contextos sem infraestrutura digital — atividades analógicas que ensinam conceitos de IA sem necessidade de tecnologia
-5. **Priorizar grupos vulnerabilizados** na distribuição de benefícios — escolas rurais, comunidades indígenas e quilombolas, periferias, estudantes com deficiência; para comunidades indígenas e quilombolas, considerar especificidades de língua (materiais em línguas maternas), territorialidade e risco de **colonialismo epistêmico digital** (imposição de visões de mundo estrangeiras via conteúdo de IA); articular com políticas de Educação Escolar Indígena (Resolução CNE/CEB nº 3/1999) e Educação Escolar Quilombola (Resolução CNE/CEB nº 8/2012)
+5. **Considerar equidade de acesso por nível AIAS**: os Níveis 4 (IA Integral) e 5 (Exploração de IA) da escala AIAS pressupõem acesso a ferramentas de IA generativa — quando uma avaliação exige uso de IA, a instituição deve garantir acesso igualitário (licenças institucionais, laboratórios, modelos de código aberto); avaliar alternativas que permaneçam válidas independentemente do nível de acesso a modelos premium; o Guia AIAS-UNIFEI recomenda que o docente forneça acesso institucional sempre que possível ao adotar o Nível 4
+6. **Priorizar grupos vulnerabilizados** na distribuição de benefícios — escolas rurais, comunidades indígenas e quilombolas, periferias, estudantes com deficiência; para comunidades indígenas e quilombolas, considerar especificidades de língua (materiais em línguas maternas), territorialidade e risco de **colonialismo epistêmico digital** (imposição de visões de mundo estrangeiras via conteúdo de IA); articular com políticas de Educação Escolar Indígena (Resolução CNE/CEB nº 3/1999) e Educação Escolar Quilombola (Resolução CNE/CEB nº 8/2012)
 6. **Monitorar equidade**: indicadores de acesso, uso e impacto desagregados por grupo — verificar se a IA está reduzindo ou ampliando desigualdades
 
 ## Formato de Saída
@@ -65,3 +66,5 @@ description: >
 - CHOI, J. H. et al. Are LLMs Useful in the Poorest Schools? TheTeacher.AI in Sierra Leone. arXiv:2310.02982, 2024.
 - NEES. Inteligência Artificial Desplugada na Educação. Maceió: NEES, 2025.
 - UNESCO. Global education monitoring report 2023: technology in education: a tool on whose terms? Paris: UNESCO, 2023.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026. — Seção 7.3 (equidade de acesso no Nível 4).

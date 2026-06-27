@@ -21,6 +21,7 @@ description: >
 - Comunicação com comunidade escolar sobre funcionamento de sistemas de IA
 - Definição de níveis proporcionais de transparência conforme o risco
 - Garantia de direito de contestação de decisões automatizadas
+- **Adoção da Escala AIAS como mecanismo de transparência preventiva** — declarar o nível de uso de IA antes de cada atividade avaliativa é a forma mais direta de transparência pedagógica; elimina ambiguidades, reduz conflitos de integridade acadêmica e cria base para diálogo aberto entre docentes e estudantes sobre o papel da IA em cada tarefa; alinhado ao princípio de transparência do Referencial MEC (2026) e à Resolução CEPEAd nº 17/2025
 
 ## Workflow
 1. **Distinguir transparência** (clareza sobre características gerais: propósito, funcionalidades, dados usados, limitações) de **explicabilidade** (compreensão de resultados específicos: por que o sistema produziu determinada resposta, recomendação ou decisão)
@@ -60,3 +61,5 @@ description: >
 - AUSTRALIAN DEPARTMENT OF EDUCATION. Australian Framework for Generative Artificial Intelligence in Schools. Austrália: Commonwealth of Australia, 2023.
 - ALMEIDA, L. P. C. M. et al. Carta de Recomendação para o Uso da Inteligência Artificial na Educação. São Paulo: Nelpa, 2025.
 - BRASIL. Lei nº 13.709, de 14 de agosto de 2018 (LGPD) — Art. 20: Direito à revisão de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026.

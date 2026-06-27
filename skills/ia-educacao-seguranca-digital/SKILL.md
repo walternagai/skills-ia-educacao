@@ -29,7 +29,7 @@ description: >
 3. **Abordar o ECA Digital** (Lei 15.211/2024): proteção integral, proibição de perfilamento de crianças para publicidade, verificação etária, consentimento dos responsáveis
 4. **Discutir vigilância algorítmica**: reconhecimento facial em escolas, monitoramento comportamental, análise de emoções, riscos à autonomia e privacidade
 5. **Promover bem-estar digital**: uso excessivo, dependência tecnológica, ansiedade, nomofobia, distúrbios do sono, impacto no desenvolvimento cognitivo e socioemocional
-6. **Fornecer checklist de segurança** para seleção de ferramentas de IA educacionais: política de privacidade, termos de uso, criptografia, anonimização, portabilidade de dados
+6. **Fornecer checklist de segurança** para seleção de ferramentas de IA educacionais: política de privacidade, termos de uso, criptografia, anonimização, portabilidade de dados; para avaliações nos Níveis 3, 4 e 5 da escala AIAS, verificar se a ferramenta exigida usa dados dos estudantes para treinar modelos, se armazena conversas e se está em conformidade com a LGPD antes de incluí-la no plano de ensino
 7. **Orientar sobre consentimento informado** e direitos dos titulares de dados: acesso, correção, exclusão, portabilidade, revogação do consentimento
 8. **Preparar resposta a incidentes de dados** — fluxo: (1) identificar o vazamento; (2) notificar internamente o Encarregado de Dados (DPO); (3) acionar ANPD quando obrigatório (Art. 48 LGPD — incidentes com risco ou dano relevante, prazo de 72h); (4) comunicar responsáveis pelos estudantes afetados com linguagem acessível; (5) documentar e tomar medidas corretivas
 
@@ -63,5 +63,6 @@ description: >
 - CIEB. Manual de proteção de dados pessoais para gestores e gestoras públicas educacionais. São Paulo: CIEB, 2020.
 - UNESCO. Recomendações sobre a ética da Inteligência Artificial. Paris: UNESCO, 2022b.
 - UNICEF. Policy guidance on AI for children. Nova Iorque: UNICEF, 2021.
+- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026. — Seção 10.1 (LGPD e ferramentas de IA em avaliações).
 - HART, R. Chatbots can trigger a mental health crisis: 'AI psychosis'. Time, 2025.
 - BRASIL. MEC. Crianças, adolescentes e telas: Guia sobre usos de dispositivos digitais. Brasília: MEC, 2025.

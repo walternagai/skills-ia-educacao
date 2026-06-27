@@ -28,7 +28,7 @@ description: >
 2. **Organizar por etapa com distinção clara**: Educação Infantil (não se recomenda IA generativa, exceto tecnologias assistivas); **EF1 — Anos Iniciais (1º–5º ano)**: priorizar IA desplugada, brincadeiras analógicas de classificação e reconhecimento de padrões, mediação intensiva — sem uso direto de ferramentas generativas; **EF2 — Anos Finais (6º–9º ano)**: iniciar exploração supervisionada de ferramentas simples, sempre com análise crítica das respostas geradas, comparação com fontes; Ensino Médio: aprofundamento, projetos interdisciplinares, análise de impactos sociais
 3. **Utilizar IA desplugada** para contextos sem infraestrutura digital — atividades com cartas, jogos, dramatizações, dinâmicas de grupo que ensinam conceitos de IA sem tecnologia
 4. **Desenvolver pensamento crítico**: reconhecer IA no cotidiano (redes sociais, buscadores, assistentes), entender limitações (alucinações, vieses), questionar resultados
-5. **Progredir para uso com IA**: ferramentas sob supervisão docente intensiva — começar com atividades estruturadas, evoluir para projetos com maior autonomia
+5. **Progredir para uso com IA**: ferramentas sob supervisão docente intensiva — começar com atividades estruturadas, evoluir para projetos com maior autonomia; no Ensino Médio, o docente pode declarar o nível AIAS em avaliações com IA (Escala AIAS-UNIFEI — ver `aias-consultant`), introduzindo os estudantes à cultura de transparência que vigorará na educação superior
 6. **Garantir proteção integral**: conformidade com ECA Digital, LGPD, melhor interesse da criança, proibição de perfilamento, consentimento dos responsáveis
 
 ## Formato de Saída

@@ -28,6 +28,7 @@ description: >
 2. **Integrar IA aos currículos** da EPT de forma transversal — não como disciplina isolada, mas como competência aplicada a cada área técnica (saúde, agricultura, indústria, serviços)
 3. **Articular com Sistema S e CNCT**: mapear programas de qualificação digital do SENAI (Indústria 4.0), SENAC (serviços com IA) e SENAR (agro digital) como recursos disponíveis; consultar o **Catálogo Nacional de Cursos Técnicos (CNCT)** para identificar competências a atualizar em cada eixo tecnológico diante da IA
 4. **Estabelecer parcerias** com setor produtivo para inovação aplicada — estágios, projetos conjuntos, laboratórios compartilhados, atualização curricular colaborativa
+4.1. **Adotar AIAS em avaliações da EPT** — a escala AIAS orienta o nível de uso de IA em cada atividade avaliativa; na EPT, o Nível 4 (IA Integral) é frequentemente o mais adequado para simular workflows profissionais reais; o Nível 5 (Exploração) é recomendado para projetos aplicados de inovação; declarar o nível explicitamente no plano de ensino e no enunciado de cada avaliação
 4. **Desenvolver projetos práticos** com IA em contextos profissionais — resolução de problemas reais do setor produtivo usando IA como ferramenta
 5. **Implementar governança**: ética, transparência, supervisão humana, proteção de dados, responsabilização — aplicada aos contextos específicos da EPT
 6. **Promover pesquisa aplicada** em IA para soluções do mundo do trabalho — inovação orientada a problemas reais, com potencial de transferência tecnológica
@@ -63,4 +64,6 @@ description: >
 - DENMARK. MINISTRY OF CHILDREN AND EDUCATION. Generative Artificial Intelligence in Basic Subjects in Vocational Education: Recommendations for Teaching. Styrelsen for Undervisning og Kvalitet, 2024.
 - OCDE. Education Policy Outlook 2024: Reshaping teaching into a thriving profession from ABCS to AI. Paris: OECD Publishing, 2024a.
 - MEC/SETEC. Referenciais para a Educação Profissional e Tecnológica. Brasília: MEC, 2022.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
 - SENAI. Mapa do Trabalho Industrial 2023–2027. Brasília: CNI/SENAI, 2023.

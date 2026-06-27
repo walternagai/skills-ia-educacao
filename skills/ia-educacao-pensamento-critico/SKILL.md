@@ -21,6 +21,7 @@ description: >
 - Estímulo à criatividade com IA como catalisadora (não substituta)
 - Desenvolvimento de metacognição na interação com sistemas de IA
 - Formação de cidadãos críticos e autônomos na era digital
+- **Design de atividades nos Níveis 3, 4 e 5 da escala AIAS** — nesses níveis, a avaliação crítica do conteúdo gerado por IA é exigência central; o pensamento crítico não é opcional, é o que diferencia colaboração legítima de mera delegação cognitiva à máquina
 
 ## Workflow
 1. **Diagnosticar riscos**: terceirização cognitiva (delegar o pensar à IA), ilusão de competência (achar que sabe porque a IA respondeu), passividade intelectual, dependência acrítica
@@ -49,6 +50,7 @@ description: >
 - Eficácia depende da maturidade cognitiva dos estudantes
 
 ## Dependências
+- `aias-consultant` — para alinhamento do nível AIAS ao tipo de atividade de pensamento crítico
 - `ia-educacao-fundamentos` — para compreensão de como a IA funciona
 - `ia-educacao-avaliacao` — para rubricas de avaliação
 - `ia-educacao-vieses` — para identificação de vieses algorítmicos
@@ -62,3 +64,5 @@ description: >
 - CASADEI, S. Educação e Inteligência Artificial: um novo design curricular? In: CRIVELARO; STEIN (Orgs.). A escola com inteligência artificial. Campinas: Alínea, 2025.
 - CUKUROVA, M. The interplay of learning, analytics and artificial intelligence in education: a vision for hybrid intelligence. British Journal of Educational Technology, 2024.
 - MCGREW, S. et al. Lateral Reading: Reading Less and Learning More When Evaluating Digital Information. Stanford History Education Group Working Paper. SSRN, 2019.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.

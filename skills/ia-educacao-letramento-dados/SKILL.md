@@ -22,6 +22,7 @@ description: >
 - Compreensão do ciclo de vida dos dados em sistemas educacionais
 - Capacitação para avaliar a qualidade de bases de dados educacionais
 - Orientação a educadores que precisam explicar às famílias como a plataforma de IA usa os dados dos filhos (transparência + LGPD + letramento de dados integrados)
+- **Letramento em dados como base para os Níveis 3-5 da escala AIAS** — estudantes que colaboram com IA (Nível 3), usam IA integralmente (Nível 4) ou exploram IA (Nível 5) precisam compreender que os resultados gerados dependem de dados de treinamento com vieses, recortes temporais e sub-representações; incluir avaliação crítica dos dados subjacentes como componente das rubricas nesses níveis
 
 ## Workflow
 1. **Explicar o ciclo de vida dos dados**: coleta, processamento, treinamento, armazenamento, compartilhamento, descarte — cada etapa com seus riscos e responsabilidades
@@ -61,3 +62,4 @@ description: >
 - CGI.BR. Educação em um cenário de plataformização e de economia dos dados: problemas e conceitos. São Paulo: NIC.br, 2022.
 - INEP. Censo Escolar da Educação Básica. Brasília: INEP/MEC (publicação anual). Disponível em: https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar.
 - CGI.br. TIC Educação. São Paulo: CGI.br (edição mais recente). Disponível em: https://cetic.br/pt/pesquisa/educacao/.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
