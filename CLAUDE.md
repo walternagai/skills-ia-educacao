@@ -10,7 +10,7 @@ Não há código-fonte, testes ou build system. O conteúdo é composto por:
 
 - **PDFs normativos** — Normas de Graduação da UNIFEI (Resoluções CEPEAd, INs PRG), Norma Disciplinar, Regimentos, PPC do Bacharelado em IA, Referencial MEC para IA na Educação, artigos acadêmicos sobre AIAS
 - **Documentos Markdown** — `guia-aias-unifei.md` e `rubrica-tcc-bia.md` são os dois artefatos editáveis principais
-- **Skills Claude** (`SKILLS/*/SKILL.md`) — 30 skills temáticas em formato YAML+Markdown para uso no Claude Code
+- **Skills Claude** (`skills/*/SKILL.md`) — 30 skills temáticas em formato YAML+Markdown para uso no Claude Code
 
 ## Arquitetura dos documentos
 
@@ -21,7 +21,7 @@ Não há código-fonte, testes ou build system. O conteúdo é composto por:
 | `guia-aias-unifei.md` | Guia completo da Escala AIAS adaptada à UNIFEI (5 níveis de uso de IA em avaliações) |
 | `rubrica-tcc-bia.md` | Rubrica institucional de avaliação de TCC1 e TCC2 do Bacharelado em IA |
 
-### Skills (`SKILLS/*/SKILL.md`)
+### Skills (`skills/*/SKILL.md`)
 
 Cada skill tem frontmatter YAML (`name`, `category`, `model`, `version`, `description`) seguido de seções Markdown fixas:
 - **Princípios** — posicionamento ético-pedagógico
@@ -42,6 +42,37 @@ Cada skill tem frontmatter YAML (`name`, `category`, `model`, `version`, `descri
 | `etica-governanca` | etica, governanca-dados, supervisao-humana, transparencia-explicabilidade, vieses, impacto-algoritmico, seguranca-digital, integridade-academica |
 | `inclusao-equidade` | acessibilidade-inclusao, equidade-digital, letramento-dados, permanencia |
 | `ferramentas-praticas` | avaliacao, personalizacao, sti, ia-desplugada, sandbox, gestao, ecossistema-inovacao, contratacao |
+
+## Uso das skills no Claude Code
+
+As skills deste repositório são **skills locais** do Claude Code. Para instalá-las no ambiente de um usuário:
+
+```bash
+# A partir do diretório raiz deste repositório
+npx skills add ./skills/<slug-da-skill>
+
+# Exemplo
+npx skills add ./skills/ia-educacao-avaliacao
+```
+
+Para listar as skills instaladas: `/skills` dentro do Claude Code.  
+Cada skill é invocada pelo usuário com `/ia-educacao-<sufixo>` (ex: `/ia-educacao-avaliacao`).
+
+O campo `name` no frontmatter da skill é o identificador canônico — é esse valor que deve ser usado em `Dependências` de outras skills.
+
+## A Escala AIAS e seus 5 níveis
+
+A escala **AIAS (AI Assessment Scale)** — adaptada ao contexto UNIFEI — classifica o nível de uso de IA em avaliações acadêmicas:
+
+| Nível | Nome | Descrição resumida |
+|-------|------|--------------------|
+| 1 | Sem IA | Nenhum uso de IA permitido |
+| 2 | Planejamento | IA apenas para organizar ideias, sem gerar conteúdo avaliativo |
+| 3 | Colaboração | IA como ferramenta auxiliar com revisão crítica do estudante |
+| 4 | IA Integral | IA gera conteúdo substancial; estudante dirige e valida |
+| 5 | Exploração de IA | IA é o objeto de estudo; foco na análise crítica do sistema |
+
+Qualquer referência a esses níveis no repositório usa exatamente esses nomes e números.
 
 ## Referências normativas centrais
 
