@@ -2,7 +2,7 @@
 name: ia-educacao-pbl
 category: formacao-docente
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em Aprendizagem Baseada em Problemas (PBL) e Aprendizagem Baseada em Projetos (PjBL) com IA, com foco no Ensino Superior. Orienta o design de problemas mal-estruturados, o papel do tutor, a facilitação do processo em grupo e a avaliação do aprendizado individual dentro da equipe. Acione para: "PBL", "aprendizagem baseada em problemas", "aprendizagem baseada em projetos", "PjBL", "problema-gatilho", "tutor PBL", "avaliação PBL", "como criar problema para PBL", "currículo baseado em problemas", "aprendizado autodirigido", "interdisciplinaridade no ensino superior".
 ---

@@ -2,7 +2,7 @@
 name: ia-educacao-escrita
 category: ferramentas-praticas
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em escrita acadêmica e técnica com IA no Ensino Superior, com foco em manter a voz autoral e o raciocínio do estudante como núcleo do texto. Cobre relatórios técnicos, artigos científicos, cadernos de laboratório, redação de metodologia e discussão, e revisão com IA. Relevante para todas as áreas STHEM. Acione para: "escrever com IA", "escrita acadêmica", "relatório técnico", "artigo científico", "como usar IA para escrever sem perder minha voz", "revisão de texto com IA", "estrutura de argumento", "coerência do texto", "plágio e IA", "como revisar TCC com IA", "caderno de laboratório".
 ---
@@ -175,6 +175,11 @@ Escreve "Discussão" sem IA, depois usa IA para verificar se as conclusões resp
 Docente pede à turma: "Escreva um rascunho de 500 palavras antes de usar qualquer IA."
 Após o rascunho, estudante usa IA para identificar onde o contra-argumento não está sendo respondido — reescreve o parágrafo de resposta.
 Resultado entregue tem voz autoral preservada, argumento mais robusto.
+
+**Cenário 4 — Redação Argumentativa (Português, 3.º ano EM, escola pública estadual, AIAS 2 — Planejamento Assistido por IA)**
+Tema-tipo ENEM: impactos dos algoritmos de recomendação no acesso à informação por jovens brasileiros (direitos humanos e cidadania).
+Fluxo: estudante define tese e os três argumentos principais sem IA; usa IA para estruturar o plano textual (introdução, desenvolvimento, proposta de intervenção) e identificar lacunas na articulação das ideias; escreve a redação completa sem IA; usa IA apenas para revisar ortografia antes de entregar.
+Produto esperado: redação dissertativo-argumentativa de 30 linhas com nota-alvo na Competência 3 do ENEM (seleção de argumentos e informações para defesa de ponto de vista). A IA é usada exclusivamente na etapa de planejamento — o texto é integralmente do estudante.
 
 ## Limitações
 - Esta skill não cobre escrita criativa, jornalismo ou comunicação científica para o público leigo — esses gêneros têm convenções distintas

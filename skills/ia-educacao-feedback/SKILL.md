@@ -2,7 +2,7 @@
 name: ia-educacao-feedback
 category: ferramentas-praticas
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em design e escala de feedback formativo educacional com IA generativa. Orienta docentes a construir feedback específico, acionável e centrado no aprendizado — usando IA para ampliar o alcance sem perder qualidade — e a ensinar estudantes a dar e receber feedback por pares. Acione para: "como dar feedback com IA", "feedback formativo", "feedback em escala", "feedback por pares", "como melhorar o feedback aos alunos", "IA para corrigir trabalhos", "comentários em redações", "feed forward", "feedback eficaz", "rubrica de feedback".
 ---
@@ -116,6 +116,9 @@ Protocolo: cada estudante avalia 2 colegas usando Single-Point Rubric. Após, pl
 
 **Cenário 4 — Autoavaliação com IA (AIAS 3, qualquer disciplina)**
 Antes da entrega final, estudante copia o trabalho e a rubrica em prompt: "Compare meu trabalho com os critérios abaixo. Me diga em que nível estou em cada critério e o que falta para o próximo nível." Estudante recebe diagnóstico, revisa, e entrega com log da revisão.
+
+**Cenário 5 — Projeto Final de Curso Técnico (Técnico em Informática, IFMG, AIAS 3 — Colaboração com IA)**
+Turma de 28 estudantes do curso Técnico em Informática do IFMG entrega projeto final de desenvolvimento web. Docente usa IA (Modo 2 — triagem) para classificar os projetos em três níveis: funcional básico, funcional avançado e com falhas críticas. Para os 6 projetos com falhas críticas, escreve feedback detalhado individualmente (15 min cada); para os demais, revisa e personaliza o rascunho da IA focando nos critérios de usabilidade e segurança. Feed Forward específico para os projetos críticos: "Antes da defesa final, corrija o problema de autenticação identificado e documente a solução com um commit comentado explicando a decisão técnica."
 
 ## Limitações
 - Feedback gerado por IA sem supervisão docente pode ser factualmente impreciso, genérico ou inapropriado ao contexto cultural da turma — revisão é obrigatória

@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao-grupo
 category: ferramentas-praticas
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em avaliação de trabalho em grupo no Ensino Superior, com foco em capturar contribuição individual dentro de equipes. Orienta o design de peer assessment calibrado (CATME, WebPA, protocolos simplificados), a detecção de free riders, a análise de dados de avaliação entre pares e o uso de IA para identificar padrões de disfunção em equipes. Acione para: "avaliação de grupo", "nota individual em trabalho em grupo", "free rider", "avaliação por pares em grupo", "CATME", "peer assessment", "como avaliar contribuição individual", "trabalho em equipe", "avaliação de equipe", "nota de grupo injusta".
 ---
@@ -122,6 +122,23 @@ Transparência é pré-requisito para legitimidade do peer assessment:
 - Explicar na semana 1 como a nota individual será calculada a partir da nota do produto e do fator de contribuição
 - Mostrar exemplos com números: "Se a nota do produto é 8,0 e o fator individual é 0,85, a nota individual é 6,8"
 - Deixar claro que as avaliações são tratadas com confidencialidade — mas que padrões extremos podem levar a conversa com o docente
+- **Declarar o nível AIAS da atividade** e como ele afeta os critérios do peer assessment (ver Seção 7)
+
+### 7. Alinhar peer assessment com o nível AIAS
+
+O nível AIAS da atividade de grupo determina quais dimensões do peer assessment precisam de ajuste:
+
+| Nível AIAS | Impacto no peer assessment | Ajuste recomendado |
+|---|---|---|
+| 1 — Sem IA | Produto inteiramente humano | Dimensões padrão (contribuição, processo, produto); sem critério de IA |
+| 2 — Planejamento Assistido por IA | IA usada apenas na fase de planejamento/ideação | Adicionar critério "qualidade da estratégia de uso de IA no planejamento" |
+| 3 — Colaboração com IA | IA usada na elaboração e refinamento | Avaliar "integração de IA e manutenção da autoria do estudante" como dimensão explícita |
+| 4 — IA Integral | Uso estratégico e extensivo de IA | Critério específico: "competência no uso de IA como ferramenta profissional" com ancoragem comportamental |
+| 5 — Exploração de IA | Co-criação e inovação com IA | Avaliar "contribuição para inovação com IA" e "documentação crítica do processo de co-criação" |
+
+**Exemplo de comunicação para atividade AIAS 3**: "Esta atividade é Nível 3 — Colaboração com IA. O peer assessment inclui o critério *integração de IA e autoria*: cada membro avalia se o colega usou IA de forma que manteve a autoria intelectual do grupo. O enunciado completo da atividade declara o que é e o que não é permitido neste nível."
+
+Ao aplicar os instrumentos CATME ou protocolo de pontos, acrescentar o critério de IA como uma das dimensões avaliadas — com ancoragem comportamental específica para o nível declarado.
 
 ## Formato de Saída
 - **Sistema de avaliação de grupo completo**: dimensões, instrumentos por dimensão, pesos e fórmula de nota individual
@@ -152,6 +169,7 @@ IA analisa as notas e identifica: todas as equipes avaliaram "comunicação" aci
 - Projetos de curta duração (menos de 4 semanas) raramente produzem dados de peer assessment confiáveis
 
 ## Dependências
+- `aias-consultant` — para declarar e comunicar o nível AIAS da atividade de grupo e alinhar os critérios do peer assessment ao nível escolhido
 - `ia-educacao-rubrica` — critérios de avaliação do produto do grupo precisam de rubrica; critérios do peer assessment precisam de ancoragem comportamental
 - `ia-educacao-tbl` — TBL usa peer assessment (CATME) como componente estrutural; as duas skills se complementam
 - `ia-educacao-pbl` — projetos PBL/PjBL têm avaliação individual que a skill de avaliação de grupo operacionaliza

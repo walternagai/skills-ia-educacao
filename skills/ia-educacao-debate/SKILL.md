@@ -2,7 +2,7 @@
 name: ia-educacao-debate
 category: formacao-docente
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em debate estruturado e argumentação acadêmica com IA no Ensino Superior. Orienta o design e a facilitação de debates (Oxford, Fishbowl, Seminário Socrático), o uso de IA como advogado do diabo e gerador de contra-argumentos, e a avaliação da qualidade argumentativa. Acione para: "debate estruturado", "debate em sala", "seminário socrático", "fishbowl", "Oxford debate", "argumentação acadêmica", "IA como advogado do diabo", "como avaliar argumento", "contra-argumentação", "falácias argumentativas", "discussão filosófica com IA".
 ---
@@ -161,6 +161,12 @@ IA no encerramento: sintetiza as 3 tensões não resolvidas da discussão; grupo
 Questão: "Agentes de IA que passam no teste de Turing devem receber tratamento moral?"
 Formato: Fishbowl + Seminário Socrático combinados.
 Estudantes usam IA pré-debate para explorar a posição contrária à que intuitivamente adotariam — chegam ao debate já tendo confrontado seus próprios preconceitos.
+
+**Cenário 4 — Filosofia (3.º ano EM, escola estadual, AIAS 2 — Planejamento Assistido por IA)**
+Questão: "Sistemas de IA que tomam decisões automatizadas deveriam ser responsabilizados juridicamente pelos danos causados?"
+Formato: Oxford Debate em turma de 35 estudantes; o debate oral ocorre sem acesso a dispositivos.
+Preparação (AIAS 2): estudantes formulam a posição pessoal antes de usar a IA; usam IA para mapear os principais argumentos de cada lado e identificar filósofos e juristas relevantes. A posição precede o uso — não decorre dele.
+Produto esperado: argumento escrito individual de 15 linhas entregue após o debate, incorporando a tese pessoal e uma réplica fundamentada ao argumento do lado oposto.
 
 ## Limitações
 - Estudantes que constroem o argumento com IA sem entendê-lo ficam expostos em perguntas de réplica — garantir que a posição pessoal precede o uso de IA

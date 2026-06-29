@@ -2,7 +2,7 @@
 name: ia-educacao-estudo-de-caso
 category: formacao-docente
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em Estudo de Caso como metodologia ativa no Ensino Superior, com integração de IA. Orienta o design de casos mal-estruturados, a facilitação de discussões pelo método Harvard e o uso de IA para gerar perspectivas de stakeholders, atualizar casos e avaliar a qualidade do argumento. Acione para: "estudo de caso", "método de caso", "caso Harvard", "caso para aula", "como criar um caso didático", "facilitação de discussão de caso", "caso de ensino", "análise de caso com IA", "caso interdisciplinar", "caso empresarial para aula".
 ---
@@ -149,6 +149,12 @@ Estudantes usam IA para modelar impacto ambiental de três cenários alternativo
 **Cenário 3 — Medicina / Bioética (Ensino Superior)**
 Caso: família solicita suspensão de suporte vital de paciente sem testamento vital; equipe médica dividida; legislação ambígua.
 IA representa médico assistente, familiar discordante e consultora de bioética — grupos precisam construir um protocolo de decisão que satisfaça as três perspectivas.
+
+**Cenário 4 — Geografia (3.º ano EM, escola pública federal, AIAS 3 — Colaboração com IA)**
+Caso decisório: um município do semiárido nordestino recebe proposta de instalação de parque eólico que geraria 200 empregos temporários e 40 permanentes, mas exigiria a remoção de 80 famílias de comunidade quilombola de seu território histórico. A prefeitura tem 30 dias para emitir parecer.
+Situação-gatilho: estudantes são a comissão técnica que assessora a câmara municipal — sem posição prévia e com dados conflitantes sobre impacto socioambiental.
+IA (AIAS 3): grupos usam IA para analisar dados socioeconômicos do IBGE sobre o município (PIB per capita, IDH, desemprego) e identificar precedentes de conflitos territoriais similares no Brasil; a recomendação final e a defesa oral são elaboradas pelos estudantes.
+Produto esperado: parecer técnico de uma página com recomendação fundamentada, apresentado em plenária com defesa oral mediada pelo método Harvard.
 
 ## Limitações
 - Casos muito simples ou com resposta óbvia não geram discussão de qualidade — revisar o caso com olhar crítico antes de usar pela primeira vez

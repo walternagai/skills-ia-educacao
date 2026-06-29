@@ -2,7 +2,7 @@
 name: ia-educacao-design-problema
 category: ferramentas-praticas
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em design de problemas, questões-motrizes e situações-gatilho para metodologias ativas no Ensino Superior. Transforma conteúdo disciplinar em problemas autênticos e mal-estruturados que provocam investigação, análise e tomada de decisão. Complementa planejamento-reverso com foco na criação do artefato central (o problema) que ainda está ausente. Acione para: "como criar um problema para minha aula", "problema para PBL", "questão motriz", "situação-gatilho", "problema mal-estruturado", "caso para estudo", "problema autêntico", "como transformar conteúdo em problema", "problema para metodologia ativa", "enunciado que gera discussão".
 ---
@@ -179,6 +179,11 @@ Produto: protótipo funcional em Python + relatório de vieses identificados + p
 **Cenário 3 — Medicina (6.º período)**
 Problema PBL: paciente de 42 anos, professora, chega à UBS com fadiga crônica, perda de peso de 6 kg em 3 meses e sudorese noturna. Nega tabagismo. Filho de 8 anos com diagnóstico recente de tuberculose pulmonar. Exames iniciais: hemograma normal, glicemia 102 mg/dL, RX de tórax "sem alterações significativas" (laudo do médico radiologista). Paciente muito ansiosa — pergunta se pode continuar trabalhando.
 Variação A: acrescentar PPD reator 15 mm. Variação B: acrescentar que a paciente mora em abrigo coletivo.
+
+**Cenário 4 — Biologia (2.º ano EM, escola pública estadual, AIAS 2 — Planejamento Assistido por IA)**
+Problema-gatilho: o bairro vizinho à escola registrou 47 casos de dengue em três semanas; a equipe da UBS local divulgou mapa de focos e solicitou apoio da escola para mobilização. Problema proposto: "Vocês são a comissão de saúde escolar. O que faremos nas próximas duas semanas para reduzir a incidência no entorno?"
+Objetivo de aprendizagem: Bloom 5 — avaliar estratégias de controle de vetores com base no ciclo de vida do Aedes aegypti e em dados epidemiológicos reais do município.
+IA (AIAS 2): estudantes podem usar IA para pesquisar o ciclo biológico do mosquito e estatísticas de eficácia das intervenções disponíveis, mas o plano de ação e a apresentação para a direção da escola são elaborados e defendidos sem IA.
 
 ## Limitações
 - IA gera rascunhos plausíveis, não problemas validados — sem aplicação com estudantes reais e revisão baseada em como o problema funciona na prática, o banco fica teórico
