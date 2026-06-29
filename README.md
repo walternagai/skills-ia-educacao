@@ -4,7 +4,7 @@ Acervo de skills para o Claude Code que orientam a integração responsável de 
 
 ## O que há neste repositório
 
-- **36 skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code
+- **39 skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code
 - **PDFs normativos** (`raw-pdfs/`) — Referencial MEC, Resoluções CEPEAd, INs PRG, PPC BIA, artigos AIAS originais
 - **CLAUDE.md** — instruções de contexto para instâncias do Claude Code neste repositório
 
@@ -73,6 +73,7 @@ Após instalada, chame a skill pelo nome:
 | `/ia-educacao-pensamento-critico` | Desenvolver pensamento crítico diante de outputs de IA |
 | `/ia-educacao-bloom` | Taxonomia Revisada de Bloom + Digital Bloom (Churches): objetivos, atividades online e alinhamento com AIAS |
 | `/ia-educacao-planejamento-reverso` | Backward Design (UbD): resultados → evidências → experiências, com AIAS integrado ao Estágio 2 |
+| `/ia-educacao-metacognicao` | Metacognição e aprendizagem autorregulada: diários, wrappers, portfólios reflexivos e uso intencional de IA |
 
 ### Ética e governança
 
@@ -102,6 +103,8 @@ Após instalada, chame a skill pelo nome:
 | Skill | Descrição |
 |-------|-----------|
 | `/ia-educacao-avaliacao` | Redesenho de avaliações com a Escala AIAS |
+| `/ia-educacao-rubrica` | Design de rubricas analíticas, holísticas e single-point alinhadas a Bloom, AIAS e DUA |
+| `/ia-educacao-feedback` | Feedback formativo em escala com IA: Feed Up/Back/Forward, feedback por pares e autoavaliação |
 | `/ia-educacao-rascunho` | Raciocínio conciso (Chain of Draft) em atividades, prompts de IA e feedback formativo |
 | `/ia-educacao-verificacao` | Chain of Verification para docentes validarem materiais, questões e feedbacks gerados com IA |
 | `/ia-educacao-personalizacao` | Plataformas adaptativas e STIs no contexto AIAS |
