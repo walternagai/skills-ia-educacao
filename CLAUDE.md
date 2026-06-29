@@ -40,31 +40,31 @@ Cada skill tem frontmatter YAML (`name`, `category`, `model`, `version`, `descri
 As skills deste repositório são **skills locais** do Claude Code. Para instalá-las no ambiente de um usuário:
 
 ```bash
-# A partir do diretório raiz deste repositório
-npx skills add ./skills/<slug-da-skill>
-
-# Exemplo
+# Instalar uma skill específica (a partir do diretório raiz)
 npx skills add ./skills/ia-educacao-avaliacao
+
+# Instalar todas as skills de uma vez
+for d in skills/*/; do npx skills add "./$d"; done
 ```
 
 Para listar as skills instaladas: `/skills` dentro do Claude Code.  
-Cada skill é invocada pelo usuário com `/ia-educacao-<sufixo>` (ex: `/ia-educacao-avaliacao`).
+Cada skill é invocada pelo usuário com `/ia-educacao-<sufixo>` (ex: `/ia-educacao-avaliacao`), com uma exceção: a skill `aias-consultant` é invocada como `/aias-consultant` (sem o prefixo `ia-educacao-`).
 
 O campo `name` no frontmatter da skill é o identificador canônico — é esse valor que deve ser usado em `Dependências` de outras skills.
 
 ## A Escala AIAS e seus 5 níveis
 
-A escala **AIAS (AI Assessment Scale)** — adaptada ao contexto UNIFEI — classifica o nível de uso de IA em avaliações acadêmicas:
+A escala **AIAS (AI Assessment Scale)** — adaptada ao contexto UNIFEI — classifica o nível de uso de IA em avaliações acadêmicas. A escala é **não hierárquica** (nenhum nível é superior a outro):
 
-| Nível | Nome | Descrição resumida |
-|-------|------|--------------------|
-| 1 | Sem IA | Nenhum uso de IA permitido |
-| 2 | Planejamento | IA apenas para organizar ideias, sem gerar conteúdo avaliativo |
-| 3 | Colaboração | IA como ferramenta auxiliar com revisão crítica do estudante |
-| 4 | IA Integral | IA gera conteúdo substancial; estudante dirige e valida |
-| 5 | Exploração de IA | IA é o objeto de estudo; foco na análise crítica do sistema |
+| Nível | Nome canônico | IA permitida | Produto final |
+|-------|---------------|-------------|---------------|
+| 1 | Sem IA | Nenhuma | Totalmente do estudante |
+| 2 | Planejamento Assistido por IA | Ideação e estruturação | Do estudante; IA apenas no processo |
+| 3 | Colaboração com IA | Elaboração e refinamento | Do estudante com auxílio de IA |
+| 4 | IA Integral | Uso estratégico e abrangente | Dirigido pelo estudante com IA |
+| 5 | Exploração de IA | Co-criação e inovação | Co-autoria estudante + IA |
 
-Qualquer referência a esses níveis no repositório usa exatamente esses nomes e números.
+Qualquer referência a esses níveis no repositório usa exatamente esses nomes e números — inclusive nos campos `Workflow` e `Formato de Saída` das skills.
 
 ## Referências normativas centrais
 
@@ -79,5 +79,7 @@ Os documentos e skills deste repositório derivam autoridade de:
 
 - Idioma: **Português do Brasil** em todos os documentos
 - Referências bibliográficas: formato **ABNT**
-- A escala AIAS tem 5 níveis fixos (Sem IA → Planejamento → Colaboração → IA Integral → Exploração de IA); não adicionar ou remover níveis sem revisar todos os documentos que os referenciam
+- A escala AIAS tem 5 níveis fixos com os nomes canônicos da tabela acima; não adicionar, remover ou renomear níveis sem revisar todas as skills que os referenciam
 - Skills novas devem seguir a estrutura de frontmatter e seções das existentes; o slug em `Dependências` deve corresponder exatamente ao campo `name` da skill referenciada
+- Ao editar uma skill existente, incremente o campo `version` no frontmatter (ex: `1.2` → `1.3`)
+- O diretório `raw-pdfs/` está no `.gitignore` — os PDFs normativos não são versionados e precisam ser obtidos diretamente das fontes institucionais
