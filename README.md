@@ -4,7 +4,7 @@ Acervo de skills para o Claude Code que orientam a integração responsável de 
 
 ## O que há neste repositório
 
-- **33 skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code
+- **34 skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code
 - **PDFs normativos** (`raw-pdfs/`) — Referencial MEC, Resoluções CEPEAd, INs PRG, PPC BIA, artigos AIAS originais
 - **CLAUDE.md** — instruções de contexto para instâncias do Claude Code neste repositório
 
@@ -71,6 +71,7 @@ Após instalada, chame a skill pelo nome:
 | `/ia-educacao-planejamento-didatico` | Plano de ensino com política AIAS e objetivos alinhados |
 | `/ia-educacao-aprendizagem-ativa` | Metodologias ativas com IA (PBL, sala invertida, gamificação) |
 | `/ia-educacao-pensamento-critico` | Desenvolver pensamento crítico diante de outputs de IA |
+| `/ia-educacao-bloom` | Taxonomia Revisada de Bloom + Digital Bloom (Churches): objetivos, atividades online e alinhamento com AIAS |
 
 ### Ética e governança
 
