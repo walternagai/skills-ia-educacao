@@ -2,7 +2,7 @@
 name: ia-educacao-aprendizagem-servico
 category: formacao-docente
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em Aprendizagem-Serviço e Extensão Universitária com IA, integrando o tripé ensino-pesquisa-extensão da universidade brasileira. Orienta o design de projetos em que estudantes aplicam conhecimento disciplinar em parceria com comunidades ou organizações reais, com IA como ferramenta de diagnóstico, comunicação e análise. Acione para: "aprendizagem-serviço", "extensão universitária", "projeto de extensão", "service learning", "comunidade e universidade", "impacto social com IA", "tripé universitário", "atividade de extensão", "curricularização da extensão", "AIAS em extensão".
 ---
@@ -159,6 +159,13 @@ IA: processa as planilhas de triagem; estudantes interpretam e criam o material 
 Parceiro: CRAS municipal — demandas jurídicas simples de populações vulneráveis.
 Serviço: triagem jurídica supervisionada + produção de 6 cartilhas sobre direitos trabalhistas, previdenciários e de consumidor em linguagem simples.
 IA: gera rascunhos de cartilhas; estudantes validam juridicamente e adaptam com feedback do CRAS.
+
+**Cenário 4 — Aprendizagem-Serviço no Ensino Médio (Biologia e Sociologia integradas, 3.º ano EM, escola estadual, AIAS 3 — Colaboração com IA)**
+Parceiro: UBS do bairro com programa municipal de saúde do adolescente.
+Serviço: estudantes produzem série de 4 materiais informativos sobre saúde sexual e reprodutiva para jovens de 13–16 anos, em linguagem acessível e sem jargão médico.
+IA (AIAS 3): estudantes usam IA para gerar rascunhos de cada material; revisam com a enfermeira da UBS para adequação científica; adaptam linguagem com base em grupo focal com estudantes do 8.º ano (parceiros internos da escola).
+Conexão curricular: Biologia (sistema reprodutor, ISTs, contracepção) + Sociologia (direitos sexuais e reprodutivos, recortes de gênero e raça na saúde pública brasileira).
+Produto esperado: 4 materiais revisados e aprovados pela UBS, disponibilizados na sala de espera da unidade e no aplicativo municipal de saúde.
 
 ## Limitações
 - Parceiros comunitários têm ritmos diferentes da universidade — atrasos na entrega de dados, mudanças de interlocutor, prioridades cambiantes são comuns e fazem parte do aprendizado sobre trabalho em contextos reais

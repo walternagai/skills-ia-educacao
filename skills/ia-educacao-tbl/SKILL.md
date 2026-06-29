@@ -165,6 +165,13 @@ RAP sobre legislação de proteção de dados (LGPD).
 Aplicação: dado um caso de vazamento de dados em empresa de médio porte, qual dos quatro tratamentos propostos está mais alinhado com as obrigações do controlador segundo a LGPD?
 Simultaneous report via Mentimeter; debate entre equipes com posições A e C; docente fecha com análise do art. 48 da LGPD.
 
+**Cenário 4 — Primeiros Socorros (Técnico em Enfermagem, CEFET-MG, AIAS 1 — Sem IA)**
+Módulo: avaliação primária da vítima — protocolo ABCDE do trauma.
+iRAT (individual, sem IA): 12 questões sobre sequência de avaliação, sinais de alerta e condutas iniciais; respondido em 15 minutos com ficha impressa.
+gRAT (equipes de 5, sem IA): mesmas questões; equipes debatem cada alternativa até consenso — uso de IF-AT em raspadinha para feedback imediato.
+Aplicação 4S (AIAS 1): todas as equipes recebem o mesmo simulado de cena de acidente (texto descritivo + foto); devem escolher, entre quatro condutas simultâneas possíveis, qual é a primeira prioridade na abordagem da vítima. Simultaneous report com cartão colorido; debate entre equipes com posições divergentes.
+Justificativa do AIAS 1: atividade de saúde com risco real — o protocolo ABCDE precisa estar internalizado para uso em emergência; nenhum momento do módulo permite consulta a IA ou dispositivo.
+
 ## Limitações
 - TBL exige redesign completo da disciplina — não é possível implementar parcialmente sem perder a lógica do RAP
 - Resistência inicial dos estudantes é comum: "Estou pagando para ser ensinado, não para ensinar meus colegas" — contextualizar a metodologia explicitamente na primeira aula

@@ -132,6 +132,12 @@ Pré: screencast de 15 min sobre herança e polimorfismo + exercício de leitura
 Presencial: grupos de 3 recebem código com bug arquitetural; identificam o problema com IA permitida como ferramenta de diagnóstico, propõem refatoração e apresentam para a turma.
 Avaliação: qualidade do raciocínio sobre a refatoração, não apenas o código final.
 
+**Cenário 4 — Matemática (2.º ano EM, escola estadual, AIAS 2 — Planejamento Assistido por IA)**
+Pré: roteiro de leitura sobre funções quadráticas com lacunas a preencher (gerado com IA pelo docente) + vídeo de 10 min sobre vértice e eixo de simetria + 5 questões de verificação alinhadas ao ENEM (respondidas sem IA — AIAS 1).
+Gancho: "Vimos como calcular o vértice de uma parábola. Mas por que o ponto de máxima margem de lucro de uma empresa e o ponto de maior alcance de um projétil têm a mesma forma matemática? Trazemos isso para o presencial."
+Presencial (AIAS 2): grupos de 3 resolvem 2 questões do ENEM (2019 e 2022) envolvendo funções quadráticas em contextos reais; IA permitida para verificar raciocínio intermediário, não para resolver diretamente.
+Produto esperado: resolução comentada apresentada oralmente à turma — o grupo explica o raciocínio, não apenas a resposta numérica.
+
 ## Limitações
 - Sala invertida aumenta a carga de preparação do estudante fora de sala — funciona mal em turmas com alta carga de trabalho ou estudantes que trabalham em tempo integral (contextualizar com a realidade da UNIFEI)
 - Materiais de pré precisam ser produzidos com antecedência — não é possível improvisar o assíncrono como se improvisa uma aula expositiva

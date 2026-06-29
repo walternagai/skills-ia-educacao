@@ -132,6 +132,11 @@ IA como par de programação (Copilot, Claude) — log de decisões de design ob
 Problema-gatilho: startup de fintech recebe notificação do Banco Central sobre possível violação da LGPD em sistema de análise de crédito baseado em IA. Equipe mista (2 de Direito, 2 de Administração) deve elaborar parecer e plano de adequação.
 Avaliação: arguição individual de 10 min sobre o raciocínio jurídico/administrativo de cada integrante.
 
+**Cenário 4 — PBL em Biologia (2.º ano EM, escola pública estadual, AIAS 3 — Colaboração com IA)**
+Problema-gatilho: o município registrou aumento de 180% nos casos de leptospirose após as chuvas de janeiro; o jornal local publicou dado contraditório ao boletim epidemiológico da Secretaria Estadual de Saúde. A turma recebe os dois documentos e a demanda: "Vocês são a equipe de Vigilância em Saúde Escolar. O que a escola pode fazer nos próximos 30 dias?"
+Ciclo de tutoria adaptado ao Ensino Médio: 3 encontros de 50 min (ideação → estudo autodirigido → síntese); estudo individual com IA permitida para pesquisa de fontes científicas (AIAS 3), desde que cada fato citado na síntese tenha fonte identificada pelo próprio estudante.
+Produto esperado: cartaz informativo para a comunidade escolar + apresentação de 5 minutos para a direção com proposta de ação concreta e justificativa baseada no ciclo de vida do agente causador.
+
 ## Limitações
 - PBL exige formação específica do tutor — um professor que nunca foi treinado em tutoria PBL tende a usar o tempo de tutoria como mini-aula expositiva, esvaziando o método
 - Problemas bem construídos levam tempo para design — não é possível improvisar no dia; reservar pelo menos 3–4 horas por problema-gatilho novo

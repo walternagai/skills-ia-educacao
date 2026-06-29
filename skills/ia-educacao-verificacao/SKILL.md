@@ -118,6 +118,11 @@ Coordenador usa IA para gerar sequência didática sobre reações de oxirreduç
 → Verifica conceitos contra o livro-texto adotado; verifica normas contra o PPC vigente.
 → Aprova com 2 correções menores; documenta o processo para o portfólio pedagógico da escola.
 
+**Cenário 6 — Verificação de Texto com IA pelos Estudantes (História, 1.º ano EM, escola estadual, AIAS 2 — Planejamento Assistido por IA)**
+Docente propõe atividade invertida: cada dupla usa IA para gerar um resumo de 300 palavras sobre a abolição da escravatura no Brasil. Antes de entregar, a dupla aplica CoVe simplificado — lista 5 afirmações do resumo e verifica cada uma em livro didático e em fonte confiável (portal IBGE Educa, Brasil Escola supervisionado ou acervo da biblioteca).
+Objetivo pedagógico duplo: aprender o conteúdo histórico e desenvolver letramento crítico sobre outputs de IA.
+Produto esperado: resumo revisado + tabela de verificação (afirmação / fonte consultada / resultado: correto, corrigido ou removido). Docente aplica CoVe amostral em 20% das tabelas entregues para calibrar a qualidade das verificações dos estudantes.
+
 ## Limitações
 - CoVe não substitui o domínio do conteúdo pelo docente: se o verificador não conhece a área, não detecta erros nas verificações
 - Domínios em atualização rápida (pesquisa recente, legislação vigente) exigem consulta a fontes externas — o conhecimento interno do docente pode estar desatualizado

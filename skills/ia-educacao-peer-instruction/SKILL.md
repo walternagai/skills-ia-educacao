@@ -166,6 +166,13 @@ ConcepTest: "Um experimento obteve p = 0,03. O que isso significa?"
 Distratores calibrados para revelar os três misconceptions clássicos: (A) probabilidade da H0 ser verdadeira, (B) probabilidade de replicação, (C) tamanho do efeito.
 Resultado típico: <40% correto na primeira votação — indica que a exposição prévia sobre p-valor foi insuficiente e precisa ser refeita antes da discussão.
 
+**Cenário 4 — Física (2.º ano EM, escola estadual pública, AIAS 1 — Sem IA)**
+Conceito: eletrostática — superposição de campos elétricos.
+ConcepTest: "Duas cargas iguais e de sinais opostos estão fixas e equidistantes de um ponto P. O campo elétrico resultante em P aponta em qual direção?" — 4 alternativas calibradas para revelar o misconception de que campos de sinais contrários se cancelam em vez de se somarem vetorialmente.
+Votação: cartões coloridos impressos (escola sem infraestrutura de wi-fi estável); sem dispositivos durante a sessão — AIAS 1.
+Resultado típico: 38% correto na primeira votação — zona produtiva; após discussão em duplas, 69% correto.
+Alinhamento ENEM: conceito recorrente no eixo "Calor, Ótica e Eletromagnetismo" do exame; o ConcepTest foi calibrado para o nível de abstração vetorial exigido nas questões de Física do ENEM.
+
 ## Limitações
 - Turmas passivas ou culturalmente avessas a "errar na frente dos outros" resistem ao Peer Instruction no início — normalizar o erro como parte do processo desde a primeira sessão
 - ConcepTests mal construídos geram distribuições de resposta que não revelam o misconception, apenas confundem — a qualidade da questão é o fator limitante

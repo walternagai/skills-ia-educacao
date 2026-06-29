@@ -2,7 +2,7 @@
 name: ia-educacao-visualizacao-dados
 category: ferramentas-praticas
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em visualização de dados e storytelling com dados para contextos educacionais STHEM (Science, Technology, Humanities, Engineering, Math), com IA como ferramenta de geração e revisão de visualizações. Orienta escolha do gráfico adequado, detecção de visualizações enganosas, comunicação de incerteza e narrativa com dados. Acione para: "visualização de dados", "gráfico para apresentação", "como escolher o tipo de gráfico", "storytelling com dados", "dashboard educacional", "gráfico com IA", "Python matplotlib", "dados enganosos", "como comunicar resultados", "análise exploratória visual", "plotar dados com IA".
 ---
@@ -177,6 +177,12 @@ Correção: ajuste quadrático + eixo iniciando em zero + barras de erro das med
 Docente com 60 estudantes quer identificar quem está em risco de reprovação antes da P2.
 IA gera código Python que lê planilha de notas e produz: (1) boxplot de distribuição por avaliação, (2) scatter plot nota-P1 × frequência com linha de separação do "grupo de risco" definida pelo docente.
 Docente identifica 8 estudantes no quadrante de risco e entra em contato antes da P2.
+
+**Cenário 4 — Geografia (3.º ano EM, escola pública estadual, AIAS 3 — Colaboração com IA)**
+Tema: desigualdade regional no Brasil — análise de dados do Censo 2022 (IBGE).
+Atividade: duplas de estudantes escolhem dois estados de regiões diferentes e fornecem à IA dados extraídos do IBGE Cidades (PIB per capita, IDH, taxa de analfabetismo, acesso à internet) para geração de gráficos comparativos.
+IA (AIAS 3): estudantes fornecem os dados e solicitam à IA código Python ou gráfico direto; revisam cada visualização com o checklist de honestidade visual (eixo Y partindo de zero, N visível, título como afirmação, paleta acessível para daltônicos).
+Produto esperado: infográfico de uma página com 3 gráficos, título-afirmação em cada um e parágrafo de análise conectando os dados ao conceito de desenvolvimento desigual combinado estudado em sala — avaliado pela coerência entre o gráfico e o texto analítico.
 
 ## Limitações
 - Esta skill cobre visualização estática e narrativa; visualizações interativas (D3.js, Plotly Dash, Shiny) têm curva de aprendizado específica e precisam de contexto de desenvolvimento
