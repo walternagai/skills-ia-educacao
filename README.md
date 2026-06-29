@@ -4,7 +4,7 @@ Acervo de skills para o Claude Code que orientam a integração responsável de 
 
 ## O que há neste repositório
 
-- **50 skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code
+- **54 skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code
 - **PDFs normativos** (`raw-pdfs/`) — Referencial MEC, Resoluções CEPEAd, INs PRG, PPC BIA, artigos AIAS originais
 - **CLAUDE.md** — instruções de contexto para instâncias do Claude Code neste repositório
 
@@ -83,6 +83,7 @@ Após instalada, chame a skill pelo nome:
 | `/ia-educacao-aprendizagem-servico` | Aprendizagem-Serviço e curricularização da extensão universitária (Res. CNE/CES 7/2018) com IA |
 | `/ia-educacao-debate` | Debate estruturado (Oxford, Fishbowl, Socrático): IA como advogado do diabo, falácias argumentativas e avaliação de argumentação |
 | `/ia-educacao-facilitacao` | Facilitação de discussões: perguntas socráticas, gestão de silêncio e dominância, IA como voz extra em plenária |
+| `/ia-educacao-interdisciplinaridade` | Design de atividades genuinamente interdisciplinares em STHEM: critério de dependência mútua, avaliação de síntese e co-design docente |
 
 ### Ética e governança
 
@@ -116,6 +117,9 @@ Após instalada, chame a skill pelo nome:
 | `/ia-educacao-feedback` | Feedback formativo em escala com IA: Feed Up/Back/Forward, feedback por pares e autoavaliação |
 | `/ia-educacao-avaliacao-grupo` | Avaliação de trabalho em grupo: peer assessment calibrado (CATME/WebPA), detecção de free riders e fator individual |
 | `/ia-educacao-design-problema` | Design de problemas para metodologias ativas: problema mal-estruturado, questão-motriz, ConcepTest e questão contestável |
+| `/ia-educacao-pesquisa` | Pesquisa acadêmica com IA: revisão sistemática, integridade em TCCs e artigos, declaração de uso AIAS, checklist FINER |
+| `/ia-educacao-escrita` | Escrita acadêmica e técnica com IA: ciclo correto (pensar→rascunhar→revisar), voz autoral, gêneros STHEM e integridade |
+| `/ia-educacao-visualizacao-dados` | Visualização de dados e storytelling: escolha de gráfico por pergunta, detecção de engano, comunicação de incerteza e dashboard educacional |
 | `/ia-educacao-rascunho` | Raciocínio conciso (Chain of Draft) em atividades, prompts de IA e feedback formativo |
 | `/ia-educacao-verificacao` | Chain of Verification para docentes validarem materiais, questões e feedbacks gerados com IA |
 | `/ia-educacao-personalizacao` | Plataformas adaptativas e STIs no contexto AIAS |

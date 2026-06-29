@@ -9,7 +9,7 @@ Este repositório é um **acervo documental e de skills** para orientar a integr
 Não há código-fonte, testes ou build system. O conteúdo é composto por:
 
 - **PDFs normativos** — Normas de Graduação da UNIFEI (Resoluções CEPEAd, INs PRG), Norma Disciplinar, Regimentos, PPC do Bacharelado em IA, Referencial MEC para IA na Educação, artigos acadêmicos sobre AIAS
-- **Skills Claude** (`skills/*/SKILL.md`) — 50 skills temáticas em formato YAML+Markdown para uso no Claude Code; o conteúdo do Guia AIAS-UNIFEI e da Rubrica TCC-BIA foi distribuído para as skills relevantes e os arquivos Markdown originais foram removidos
+- **Skills Claude** (`skills/*/SKILL.md`) — 54 skills temáticas em formato YAML+Markdown para uso no Claude Code; o conteúdo do Guia AIAS-UNIFEI e da Rubrica TCC-BIA foi distribuído para as skills relevantes e os arquivos Markdown originais foram removidos
 
 ## Arquitetura dos documentos
 
@@ -30,10 +30,10 @@ Cada skill tem frontmatter YAML (`name`, `category`, `model`, `version`, `descri
 | Categoria | Skills |
 |-----------|--------|
 | `niveis-ensino` | infantil, basica, ensino-medio, profissional-tecnologica, superior |
-| `formacao-docente` | fundamentos, formacao-inicial-docente, planejamento-didatico, planejamento-reverso, aprendizagem-ativa, pensamento-critico, bloom, metacognicao, pbl, sala-invertida, simulacao, estudo-de-caso, peer-instruction, tbl, aprendizagem-servico, debate, facilitacao |
+| `formacao-docente` | fundamentos, formacao-inicial-docente, planejamento-didatico, planejamento-reverso, aprendizagem-ativa, pensamento-critico, bloom, metacognicao, pbl, sala-invertida, simulacao, estudo-de-caso, peer-instruction, tbl, aprendizagem-servico, debate, facilitacao, interdisciplinaridade |
 | `etica-governanca` | etica, governanca-dados, supervisao-humana, transparencia-explicabilidade, vieses, impacto-algoritmico, seguranca-digital, integridade-academica |
 | `inclusao-equidade` | acessibilidade-inclusao, dua, equidade-digital, letramento-dados, permanencia |
-| `ferramentas-praticas` | avaliacao, rubrica, feedback, rascunho, verificacao, personalizacao, sti, ia-desplugada, sandbox, gestao, ecossistema-inovacao, contratacao, avaliacao-grupo, design-problema |
+| `ferramentas-praticas` | avaliacao, rubrica, feedback, rascunho, verificacao, personalizacao, sti, ia-desplugada, sandbox, gestao, ecossistema-inovacao, contratacao, avaliacao-grupo, design-problema, pesquisa, escrita, visualizacao-dados |
 
 ## Uso das skills no Claude Code
 
