@@ -5,6 +5,41 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.7.0] — 2026-06-29
+
+### Modificado
+- **Desinstitucionalização completa do acervo**: removidas todas as referências à UNIFEI (Resolução CEPEAd nº 17, INs PRG, Norma Disciplinar, Guia AIAS-UNIFEI, PPC BIA, cenários com UNIFEI) de todas as 54 skills e documentos de suporte
+- **`aias-consultant`**: redesenho completo — renomeada de "Consultora AIAS-UNIFEI" para "Consultora da Escala AIAS"; descrição, princípios, workflow e referências desinstitucionalizados; versão 2.0 → 3.0
+- **15 skills com UNIFEI no corpo do texto**: cenários, princípios e workflow editados para linguagem institucional-agnóstica (ex: "UNIFEI" → "universidade", "IN PRG nº 02/2025" → "diretrizes institucionais de TCC", "BIA" → "Computação")
+- **33 skills com UNIFEI apenas nas referências**: entradas bibliográficas UNIFEI removidas; versões incrementadas
+- **CLAUDE.md**: descrição do repositório desinstitucionalizada; seção "Referências normativas centrais" removida; descrição da AIAS como escala genérica (não adaptada UNIFEI)
+- **README.md**: título, descrição, escala AIAS e referências normativas desinstitucionalizados
+- **CONTRIBUTING.md**: "acervo institucional da UNIFEI" → "acervo de skills"
+
+---
+
+## [0.6.0] — 2026-06-29
+
+### Adicionado
+- **8 novas skills de avaliação para STHEM**:
+  - `ia-educacao-mcq`: design, validação e análise de questões de múltipla escolha com distratores por área, alinhamento Bloom e análise psicométrica
+  - `ia-educacao-avaliacao-oral`: rubricas, protocolos e simulação de banca com IA para apresentações, arguições, defesas e exames orais
+  - `ia-educacao-portfolio`: design de portfólios avaliativos (disciplina, desenvolvimento, reflexivo, projeto, estágio, e-portfólio)
+  - `ia-educacao-avaliacao-diagnostica`: mapeamento de pré-requisitos, identificação de misconceptions e testes de nivelamento
+  - `ia-educacao-avaliacao-competencia`: rubricas de proficiência, tarefas de desempenho autênticas e alinhamento a DCNs/SINAES
+  - `ia-educacao-avaliacao-projeto`: avaliação de projetos interdisciplinares, PBL/PjBL, IC e extensão com marcos e peer assessment
+  - `ia-educacao-autoavaliacao`: instrumentos de autoavaliação, calibração com avaliação docente e desenvolvimento do juízo avaliativo
+  - `ia-educacao-banco-questoes`: blueprint de prova, taxonomia de itens, curadoria de banco e análise psicométrica pós-prova
+- Todas as 8 skills incluem seção `Perfis STHEM` com adaptações por área (Science, Technology, Humanities, Engineering, Mathematics)
+
+### Modificado
+- **Camada de verificação e validação adicionada às 8 skills v0.6.0**: cada skill ganhou uma seção `Verificar e validar` como etapa final do workflow, com tabela de dimensões de verificação, checklist pré-aplicação e novos itens no `Formato de Saída` (checklist e relatório de validação)
+- **Dependência `ia-educacao-verificacao` adicionada** a 7 skills que não a possuíam (avaliacao-oral, portfolio, avaliacao-diagnostica, avaliacao-competencia, avaliacao-projeto, autoavaliacao, banco-questoes)
+- **Versões incrementadas** de 1.0 para 1.1 nas 8 skills
+- `AGENTS.md`: criado para OpenCode com diferenças vs. Claude Code, comandos de auditoria e workflow típico
+- `.opencode/agents/`: 3 subagentes (planejador-pedagogico, construtor-de-avaliacoes, artesao-de-skills) com perfis STHEM
+- `opencode.json`: configuração local registrando os 3 agentes
+
 ## [0.5.0] — 2026-06-29
 
 ### Modificado

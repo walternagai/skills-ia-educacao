@@ -120,7 +120,7 @@ Antes de cada interação com IA no projeto, estudante preenche: "O que eu sei s
 **Cenário 3 — Calibração em Cálculo (Ensino Superior)**
 Antes da P1, estudantes preenchem mapa de confiança questão por questão. Após receber as notas, comparam: "Errei o que achei que sabia? Acertei o que achei que não sabia?" Docente usa dados agregados anonimizados para identificar falsos positivos de confiança na turma inteira — reforma o material de revisão para os próximos semestres.
 
-**Cenário 4 — Portfólio reflexivo como avaliação somativa (TCC, BIA)**
+**Cenário 4 — Portfólio reflexivo como avaliação somativa (TCC)**
 Em vez de relatório técnico único, estudante entrega portfólio com: (1) produtos técnicos, (2) três reflexões intermediárias sobre o processo de pesquisa, (3) reflexão final: "O que eu pensava sobre IA no início do TCC vs. o que penso agora — e por quê mudou." Avalia crescimento metacognitivo, não só domínio técnico.
 
 ## Limitações
@@ -142,4 +142,3 @@ Em vez de relatório técnico único, estudante entrega portfólio com: (1) prod
 - PINTRICH, P. R. The Role of Metacognitive Knowledge in Learning, Teaching, and Assessing. Theory into Practice, v. 41, n. 4, p. 219–225, 2002.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.

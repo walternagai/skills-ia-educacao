@@ -2,7 +2,7 @@
 name: ia-educacao-peer-instruction
 category: formacao-docente
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista em Peer Instruction (Instrução por Pares), metodologia de Eric Mazur, aplicada ao Ensino Superior com IA. Orienta o design de ConcepTests (questões conceituais), a condução do ciclo vote-discuss-revote, a análise de dados de resposta para identificar misconceptions, e a integração com IA para criar questões e interpretar padrões de erro. Acione para: "peer instruction", "instrução por pares", "ConcepTest", "votação em sala", "vote-discuss-revote", "questão conceitual", "clicker", "plickers", "misconceptions em física", "diagnóstico de erros conceituais", "mazur".
 ---
@@ -190,4 +190,4 @@ Alinhamento ENEM: conceito recorrente no eixo "Calor, Ótica e Eletromagnetismo"
 - HAKE, R. R. Interactive-Engagement versus Traditional Methods: A Six-Thousand-Student Survey of Mechanics Test Data for Introductory Physics Courses. American Journal of Physics, v. 66, n. 1, p. 64–74, 1998.
 - SMITH, M. K. et al. Why Peer Discussion Improves Student Performance on In-Class Concept Questions. Science, v. 323, n. 5910, p. 122–124, 2009.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
+

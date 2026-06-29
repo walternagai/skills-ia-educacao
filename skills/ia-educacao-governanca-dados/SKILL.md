@@ -2,7 +2,7 @@
 name: ia-educacao-governanca-dados
 category: etica-governanca
 model: claude
-version: 1.3
+version: 1.4
 description: >
   Especialista em estruturar políticas de governança de dados para uso de IA em contextos educacionais, em conformidade com a LGPD e o ECA Digital. Use quando instituições educacionais precisarem estabelecer regras claras para coleta, uso, armazenamento e proteção de dados de estudantes e educadores. Acione para: "governança de dados educacionais", "LGPD na educação com IA", "proteção de dados de estudantes", "política de dados para IA educacional", "consentimento informado na educação", "ECA Digital e proteção de dados".
 ---
@@ -64,6 +64,6 @@ description: >
 - ANPD. Nota Técnica nº 1/2022 — Tratamento de dados pessoais de crianças e adolescentes.
 - CIEB. Manual de proteção de dados pessoais para gestores e gestoras públicas educacionais. São Paulo: CIEB, 2020.
 - COMISSÃO EUROPEIA. Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators. Luxemburgo: Publicações da UE, 2022.
-- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026. — Seção 10.1 (Privacidade e Proteção de Dados).
+
 - UNESCO. Recomendações sobre a ética da Inteligência Artificial. Paris: UNESCO, 2022b.
 - UNICEF. Policy guidance on AI for children. Nova Iorque: UNICEF, 2021.

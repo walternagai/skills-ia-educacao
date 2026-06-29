@@ -84,7 +84,7 @@ Estrutura para questão-motriz (PjBL):
 "Como poderíamos [verbo de ação] para [audiência específica] que [necessidade real], considerando [restrição relevante]?"
 ```
 Exemplos:
-- "Como poderíamos desenvolver um sistema de alerta precoce de evasão para os estudantes da UNIFEI que considere variáveis socioeconômicas e de desempenho, sem violar a LGPD?"
+- "Como poderíamos desenvolver um sistema de alerta precoce de evasão para os estudantes da universidade que considere variáveis socioeconômicas e de desempenho, sem violar a LGPD?"
 - "Como poderíamos criar um material educativo sobre saúde mental para adolescentes da rede pública que seja acessível sem internet?"
 
 **Etapa 5 — Validar antes de usar**
@@ -172,8 +172,8 @@ Objetivo: avaliar trade-offs em projetos de sistemas de energia.
 Problema gerado: distribuidora de energia recebe relatório de consultoria indicando que modernizar a rede elétrica de um município rural com microgeração solar custará 3x mais que manter o sistema atual, mas reduzirá interrupções em 70%. Conselho municipal tem dados conflitantes e grupos de interesse opostos. A engenheira responsável precisa apresentar uma recomendação em 48 horas.
 Checklist: ✅ Bloom 5 (avaliação), ✅ contexto autêntico, ✅ stakeholders opostos, ✅ sem resposta óbvia.
 
-**Cenário 2 — Bacharelado em IA (UNIFEI, AIAS 4)**
-Questão-motriz: "Como poderíamos desenvolver um sistema de recomendação de vagas de estágio para estudantes da UNIFEI que priorize equidade de acesso para estudantes de baixa renda, sem reforçar os vieses presentes nos dados históricos de contratação?"
+**Cenário 2 — Bacharelado em Computação (AIAS 4)**
+Questão-motriz: "Como poderíamos desenvolver um sistema de recomendação de vagas de estágio para estudantes da universidade que priorize equidade de acesso para estudantes de baixa renda, sem reforçar os vieses presentes nos dados históricos de contratação?"
 Produto: protótipo funcional em Python + relatório de vieses identificados + proposta de mitigação.
 
 **Cenário 3 — Medicina (6.º período)**
@@ -204,4 +204,3 @@ IA (AIAS 2): estudantes podem usar IA para pesquisar o ciclo biológico do mosqu
 - BUCK INSTITUTE FOR EDUCATION. PBL Works: Project Based Learning for the 21st Century. Novato: BIE, 2019.
 - WIGGINS, G.; McTIGHE, J. Understanding by Design. 2. ed. Alexandria, VA: ASCD, 2005.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.

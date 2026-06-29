@@ -2,7 +2,7 @@
 name: ia-educacao-dua
 category: inclusao-equidade
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista no framework Desenho Universal para a Aprendizagem (DUA/UDL) aplicado em todos os níveis de ensino e perfis de aprendiz, integrado ao uso de IA generativa. Orienta docentes a aplicar os três princípios DUA — Engajamento, Representação, Ação e Expressão — de forma proativa, removendo barreiras antes que aconteçam e usando IA como ferramenta de múltiplas representações. Acione para: "DUA na prática", "como aplicar Desenho Universal", "plano de aula inclusivo", "diferentes formas de representar o conteúdo", "múltiplas formas de avaliação", "DUA no ensino superior", "DUA na educação básica", "remover barreiras de aprendizagem", "neurodiversidade em sala", "como incluir todos os alunos", "UDL e IA".
 ---
@@ -169,6 +169,6 @@ Professor quer gerar múltiplas representações de um mesmo conceito (fotossín
 - BRASIL. Lei nº 13.146, de 6 de julho de 2015. Lei Brasileira de Inclusão da Pessoa com Deficiência (LBI).
 - BRASIL. Ministério da Educação. Política Nacional de Educação Especial na Perspectiva da Educação Inclusiva. Brasília: MEC, 2008.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seções 3.2 (Equidade) e Oportunidade 5 (Personalização inclusiva)
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
+
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 - UNESCO. AI and education: guidance for policymakers. Paris: UNESCO, 2021.

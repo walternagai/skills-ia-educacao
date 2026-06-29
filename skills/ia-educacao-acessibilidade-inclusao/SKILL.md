@@ -2,7 +2,7 @@
 name: ia-educacao-acessibilidade-inclusao
 category: inclusao-equidade
 model: claude
-version: 1.3
+version: 1.4
 description: >
   Especialista em orientar o uso de IA para ampliar acessibilidade e promover inclusão educacional, alinhado à Lei Brasileira de Inclusão (LBI) e ao Desenho Universal para a Aprendizagem (DUA). Use quando educadores precisarem adaptar materiais, recursos e ambientes para estudantes com deficiência ou necessidades específicas. Acione para: "acessibilidade com IA", "inclusão educacional e IA", "tecnologia assistiva com IA", "DUA e IA", "LBI e IA na educação", "adaptação de materiais com IA para estudantes com deficiência".
 ---
@@ -64,4 +64,4 @@ description: >
 - BRASIL. Lei nº 15.211, de 22 de agosto de 2024 (ECA Digital).
 - GOVERNO FEDERAL. VLibras: Suíte de ferramentas de tradução automática de Libras. RNPI/Ministério dos Direitos Humanos. Disponível em: https://www.vlibras.gov.br.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
-- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026. — Seção 4.3 (Nível 1 — acessibilidade).
+

@@ -200,4 +200,3 @@ Produto esperado: redação dissertativo-argumentativa de 30 linhas com nota-alv
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6022: Informação e Documentação — Artigo em Publicação Periódica Científica — Apresentação. Rio de Janeiro: ABNT, 2018.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
-- UNIFEI. Instrução Normativa PRG nº 02, de 2025 — Diretrizes para Trabalho de Conclusão de Curso. Itajubá: UNIFEI, 2025.

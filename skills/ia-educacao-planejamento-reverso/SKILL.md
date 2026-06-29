@@ -175,7 +175,5 @@ Docente tem ementa antiga centrada em tópicos; quer reformular com Planejamento
 - WIGGINS, G.; McTIGHE, J. The Understanding by Design Guide to Creating High-Quality Units. Alexandria, VA: ASCD, 2011.
 - BIGGS, J.; TANG, C. Teaching for Quality Learning at University. 4. ed. Berkshire: McGraw-Hill, 2011. [Alinhamento construtivo]
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seções 4.1 (Objetivos de Aprendizagem) e 4.2 (Avaliação)
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
-- UNIFEI. IN PRG nº 01/2025 — Diretrizes para Projeto Pedagógico de Curso. Itajubá: UNIFEI, 2025.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 - FINK, L. D. Creating Significant Learning Experiences: An Integrated Approach to Designing College Courses. 2. ed. San Francisco: Jossey-Bass, 2013.

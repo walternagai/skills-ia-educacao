@@ -2,7 +2,7 @@
 name: ia-educacao-feedback
 category: ferramentas-praticas
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista em design e escala de feedback formativo educacional com IA generativa. Orienta docentes a construir feedback específico, acionável e centrado no aprendizado — usando IA para ampliar o alcance sem perder qualidade — e a ensinar estudantes a dar e receber feedback por pares. Acione para: "como dar feedback com IA", "feedback formativo", "feedback em escala", "feedback por pares", "como melhorar o feedback aos alunos", "IA para corrigir trabalhos", "comentários em redações", "feed forward", "feedback eficaz", "rubrica de feedback".
 ---
@@ -139,4 +139,4 @@ Turma de 28 estudantes do curso Técnico em Informática do IFMG entrega projeto
 - BLACK, P.; WILIAM, D. Assessment and Classroom Learning. Assessment in Education, v. 5, n. 1, p. 7–74, 1998.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
+

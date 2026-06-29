@@ -37,7 +37,7 @@ description: >
 5. **Estabelecer compromissos institucionais** explícitos — código de ética, política de uso, comitê de supervisão, canais de denúncia
 6. **Mapear stakeholders afetados** por cada decisão de IA educacional — identificar estudantes, famílias, docentes, gestores, fornecedores e comunidade, mapeando interesses potencialmente conflitantes e responsabilidades de cada ator
 7. **Promover cultura ética** contínua na comunidade escolar — formação, discussão, revisão periódica dos compromissos
-8. **Adotar a Escala AIAS como instrumento de honestidade acadêmica** — a transparência sobre o nível de uso de IA em cada avaliação é uma prática ética concreta e imediata; a ausência de declaração de nível cria zona cinzenta que favorece infrações não intencionais; o Guia AIAS-UNIFEI operacionaliza o princípio ético de transparência do Referencial MEC (2026) no contexto específico das avaliações acadêmicas
+8. **Adotar a Escala AIAS como instrumento de honestidade acadêmica** — a transparência sobre o nível de uso de IA em cada avaliação é uma prática ética concreta e imediata; a ausência de declaração de nível cria zona cinzenta que favorece infrações não intencionais; a escala AIAS operacionaliza o princípio ético de transparência do Referencial MEC (2026) no contexto específico das avaliações acadêmicas
 
 ## Formato de Saída
 - Template de código de ética para IA educacional
@@ -77,4 +77,3 @@ description: >
 - BRASIL. Decreto nº 11.854, de 26 de dezembro de 2023 — Política Nacional de Inteligência Artificial (PNAIA).
 - BUOLAMWINI, J.; GEBRU, T. Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. In: FAT* Conference, 2018.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
-- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026. — Capítulo 10 (Considerações Éticas e Legais).

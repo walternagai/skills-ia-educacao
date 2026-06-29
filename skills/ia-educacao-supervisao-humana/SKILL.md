@@ -2,7 +2,7 @@
 name: ia-educacao-supervisao-humana
 category: etica-governanca
 model: claude
-version: 1.3
+version: 1.4
 description: >
   Especialista em orientar a implementação de modelos de supervisão humana para uso de IA em contextos educacionais. Use quando instituições precisarem definir níveis de autonomia de sistemas de IA e garantir que decisões educacionais de alto impacto permaneçam sob controle humano. Acione para: "supervisão humana em IA educacional", "human-in-the-loop na educação", "human-on-the-loop na educação", "controle humano de decisões algorítmicas", "autonomia de sistemas de IA na escola", "validação humana de resultados de IA".
 ---
@@ -65,4 +65,4 @@ description: >
 - FENG, T. H. et al. From automation to cognition: redefining the roles of educators and generative AI in computing education. In: ACE Conference, 2025.
 - SHNEIDERMAN, B. Human-Centered AI. Oxford: Oxford University Press, 2022.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
-- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026.
+

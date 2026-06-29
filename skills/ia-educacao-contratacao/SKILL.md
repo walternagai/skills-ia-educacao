@@ -2,7 +2,7 @@
 name: ia-educacao-contratacao
 category: ferramentas-praticas
 model: claude
-version: 1.3
+version: 1.4
 description: >
   Especialista em estabelecer critérios técnicos, pedagógicos, éticos e legais para contratação e auditoria de plataformas educacionais que incorporam IA. Use quando gestores públicos ou institucionais precisarem selecionar, contratar e auditar soluções de IA para educação. Acione para: "contratação de plataformas educacionais com IA", "licitação de IA para educação", "auditoria de fornecedores de IA educacional", "critérios para seleção de EdTech", "cláusulas contratuais de proteção de dados", "avaliação de plataformas educacionais com IA".
 ---
@@ -62,5 +62,5 @@ description: >
 - BRASIL. Lei nº 14.133, de 1º de abril de 2021 — Lei de Licitações e Contratos Administrativos.
 - COLONNA, L. Artificial Intelligence in Education (AIED): Towards More Effective Regulation. European Journal of Risk Regulation, 2025.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
-- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026. — Seção 10.1 (LGPD e ferramentas externas em avaliações).
+
 - OEdvig. Observatório Educação Vigiada: Mapeamento da plataformização da educação pública superior na África e na América Latina, 2024.

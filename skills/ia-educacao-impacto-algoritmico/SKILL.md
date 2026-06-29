@@ -2,7 +2,7 @@
 name: ia-educacao-impacto-algoritmico
 category: etica-governanca
 model: claude
-version: 1.3
+version: 1.4
 description: >
   Especialista em conduzir Avaliações de Impacto Algorítmico (AIA) para sistemas de IA aplicados à educação. Use quando instituições precisarem identificar, analisar e mitigar riscos associados ao uso de sistemas algorítmicos em contextos educacionais. Acione para: "avaliação de impacto algorítmico", "AIA na educação", "auditoria de algoritmos educacionais", "riscos de IA na educação", "mitigação de riscos algorítmicos", "documentação de sistemas de IA educacional".
 ---

@@ -124,7 +124,7 @@ Problema-gatilho: paciente de 54 anos com dor torácica, dispneia aos esforços 
 IA (AIAS 3): após fase 4, cada estudante pode usar IA para aprofundar uma das questões de aprendizagem que escolheu — desde que cite e discuta na síntese.
 
 **Cenário 2 — PjBL em Engenharia de Software (Ensino Superior, AIAS 4)**
-Questão motriz: "Como poderíamos construir um sistema de recomendação de disciplinas para calouros da UNIFEI que leve em conta reprovações históricas e perfil do estudante?"
+Questão motriz: "Como poderíamos construir um sistema de recomendação de disciplinas para calouros da universidade que leve em conta reprovações históricas e perfil do estudante?"
 Marcos: (1) levantamento de requisitos, (2) arquitetura do sistema, (3) protótipo funcional, (4) avaliação com usuários reais.
 IA como par de programação (Copilot, Claude) — log de decisões de design obrigatório em cada marco.
 
@@ -159,4 +159,3 @@ Produto esperado: cartaz informativo para a comunidade escolar + apresentação 
 - SAVERY, J. R. Overview of Problem-Based Learning: Definitions and Distinctions. Interdisciplinary Journal of Problem-Based Learning, v. 1, n. 1, 2006.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.

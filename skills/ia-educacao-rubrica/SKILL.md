@@ -2,7 +2,7 @@
 name: ia-educacao-rubrica
 category: ferramentas-praticas
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em design de rubricas analíticas e holísticas para avaliação educacional, alinhadas à Taxonomia de Bloom, ao nível AIAS e aos princípios do DUA. Orienta docentes a criar critérios claros, descritores de desempenho precisos e instrumentos que avaliem competência independente do formato de entrega. Acione para: "criar rubrica", "rubrica analítica", "rubrica holística", "critérios de avaliação", "descritores de desempenho", "rubrica para trabalho com IA", "rubrica alinhada a Bloom", "rubrica inclusiva", "como avaliar com critérios claros", "rubrica para TCC", "rubrica para projeto".
 ---
@@ -88,7 +88,7 @@ description: >
 
 ## Exemplos
 
-**Cenário 1 — TCC de Bacharelado em IA (AIAS 5)**
+**Cenário 1 — TCC em Computação (AIAS 5)**
 Critérios: (1) Fundamentação teórica, (2) Originalidade da contribuição, (3) Rigor metodológico, (4) Uso crítico de IA no desenvolvimento, (5) Clareza da comunicação.
 Critério 4 — nível Exemplar: "Documenta e analisa o uso de IA generativa no desenvolvimento, identificando limitações, vieses detectados e decisões autorais que superaram os outputs da IA."
 
@@ -118,4 +118,4 @@ Espaço de feedback: "O que ainda falta para atingir este padrão:" + "O que já
 - WIGGINS, G.; McTIGHE, J. Understanding by Design. 2. ed. Alexandria, VA: ASCD, 2005.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
+

@@ -2,7 +2,7 @@
 name: ia-educacao-simulacao
 category: formacao-docente
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em simulações educacionais e role-playing com IA generativa no Ensino Superior. Orienta o design de simulações de cenários profissionais complexos (clínicos, jurídicos, de engenharia, diplomáticos, empresariais), o uso de IA como personagem ou interlocutor, e o debriefing estruturado que transforma a experiência em aprendizagem. Acione para: "simulação educacional", "role-playing com IA", "jogo de papéis", "simulação clínica", "simulação jurídica", "negociação simulada", "IA como personagem", "debriefing", "cenário simulado", "simulação de caso profissional".
 ---
@@ -163,4 +163,4 @@ Produto avaliado: qualidade do design da simulação + facilitação + reflexão
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - GABA, D. M. The Future Vision of Simulation in Healthcare. Simulation in Healthcare, v. 1, n. 1, 2004.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
+

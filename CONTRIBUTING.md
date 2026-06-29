@@ -1,6 +1,6 @@
 # Como Contribuir
 
-Este repositório é um acervo institucional da UNIFEI. Contribuições são bem-vindas por meio de pull requests no GitHub.
+Este repositório é um acervo de skills. Contribuições são bem-vindas por meio de pull requests no GitHub.
 
 ## Criando uma nova skill
 

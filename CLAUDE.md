@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Sobre o repositório
 
-Este repositório é um **acervo documental e de skills** para orientar a integração responsável de Inteligência Artificial na Educação, com foco na UNIFEI (Universidade Federal de Itajubá) e alinhado ao Referencial do MEC (2026).
+Este repositório é um **acervo documental e de skills** para orientar a integração responsável de Inteligência Artificial na Educação, alinhado ao Referencial do MEC (2026).
 
 Não há código-fonte, testes ou build system. O conteúdo é composto por:
 
-- **PDFs normativos** — Normas de Graduação da UNIFEI (Resoluções CEPEAd, INs PRG), Norma Disciplinar, Regimentos, PPC do Bacharelado em IA, Referencial MEC para IA na Educação, artigos acadêmicos sobre AIAS
-- **Skills Claude** (`skills/*/SKILL.md`) — 54 skills temáticas em formato YAML+Markdown para uso no Claude Code; o conteúdo do Guia AIAS-UNIFEI e da Rubrica TCC-BIA foi distribuído para as skills relevantes e os arquivos Markdown originais foram removidos
+- **PDFs normativos** — Referencial MEC para IA na Educação, artigos acadêmicos sobre AIAS
+- **Skills Claude** (`skills/*/SKILL.md`) — 54 skills temáticas em formato YAML+Markdown para uso no Claude Code
 
 ## Arquitetura dos documentos
 
@@ -75,7 +75,7 @@ done
 
 ## A Escala AIAS e seus 5 níveis
 
-A escala **AIAS (AI Assessment Scale)** — adaptada ao contexto UNIFEI — classifica o nível de uso de IA em avaliações acadêmicas. A escala é **não hierárquica** (nenhum nível é superior a outro) e **cumulativa** (níveis superiores permitem usos dos inferiores, salvo indicação contrária):
+A escala **AIAS (AI Assessment Scale)** — baseada no trabalho de Perkins, Furze, Roe e MacVaugh (2024, 2025) — classifica o nível de uso de IA em avaliações acadêmicas. A escala é **não hierárquica** (nenhum nível é superior a outro) e **cumulativa** (níveis superiores permitem usos dos inferiores, salvo indicação contrária):
 
 | Nível | Nome canônico | IA permitida | Produto final |
 |-------|---------------|-------------|---------------|
@@ -86,15 +86,6 @@ A escala **AIAS (AI Assessment Scale)** — adaptada ao contexto UNIFEI — clas
 | 5 | Exploração de IA | Co-criação e inovação | Co-autoria estudante + IA |
 
 Qualquer referência a esses níveis no repositório usa exatamente esses nomes e números — inclusive nos campos `Workflow` e `Formato de Saída` das skills.
-
-## Referências normativas centrais
-
-Os documentos e skills deste repositório derivam autoridade de:
-- **Referencial MEC (2026)** — `REFERENCIAL PARA DESENVOLVIMENTO E USO RESPONSÁVEIS DE INTELIGÊNCIA ARTIFICIAL NA EDUCAÇÃO-pt.pdf`
-- **Resolução CEPEAd nº 17/2025** — Norma de Graduação da UNIFEI
-- **IN PRG nº 01/2025** — Diretrizes para PPC
-- **IN PRG nº 02/2025** — Diretrizes para TCC
-- **PPC BIA (maio/2026)** — `ppc_bia_maio_2026.pdf`
 
 ## Convenções de edição
 

@@ -2,7 +2,7 @@
 name: ia-educacao-debate
 category: formacao-docente
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista em debate estruturado e argumentação acadêmica com IA no Ensino Superior. Orienta o design e a facilitação de debates (Oxford, Fishbowl, Seminário Socrático), o uso de IA como advogado do diabo e gerador de contra-argumentos, e a avaliação da qualidade argumentativa. Acione para: "debate estruturado", "debate em sala", "seminário socrático", "fishbowl", "Oxford debate", "argumentação acadêmica", "IA como advogado do diabo", "como avaliar argumento", "contra-argumentação", "falácias argumentativas", "discussão filosófica com IA".
 ---
@@ -146,7 +146,7 @@ IA analisa a transcrição (ou resumo) do debate e identifica: (1) os argumentos
 
 ## Exemplos
 
-**Cenário 1 — Bacharelado em IA (Ensino Superior, AIAS 3)**
+**Cenário 1 — Bacharelado em Computação (Ensino Superior, AIAS 3)**
 Questão: "Sistemas de IA devem ter direitos legais?"
 Formato: Oxford Debate (grupos de 3).
 Preparação: cada grupo usa IA para mapear os contra-argumentos mais fortes do lado oposto e prepara réplicas.
@@ -186,4 +186,4 @@ Produto esperado: argumento escrito individual de 15 linhas entregue após o deb
 - PAUL, R.; ELDER, L. The Miniature Guide to Critical Thinking: Concepts and Tools. Dillon Beach, CA: Foundation for Critical Thinking, 2008.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
+

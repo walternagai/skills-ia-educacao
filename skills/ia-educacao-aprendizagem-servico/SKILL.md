@@ -56,7 +56,7 @@ Se o conteúdo curricular não é enriquecido pelo serviço → é estágio ou c
 2. Validar que a necessidade é genuína e que o serviço dos estudantes tem potencial de impacto
 3. Definir conjuntamente: o que os estudantes vão fazer, por quanto tempo, com quais recursos
 4. Combinar forma de feedback contínuo: o parceiro avalia o processo, não só o produto final
-5. Formalizar com Termo de Cooperação (exigência da UNIFEI para projetos de extensão)
+5. Formalizar com Termo de Cooperação (exigência institucional para projetos de extensão)
 
 **IA no diagnóstico comunitário:**
 - Análise de dados públicos (IBGE, Atlas Brasil, DATASUS) para caracterizar o contexto da comunidade
@@ -76,7 +76,7 @@ Se o conteúdo curricular não é enriquecido pelo serviço → é estágio ou c
 
 | Área | Serviço possível | Papel da IA |
 |------|-----------------|-------------|
-| Computação / BIA | Desenvolvimento de ferramenta digital para o parceiro | Copilot, Claude para desenvolvimento (AIAS 4); estudante documenta decisões de design |
+| Computação | Desenvolvimento de ferramenta digital para o parceiro | Copilot, Claude para desenvolvimento (AIAS 4); estudante documenta decisões de design |
 | Engenharia Ambiental | Análise de qualidade de água, solo ou ar em área comunitária | IA analisa dados coletados; estudante interpreta e comunica à comunidade (AIAS 3) |
 | Comunicação / Letras | Produção de materiais acessíveis para a população do parceiro | IA gera rascunhos adaptados ao público; estudante edita e valida com o parceiro (AIAS 3) |
 | Saúde / Nutrição | Diagnóstico nutricional comunitário e plano de orientação | IA processa dados de triagem; estudante elabora recomendações individualizadas (AIAS 3) |
@@ -129,8 +129,8 @@ Para atender à Resolução CNE/CES 7/2018 (10% da carga horária em extensão):
 - Projeto interdisciplinar com 3 disciplinas de 60h = 18h de extensão compartilhadas
 - A extensão deve estar no PPC do curso — não é atividade complementar
 
-**Documentação obrigatória na UNIFEI:**
-- Registro do projeto no sistema de extensão (SEE/UNIFEI)
+**Documentação obrigatória:**
+- Registro do projeto no sistema de extensão da instituição
 - Termo de Cooperação com o parceiro
 - Relatório de atividades (parcial + final)
 - Certificação de participação para estudantes
@@ -144,7 +144,7 @@ Para atender à Resolução CNE/CES 7/2018 (10% da carga horária em extensão):
 
 ## Exemplos
 
-**Cenário 1 — Bacharelado em IA / BIA (UNIFEI, AIAS 4)**
+**Cenário 1 — Bacharelado em Computação (AIAS 4)**
 Parceiro: cooperativa agrícola regional que quer otimizar a logística de distribuição.
 Serviço: equipe de 4 estudantes desenvolve modelo de otimização de rotas com Python/OR-Tools, com IA como par de desenvolvimento.
 Conexão curricular: Pesquisa Operacional + disciplina de IA.
@@ -155,7 +155,7 @@ Parceiro: secretaria municipal de saúde — programa de vigilância nutricional
 Serviço: análise do perfil nutricional de 200 famílias atendidas pelo programa; produção de material educativo adaptado ao público de baixa escolaridade.
 IA: processa as planilhas de triagem; estudantes interpretam e criam o material (texto + infográfico revisado com o parceiro).
 
-**Cenário 3 — Direito (UNIFEI, AIAS 3)**
+**Cenário 3 — Direito (AIAS 3)**
 Parceiro: CRAS municipal — demandas jurídicas simples de populações vulneráveis.
 Serviço: triagem jurídica supervisionada + produção de 6 cartilhas sobre direitos trabalhistas, previdenciários e de consumidor em linguagem simples.
 IA: gera rascunhos de cartilhas; estudantes validam juridicamente e adaptam com feedback do CRAS.
@@ -170,7 +170,7 @@ Produto esperado: 4 materiais revisados e aprovados pela UBS, disponibilizados n
 ## Limitações
 - Parceiros comunitários têm ritmos diferentes da universidade — atrasos na entrega de dados, mudanças de interlocutor, prioridades cambiantes são comuns e fazem parte do aprendizado sobre trabalho em contextos reais
 - Projetos com IA em comunidades de baixa conectividade precisam de plano B analógico
-- A curricularização da extensão na UNIFEI requer aprovação no PPC do curso — disciplinas que queiram adotar a metodologia precisam adequar o plano de ensino com antecedência
+- A curricularização da extensão requer aprovação no PPC do curso — disciplinas que queiram adotar a metodologia precisam adequar o plano de ensino com antecedência
 - Reflexão superficial ("foi uma experiência incrível") não constitui aprendizagem disciplinar — o docente precisa treinar os estudantes no uso do protocolo DEAL nas primeiras semanas
 
 ## Dependências
@@ -184,5 +184,4 @@ Produto esperado: 4 materiais revisados e aprovados pela UBS, disponibilizados n
 - EYLER, J.; GILES, D. E. Where's the Learning in Service-Learning? San Francisco: Jossey-Bass, 1999.
 - JACOBY, B. (Ed.). Service-Learning in Higher Education: Concepts and Practices. San Francisco: Jossey-Bass, 1996.
 - BRASIL. Conselho Nacional de Educação. Resolução CNE/CES nº 7, de 18 de dezembro de 2018 — Curricularização da Extensão. Brasília: MEC, 2018.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.

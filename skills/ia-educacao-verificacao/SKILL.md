@@ -12,7 +12,7 @@ description: >
 ## Princípios
 - Docentes têm responsabilidade epistêmica sobre o conteúdo que aplicam em sala — IA gera o plausível, não necessariamente o correto
 - Verificação sistemática é mais confiável que revisão impressionista: ler com atenção não é o mesmo que verificar afirmação por afirmação
-- CoVe transforma a IA de "oráculo" em "assistente que precisa de supervisão qualificada" — postura alinhada ao Referencial MEC (2026) e à Resolução CEPEAd nº 17/2025
+- CoVe transforma a IA de "oráculo" em "assistente que precisa de supervisão qualificada" — postura alinhada ao Referencial MEC (2026) e às normas institucionais de graduação vigentes
 - A verificação independente (Factored CoVe) elimina viés de confirmação: cada afirmação é avaliada isoladamente, sem contaminação pela leitura do texto completo
 - O esforço de verificação deve ser proporcional ao impacto: prova somativa exige mais rigor do que rascunho formativo
 
@@ -138,6 +138,5 @@ Produto esperado: resumo revisado + tabela de verificação (afirmação / fonte
 ## Referências
 - DHULIAWALA, S. et al. Chain-of-Verification Reduces Hallucination in Large Language Models. arXiv:2309.11495, 2023. Disponível em: https://arxiv.org/abs/2309.11495
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seções 3.4 (Supervisão Humana) e 4.3 (Uso em Avaliação)
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.

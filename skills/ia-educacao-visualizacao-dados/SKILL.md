@@ -2,7 +2,7 @@
 name: ia-educacao-visualizacao-dados
 category: ferramentas-praticas
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista em visualização de dados e storytelling com dados para contextos educacionais STHEM (Science, Technology, Humanities, Engineering, Math), com IA como ferramenta de geração e revisão de visualizações. Orienta escolha do gráfico adequado, detecção de visualizações enganosas, comunicação de incerteza e narrativa com dados. Acione para: "visualização de dados", "gráfico para apresentação", "como escolher o tipo de gráfico", "storytelling com dados", "dashboard educacional", "gráfico com IA", "Python matplotlib", "dados enganosos", "como comunicar resultados", "análise exploratória visual", "plotar dados com IA".
 ---
@@ -201,4 +201,4 @@ Produto esperado: infográfico de uma página com 3 gráficos, título-afirmaç�
 - CAIRO, A. How Charts Lie: Getting Smarter about Visual Information. New York: Norton, 2019.
 - WILKE, C. O. Fundamentals of Data Visualization. Sebastopol: O'Reilly, 2019. [Disponível em: clauswilke.com/dataviz]
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
+

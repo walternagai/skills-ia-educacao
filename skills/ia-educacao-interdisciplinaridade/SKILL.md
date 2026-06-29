@@ -136,8 +136,8 @@ Docente A descreve o problema da perspectiva de sua disciplina; docente B idem. 
 
 ## Exemplos
 
-**Cenário 1 — Bacharelado em IA + Direito (UNIFEI/Parceira, AIAS 4)**
-Problema: sistema de crédito por IA para microempresários informais apresenta taxa de rejeição 3x maior para MEIs de bairros periféricos. Equipe mista (4 de BIA + 2 de Direito) deve diagnosticar o viés e propor redesign.
+**Cenário 1 — Bacharelado em Computação + Direito (AIAS 4)**
+Problema: sistema de crédito por IA para microempresários informais apresenta taxa de rejeição 3x maior para MEIs de bairros periféricos. Equipe mista (4 de Computação + 2 de Direito) deve diagnosticar o viés e propor redesign.
 Integração: a análise jurídica (discriminação indireta, LGPD) define o que é problema; a análise técnica (dados, features) define o que é detectável e corrigível; as duas perspectivas se restringem mutuamente.
 
 **Cenário 2 — Engenharia + Humanidades (Ensino Superior)**
@@ -165,4 +165,3 @@ Produto: modelo calibrado + análise das limitações do modelo frente à comple
 - BOIX MANSILLA, V.; GARDNER, H. Assessing the Quality of Students' Work at the Boundaries of Disciplines. Teachers College Record, v. 105, n. 5, p. 869–903, 2003.
 - NIKITINA, S. Three Strategies for Interdisciplinary Teaching: Contextualizing, Conceptualizing, and Problem-Centering. Journal of Curriculum Studies, v. 38, n. 3, p. 251–271, 2006.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
-- UNIFEI. Instrução Normativa PRG nº 01, de 2025 — Diretrizes para Projeto Pedagógico de Curso. Itajubá: UNIFEI, 2025.

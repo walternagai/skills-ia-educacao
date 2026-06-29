@@ -2,7 +2,7 @@
 name: ia-educacao-facilitacao
 category: formacao-docente
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista em facilitação de discussões e atividades colaborativas em sala de aula do Ensino Superior, com IA como apoio ao docente-facilitador. Orienta como conduzir discussões produtivas, gerenciar silêncio e dominância de fala, usar perguntas socráticas, síntese em tempo real e IA para enriquecer a facilitação sem substituir o julgamento humano. Acione para: "como facilitar uma discussão", "gestão de participação", "estudante que não fala", "estudante que domina a discussão", "perguntas para conduzir aula", "técnica de facilitação", "discussão produtiva", "como não deixar a aula virar monólogo", "facilitação com IA", "facilitação de grupo".
 ---
@@ -176,4 +176,4 @@ IA: após o debate, docente projeta síntese das tensões não resolvidas — po
 - LYMAN, F. The Responsive Classroom Discussion. In: ANDERSON, A. S. (Ed.). Mainstreaming Digest. College Park: University of Maryland Press, 1981. [Think-Pair-Share]
 - BROOKFIELD, S. D.; PRESKILL, S. Discussion as a Way of Teaching: Tools and Techniques for Democratic Classrooms. 2. ed. San Francisco: Jossey-Bass, 2005.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
+

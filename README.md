@@ -1,16 +1,16 @@
-# Skills IA & Educação — UNIFEI
+# Skills IA & Educação
 
-Acervo de skills para o Claude Code que orientam a integração responsável de Inteligência Artificial na Educação, com foco na UNIFEI (Universidade Federal de Itajubá) e alinhado ao **Referencial MEC para IA na Educação (2026)**.
+Acervo de skills que orientam a integração responsável de Inteligência Artificial na Educação, alinhado ao **Referencial MEC para IA na Educação (2026)**.
 
 ## O que há neste repositório
 
 - **54 skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code
-- **PDFs normativos** (`raw-pdfs/`) — Referencial MEC, Resoluções CEPEAd, INs PRG, PPC BIA, artigos AIAS originais
+- **PDFs normativos** (`raw-pdfs/`) — Referencial MEC, artigos AIAS originais
 - **CLAUDE.md** — instruções de contexto para instâncias do Claude Code neste repositório
 
-## A Escala AIAS-UNIFEI
+## A Escala AIAS
 
-A escala **AIAS (AI Assessment Scale)**, adaptada ao contexto institucional da UNIFEI a partir do trabalho de Perkins, Furze, Roe e MacVaugh (2024, 2025), classifica o nível de uso de IA em avaliações acadêmicas:
+A escala **AIAS (AI Assessment Scale)**, baseada no trabalho de Perkins, Furze, Roe e MacVaugh (2024, 2025), classifica o nível de uso de IA em avaliações acadêmicas:
 
 | Nível | Nome | IA permitida | Produto final |
 |-------|------|-------------|---------------|
@@ -20,7 +20,7 @@ A escala **AIAS (AI Assessment Scale)**, adaptada ao contexto institucional da U
 | 4 | IA Integral | Uso estratégico e abrangente | Dirigido pelo estudante com IA |
 | 5 | Exploração de IA | Co-criação e inovação | Co-autoria estudante + IA |
 
-A escala é **não hierárquica** (nenhum nível é superior a outro) e **cumulativa** (níveis superiores permitem usos dos inferiores, salvo indicação contrária). O nível deve ser declarado explicitamente no plano de ensino e no enunciado de cada atividade avaliativa, em conformidade com a Resolução CEPEAd nº 17/2025.
+A escala é **não hierárquica** (nenhum nível é superior a outro) e **cumulativa** (níveis superiores permitem usos dos inferiores, salvo indicação contrária). O nível deve ser declarado explicitamente no plano de ensino e no enunciado de cada atividade avaliativa.
 
 ## Como usar as skills
 
@@ -50,7 +50,7 @@ Após instalada, chame a skill pelo nome:
 
 | Skill | Descrição |
 |-------|-----------|
-| `/aias-consultant` | Consultora especialista na Escala AIAS-UNIFEI: diagnóstico de nível, redesenho de atividades, enunciados com declaração AIAS, rubricas alinhadas |
+| `/aias-consultant` | Consultora especialista na Escala AIAS: diagnóstico de nível, redesenho de atividades, enunciados com declaração AIAS, rubricas alinhadas |
 
 ### Níveis de ensino
 
@@ -160,12 +160,8 @@ description: >
 ## Referências
 ```
 
-## Referências normativas
+## Referências
 
 - **Referencial MEC (2026)** — Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação
-- **Resolução CEPEAd nº 17/2025** — Norma de Graduação da UNIFEI
-- **IN PRG nº 01/2025** — Diretrizes para Projeto Pedagógico de Curso
-- **IN PRG nº 02/2025** — Diretrizes para Trabalho de Conclusão de Curso
-- **PPC BIA (maio/2026)** — Projeto Pedagógico do Bacharelado em Inteligência Artificial
 - **PERKINS et al. (2024)** — The Artificial Intelligence Assessment Scale (AIAS). *Journal of University Teaching and Learning Practice*, v. 21, n. 6.
 - **PERKINS et al. (2025)** — Reimagining the AIAS. *Journal of University Teaching and Learning Practice*, v. 22, n. 7.

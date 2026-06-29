@@ -139,7 +139,7 @@ Presencial (AIAS 2): grupos de 3 resolvem 2 questões do ENEM (2019 e 2022) envo
 Produto esperado: resolução comentada apresentada oralmente à turma — o grupo explica o raciocínio, não apenas a resposta numérica.
 
 ## Limitações
-- Sala invertida aumenta a carga de preparação do estudante fora de sala — funciona mal em turmas com alta carga de trabalho ou estudantes que trabalham em tempo integral (contextualizar com a realidade da UNIFEI)
+- Sala invertida aumenta a carga de preparação do estudante fora de sala — funciona mal em turmas com alta carga de trabalho ou estudantes que trabalham em tempo integral
 - Materiais de pré precisam ser produzidos com antecedência — não é possível improvisar o assíncrono como se improvisa uma aula expositiva
 - O modelo falha se o presencial não for genuinamente diferente de uma aula expositiva — o risco de fazer "sala invertida de nome" é real
 - Produção de vídeo/áudio de qualidade tem curva de aprendizagem — começar com guias de leitura e quizzes antes de investir em vídeo
@@ -158,4 +158,3 @@ Produto esperado: resolução comentada apresentada oralmente à turma — o gru
 - BISHOP, J. L.; VERLEGER, M. A. The Flipped Classroom: A Survey of the Research. ASEE Annual Conference Proceedings, 2013.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.

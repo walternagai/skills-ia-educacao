@@ -4,7 +4,7 @@ category: ferramentas-praticas
 model: claude
 version: 1.0
 description: >
-  Especialista em pesquisa acadêmica e científica com IA no Ensino Superior. Orienta estudantes e docentes no processo completo: formulação de problema de pesquisa, revisão sistemática com IA, coleta e análise de dados, escrita científica e integridade acadêmica em TCCs, dissertações e artigos. Alinhado às diretrizes IN PRG nº 02/2025 (TCC-UNIFEI) e ao Referencial MEC 2026. Acione para: "pesquisa com IA", "revisão sistemática", "TCC com IA", "como usar IA no TCC", "integridade na pesquisa", "revisão de literatura com IA", "pergunta de pesquisa", "metodologia de pesquisa", "artigo científico com IA", "análise de dados com IA".
+  Especialista em pesquisa acadêmica e científica com IA no Ensino Superior. Orienta estudantes e docentes no processo completo: formulação de problema de pesquisa, revisão sistemática com IA, coleta e análise de dados, escrita científica e integridade acadêmica em TCCs, dissertações e artigos. Alinhado ao Referencial MEC 2026. Acione para: "pesquisa com IA", "revisão sistemática", "TCC com IA", "como usar IA no TCC", "integridade na pesquisa", "revisão de literatura com IA", "pergunta de pesquisa", "metodologia de pesquisa", "artigo científico com IA", "análise de dados com IA".
 ---
 
 # Pesquisa Acadêmica e Científica com IA
@@ -21,7 +21,7 @@ description: >
 - Revisão sistemática ou mapeamento sistemático com assistência de IA
 - Análise qualitativa ou quantitativa de dados com IA como ferramenta
 - Escrita de seções do trabalho acadêmico (revisão de literatura, metodologia, discussão) com IA
-- Definição da política de uso de IA no TCC ou artigo, alinhada à IN PRG nº 02/2025 e ao AIAS
+- Definição da política de uso de IA no TCC ou artigo, alinhada às diretrizes institucionais e ao AIAS
 - Verificação de integridade: detectar alucinações, referências inventadas, dados imprecisos
 
 ## Workflow
@@ -106,7 +106,7 @@ Nunca citar uma referência que a IA gerou sem verificar em fonte primária (Goo
 
 ### 5. Fase 5 — Integridade acadêmica e declaração de uso de IA
 
-**Política UNIFEI — IN PRG nº 02/2025:**
+**Política institucional de TCC:**
 - TCC deve declarar explicitamente se IA foi ou não utilizada
 - Declaração de uso deve especificar: quais ferramentas, em quais fases, com qual propósito
 - Orientador é co-responsável pela adequação do uso declarado
@@ -154,7 +154,7 @@ exclusiva do pesquisador, com supervisão do orientador.
 
 ## Exemplos
 
-**Cenário 1 — TCC de Bacharelado em IA (UNIFEI, AIAS 4)**
+**Cenário 1 — TCC em Ciência da Computação (AIAS 4)**
 Problema: modelo preditivo de evasão estudantil com variáveis socioeconômicas.
 IA usada em: coleta e limpeza de dados (Python + Claude para depuração de código), análise exploratória (visualizações), revisão do estado da arte (Elicit + Semantic Scholar).
 Declarado: AIAS 4; IA como ferramenta de desenvolvimento; decisões de design do modelo são do estudante com supervisão do orientador.
@@ -172,7 +172,7 @@ Problema de integridade detectado e corrigido: IA havia gerado três referência
 - IA não substitui o orientador: julgamentos sobre relevância, originalidade e contribuição científica requerem especialista humano com conhecimento do campo
 - Ferramentas especializadas (Elicit, Semantic Scholar) mudam rapidamente — verificar disponibilidade e funcionalidades atuais antes de usar
 - Análise qualitativa com IA tem baixa aceitação em algumas comunidades acadêmicas — verificar diretrizes do periódico/banca antes de declarar uso
-- TCC e dissertações têm regulamentações institucionais específicas — a IN PRG nº 02/2025 da UNIFEI é a referência normativa, não esta skill
+- TCC e dissertações têm regulamentações institucionais específicas — as diretrizes institucionais de TCC são a referência normativa, não esta skill
 
 ## Dependências
 - `ia-educacao-verificacao` — validação obrigatória de referências e afirmações factuais geradas por IA
@@ -182,7 +182,6 @@ Problema de integridade detectado e corrigido: IA havia gerado três referência
 - `aias-consultant` — definição do nível AIAS para o TCC e redação da declaração de uso
 
 ## Referências
-- UNIFEI. Instrução Normativa PRG nº 02, de 2025 — Diretrizes para Trabalho de Conclusão de Curso. Itajubá: UNIFEI, 2025.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
 - PAGE, M. J. et al. The PRISMA 2020 Statement: An Updated Guideline for Reporting Systematic Reviews. BMJ, v. 372, n. 71, 2021.
 - COMMITTEE ON PUBLICATION ETHICS (COPE). COPE Position Statement on AI and Authorship. London: COPE, 2023.

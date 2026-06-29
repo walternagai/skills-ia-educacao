@@ -22,7 +22,7 @@ description: >
 - Planejamento de infraestrutura, formação de pessoas e adaptação de processos
 - Monitoramento e aprimoramento contínuo de soluções de IA
 - Elaboração de planos estratégicos de transformação digital com IA
-- **Implementação institucional da Escala AIAS** — apoiar coordenadores de curso, NDEs e pró-reitorias na adoção da escala AIAS como política institucional de uso de IA em avaliações; planejar as fases de sensibilização, piloto, expansão e consolidação definidas no Guia AIAS-UNIFEI; garantir que o nível AIAS de cada atividade avaliativa conste dos planos de ensino, em conformidade com a Resolução CEPEAd nº 17/2025 e a IN PRG nº 01/2025
+- **Implementação institucional da Escala AIAS** — apoiar coordenadores de curso, NDEs e pró-reitorias na adoção da escala AIAS como política institucional de uso de IA em avaliações; planejar as fases de sensibilização, piloto, expansão e consolidação; garantir que o nível AIAS de cada atividade avaliativa conste dos planos de ensino, em conformidade com as normas institucionais de graduação vigentes
 
 ## Workflow
 1. **Mapear demandas educacionais** que podem ser apoiadas por IA — distinguir necessidades reais de pressões de mercado ou modismo tecnológico
@@ -66,6 +66,3 @@ description: >
 - CIEB. Guia EduTech: Como avaliar plataformas educacionais digitais? São Paulo: CIEB, 2023.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 - PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
-- UNIFEI. Guia de Implementação da Escala AIAS-UNIFEI. Itajubá: PRG/UNIFEI, 2026.
-- UNIFEI. Resolução CEPEAd nº 17, de 29 de dezembro de 2025 — Norma de Graduação. Itajubá: UNIFEI, 2025.
-- UNIFEI. Instrução Normativa PRG nº 01, de 03 de dezembro de 2025 — Diretrizes para PPC. Itajubá: UNIFEI, 2025.
