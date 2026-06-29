@@ -1,5 +1,5 @@
 ---
-name: ia-educacao-chain-of-draft
+name: ia-educacao-rascunho
 category: ferramentas-praticas
 model: claude
 version: 1.0

@@ -99,7 +99,7 @@ Após instalada, chame a skill pelo nome:
 | Skill | Descrição |
 |-------|-----------|
 | `/ia-educacao-avaliacao` | Redesenho de avaliações com a Escala AIAS |
-| `/ia-educacao-chain-of-draft` | Raciocínio conciso (CoD) em atividades, prompts de IA e feedback formativo |
+| `/ia-educacao-rascunho` | Raciocínio conciso (Chain of Draft) em atividades, prompts de IA e feedback formativo |
 | `/ia-educacao-personalizacao` | Plataformas adaptativas e STIs no contexto AIAS |
 | `/ia-educacao-sti` | Sistemas Tutoriais Inteligentes: integração e uso de dados |
 | `/ia-educacao-ia-desplugada` | Ensino de IA sem tecnologia (contextos sem infraestrutura) |
