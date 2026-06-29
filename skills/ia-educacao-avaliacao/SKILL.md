@@ -1,8 +1,8 @@
 ---
 name: ia-educacao-avaliacao
-category: formacao-docente
+category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em redesenhar instrumentos e processos de avaliação educacional considerando a presença da IA generativa. Use quando educadores precisarem repensar provas, trabalhos e atividades para garantir que avaliem competências genuinamente humanas — análise, síntese, criatividade, pensamento crítico. Acione para: "avaliação com IA", "redesenho de provas na era da IA", "avaliação formativa e IA", "rubricas para atividades com IA", "como avaliar quando os alunos usam IA", "instrumentos avaliativos e IA generativa".
 ---

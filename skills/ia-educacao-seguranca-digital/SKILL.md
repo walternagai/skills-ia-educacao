@@ -1,8 +1,8 @@
 ---
 name: ia-educacao-seguranca-digital
-category: formacao-docente
+category: etica-governanca
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em segurança digital, proteção de dados e bem-estar no uso educacional de IA, alinhado à LGPD, ECA Digital e diretrizes do MEC. Use quando educadores precisarem orientar estudantes sobre riscos digitais, proteger dados pessoais em plataformas educacionais e promover saúde digital. Acione para: "segurança digital na educação", "LGPD e IA educacional", "ECA Digital", "privacidade de dados de estudantes", "bem-estar digital com IA", "proteção de dados na escola", "vigilância algorítmica na educação".
 ---

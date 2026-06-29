@@ -1,8 +1,8 @@
 ---
 name: ia-educacao-integridade-academica
-category: formacao-docente
+category: etica-governanca
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em orientar instituições educacionais sobre integridade acadêmica na era da IA generativa. Use quando for necessário estabelecer diretrizes para uso ético de IA em trabalhos acadêmicos, prevenir plágio, proteger direitos autorais e redefinir práticas de avaliação. Acione para: "plágio com IA", "integridade acadêmica e IA", "direitos autorais na IA generativa", "política de uso de IA para estudantes", "citação de IA em trabalhos", "autoria e IA na educação".
 ---

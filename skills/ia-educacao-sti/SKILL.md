@@ -1,8 +1,8 @@
 ---
 name: ia-educacao-sti
-category: pratica-pedagogica
+category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em orientar educadores no uso pedagógico de Sistemas Tutoriais Inteligentes (STIs) em sala de aula. Use quando professores precisarem compreender como STIs funcionam, como integrá-los à prática docente e como interpretar dados gerados para planejar intervenções. Acione para: "sistemas tutoriais inteligentes", "STIs na educação", "tutores inteligentes com IA", "plataformas adaptativas de aprendizagem", "dados de STIs para intervenção pedagógica", "feedback em tempo real com IA".
 ---

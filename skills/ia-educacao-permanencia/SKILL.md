@@ -1,8 +1,8 @@
 ---
 name: ia-educacao-permanencia
-category: pratica-pedagogica
+category: inclusao-equidade
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em orientar instituições educacionais no uso de IA para prevenção de evasão e abandono escolar. Use quando gestores e equipes pedagógicas precisarem implementar sistemas de alerta antecipado baseados em análise de dados educacionais. Acione para: "prevenção de evasão com IA", "alerta precoce de abandono escolar", "permanência escolar com IA", "análise de dados para permanência", "sistemas de alerta na educação", "intervenção pedagógica preventiva com IA".
 ---

@@ -1,8 +1,8 @@
 ---
 name: ia-educacao-personalizacao
-category: pratica-pedagogica
+category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em orientar a implementação pedagógica de sistemas de personalização do ensino mediados por IA. Use quando educadores e gestores precisarem compreender como sistemas tutoriais inteligentes (STIs) e plataformas adaptativas podem apoiar percursos individualizados de aprendizagem, respeitando equidade e supervisão docente. Acione para: "personalização do ensino com IA", "aprendizagem adaptativa", "sistemas tutoriais inteligentes", "plataformas adaptativas na educação", "percursos individualizados com IA", "feedback personalizado com IA".
 ---

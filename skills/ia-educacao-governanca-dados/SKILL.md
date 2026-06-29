@@ -1,8 +1,8 @@
 ---
 name: ia-educacao-governanca-dados
-category: gestao-governanca
+category: etica-governanca
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em estruturar políticas de governança de dados para uso de IA em contextos educacionais, em conformidade com a LGPD e o ECA Digital. Use quando instituições educacionais precisarem estabelecer regras claras para coleta, uso, armazenamento e proteção de dados de estudantes e educadores. Acione para: "governança de dados educacionais", "LGPD na educação com IA", "proteção de dados de estudantes", "política de dados para IA educacional", "consentimento informado na educação", "ECA Digital e proteção de dados".
 ---
