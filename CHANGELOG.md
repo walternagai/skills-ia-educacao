@@ -5,6 +5,35 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.5.0] — 2026-06-29
+
+### Modificado
+- **Categorias padronizadas em 23 skills**: eliminadas as categorias não canônicas `etica-transversal`, `gestao-governanca` e `pratica-pedagogica`; todas as skills agora seguem exatamente as 5 categorias definidas no `CLAUDE.md`
+- **Qualidade de 23 skills v1.0**:
+  - `ia-educacao-avaliacao-grupo`: integração da Escala AIAS ao workflow de peer assessment (nova seção 7 com tabela AIAS×dimensões); dependência `aias-consultant` adicionada
+  - `ia-educacao-bloom`: data de acesso adicionada à referência CHURCHES (2008)
+  - `ia-educacao-interdisciplinaridade`: referência BOIX MANSILLA & GARDNER (2003) corrigida para formato ABNT de artigo em periódico
+  - 20 skills: cenário de Ensino Médio ou EPT adicionado à seção `Exemplos`, com nível AIAS declarado e contexto brasileiro explícito (ENEM, BNCC, instituições federais/estaduais)
+- **Grafo de dependências**: 7 skills sem nenhuma referência inbound conectadas ao ecossistema (`simulacao` ← `tbl`; `visualizacao-dados` ← `letramento-dados`; `estudo-de-caso` ← `facilitacao`; `aprendizagem-ativa` ← `planejamento-didatico`; `interdisciplinaridade` ← `pbl`; `aprendizagem-servico` ← `superior`; `permanencia` ← `gestao`)
+- `CLAUDE.md`: propriedade cumulativa da escala AIAS documentada; nota sobre `aias-consultant` (categoria `ferramentas-praticas`, nomenclatura distinta); seção "Verificação de integridade" com comandos de auditoria do grafo
+
+---
+
+## [0.4.0] — 2026-06-29
+
+### Adicionado
+- `ia-educacao-planejamento-reverso`: Backward Design / Understanding by Design (UbD) — três estágios (resultados → evidências → experiências), integração AIAS no Estágio 2, alinhamento com WHERETO
+- `ia-educacao-rubrica`: design de rubricas analíticas, holísticas e single-point alinhadas a Bloom, AIAS e DUA; tabela de descritores por nível AIAS para o critério de uso de IA
+- `ia-educacao-feedback`: feedback formativo com IA em escala (Feed Up/Back/Forward); feedback por pares (SPARK/WebPA) e autoavaliação
+- `ia-educacao-metacognicao`: aprendizagem autorregulada, diários, wrappers, portfólios reflexivos e uso intencional de IA; tabela AIAS × pergunta metacognitiva
+- **11 skills de metodologias ativas para Ensino Superior** (`formacao-docente`): `pbl`, `sala-invertida`, `simulacao`, `estudo-de-caso`, `peer-instruction`, `tbl`, `aprendizagem-servico`, `debate`, `facilitacao`, `design-problema`, `avaliacao-grupo`
+- **4 skills para lacunas STHEM** (`ferramentas-praticas`): `pesquisa`, `escrita`, `visualizacao-dados`, `interdisciplinaridade`
+
+### Modificado
+- `CLAUDE.md`: seção `Dependências` passa a proibir referências a skills fora deste repositório (ex: `bloom-taxonomy-educator`, `backward-design-stem`)
+
+---
+
 ## [0.3.0] — 2026-06-27
 
 ### Adicionado
