@@ -9,7 +9,7 @@ Este repositório é um **acervo documental e de skills** para orientar a integr
 Não há código-fonte, testes ou build system. O conteúdo é composto por:
 
 - **PDFs normativos** — Normas de Graduação da UNIFEI (Resoluções CEPEAd, INs PRG), Norma Disciplinar, Regimentos, PPC do Bacharelado em IA, Referencial MEC para IA na Educação, artigos acadêmicos sobre AIAS
-- **Skills Claude** (`skills/*/SKILL.md`) — 31 skills temáticas em formato YAML+Markdown para uso no Claude Code; o conteúdo do Guia AIAS-UNIFEI e da Rubrica TCC-BIA foi distribuído para as skills relevantes e os arquivos Markdown originais foram removidos
+- **Skills Claude** (`skills/*/SKILL.md`) — 32 skills temáticas em formato YAML+Markdown para uso no Claude Code; o conteúdo do Guia AIAS-UNIFEI e da Rubrica TCC-BIA foi distribuído para as skills relevantes e os arquivos Markdown originais foram removidos
 
 ## Arquitetura dos documentos
 
@@ -33,7 +33,7 @@ Cada skill tem frontmatter YAML (`name`, `category`, `model`, `version`, `descri
 | `formacao-docente` | fundamentos, formacao-inicial-docente, planejamento-didatico, aprendizagem-ativa, pensamento-critico |
 | `etica-governanca` | etica, governanca-dados, supervisao-humana, transparencia-explicabilidade, vieses, impacto-algoritmico, seguranca-digital, integridade-academica |
 | `inclusao-equidade` | acessibilidade-inclusao, equidade-digital, letramento-dados, permanencia |
-| `ferramentas-praticas` | avaliacao, personalizacao, sti, ia-desplugada, sandbox, gestao, ecossistema-inovacao, contratacao |
+| `ferramentas-praticas` | avaliacao, chain-of-draft, personalizacao, sti, ia-desplugada, sandbox, gestao, ecossistema-inovacao, contratacao |
 
 ## Uso das skills no Claude Code
 

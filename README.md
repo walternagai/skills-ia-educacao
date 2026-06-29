@@ -4,7 +4,7 @@ Acervo de skills para o Claude Code que orientam a integração responsável de 
 
 ## O que há neste repositório
 
-- **31 skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code
+- **32 skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code
 - **PDFs normativos** (`raw-pdfs/`) — Referencial MEC, Resoluções CEPEAd, INs PRG, PPC BIA, artigos AIAS originais
 - **CLAUDE.md** — instruções de contexto para instâncias do Claude Code neste repositório
 
@@ -99,6 +99,7 @@ Após instalada, chame a skill pelo nome:
 | Skill | Descrição |
 |-------|-----------|
 | `/ia-educacao-avaliacao` | Redesenho de avaliações com a Escala AIAS |
+| `/ia-educacao-chain-of-draft` | Raciocínio conciso (CoD) em atividades, prompts de IA e feedback formativo |
 | `/ia-educacao-personalizacao` | Plataformas adaptativas e STIs no contexto AIAS |
 | `/ia-educacao-sti` | Sistemas Tutoriais Inteligentes: integração e uso de dados |
 | `/ia-educacao-ia-desplugada` | Ensino de IA sem tecnologia (contextos sem infraestrutura) |
