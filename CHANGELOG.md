@@ -19,6 +19,19 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.3.1] — 2026-06-29
+
+### Adicionado
+- `ia-educacao-rascunho`: raciocínio conciso (Chain of Draft) — geração de rascunhos intermediários mínimos para atividades, prompts de IA e feedback formativo; técnica para evitar over-elaboration
+- `ia-educacao-verificacao`: Chain of Verification (CoVe) para docentes validarem materiais, questões de prova, planos de aula e feedbacks gerados com IA antes do uso em sala; protocolo Factored CoVe com tabela de confiabilidade
+- `ia-educacao-bloom`: Taxonomia Revisada de Bloom (Anderson & Krathwohl, 2001) + Digital Bloom (Churches, 2008): matriz bidimensional (processo cognitivo × tipo de conhecimento), verbos digitais por nível e alinhamento com AIAS
+- `ia-educacao-dua`: Desenho Universal para a Aprendizagem — três princípios (representação, ação/expressão, engajamento) por nível de ensino e por perfil de aprendiz, integrado aos níveis AIAS
+
+### Modificado
+- `ia-educacao-rascunho`: renomeada de `ia-educacao-chain-of-draft` para seguir a convenção de nomenclatura em Português do Brasil
+
+---
+
 ## [0.4.0] — 2026-06-29
 
 ### Adicionado
