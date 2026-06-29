@@ -4,7 +4,7 @@ Acervo de skills para o Claude Code que orientam a integração responsável de 
 
 ## O que há neste repositório
 
-- **39 skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code
+- **50 skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code
 - **PDFs normativos** (`raw-pdfs/`) — Referencial MEC, Resoluções CEPEAd, INs PRG, PPC BIA, artigos AIAS originais
 - **CLAUDE.md** — instruções de contexto para instâncias do Claude Code neste repositório
 
@@ -74,6 +74,15 @@ Após instalada, chame a skill pelo nome:
 | `/ia-educacao-bloom` | Taxonomia Revisada de Bloom + Digital Bloom (Churches): objetivos, atividades online e alinhamento com AIAS |
 | `/ia-educacao-planejamento-reverso` | Backward Design (UbD): resultados → evidências → experiências, com AIAS integrado ao Estágio 2 |
 | `/ia-educacao-metacognicao` | Metacognição e aprendizagem autorregulada: diários, wrappers, portfólios reflexivos e uso intencional de IA |
+| `/ia-educacao-pbl` | Aprendizagem Baseada em Problemas/Projetos (PBL/PjBL): problema-gatilho, ciclo de tutoria e avaliação individual em grupo |
+| `/ia-educacao-sala-invertida` | Sala de Aula Invertida: partição pré/presencial, materiais com IA, Peer Instruction e gestão do não-cumprimento do pré |
+| `/ia-educacao-simulacao` | Simulações e role-playing com IA: personas profissionais (clínico, jurídico, engenharia), debriefing estruturado e AIAS 3–5 |
+| `/ia-educacao-estudo-de-caso` | Estudo de caso como metodologia: método Harvard, casos mal-estruturados, personas de stakeholders com IA e avaliação do argumento |
+| `/ia-educacao-peer-instruction` | Peer Instruction (Mazur): design de ConcepTests, ciclo vote-discuss-revote e análise de distribuição de respostas |
+| `/ia-educacao-tbl` | Team-Based Learning: iRAT/gRAT com IF-AT, Application Activities 4S, peer assessment com CATME |
+| `/ia-educacao-aprendizagem-servico` | Aprendizagem-Serviço e curricularização da extensão universitária (Res. CNE/CES 7/2018) com IA |
+| `/ia-educacao-debate` | Debate estruturado (Oxford, Fishbowl, Socrático): IA como advogado do diabo, falácias argumentativas e avaliação de argumentação |
+| `/ia-educacao-facilitacao` | Facilitação de discussões: perguntas socráticas, gestão de silêncio e dominância, IA como voz extra em plenária |
 
 ### Ética e governança
 
@@ -105,6 +114,8 @@ Após instalada, chame a skill pelo nome:
 | `/ia-educacao-avaliacao` | Redesenho de avaliações com a Escala AIAS |
 | `/ia-educacao-rubrica` | Design de rubricas analíticas, holísticas e single-point alinhadas a Bloom, AIAS e DUA |
 | `/ia-educacao-feedback` | Feedback formativo em escala com IA: Feed Up/Back/Forward, feedback por pares e autoavaliação |
+| `/ia-educacao-avaliacao-grupo` | Avaliação de trabalho em grupo: peer assessment calibrado (CATME/WebPA), detecção de free riders e fator individual |
+| `/ia-educacao-design-problema` | Design de problemas para metodologias ativas: problema mal-estruturado, questão-motriz, ConcepTest e questão contestável |
 | `/ia-educacao-rascunho` | Raciocínio conciso (Chain of Draft) em atividades, prompts de IA e feedback formativo |
 | `/ia-educacao-verificacao` | Chain of Verification para docentes validarem materiais, questões e feedbacks gerados com IA |
 | `/ia-educacao-personalizacao` | Plataformas adaptativas e STIs no contexto AIAS |
