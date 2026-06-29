@@ -2,7 +2,7 @@
 name: ia-educacao-facilitacao
 category: formacao-docente
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em facilitação de discussões e atividades colaborativas em sala de aula do Ensino Superior, com IA como apoio ao docente-facilitador. Orienta como conduzir discussões produtivas, gerenciar silêncio e dominância de fala, usar perguntas socráticas, síntese em tempo real e IA para enriquecer a facilitação sem substituir o julgamento humano. Acione para: "como facilitar uma discussão", "gestão de participação", "estudante que não fala", "estudante que domina a discussão", "perguntas para conduzir aula", "técnica de facilitação", "discussão produtiva", "como não deixar a aula virar monólogo", "facilitação com IA", "facilitação de grupo".
 ---
@@ -168,6 +168,7 @@ IA: após o debate, docente projeta síntese das tensões não resolvidas — po
 - `ia-educacao-metacognicao` — facilitação inclui conduzir o grupo à reflexão sobre o próprio raciocínio
 - `ia-educacao-pensamento-critico` — perguntas socráticas são o instrumento de desenvolvimento do pensamento crítico em tempo real
 - `ia-educacao-design-problema` — a qualidade da discussão depende diretamente da qualidade da pergunta ou do problema proposto
+- `ia-educacao-estudo-de-caso` — facilitação de estudos de caso é uso central desta skill; estrutura de análise e sequência de questionamento diferem do debate aberto
 
 ## Referências
 - BAIN, K. What the Best College Teachers Do. Cambridge, MA: Harvard University Press, 2004.

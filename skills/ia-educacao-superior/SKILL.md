@@ -2,7 +2,7 @@
 name: ia-educacao-superior
 category: niveis-ensino
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em orientar a incorporação da IA na Educação Superior e Pós-Graduação, abrangendo ensino, pesquisa, extensão e gestão acadêmica. Use quando IES precisarem reorientar currículos, fortalecer comissões de ética e desenvolver competências em IA para estudantes. Acione para: "IA na Educação Superior", "IA na pós-graduação", "currículo universitário e IA", "comissão de ética em IA", "pesquisa acadêmica com IA", "competências em IA para universitários", "IES e IA".
 ---
@@ -56,6 +56,7 @@ description: >
 - `ia-educacao-etica` — para fundamentos éticos
 - `ia-educacao-integridade-academica` — para uso em pesquisa
 - `ia-educacao-ecossistema-inovacao` — para pesquisa e inovação
+- `ia-educacao-aprendizagem-servico` — curricularização da extensão é obrigação legal para IES; a skill orienta projetos de serviço com comunidade integrados às disciplinas
 
 ## Referências
 - BRASIL. MEC. Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação. Brasília: MEC, 2026. — Capítulo 8
