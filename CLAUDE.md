@@ -81,6 +81,7 @@ Os documentos e skills deste repositório derivam autoridade de:
 - Referências bibliográficas: formato **ABNT**
 - A escala AIAS tem 5 níveis fixos com os nomes canônicos da tabela acima; não adicionar, remover ou renomear níveis sem revisar todas as skills que os referenciam
 - Skills novas devem seguir a estrutura de frontmatter e seções das existentes; o slug em `Dependências` deve corresponder exatamente ao campo `name` da skill referenciada
+- A seção `Dependências` de cada skill deve referenciar **somente skills existentes dentro de `skills/`** deste repositório — nunca skills instaladas localmente no ambiente do usuário (ex: `bloom-taxonomy-educator`, `backward-design-stem`, `dua-educator`)
 - O campo `name` (slug) das skills deve estar em **Português do Brasil**, ser curto e significativo (ex: `ia-educacao-rascunho`, não `ia-educacao-chain-of-draft`); a descrição no frontmatter e todo o conteúdo interno da skill também devem estar em **Português do Brasil**
 - Ao editar uma skill existente, incremente o campo `version` no frontmatter (ex: `1.2` → `1.3`)
 - O diretório `raw-pdfs/` está no `.gitignore` — os PDFs normativos não são versionados e precisam ser obtidos diretamente das fontes institucionais
