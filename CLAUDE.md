@@ -48,13 +48,34 @@ for d in skills/*/; do npx skills add "./$d"; done
 ```
 
 Para listar as skills instaladas: `/skills` dentro do Claude Code.  
-Cada skill é invocada pelo usuário com `/ia-educacao-<sufixo>` (ex: `/ia-educacao-avaliacao`), com uma exceção: a skill `aias-consultant` é invocada como `/aias-consultant` (sem o prefixo `ia-educacao-`).
+Cada skill é invocada pelo usuário com `/ia-educacao-<sufixo>` (ex: `/ia-educacao-avaliacao`), com uma exceção: a skill `aias-consultant` é invocada como `/aias-consultant` (sem o prefixo `ia-educacao-`). Ela pertence à categoria `ferramentas-praticas` mas não aparece na tabela acima por ser a única do repositório fora do padrão de nomenclatura.
 
 O campo `name` no frontmatter da skill é o identificador canônico — é esse valor que deve ser usado em `Dependências` de outras skills.
 
+## Verificação de integridade
+
+Comandos úteis para auditar o repositório:
+
+```bash
+# Distribuição real de categorias (deve bater com a tabela acima)
+grep -r "^category:" skills/*/SKILL.md | sed 's|.*category: ||' | sort | uniq -c | sort -rn
+
+# Skills mais referenciadas (hubs do grafo)
+grep -rh "Dependências" -A 20 skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+" | sort | uniq -c | sort -rn | head -15
+
+# Skills sem nenhuma referência inbound (órfãs — devem ser zero)
+REFERENCED=$(grep -rh "Dependências" -A 20 skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+" | sort -u)
+for d in skills/*/; do skill=$(basename "$d"); echo "$REFERENCED" | grep -qx "$skill" || echo "ÓRFÃ: $skill"; done
+
+# Dependências quebradas (slugs que não existem no diretório)
+grep -rh "^\- \`" skills/*/SKILL.md | grep -oP "(?<=\`)[^\`]+" | sort -u | while read slug; do
+  [ -d "skills/$slug" ] || echo "QUEBRADA: $slug"
+done
+```
+
 ## A Escala AIAS e seus 5 níveis
 
-A escala **AIAS (AI Assessment Scale)** — adaptada ao contexto UNIFEI — classifica o nível de uso de IA em avaliações acadêmicas. A escala é **não hierárquica** (nenhum nível é superior a outro):
+A escala **AIAS (AI Assessment Scale)** — adaptada ao contexto UNIFEI — classifica o nível de uso de IA em avaliações acadêmicas. A escala é **não hierárquica** (nenhum nível é superior a outro) e **cumulativa** (níveis superiores permitem usos dos inferiores, salvo indicação contrária):
 
 | Nível | Nome canônico | IA permitida | Produto final |
 |-------|---------------|-------------|---------------|
