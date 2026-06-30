@@ -1,7 +1,6 @@
 ---
 description: Planejamento pedagógico para ensino superior com IA. Projeta cursos, avaliações e atividades alinhados à Escala AIAS, Taxonomia de Bloom e Backward Design.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
 permission:
   edit: deny
   bash: deny

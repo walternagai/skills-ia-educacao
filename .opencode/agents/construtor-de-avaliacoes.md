@@ -1,7 +1,6 @@
 ---
 description: Criação de instrumentos avaliativos para disciplinas STHEM no ensino superior. Gera provas, listas, rubricas e gabaritos alinhados à Escala AIAS, Taxonomia de Bloom e nível de ensino.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
 permission:
   edit: allow
   bash: allow
