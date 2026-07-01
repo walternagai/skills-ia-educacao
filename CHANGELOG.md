@@ -5,6 +5,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.7.6] — 2026-06-30
+
+### Corrigido
+- **DOI ausente nas referências dos dois artigos da Escala AIAS** (Perkins et al., 2024 e Perkins, Roe & Furze, 2025): verificados contra os PDFs fonte em `raw-pdfs/` (`AIAS-JUTLP_AI_Assessment_Scale_final.pdf` e `AIAS-JUTLP+Final+Perkins_JUTLP_2025.pdf`), que confirmam autoria, título, volume/número e ano já corretos nas 36 skills que os citam. Adicionado `Disponível em: https://doi.org/10.53761/q3azde36` e `.../10.53761/rrm4y757`, com `Acesso em: 30 jun. 2026.`, alinhando o tratamento dessas fontes eletrônicas ao já aplicado a outros artigos de acesso aberto no acervo
+- `version` incrementada nas 36 skills afetadas
+- Confirmado que 3 outros PDFs de AIAS em `raw-pdfs/` (EAP-AIAS, aplicação em EFL, piloto de implementação) não são citados em nenhuma skill — não é uma inconsistência, apenas material de referência ainda não utilizado
+
+---
+
 ## [0.7.5] — 2026-06-30
 
 ### Corrigido

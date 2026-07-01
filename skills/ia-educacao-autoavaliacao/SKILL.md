@@ -2,7 +2,7 @@
 name: ia-educacao-autoavaliacao
 category: ferramentas-praticas
 model: claude
-version: 1.3
+version: 1.4
 description: >
   Especialista em design de instrumentos de autoavaliação para o Ensino Superior — escalas, rubricas de autoavaliação, diários reflexivos, calibração entre autoavaliação e avaliação docente, e desenvolvimento do juízo avaliativo do estudante. Cobre uso de IA para apoiar a autoavaliação sem substituir a reflexão autêntica. Acione para: "autoavaliação", "como o aluno se autoavalia", "rubrica de autoavaliação", "escala de autoavaliação", "juízo avaliativo", "calibração autoavaliação", "diário reflexivo", "autoavaliação com IA", "feedback do estudante sobre si mesmo", "autoavaliação em grupo", "metacognição e autoavaliação".
 ---
@@ -190,5 +190,5 @@ Disciplina de Teoria Literária. Ao longo do semestre, estudante:
 - SADLER, D. R. Formative Assessment and the Design of Instructional Systems. Instructional Science, v. 18, n. 2, p. 119–144, 1989.
 - BIGGS, J.; TANG, C. Teaching for Quality Learning at University. 4. ed. Berkshire: McGraw-Hill, 2011.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
 

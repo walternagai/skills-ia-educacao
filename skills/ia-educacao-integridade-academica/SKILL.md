@@ -2,7 +2,7 @@
 name: ia-educacao-integridade-academica
 category: etica-governanca
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em orientar instituições educacionais sobre integridade acadêmica na era da IA generativa. Use quando for necessário estabelecer diretrizes para uso ético de IA em trabalhos acadêmicos, prevenir plágio, proteger direitos autorais e redefinir práticas de avaliação. Acione para: "plágio com IA", "integridade acadêmica e IA", "direitos autorais na IA generativa", "política de uso de IA para estudantes", "citação de IA em trabalhos", "autoria e IA na educação".
 ---
@@ -60,5 +60,5 @@ description: >
 - FRANCIS, N. J. et al. Generative AI in higher education: balancing innovation and integrity. British Journal of Biomedical Science, v. 81, 2025.
 - FRANCO, D.; VIEGAS, L. E.; RÖHE, A. Guia ético para a Inteligência Artificial Generativa no Ensino Superior. TECCOGS, n. 28, 2023.
 - ABNT. NBR 10520:2023 — Informação e documentação — Citações em documentos — Apresentação (consultar versão vigente para atualizações sobre citação de IA).
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
-- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025. Disponível em: https://doi.org/10.53761/rrm4y757. Acesso em: 30 jun. 2026.

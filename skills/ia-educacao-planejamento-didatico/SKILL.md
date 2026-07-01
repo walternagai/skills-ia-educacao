@@ -2,7 +2,7 @@
 name: ia-educacao-planejamento-didatico
 category: formacao-docente
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em orientar educadores no uso de IA generativa como assistente para planejamento de aulas, produção de materiais didáticos e organização do trabalho docente. Use quando professores precisarem otimizar tempo com tarefas administrativas e pedagógicas recorrentes, liberando espaço para mediação pedagógica. Acione para: "planejamento de aulas com IA", "produção de materiais didáticos com IA", "IA como assistente docente", "otimização do trabalho docente com IA", "criação de planos de aula com IA", "curadoria de materiais com IA".
 ---
@@ -65,4 +65,4 @@ description: >
 - CHILE. MINISTERIO DE EDUCACIÓN. Guía para docentes: cómo usar ChatGPT para potenciar el aprendizaje activo. Santiago: Mineduc, 2023.
 - WHITE, J. et al. A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT. arXiv:2302.11382, 2023.
 - BRASIL. Lei nº 9.610, de 19 de fevereiro de 1998 — Lei de Direitos Autorais.
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.

@@ -2,7 +2,7 @@
 name: ia-educacao-profissional-tecnologica
 category: niveis-ensino
 model: claude
-version: 1.4
+version: 1.5
 description: >
   Especialista em orientar a integração da IA na Educação Profissional e Tecnológica (EPT), alinhando competências digitais às demandas do mundo do trabalho em transformação. Use quando gestores e educadores da EPT precisarem atualizar currículos e práticas para incorporar IA. Acione para: "IA na Educação Profissional", "EPT e IA", "competências digitais para o trabalho com IA", "currículo técnico com IA", "inovação em educação profissional com IA", "parcerias estratégicas para IA na EPT".
 ---
@@ -64,6 +64,6 @@ description: >
 - DENMARK. MINISTRY OF CHILDREN AND EDUCATION. Generative Artificial Intelligence in Basic Subjects in Vocational Education: Recommendations for Teaching. Styrelsen for Undervisning og Kvalitet, 2024.
 - OCDE. Education Policy Outlook 2024: Reshaping teaching into a thriving profession from ABCS to AI. Paris: OECD Publishing, 2024a.
 - MEC/SETEC. Referenciais para a Educação Profissional e Tecnológica. Brasília: MEC, 2022.
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
-- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025. Disponível em: https://doi.org/10.53761/rrm4y757. Acesso em: 30 jun. 2026.
 - SENAI. Mapa do Trabalho Industrial 2023–2027. Brasília: CNI/SENAI, 2023.

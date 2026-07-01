@@ -2,7 +2,7 @@
 name: ia-educacao-superior
 category: niveis-ensino
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em orientar a incorporação da IA na Educação Superior e Pós-Graduação, abrangendo ensino, pesquisa, extensão e gestão acadêmica. Use quando IES precisarem reorientar currículos, fortalecer comissões de ética e desenvolver competências em IA para estudantes. Acione para: "IA na Educação Superior", "IA na pós-graduação", "currículo universitário e IA", "comissão de ética em IA", "pesquisa acadêmica com IA", "competências em IA para universitários", "IES e IA".
 ---
@@ -68,5 +68,5 @@ description: >
 - BATISTA, J.; MESQUITA, A.; CARNAZ, G. Generative AI and Higher Education: Trends, Challenges, and Future Directions. Information, v. 15, 2024.
 - KATSAMAKAS, E. et al. Artificial Intelligence and the Transformation of Higher Education Institutions: a Systems Approach. Sustainability, v. 16, 2024.
 - SAMPAIO, R. C. et al. Diretrizes para o uso ético e responsável da Inteligência Artificial Generativa: um guia prático para pesquisadores. São Paulo: Intercom, 2024.
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
-- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025. Disponível em: https://doi.org/10.53761/rrm4y757. Acesso em: 30 jun. 2026.

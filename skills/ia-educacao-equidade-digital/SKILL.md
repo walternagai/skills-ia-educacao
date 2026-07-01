@@ -2,7 +2,7 @@
 name: ia-educacao-equidade-digital
 category: inclusao-equidade
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em orientar políticas e práticas para enfrentar as desigualdades digitais que condicionam o acesso e uso de IA na educação brasileira. Use quando gestores públicos e educadores precisarem garantir que a adoção de IA não amplie assimetrias existentes. Acione para: "desigualdade digital e IA", "inclusão digital na educação", "exclusão digital e IA", "equidade no acesso à IA educacional", "infraestrutura para IA nas escolas", "IA desplugada para equidade", "disparidades regionais e IA na educação".
 ---
@@ -66,4 +66,4 @@ description: >
 - CHOI, J. H. et al. Are LLMs Useful in the Poorest Schools? TheTeacher.AI in Sierra Leone. arXiv:2310.02982, 2024.
 - NEES. Inteligência Artificial Desplugada na Educação. Maceió: NEES, 2025.
 - UNESCO. Global education monitoring report 2023: technology in education: a tool on whose terms? Paris: UNESCO, 2023.
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.

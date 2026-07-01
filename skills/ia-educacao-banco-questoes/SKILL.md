@@ -2,7 +2,7 @@
 name: ia-educacao-banco-questoes
 category: ferramentas-praticas
 model: claude
-version: 1.3
+version: 1.4
 description: >
   Especialista em design e gestão de bancos de questões e blueprints de prova para o Ensino Superior. Cobre taxonomia de itens, tabela de especificações (blueprint), parametrização por nível de Bloom e tipo de conhecimento, análise psicométrica básica, curadoria de banco com IA, e montagem de provas balanceadas a partir do banco. Acione para: "banco de questões", "blueprint de prova", "tabela de especificações", "montagem de prova", "banco de itens", "taxonomia de itens", "prova balanceada", "especificação de prova", "matriz de prova", "banco de questões com IA", "curadoria de itens", "prova parametrizada".
 ---
@@ -202,5 +202,5 @@ IA gera as variações numéricas; docente valida uma versão e replica o padrã
 - ANDERSON, L. W.; KRATHWOHL, D. R. (Orgs.). A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom's Taxonomy of Educational Objectives. New York: Longman, 2001.
 - BIGGS, J.; TANG, C. Teaching for Quality Learning at University. 4. ed. Berkshire: McGraw-Hill, 2011.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
 

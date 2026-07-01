@@ -2,7 +2,7 @@
 name: ia-educacao-ensino-medio
 category: niveis-ensino
 model: claude
-version: 1.4
+version: 1.5
 description: >
   Especialista em aprofundar o letramento em IA no Ensino Médio, articulando discussões sobre impactos sociais, éticos e econômicos com exploração prática de ferramentas. Use quando educadores do EM precisarem planejar projetos, pesquisas e atividades com IA. Acione para: "IA no Ensino Médio", "letramento em IA para adolescentes", "projetos com IA no ensino médio", "impactos sociais da IA", "cidadania digital com IA", "preparação para o mundo do trabalho com IA".
 ---
@@ -63,7 +63,7 @@ description: >
 - MEIRA, S.; MEIRA, L. Inteligência Artificial na Educação: Ruptura Paradigmática em um Sistema em Crise Crônica. Recife: Tds.company, 2025.
 - LEMANN. FUNDAÇÃO LEMANN; TELLES FOUNDATION. Perspectivas sobre IA e Educação Básica: Aliança IA para Educação. São Paulo: Fundação Lemann, 2024.
 - BRASIL. Lei nº 13.415, de 16 de fevereiro de 2017 — Novo Ensino Médio (itinerários formativos).
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
-- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025. Disponível em: https://doi.org/10.53761/rrm4y757. Acesso em: 30 jun. 2026.
 - BRASIL. Lei nº 15.211, de 22 de agosto de 2024 (ECA Digital).
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.

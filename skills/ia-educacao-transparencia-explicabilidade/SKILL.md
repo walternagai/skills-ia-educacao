@@ -2,7 +2,7 @@
 name: ia-educacao-transparencia-explicabilidade
 category: etica-governanca
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em orientar instituições educacionais sobre requisitos de transparência e explicabilidade de sistemas de IA. Use quando for necessário avaliar se ferramentas de IA atendem a padrões mínimos de clareza sobre seu funcionamento, dados utilizados e critérios de decisão. Acione para: "transparência em IA educacional", "explicabilidade de sistemas de IA", "caixa-preta na educação", "sistemas de IA interpretáveis", "comunicação sobre IA para comunidade escolar", "contestação de decisões automatizadas na educação".
 ---
@@ -61,4 +61,4 @@ description: >
 - AUSTRALIAN DEPARTMENT OF EDUCATION. Australian Framework for Generative Artificial Intelligence in Schools. Austrália: Commonwealth of Australia, 2023.
 - ALMEIDA, L. P. C. M. et al. Carta de Recomendação para o Uso da Inteligência Artificial na Educação. São Paulo: Nelpa, 2025.
 - BRASIL. Lei nº 13.709, de 14 de agosto de 2018 (LGPD) — Art. 20: Direito à revisão de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais.
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.

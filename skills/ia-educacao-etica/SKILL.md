@@ -2,7 +2,7 @@
 name: ia-educacao-etica
 category: etica-governanca
 model: claude
-version: 1.6
+version: 1.7
 description: >
   Especialista em fundamentos éticos para IA na educação, alinhado aos princípios do Referencial MEC e marcos internacionais (UNESCO, OCDE, Comissão Europeia). Use quando instituições precisarem estabelecer princípios éticos norteadores para adoção de IA. Acione para: "ética em IA na educação", "princípios éticos para IA educacional", "UNESCO e IA na educação", "valores fundamentais para IA na escola", "código de ética para IA educacional", "responsabilização em IA", "accountability em sistemas de IA educacional".
 ---
@@ -76,4 +76,4 @@ description: >
 - VIEGAS, L. E. Dilemas éticos da inteligência artificial para um ensino em metamorfose. TECCOGS, n. 28, 2023.
 - BRASIL. Decreto nº 11.854, de 26 de dezembro de 2023 — Política Nacional de Inteligência Artificial (PNAIA).
 - BUOLAMWINI, J.; GEBRU, T. Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. In: Proceedings of FAT* Conference, 2018.
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.

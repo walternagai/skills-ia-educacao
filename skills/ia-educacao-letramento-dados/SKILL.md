@@ -2,7 +2,7 @@
 name: ia-educacao-letramento-dados
 category: inclusao-equidade
 model: claude
-version: 1.7
+version: 1.8
 description: >
   Especialista em desenvolver competências de alfabetização em dados para educadores e estudantes no contexto da IA educacional. Use quando for necessário capacitar profissionais da educação para compreender o ciclo de vida dos dados, avaliar criticamente informações geradas por IA e reconhecer o papel central dos dados no funcionamento dos sistemas. Acione para: "alfabetização em dados", "letramento de dados com IA", "ciclo de vida dos dados", "avaliar informações geradas por IA", "dados e IA na educação", "qualidade dos dados em sistemas de IA".
 ---
@@ -63,4 +63,4 @@ description: >
 - CGI.BR. Educação em um cenário de plataformização e de economia dos dados: problemas e conceitos. São Paulo: NIC.br, 2022.
 - INEP. Censo Escolar da Educação Básica. Brasília: INEP/MEC (publicação anual). Disponível em: https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar. Acesso em: 30 jun. 2026.
 - CGI.br. TIC Educação. São Paulo: CGI.br (edição mais recente). Disponível em: https://cetic.br/pt/pesquisa/educacao/. Acesso em: 30 jun. 2026.
-- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025. Disponível em: https://doi.org/10.53761/rrm4y757. Acesso em: 30 jun. 2026.

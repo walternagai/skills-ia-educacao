@@ -2,7 +2,7 @@
 name: ia-educacao-rubrica
 category: ferramentas-praticas
 model: claude
-version: 1.3
+version: 1.4
 description: >
   Especialista em design de rubricas analíticas e holísticas para avaliação educacional, alinhadas à Taxonomia de Bloom, ao nível AIAS e aos princípios do DUA. Orienta docentes a criar critérios claros, descritores de desempenho precisos e instrumentos que avaliem competência independente do formato de entrega. Acione para: "criar rubrica", "rubrica analítica", "rubrica holística", "critérios de avaliação", "descritores de desempenho", "rubrica para trabalho com IA", "rubrica alinhada a Bloom", "rubrica inclusiva", "como avaliar com critérios claros", "rubrica para TCC", "rubrica para projeto".
 ---
@@ -119,5 +119,5 @@ Espaço de feedback: "O que ainda falta para atingir este padrão:" + "O que já
 - ANDRADE, H. L. A Critical Review of Research on Student Self-Assessment. Frontiers in Education, 2019.
 - WIGGINS, G.; McTIGHE, J. Understanding by Design. 2. ed. Alexandria, VA: ASCD, 2005.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
 

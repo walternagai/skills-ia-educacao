@@ -2,7 +2,7 @@
 name: ia-educacao-gestao
 category: ferramentas-praticas
 model: claude
-version: 1.6
+version: 1.7
 description: >
   Especialista em desenvolver competências de gestores educacionais para liderar a adoção responsável de IA em escolas e redes de ensino. Use quando gestores precisarem analisar demandas, avaliar soluções, planejar implementação e monitorar o uso de IA. Acione para: "gestão educacional com IA", "adoção de IA por gestores", "avaliação de soluções de IA para escolas", "planejamento de implementação de IA", "competências de gestores para IA", "liderança em inovação educacional com IA".
 ---
@@ -64,5 +64,5 @@ description: >
 - UNITED KINGDOM. DEPARTMENT FOR EDUCATION. Generative AI in education: educator and expert views. London: Department of Education, 2024.
 - FNDE. Guia de Orientação do PAR — Plano de Ações Articuladas. Brasília: FNDE/MEC (edição vigente).
 - CIEB. Guia EduTech: Como avaliar plataformas educacionais digitais? São Paulo: CIEB, 2023.
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
-- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025. Disponível em: https://doi.org/10.53761/rrm4y757. Acesso em: 30 jun. 2026.

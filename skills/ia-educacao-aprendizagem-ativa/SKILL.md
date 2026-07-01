@@ -2,7 +2,7 @@
 name: ia-educacao-aprendizagem-ativa
 category: formacao-docente
 model: claude
-version: 1.6
+version: 1.7
 description: >
   Especialista em integrar IA a metodologias ativas de aprendizagem — Aprendizagem Baseada em Projetos (PBL), investigação orientada, trabalho colaborativo, gamificação. Use quando educadores quiserem potencializar abordagens centradas no estudante com apoio de sistemas de IA. Acione para: "metodologias ativas com IA", "PBL e IA", "aprendizagem baseada em projetos com IA", "gamificação com IA", "investigação orientada com IA", "trabalho colaborativo mediado por IA".
 ---
@@ -63,5 +63,5 @@ description: >
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - CIEB. Notas Técnicas #21: Inteligência artificial na educação básica: novas aplicações e tendências para o futuro. São Paulo: CIEB, 2024a.
 - CHILE. MINISTERIO DE EDUCACIÓN. Guía para docentes: cómo usar ChatGPT para potenciar el aprendizaje activo. Santiago: Mineduc, 2023.
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
-- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025. Disponível em: https://doi.org/10.53761/rrm4y757. Acesso em: 30 jun. 2026.
