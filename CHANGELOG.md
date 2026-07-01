@@ -5,6 +5,13 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.7.4] — 2026-06-30
+
+### Corrigido
+- **Mês de publicação ausente na referência do Referencial MEC (2026)**: confirmado o título e a autoria institucional oficiais consultando `raw-pdfs/REFERENCIAL PARA DESENVOLVIMENTO E USO RESPONSÁVEIS DE INTELIGÊNCIA ARTIFICIAL NA EDUCAÇÃO-pt.pdf` (capa e página de créditos: "© Ministério da Educação", Brasília (DF), fevereiro 2026). As 62 referências ao documento foram atualizadas de `Brasília: MEC, 2026.` para `Brasília: MEC, fev. 2026.`; version incrementada em todos os arquivos afetados
+
+---
+
 ## [0.7.3] — 2026-06-30
 
 ### Corrigido

@@ -2,7 +2,7 @@
 name: ia-educacao-sala-invertida
 category: formacao-docente
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em Sala de Aula Invertida (Flipped Classroom) com IA generativa. Orienta o design do que vai para o espaço assíncrono (pré-aula), como usar o tempo presencial para aprendizagem ativa de ordem superior, e como integrar IA na produção de materiais e na facilitação em sala. Acione para: "sala de aula invertida", "flipped classroom", "aula invertida", "vídeo pré-aula", "como usar o tempo em sala", "o que mandar para casa", "peer instruction", "pré-aula com IA", "conteúdo assíncrono", "aproveitamento do presencial".
 ---
@@ -158,4 +158,4 @@ Produto esperado: resolução comentada apresentada oralmente à turma — o gru
 - NOVAK, G. M. et al. Just-in-Time Teaching: Blending Active Learning with Web Technology. Upper Saddle River, NJ: Prentice Hall, 1999.
 - BISHOP, J. L.; VERLEGER, M. A. The Flipped Classroom: A Survey of the Research. ASEE Annual Conference Proceedings, 2013.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.

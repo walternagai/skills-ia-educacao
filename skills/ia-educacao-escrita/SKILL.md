@@ -2,7 +2,7 @@
 name: ia-educacao-escrita
 category: ferramentas-praticas
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista em escrita acadêmica e técnica com IA no Ensino Superior, com foco em manter a voz autoral e o raciocínio do estudante como núcleo do texto. Cobre relatórios técnicos, artigos científicos, cadernos de laboratório, redação de metodologia e discussão, e revisão com IA. Relevante para todas as áreas STHEM. Acione para: "escrever com IA", "escrita acadêmica", "relatório técnico", "artigo científico", "como usar IA para escrever sem perder minha voz", "revisão de texto com IA", "estrutura de argumento", "coerência do texto", "plágio e IA", "como revisar TCC com IA", "caderno de laboratório".
 ---
@@ -199,4 +199,4 @@ Produto esperado: redação dissertativo-argumentativa de 30 linhas com nota-alv
 - DAY, R. A.; GASTEL, B. How to Write and Publish a Scientific Paper. 8. ed. Cambridge: Cambridge University Press, 2016.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6022: Informação e Documentação — Artigo em Publicação Periódica Científica — Apresentação. Rio de Janeiro: ABNT, 2018.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.

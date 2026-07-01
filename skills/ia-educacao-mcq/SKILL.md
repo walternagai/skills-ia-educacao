@@ -2,7 +2,7 @@
 name: ia-educacao-mcq
 category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em design, validação e análise de questões de múltipla escolha (MCQs) para disciplinas STHEM no Ensino Superior. Cobre construção de distratores plausíveis, alinhamento à Taxonomia de Bloom, análise psicométrica básica (índice de dificuldade, discriminação), detecção de vieses e uso de IA para gerar e revisar itens. Acione para: "criar questão de múltipla escolha", "MCQ para prova", "distratores plausíveis", "teste de múltipla escolha", "questão objetiva", "item de prova", "validação de MCQ", "análise de distratores", "índice de dificuldade", "discriminação de item", "Bloom para MCQ", "questão conceitual", "ConcepTest".
 ---
@@ -180,6 +180,6 @@ Nível Bloom: 3 (Aplicar) — aplicar composição de funções.
 - BLOOM, B. S. et al. Taxonomy of Educational Objectives: The Classification of Educational Goals. Handbook I: Cognitive Domain. New York: Longman, 1956.
 - ANDERSON, L. W.; KRATHWOHL, D. R. (Orgs.). A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom's Taxonomy of Educational Objectives. New York: Longman, 2001.
 - MAZUR, E. Peer Instruction: A User's Manual. Upper Saddle River, NJ: Prentice Hall, 1997.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 

@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao
 category: ferramentas-praticas
 model: claude
-version: 1.4
+version: 1.5
 description: >
   Especialista em redesenhar instrumentos e processos de avaliação educacional considerando a presença da IA generativa. Use quando educadores precisarem repensar provas, trabalhos e atividades para garantir que avaliem competências genuinamente humanas — análise, síntese, criatividade, pensamento crítico. Acione para: "avaliação com IA", "redesenho de provas na era da IA", "avaliação formativa e IA", "rubricas para atividades com IA", "como avaliar quando os alunos usam IA", "instrumentos avaliativos e IA generativa".
 ---
@@ -55,7 +55,7 @@ description: >
 - `ia-educacao-planejamento-didatico` — para integração nos planos de ensino
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 4.2, 4.3, Desafio 6
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seção 4.2, 4.3, Desafio 6
 - MEIRA, S.; MEIRA, L. Inteligência Artificial na Educação: Ruptura Paradigmática em um Sistema em Crise Crônica. Recife: Tds.company, 2025.
 - U.S. DEPARTMENT OF EDUCATION. Artificial Intelligence and the future of teaching and learning: insights and recommendations. Washington, DC: Department of Education, 2023.
 - STAA, B. V. Como usar a Inteligência Artificial Generativa na educação sem abrir mão de pensar. In: CRIVELARO; STEIN (Orgs.). A escola com inteligência artificial. Campinas: Alínea, 2025.

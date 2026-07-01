@@ -2,7 +2,7 @@
 name: ia-educacao-acessibilidade-inclusao
 category: inclusao-equidade
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em orientar o uso de IA para ampliar acessibilidade e promover inclusão educacional, alinhado à Lei Brasileira de Inclusão (LBI) e ao Desenho Universal para a Aprendizagem (DUA). Use quando educadores precisarem adaptar materiais, recursos e ambientes para estudantes com deficiência ou necessidades específicas. Acione para: "acessibilidade com IA", "inclusão educacional e IA", "tecnologia assistiva com IA", "DUA e IA", "LBI e IA na educação", "adaptação de materiais com IA para estudantes com deficiência".
 ---
@@ -55,7 +55,7 @@ description: >
 - `ia-educacao-etica` — para princípios de inclusão e não discriminação
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Oportunidade 5, Seção 3.2.2
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Oportunidade 5, Seção 3.2.2
 - BRASIL. Lei nº 13.146, de 6 de julho de 2015 (Lei Brasileira de Inclusão da Pessoa com Deficiência — LBI).
 - UNESCO. AI and education: guidance for policymakers. Paris: UNESCO, 2021.
 - CAST. Universal Design for Learning Guidelines. CAST, 2018.

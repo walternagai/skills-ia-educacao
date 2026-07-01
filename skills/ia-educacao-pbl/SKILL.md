@@ -2,7 +2,7 @@
 name: ia-educacao-pbl
 category: formacao-docente
 model: claude
-version: 1.3
+version: 1.4
 description: >
   Especialista em Aprendizagem Baseada em Problemas (PBL) e Aprendizagem Baseada em Projetos (PjBL) com IA, com foco no Ensino Superior. Orienta o design de problemas mal-estruturados, o papel do tutor, a facilitação do processo em grupo e a avaliação do aprendizado individual dentro da equipe. Acione para: "PBL", "aprendizagem baseada em problemas", "aprendizagem baseada em projetos", "PjBL", "problema-gatilho", "tutor PBL", "avaliação PBL", "como criar problema para PBL", "currículo baseado em problemas", "aprendizado autodirigido", "interdisciplinaridade no ensino superior".
 ---
@@ -160,4 +160,4 @@ Produto esperado: cartaz informativo para a comunidade escolar + apresentação 
 - BUCK INSTITUTE FOR EDUCATION. PBL Works: Project Based Learning for the 21st Century. Novato: BIE, 2019.
 - SAVERY, J. R. Overview of Problem-Based Learning: Definitions and Distinctions. Interdisciplinary Journal of Problem-Based Learning, v. 1, n. 1, 2006.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.

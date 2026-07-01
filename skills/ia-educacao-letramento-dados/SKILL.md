@@ -2,7 +2,7 @@
 name: ia-educacao-letramento-dados
 category: inclusao-equidade
 model: claude
-version: 1.6
+version: 1.7
 description: >
   Especialista em desenvolver competências de alfabetização em dados para educadores e estudantes no contexto da IA educacional. Use quando for necessário capacitar profissionais da educação para compreender o ciclo de vida dos dados, avaliar criticamente informações geradas por IA e reconhecer o papel central dos dados no funcionamento dos sistemas. Acione para: "alfabetização em dados", "letramento de dados com IA", "ciclo de vida dos dados", "avaliar informações geradas por IA", "dados e IA na educação", "qualidade dos dados em sistemas de IA".
 ---
@@ -55,7 +55,7 @@ description: >
 - `ia-educacao-visualizacao-dados` — leitura e criação crítica de gráficos são habilidades centrais do letramento de dados
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 5.1.2
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seção 5.1.2
 - VICARI, R. M. et al. Inteligência Artificial na Educação Básica: Prática na Escola. São Paulo: Novatec, 2023.
 - COMISSÃO EUROPEIA. Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators. Luxemburgo: Publicações da UE, 2022.
 - UNESCO. AI and education: guidance for policymakers. Paris: UNESCO, 2021.

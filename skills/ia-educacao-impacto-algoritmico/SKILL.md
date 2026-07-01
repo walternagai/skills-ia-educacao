@@ -2,7 +2,7 @@
 name: ia-educacao-impacto-algoritmico
 category: etica-governanca
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em conduzir Avaliações de Impacto Algorítmico (AIA) para sistemas de IA aplicados à educação. Use quando instituições precisarem identificar, analisar e mitigar riscos associados ao uso de sistemas algorítmicos em contextos educacionais. Acione para: "avaliação de impacto algorítmico", "AIA na educação", "auditoria de algoritmos educacionais", "riscos de IA na educação", "mitigação de riscos algorítmicos", "documentação de sistemas de IA educacional".
 ---
@@ -54,7 +54,7 @@ description: >
 - `ia-educacao-governanca-dados` — para proteção de dados
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 10.2, 3.2.2
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seção 10.2, 3.2.2
 - COMISSÃO EUROPEIA. Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators. Luxemburgo: Publicações da UE, 2022.
 - UNESCO. Recomendações sobre a ética da Inteligência Artificial. Paris: UNESCO, 2022b.
 - OCDE. The potential impact of Artificial Intelligence on Education: opportunities and challenges. Paris: OCDE Publishing, 2024b.

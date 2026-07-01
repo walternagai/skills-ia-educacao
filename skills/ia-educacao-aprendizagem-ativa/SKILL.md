@@ -2,7 +2,7 @@
 name: ia-educacao-aprendizagem-ativa
 category: formacao-docente
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em integrar IA a metodologias ativas de aprendizagem — Aprendizagem Baseada em Projetos (PBL), investigação orientada, trabalho colaborativo, gamificação. Use quando educadores quiserem potencializar abordagens centradas no estudante com apoio de sistemas de IA. Acione para: "metodologias ativas com IA", "PBL e IA", "aprendizagem baseada em projetos com IA", "gamificação com IA", "investigação orientada com IA", "trabalho colaborativo mediado por IA".
 ---
@@ -57,7 +57,7 @@ description: >
 - `ia-educacao-avaliacao` — para rubricas de avaliação processual
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Oportunidade 6, Seção 4.2
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Oportunidade 6, Seção 4.2
 - UNESCO. AI competency framework for students. Paris: UNESCO, 2024a.
 - CHEN, S.-Y. Generative AI, learning and new literacies. Journal of Educational Technology Development and Exchange, v. 16, n. 2, 2023.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.

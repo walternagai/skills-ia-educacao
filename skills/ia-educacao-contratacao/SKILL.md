@@ -2,7 +2,7 @@
 name: ia-educacao-contratacao
 category: ferramentas-praticas
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em estabelecer critérios técnicos, pedagógicos, éticos e legais para contratação e auditoria de plataformas educacionais que incorporam IA. Use quando gestores públicos ou institucionais precisarem selecionar, contratar e auditar soluções de IA para educação. Acione para: "contratação de plataformas educacionais com IA", "licitação de IA para educação", "auditoria de fornecedores de IA educacional", "critérios para seleção de EdTech", "cláusulas contratuais de proteção de dados", "avaliação de plataformas educacionais com IA".
 ---
@@ -54,7 +54,7 @@ description: >
 - `ia-educacao-transparencia-explicabilidade` — para exigências de documentação
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Desafio 8, Seção 9.2, 10.1
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Desafio 8, Seção 9.2, 10.1
 - CIEB. Manual de proteção de dados pessoais para gestores e gestoras públicas educacionais. São Paulo: CIEB, 2020.
 - UNESCO. Global education monitoring report 2023: technology in education: a tool on whose terms? Paris: UNESCO, 2023.
 - BRASIL. Lei nº 13.709, de 14 de agosto de 2018 (LGPD).

@@ -2,7 +2,7 @@
 name: ia-educacao-aprendizagem-servico
 category: formacao-docente
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista em Aprendizagem-Serviço e Extensão Universitária com IA, integrando o tripé ensino-pesquisa-extensão da universidade brasileira. Orienta o design de projetos em que estudantes aplicam conhecimento disciplinar em parceria com comunidades ou organizações reais, com IA como ferramenta de diagnóstico, comunicação e análise. Acione para: "aprendizagem-serviço", "extensão universitária", "projeto de extensão", "service learning", "comunidade e universidade", "impacto social com IA", "tripé universitário", "atividade de extensão", "curricularização da extensão", "AIAS em extensão".
 ---
@@ -184,4 +184,4 @@ Produto esperado: 4 materiais revisados e aprovados pela UBS, disponibilizados n
 - EYLER, J.; GILES, D. E. Where's the Learning in Service-Learning? San Francisco: Jossey-Bass, 1999.
 - JACOBY, B. (Ed.). Service-Learning in Higher Education: Concepts and Practices. San Francisco: Jossey-Bass, 1996.
 - BRASIL. Conselho Nacional de Educação. Resolução CNE/CES nº 7, de 18 de dezembro de 2018 — Curricularização da Extensão. Brasília: MEC, 2018.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.

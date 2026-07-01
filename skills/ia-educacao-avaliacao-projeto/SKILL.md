@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao-projeto
 category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em avaliação de projetos no Ensino Superior — rubricas e processos para avaliar projetos interdisciplinares, PBL/PjBL, iniciação científica, extensão e projetos integradores. Cobre avaliação de marcos, entregas parciais, apresentação final, relatório técnico, trabalho em equipe e uso de IA no desenvolvimento do projeto. Acione para: "avaliação de projeto", "projeto integrador", "PBL avaliação", "PjBL avaliação", "rubrica de projeto", "avaliação de projeto interdisciplinar", "projeto final", "TCC projeto", "iniciação científica", "extensão avaliação", "como avaliar projeto", "marcos de projeto", "entrega parcial de projeto".
 ---
@@ -173,6 +173,6 @@ Avaliação: (1) Qualidade do diagnóstico (escuta, dados, análise); (2) Viabil
 - BLUMENFELD, P. C. et al. Motivating Project-Based Learning: Sustaining the Doing, Supporting the Learning. Educational Psychologist, v. 26, n. 3–4, p. 369–398, 1991.
 - THOMAS, J. W. A Review of Research on Project-Based Learning. San Rafael, CA: Autodesk Foundation, 2000.
 - BIGGS, J.; TANG, C. Teaching for Quality Learning at University. 4. ed. Berkshire: McGraw-Hill, 2011.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 

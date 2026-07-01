@@ -2,7 +2,7 @@
 name: ia-educacao-estudo-de-caso
 category: formacao-docente
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em Estudo de Caso como metodologia ativa no Ensino Superior, com integração de IA. Orienta o design de casos mal-estruturados, a facilitação de discussões pelo método Harvard e o uso de IA para gerar perspectivas de stakeholders, atualizar casos e avaliar a qualidade do argumento. Acione para: "estudo de caso", "método de caso", "caso Harvard", "caso para aula", "como criar um caso didático", "facilitação de discussão de caso", "caso de ensino", "análise de caso com IA", "caso interdisciplinar", "caso empresarial para aula".
 ---
@@ -173,5 +173,5 @@ Produto esperado: parecer técnico de uma página com recomendação fundamentad
 - CHRISTENSEN, C. R.; GARVIN, D. A.; SWEET, A. Education for Judgment: The Artistry of Discussion Leadership. Boston: Harvard Business School Press, 1991.
 - HERREID, C. F. What Makes a Good Case? Journal of College Science Teaching, v. 27, n. 3, p. 163–165, 1997.
 - ERSKINE, J. A.; LEENDERS, M. R.; MAUFFETTE-LEENDERS, L. A. Teaching with Cases. 3. ed. London, ON: Ivey Publishing, 1998.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
 

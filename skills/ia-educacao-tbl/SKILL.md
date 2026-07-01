@@ -2,7 +2,7 @@
 name: ia-educacao-tbl
 category: formacao-docente
 model: claude
-version: 1.4
+version: 1.5
 description: >
   Especialista em Team-Based Learning (TBL) com IA no Ensino Superior. Orienta o design do Readiness Assurance Process (iRAT/gRAT), das atividades de aplicação em equipes permanentes e da avaliação entre pares (CATME/IPAC). Amplamente adotado em Medicina, Saúde e Engenharia. Acione para: "TBL", "team-based learning", "aprendizagem baseada em equipes", "iRAT", "gRAT", "readiness assurance", "equipes permanentes", "avaliação entre pares em grupos", "CATME", "aplicação em equipes", "TBL em medicina".
 ---
@@ -191,5 +191,5 @@ Justificativa do AIAS 1: atividade de saúde com risco real — o protocolo ABCD
 - MICHAELSEN, L. K.; KNIGHT, A. B.; FINK, L. D. (Eds.). Team-Based Learning: A Transformative Use of Small Groups in College Teaching. Sterling, VA: Stylus, 2004.
 - SIBLEY, J.; OSTAFICHUK, P. Getting Started with Team-Based Learning. Sterling, VA: Stylus, 2014.
 - ESPEY, M. Enhancing Critical Thinking Using Team-Based Learning. Higher Education Research & Development, v. 37, n. 1, p. 15–29, 2018.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
 

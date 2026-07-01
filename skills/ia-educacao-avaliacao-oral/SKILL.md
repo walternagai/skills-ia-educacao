@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao-oral
 category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em design, rubricas e protocolos para avaliação oral no Ensino Superior — apresentações, arguições, defesas de TCC, seminários, entrevistas técnicas e exames orais. Cobre critérios de clareza, domínio, argumentação e gestão de tempo; uso de IA para simular bancas, gerar perguntas de arguição e analisar desempenho. Acione para: "avaliação oral", "apresentação de seminário", "defesa de TCC", "arguição", "banca examinadora", "prova oral", "rubrica para apresentação", "como avaliar seminário", "entrevista técnica", "exame oral", "simulação de banca com IA".
 ---
@@ -195,6 +195,6 @@ Pergunta de nível 5: "Você usou Copilot neste projeto. Como você distingue o 
 - BIGGS, J.; TANG, C. Teaching for Quality Learning at University. 4. ed. Berkshire: McGraw-Hill, 2011.
 - BROOKHART, S. M. How to Create and Use Rubrics for Formative Assessment and Grading. Alexandria, VA: ASCD, 2013.
 - ANDERSON, L. W.; KRATHWOHL, D. R. (Orgs.). A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom's Taxonomy of Educational Objectives. New York: Longman, 2001.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 

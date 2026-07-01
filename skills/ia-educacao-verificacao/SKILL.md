@@ -2,7 +2,7 @@
 name: ia-educacao-verificacao
 category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em aplicar Chain of Verification (CoVe) para docentes validarem materiais didáticos, questões de prova, planos de aula e feedbacks gerados com IA generativa antes de usar em sala. Acione para: "verificar questões geradas por IA", "validar material didático com IA", "checar afirmações de texto gerado por IA", "revisar feedback de IA antes de devolver ao aluno", "como confiar (ou não) no que a IA produziu", "verificação de fatos em material didático", "supervisão docente de output de IA", "conferir plano de aula gerado por IA".
 ---
@@ -137,6 +137,6 @@ Produto esperado: resumo revisado + tabela de verificação (afirmação / fonte
 
 ## Referências
 - DHULIAWALA, S. et al. Chain-of-Verification Reduces Hallucination in Large Language Models. arXiv:2309.11495, 2023. Disponível em: https://arxiv.org/abs/2309.11495. Acesso em: 30 jun. 2026.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seções 3.4 (Supervisão Humana) e 4.3 (Uso em Avaliação)
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seções 3.4 (Supervisão Humana) e 4.3 (Uso em Avaliação)
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.

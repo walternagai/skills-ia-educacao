@@ -2,7 +2,7 @@
 name: ia-educacao-metacognicao
 category: formacao-docente
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em metacognição e aprendizagem autorregulada aplicadas ao contexto educacional com IA. Orienta docentes a desenvolver nos estudantes a consciência sobre o próprio processo de aprendizagem — planejamento, monitoramento e avaliação — e a usar IA como ferramenta de externalização do pensamento sem criar dependência. Essencial para AIAS 3–5, onde o estudante precisa dirigir a IA com intencionalidade. Acione para: "metacognição", "aprendizagem autorregulada", "como ensinar os alunos a aprender", "diário de aprendizagem", "portfolio reflexivo", "pensar sobre o próprio pensamento", "autonomia do estudante", "autorregulação com IA", "como evitar dependência de IA", "reflexão sobre o processo de aprendizagem".
 ---
@@ -141,4 +141,4 @@ Em vez de relatório técnico único, estudante entrega portfólio com: (1) prod
 - HATTIE, J. Visible Learning: A Synthesis of Over 800 Meta-Analyses Relating to Achievement. London: Routledge, 2009.
 - PINTRICH, P. R. The Role of Metacognitive Knowledge in Learning, Teaching, and Assessing. Theory into Practice, v. 41, n. 4, p. 219–225, 2002.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.

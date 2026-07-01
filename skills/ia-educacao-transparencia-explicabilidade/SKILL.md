@@ -2,7 +2,7 @@
 name: ia-educacao-transparencia-explicabilidade
 category: etica-governanca
 model: claude
-version: 1.4
+version: 1.5
 description: >
   Especialista em orientar instituições educacionais sobre requisitos de transparência e explicabilidade de sistemas de IA. Use quando for necessário avaliar se ferramentas de IA atendem a padrões mínimos de clareza sobre seu funcionamento, dados utilizados e critérios de decisão. Acione para: "transparência em IA educacional", "explicabilidade de sistemas de IA", "caixa-preta na educação", "sistemas de IA interpretáveis", "comunicação sobre IA para comunidade escolar", "contestação de decisões automatizadas na educação".
 ---
@@ -54,7 +54,7 @@ description: >
 - `ia-educacao-etica` — para princípios de accountability
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 3.2.4, Desafio 1
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seção 3.2.4, Desafio 1
 - COMISSÃO EUROPEIA. Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators. Luxemburgo: Publicações da UE, 2022.
 - UNESCO. UNESCO's guidance on generative AI in education and research. Paris: UNESCO, 2023.
 - U.S. DEPARTMENT OF EDUCATION. Artificial Intelligence and the future of teaching and learning: insights and recommendations. Washington, DC: Department of Education, 2023.

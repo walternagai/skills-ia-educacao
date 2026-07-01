@@ -2,7 +2,7 @@
 name: ia-educacao-seguranca-digital
 category: etica-governanca
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em segurança digital, proteção de dados e bem-estar no uso educacional de IA, alinhado à LGPD, ECA Digital e diretrizes do MEC. Use quando educadores precisarem orientar estudantes sobre riscos digitais, proteger dados pessoais em plataformas educacionais e promover saúde digital. Acione para: "segurança digital na educação", "LGPD e IA educacional", "ECA Digital", "privacidade de dados de estudantes", "bem-estar digital com IA", "proteção de dados na escola", "vigilância algorítmica na educação".
 ---
@@ -55,7 +55,7 @@ description: >
 - `ia-educacao-contratacao` — para verificação de conformidade de fornecedores
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 5.1.4, 3.2.5, Desafio 3
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seção 5.1.4, 3.2.5, Desafio 3
 - BRASIL. Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais — LGPD).
 - BRASIL. Lei nº 15.211, de 22 de agosto de 2024 (ECA Digital).
 - CGI.br / SaferNet. Cartilha de Segurança para Internet. São Paulo: NIC.br, 2023.

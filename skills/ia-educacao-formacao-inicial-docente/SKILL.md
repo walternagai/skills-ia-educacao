@@ -2,7 +2,7 @@
 name: ia-educacao-formacao-inicial-docente
 category: formacao-docente
 model: claude
-version: 1.6
+version: 1.7
 description: >
   Especialista em orientar a incorporação da IA nos cursos de licenciatura, preparando futuros professores para o uso pedagógico crítico da tecnologia e para o ensino de fundamentos de IA na Educação Básica. Use quando coordenadores e formadores de licenciaturas precisarem atualizar currículos. Acione para: "IA nas licenciaturas", "formação inicial de professores e IA", "currículo de licenciatura com IA", "futuros professores e IA", "ensino de fundamentos de IA na licenciatura", "preparação de docentes para era da IA".
 ---
@@ -56,7 +56,7 @@ description: >
 - `ia-educacao-etica` — para formação ética
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 8.1, Oportunidade 4
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seção 8.1, Oportunidade 4
 - UNESCO. AI competency framework for teachers. Paris: UNESCO, 2024b.
 - BRASIL. MEC. Saberes digitais docentes. Brasília: MEC, 2024.
 - BATISTA, J.; MESQUITA, A.; CARNAZ, G. Generative AI and Higher Education: Trends, Challenges, and Future Directions. Information, v. 15, 2024.

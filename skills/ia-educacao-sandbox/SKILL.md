@@ -2,7 +2,7 @@
 name: ia-educacao-sandbox
 category: ferramentas-praticas
 model: claude
-version: 1.4
+version: 1.5
 description: >
   Especialista em orientar a criação e operação de sandboxes regulatórios para testagem segura de sistemas de IA em contextos educacionais. Use quando instituições ou órgãos públicos quiserem experimentar soluções de IA em ambiente controlado antes da implementação em larga escala. Acione para: "sandbox regulatório para IA educacional", "ambiente controlado de testagem de IA", "experimentação responsável com IA na educação", "inovação segura em IA educacional", "testes de IA em escolas", "regulamentação experimental de IA na educação".
 ---
@@ -55,7 +55,7 @@ description: >
 - `ia-educacao-etica` — para supervisão ética
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 10.4
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seção 10.4
 - BRASIL. ADVOCACIA-GERAL DA UNIÃO. Guia Referencial de Sandbox Regulatório. Brasília: AGU, 2025.
 - COMISSÃO EUROPEIA. Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators. Luxemburgo: Publicações da UE, 2022.
 - OCDE. OECD Digital Education Outlook 2023 – Emerging Governance of Generative AI in Education. OECD, 2023a.

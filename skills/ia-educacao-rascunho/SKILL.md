@@ -2,7 +2,7 @@
 name: ia-educacao-rascunho
 category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em aplicar a técnica Chain of Draft (CoD) em contextos educacionais: ensina estudantes a raciocinar de forma concisa e densa, orienta docentes no uso de CoD para prompts eficientes com IA, planejamento de aulas e feedback formativo rápido. Acione para: "raciocínio conciso com IA", "CoD na educação", "como ensinar a pensar com clareza", "prompts eficientes para ferramentas de IA", "rascunhos de raciocínio", "esboço antes de escrever com IA", "chain of draft para estudantes", "como reduzir verbosidade", "atividade de síntese com IA", "pensar passo a passo de forma eficiente".
 ---
@@ -137,6 +137,6 @@ Avaliação: produção de 1 contra-argumento por falácia
 ## Referências
 - XU, S.; XIE, W.; ZHAO, L.; HE, P. Chain of Draft: Thinking Faster by Writing Less. arXiv:2502.18600, 25 fev. 2025. Disponível em: https://arxiv.org/abs/2502.18600. Acesso em: 30 jun. 2026.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 

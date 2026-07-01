@@ -2,7 +2,7 @@
 name: ia-educacao-design-problema
 category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em design de problemas, questões-motrizes e situações-gatilho para metodologias ativas no Ensino Superior. Transforma conteúdo disciplinar em problemas autênticos e mal-estruturados que provocam investigação, análise e tomada de decisão. Complementa planejamento-reverso com foco na criação do artefato central (o problema) que ainda está ausente. Acione para: "como criar um problema para minha aula", "problema para PBL", "questão motriz", "situação-gatilho", "problema mal-estruturado", "caso para estudo", "problema autêntico", "como transformar conteúdo em problema", "problema para metodologia ativa", "enunciado que gera discussão".
 ---
@@ -204,4 +204,4 @@ IA (AIAS 2): estudantes podem usar IA para pesquisar o ciclo biológico do mosqu
 - HMELO-SILVER, C. E. Problem-Based Learning: What and How Do Students Learn? Educational Psychology Review, v. 16, n. 3, p. 235–266, 2004.
 - BUCK INSTITUTE FOR EDUCATION. PBL Works: Project Based Learning for the 21st Century. Novato: BIE, 2019.
 - WIGGINS, G.; McTIGHE, J. Understanding by Design. 2. ed. Alexandria, VA: ASCD, 2005.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.

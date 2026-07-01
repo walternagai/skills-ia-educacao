@@ -2,7 +2,7 @@
 name: ia-educacao-portfolio
 category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em design de portfólios avaliativos para o Ensino Superior — portfólios de disciplina, de desenvolvimento profissional, reflexivos e digitais. Cobre curadoria de evidências, rubricas de reflexão, alinhamento a Bloom e AIAS, e uso de IA para organizar, revisar e dar feedback sobre portfólios. Acione para: "portfólio avaliativo", "portfólio reflexivo", "portfólio digital", "portfólio de disciplina", "portfólio de estágio", "como avaliar portfólio", "rubrica de portfólio", "curadoria de evidências", "portfólio com IA", "e-portfólio", "portfólio de desenvolvimento profissional".
 ---
@@ -176,6 +176,6 @@ IA usada para: organizar a linha do tempo, sugerir conexões entre projetos, ger
 - BARRETT, H. C. Balancing the Two Faces of e-Portfolios. Educação, Formação & Tecnologias, v. 3, n. 1, p. 6–14, 2010.
 - ZUBIZARRETA, J. The Learning Portfolio: Reflective Practice for Improving Student Learning. 2. ed. San Francisco: Jossey-Bass, 2009.
 - ANDRADE, H. L. A Critical Review of Research on Student Self-Assessment. Frontiers in Education, 2019.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 

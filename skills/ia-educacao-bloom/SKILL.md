@@ -2,7 +2,7 @@
 name: ia-educacao-bloom
 category: formacao-docente
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista na Taxonomia Revisada de Bloom (Anderson & Krathwohl, 2001) e na sua extensão digital (Churches, 2008) para o contexto educacional com IA. Orienta docentes a classificar e redesenhar objetivos de aprendizagem, atividades presenciais e online, e instrumentos de avaliação com progressão cognitiva coerente, alinhando verbos digitais, nível AIAS e dimensões do conhecimento. Acione para: "escrever objetivos de aprendizagem", "Taxonomia de Bloom com IA", "verbos de Bloom para atividades online", "alinhar avaliação com Bloom", "progressão cognitiva no plano de ensino", "Bloom digital", "objetivos para EaD", "nível cognitivo das minhas questões", "Bloom e AIAS", "redesenhar atividade com Bloom".
 ---
@@ -164,7 +164,7 @@ Grupo de professores quer escrever objetivos para curso online de formação con
 ## Referências
 - ANDERSON, L. W.; KRATHWOHL, D. R. (Orgs.). A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom's Taxonomy of Educational Objectives. New York: Longman, 2001.
 - CHURCHES, A. Bloom's Digital Taxonomy. Educational Origami, 2008. Disponível em: https://educationalorigami.wikispaces.com/Bloom%27s+Digital+Taxonomy. Acesso em: jan. 2025.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seções 4.1 e 4.2 (Competências e Objetivos de Aprendizagem)
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seções 4.1 e 4.2 (Competências e Objetivos de Aprendizagem)
 
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 - BIGGS, J.; TANG, C. Teaching for Quality Learning at University. 4. ed. Berkshire: McGraw-Hill, 2011. [Alinhamento Construtivo]

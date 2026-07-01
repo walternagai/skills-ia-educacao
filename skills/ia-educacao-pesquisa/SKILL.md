@@ -2,7 +2,7 @@
 name: ia-educacao-pesquisa
 category: ferramentas-praticas
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista em pesquisa acadêmica e científica com IA no Ensino Superior. Orienta estudantes e docentes no processo completo: formulação de problema de pesquisa, revisão sistemática com IA, coleta e análise de dados, escrita científica e integridade acadêmica em TCCs, dissertações e artigos. Alinhado ao Referencial MEC 2026. Acione para: "pesquisa com IA", "revisão sistemática", "TCC com IA", "como usar IA no TCC", "integridade na pesquisa", "revisão de literatura com IA", "pergunta de pesquisa", "metodologia de pesquisa", "artigo científico com IA", "análise de dados com IA".
 ---
@@ -182,7 +182,7 @@ Problema de integridade detectado e corrigido: IA havia gerado três referência
 - `aias-consultant` — definição do nível AIAS para o TCC e redação da declaração de uso
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
 - PAGE, M. J. et al. The PRISMA 2020 Statement: An Updated Guideline for Reporting Systematic Reviews. BMJ, v. 372, n. 71, 2021.
 - COMMITTEE ON PUBLICATION ETHICS (COPE). COPE Position Statement on AI and Authorship. London: COPE, 2023.
 - LUND, B. D.; WANG, T. Chatting about ChatGPT: How May AI and GPT Impact Academia and Libraries? Library Hi Tech News, v. 40, n. 3, p. 26–29, 2023.

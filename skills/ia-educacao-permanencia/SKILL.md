@@ -2,7 +2,7 @@
 name: ia-educacao-permanencia
 category: inclusao-equidade
 model: claude
-version: 1.4
+version: 1.5
 description: >
   Especialista em orientar instituições educacionais no uso de IA para prevenção de evasão e abandono escolar. Use quando gestores e equipes pedagógicas precisarem implementar sistemas de alerta antecipado baseados em análise de dados educacionais. Acione para: "prevenção de evasão com IA", "alerta precoce de abandono escolar", "permanência escolar com IA", "análise de dados para permanência", "sistemas de alerta na educação", "intervenção pedagógica preventiva com IA".
 ---
@@ -53,7 +53,7 @@ description: >
 - `ia-educacao-gestao` — para implementação institucional
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Oportunidade 3
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Oportunidade 3
 - NEES. Inteligência Artificial Generativa na Educação. Maceió: NEES, 2024.
 - BANCO MUNDIAL. AI revolution in education: what you need to know. Washington, DC: World Bank Publications, 2024.
 - CIEB. Notas Técnicas #24: Inteligência artificial generativa: usos na gestão das secretarias estaduais de educação. São Paulo: CIEB, 2024b.

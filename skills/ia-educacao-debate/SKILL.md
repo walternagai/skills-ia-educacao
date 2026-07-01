@@ -2,7 +2,7 @@
 name: ia-educacao-debate
 category: formacao-docente
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em debate estruturado e argumentação acadêmica com IA no Ensino Superior. Orienta o design e a facilitação de debates (Oxford, Fishbowl, Seminário Socrático), o uso de IA como advogado do diabo e gerador de contra-argumentos, e a avaliação da qualidade argumentativa. Acione para: "debate estruturado", "debate em sala", "seminário socrático", "fishbowl", "Oxford debate", "argumentação acadêmica", "IA como advogado do diabo", "como avaliar argumento", "contra-argumentação", "falácias argumentativas", "discussão filosófica com IA".
 ---
@@ -185,5 +185,5 @@ Produto esperado: argumento escrito individual de 15 linhas entregue após o deb
 - HESS, D. E. Controversy in the Classroom: The Democratic Power of Discussion. New York: Routledge, 2009.
 - PAUL, R.; ELDER, L. The Miniature Guide to Critical Thinking: Concepts and Tools. Dillon Beach, CA: Foundation for Critical Thinking, 2008.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
 

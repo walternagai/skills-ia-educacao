@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao-diagnostica
 category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em avaliação diagnóstica para o Ensino Superior — mapeamento de pré-requisitos, identificação de misconceptions, testes de nivelamento e pré-testes para metodologias ativas. Cobre design de questões diagnósticas, análise de padrões de erro, uso de IA para personalizar diagnóstico e integração com PBL, TBL, sala invertida e Peer Instruction. Acione para: "avaliação diagnóstica", "pré-teste", "teste de nivelamento", "mapear pré-requisitos", "diagnosticar misconceptions", "survey inicial", "pré-requisitos para disciplina", "teste diagnóstico", "nivelamento de turma", "diagnóstico com IA", "pré-avaliação".
 ---
@@ -173,6 +173,6 @@ Intervenção: módulo inicial de 2 aulas sobre metodologia histórica, com exer
 - SADLER, D. R. Formative Assessment and the Design of Instructional Systems. Instructional Science, v. 18, n. 2, p. 119–144, 1989.
 - HATTIE, J.; TIMPERLEY, H. The Power of Feedback. Review of Educational Research, v. 77, n. 1, p. 81–112, 2007.
 - MAZUR, E. Peer Instruction: A User's Manual. Upper Saddle River, NJ: Prentice Hall, 1997.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 

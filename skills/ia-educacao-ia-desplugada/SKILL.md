@@ -2,7 +2,7 @@
 name: ia-educacao-ia-desplugada
 category: ferramentas-praticas
 model: claude
-version: 1.4
+version: 1.5
 description: >
   Especialista em desenvolver e aplicar atividades de IA desplugada — sem necessidade de dispositivos digitais — para ensinar conceitos fundamentais de IA em contextos com infraestrutura limitada. Use quando educadores precisarem promover letramento em IA em escolas sem conectividade ou dispositivos. Acione para: "IA desplugada", "ensino de IA sem tecnologia", "atividades desplugadas de IA", "letramento em IA sem internet", "conceitos de IA com atividades analógicas", "inclusão digital com IA desplugada", "IA para escolas sem infraestrutura".
 ---
@@ -55,7 +55,7 @@ description: >
 - `ia-educacao-pensamento-critico` — para reflexão crítica
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 4.1, Capítulo 6
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seção 4.1, Capítulo 6
 - NEES. Inteligência Artificial Desplugada na Educação. Maceió: NEES, 2025.
 - UNESCO. Currículos de IA para a educação básica: um mapeamento de currículos de IA aprovados pelos governos. Paris; Brasília: UNESCO, 2022a.
 - VICARI, R. M. et al. Inteligência Artificial na Educação Básica: Prática na Escola. São Paulo: Novatec, 2023.

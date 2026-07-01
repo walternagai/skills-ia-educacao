@@ -2,7 +2,7 @@
 name: ia-educacao-interdisciplinaridade
 category: formacao-docente
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista em design e avaliação de atividades interdisciplinares no Ensino Superior, com foco em cursos STHEM (Science, Technology, Humanities, Engineering, Math). Orienta como integrar disciplinas sem perder rigor disciplinar, construir avaliações que capturem síntese, e usar IA como ferramenta de integração de perspectivas. Acione para: "interdisciplinaridade", "projeto interdisciplinar", "integração de disciplinas", "STHEM", "atividade que integra disciplinas", "como avaliar projeto interdisciplinar", "problema que exige mais de uma área", "currículo integrado", "problema complexo multidisciplinar", "disciplinas conversando entre si".
 ---
@@ -164,4 +164,4 @@ Produto: modelo calibrado + análise das limitações do modelo frente à comple
 - REPKO, A. F.; SZOSTAK, R. Interdisciplinary Research: Process and Theory. 3. ed. Thousand Oaks: SAGE, 2017.
 - BOIX MANSILLA, V.; GARDNER, H. Assessing the Quality of Students' Work at the Boundaries of Disciplines. Teachers College Record, v. 105, n. 5, p. 869–903, 2003.
 - NIKITINA, S. Three Strategies for Interdisciplinary Teaching: Contextualizing, Conceptualizing, and Problem-Centering. Journal of Curriculum Studies, v. 38, n. 3, p. 251–271, 2006.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.

@@ -2,7 +2,7 @@
 name: ia-educacao-planejamento-reverso
 category: formacao-docente
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista no framework Planejamento Reverso (Backward Design / UbD — Wiggins & McTighe) aplicado ao design de disciplinas e cursos com IA. Guia docentes pelos três estágios: (1) Resultados desejados — compreensões duradouras, questões essenciais, objetivos de Bloom; (2) Evidências de aprendizagem — tarefas de desempenho autênticas com nível AIAS definido; (3) Plano de experiências — sequência didática alinhada com WHERETO. Acione para: "design de disciplina", "como planejar um curso do zero", "planejar avaliação antes da aula", "alinhamento construtivo", "compreensões duradouras", "questões essenciais", "tarefas de desempenho", "UbD", "planejamento reverso", "reformular ementa", "backward design", "plano de ensino orientado por resultados".
 ---
@@ -175,6 +175,6 @@ Docente tem ementa antiga centrada em tópicos; quer reformular com Planejamento
 - WIGGINS, G.; McTIGHE, J. Understanding by Design. 2. ed. Alexandria, VA: ASCD, 2005.
 - WIGGINS, G.; McTIGHE, J. The Understanding by Design Guide to Creating High-Quality Units. Alexandria, VA: ASCD, 2011.
 - BIGGS, J.; TANG, C. Teaching for Quality Learning at University. 4. ed. Berkshire: McGraw-Hill, 2011. [Alinhamento construtivo]
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seções 4.1 (Objetivos de Aprendizagem) e 4.2 (Avaliação)
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seções 4.1 (Objetivos de Aprendizagem) e 4.2 (Avaliação)
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 - FINK, L. D. Creating Significant Learning Experiences: An Integrated Approach to Designing College Courses. 2. ed. San Francisco: Jossey-Bass, 2013.

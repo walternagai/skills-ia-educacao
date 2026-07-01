@@ -2,7 +2,7 @@
 name: ia-educacao-governanca-dados
 category: etica-governanca
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em estruturar políticas de governança de dados para uso de IA em contextos educacionais, em conformidade com a LGPD e o ECA Digital. Use quando instituições educacionais precisarem estabelecer regras claras para coleta, uso, armazenamento e proteção de dados de estudantes e educadores. Acione para: "governança de dados educacionais", "LGPD na educação com IA", "proteção de dados de estudantes", "política de dados para IA educacional", "consentimento informado na educação", "ECA Digital e proteção de dados".
 ---
@@ -57,7 +57,7 @@ description: >
 - `ia-educacao-impacto-algoritmico` — para avaliação de riscos
 
 ## Referências
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 3.2.5, Capítulo 10
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seção 3.2.5, Capítulo 10
 - BRASIL. Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais — LGPD).
 - BRASIL. Lei nº 15.211, de 22 de agosto de 2024 (ECA Digital).
 - ANPD. Guia Orientativo: Relatório de Impacto à Proteção de Dados Pessoais (RIPD). Brasília: ANPD, 2022.

@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao-competencia
 category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em avaliação por competências no Ensino Superior — rubricas de proficiência, certificação de competências, tarefas de desempenho autênticas e alinhamento a marcos regulatórios (BNCC, DCNs, SINAES). Cobre desenho de níveis de proficiência, portfólios de evidências, avaliação de competências transversais e uso de IA para mapear e acompanhar desenvolvimento de competências. Acione para: "avaliação por competências", "competências", "proficiência", "rubrica de competência", "certificação de competências", "tarefa de desempenho", "avaliação autêntica", "DCN", "SINAES", "BNCC competências", "mapeamento de competências", "nível de proficiência", "competências transversais", "avaliação baseada em competências".
 ---
@@ -202,6 +202,6 @@ Evidência: projeto integrador + memorial de cálculo + apresentação para banc
 - ZABALA, A.; ARNAU, L. Como Aprender e Ensinar Competências. Porto Alegre: Artmed, 2010.
 - PERRENOUD, P. Construir as Competências desde a Escola. Porto Alegre: Artmed, 1999.
 - BIGGS, J.; TANG, C. Teaching for Quality Learning at University. 4. ed. Berkshire: McGraw-Hill, 2011.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.
 

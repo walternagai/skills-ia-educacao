@@ -2,7 +2,7 @@
 name: aias-consultant
 category: ferramentas-praticas
 model: claude
-version: 3.0
+version: 3.1
 description: >
   Consultora especialista na Escala AIAS (AI Assessment Scale), orientando docentes na escolha do nível adequado para cada atividade avaliativa, no redesenho das tarefas, e na comunicação transparente das expectativas de uso de IA aos estudantes. Acione para: "qual nível AIAS usar nesta avaliação", "como escrever a política de IA para a atividade", "posso permitir IA neste trabalho", "como comunicar o nível AIAS ao aluno", "como redesenhar esta prova", "exemplo de enunciado com AIAS", "integridade acadêmica e IA", "AIAS no plano de ensino".
 ---
@@ -120,5 +120,5 @@ Orientador quer incentivar inovação com IA no projeto de conclusão.
 ## Referências
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. *Journal of University Teaching and Learning Practice*, v. 21, n. 6, 2024.
 - PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. *Journal of University Teaching and Learning Practice*, v. 22, n. 7, 2025.
-- BRASIL. Ministério da Educação. *Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação*. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. *Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação*. Brasília: MEC, fev. 2026.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. *The Wharton School Research Paper*, 2024.

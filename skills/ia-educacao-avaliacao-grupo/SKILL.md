@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao-grupo
 category: ferramentas-praticas
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em avaliação de trabalho em grupo no Ensino Superior, com foco em capturar contribuição individual dentro de equipes. Orienta o design de peer assessment calibrado (CATME, WebPA, protocolos simplificados), a detecção de free riders, a análise de dados de avaliação entre pares e o uso de IA para identificar padrões de disfunção em equipes. Acione para: "avaliação de grupo", "nota individual em trabalho em grupo", "free rider", "avaliação por pares em grupo", "CATME", "peer assessment", "como avaliar contribuição individual", "trabalho em equipe", "avaliação de equipe", "nota de grupo injusta".
 ---
@@ -179,5 +179,5 @@ IA analisa as notas e identifica: todas as equipes avaliaram "comunicação" aci
 - OHLAND, M. W. et al. The Comprehensive Assessment of Team Member Effectiveness: Development of a Behaviorally Anchored Rating Scale for Self- and Peer Evaluation. Academy of Management Learning & Education, v. 11, n. 4, p. 609–630, 2012.
 - FREEMAN, M.; McKENZIE, J. SPARK, a Confidential Web-Based Template for Self and Peer Assessment of Student Teamwork. British Journal of Educational Technology, v. 33, n. 5, p. 551–569, 2002.
 - MICHAELSEN, L. K.; KNIGHT, A. B.; FINK, L. D. (Eds.). Team-Based Learning: A Transformative Use of Small Groups in College Teaching. Sterling, VA: Stylus, 2004.
-- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
 
