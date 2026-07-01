@@ -4,7 +4,7 @@ Acervo de skills que orientam a integração responsável de Inteligência Artif
 
 ## O que há neste repositório
 
-- **54 skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code
+- **Skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code (contagem atual: `ls skills | wc -l`)
 - **PDFs normativos** (`raw-pdfs/`) — Referencial MEC, artigos AIAS originais
 - **CLAUDE.md** — instruções de contexto para instâncias do Claude Code neste repositório
 
@@ -116,6 +116,14 @@ Após instalada, chame a skill pelo nome:
 | `/ia-educacao-rubrica` | Design de rubricas analíticas, holísticas e single-point alinhadas a Bloom, AIAS e DUA |
 | `/ia-educacao-feedback` | Feedback formativo em escala com IA: Feed Up/Back/Forward, feedback por pares e autoavaliação |
 | `/ia-educacao-avaliacao-grupo` | Avaliação de trabalho em grupo: peer assessment calibrado (CATME/WebPA), detecção de free riders e fator individual |
+| `/ia-educacao-avaliacao-competencia` | Avaliação por competências: rubricas de proficiência, tarefas de desempenho autênticas e alinhamento a DCNs/SINAES |
+| `/ia-educacao-avaliacao-diagnostica` | Avaliação diagnóstica: mapeamento de pré-requisitos, identificação de misconceptions e testes de nivelamento |
+| `/ia-educacao-avaliacao-oral` | Avaliação oral: rubricas, protocolos e simulação de banca com IA para apresentações, arguições, defesas e exames orais |
+| `/ia-educacao-avaliacao-projeto` | Avaliação de projetos interdisciplinares, PBL/PjBL, iniciação científica e extensão com marcos e peer assessment |
+| `/ia-educacao-autoavaliacao` | Autoavaliação do estudante: acurácia calibrada, instrumentos reflexivos e alinhamento com feedback docente |
+| `/ia-educacao-portfolio` | Design de portfólios avaliativos (disciplina, desenvolvimento, reflexivo, projeto, estágio, e-portfólio) |
+| `/ia-educacao-mcq` | Design, validação e análise de questões de múltipla escolha com distratores por área e alinhamento Bloom |
+| `/ia-educacao-banco-questoes` | Banco de questões e blueprint de provas: tabela de especificações e balanceamento de instrumentos avaliativos |
 | `/ia-educacao-design-problema` | Design de problemas para metodologias ativas: problema mal-estruturado, questão-motriz, ConcepTest e questão contestável |
 | `/ia-educacao-pesquisa` | Pesquisa acadêmica com IA: revisão sistemática, integridade em TCCs e artigos, declaração de uso AIAS, checklist FINER |
 | `/ia-educacao-escrita` | Escrita acadêmica e técnica com IA: ciclo correto (pensar→rascunhar→revisar), voz autoral, gêneros STHEM e integridade |

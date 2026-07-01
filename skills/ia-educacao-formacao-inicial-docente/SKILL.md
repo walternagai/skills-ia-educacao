@@ -2,7 +2,7 @@
 name: ia-educacao-formacao-inicial-docente
 category: formacao-docente
 model: claude
-version: 1.4
+version: 1.5
 description: >
   Especialista em orientar a incorporação da IA nos cursos de licenciatura, preparando futuros professores para o uso pedagógico crítico da tecnologia e para o ensino de fundamentos de IA na Educação Básica. Use quando coordenadores e formadores de licenciaturas precisarem atualizar currículos. Acione para: "IA nas licenciaturas", "formação inicial de professores e IA", "currículo de licenciatura com IA", "futuros professores e IA", "ensino de fundamentos de IA na licenciatura", "preparação de docentes para era da IA".
 ---
@@ -51,10 +51,9 @@ description: >
 
 ## Dependências
 - `ia-educacao-fundamentos` — para base conceitual
-- `ia-educacao-planejamento-didatico` — para uso de IA no planejamento
+- `ia-educacao-planejamento-didatico` — para uso de IA no planejamento e prática de planejamento pedagógico durante a formação
 - `ia-educacao-basica` — para conexão com a prática na EB
 - `ia-educacao-etica` — para formação ética
-- `ia-educacao-planejamento-didatico` — para prática de planejamento pedagógico com IA durante a formação
 
 ## Referências
 - BRASIL. MEC. Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação. Brasília: MEC, 2026. — Seção 8.1, Oportunidade 4

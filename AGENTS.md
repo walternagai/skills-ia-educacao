@@ -2,7 +2,7 @@
 
 ## Natureza do repositório
 
-Acervo documental + 54 skills (`skills/*/SKILL.md`). **Não há código, build, testes, lint, typecheck ou CI.** Nenhum comando de compilação/teste se aplica.
+Acervo documental + skills (`skills/*/SKILL.md`) — a contagem cresce; confira com `ls skills | wc -l`. **Não há código, build, testes, lint, typecheck ou CI.** Nenhum comando de compilação/teste se aplica.
 
 ## Fonte primária
 

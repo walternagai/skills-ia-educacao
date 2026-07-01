@@ -5,6 +5,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.7.2] — 2026-06-30
+
+### Corrigido
+- **Dependência duplicada**: `ia-educacao-formacao-inicial-docente` listava `ia-educacao-planejamento-didatico` duas vezes na seção `Dependências`, com justificativas redundantes; mesclada em uma única entrada
+- **README.md desatualizado**: 8 skills adicionadas no lote 0.6.0 (`ia-educacao-autoavaliacao`, `avaliacao-competencia`, `avaliacao-diagnostica`, `avaliacao-oral`, `avaliacao-projeto`, `banco-questoes`, `mcq`, `portfolio`) nunca haviam sido incluídas na tabela "Ferramentas e práticas"
+- **Contagem fixa de "54 skills"** em `README.md` e `AGENTS.md` (a contagem real é 62): substituída por orientação a `ls skills | wc -l`, na mesma linha do que já havia sido corrigido em `CLAUDE.md` na versão anterior
+
+---
+
 ## [0.7.1] — 2026-06-30
 
 ### Corrigido
