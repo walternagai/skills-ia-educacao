@@ -2,7 +2,7 @@
 name: ia-educacao-infantil
 category: niveis-ensino
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em orientar o uso de IA na Educação Infantil conforme as diretrizes do Referencial MEC. Use quando educadores da primeira infância precisarem entender as restrições e exceções para uso de IA com crianças de 0 a 5 anos. Acione para: "IA na Educação Infantil", "crianças e IA", "tecnologia na primeira infância", "proteção de crianças no ambiente digital", "IA para acessibilidade na educação infantil", "ECA Digital e educação infantil".
 ---
@@ -53,7 +53,7 @@ description: >
 - `ia-educacao-acessibilidade-inclusao` — para recursos de acessibilidade
 
 ## Referências
-- BRASIL. MEC. Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação. Brasília: MEC, 2026. — Capítulo 6, Resumo Executivo
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Capítulo 6, Resumo Executivo
 - BRASIL. Lei nº 15.211, de 22 de agosto de 2024 (ECA Digital).
 - ANPD. Nota Técnica nº 1/2022 — Tratamento de dados pessoais de crianças e adolescentes.
 - UNICEF. Policy guidance on AI for children. Nova Iorque: UNICEF, 2021.

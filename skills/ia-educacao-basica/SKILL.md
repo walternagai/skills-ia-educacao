@@ -2,7 +2,7 @@
 name: ia-educacao-basica
 category: niveis-ensino
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em orientar a integração gradual e segura da IA na Educação Básica, seguindo o princípio do Referencial MEC de que estudantes devem primeiro aprender sobre IA para depois aprender com IA. Use quando educadores da EB precisarem planejar o letramento em IA desde os anos iniciais. Acione para: "IA na Educação Básica", "letramento em IA para crianças", "aprender sobre IA antes de aprender com IA", "IA no Ensino Fundamental", "progressão de IA por etapa de ensino", "currículo de IA na educação básica".
 ---
@@ -57,7 +57,7 @@ description: >
 - `ia-educacao-seguranca-digital` — para proteção de crianças
 
 ## Referências
-- BRASIL. MEC. Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação. Brasília: MEC, 2026. — Capítulo 6, Seção 4.1
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Capítulo 6, Seção 4.1
 - UNESCO. Currículos de IA para a educação básica: um mapeamento de currículos de IA aprovados pelos governos. Paris; Brasília: UNESCO, 2022a.
 - NEES. Inteligência Artificial Generativa na Educação. Maceió: NEES, 2024.
 - NEES. Inteligência Artificial Desplugada na Educação. Maceió: NEES, 2025.

@@ -2,7 +2,7 @@
 name: ia-educacao-pensamento-critico
 category: formacao-docente
 model: claude
-version: 1.4
+version: 1.5
 description: >
   Especialista em desenvolver estratégias pedagógicas que utilizem a IA como estímulo — e não substituta — do pensamento crítico e da criatividade dos estudantes. Use quando educadores precisarem desenhar atividades que posicionem a IA como objeto de análise, debate e investigação crítica. Acione para: "pensamento crítico com IA", "criatividade e IA na educação", "análise de vieses em IA", "metacognição com IA", "IA como objeto de investigação crítica", "atividades de pensamento crítico com IA generativa".
 ---
@@ -57,7 +57,7 @@ description: >
 - `ia-educacao-letramento-dados` — verificação de fatos exige compreensão de como dados são produzidos e podem ser manipulados
 
 ## Referências
-- BRASIL. MEC. Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação. Brasília: MEC, 2026. — Seção 4.3, 5.2.4
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 4.3, 5.2.4
 - LEE, H.-P. H. et al. The impact of Generative AI on critical thinking: self-reported reductions in cognitive effort and confidence effects from a survey of knowledge workers. In: CHI Conference on Human Factors in Computing Systems (CHI '25), 2025.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - LARSON, B. Z. et al. From the editors: Critical Thinking in the age of generative AI. Academy of Management Learning & Education, v. 23, n. 3, 2024.

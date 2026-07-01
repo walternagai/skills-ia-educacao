@@ -2,7 +2,7 @@
 name: ia-educacao-fundamentos
 category: formacao-docente
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em fundamentos de Inteligência Artificial para profissionais da educação, com base no Referencial do MEC (2026). Use quando educadores precisarem compreender conceitos básicos de IA — machine learning, dados, algoritmos, modelos fundacionais, IA preditiva vs. generativa, alucinações, vieses — e suas implicações pedagógicas. Acione para: "o que é IA", "como funciona machine learning", "diferença entre IA generativa e preditiva", "alucinações em IA", "fundamentos de IA para professores", "conceitos básicos de IA na educação".
 ---
@@ -60,11 +60,11 @@ Resposta estruturada em linguagem acessível para educadores, com:
 - `ia-educacao-vieses` — para compreensão de vieses algorítmicos
 
 ## Referências
-- BRASIL. MEC. Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação. Brasília: MEC, 2026. — Seção 1.2, 5.1.1
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 1.2, 5.1.1
 - UNESCO. AI and education: guidance for policymakers. Paris: UNESCO, 2021.
 - OCDE. The potential impact of Artificial Intelligence on Education: opportunities and challenges. Paris: OCDE Publishing, 2024b.
 - UNESCO. Guia para a IA generativa na educação e na pesquisa. França: UNESCO, 2024c.
 - VICARI, R. M. et al. Inteligência Artificial na Educação Básica: Prática na Escola. São Paulo: Novatec, 2023.
 - COMISSÃO EUROPEIA. Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators. Luxemburgo: Publicações da UE, 2022.
-- MARITACA AI. Sabiá: Portuguese Large Language Model. 2023. Disponível em: https://maritaca.ai.
+- MARITACA AI. Sabiá: Portuguese Large Language Model. 2023. Disponível em: https://maritaca.ai. Acesso em: 30 jun. 2026.
 - PIRES, R. et al. BERTimbau: Pre-trained BERT models for Brazilian Portuguese. In: CERRI, R.; PRATI, R. C. (eds.) Intelligent Systems. BRACIS 2020. Lecture Notes in Computer Science. Springer, 2020.

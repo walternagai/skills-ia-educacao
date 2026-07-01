@@ -2,7 +2,7 @@
 name: ia-educacao-supervisao-humana
 category: etica-governanca
 model: claude
-version: 1.4
+version: 1.5
 description: >
   Especialista em orientar a implementação de modelos de supervisão humana para uso de IA em contextos educacionais. Use quando instituições precisarem definir níveis de autonomia de sistemas de IA e garantir que decisões educacionais de alto impacto permaneçam sob controle humano. Acione para: "supervisão humana em IA educacional", "human-in-the-loop na educação", "human-on-the-loop na educação", "controle humano de decisões algorítmicas", "autonomia de sistemas de IA na escola", "validação humana de resultados de IA".
 ---
@@ -56,7 +56,7 @@ description: >
 - `ia-educacao-gestao` — para implementação institucional
 
 ## Referências
-- BRASIL. MEC. Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação. Brasília: MEC, 2026. — Seção 3.2, 3.2.3
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 3.2, 3.2.3
 - COMISSÃO EUROPEIA. Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators. Luxemburgo: Publicações da UE, 2022.
 - U.S. DEPARTMENT OF EDUCATION. Artificial Intelligence and the future of teaching and learning: insights and recommendations. Washington, DC: Department of Education, 2023.
 - BANCO MUNDIAL. AI revolution in education: what you need to know. Washington, DC: World Bank Publications, 2024.

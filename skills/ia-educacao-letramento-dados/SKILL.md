@@ -2,7 +2,7 @@
 name: ia-educacao-letramento-dados
 category: inclusao-equidade
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em desenvolver competências de alfabetização em dados para educadores e estudantes no contexto da IA educacional. Use quando for necessário capacitar profissionais da educação para compreender o ciclo de vida dos dados, avaliar criticamente informações geradas por IA e reconhecer o papel central dos dados no funcionamento dos sistemas. Acione para: "alfabetização em dados", "letramento de dados com IA", "ciclo de vida dos dados", "avaliar informações geradas por IA", "dados e IA na educação", "qualidade dos dados em sistemas de IA".
 ---
@@ -55,12 +55,12 @@ description: >
 - `ia-educacao-visualizacao-dados` — leitura e criação crítica de gráficos são habilidades centrais do letramento de dados
 
 ## Referências
-- BRASIL. MEC. Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação. Brasília: MEC, 2026. — Seção 5.1.2
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Seção 5.1.2
 - VICARI, R. M. et al. Inteligência Artificial na Educação Básica: Prática na Escola. São Paulo: Novatec, 2023.
 - COMISSÃO EUROPEIA. Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators. Luxemburgo: Publicações da UE, 2022.
 - UNESCO. AI and education: guidance for policymakers. Paris: UNESCO, 2021.
 - UNESCO. Global education monitoring report 2023: technology in education: a tool on whose terms? Paris: UNESCO, 2023.
 - CGI.BR. Educação em um cenário de plataformização e de economia dos dados: problemas e conceitos. São Paulo: NIC.br, 2022.
-- INEP. Censo Escolar da Educação Básica. Brasília: INEP/MEC (publicação anual). Disponível em: https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar.
-- CGI.br. TIC Educação. São Paulo: CGI.br (edição mais recente). Disponível em: https://cetic.br/pt/pesquisa/educacao/.
+- INEP. Censo Escolar da Educação Básica. Brasília: INEP/MEC (publicação anual). Disponível em: https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar. Acesso em: 30 jun. 2026.
+- CGI.br. TIC Educação. São Paulo: CGI.br (edição mais recente). Disponível em: https://cetic.br/pt/pesquisa/educacao/. Acesso em: 30 jun. 2026.
 - PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025.

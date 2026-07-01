@@ -5,6 +5,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.7.3] — 2026-06-30
+
+### Corrigido
+- **Referência do Referencial MEC (2026) inconsistente em 62 skills**: metade do acervo citava `BRASIL. MEC. ... IA na Educação` e a outra metade `BRASIL. Ministério da Educação. ... Inteligência Artificial na Educação` — mesmo documento, autor institucional e título divergentes. Padronizado para a forma por extenso (`BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026.`) em 30 skills que usavam a forma abreviada
+- **9 referências online sem "Acesso em"** (exigência da ABNT NBR 6023 para fontes eletrônicas): adicionado "Acesso em: 30 jun. 2026." em `ia-educacao-acessibilidade-inclusao`, `ia-educacao-dua`, `ia-educacao-fundamentos`, `ia-educacao-ia-desplugada`, `ia-educacao-letramento-dados` (2x), `ia-educacao-rascunho`, `ia-educacao-verificacao`, `ia-educacao-visualizacao-dados`; a referência da WILKE (2019) em `ia-educacao-visualizacao-dados` também teve a notação `[Disponível em: ...]` normalizada para o padrão ABNT (`Disponível em: https://...`)
+- **34 skills** com `version` incrementada no frontmatter em decorrência das correções acima, conforme convenção do repositório
+
+---
+
 ## [0.7.2] — 2026-06-30
 
 ### Corrigido

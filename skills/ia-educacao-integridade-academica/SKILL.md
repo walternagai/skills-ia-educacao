@@ -2,7 +2,7 @@
 name: ia-educacao-integridade-academica
 category: etica-governanca
 model: claude
-version: 1.3
+version: 1.4
 description: >
   Especialista em orientar instituições educacionais sobre integridade acadêmica na era da IA generativa. Use quando for necessário estabelecer diretrizes para uso ético de IA em trabalhos acadêmicos, prevenir plágio, proteger direitos autorais e redefinir práticas de avaliação. Acione para: "plágio com IA", "integridade acadêmica e IA", "direitos autorais na IA generativa", "política de uso de IA para estudantes", "citação de IA em trabalhos", "autoria e IA na educação".
 ---
@@ -53,7 +53,7 @@ description: >
 - `ia-educacao-fundamentos` — para compreensão do funcionamento da IA generativa
 
 ## Referências
-- BRASIL. MEC. Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação. Brasília: MEC, 2026. — Desafio 4, Seção 4.2
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Desafio 4, Seção 4.2
 - AUSTRALIAN DEPARTMENT OF EDUCATION. Australian Framework for Generative Artificial Intelligence in Schools. Austrália: Commonwealth of Australia, 2023.
 - UNESCO. UNESCO's guidance on generative AI in education and research. Paris: UNESCO, 2023.
 - SAMPAIO, R. C. et al. ChatGPT e outras IAs transformarão a pesquisa científica: reflexões sobre seus usos. Revista de Sociologia e Política, v. 32, e008, 2024.

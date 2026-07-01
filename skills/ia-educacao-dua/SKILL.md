@@ -2,7 +2,7 @@
 name: ia-educacao-dua
 category: inclusao-equidade
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista no framework Desenho Universal para a Aprendizagem (DUA/UDL) aplicado em todos os níveis de ensino e perfis de aprendiz, integrado ao uso de IA generativa. Orienta docentes a aplicar os três princípios DUA — Engajamento, Representação, Ação e Expressão — de forma proativa, removendo barreiras antes que aconteçam e usando IA como ferramenta de múltiplas representações. Acione para: "DUA na prática", "como aplicar Desenho Universal", "plano de aula inclusivo", "diferentes formas de representar o conteúdo", "múltiplas formas de avaliação", "DUA no ensino superior", "DUA na educação básica", "remover barreiras de aprendizagem", "neurodiversidade em sala", "como incluir todos os alunos", "UDL e IA".
 ---
@@ -164,7 +164,7 @@ Professor quer gerar múltiplas representações de um mesmo conceito (fotossín
 - `aias-consultant` — determinar o nível AIAS coerente com as acomodações DUA planejadas
 
 ## Referências
-- CAST. Universal Design for Learning Guidelines. Version 2.2. Wakefield, MA: CAST, 2018. Disponível em: https://udlguidelines.cast.org
+- CAST. Universal Design for Learning Guidelines. Version 2.2. Wakefield, MA: CAST, 2018. Disponível em: https://udlguidelines.cast.org. Acesso em: 30 jun. 2026.
 - MEYER, A.; ROSE, D. H.; GORDON, D. Universal Design for Learning: Theory and Practice. Wakefield, MA: CAST, 2014.
 - BRASIL. Lei nº 13.146, de 6 de julho de 2015. Lei Brasileira de Inclusão da Pessoa com Deficiência (LBI).
 - BRASIL. Ministério da Educação. Política Nacional de Educação Especial na Perspectiva da Educação Inclusiva. Brasília: MEC, 2008.

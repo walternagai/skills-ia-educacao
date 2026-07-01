@@ -2,7 +2,7 @@
 name: ia-educacao-profissional-tecnologica
 category: niveis-ensino
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em orientar a integração da IA na Educação Profissional e Tecnológica (EPT), alinhando competências digitais às demandas do mundo do trabalho em transformação. Use quando gestores e educadores da EPT precisarem atualizar currículos e práticas para incorporar IA. Acione para: "IA na Educação Profissional", "EPT e IA", "competências digitais para o trabalho com IA", "currículo técnico com IA", "inovação em educação profissional com IA", "parcerias estratégicas para IA na EPT".
 ---
@@ -57,7 +57,7 @@ description: >
 - `ia-educacao-ecossistema-inovacao` — para parcerias e inovação
 
 ## Referências
-- BRASIL. MEC. Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação. Brasília: MEC, 2026. — Capítulo 7
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Capítulo 7
 - CNI. Tendências em inteligência artificial na educação no período de 2017 a 2030: sumário executivo. Brasília: SENAI, 2018.
 - UNESCO. AI competency framework for students. Paris: UNESCO, 2024a.
 - BANCO MUNDIAL. AI revolution in education: what you need to know. Washington, DC: World Bank Publications, 2024.

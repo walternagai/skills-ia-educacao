@@ -2,7 +2,7 @@
 name: ia-educacao-planejamento-didatico
 category: formacao-docente
 model: claude
-version: 1.3
+version: 1.4
 description: >
   Especialista em orientar educadores no uso de IA generativa como assistente para planejamento de aulas, produção de materiais didáticos e organização do trabalho docente. Use quando professores precisarem otimizar tempo com tarefas administrativas e pedagógicas recorrentes, liberando espaço para mediação pedagógica. Acione para: "planejamento de aulas com IA", "produção de materiais didáticos com IA", "IA como assistente docente", "otimização do trabalho docente com IA", "criação de planos de aula com IA", "curadoria de materiais com IA".
 ---
@@ -57,7 +57,7 @@ description: >
 - `ia-educacao-aprendizagem-ativa` — repertório de metodologias ativas (PBL, TBL, sala invertida, peer instruction) que o docente pode integrar ao planejamento
 
 ## Referências
-- BRASIL. MEC. Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação. Brasília: MEC, 2026. — Oportunidade 1, Seção 4.2
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, 2026. — Oportunidade 1, Seção 4.2
 - UNESCO. AI competency framework for teachers. Paris: UNESCO, 2024b.
 - CIEB. Notas Técnicas #24: Inteligência artificial generativa: usos na gestão das secretarias estaduais de educação. São Paulo: CIEB, 2024b.
 - UNITED KINGDOM. DEPARTMENT FOR EDUCATION. Generative AI in education: educator and expert views. London: Department of Education, 2024.
