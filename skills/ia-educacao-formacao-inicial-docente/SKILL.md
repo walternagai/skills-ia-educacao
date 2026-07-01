@@ -2,7 +2,7 @@
 name: ia-educacao-formacao-inicial-docente
 category: formacao-docente
 model: claude
-version: 1.7
+version: 1.8
 description: >
   Especialista em orientar a incorporação da IA nos cursos de licenciatura, preparando futuros professores para o uso pedagógico crítico da tecnologia e para o ensino de fundamentos de IA na Educação Básica. Use quando coordenadores e formadores de licenciaturas precisarem atualizar currículos. Acione para: "IA nas licenciaturas", "formação inicial de professores e IA", "currículo de licenciatura com IA", "futuros professores e IA", "ensino de fundamentos de IA na licenciatura", "preparação de docentes para era da IA".
 ---
@@ -60,7 +60,7 @@ description: >
 - UNESCO. AI competency framework for teachers. Paris: UNESCO, 2024b.
 - BRASIL. MEC. Saberes digitais docentes. Brasília: MEC, 2024.
 - BATISTA, J.; MESQUITA, A.; CARNAZ, G. Generative AI and Higher Education: Trends, Challenges, and Future Directions. Information, v. 15, 2024.
-- GONSALES, P.; SEBRIAM, D.; AVELAR, M. IA e Ensino Público Superior no Brasil. Cátedra UNESCO, 2025.
+- GONSALES, P.; SEBRIAM, D.; AVELAR, M. IA e Ensino Público Superior no Brasil: Recomendações para políticas institucionais de governança. Cátedra UNESCO em Educação Aberta, 2025.
 - FENG, T. H. et al. From automation to cognition: redefining the roles of educators and generative AI in computing education. In: ACE Conference, 2025.
 - TAYLOR, S. UNESCO & OECD AI Frameworks: Students & Teachers Spreadsheets, 2025.
 - CNE. Resolução CNE/CP nº 2, de 20 de dezembro de 2019 — BNC-Formação (Base Nacional Comum para a Formação Inicial de Professores da Educação Básica).

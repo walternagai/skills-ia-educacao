@@ -2,7 +2,7 @@
 name: ia-educacao-personalizacao
 category: ferramentas-praticas
 model: claude
-version: 1.5
+version: 1.6
 description: >
   Especialista em orientar a implementação pedagógica de sistemas de personalização do ensino mediados por IA. Use quando educadores e gestores precisarem compreender como sistemas tutoriais inteligentes (STIs) e plataformas adaptativas podem apoiar percursos individualizados de aprendizagem, respeitando equidade e supervisão docente. Acione para: "personalização do ensino com IA", "aprendizagem adaptativa", "sistemas tutoriais inteligentes", "plataformas adaptativas na educação", "percursos individualizados com IA", "feedback personalizado com IA".
 ---
@@ -59,6 +59,6 @@ description: >
 - VICARI, R. M. et al. Inteligência Artificial na Educação Básica: Prática na Escola. São Paulo: Novatec, 2023.
 - BANCO MUNDIAL. AI revolution in education: what you need to know. Washington, DC: World Bank Publications, 2024.
 - OCDE. The potential impact of Artificial Intelligence on Education: opportunities and challenges. Paris: OCDE Publishing, 2024b.
-- U.S. DEPARTMENT OF EDUCATION. Artificial Intelligence and the future of teaching and learning. Washington, DC: Department of Education, 2023.
+- U.S. DEPARTMENT OF EDUCATION. Artificial Intelligence and the future of teaching and learning: insights and recommendations. Washington, DC: Department of Education, 2023.
 - UNESCO. AI competency framework for students. Paris: UNESCO, 2024a.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024.

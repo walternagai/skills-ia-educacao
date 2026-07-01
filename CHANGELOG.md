@@ -5,6 +5,20 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.7.5] — 2026-06-30
+
+### Corrigido
+- **6 fontes citadas de forma inconsistente entre skills diferentes** — mesma obra referenciada com completude ou redação divergente:
+  - GONSALES; SEBRIAM; AVELAR (2025): subtítulo e nome do publicador padronizados em `ia-educacao-ecossistema-inovacao` e `ia-educacao-formacao-inicial-docente`
+  - U.S. DEPARTMENT OF EDUCATION (2023): subtítulo ausente em `ia-educacao-personalizacao`
+  - CAST. Universal Design for Learning Guidelines (2018): versão, local, editora e URL ausentes em `ia-educacao-acessibilidade-inclusao`
+  - BUOLAMWINI; GEBRU (2018): "In: FAT* Conference" padronizado para "In: Proceedings of FAT* Conference" em `ia-educacao-etica`
+  - BLACK; WILIAM (1998): nome completo do periódico restaurado em `ia-educacao-feedback`
+  - Lei nº 13.709/LGPD: nome oficial completo da lei restaurado em `ia-educacao-contratacao`
+- `version` incrementada nas 7 skills afetadas
+
+---
+
 ## [0.7.4] — 2026-06-30
 
 ### Corrigido
