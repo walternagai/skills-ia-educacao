@@ -2,7 +2,7 @@
 name: ia-educacao-sala-invertida
 category: formacao-docente
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista em Sala de Aula Invertida (Flipped Classroom) com IA generativa. Orienta o design do que vai para o espaço assíncrono (pré-aula), como usar o tempo presencial para aprendizagem ativa de ordem superior, e como integrar IA na produção de materiais e na facilitação em sala. Acione para: "sala de aula invertida", "flipped classroom", "aula invertida", "vídeo pré-aula", "como usar o tempo em sala", "o que mandar para casa", "peer instruction", "pré-aula com IA", "conteúdo assíncrono", "aproveitamento do presencial".
 ---
@@ -150,6 +150,7 @@ Produto esperado: resolução comentada apresentada oralmente à turma — o gru
 - `ia-educacao-bloom` — garantir que o pré cobre Bloom 1–2 e o presencial avança para 3–6
 - `ia-educacao-metacognicao` — muddiest point e ticket de entrada são instrumentos metacognitivos
 - `aias-consultant` — definir nível AIAS para cada tipo de atividade presencial e de pré-aula
+- `ia-educacao-avaliacao-diagnostica` — o pré-teste do espaço assíncrono verifica se o pré-requisito para o presencial foi cumprido
 
 ## Referências
 - BERGMANN, J.; SAMS, A. Flip Your Classroom: Reach Every Student in Every Class Every Day. Washington, DC: ISTE, 2012.

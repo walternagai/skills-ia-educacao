@@ -2,7 +2,7 @@
 name: ia-educacao-design-problema
 category: ferramentas-praticas
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista em design de problemas, questões-motrizes e situações-gatilho para metodologias ativas no Ensino Superior. Transforma conteúdo disciplinar em problemas autênticos e mal-estruturados que provocam investigação, análise e tomada de decisão. Complementa planejamento-reverso com foco na criação do artefato central (o problema) que ainda está ausente. Acione para: "como criar um problema para minha aula", "problema para PBL", "questão motriz", "situação-gatilho", "problema mal-estruturado", "caso para estudo", "problema autêntico", "como transformar conteúdo em problema", "problema para metodologia ativa", "enunciado que gera discussão".
 ---
@@ -197,6 +197,7 @@ IA (AIAS 2): estudantes podem usar IA para pesquisar o ciclo biológico do mosqu
 - `ia-educacao-bloom` — verificação do nível cognitivo exigido pelo problema e pelos descritores das rubricas associadas
 - `ia-educacao-peer-instruction` — ConcepTests são um tipo específico de problema; a skill de Peer Instruction os contextualiza no ciclo pedagógico
 - `ia-educacao-verificacao` — validação factual de problemas baseados em dados ou casos reais
+- `ia-educacao-avaliacao-projeto` — o problema bem formulado por esta skill é o ponto de partida para a avaliação de marcos e entregas do projeto
 
 ## Referências
 - JONASSEN, D. H. Instructional Design Models for Well-Structured and Ill-Structured Problem-Solving Learning Outcomes. Educational Technology Research and Development, v. 45, n. 1, p. 65–94, 1997.

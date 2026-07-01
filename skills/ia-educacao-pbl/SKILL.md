@@ -2,7 +2,7 @@
 name: ia-educacao-pbl
 category: formacao-docente
 model: claude
-version: 1.2
+version: 1.3
 description: >
   Especialista em Aprendizagem Baseada em Problemas (PBL) e Aprendizagem Baseada em Projetos (PjBL) com IA, com foco no Ensino Superior. Orienta o design de problemas mal-estruturados, o papel do tutor, a facilitação do processo em grupo e a avaliação do aprendizado individual dentro da equipe. Acione para: "PBL", "aprendizagem baseada em problemas", "aprendizagem baseada em projetos", "PjBL", "problema-gatilho", "tutor PBL", "avaliação PBL", "como criar problema para PBL", "currículo baseado em problemas", "aprendizado autodirigido", "interdisciplinaridade no ensino superior".
 ---
@@ -151,6 +151,8 @@ Produto esperado: cartaz informativo para a comunidade escolar + apresentação 
 - `ia-educacao-metacognicao` — fase 7 do ciclo (reflexão) é metacognição explícita; diário de aprendizagem individual
 - `aias-consultant` — definição do nível AIAS para os momentos de uso de IA no ciclo
 - `ia-educacao-interdisciplinaridade` — problemas PBL genuínos frequentemente exigem perspectivas de múltiplas disciplinas; a skill orienta o design de equipes e avaliações mistas
+- `ia-educacao-avaliacao-diagnostica` — pré-teste/survey inicial mapeia pré-requisitos antes da abertura do problema-gatilho
+- `ia-educacao-avaliacao-projeto` — avaliação de marcos, entregas parciais e produto final quando o ciclo PBL evolui para PjBL
 
 ## Referências
 - BARROWS, H. S. A Taxonomy of Problem-Based Learning Methods. Medical Education, v. 20, n. 6, p. 481–486, 1986.

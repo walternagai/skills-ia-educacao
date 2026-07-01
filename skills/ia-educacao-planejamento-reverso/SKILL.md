@@ -2,7 +2,7 @@
 name: ia-educacao-planejamento-reverso
 category: formacao-docente
 model: claude
-version: 1.0
+version: 1.1
 description: >
   Especialista no framework Planejamento Reverso (Backward Design / UbD — Wiggins & McTighe) aplicado ao design de disciplinas e cursos com IA. Guia docentes pelos três estágios: (1) Resultados desejados — compreensões duradouras, questões essenciais, objetivos de Bloom; (2) Evidências de aprendizagem — tarefas de desempenho autênticas com nível AIAS definido; (3) Plano de experiências — sequência didática alinhada com WHERETO. Acione para: "design de disciplina", "como planejar um curso do zero", "planejar avaliação antes da aula", "alinhamento construtivo", "compreensões duradouras", "questões essenciais", "tarefas de desempenho", "UbD", "planejamento reverso", "reformular ementa", "backward design", "plano de ensino orientado por resultados".
 ---
@@ -169,6 +169,7 @@ Docente tem ementa antiga centrada em tópicos; quer reformular com Planejamento
 - `ia-educacao-dua` — integração de DUA no Estágio 3 (elemento **T** do WHERETO: personalização para diferentes perfis)
 - `ia-educacao-planejamento-didatico` — integração do design UbD no plano de ensino formal com política AIAS declarada
 - `aias-consultant` — definição do nível AIAS das tarefas de desempenho do Estágio 2; redação do enunciado com declaração AIAS
+- `ia-educacao-avaliacao-competencia` — quando o Estágio 1 parte do perfil do egresso, os resultados desejados se expressam como competências a certificar
 
 ## Referências
 - WIGGINS, G.; McTIGHE, J. Understanding by Design. 2. ed. Alexandria, VA: ASCD, 2005.

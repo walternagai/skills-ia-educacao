@@ -32,14 +32,14 @@ Leia `CLAUDE.md` antes de qualquer operação. Ele contém: arquitetura das skil
 grep -r "^category:" skills/*/SKILL.md | sed 's|.*category: ||' | sort | uniq -c | sort -rn
 
 # Skills mais referenciadas (hubs do grafo)
-grep -rh "Dependências" -A 20 skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+" | sort | uniq -c | sort -rn | head -15
+awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+(?=\`)" | sort | uniq -c | sort -rn | head -15
 
 # Skills órfãs (sem referência inbound — devem ser zero)
-REFERENCED=$(grep -rh "Dependências" -A 20 skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+" | sort -u)
+REFERENCED=$(awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+(?=\`)" | sort -u)
 for d in skills/*/; do skill=$(basename "$d"); echo "$REFERENCED" | grep -qx "$skill" || echo "ÓRFÃ: $skill"; done
 
 # Dependências quebradas (slug não existe em skills/)
-grep -rh "^\- \`" skills/*/SKILL.md | grep -oP "(?<=\`)[^\`]+" | sort -u | while read slug; do
+awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+(?=\`)" | sort -u | while read slug; do
   [ -d "skills/$slug" ] || echo "QUEBRADA: $slug"
 done
 ```

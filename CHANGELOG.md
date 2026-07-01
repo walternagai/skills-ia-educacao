@@ -5,6 +5,17 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.7.1] — 2026-06-30
+
+### Corrigido
+- **Comandos de auditoria de grafo (CLAUDE.md, AGENTS.md)**: o comando de "Dependências quebradas" usava `grep -A 20` após o cabeçalho `## Dependências`, o que extraía conteúdo entre crases de seções subsequentes (ex: `## Referências`) e gerava centenas de falsos positivos. Substituído por extração delimitada com `awk` entre `## Dependências` e o próximo `## `, aplicada também ao comando de hubs e ao de órfãs
+- **3 skills órfãs** (`ia-educacao-avaliacao-competencia`, `ia-educacao-avaliacao-diagnostica`, `ia-educacao-avaliacao-projeto`) sem nenhuma referência inbound: adicionadas referências recíprocas em `ia-educacao-pbl`, `ia-educacao-tbl`, `ia-educacao-sala-invertida`, `ia-educacao-planejamento-reverso`, `ia-educacao-rubrica` e `ia-educacao-design-problema`, com base nas dependências que essas três skills já declaravam
+
+### Modificado
+- **CLAUDE.md**: contagem fixa de "54 skills" substituída por orientação a `ls skills | wc -l` (a contagem real é 62); tabela de categorias atualizada com as skills de `ferramentas-praticas` que faltavam; adicionada menção a `agents/*.md` e às convenções de `CHANGELOG.md`/`CONTRIBUTING.md`
+
+---
+
 ## [0.7.0] — 2026-06-29
 
 ### Modificado

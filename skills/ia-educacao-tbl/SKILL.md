@@ -2,7 +2,7 @@
 name: ia-educacao-tbl
 category: formacao-docente
 model: claude
-version: 1.3
+version: 1.4
 description: >
   Especialista em Team-Based Learning (TBL) com IA no Ensino Superior. Orienta o design do Readiness Assurance Process (iRAT/gRAT), das atividades de aplicação em equipes permanentes e da avaliação entre pares (CATME/IPAC). Amplamente adotado em Medicina, Saúde e Engenharia. Acione para: "TBL", "team-based learning", "aprendizagem baseada em equipes", "iRAT", "gRAT", "readiness assurance", "equipes permanentes", "avaliação entre pares em grupos", "CATME", "aplicação em equipes", "TBL em medicina".
 ---
@@ -185,6 +185,7 @@ Justificativa do AIAS 1: atividade de saúde com risco real — o protocolo ABCD
 - `ia-educacao-verificacao` — validar questões do iRAT/gRAT geradas com IA
 - `aias-consultant` — definir nível AIAS para as Application Activities do módulo
 - `ia-educacao-simulacao` — Application Activities frequentemente usam cenários de simulação; debriefing estruturado potencializa a aprendizagem do gRAT
+- `ia-educacao-avaliacao-diagnostica` — o iRAT é, em essência, um instrumento de avaliação diagnóstica individual dentro do Readiness Assurance Process
 
 ## Referências
 - MICHAELSEN, L. K.; KNIGHT, A. B.; FINK, L. D. (Eds.). Team-Based Learning: A Transformative Use of Small Groups in College Teaching. Sterling, VA: Stylus, 2004.

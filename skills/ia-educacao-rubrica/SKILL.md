@@ -2,7 +2,7 @@
 name: ia-educacao-rubrica
 category: ferramentas-praticas
 model: claude
-version: 1.1
+version: 1.2
 description: >
   Especialista em design de rubricas analíticas e holísticas para avaliação educacional, alinhadas à Taxonomia de Bloom, ao nível AIAS e aos princípios do DUA. Orienta docentes a criar critérios claros, descritores de desempenho precisos e instrumentos que avaliem competência independente do formato de entrega. Acione para: "criar rubrica", "rubrica analítica", "rubrica holística", "critérios de avaliação", "descritores de desempenho", "rubrica para trabalho com IA", "rubrica alinhada a Bloom", "rubrica inclusiva", "como avaliar com critérios claros", "rubrica para TCC", "rubrica para projeto".
 ---
@@ -111,6 +111,8 @@ Espaço de feedback: "O que ainda falta para atingir este padrão:" + "O que já
 - `ia-educacao-planejamento-reverso` — a rubrica do Estágio 2 (UbD) deve ser construída antes do Estágio 3
 - `ia-educacao-dua` — adaptação dos descritores para garantir que rubricas avaliem competência, não formato
 - `aias-consultant` — definição do nível AIAS que determina o descritor do critério de uso de IA
+- `ia-educacao-avaliacao-competencia` — rubricas de proficiência são o instrumento central de certificação de competências
+- `ia-educacao-avaliacao-projeto` — rubricas analíticas para avaliar marcos, processo e produto final de projetos
 
 ## Referências
 - BROOKHART, S. M. How to Create and Use Rubrics for Formative Assessment and Grading. Alexandria, VA: ASCD, 2013.

@@ -9,7 +9,8 @@ Este repositório é um **acervo documental e de skills** para orientar a integr
 Não há código-fonte, testes ou build system. O conteúdo é composto por:
 
 - **PDFs normativos** — Referencial MEC para IA na Educação, artigos acadêmicos sobre AIAS
-- **Skills Claude** (`skills/*/SKILL.md`) — 54 skills temáticas em formato YAML+Markdown para uso no Claude Code
+- **Skills Claude** (`skills/*/SKILL.md`) — skills temáticas em formato YAML+Markdown para uso no Claude Code (a contagem cresce; confira com `ls skills | wc -l`, não confie em números fixos neste documento)
+- **Agentes** (`agents/*.md`) — agentes especializados que compõem fluxos a partir de múltiplas skills (ex: `construtor-de-avaliacoes.md`, `planejador-pedagogico.md`, `artesao-de-skills.md`)
 
 ## Arquitetura dos documentos
 
@@ -33,7 +34,9 @@ Cada skill tem frontmatter YAML (`name`, `category`, `model`, `version`, `descri
 | `formacao-docente` | fundamentos, formacao-inicial-docente, planejamento-didatico, planejamento-reverso, aprendizagem-ativa, pensamento-critico, bloom, metacognicao, pbl, sala-invertida, simulacao, estudo-de-caso, peer-instruction, tbl, aprendizagem-servico, debate, facilitacao, interdisciplinaridade |
 | `etica-governanca` | etica, governanca-dados, supervisao-humana, transparencia-explicabilidade, vieses, impacto-algoritmico, seguranca-digital, integridade-academica |
 | `inclusao-equidade` | acessibilidade-inclusao, dua, equidade-digital, letramento-dados, permanencia |
-| `ferramentas-praticas` | avaliacao, rubrica, feedback, rascunho, verificacao, personalizacao, sti, ia-desplugada, sandbox, gestao, ecossistema-inovacao, contratacao, avaliacao-grupo, design-problema, pesquisa, escrita, visualizacao-dados |
+| `ferramentas-praticas` | avaliacao, avaliacao-competencia, avaliacao-diagnostica, avaliacao-grupo, avaliacao-oral, avaliacao-projeto, autoavaliacao, banco-questoes, mcq, portfolio, rubrica, feedback, rascunho, verificacao, personalizacao, sti, ia-desplugada, sandbox, gestao, ecossistema-inovacao, contratacao, design-problema, pesquisa, escrita, visualizacao-dados (+ `aias-consultant`, ver exceção de nomenclatura abaixo) |
+
+A tabela de categorias acima pode ficar desatualizada conforme skills são adicionadas — para a contagem real, use os comandos de auditoria abaixo.
 
 ## Uso das skills no Claude Code
 
@@ -61,14 +64,14 @@ Comandos úteis para auditar o repositório:
 grep -r "^category:" skills/*/SKILL.md | sed 's|.*category: ||' | sort | uniq -c | sort -rn
 
 # Skills mais referenciadas (hubs do grafo)
-grep -rh "Dependências" -A 20 skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+" | sort | uniq -c | sort -rn | head -15
+awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+(?=\`)" | sort | uniq -c | sort -rn | head -15
 
 # Skills sem nenhuma referência inbound (órfãs — devem ser zero)
-REFERENCED=$(grep -rh "Dependências" -A 20 skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+" | sort -u)
+REFERENCED=$(awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+(?=\`)" | sort -u)
 for d in skills/*/; do skill=$(basename "$d"); echo "$REFERENCED" | grep -qx "$skill" || echo "ÓRFÃ: $skill"; done
 
 # Dependências quebradas (slugs que não existem no diretório)
-grep -rh "^\- \`" skills/*/SKILL.md | grep -oP "(?<=\`)[^\`]+" | sort -u | while read slug; do
+awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+(?=\`)" | sort -u | while read slug; do
   [ -d "skills/$slug" ] || echo "QUEBRADA: $slug"
 done
 ```
@@ -97,3 +100,5 @@ Qualquer referência a esses níveis no repositório usa exatamente esses nomes 
 - O campo `name` (slug) das skills deve estar em **Português do Brasil**, ser curto e significativo (ex: `ia-educacao-rascunho`, não `ia-educacao-chain-of-draft`); a descrição no frontmatter e todo o conteúdo interno da skill também devem estar em **Português do Brasil**
 - Ao editar uma skill existente, incremente o campo `version` no frontmatter (ex: `1.2` → `1.3`)
 - O diretório `raw-pdfs/` está no `.gitignore` — os PDFs normativos não são versionados e precisam ser obtidos diretamente das fontes institucionais
+- `CHANGELOG.md` (formato Keep a Changelog) deve ser atualizado a cada mudança relevante em skills, agentes ou estrutura do repositório
+- Ao criar uma skill nova, siga o template e o checklist de `CONTRIBUTING.md`
