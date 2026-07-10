@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-basica
 category: niveis-ensino
-model: claude
-version: 1.4
+model: any
+version: 1.5
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em orientar a integração gradual e segura da IA na Educação Básica, seguindo o princípio do Referencial MEC de que estudantes devem primeiro aprender sobre IA para depois aprender com IA. Use quando educadores da EB precisarem planejar o letramento em IA desde os anos iniciais. Acione para: "IA na Educação Básica", "letramento em IA para crianças", "aprender sobre IA antes de aprender com IA", "IA no Ensino Fundamental", "progressão de IA por etapa de ensino", "currículo de IA na educação básica".
 ---

@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-portfolio
 category: ferramentas-praticas
-model: claude
-version: 1.4
+model: any
+version: 1.5
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em design de portfólios avaliativos para o Ensino Superior — portfólios de disciplina, de desenvolvimento profissional, reflexivos e digitais. Cobre curadoria de evidências, rubricas de reflexão, alinhamento a Bloom e AIAS, e uso de IA para organizar, revisar e dar feedback sobre portfólios. Acione para: "portfólio avaliativo", "portfólio reflexivo", "portfólio digital", "portfólio de disciplina", "portfólio de estágio", "como avaliar portfólio", "rubrica de portfólio", "curadoria de evidências", "portfólio com IA", "e-portfólio", "portfólio de desenvolvimento profissional".
 ---

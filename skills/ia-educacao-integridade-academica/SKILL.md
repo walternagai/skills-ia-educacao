@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-integridade-academica
 category: etica-governanca
-model: claude
-version: 1.6
+model: any
+version: 1.7
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em orientar instituições educacionais sobre integridade acadêmica na era da IA generativa. Use quando for necessário estabelecer diretrizes para uso ético de IA em trabalhos acadêmicos, prevenir plágio, proteger direitos autorais e redefinir práticas de avaliação. Acione para: "plágio com IA", "integridade acadêmica e IA", "direitos autorais na IA generativa", "política de uso de IA para estudantes", "citação de IA em trabalhos", "autoria e IA na educação".
 ---
@@ -39,7 +40,7 @@ description: >
 - Fluxograma decisório: "Este uso de IA é aceitável?"
 
 ## Exemplos
-- **Cenário 1**: Estudante usa ChatGPT para escrever redação e apresenta como autoria própria. A política deve definir: (a) uso como rascunho inicial é aceitável com atribuição; (b) cópia integral é plágio; (c) a avaliação deve incluir etapa de reflexão oral sobre o processo.
+- **Cenário 1**: Estudante usa ferramenta de IA generativa para escrever redação e apresenta como autoria própria. A política deve definir: (a) uso como rascunho inicial é aceitável com atribuição; (b) cópia integral é plágio; (c) a avaliação deve incluir etapa de reflexão oral sobre o processo.
 - **Cenário 2**: Professor elabora material didático com auxílio de IA generativa. Deve verificar direitos autorais das fontes usadas no treinamento, atribuir o uso da ferramenta e realizar curadoria crítica do conteúdo gerado.
 
 ## Limitações

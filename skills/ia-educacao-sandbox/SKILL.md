@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-sandbox
 category: ferramentas-praticas
-model: claude
-version: 1.5
+model: any
+version: 1.6
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em orientar a criação e operação de sandboxes regulatórios para testagem segura de sistemas de IA em contextos educacionais. Use quando instituições ou órgãos públicos quiserem experimentar soluções de IA em ambiente controlado antes da implementação em larga escala. Acione para: "sandbox regulatório para IA educacional", "ambiente controlado de testagem de IA", "experimentação responsável com IA na educação", "inovação segura em IA educacional", "testes de IA em escolas", "regulamentação experimental de IA na educação".
 ---

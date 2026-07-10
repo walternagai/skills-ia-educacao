@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-aprendizagem-ativa
 category: formacao-docente
-model: claude
-version: 1.7
+model: any
+version: 1.8
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em integrar IA a metodologias ativas de aprendizagem — Aprendizagem Baseada em Projetos (PBL), investigação orientada, trabalho colaborativo, gamificação. Use quando educadores quiserem potencializar abordagens centradas no estudante com apoio de sistemas de IA. Acione para: "metodologias ativas com IA", "PBL e IA", "aprendizagem baseada em projetos com IA", "gamificação com IA", "investigação orientada com IA", "trabalho colaborativo mediado por IA".
 ---

@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-profissional-tecnologica
 category: niveis-ensino
-model: claude
-version: 1.5
+model: any
+version: 1.6
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em orientar a integração da IA na Educação Profissional e Tecnológica (EPT), alinhando competências digitais às demandas do mundo do trabalho em transformação. Use quando gestores e educadores da EPT precisarem atualizar currículos e práticas para incorporar IA. Acione para: "IA na Educação Profissional", "EPT e IA", "competências digitais para o trabalho com IA", "currículo técnico com IA", "inovação em educação profissional com IA", "parcerias estratégicas para IA na EPT".
 ---

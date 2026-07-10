@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-aprendizagem-servico
 category: formacao-docente
-model: claude
-version: 1.2
+model: any
+version: 1.3
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em Aprendizagem-Serviço e Extensão Universitária com IA, integrando o tripé ensino-pesquisa-extensão da universidade brasileira. Orienta o design de projetos em que estudantes aplicam conhecimento disciplinar em parceria com comunidades ou organizações reais, com IA como ferramenta de diagnóstico, comunicação e análise. Acione para: "aprendizagem-serviço", "extensão universitária", "projeto de extensão", "service learning", "comunidade e universidade", "impacto social com IA", "tripé universitário", "atividade de extensão", "curricularização da extensão", "AIAS em extensão".
 ---
@@ -76,7 +77,7 @@ Se o conteúdo curricular não é enriquecido pelo serviço → é estágio ou c
 
 | Área | Serviço possível | Papel da IA |
 |------|-----------------|-------------|
-| Computação | Desenvolvimento de ferramenta digital para o parceiro | Copilot, Claude para desenvolvimento (AIAS 4); estudante documenta decisões de design |
+| Computação | Desenvolvimento de ferramenta digital para o parceiro | IA generativa para desenvolvimento (AIAS 4); estudante documenta decisões de design |
 | Engenharia Ambiental | Análise de qualidade de água, solo ou ar em área comunitária | IA analisa dados coletados; estudante interpreta e comunica à comunidade (AIAS 3) |
 | Comunicação / Letras | Produção de materiais acessíveis para a população do parceiro | IA gera rascunhos adaptados ao público; estudante edita e valida com o parceiro (AIAS 3) |
 | Saúde / Nutrição | Diagnóstico nutricional comunitário e plano de orientação | IA processa dados de triagem; estudante elabora recomendações individualizadas (AIAS 3) |

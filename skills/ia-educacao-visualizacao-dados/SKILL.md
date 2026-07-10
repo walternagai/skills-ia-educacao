@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-visualizacao-dados
 category: ferramentas-praticas
-model: claude
-version: 1.4
+model: any
+version: 1.5
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em visualização de dados e storytelling com dados para contextos educacionais STHEM (Science, Technology, Humanities, Engineering, Math), com IA como ferramenta de geração e revisão de visualizações. Orienta escolha do gráfico adequado, detecção de visualizações enganosas, comunicação de incerteza e narrativa com dados. Acione para: "visualização de dados", "gráfico para apresentação", "como escolher o tipo de gráfico", "storytelling com dados", "dashboard educacional", "gráfico com IA", "Python matplotlib", "dados enganosos", "como comunicar resultados", "análise exploratória visual", "plotar dados com IA".
 ---

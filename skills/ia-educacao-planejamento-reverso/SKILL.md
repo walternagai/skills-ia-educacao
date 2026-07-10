@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-planejamento-reverso
 category: formacao-docente
-model: claude
-version: 1.3
+model: any
+version: 1.5
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista no framework Planejamento Reverso (Backward Design / UbD — Wiggins & McTighe) aplicado ao design de disciplinas e cursos com IA. Guia docentes pelos três estágios: (1) Resultados desejados — compreensões duradouras, questões essenciais, objetivos de Bloom; (2) Evidências de aprendizagem — tarefas de desempenho autênticas com nível AIAS definido; (3) Plano de experiências — sequência didática alinhada com WHERETO. Acione para: "design de disciplina", "como planejar um curso do zero", "planejar avaliação antes da aula", "alinhamento construtivo", "compreensões duradouras", "questões essenciais", "tarefas de desempenho", "UbD", "planejamento reverso", "reformular ementa", "backward design", "plano de ensino orientado por resultados".
 ---
@@ -142,7 +143,7 @@ Atividade WHERETO-R: oficina de revisão por pares usando rubrica de critérios 
 **Cenário 2 — Disciplina de Algoritmos (Computação, Ensino Superior)**
 Compreensão duradoura: "A escolha do algoritmo é sempre um trade-off — eficiência, legibilidade e correção raramente coexistem no máximo."
 Questão essencial: "Como justificar que esta solução é boa o suficiente para este problema?"
-Tarefa de desempenho (AIAS 4): projetar e implementar solução para problema aberto usando IA como par de programação (Copilot); avaliar criticamente as sugestões geradas e documentar as escolhas de design com justificativa técnica.
+Tarefa de desempenho (AIAS 4): projetar e implementar solução para problema aberto usando IA como par de programação (ex.: Copilot); avaliar criticamente as sugestões geradas e documentar as escolhas de design com justificativa técnica.
 Tarefa de desempenho complementar (AIAS 1): prova presencial de análise de complexidade sem ferramentas — valida domínio individual do raciocínio formal.
 
 **Cenário 3 — Disciplina de Biologia (Ensino Médio)**

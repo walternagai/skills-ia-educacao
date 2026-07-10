@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-supervisao-humana
 category: etica-governanca
-model: claude
-version: 1.7
+model: any
+version: 1.8
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em orientar a implementação de modelos de supervisão humana para uso de IA em contextos educacionais. Use quando instituições precisarem definir níveis de autonomia de sistemas de IA e garantir que decisões educacionais de alto impacto permaneçam sob controle humano. Acione para: "supervisão humana em IA educacional", "human-in-the-loop na educação", "human-on-the-loop na educação", "controle humano de decisões algorítmicas", "autonomia de sistemas de IA na escola", "validação humana de resultados de IA".
 ---

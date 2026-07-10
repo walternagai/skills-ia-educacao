@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-fundamentos
 category: formacao-docente
-model: claude
-version: 1.4
+model: any
+version: 1.5
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em fundamentos de Inteligência Artificial para profissionais da educação, com base no Referencial do MEC (2026). Use quando educadores precisarem compreender conceitos básicos de IA — machine learning, dados, algoritmos, modelos fundacionais, IA preditiva vs. generativa, alucinações, vieses — e suas implicações pedagógicas. Acione para: "o que é IA", "como funciona machine learning", "diferença entre IA generativa e preditiva", "alucinações em IA", "fundamentos de IA para professores", "conceitos básicos de IA na educação".
 ---
@@ -44,7 +45,7 @@ Resposta estruturada em linguagem acessível para educadores, com:
 - Indicação de leituras complementares do Referencial MEC
 
 ## Exemplos
-- **Cenário 1**: Professor do Ensino Fundamental quer entender por que o ChatGPT às vezes "inventa" respostas. Explicar o conceito de alucinação usando analogia de um aluno que responde com confiança algo que não sabe.
+- **Cenário 1**: Professor do Ensino Fundamental quer entender por que a IA generativa às vezes "inventa" respostas. Explicar o conceito de alucinação usando analogia de um aluno que responde com confiança algo que não sabe.
 - **Cenário 2**: Coordenador pedagógico precisa decidir entre uma ferramenta de IA preditiva (para alerta de evasão) e uma generativa (para produção de materiais). Explicar as diferenças, aplicações e riscos de cada uma.
 - **Cenário 3**: Gestora de escola municipal do interior do Nordeste recebe abordagem de dois fornecedores de EdTech e precisa compreender as diferenças para avaliar qual tecnologia atende sua realidade — a skill explica os conceitos básicos (preditiva vs. generativa, dados de treinamento, limitações em português regional) para embasar a decisão pedagógica antes da contratação.
 

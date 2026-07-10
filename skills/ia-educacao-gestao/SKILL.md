@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-gestao
 category: ferramentas-praticas
-model: claude
-version: 1.7
+model: any
+version: 1.8
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em desenvolver competências de gestores educacionais para liderar a adoção responsável de IA em escolas e redes de ensino. Use quando gestores precisarem analisar demandas, avaliar soluções, planejar implementação e monitorar o uso de IA. Acione para: "gestão educacional com IA", "adoção de IA por gestores", "avaliação de soluções de IA para escolas", "planejamento de implementação de IA", "competências de gestores para IA", "liderança em inovação educacional com IA".
 ---

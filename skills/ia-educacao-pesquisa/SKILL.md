@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-pesquisa
 category: ferramentas-praticas
-model: claude
-version: 1.2
+model: any
+version: 1.3
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em pesquisa acadêmica e científica com IA no Ensino Superior. Orienta estudantes e docentes no processo completo: formulação de problema de pesquisa, revisão sistemática com IA, coleta e análise de dados, escrita científica e integridade acadêmica em TCCs, dissertações e artigos. Alinhado ao Referencial MEC 2026. Acione para: "pesquisa com IA", "revisão sistemática", "TCC com IA", "como usar IA no TCC", "integridade na pesquisa", "revisão de literatura com IA", "pergunta de pesquisa", "metodologia de pesquisa", "artigo científico com IA", "análise de dados com IA".
 ---
@@ -64,7 +65,7 @@ R — Relevant (impacto real no campo?)
 **Ferramentas de IA para revisão:**
 - **Elicit** (elicit.org): busca e extração de dados de artigos
 - **Semantic Scholar** / **Connected Papers**: mapeamento de citações
-- **Claude/ChatGPT**: síntese e identificação de padrões — *nunca* para geração de referências
+- **Modelo de linguagem** (ex.: ChatGPT, Gemini, etc.): síntese e identificação de padrões — *nunca* para geração de referências
 - **Zotero + plugins de IA**: gestão de referências com assistência
 
 **Regra inegociável sobre referências:**
@@ -156,12 +157,12 @@ exclusiva do pesquisador, com supervisão do orientador.
 
 **Cenário 1 — TCC em Ciência da Computação (AIAS 4)**
 Problema: modelo preditivo de evasão estudantil com variáveis socioeconômicas.
-IA usada em: coleta e limpeza de dados (Python + Claude para depuração de código), análise exploratória (visualizações), revisão do estado da arte (Elicit + Semantic Scholar).
+IA usada em: coleta e limpeza de dados (Python + IA para depuração de código), análise exploratória (visualizações), revisão do estado da arte (Elicit + Semantic Scholar).
 Declarado: AIAS 4; IA como ferramenta de desenvolvimento; decisões de design do modelo são do estudante com supervisão do orientador.
 
 **Cenário 2 — Revisão sistemática em Educação (Mestrado)**
 Protocolo: PRISMA 2020; bases: ERIC + Scopus; período: 2018–2026.
-IA: triagem de 840 artigos por título/resumo com Claude (pesquisadora verificou amostra aleatória de 15% — concordância 91%); extração de dados em tabela; síntese temática dos 28 artigos incluídos.
+IA: triagem de 840 artigos por título/resumo com IA generativa (pesquisadora verificou amostra aleatória de 15% — concordância 91%); extração de dados em tabela; síntese temática dos 28 artigos incluídos.
 Transparência: seção de metodologia documenta o uso de IA com taxa de concordância.
 
 **Cenário 3 — Artigo empírico em Ciências Ambientais (Ensino Superior)**

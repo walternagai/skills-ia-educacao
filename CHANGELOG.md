@@ -5,6 +5,22 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.7.7] — 2026-07-10
+
+### Modificado
+- **Neutralização de dependência de CLI/modelo**: todas as 62 skills e 3 agentes (`agents/*.md`) tiveram `model: claude` / `model: anthropic/claude-sonnet-4-6` substituído por `model: any`, tornando o acervo independente de CLI ou fornecedor de modelo específico
+- **Menções a "Claude" no conteúdo neutralizadas** em 9 skills (aprendizagem-servico, debate, escrita, feedback, impacto-algoritmico, interdisciplinaridade, pbl, pesquisa, simulacao) — substituídas por "IA generativa", "modelo de linguagem" ou equivalentes genéricos
+- **Menções a "ChatGPT" em cenários/exemplos neutralizadas** em 3 skills (fundamentos, integridade-academica, letramento-dados) — substituídas por "IA generativa" ou "ferramenta de IA generativa"
+- **Menções a "Copilot" neutralizadas** em 6 skills (aias-consultant, avaliacao-oral, dua, feedback, pbl, planejamento-reverso) — substituídas por "assistente de codificação com IA" ou "assistente de IA", com nome do produto como exemplo entre parênteses
+- **Referências ABNT com "ChatGPT" no título** mantidas inalteradas (são títulos de trabalhos acadêmicos)
+- **README.md**: descrição das skills neutralizada ("prontas para instalar no Claude Code" → "prontas para instalar em CLIs de IA")
+- **apresentacao-skills.md**: descrição neutralizada ("skills Claude Code" → "skills para CLIs de IA")
+- **CLAUDE.md**: "Skills Claude" → "Skills"
+- **CONTRIBUTING.md**: template atualizado (`model: claude` → `model: any`)
+- `version` incrementada em todas as 62 skills
+
+---
+
 ## [0.7.6] — 2026-06-30
 
 ### Corrigido

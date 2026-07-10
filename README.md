@@ -4,7 +4,7 @@ Acervo de skills que orientam a integração responsável de Inteligência Artif
 
 ## O que há neste repositório
 
-- **Skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar no Claude Code (contagem atual: `ls skills | wc -l`)
+- **Skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar em CLIs de IA (contagem atual: `ls skills | wc -l`)
 - **PDFs normativos** (`raw-pdfs/`) — Referencial MEC, artigos AIAS originais
 - **CLAUDE.md** — instruções de contexto para instâncias do Claude Code neste repositório
 
@@ -34,7 +34,7 @@ npx skills add ./skills/ia-educacao-avaliacao
 for d in skills/*/; do npx skills add "./$d"; done
 ```
 
-### Invocar no Claude Code
+### Invocar em CLIs de IA
 
 Após instalada, chame a skill pelo nome:
 
@@ -150,7 +150,7 @@ Cada arquivo segue o padrão:
 ---
 name: <slug>
 category: <categoria>
-model: claude
+model: any
 version: <versão>
 description: >
   <descrição para acionamento automático>

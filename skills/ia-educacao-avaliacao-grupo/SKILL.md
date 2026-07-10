@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-avaliacao-grupo
 category: ferramentas-praticas
-model: claude
-version: 1.3
+model: any
+version: 1.4
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em avaliação de trabalho em grupo no Ensino Superior, com foco em capturar contribuição individual dentro de equipes. Orienta o design de peer assessment calibrado (CATME, WebPA, protocolos simplificados), a detecção de free riders, a análise de dados de avaliação entre pares e o uso de IA para identificar padrões de disfunção em equipes. Acione para: "avaliação de grupo", "nota individual em trabalho em grupo", "free rider", "avaliação por pares em grupo", "CATME", "peer assessment", "como avaliar contribuição individual", "trabalho em equipe", "avaliação de equipe", "nota de grupo injusta".
 ---

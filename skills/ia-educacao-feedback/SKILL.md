@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-feedback
 category: ferramentas-praticas
-model: claude
-version: 1.4
+model: any
+version: 1.6
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em design e escala de feedback formativo educacional com IA generativa. Orienta docentes a construir feedback específico, acionável e centrado no aprendizado — usando IA para ampliar o alcance sem perder qualidade — e a ensinar estudantes a dar e receber feedback por pares. Acione para: "como dar feedback com IA", "feedback formativo", "feedback em escala", "feedback por pares", "como melhorar o feedback aos alunos", "IA para corrigir trabalhos", "comentários em redações", "feed forward", "feedback eficaz", "rubrica de feedback".
 ---
@@ -59,7 +60,7 @@ description: >
 4. **Usar IA para escalar feedback sem perder qualidade**
 
    **Modo 1 — IA gera rascunho; docente edita e assina**
-   Prompt modelo ao Claude:
+   Prompt modelo para a IA:
    ```
    Você é um assistente de feedback formativo. Leia o trabalho a seguir e o critério
    de avaliação em anexo. Gere um comentário de feedback seguindo o modelo:
@@ -109,7 +110,7 @@ description: >
 Docente usa IA (Modo 1) para gerar rascunho de feedback focado em dois critérios: argumento e uso de evidências. Revisa e personaliza os 5 trabalhos em desenvolvimento (10 min cada); usa rascunho da IA para os 30 proficientes (3 min cada). Tempo total: 140 min vs. 350 min sem IA.
 
 **Cenário 2 — Projeto de software (Computação, AIAS 4)**
-Feedback sobre dois critérios: qualidade técnica do código e qualidade do uso de Copilot (documentação de prompts, justificativa das escolhas). Feed Forward específico: "Na próxima sprint, documente os prompts que geraram código que você não entendeu e explique como os verificou."
+Feedback sobre dois critérios: qualidade técnica do código e qualidade do uso de assistente de IA (ex.: Copilot) (documentação de prompts, justificativa das escolhas). Feed Forward específico: "Na próxima sprint, documente os prompts que geraram código que você não entendeu e explique como os verificou."
 
 **Cenário 3 — Feedback por pares (Ensino Superior, Escrita Acadêmica)**
 Protocolo: cada estudante avalia 2 colegas usando Single-Point Rubric. Após, plenária de 15 min: "Qual feedback que você recebeu foi mais útil e por quê?" — calibra o que é feedback de qualidade para a próxima rodada.

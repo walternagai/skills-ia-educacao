@@ -9,7 +9,7 @@ Este repositório é um **acervo documental e de skills** para orientar a integr
 Não há código-fonte, testes ou build system. O conteúdo é composto por:
 
 - **PDFs normativos** — Referencial MEC para IA na Educação, artigos acadêmicos sobre AIAS
-- **Skills Claude** (`skills/*/SKILL.md`) — skills temáticas em formato YAML+Markdown para uso no Claude Code (a contagem cresce; confira com `ls skills | wc -l`, não confie em números fixos neste documento)
+- **Skills** (`skills/*/SKILL.md`) — skills temáticas em formato YAML+Markdown para uso em CLIs de IA (a contagem cresce; confira com `ls skills | wc -l`, não confie em números fixos neste documento)
 - **Agentes** (`agents/*.md`) — agentes especializados que compõem fluxos a partir de múltiplas skills (ex: `construtor-de-avaliacoes.md`, `planejador-pedagogico.md`, `artesao-de-skills.md`)
 
 ## Arquitetura dos documentos

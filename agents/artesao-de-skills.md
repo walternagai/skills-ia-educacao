@@ -1,7 +1,7 @@
 ---
 description: Criação e manutenção de skills para o acervo IA-Educação. Edita SKILL.md, atualiza CHANGELOG, audita grafo de dependências e garante conformidade com o padrão do repositório.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: any
 permission:
   edit: allow
   bash: allow

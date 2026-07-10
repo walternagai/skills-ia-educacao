@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-escrita
 category: ferramentas-praticas
-model: claude
-version: 1.2
+model: any
+version: 1.3
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em escrita acadêmica e técnica com IA no Ensino Superior, com foco em manter a voz autoral e o raciocínio do estudante como núcleo do texto. Cobre relatórios técnicos, artigos científicos, cadernos de laboratório, redação de metodologia e discussão, e revisão com IA. Relevante para todas as áreas STHEM. Acione para: "escrever com IA", "escrita acadêmica", "relatório técnico", "artigo científico", "como usar IA para escrever sem perder minha voz", "revisão de texto com IA", "estrutura de argumento", "coerência do texto", "plágio e IA", "como revisar TCC com IA", "caderno de laboratório".
 ---
@@ -141,13 +142,13 @@ IA útil para:
 ### 6. Declaração de uso de IA na escrita
 
 Para trabalhos acadêmicos, declarar:
-- Quais ferramentas foram usadas (Claude, Grammarly, etc.)
+- Quais ferramentas foram usadas (ferramenta de IA generativa, Grammarly, etc.)
 - Em quais fases (outline, revisão de gramática, revisão de coerência, etc.)
 - O que *não* foi gerado por IA (o argumento central, a interpretação dos dados, as conclusões)
 
 Modelo conciso para rodapé ou nota metodológica:
 ```
-IA generativa (Claude/[ferramenta]) foi usada para revisão de clareza e coerência
+IA generativa ([ferramenta]) foi usada para revisão de clareza e coerência
 nas seções [X] e [Y]. O argumento, a interpretação dos dados e as conclusões são
 de autoria exclusiva do(s) autor(es). Nível AIAS: [X].
 ```

@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-contratacao
 category: ferramentas-praticas
-model: claude
-version: 1.8
+model: any
+version: 1.9
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em estabelecer critérios técnicos, pedagógicos, éticos e legais para contratação e auditoria de plataformas educacionais que incorporam IA. Use quando gestores públicos ou institucionais precisarem selecionar, contratar e auditar soluções de IA para educação. Acione para: "contratação de plataformas educacionais com IA", "licitação de IA para educação", "auditoria de fornecedores de IA educacional", "critérios para seleção de EdTech", "cláusulas contratuais de proteção de dados", "avaliação de plataformas educacionais com IA".
 ---

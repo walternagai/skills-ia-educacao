@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-acessibilidade-inclusao
 category: inclusao-equidade
-model: claude
-version: 1.8
+model: any
+version: 1.9
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em orientar o uso de IA para ampliar acessibilidade e promover inclusão educacional, alinhado à Lei Brasileira de Inclusão (LBI) e ao Desenho Universal para a Aprendizagem (DUA). Use quando educadores precisarem adaptar materiais, recursos e ambientes para estudantes com deficiência ou necessidades específicas. Acione para: "acessibilidade com IA", "inclusão educacional e IA", "tecnologia assistiva com IA", "DUA e IA", "LBI e IA na educação", "adaptação de materiais com IA para estudantes com deficiência".
 ---

@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-avaliacao-oral
 category: ferramentas-praticas
-model: claude
-version: 1.4
+model: any
+version: 1.6
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em design, rubricas e protocolos para avaliação oral no Ensino Superior — apresentações, arguições, defesas de TCC, seminários, entrevistas técnicas e exames orais. Cobre critérios de clareza, domínio, argumentação e gestão de tempo; uso de IA para simular bancas, gerar perguntas de arguição e analisar desempenho. Acione para: "avaliação oral", "apresentação de seminário", "defesa de TCC", "arguição", "banca examinadora", "prova oral", "rubrica para apresentação", "como avaliar seminário", "entrevista técnica", "exame oral", "simulação de banca com IA".
 ---
@@ -173,7 +174,7 @@ Pergunta de nível 6: "Se você fosse replicar este experimento com um orçament
 
 **Cenário 4 — Entrevista técnica (Technology, AIAS 4)**
 Estudante apresenta portfólio de projetos desenvolvidos com IA. Entrevistador pergunta sobre decisões de arquitetura, trade-offs e limitações.
-Pergunta de nível 5: "Você usou Copilot neste projeto. Como você distingue o que é sua contribuição do que foi gerado pela ferramenta?"
+Pergunta de nível 5: "Você usou assistente de IA (ex.: Copilot) neste projeto. Como você distingue o que é sua contribuição do que foi gerado pela ferramenta?"
 
 ## Limitações
 - A avaliação oral é intensiva em tempo docente — não escala para turmas grandes sem planejamento cuidadoso

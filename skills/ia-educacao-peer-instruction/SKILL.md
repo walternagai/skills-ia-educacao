@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-peer-instruction
 category: formacao-docente
-model: claude
-version: 1.3
+model: any
+version: 1.4
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em Peer Instruction (Instrução por Pares), metodologia de Eric Mazur, aplicada ao Ensino Superior com IA. Orienta o design de ConcepTests (questões conceituais), a condução do ciclo vote-discuss-revote, a análise de dados de resposta para identificar misconceptions, e a integração com IA para criar questões e interpretar padrões de erro. Acione para: "peer instruction", "instrução por pares", "ConcepTest", "votação em sala", "vote-discuss-revote", "questão conceitual", "clicker", "plickers", "misconceptions em física", "diagnóstico de erros conceituais", "mazur".
 ---

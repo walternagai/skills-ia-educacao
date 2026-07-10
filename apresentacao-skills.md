@@ -27,7 +27,7 @@ style: |
 <!-- _paginate: false -->
 
 # Skills de IA na Educação
-## Acervo de skills para Claude Code
+## Acervo de skills para CLIs de IA
 
 Integração responsável de IA na Educação
 Alinhado ao Referencial do MEC (2026)
@@ -38,7 +38,7 @@ Alinhado ao Referencial do MEC (2026)
 
 # Visão Geral
 
-Repositório de skills Claude Code (`skills/*/SKILL.md`) para apoiar educadores, gestores e instituições na adoção responsável de IA.
+Repositório de skills para CLIs de IA (`skills/*/SKILL.md`) para apoiar educadores, gestores e instituições na adoção responsável de IA.
 
 | Categoria | Nº de skills |
 |:----------|:---:|

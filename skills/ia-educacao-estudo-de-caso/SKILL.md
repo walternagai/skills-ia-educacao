@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-estudo-de-caso
 category: formacao-docente
-model: claude
-version: 1.3
+model: any
+version: 1.4
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em Estudo de Caso como metodologia ativa no Ensino Superior, com integração de IA. Orienta o design de casos mal-estruturados, a facilitação de discussões pelo método Harvard e o uso de IA para gerar perspectivas de stakeholders, atualizar casos e avaliar a qualidade do argumento. Acione para: "estudo de caso", "método de caso", "caso Harvard", "caso para aula", "como criar um caso didático", "facilitação de discussão de caso", "caso de ensino", "análise de caso com IA", "caso interdisciplinar", "caso empresarial para aula".
 ---

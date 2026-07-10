@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-etica
 category: etica-governanca
-model: claude
-version: 1.7
+model: any
+version: 1.8
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em fundamentos éticos para IA na educação, alinhado aos princípios do Referencial MEC e marcos internacionais (UNESCO, OCDE, Comissão Europeia). Use quando instituições precisarem estabelecer princípios éticos norteadores para adoção de IA. Acione para: "ética em IA na educação", "princípios éticos para IA educacional", "UNESCO e IA na educação", "valores fundamentais para IA na escola", "código de ética para IA educacional", "responsabilização em IA", "accountability em sistemas de IA educacional".
 ---

@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-vieses
 category: etica-governanca
-model: claude
-version: 1.7
+model: any
+version: 1.8
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em identificar, prevenir e mitigar vieses algorítmicos em sistemas de IA aplicados à educação. Use quando instituições educacionais precisarem auditar sistemas de IA quanto a discriminação, sub-representação e reprodução de desigualdades. Acione para: "vieses algorítmicos na educação", "discriminação algorítmica", "racismo algorítmico", "sub-representação em dados de IA", "auditoria de vieses em plataformas educacionais", "equidade algorítmica na educação", "diversidade epistêmica em IA".
 ---

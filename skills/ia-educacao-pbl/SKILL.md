@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-pbl
 category: formacao-docente
-model: claude
-version: 1.4
+model: any
+version: 1.6
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em Aprendizagem Baseada em Problemas (PBL) e Aprendizagem Baseada em Projetos (PjBL) com IA, com foco no Ensino Superior. Orienta o design de problemas mal-estruturados, o papel do tutor, a facilitação do processo em grupo e a avaliação do aprendizado individual dentro da equipe. Acione para: "PBL", "aprendizagem baseada em problemas", "aprendizagem baseada em projetos", "PjBL", "problema-gatilho", "tutor PBL", "avaliação PBL", "como criar problema para PBL", "currículo baseado em problemas", "aprendizado autodirigido", "interdisciplinaridade no ensino superior".
 ---
@@ -13,7 +14,7 @@ description: >
 - O problema precede o conteúdo: estudantes encontram o problema *antes* de terem o conhecimento para resolvê-lo — esse desconforto produtivo é o motor da aprendizagem
 - PBL e PjBL são diferentes: no **PBL** o problema mal-estruturado é o veículo para aprender conteúdo disciplinar; no **PjBL** o projeto é o produto central e o conteúdo é integrado ao longo do desenvolvimento — usar o termo certo importa no design
 - O tutor não é o especialista que dá respostas: seu papel é fazer perguntas que revelam lacunas no raciocínio do grupo, não preencher essas lacunas
-- IA generativa cria o risco de o grupo resolver o problema sem aprender: um prompt bem feito ao Claude pode responder qualquer ConcepTest — o design precisa estruturalmente mover a IA para fora dos momentos de raciocínio fundamental
+- IA generativa cria o risco de o grupo resolver o problema sem aprender: um prompt bem feito a um modelo de IA generativa pode responder qualquer ConcepTest — o design precisa estruturalmente mover a IA para fora dos momentos de raciocínio fundamental
 - O produto do PBL não é a solução do problema, é a aprendizagem demonstrada na discussão e na reflexão — um grupo que resolveu o problema sem saber o porquê falhou no objetivo
 
 ## Quando usar
@@ -108,7 +109,7 @@ No PjBL, o foco muda do problema para o produto. Ajustes:
 - **Questão motriz** substitui o problema-gatilho: "Como poderíamos [ação] para [audiência] que [contexto]?"
 - **Marcos de entrega** estruturam o projeto: rascunho do design → protótipo → produto → apresentação
 - **Critérios de qualidade do produto** precisam ser públicos desde o início (usar `ia-educacao-rubrica`)
-- **IA no PjBL (AIAS 4)**: estudante dirige IA como ferramenta de desenvolvimento — Copilot, geração de código, análise de dados, prototipagem — mas documenta as decisões de design que tomou além dos outputs da IA
+- **IA no PjBL (AIAS 4)**: estudante dirige IA como ferramenta de desenvolvimento — assistente de codificação com IA, geração de código, análise de dados, prototipagem — mas documenta as decisões de design que tomou além dos outputs da IA
 
 ## Formato de Saída
 - **Problema-gatilho completo** para uma disciplina/unidade específica, com checklist de qualidade aplicado
@@ -126,7 +127,7 @@ IA (AIAS 3): após fase 4, cada estudante pode usar IA para aprofundar uma das q
 **Cenário 2 — PjBL em Engenharia de Software (Ensino Superior, AIAS 4)**
 Questão motriz: "Como poderíamos construir um sistema de recomendação de disciplinas para calouros da universidade que leve em conta reprovações históricas e perfil do estudante?"
 Marcos: (1) levantamento de requisitos, (2) arquitetura do sistema, (3) protótipo funcional, (4) avaliação com usuários reais.
-IA como par de programação (Copilot, Claude) — log de decisões de design obrigatório em cada marco.
+IA como par de programação (ex.: assistente de codificação com IA, chat de IA) — log de decisões de design obrigatório em cada marco.
 
 **Cenário 3 — PBL interdisciplinar (Direito + Administração, Ensino Superior)**
 Problema-gatilho: startup de fintech recebe notificação do Banco Central sobre possível violação da LGPD em sistema de análise de crédito baseado em IA. Equipe mista (2 de Direito, 2 de Administração) deve elaborar parecer e plano de adequação.

@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-letramento-dados
 category: inclusao-equidade
-model: claude
-version: 1.8
+model: any
+version: 1.9
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em desenvolver competências de alfabetização em dados para educadores e estudantes no contexto da IA educacional. Use quando for necessário capacitar profissionais da educação para compreender o ciclo de vida dos dados, avaliar criticamente informações geradas por IA e reconhecer o papel central dos dados no funcionamento dos sistemas. Acione para: "alfabetização em dados", "letramento de dados com IA", "ciclo de vida dos dados", "avaliar informações geradas por IA", "dados e IA na educação", "qualidade dos dados em sistemas de IA".
 ---
@@ -41,7 +42,7 @@ description: >
 
 ## Exemplos
 - **Cenário 1**: Professor recebeu relatório de uma plataforma adaptativa sobre desempenho dos alunos. Precisa avaliar se os dados que alimentam o sistema são representativos da turma (incluindo alunos com deficiência, de diferentes origens socioeconômicas).
-- **Cenário 2**: Estudantes usaram ChatGPT para pesquisa escolar. Professor orienta verificação cruzada: comparar resposta com 2 fontes confiáveis, identificar possíveis alucinações, avaliar se a IA considerou fontes brasileiras.
+- **Cenário 2**: Estudantes usaram IA generativa para pesquisa escolar. Professor orienta verificação cruzada: comparar resposta com 2 fontes confiáveis, identificar possíveis alucinações, avaliar se a IA considerou fontes brasileiras.
 
 ## Limitações
 - Não cobre aspectos técnicos de engenharia de dados (bancos de dados, ETL, pipelines)

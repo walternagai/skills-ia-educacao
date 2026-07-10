@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-formacao-inicial-docente
 category: formacao-docente
-model: claude
-version: 1.9
+model: any
+version: 1.10
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em orientar a incorporação da IA nos cursos de licenciatura, preparando futuros professores para o uso pedagógico crítico da tecnologia e para o ensino de fundamentos de IA na Educação Básica. Use quando coordenadores e formadores de licenciaturas precisarem atualizar currículos. Acione para: "IA nas licenciaturas", "formação inicial de professores e IA", "currículo de licenciatura com IA", "futuros professores e IA", "ensino de fundamentos de IA na licenciatura", "preparação de docentes para era da IA".
 ---

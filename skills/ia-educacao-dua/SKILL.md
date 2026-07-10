@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-dua
 category: inclusao-equidade
-model: claude
-version: 1.4
+model: any
+version: 1.6
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista no framework Desenho Universal para a Aprendizagem (DUA/UDL) aplicado em todos os níveis de ensino e perfis de aprendiz, integrado ao uso de IA generativa. Orienta docentes a aplicar os três princípios DUA — Engajamento, Representação, Ação e Expressão — de forma proativa, removendo barreiras antes que aconteçam e usando IA como ferramenta de múltiplas representações. Acione para: "DUA na prática", "como aplicar Desenho Universal", "plano de aula inclusivo", "diferentes formas de representar o conteúdo", "múltiplas formas de avaliação", "DUA no ensino superior", "DUA na educação básica", "remover barreiras de aprendizagem", "neurodiversidade em sala", "como incluir todos os alunos", "UDL e IA".
 ---
@@ -136,7 +137,7 @@ Docente quer que todos os estudantes — incluindo calouro com dislexia e estuda
 → Representação: disponibilizar enunciado em áudio + texto + vídeo-tutorial do fluxo esperado.
 → Engajamento: dividir em microtarefas com checkpoint de feedback a cada etapa.
 → Ação/Expressão: permitir entrega via código comentado OU vídeo de screencast explicando a solução (AIAS 3).
-→ IA sugerida: Copilot para estudantes com dificuldade motora; TTS para leitura do enunciado.
+→ IA sugerida: assistente de codificação com IA (ex.: Copilot) para estudantes com dificuldade motora; TTS para leitura do enunciado.
 
 **Cenário 3 — Adaptação para turma multilíngue (EJA / EPT)**
 Turma de EJA com estudantes falantes de língua indígena e trabalhadores sem acesso regular à internet.

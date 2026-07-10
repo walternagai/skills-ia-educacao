@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-simulacao
 category: formacao-docente
-model: claude
-version: 1.2
+model: any
+version: 1.3
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em simulações educacionais e role-playing com IA generativa no Ensino Superior. Orienta o design de simulações de cenários profissionais complexos (clínicos, jurídicos, de engenharia, diplomáticos, empresariais), o uso de IA como personagem ou interlocutor, e o debriefing estruturado que transforma a experiência em aprendizagem. Acione para: "simulação educacional", "role-playing com IA", "jogo de papéis", "simulação clínica", "simulação jurídica", "negociação simulada", "IA como personagem", "debriefing", "cenário simulado", "simulação de caso profissional".
 ---
@@ -38,7 +39,7 @@ description: >
 
 O design do persona é o componente mais crítico para uma simulação eficaz. O docente precisa especificar:
 
-**Template de persona para prompt do Claude:**
+**Template de persona para prompt:**
 ```
 Você é [nome], [idade], [profissão/situação].
 Contexto: [2–4 linhas descrevendo a situação atual do personagem].
@@ -118,7 +119,7 @@ O debriefing transforma experiência em aprendizagem. Modelo em 3 fases (Rudolph
 - Feedback de par + debriefing com docente
 
 ## Formato de Saída
-- **Persona completo** para o tipo de simulação solicitado, com prompt pronto para Claude
+- **Persona completo** para o tipo de simulação solicitado, com prompt pronto para uso com IA generativa
 - **Briefing do estudante**: o que saber antes de começar, objetivo, restrições
 - **Guia de debriefing** com perguntas por fase (Reações → Análise → Síntese)
 - **Rubrica de avaliação da simulação**: critérios de qualidade da interação, não do resultado

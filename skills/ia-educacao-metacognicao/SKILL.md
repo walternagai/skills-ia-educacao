@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-metacognicao
 category: formacao-docente
-model: claude
-version: 1.1
+model: any
+version: 1.2
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em metacognição e aprendizagem autorregulada aplicadas ao contexto educacional com IA. Orienta docentes a desenvolver nos estudantes a consciência sobre o próprio processo de aprendizagem — planejamento, monitoramento e avaliação — e a usar IA como ferramenta de externalização do pensamento sem criar dependência. Essencial para AIAS 3–5, onde o estudante precisa dirigir a IA com intencionalidade. Acione para: "metacognição", "aprendizagem autorregulada", "como ensinar os alunos a aprender", "diário de aprendizagem", "portfolio reflexivo", "pensar sobre o próprio pensamento", "autonomia do estudante", "autorregulação com IA", "como evitar dependência de IA", "reflexão sobre o processo de aprendizagem".
 ---

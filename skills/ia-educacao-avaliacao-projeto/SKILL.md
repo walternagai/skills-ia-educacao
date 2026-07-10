@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-avaliacao-projeto
 category: ferramentas-praticas
-model: claude
-version: 1.4
+model: any
+version: 1.5
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em avaliação de projetos no Ensino Superior — rubricas e processos para avaliar projetos interdisciplinares, PBL/PjBL, iniciação científica, extensão e projetos integradores. Cobre avaliação de marcos, entregas parciais, apresentação final, relatório técnico, trabalho em equipe e uso de IA no desenvolvimento do projeto. Acione para: "avaliação de projeto", "projeto integrador", "PBL avaliação", "PjBL avaliação", "rubrica de projeto", "avaliação de projeto interdisciplinar", "projeto final", "TCC projeto", "iniciação científica", "extensão avaliação", "como avaliar projeto", "marcos de projeto", "entrega parcial de projeto".
 ---

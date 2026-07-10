@@ -18,7 +18,7 @@ O `SKILL.md` deve seguir exatamente este template:
 ---
 name: <slug-da-skill>
 category: <categoria>
-model: claude
+model: any
 version: 1.0
 description: >
   <Uma ou duas frases que descrevem quando acionar esta skill.

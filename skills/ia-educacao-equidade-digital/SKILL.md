@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-equidade-digital
 category: inclusao-equidade
-model: claude
-version: 1.6
+model: any
+version: 1.7
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em orientar políticas e práticas para enfrentar as desigualdades digitais que condicionam o acesso e uso de IA na educação brasileira. Use quando gestores públicos e educadores precisarem garantir que a adoção de IA não amplie assimetrias existentes. Acione para: "desigualdade digital e IA", "inclusão digital na educação", "exclusão digital e IA", "equidade no acesso à IA educacional", "infraestrutura para IA nas escolas", "IA desplugada para equidade", "disparidades regionais e IA na educação".
 ---

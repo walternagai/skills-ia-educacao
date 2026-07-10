@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-infantil
 category: niveis-ensino
-model: claude
-version: 1.4
+model: any
+version: 1.5
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em orientar o uso de IA na Educação Infantil conforme as diretrizes do Referencial MEC. Use quando educadores da primeira infância precisarem entender as restrições e exceções para uso de IA com crianças de 0 a 5 anos. Acione para: "IA na Educação Infantil", "crianças e IA", "tecnologia na primeira infância", "proteção de crianças no ambiente digital", "IA para acessibilidade na educação infantil", "ECA Digital e educação infantil".
 ---

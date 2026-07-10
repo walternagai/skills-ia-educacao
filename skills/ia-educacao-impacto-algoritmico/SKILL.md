@@ -1,8 +1,9 @@
 ---
 name: ia-educacao-impacto-algoritmico
 category: etica-governanca
-model: claude
-version: 1.6
+model: any
+version: 1.7
+TMP_VERSION_PLACEHOLDER
 description: >
   Especialista em conduzir Avaliações de Impacto Algorítmico (AIA) para sistemas de IA aplicados à educação. Use quando instituições precisarem identificar, analisar e mitigar riscos associados ao uso de sistemas algorítmicos em contextos educacionais. Acione para: "avaliação de impacto algorítmico", "AIA na educação", "auditoria de algoritmos educacionais", "riscos de IA na educação", "mitigação de riscos algorítmicos", "documentação de sistemas de IA educacional".
 ---
@@ -21,7 +22,7 @@ description: >
 - Auditoria de algoritmos em plataformas educacionais
 - Documentação de processos de desenvolvimento e uso de IA
 - Reavaliação periódica de sistemas em operação
-- **AIA de ferramentas de IA generativa usadas em avaliações (Níveis 3-5 AIAS)** — quando uma avaliação exige que estudantes usem ferramentas como ChatGPT, Copilot ou Claude, a instituição deve realizar AIA da ferramenta: mapear dados processados, riscos de privacidade (LGPD), vieses dos modelos, impacto sobre equidade de acesso, e definir salvaguardas antes de incluir no plano de ensino
+- **AIA de ferramentas de IA generativa usadas em avaliações (Níveis 3-5 AIAS)** — quando uma avaliação exige que estudantes usem ferramentas de IA generativa (ex.: ChatGPT, Copilot, Gemini, etc.), a instituição deve realizar AIA da ferramenta: mapear dados processados, riscos de privacidade (LGPD), vieses dos modelos, impacto sobre equidade de acesso, e definir salvaguardas antes de incluir no plano de ensino
 
 ## Workflow
 1. **Identificar sistemas de IA** em uso ou previstos no contexto educacional — mapear finalidade, dados utilizados, nível de autonomia, impacto potencial
