@@ -1,70 +1,63 @@
 # AGENTS.md — skills-ia-educacao
 
-## Natureza do repositório
+## Natureza
 
-Acervo documental + skills (`skills/*/SKILL.md`) — a contagem cresce; confira com `ls skills | wc -l`. **Não há código, build, testes, lint, typecheck ou CI.** Nenhum comando de compilação/teste se aplica.
+Acervo documental (`skills/*/SKILL.md`). **Não há código, build, testes, lint, typecheck ou CI.** Nenhum comando de compilação/teste se aplica. Contagem: `ls skills | wc -l`.
 
 ## Fonte primária
 
 Leia `CLAUDE.md` antes de qualquer operação. Ele contém: arquitetura das skills, categorias, tabela AIAS, comandos de auditoria, convenções de edição e referências normativas.
 
-## Diferenças OpenCode vs. Claude Code
+## OpenCode vs. Claude Code
 
-- Skills deste repo **já estão disponíveis** no system prompt via tool `skill` — **não** execute `npx skills add` (isso é para Claude Code).
-- `opencode.json` existe na raiz com schema mínimo (`$schema` apenas). Adicione configurações aqui se necessário.
-- `agents/` (raiz) e `.opencode/agents/` contêm specs para 3 agentes: `artesao-de-skills`, `construtor-de-avaliacoes`, `planejador-pedagogico`. Use via Task tool com `subagent_type`.
-- `CLAUDE.md` foi escrito para Claude Code; `AGENTS.md` é o complemento para OpenCode.
+- Skills deste repo **já estão disponíveis** no system prompt via tool `skill` — **não** execute `npx skills add` (Claude Code).
+- `opencode.json` na raiz com schema mínimo (`$schema` apenas).
+- `agents/` e `.opencode/agents/` contêm specs para 3 agentes: `artesao-de-skills`, `construtor-de-avaliacoes`, `planejador-pedagogico`. Use via Task tool com `subagent_type`.
+- `CLAUDE.md` é para Claude Code; `AGENTS.md` é o complemento para OpenCode.
 
 ## CLIs e disponibilidade de skills
 
-Cada CLI de IA descobre skills de forma diferente. Use o snippet abaixo para detectar quais CLIs estão instalados e verificar se as skills `ia-educacao-*` estão acessíveis em cada um.
+Cada CLI descobre skills de forma diferente. Use o snippet abaixo para detectar CLIs instalados e verificar se as skills `ia-educacao-*` estão acessíveis.
 
 | CLI | Onde as skills ficam | Instalação | Verificação |
 |-----|----------------------|------------|-------------|
 | **Claude Code** | `~/.claude/skills/<slug>/SKILL.md` | `npx skills add ./skills/<slug>` | `ls ~/.claude/skills/ \| grep -c ia-educacao` |
-| **OpenCode** | System prompt via tool `skill` | Automático (já listadas em `available_skills`) | `opencode agent list` |
+| **OpenCode** | System prompt via tool `skill` | Automático (em `available_skills`) | `opencode agent list` |
 
 ```bash
-# Verifica CLIs instalados e disponibilidade das skills ia-educacao-*
+# Detecta CLIs instalados e disponibilidade das skills ia-educacao-*
 echo "=== Detecção de CLIs ==="
-
-# Claude Code
 if command -v claude &>/dev/null; then
   echo "✓ Claude Code: $(claude --version 2>/dev/null | head -1 || echo 'instalado')"
   installed=$(ls ~/.claude/skills/ 2>/dev/null | grep -c "^ia-educacao\|^aias-consultant" || echo 0)
   total=$(ls -d skills/*/ 2>/dev/null | wc -l)
   echo "  Skills ia-educacao instaladas: $installed/$total"
-  if [ "$installed" -lt "$total" ] 2>/dev/null; then
-    echo "  → Instalar todas: for d in skills/*/; do npx skills add \"./\$d\"; done"
-  fi
+  [ "$installed" -lt "$total" ] 2>/dev/null && echo "  → Instalar: for d in skills/*/; do npx skills add \"./\$d\"; done"
 else
   echo "✗ Claude Code: não instalado"
 fi
-
-# OpenCode
 if command -v opencode &>/dev/null; then
-  echo "✓ OpenCode: instalado"
-  echo "  Skills: disponíveis via tool skill (automático)"
-  echo "  Agentes locais: $(ls .opencode/agents/ 2>/dev/null | wc -l) em .opencode/agents/"
+  echo "✓ OpenCode: instalado (skills via tool skill, agentes em .opencode/agents/)"
 else
   echo "✗ OpenCode: não instalado"
 fi
 ```
 
-> Se Gemini CLI ou Codex forem adicionados no futuro, estenda a detecção com `command -v gemini` / `command -v codex` e seus respectivos diretórios de instruções (`~/.gemini/GEMINI.md`, `~/.codex/CODEX.md`).
+> Se Gemini CLI ou Codex forem adicionados, estenda com `command -v gemini` / `command -v codex` e seus diretórios (`~/.gemini/GEMINI.md`, `~/.codex/CODEX.md`).
 
-## Convenções essenciais (não óbvias)
+## Convenções essenciais
 
 - **Idioma**: Português do Brasil em todo conteúdo (skills, docs, commits).
 - **Slug**: prefixo `ia-educacao-` (ex: `ia-educacao-avaliacao`). Exceção: `aias-consultant` (sem prefixo).
-- **Dependências entre skills**: referenciar **apenas** skills dentro de `skills/` deste repo — nunca skills externas (ex: `bloom-taxonomy-educator`).
-- **AIAS**: 5 níveis fixos com nomes canônicos (tabela no `CLAUDE.md`). Não adicionar/renomear/remover sem revisar todas as skills.
+- **Modelo**: `model: any` no frontmatter — skills independentes de CLI/fornecedor.
+- **Dependências**: referenciar **apenas** skills dentro de `skills/` deste repo — nunca skills externas (ex: `bloom-taxonomy-educator`).
+- **AIAS**: 5 níveis fixos com nomes canônicos (tabela no `CLAUDE.md`). Não alterar sem revisar todas as skills.
 - **Versionamento**: ao editar skill, incremente `version` no frontmatter (ex: `1.2` → `1.3`).
 - **Referências**: formato ABNT.
-- **`raw-pdfs/`** está no `.gitignore` — PDFs normativos não versionados.
-- **`CHANGELOG.md`** deve ser atualizado em toda mudança relevante (formato Keep a Changelog).
+- **`raw-pdfs/`**: no `.gitignore` — PDFs normativos não versionados.
+- **`CHANGELOG.md`**: atualizar a cada mudança relevante (formato Keep a Changelog).
 
-## Comandos de auditoria (do `CLAUDE.md`)
+## Comandos de auditoria
 
 ```bash
 # Distribuição de categorias (deve bater com a tabela do CLAUDE.md)
@@ -83,7 +76,7 @@ awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | 
 done
 ```
 
-## Estrutura de diretórios
+## Estrutura
 
 ```
 .
@@ -101,10 +94,10 @@ done
 └── skills/            # N skills (confira com `ls skills | wc -l`)
 ```
 
-## Workflow típico
+## Workflow
 
 1. Leia `CLAUDE.md` para contexto completo.
-2. Consulte `CONTRIBUTING.md` para template e regras ao criar/editar skills.
-3. Após modificar skills, execute os comandos de auditoria acima para verificar grafo.
-4. Atualize `CHANGELOG.md` com a mudança.
+2. Consulte `CONTRIBUTING.md` ao criar/editar skills.
+3. Após modificar, execute os comandos de auditoria para verificar grafo.
+4. Atualize `CHANGELOG.md`.
 5. Incremente `version` no frontmatter de skills editadas.

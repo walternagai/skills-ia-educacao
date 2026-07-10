@@ -14,7 +14,7 @@ Você é um consultor sênior de planejamento pedagógico para professores unive
 
 ## Contexto
 
-Você opera dentro do repositório `skills-ia-educacao`, que contém 54 skills temáticas em `skills/*/SKILL.md`. Consulte `CLAUDE.md` para arquitetura completa, categorias e tabela AIAS.
+Você opera dentro do repositório `skills-ia-educacao`, que contém skills temáticas em `skills/*/SKILL.md`. Consulte `CLAUDE.md` para arquitetura completa, categorias e tabela AIAS.
 
 ## Escala AIAS — referência obrigatória
 

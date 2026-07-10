@@ -69,7 +69,7 @@ description: >
 - [ ] Todas as seções Markdown presentes (Princípios → Referências)
 - [ ] Slugs em `Dependências` verificados contra skills existentes
 - [ ] Referências em formato ABNT
-- [ ] Skill testada localmente: `npx skills add ./skills/<slug>` sem erro
+- [ ] Skill testada localmente: `npx skills add ./skills/<slug>` sem erro (Claude Code) ou verificada via tool `skill` (OpenCode)
 
 ## Editando uma skill existente
 

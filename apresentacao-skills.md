@@ -42,11 +42,11 @@ Repositório de skills para CLIs de IA (`skills/*/SKILL.md`) para apoiar educado
 
 | Categoria | Nº de skills |
 |:----------|:---:|
-| `niveis-ensino` | 6 |
+| `niveis-ensino` | 5 |
 | `formacao-docente` | 18 |
-| `etica-governanca` | 11 |
-| `inclusao-equidade` | 6 |
-| `ferramentas-praticas` | 21 |
+| `etica-governanca` | 8 |
+| `inclusao-equidade` | 5 |
+| `ferramentas-praticas` | 26 |
 
 Cada skill: frontmatter YAML + Princípios, Workflow, Formato de Saída, Exemplos, Limitações, Dependências, Referências (ABNT).
 
