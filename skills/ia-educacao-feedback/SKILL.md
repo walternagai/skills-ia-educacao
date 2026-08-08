@@ -2,8 +2,7 @@
 name: ia-educacao-feedback
 category: ferramentas-praticas
 model: any
-version: 1.6
-TMP_VERSION_PLACEHOLDER
+version: 1.7
 description: >
   Especialista em design e escala de feedback formativo educacional com IA generativa. Orienta docentes a construir feedback específico, acionável e centrado no aprendizado — usando IA para ampliar o alcance sem perder qualidade — e a ensinar estudantes a dar e receber feedback por pares. Acione para: "como dar feedback com IA", "feedback formativo", "feedback em escala", "feedback por pares", "como melhorar o feedback aos alunos", "IA para corrigir trabalhos", "comentários em redações", "feed forward", "feedback eficaz", "rubrica de feedback".
 ---

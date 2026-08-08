@@ -2,8 +2,7 @@
 name: ia-educacao-personalizacao
 category: ferramentas-praticas
 model: any
-version: 1.8
-TMP_VERSION_PLACEHOLDER
+version: 1.9
 description: >
   Especialista em orientar a implementação pedagógica de sistemas de personalização do ensino mediados por IA. Use quando educadores e gestores precisarem compreender como sistemas tutoriais inteligentes (STIs) e plataformas adaptativas podem apoiar percursos individualizados de aprendizagem, respeitando equidade e supervisão docente. Acione para: "personalização do ensino com IA", "aprendizagem adaptativa", "sistemas tutoriais inteligentes", "plataformas adaptativas na educação", "percursos individualizados com IA", "feedback personalizado com IA".
 ---

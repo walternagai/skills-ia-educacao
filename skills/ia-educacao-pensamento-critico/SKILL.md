@@ -2,8 +2,7 @@
 name: ia-educacao-pensamento-critico
 category: formacao-docente
 model: any
-version: 1.8
-TMP_VERSION_PLACEHOLDER
+version: 1.9
 description: >
   Especialista em desenvolver estratégias pedagógicas que utilizem a IA como estímulo — e não substituta — do pensamento crítico e da criatividade dos estudantes. Use quando educadores precisarem desenhar atividades que posicionem a IA como objeto de análise, debate e investigação crítica. Acione para: "pensamento crítico com IA", "criatividade e IA na educação", "análise de vieses em IA", "metacognição com IA", "IA como objeto de investigação crítica", "atividades de pensamento crítico com IA generativa".
 ---

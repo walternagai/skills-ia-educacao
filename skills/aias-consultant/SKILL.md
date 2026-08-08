@@ -2,8 +2,7 @@
 name: aias-consultant
 category: ferramentas-praticas
 model: any
-version: 3.4
-TMP_VERSION_PLACEHOLDER
+version: 3.5
 description: >
   Consultora especialista na Escala AIAS (AI Assessment Scale), orientando docentes na escolha do nível adequado para cada atividade avaliativa, no redesenho das tarefas, e na comunicação transparente das expectativas de uso de IA aos estudantes. Acione para: "qual nível AIAS usar nesta avaliação", "como escrever a política de IA para a atividade", "posso permitir IA neste trabalho", "como comunicar o nível AIAS ao aluno", "como redesenhar esta prova", "exemplo de enunciado com AIAS", "integridade acadêmica e IA", "AIAS no plano de ensino".
 ---
@@ -93,7 +92,7 @@ Docente pergunta: "Posso deixar os alunos usarem IA na prova de Cálculo 1?"
 
 **Cenário 2 — Relatório de Estágio (Administração, Nível 2-3)**
 Docente quer permitir IA para "ajudar na escrita, mas o conteúdo tem que ser do aluno".
-→ Diagnóstico: Nível 3 (Colaboração) — IA pode auxiliar na elaboração; estudante mantém autoria.
+→ Diagnóstico: Nível 3 (Colaboração com IA) — IA pode auxiliar na elaboração; estudante mantém autoria.
 → Saída: Enunciado com permissões explícitas, exigência de reflexão sobre o processo de uso de IA (250 palavras), rubrica que pondera voz autoral e qualidade de integração.
 
 **Cenário 3 — Projeto de Software (Computação, Nível 4)**
@@ -119,7 +118,7 @@ Orientador quer incentivar inovação com IA no projeto de conclusão.
 - `ia-educacao-etica` — fundamentos éticos para uso de IA em avaliações
 
 ## Referências
-- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. *Journal of University Teaching and Learning Practice*, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
-- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. *Journal of University Teaching and Learning Practice*, v. 22, n. 7, 2025. Disponível em: https://doi.org/10.53761/rrm4y757. Acesso em: 30 jun. 2026.
-- BRASIL. Ministério da Educação. *Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação*. Brasília: MEC, fev. 2026.
-- MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. *The Wharton School Research Paper*, 2024.
+- PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
+- PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025. Disponível em: https://doi.org/10.53761/rrm4y757. Acesso em: 30 jun. 2026.
+- BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
+- MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.

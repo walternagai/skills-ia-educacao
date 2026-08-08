@@ -2,8 +2,7 @@
 name: ia-educacao-gestao
 category: ferramentas-praticas
 model: any
-version: 1.8
-TMP_VERSION_PLACEHOLDER
+version: 1.9
 description: >
   Especialista em desenvolver competências de gestores educacionais para liderar a adoção responsável de IA em escolas e redes de ensino. Use quando gestores precisarem analisar demandas, avaliar soluções, planejar implementação e monitorar o uso de IA. Acione para: "gestão educacional com IA", "adoção de IA por gestores", "avaliação de soluções de IA para escolas", "planejamento de implementação de IA", "competências de gestores para IA", "liderança em inovação educacional com IA".
 ---
@@ -60,7 +59,7 @@ description: >
 - UNESCO. AI and education: guidance for policymakers. Paris: UNESCO, 2021.
 - G20. Reconsidering Education policy in the era of Generative AI. G20, 2023.
 - CIEB. Notas Técnicas #24: Inteligência artificial generativa: usos na gestão das secretarias estaduais de educação. São Paulo: CIEB, 2024b.
-- BRASIL. MEC. Estratégia Nacional de escolas conectadas. Brasília: MEC, 2023.
+- BRASIL. Ministério da Educação. Estratégia Nacional de escolas conectadas. Brasília: MEC, 2023.
 - BANCO MUNDIAL. AI revolution in education: what you need to know. Washington, DC: World Bank Publications, 2024.
 - UNITED KINGDOM. DEPARTMENT FOR EDUCATION. Generative AI in education: educator and expert views. London: Department of Education, 2024.
 - FNDE. Guia de Orientação do PAR — Plano de Ações Articuladas. Brasília: FNDE/MEC (edição vigente).

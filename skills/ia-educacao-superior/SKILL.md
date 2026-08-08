@@ -2,8 +2,7 @@
 name: ia-educacao-superior
 category: niveis-ensino
 model: any
-version: 1.7
-TMP_VERSION_PLACEHOLDER
+version: 1.8
 description: >
   Especialista em orientar a incorporação da IA na Educação Superior e Pós-Graduação, abrangendo ensino, pesquisa, extensão e gestão acadêmica. Use quando IES precisarem reorientar currículos, fortalecer comissões de ética e desenvolver competências em IA para estudantes. Acione para: "IA na Educação Superior", "IA na pós-graduação", "currículo universitário e IA", "comissão de ética em IA", "pesquisa acadêmica com IA", "competências em IA para universitários", "IES e IA".
 ---

@@ -2,8 +2,7 @@
 name: ia-educacao-ensino-medio
 category: niveis-ensino
 model: any
-version: 1.6
-TMP_VERSION_PLACEHOLDER
+version: 1.7
 description: >
   Especialista em aprofundar o letramento em IA no Ensino Médio, articulando discussões sobre impactos sociais, éticos e econômicos com exploração prática de ferramentas. Use quando educadores do EM precisarem planejar projetos, pesquisas e atividades com IA. Acione para: "IA no Ensino Médio", "letramento em IA para adolescentes", "projetos com IA no ensino médio", "impactos sociais da IA", "cidadania digital com IA", "preparação para o mundo do trabalho com IA".
 ---

@@ -2,8 +2,7 @@
 name: ia-educacao-fundamentos
 category: formacao-docente
 model: any
-version: 1.5
-TMP_VERSION_PLACEHOLDER
+version: 1.6
 description: >
   Especialista em fundamentos de Inteligência Artificial para profissionais da educação, com base no Referencial do MEC (2026). Use quando educadores precisarem compreender conceitos básicos de IA — machine learning, dados, algoritmos, modelos fundacionais, IA preditiva vs. generativa, alucinações, vieses — e suas implicações pedagógicas. Acione para: "o que é IA", "como funciona machine learning", "diferença entre IA generativa e preditiva", "alucinações em IA", "fundamentos de IA para professores", "conceitos básicos de IA na educação".
 ---

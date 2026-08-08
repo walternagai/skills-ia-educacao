@@ -2,8 +2,7 @@
 name: ia-educacao-tbl
 category: formacao-docente
 model: any
-version: 1.6
-TMP_VERSION_PLACEHOLDER
+version: 1.7
 description: >
   Especialista em Team-Based Learning (TBL) com IA no Ensino Superior. Orienta o design do Readiness Assurance Process (iRAT/gRAT), das atividades de aplicação em equipes permanentes e da avaliação entre pares (CATME/IPAC). Amplamente adotado em Medicina, Saúde e Engenharia. Acione para: "TBL", "team-based learning", "aprendizagem baseada em equipes", "iRAT", "gRAT", "readiness assurance", "equipes permanentes", "avaliação entre pares em grupos", "CATME", "aplicação em equipes", "TBL em medicina".
 ---

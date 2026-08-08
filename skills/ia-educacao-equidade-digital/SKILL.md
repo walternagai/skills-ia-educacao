@@ -2,8 +2,7 @@
 name: ia-educacao-equidade-digital
 category: inclusao-equidade
 model: any
-version: 1.7
-TMP_VERSION_PLACEHOLDER
+version: 1.8
 description: >
   Especialista em orientar políticas e práticas para enfrentar as desigualdades digitais que condicionam o acesso e uso de IA na educação brasileira. Use quando gestores públicos e educadores precisarem garantir que a adoção de IA não amplie assimetrias existentes. Acione para: "desigualdade digital e IA", "inclusão digital na educação", "exclusão digital e IA", "equidade no acesso à IA educacional", "infraestrutura para IA nas escolas", "IA desplugada para equidade", "disparidades regionais e IA na educação".
 ---
@@ -60,7 +59,7 @@ description: >
 - CGI.BR. TIC Educação 2023: Pesquisa sobre o uso das tecnologias de informação e comunicação nas escolas brasileiras. São Paulo: NIC.br, 2024.
 - CGI.BR. TIC Domicílios 2024: Pesquisa sobre o uso das tecnologias de informação e comunicação nos domicílios brasileiros. São Paulo: NIC.br, 2025.
 - ALMEIDA, A. P. et al. Carta de Recomendação para o Uso da Inteligência Artificial na Educação: Desafios e Potencialidades. São Paulo: Nelpa, 2025.
-- BRASIL. MEC. Estratégia Nacional de Escolas Conectadas. Brasília: MEC, 2023.
+- BRASIL. Ministério da Educação. Estratégia Nacional de Escolas Conectadas. Brasília: MEC, 2023.
 - BRASIL. Lei nº 15.211, de 22 de agosto de 2024 (ECA Digital).
 - CNE. Resolução CNE/CEB nº 3, de 10 de novembro de 1999 — Educação Escolar Indígena.
 - CNE. Resolução CNE/CEB nº 8, de 20 de novembro de 2012 — Educação Escolar Quilombola.

@@ -2,8 +2,7 @@
 name: ia-educacao-basica
 category: niveis-ensino
 model: any
-version: 1.5
-TMP_VERSION_PLACEHOLDER
+version: 1.6
 description: >
   Especialista em orientar a integração gradual e segura da IA na Educação Básica, seguindo o princípio do Referencial MEC de que estudantes devem primeiro aprender sobre IA para depois aprender com IA. Use quando educadores da EB precisarem planejar o letramento em IA desde os anos iniciais. Acione para: "IA na Educação Básica", "letramento em IA para crianças", "aprender sobre IA antes de aprender com IA", "IA no Ensino Fundamental", "progressão de IA por etapa de ensino", "currículo de IA na educação básica".
 ---
@@ -66,4 +65,4 @@ description: >
 - SEDUC-PI. UNESCO reconhece Piauí como primeiro território nas Américas a implementar o ensino de IA na educação básica, 2024.
 - CONSELHO NACIONAL DE EDUCAÇÃO. Resolução CNE/CEB nº 2, de 21 de março de 2025 (uso de dispositivos digitais em espaços escolares).
 - BRASIL. Lei nº 15.211, de 22 de agosto de 2024 (ECA Digital).
-- BRASIL. MEC. Base Nacional Comum Curricular — Competências Gerais 4 e 5 (Cultura Digital e Comunicação). Brasília: MEC, 2018.
+- BRASIL. Ministério da Educação. Base Nacional Comum Curricular — Competências Gerais 4 e 5 (Cultura Digital e Comunicação). Brasília: MEC, 2018.

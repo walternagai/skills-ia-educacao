@@ -2,8 +2,7 @@
 name: ia-educacao-planejamento-didatico
 category: formacao-docente
 model: any
-version: 1.7
-TMP_VERSION_PLACEHOLDER
+version: 1.8
 description: >
   Especialista em orientar educadores no uso de IA generativa como assistente para planejamento de aulas, produção de materiais didáticos e organização do trabalho docente. Use quando professores precisarem otimizar tempo com tarefas administrativas e pedagógicas recorrentes, liberando espaço para mediação pedagógica. Acione para: "planejamento de aulas com IA", "produção de materiais didáticos com IA", "IA como assistente docente", "otimização do trabalho docente com IA", "criação de planos de aula com IA", "curadoria de materiais com IA".
 ---

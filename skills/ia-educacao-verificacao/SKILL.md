@@ -2,8 +2,7 @@
 name: ia-educacao-verificacao
 category: ferramentas-praticas
 model: any
-version: 1.5
-TMP_VERSION_PLACEHOLDER
+version: 1.6
 description: >
   Especialista em aplicar Chain of Verification (CoVe) para docentes validarem materiais didáticos, questões de prova, planos de aula e feedbacks gerados com IA generativa antes de usar em sala. Acione para: "verificar questões geradas por IA", "validar material didático com IA", "checar afirmações de texto gerado por IA", "revisar feedback de IA antes de devolver ao aluno", "como confiar (ou não) no que a IA produziu", "verificação de fatos em material didático", "supervisão docente de output de IA", "conferir plano de aula gerado por IA".
 ---

@@ -13,6 +13,7 @@ Leia `CLAUDE.md` antes de qualquer operação. Ele contém: arquitetura das skil
 - Skills deste repo **já estão disponíveis** no system prompt via tool `skill` — **não** execute `npx skills add` (Claude Code).
 - `opencode.json` na raiz com schema mínimo (`$schema` apenas).
 - `agents/` e `.opencode/agents/` contêm specs para 3 agentes: `artesao-de-skills`, `construtor-de-avaliacoes`, `planejador-pedagogico`. Use via Task tool com `subagent_type`.
+- **Sincronia**: `.opencode/agents/` é a cópia que o OpenCode carrega; `agents/` é a fonte canônica. Ao editar um agente, atualize **as duas** cópias (hoje idênticas).
 - `CLAUDE.md` é para Claude Code; `AGENTS.md` é o complemento para OpenCode.
 
 ## CLIs e disponibilidade de skills
@@ -53,6 +54,7 @@ fi
 - **Dependências**: referenciar **apenas** skills dentro de `skills/` deste repo — nunca skills externas (ex: `bloom-taxonomy-educator`).
 - **AIAS**: 5 níveis fixos com nomes canônicos (tabela no `CLAUDE.md`). Não alterar sem revisar todas as skills.
 - **Versionamento**: ao editar skill, incremente `version` no frontmatter (ex: `1.2` → `1.3`).
+- **`TMP_VERSION_PLACEHOLDER`**: linha literal que existiu no frontmatter de todas as 62 skills (commitada por engano) — removida em massa em 2026-08 (v0.8.0). Não reintroduzir.
 - **Referências**: formato ABNT.
 - **`raw-pdfs/`**: no `.gitignore` — PDFs normativos não versionados.
 - **`CHANGELOG.md`**: atualizar a cada mudança relevante (formato Keep a Changelog).

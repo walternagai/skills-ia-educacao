@@ -2,8 +2,7 @@
 name: ia-educacao-aprendizagem-servico
 category: formacao-docente
 model: any
-version: 1.3
-TMP_VERSION_PLACEHOLDER
+version: 1.4
 description: >
   Especialista em Aprendizagem-Serviço e Extensão Universitária com IA, integrando o tripé ensino-pesquisa-extensão da universidade brasileira. Orienta o design de projetos em que estudantes aplicam conhecimento disciplinar em parceria com comunidades ou organizações reais, com IA como ferramenta de diagnóstico, comunicação e análise. Acione para: "aprendizagem-serviço", "extensão universitária", "projeto de extensão", "service learning", "comunidade e universidade", "impacto social com IA", "tripé universitário", "atividade de extensão", "curricularização da extensão", "AIAS em extensão".
 ---

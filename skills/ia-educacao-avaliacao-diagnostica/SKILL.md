@@ -2,8 +2,7 @@
 name: ia-educacao-avaliacao-diagnostica
 category: ferramentas-praticas
 model: any
-version: 1.5
-TMP_VERSION_PLACEHOLDER
+version: 1.6
 description: >
   Especialista em avaliação diagnóstica para o Ensino Superior — mapeamento de pré-requisitos, identificação de misconceptions, testes de nivelamento e pré-testes para metodologias ativas. Cobre design de questões diagnósticas, análise de padrões de erro, uso de IA para personalizar diagnóstico e integração com PBL, TBL, sala invertida e Peer Instruction. Acione para: "avaliação diagnóstica", "pré-teste", "teste de nivelamento", "mapear pré-requisitos", "diagnosticar misconceptions", "survey inicial", "pré-requisitos para disciplina", "teste diagnóstico", "nivelamento de turma", "diagnóstico com IA", "pré-avaliação".
 ---

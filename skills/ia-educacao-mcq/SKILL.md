@@ -2,8 +2,7 @@
 name: ia-educacao-mcq
 category: ferramentas-praticas
 model: any
-version: 1.5
-TMP_VERSION_PLACEHOLDER
+version: 1.6
 description: >
   Especialista em design, validação e análise de questões de múltipla escolha (MCQs) para disciplinas STHEM no Ensino Superior. Cobre construção de distratores plausíveis, alinhamento à Taxonomia de Bloom, análise psicométrica básica (índice de dificuldade, discriminação), detecção de vieses e uso de IA para gerar e revisar itens. Acione para: "criar questão de múltipla escolha", "MCQ para prova", "distratores plausíveis", "teste de múltipla escolha", "questão objetiva", "item de prova", "validação de MCQ", "análise de distratores", "índice de dificuldade", "discriminação de item", "Bloom para MCQ", "questão conceitual", "ConcepTest".
 ---

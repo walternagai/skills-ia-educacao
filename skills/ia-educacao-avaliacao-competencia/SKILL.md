@@ -2,8 +2,7 @@
 name: ia-educacao-avaliacao-competencia
 category: ferramentas-praticas
 model: any
-version: 1.5
-TMP_VERSION_PLACEHOLDER
+version: 1.6
 description: >
   Especialista em avaliação por competências no Ensino Superior — rubricas de proficiência, certificação de competências, tarefas de desempenho autênticas e alinhamento a marcos regulatórios (BNCC, DCNs, SINAES). Cobre desenho de níveis de proficiência, portfólios de evidências, avaliação de competências transversais e uso de IA para mapear e acompanhar desenvolvimento de competências. Acione para: "avaliação por competências", "competências", "proficiência", "rubrica de competência", "certificação de competências", "tarefa de desempenho", "avaliação autêntica", "DCN", "SINAES", "BNCC competências", "mapeamento de competências", "nível de proficiência", "competências transversais", "avaliação baseada em competências".
 ---

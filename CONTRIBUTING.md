@@ -74,8 +74,10 @@ description: >
 ## Editando uma skill existente
 
 - Atualize o campo `version` no frontmatter (incremento de minor: `1.2` → `1.3`)
+- **Política de versionamento**: minor (`1.2` → `1.3`) para edição de conteúdo (texto, referências, workflow); major (`1.x` → `2.0`) para mudança estrutural (renomear `name`, alterar categoria, mudar seções fixas)
 - Mantenha a consistência com as demais skills que dependem desta
 - Se remover ou renomear um campo `name`, atualize todas as skills que o referenciam em `Dependências`
+- Após qualquer mudança, rode `./audit.sh` e atualize `CHANGELOG.md`
 
 ## Adicionando PDFs normativos
 

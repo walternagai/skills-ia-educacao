@@ -2,8 +2,7 @@
 name: ia-educacao-avaliacao-oral
 category: ferramentas-praticas
 model: any
-version: 1.6
-TMP_VERSION_PLACEHOLDER
+version: 1.7
 description: >
   Especialista em design, rubricas e protocolos para avaliação oral no Ensino Superior — apresentações, arguições, defesas de TCC, seminários, entrevistas técnicas e exames orais. Cobre critérios de clareza, domínio, argumentação e gestão de tempo; uso de IA para simular bancas, gerar perguntas de arguição e analisar desempenho. Acione para: "avaliação oral", "apresentação de seminário", "defesa de TCC", "arguição", "banca examinadora", "prova oral", "rubrica para apresentação", "como avaliar seminário", "entrevista técnica", "exame oral", "simulação de banca com IA".
 ---

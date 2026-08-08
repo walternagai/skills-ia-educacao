@@ -2,8 +2,7 @@
 name: ia-educacao-interdisciplinaridade
 category: formacao-docente
 model: any
-version: 1.3
-TMP_VERSION_PLACEHOLDER
+version: 1.4
 description: >
   Especialista em design e avaliação de atividades interdisciplinares no Ensino Superior, com foco em cursos STHEM (Science, Technology, Humanities, Engineering, Math). Orienta como integrar disciplinas sem perder rigor disciplinar, construir avaliações que capturem síntese, e usar IA como ferramenta de integração de perspectivas. Acione para: "interdisciplinaridade", "projeto interdisciplinar", "integração de disciplinas", "STHEM", "atividade que integra disciplinas", "como avaliar projeto interdisciplinar", "problema que exige mais de uma área", "currículo integrado", "problema complexo multidisciplinar", "disciplinas conversando entre si".
 ---

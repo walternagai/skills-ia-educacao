@@ -2,8 +2,7 @@
 name: ia-educacao-rascunho
 category: ferramentas-praticas
 model: any
-version: 1.5
-TMP_VERSION_PLACEHOLDER
+version: 1.6
 description: >
   Especialista em aplicar a técnica Chain of Draft (CoD) em contextos educacionais: ensina estudantes a raciocinar de forma concisa e densa, orienta docentes no uso de CoD para prompts eficientes com IA, planejamento de aulas e feedback formativo rápido. Acione para: "raciocínio conciso com IA", "CoD na educação", "como ensinar a pensar com clareza", "prompts eficientes para ferramentas de IA", "rascunhos de raciocínio", "esboço antes de escrever com IA", "chain of draft para estudantes", "como reduzir verbosidade", "atividade de síntese com IA", "pensar passo a passo de forma eficiente".
 ---

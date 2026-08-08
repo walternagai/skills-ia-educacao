@@ -2,8 +2,7 @@
 name: ia-educacao-debate
 category: formacao-docente
 model: any
-version: 1.4
-TMP_VERSION_PLACEHOLDER
+version: 1.5
 description: >
   Especialista em debate estruturado e argumentação acadêmica com IA no Ensino Superior. Orienta o design e a facilitação de debates (Oxford, Fishbowl, Seminário Socrático), o uso de IA como advogado do diabo e gerador de contra-argumentos, e a avaliação da qualidade argumentativa. Acione para: "debate estruturado", "debate em sala", "seminário socrático", "fishbowl", "Oxford debate", "argumentação acadêmica", "IA como advogado do diabo", "como avaliar argumento", "contra-argumentação", "falácias argumentativas", "discussão filosófica com IA".
 ---

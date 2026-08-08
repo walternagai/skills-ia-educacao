@@ -5,6 +5,22 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.8.0] — 2026-08-08
+
+### Removido
+- **`TMP_VERSION_PLACEHOLDER`** — linha literal que existia no frontmatter de todas as 62 skills (commitada por engano); removida em massa, com `version` incrementada em todas as skills (ex: `1.7` → `1.8`; `aias-consultant` `3.4` → `3.5`)
+
+### Corrigido
+- **Sincronia dos agentes**: `.opencode/agents/` (cópia carregada pelo OpenCode) sincronizado com `agents/` (fonte canônica) — faltavam `model: any` e contagens desatualizadas ("54 skills") em 2 dos 3 arquivos
+- **Autor institucional MEC padronizado**: 6 referências com `BRASIL. MEC.` expandidas para `BRASIL. Ministério da Educação.` (equidade-digital, seguranca-digital, gestao, basica, formacao-inicial-docente, infantil), alinhando ao padrão das demais 65 ocorrências
+- **Itálico markdown removido das referências de `aias-consultant`** (4 referências com `*...*` cru) — único arquivo do acervo com asteriscos na seção Referências
+- **Nomes canônicos da Escala AIAS**: "Nível 5 (Exploração)" → "Nível 5 (Exploração de IA)" em `profissional-tecnologica`; "Nível 3 (Colaboração)" → "Nível 3 (Colaboração com IA)" em `aias-consultant`
+- **`ia-educacao-permanencia`**: adicionado passo de alinhamento à Escala AIAS no Workflow (a AIAS aplica-se a atividades avaliativas, não ao sistema de alerta em si)
+
+### Adicionado
+- **`audit.sh`** — script de auditoria consolidando os comandos do `AGENTS.md` (categorias, órfãs, dependências quebradas) + novos checks (frontmatter, seções, `model: any`, placeholder, dependências externas, nomes canônicos AIAS, cobertura AIAS, forma MEC, itálico em referências, sincronia de agentes)
+- **Política de versionamento** documentada em `CONTRIBUTING.md` (minor = edição de conteúdo; major = mudança estrutural)
+
 ## [0.7.7] — 2026-07-10
 
 ### Modificado

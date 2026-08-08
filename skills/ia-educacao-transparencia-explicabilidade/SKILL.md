@@ -2,8 +2,7 @@
 name: ia-educacao-transparencia-explicabilidade
 category: etica-governanca
 model: any
-version: 1.7
-TMP_VERSION_PLACEHOLDER
+version: 1.8
 description: >
   Especialista em orientar instituições educacionais sobre requisitos de transparência e explicabilidade de sistemas de IA. Use quando for necessário avaliar se ferramentas de IA atendem a padrões mínimos de clareza sobre seu funcionamento, dados utilizados e critérios de decisão. Acione para: "transparência em IA educacional", "explicabilidade de sistemas de IA", "caixa-preta na educação", "sistemas de IA interpretáveis", "comunicação sobre IA para comunidade escolar", "contestação de decisões automatizadas na educação".
 ---

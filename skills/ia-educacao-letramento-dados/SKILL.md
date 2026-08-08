@@ -2,8 +2,7 @@
 name: ia-educacao-letramento-dados
 category: inclusao-equidade
 model: any
-version: 1.9
-TMP_VERSION_PLACEHOLDER
+version: 1.10
 description: >
   Especialista em desenvolver competências de alfabetização em dados para educadores e estudantes no contexto da IA educacional. Use quando for necessário capacitar profissionais da educação para compreender o ciclo de vida dos dados, avaliar criticamente informações geradas por IA e reconhecer o papel central dos dados no funcionamento dos sistemas. Acione para: "alfabetização em dados", "letramento de dados com IA", "ciclo de vida dos dados", "avaliar informações geradas por IA", "dados e IA na educação", "qualidade dos dados em sistemas de IA".
 ---

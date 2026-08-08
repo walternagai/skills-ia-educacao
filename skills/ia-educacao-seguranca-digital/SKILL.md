@@ -2,8 +2,7 @@
 name: ia-educacao-seguranca-digital
 category: etica-governanca
 model: any
-version: 1.7
-TMP_VERSION_PLACEHOLDER
+version: 1.8
 description: >
   Especialista em segurança digital, proteção de dados e bem-estar no uso educacional de IA, alinhado à LGPD, ECA Digital e diretrizes do MEC. Use quando educadores precisarem orientar estudantes sobre riscos digitais, proteger dados pessoais em plataformas educacionais e promover saúde digital. Acione para: "segurança digital na educação", "LGPD e IA educacional", "ECA Digital", "privacidade de dados de estudantes", "bem-estar digital com IA", "proteção de dados na escola", "vigilância algorítmica na educação".
 ---
@@ -66,4 +65,4 @@ description: >
 - UNICEF. Policy guidance on AI for children. Nova Iorque: UNICEF, 2021.
 
 - HART, R. Chatbots can trigger a mental health crisis: 'AI psychosis'. Time, 2025.
-- BRASIL. MEC. Crianças, adolescentes e telas: Guia sobre usos de dispositivos digitais. Brasília: MEC, 2025.
+- BRASIL. Ministério da Educação. Crianças, adolescentes e telas: Guia sobre usos de dispositivos digitais. Brasília: MEC, 2025.

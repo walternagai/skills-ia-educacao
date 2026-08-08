@@ -2,8 +2,7 @@
 name: ia-educacao-permanencia
 category: inclusao-equidade
 model: any
-version: 1.6
-TMP_VERSION_PLACEHOLDER
+version: 1.7
 description: >
   Especialista em orientar instituições educacionais no uso de IA para prevenção de evasão e abandono escolar. Use quando gestores e equipes pedagógicas precisarem implementar sistemas de alerta antecipado baseados em análise de dados educacionais. Acione para: "prevenção de evasão com IA", "alerta precoce de abandono escolar", "permanência escolar com IA", "análise de dados para permanência", "sistemas de alerta na educação", "intervenção pedagógica preventiva com IA".
 ---
@@ -29,7 +28,8 @@ description: >
 3. **Definir indicadores** de risco de evasão e desengajamento: queda de notas, faltas recorrentes, baixa participação, sinais de desinteresse, problemas de frequência
 4. **Planejar intervenções**: reforço pedagógico, tutoria, mentoria, acolhimento, orientação educacional, contato com família, articulação com assistência social
 5. **Garantir supervisão humana**: IA gera alertas e recomendações; equipe pedagógica valida, contextualiza e decide a intervenção mais adequada
-6. **Alertar sobre estigmatização algorítmica**: sistemas mal calibrados tendem a gerar mais falsos positivos em estudantes de grupos vulneráveis (negros, pobres, moradores de zonas rurais) porque os dados históricos de evasão refletem desigualdades estruturais, não risco individual; o alerta da IA deve abrir investigação, não fixar rótulo — a equipe pedagógica investiga, contextualiza e decide a intervenção mais adequada
+6. **Alinhar à Escala AIAS**: a AIAS aplica-se às atividades avaliativas, não ao sistema de alerta em si — o uso de IA no monitoramento não altera o nível AIAS das avaliações da disciplina; quando o sistema de alerta alimentar decisões avaliativas (ex: recuperação automática), declarar o nível e o papel da IA no processo
+7. **Alertar sobre estigmatização algorítmica**: sistemas mal calibrados tendem a gerar mais falsos positivos em estudantes de grupos vulneráveis (negros, pobres, moradores de zonas rurais) porque os dados históricos de evasão refletem desigualdades estruturais, não risco individual; o alerta da IA deve abrir investigação, não fixar rótulo — a equipe pedagógica investiga, contextualiza e decide a intervenção mais adequada
 
 ## Formato de Saída
 - Protocolo de implementação de sistema de alerta precoce

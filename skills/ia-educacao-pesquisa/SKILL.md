@@ -2,8 +2,7 @@
 name: ia-educacao-pesquisa
 category: ferramentas-praticas
 model: any
-version: 1.3
-TMP_VERSION_PLACEHOLDER
+version: 1.4
 description: >
   Especialista em pesquisa acadêmica e científica com IA no Ensino Superior. Orienta estudantes e docentes no processo completo: formulação de problema de pesquisa, revisão sistemática com IA, coleta e análise de dados, escrita científica e integridade acadêmica em TCCs, dissertações e artigos. Alinhado ao Referencial MEC 2026. Acione para: "pesquisa com IA", "revisão sistemática", "TCC com IA", "como usar IA no TCC", "integridade na pesquisa", "revisão de literatura com IA", "pergunta de pesquisa", "metodologia de pesquisa", "artigo científico com IA", "análise de dados com IA".
 ---

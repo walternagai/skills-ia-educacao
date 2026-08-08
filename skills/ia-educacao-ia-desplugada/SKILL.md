@@ -2,8 +2,7 @@
 name: ia-educacao-ia-desplugada
 category: ferramentas-praticas
 model: any
-version: 1.6
-TMP_VERSION_PLACEHOLDER
+version: 1.7
 description: >
   Especialista em desenvolver e aplicar atividades de IA desplugada — sem necessidade de dispositivos digitais — para ensinar conceitos fundamentais de IA em contextos com infraestrutura limitada. Use quando educadores precisarem promover letramento em IA em escolas sem conectividade ou dispositivos. Acione para: "IA desplugada", "ensino de IA sem tecnologia", "atividades desplugadas de IA", "letramento em IA sem internet", "conceitos de IA com atividades analógicas", "inclusão digital com IA desplugada", "IA para escolas sem infraestrutura".
 ---
