@@ -5,6 +5,13 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.8.1] — 2026-08-12
+
+### Corrigido
+- **`audit.sh` reescrito com funções nomeadas** — checks com diagnóstico na falha (mostra o que quebrou, não só `✗`), `--quiet` de fato silencioso (só exit code e falhas), e correções de bugs: falso positivo em `Nível 1 (Sem IA)` (nome canônico), dead code em `REFERENCED`, `grep -oP` (GNU-only) trocado por `grep -oE` portável
+- **Novos checks**: `name` == diretório, `name` único, slug válido, categoria válida, frontmatter fechado, `version X.Y`, seções na ordem canônica, README lista todas as skills, dependências externas restritas à seção `Dependências`
+- **Check de itálico em referências** refinado: só flagra pares `*...*` (não confunde com `FAT*` no nome de conferência)
+
 ## [0.8.0] — 2026-08-08
 
 ### Removido

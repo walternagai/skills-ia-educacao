@@ -61,7 +61,7 @@ fi
 
 ## Auditoria
 
-Rode `./audit.sh` após qualquer mudança — cobre: frontmatter, 8 seções fixas, `model: any`, placeholder, dependências externas, órfãs, dependências quebradas, nomes canônicos AIAS, cobertura AIAS, forma MEC, itálico em referências e sincronia de agentes. Use `--quiet` para saída enxuta (exit code 0/1).
+Rode `./audit.sh` após qualquer mudança — cobre: frontmatter (campos, `version X.Y`, fechamento), 8 seções fixas na ordem canônica, `model: any`, placeholder, dependências externas, `name` == diretório, `name` único, slug e categoria válidos, órfãs, dependências quebradas, nomes canônicos AIAS, cobertura AIAS, forma MEC, itálico em referências, README completo e sincronia de agentes. Na falha, mostra o diagnóstico do check. Use `--quiet` para só exit code 0/1 e falhas.
 
 ```bash
 ./audit.sh          # completo

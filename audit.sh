@@ -1,82 +1,204 @@
 #!/usr/bin/env bash
 # audit.sh — auditoria de integridade do acervo skills-ia-educacao
-# Uso: ./audit.sh [--quiet]
+# Uso: ./audit.sh [--quiet]   (--quiet: só exit code 0/1 e falhas)
 set -u
 QUIET=0
 [ "${1:-}" = "--quiet" ] && QUIET=1
 
 fail=0
-check() { # check <descrição> <comando...>
+say() { if [ "$QUIET" -eq 0 ]; then echo "$@"; fi; return 0; }
+
+# check <descrição> <função> — roda a função; na falha, mostra a saída dela
+check() {
   local desc="$1"; shift
-  if "$@" >/dev/null 2>&1; then
-    [ "$QUIET" -eq 0 ] && echo "  ✓ $desc"
+  local output
+  output=$("$@" 2>&1)
+  if [ $? -eq 0 ]; then
+    say "  ✓ $desc"
   else
     echo "  ✗ $desc"
+    [ -n "$output" ] && printf '%s\n' "$output" | sed 's/^/      /'
     fail=1
   fi
 }
 
-echo "== Contagem =="
-total=$(ls -d skills/*/ 2>/dev/null | wc -l)
-echo "  Skills: $total"
+# slugs referenciados na seção Dependências de todas as skills
+deps_slugs() {
+  awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md \
+    | grep "^\- \`" \
+    | grep -oE '`[^`]+`' \
+    | tr -d '`' \
+    | sort -u
+}
 
-echo "== Distribuição de categorias =="
-grep -r "^category:" skills/*/SKILL.md | sed 's|.*category: ||' | sort | uniq -c | sort -rn
-
-echo "== Checks estruturais =="
-check "frontmatter completo (name/category/model/version/description)" bash -c '
+check_frontmatter() {
+  local f fm field
   for f in skills/*/SKILL.md; do
+    fm=$(awk 'NR==1 && $0=="---"{n=1; next} n==1 && $0=="---"{exit} n==1{print}' "$f")
     for field in "name:" "category:" "model:" "version:" "description:"; do
-      grep -q "^$field" "$f" || exit 1
+      echo "$fm" | grep -q "^$field" || { echo "FALTA $field em $f"; return 1; }
     done
-  done'
-check "8 seções fixas em todas as skills" bash -c '
-  for f in skills/*/SKILL.md; do
-    [ "$(grep -c "^## " "$f")" = "8" ] || exit 1
-  done'
-check "model: any em todas as skills" bash -c '
-  grep -rL "^model: any$" skills/*/SKILL.md | grep -q . && exit 1 || true'
-check "sem TMP_VERSION_PLACEHOLDER" bash -c '
-  grep -rq "TMP_VERSION_PLACEHOLDER" skills/ && exit 1 || true'
-check "sem dependências externas (bloom-taxonomy-educator etc.)" bash -c '
-  grep -rqE "bloom-taxonomy-educator|backward-design-stem|dua-educator|active-learning-stem|rubric-design-expert|academic-eval-markdown|stem-mcq-validator" skills/ && exit 1 || true'
+    echo "$fm" | grep -qE "^version: [0-9]+\.[0-9]+$" || { echo "version inválida em $f"; return 1; }
+    [ "$(grep -c "^---$" "$f")" -ge 2 ] || { echo "frontmatter não fechado em $f"; return 1; }
+  done
+}
 
-echo "== Grafo de dependências =="
-REFERENCED=$(awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+(?=\`)" | sort -u)
-check "zero skills órfãs (sem referência inbound)" bash -c '
-  REFERENCED=$(awk "/^## Dependências/{flag=1; next} /^## /{flag=0} flag" skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+(?=\`)" | sort -u)
+check_sections() {
+  local f got expected
+  expected="Princípios
+Quando usar
+Workflow
+Formato de Saída
+Exemplos
+Limitações
+Dependências
+Referências"
+  for f in skills/*/SKILL.md; do
+    got=$(grep "^## " "$f" | sed 's/^## //')
+    [ "$got" = "$expected" ] || { echo "seções fora de ordem/nome em $f:"; printf '%s\n' "$got" | sed 's/^/    /'; return 1; }
+  done
+}
+
+check_model_any() {
+  local bad
+  bad=$(grep -rL "^model: any$" skills/*/SKILL.md)
+  [ -z "$bad" ] || { echo "$bad"; return 1; }
+}
+
+check_placeholder() {
+  grep -rq "TMP_VERSION_PLACEHOLDER" skills/ && { echo "TMP_VERSION_PLACEHOLDER presente"; return 1; }
+  return 0
+}
+
+check_external_deps() {
+  local hits
+  hits=$(awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md \
+    | grep -E "bloom-taxonomy-educator|backward-design-stem|dua-educator|active-learning-stem|rubric-design-expert|academic-eval-markdown|stem-mcq-validator")
+  [ -z "$hits" ] || { echo "$hits"; return 1; }
+}
+
+check_name_dir() {
+  local f name dir
+  for f in skills/*/SKILL.md; do
+    name=$(grep -m1 "^name:" "$f" | sed 's/^name: //')
+    dir=$(basename "$(dirname "$f")")
+    [ "$name" = "$dir" ] || { echo "$dir -> name: $name"; return 1; }
+  done
+}
+
+check_name_unique() {
+  local dup
+  dup=$(grep -h "^name:" skills/*/SKILL.md | sort | uniq -d)
+  [ -z "$dup" ] || { echo "name duplicado: $dup"; return 1; }
+}
+
+check_slug() {
+  local bad
+  bad=$(grep -h "^name:" skills/*/SKILL.md | sed 's/^name: //' | grep -vE "^(ia-educacao-[a-z0-9-]+|aias-consultant)$")
+  [ -z "$bad" ] || { echo "slug fora do padrão: $bad"; return 1; }
+}
+
+check_category() {
+  local bad
+  bad=$(grep -h "^category:" skills/*/SKILL.md | sed 's/^category: //' | grep -vE "^(niveis-ensino|formacao-docente|etica-governanca|inclusao-equidade|ferramentas-praticas)$")
+  [ -z "$bad" ] || { echo "categoria inválida: $bad"; return 1; }
+}
+
+check_orphans() {
+  local referenced skill
+  referenced=$(deps_slugs)
   for d in skills/*/; do
     skill=$(basename "$d")
-    echo "$REFERENCED" | grep -qx "$skill" || exit 1
-  done'
-check "zero dependências quebradas (slug inexistente)" bash -c '
-  awk "/^## Dependências/{flag=1; next} /^## /{flag=0} flag" skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+(?=\`)" | sort -u | while read slug; do
-    [ -d "skills/$slug" ] || exit 1
-  done'
+    echo "$referenced" | grep -qx "$skill" || { echo "ÓRFÃ: $skill"; return 1; }
+  done
+}
 
-echo "== Consistência AIAS =="
-check "nomes canônicos dos 5 níveis (sem formas curtas)" bash -c '
-  grep -rnE "Nível [1-5] \((Exploração|Colaboração|Planejamento|Sem IA)\)" skills/ | grep -v "de IA\|com IA" | grep -q . && exit 1 || true'
-check "todas as skills citam AIAS (exceto exceções documentadas)" bash -c '
+check_broken_deps() {
+  local slug
+  while read -r slug; do
+    [ -d "skills/$slug" ] || { echo "QUEBRADA: $slug"; return 1; }
+  done < <(deps_slugs)
+}
+
+check_aias_canonical() {
+  local hits
+  hits=$(grep -rnE "Nível [1-5] \((Exploração|Colaboração|Planejamento)\)" skills/)
+  [ -z "$hits" ] || { echo "$hits"; return 1; }
+}
+
+check_aias_coverage() {
+  local f
   for f in skills/*/SKILL.md; do
     case "$(basename "$(dirname "$f")")" in
       ia-educacao-ia-desplugada|ia-educacao-infantil|ia-educacao-sandbox) continue ;;
     esac
-    grep -q "AIAS" "$f" || exit 1
-  done'
+    grep -q "AIAS" "$f" || { echo "sem AIAS: $f"; return 1; }
+  done
+}
 
-echo "== Referências =="
-check "autor institucional MEC na forma longa" bash -c '
-  grep -rq "^\- BRASIL\. MEC\. " skills/ && exit 1 || true'
-check "sem itálico markdown em referências" bash -c '
-  awk "/^## Referências/{flag=1; next} /^## /{flag=0} flag" skills/*/SKILL.md | grep "^\*" | grep -v "^\*\*" | grep -q . && exit 1 || true'
+check_mec() {
+  local hits
+  hits=$(grep -rn "BRASIL\. MEC\. " skills/)
+  [ -z "$hits" ] || { echo "$hits"; return 1; }
+}
 
-echo "== Agentes =="
-check "agents/ e .opencode/agents/ idênticos" bash -c 'diff -rq agents/ .opencode/agents/'
+check_italic_refs() {
+  local hits
+  hits=$(awk '/^## Referências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | grep -E '\*[^*]+\*')
+  [ -z "$hits" ] || { echo "$hits"; return 1; }
+}
 
-echo
+check_readme() {
+  local listed actual d
+  listed=$(grep -oE '`/[a-z-]+`' README.md | tr -d '`/' | sort -u)
+  actual=$(ls skills | sort)
+  d=$(diff <(printf '%s\n' "$listed") <(printf '%s\n' "$actual") 2>&1)
+  [ -z "$d" ] || { echo "README desatualizado:"; echo "$d"; return 1; }
+}
+
+check_agents_sync() {
+  diff -rq agents/ .opencode/agents/ || return 1
+}
+
+say "== Contagem =="
+total=$(ls -d skills/*/ 2>/dev/null | wc -l)
+say "  Skills: $total"
+
+say "== Distribuição de categorias =="
+say "$(grep -r "^category:" skills/*/SKILL.md | sed 's|.*category: ||' | sort | uniq -c | sort -rn)"
+
+say "== Checks estruturais =="
+check "frontmatter completo (campos + version X.Y + fechamento)" check_frontmatter
+check "8 seções fixas na ordem canônica" check_sections
+check "model: any em todas as skills" check_model_any
+check "sem TMP_VERSION_PLACEHOLDER" check_placeholder
+check "sem dependências externas na seção Dependências" check_external_deps
+check "name == diretório" check_name_dir
+check "name único" check_name_unique
+check "slug válido (ia-educacao-* | aias-consultant)" check_slug
+check "categoria válida" check_category
+
+say "== Grafo de dependências =="
+check "zero skills órfãs" check_orphans
+check "zero dependências quebradas" check_broken_deps
+
+say "== Consistência AIAS =="
+check "nomes canônicos dos 5 níveis" check_aias_canonical
+check "todas as skills citam AIAS (exceto exceções)" check_aias_coverage
+
+say "== Referências =="
+check "autor institucional MEC na forma longa" check_mec
+check "sem itálico markdown em referências" check_italic_refs
+
+say "== Documentação =="
+check "README lista todas as skills" check_readme
+
+say "== Agentes =="
+check "agents/ e .opencode/agents/ idênticos" check_agents_sync
+
+say ""
 if [ "$fail" -eq 0 ]; then
-  echo "AUDITORIA OK"
+  say "AUDITORIA OK"
 else
   echo "AUDITORIA COM FALHAS"
   exit 1
