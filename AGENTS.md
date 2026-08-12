@@ -59,29 +59,26 @@ fi
 - **`raw-pdfs/`**: no `.gitignore` — PDFs normativos não versionados.
 - **`CHANGELOG.md`**: atualizar a cada mudança relevante (formato Keep a Changelog).
 
-## Comandos de auditoria
+## Auditoria
+
+Rode `./audit.sh` após qualquer mudança — cobre: frontmatter, 8 seções fixas, `model: any`, placeholder, dependências externas, órfãs, dependências quebradas, nomes canônicos AIAS, cobertura AIAS, forma MEC, itálico em referências e sincronia de agentes. Use `--quiet` para saída enxuta (exit code 0/1).
 
 ```bash
-# Distribuição de categorias (deve bater com a tabela do CLAUDE.md)
-grep -r "^category:" skills/*/SKILL.md | sed 's|.*category: ||' | sort | uniq -c | sort -rn
+./audit.sh          # completo
+./audit.sh --quiet  # só exit code
+```
 
-# Skills mais referenciadas (hubs do grafo)
+Comando não coberto pelo script (hubs do grafo):
+
+```bash
 awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+(?=\`)" | sort | uniq -c | sort -rn | head -15
-
-# Skills órfãs (sem referência inbound — devem ser zero)
-REFERENCED=$(awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+(?=\`)" | sort -u)
-for d in skills/*/; do skill=$(basename "$d"); echo "$REFERENCED" | grep -qx "$skill" || echo "ÓRFÃ: $skill"; done
-
-# Dependências quebradas (slug não existe em skills/)
-awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | grep "^\- \`" | grep -oP "(?<=\`)[^\`]+(?=\`)" | sort -u | while read slug; do
-  [ -d "skills/$slug" ] || echo "QUEBRADA: $slug"
-done
 ```
 
 ## Estrutura
 
 ```
 .
+├── audit.sh          # Auditoria de integridade (rode após mudanças)
 ├── CLAUDE.md          # Instruções principais (leia primeiro)
 ├── CONTRIBUTING.md    # Template e checklist para criar/editar skills
 ├── CHANGELOG.md       # Histórico de versões (atualize ao modificar)
@@ -100,6 +97,6 @@ done
 
 1. Leia `CLAUDE.md` para contexto completo.
 2. Consulte `CONTRIBUTING.md` ao criar/editar skills.
-3. Após modificar, execute os comandos de auditoria para verificar grafo.
+3. Após modificar, rode `./audit.sh` para verificar o grafo.
 4. Atualize `CHANGELOG.md`.
-5. Incremente `version` no frontmatter de skills editadas.
+5. Incremente `version` no frontmatter de skills editadas (minor = conteúdo; major = mudança estrutural).
