@@ -18,13 +18,15 @@ Leia `CLAUDE.md` antes de qualquer operação. Ele contém: arquitetura das skil
 
 ## CLIs e disponibilidade de skills
 
-Cada CLI descobre skills de forma diferente. Use `./install-skills.sh` para instalar — ele detecta os CLIs instalados e copia `skills/*` para o diretório de cada um:
+Cada CLI descobre skills de forma diferente. Use `./install-skills.sh` para instalar e `./uninstall-skills.sh` para remover — ambos detectam os CLIs instalados e operam nos diretórios de cada um:
 
 ```bash
 ./install-skills.sh                       # auto-detect: instala nos CLIs instalados
 ./install-skills.sh --all                 # instala em todos os destinos (mesmo sem CLI)
 ./install-skills.sh --claude --opencode   # destinos explícitos
 ./install-skills.sh --dry-run             # mostra o que seria feito sem copiar
+./uninstall-skills.sh --all               # remove de todos os destinos
+./uninstall-skills.sh --codex --dry-run   # mostra o que seria removido
 ```
 
 | CLI | Onde as skills ficam | Verificação |
@@ -70,6 +72,7 @@ awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | 
 .
 ├── audit.sh          # Auditoria de integridade (rode após mudanças)
 ├── install-skills.sh  # Instala skills nos CLIs detectados
+├── uninstall-skills.sh # Remove skills dos CLIs detectados
 ├── CLAUDE.md          # Instruções principais (leia primeiro)
 ├── CONTRIBUTING.md    # Template e checklist para criar/editar skills
 ├── CHANGELOG.md       # Histórico de versões (atualize ao modificar)

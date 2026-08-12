@@ -5,6 +5,12 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.8.3] — 2026-08-12
+
+### Adicionado
+- **`uninstall-skills.sh`** — script de remoção das skills dos CLIs de IA: mesmas flags do `install-skills.sh` (`--all`, destinos explícitos, `--dry-run`) e auto-detect de CLIs instalados. Remove apenas skills do acervo (preserva outras skills do usuário). Validado no Codex (62 removidas, `hf-cli` preservado)
+- **`AGENTS.md`**: seção "CLIs e disponibilidade de skills" passa a citar `uninstall-skills.sh`
+
 ## [0.8.2] — 2026-08-12
 
 ### Adicionado
