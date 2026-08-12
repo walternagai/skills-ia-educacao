@@ -5,6 +5,12 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.8.2] — 2026-08-12
+
+### Adicionado
+- **`install-skills.sh`** — script de instalação das skills em CLIs de IA: auto-detect de CLIs instalados (sem flags), destinos explícitos (`--claude`, `--opencode`, `--codex`, `--antigravity`, `--antigravity-cli`, `--gemini`), `--all` (instala mesmo sem CLI, com aviso) e `--dry-run`. Destinos: Claude Code `~/.claude/skills`, OpenCode `~/.config/opencode/skills`, Codex `~/.agents/skills`, Antigravity 2.0 `~/.gemini/antigravity/skills`, Antigravity CLI `~/.gemini/antigravity-cli/skills`, Gemini CLI `~/.gemini/skills`
+- **`AGENTS.md`**: seção "CLIs e disponibilidade de skills" simplificada — snippet de detecção substituído por referência ao `install-skills.sh`; tabela de destinos e verificação por CLI
+
 ## [0.8.1] — 2026-08-12
 
 ### Corrigido

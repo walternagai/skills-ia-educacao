@@ -18,33 +18,23 @@ Leia `CLAUDE.md` antes de qualquer operação. Ele contém: arquitetura das skil
 
 ## CLIs e disponibilidade de skills
 
-Cada CLI descobre skills de forma diferente. Use o snippet abaixo para detectar CLIs instalados e verificar se as skills `ia-educacao-*` estão acessíveis.
-
-| CLI | Onde as skills ficam | Instalação | Verificação |
-|-----|----------------------|------------|-------------|
-| **Claude Code** | `~/.claude/skills/<slug>/SKILL.md` | `npx skills add ./skills/<slug>` | `ls ~/.claude/skills/ \| grep -c ia-educacao` |
-| **OpenCode** | System prompt via tool `skill` | Automático (em `available_skills`) | `opencode agent list` |
+Cada CLI descobre skills de forma diferente. Use `./install-skills.sh` para instalar — ele detecta os CLIs instalados e copia `skills/*` para o diretório de cada um:
 
 ```bash
-# Detecta CLIs instalados e disponibilidade das skills ia-educacao-*
-echo "=== Detecção de CLIs ==="
-if command -v claude &>/dev/null; then
-  echo "✓ Claude Code: $(claude --version 2>/dev/null | head -1 || echo 'instalado')"
-  installed=$(ls ~/.claude/skills/ 2>/dev/null | grep -c "^ia-educacao\|^aias-consultant" || echo 0)
-  total=$(ls -d skills/*/ 2>/dev/null | wc -l)
-  echo "  Skills ia-educacao instaladas: $installed/$total"
-  [ "$installed" -lt "$total" ] 2>/dev/null && echo "  → Instalar: for d in skills/*/; do npx skills add \"./\$d\"; done"
-else
-  echo "✗ Claude Code: não instalado"
-fi
-if command -v opencode &>/dev/null; then
-  echo "✓ OpenCode: instalado (skills via tool skill, agentes em .opencode/agents/)"
-else
-  echo "✗ OpenCode: não instalado"
-fi
+./install-skills.sh                       # auto-detect: instala nos CLIs instalados
+./install-skills.sh --all                 # instala em todos os destinos (mesmo sem CLI)
+./install-skills.sh --claude --opencode   # destinos explícitos
+./install-skills.sh --dry-run             # mostra o que seria feito sem copiar
 ```
 
-> Se Gemini CLI ou Codex forem adicionados, estenda com `command -v gemini` / `command -v codex` e seus diretórios (`~/.gemini/GEMINI.md`, `~/.codex/CODEX.md`).
+| CLI | Onde as skills ficam | Verificação |
+|-----|----------------------|-------------|
+| **Claude Code** | `~/.claude/skills/<slug>/SKILL.md` | `ls ~/.claude/skills/ \| grep -c ia-educacao` |
+| **OpenCode** | System prompt via tool `skill` (automático) | `opencode agent list` |
+| **Codex** | `~/.agents/skills/<slug>/SKILL.md` | `ls ~/.agents/skills/ \| grep -c ia-educacao` |
+| **Antigravity 2.0** | `~/.gemini/antigravity/skills/<slug>/SKILL.md` | `ls ~/.gemini/antigravity/skills/ \| grep -c ia-educacao` |
+| **Antigravity CLI** | `~/.gemini/antigravity-cli/skills/<slug>/SKILL.md` | `ls ~/.gemini/antigravity-cli/skills/ \| grep -c ia-educacao` |
+| **Gemini CLI** | `~/.gemini/skills/<slug>/SKILL.md` | `ls ~/.gemini/skills/ \| grep -c ia-educacao` |
 
 ## Convenções essenciais
 
@@ -79,6 +69,7 @@ awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | 
 ```
 .
 ├── audit.sh          # Auditoria de integridade (rode após mudanças)
+├── install-skills.sh  # Instala skills nos CLIs detectados
 ├── CLAUDE.md          # Instruções principais (leia primeiro)
 ├── CONTRIBUTING.md    # Template e checklist para criar/editar skills
 ├── CHANGELOG.md       # Histórico de versões (atualize ao modificar)
