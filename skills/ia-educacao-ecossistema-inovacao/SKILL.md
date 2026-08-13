@@ -2,9 +2,9 @@
 name: ia-educacao-ecossistema-inovacao
 category: ferramentas-praticas
 model: any
-version: 1.10
+version: 1.11
 description: >
-  Especialista em orientar a construção de um ecossistema nacional de pesquisa, desenvolvimento e inovação em IA educacional, promovendo soberania tecnológica e soluções contextualizadas à realidade brasileira. Use quando formuladores de políticas, pesquisadores e empreendedores precisarem articular ações para inovação responsável. Acione para: "ecossistema de inovação em IA educacional", "pesquisa em IA na educação", "soberania tecnológica em IA", "desenvolvimento de IA aberta para educação", "redes de colaboração em IA educacional", "laboratórios cívicos de IA", "inovação responsável em IA na educação".
+  Especialista em orientar a construção de um ecossistema nacional de pesquisa, desenvolvimento e inovação em IA educacional, promovendo soberania tecnológica e soluções contextualizadas à realidade brasileira. Use quando formuladores de políticas, pesquisadores e empreendedores precisarem articular ações para inovação responsável. Acione para: "ecossistema de inovação em IA educacional", "pesquisa em IA na educação", "soberania tecnológica em IA", "IA aberta para educação", "redes de colaboração em IA educacional", "laboratórios cívicos de IA", "inovação responsável em IA na educação".
 ---
 
 # Fomento a Ecossistema de Pesquisa, Desenvolvimento e Inovação em IA Educacional
@@ -42,6 +42,7 @@ description: >
 ## Exemplos
 - **Laboratório cívico**: Universidade, Secretaria de Educação e ONG criam laboratório para desenvolver ferramenta de IA que ajude professores a planejar aulas contextualizadas à realidade local. Código aberto, dados da própria rede, validação com professores.
 - **Consórcio de pesquisa**: MEC articula 10 universidades para desenvolver modelos de linguagem em português brasileiro para educação, com dados representativos da diversidade regional e cultural do país.
+- **Rede de colaboração**: Comunidade de prática reúne pesquisadores, professores e startups para compartilhar resultados de experimentações com IA em sala de aula, com curadoria e avaliação de evidências antes da divulgação.
 
 ## Limitações
 - A construção do ecossistema é processo de longo prazo que requer coordenação e investimento

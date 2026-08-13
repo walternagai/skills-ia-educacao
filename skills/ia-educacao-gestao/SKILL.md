@@ -2,7 +2,7 @@
 name: ia-educacao-gestao
 category: ferramentas-praticas
 model: any
-version: 1.9
+version: 1.10
 description: >
   Especialista em desenvolver competências de gestores educacionais para liderar a adoção responsável de IA em escolas e redes de ensino. Use quando gestores precisarem analisar demandas, avaliar soluções, planejar implementação e monitorar o uso de IA. Acione para: "gestão educacional com IA", "adoção de IA por gestores", "avaliação de soluções de IA para escolas", "planejamento de implementação de IA", "competências de gestores para IA", "liderança em inovação educacional com IA".
 ---
@@ -27,7 +27,8 @@ description: >
 ## Workflow
 1. **Mapear demandas educacionais** que podem ser apoiadas por IA — distinguir necessidades reais de pressões de mercado ou modismo tecnológico
 2. **Estabelecer critérios de avaliação**: pedagógicos (alinhamento curricular, evidências de impacto), técnicos (infraestrutura, interoperabilidade), éticos (transparência, equidade, privacidade), legais (LGPD, ECA Digital)
-3. **Planejar implementação e financiamento**: diagnóstico de infraestrutura (conectividade, dispositivos), cronograma de formação continuada, adaptação de processos institucionais; para redes públicas, incluir aquisição de plataformas de IA no **PAR** (Plano de Ações Articuladas) e no **PDDE** (Programa Dinheiro Direto na Escola — recursos FNDE), justificando com indicadores pedagógicos esperados e alinhamento ao projeto pedagógico da rede
+3. **Planejar implementação e financiamento**: diagnóstico de infraestrutura (conectividade, dispositivos), cronograma de formação continuada, adaptação de processos institucionais
+   - Para redes públicas, incluir aquisição de plataformas de IA no **PAR** (Plano de Ações Articuladas) e no **PDDE** (Programa Dinheiro Direto na Escola — recursos FNDE), justificando com indicadores pedagógicos esperados e alinhamento ao projeto pedagógico da rede
 4. **Coordenar formação continuada** de educadores para uso crítico de IA — não apenas treinamento técnico, mas desenvolvimento de competências pedagógicas, éticas e críticas
 5. **Implementar monitoramento**: indicadores de impacto na aprendizagem, equidade de acesso, satisfação de educadores e estudantes, conformidade legal
 6. **Garantir supervisão humana** em todas as decisões de alto impacto — avaliação, progressão, alocação de recursos — com mecanismos de contestação e revisão

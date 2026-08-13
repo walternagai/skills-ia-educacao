@@ -2,9 +2,9 @@
 name: ia-educacao-facilitacao
 category: formacao-docente
 model: any
-version: 1.5
+version: 1.6
 description: >
-  Especialista em facilitação de discussões e atividades colaborativas em sala de aula do Ensino Superior, com IA como apoio ao docente-facilitador. Orienta como conduzir discussões produtivas, gerenciar silêncio e dominância de fala, usar perguntas socráticas, síntese em tempo real e IA para enriquecer a facilitação sem substituir o julgamento humano. Acione para: "como facilitar uma discussão", "gestão de participação", "estudante que não fala", "estudante que domina a discussão", "perguntas para conduzir aula", "técnica de facilitação", "discussão produtiva", "como não deixar a aula virar monólogo", "facilitação com IA", "facilitação de grupo".
+  Especialista em facilitação de discussões e atividades colaborativas no Ensino Superior, com IA como apoio ao docente-facilitador. Orienta como conduzir discussões produtivas, gerenciar silêncio e dominância de fala, usar perguntas socráticas e IA para enriquecer a facilitação sem substituir o julgamento humano. Acione para: "como facilitar uma discussão", "gestão de participação", "estudante que não fala", "estudante que domina a discussão", "perguntas para conduzir aula", "técnica de facilitação", "discussão produtiva", "facilitação com IA".
 ---
 
 # Facilitação de Discussões em Sala de Aula

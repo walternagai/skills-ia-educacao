@@ -2,7 +2,7 @@
 name: ia-educacao-supervisao-humana
 category: etica-governanca
 model: any
-version: 1.9
+version: 1.10
 description: >
   Especialista em orientar a implementação de modelos de supervisão humana para uso de IA em contextos educacionais. Use quando instituições precisarem definir níveis de autonomia de sistemas de IA e garantir que decisões educacionais de alto impacto permaneçam sob controle humano. Acione para: "supervisão humana em IA educacional", "human-in-the-loop na educação", "human-on-the-loop na educação", "controle humano de decisões algorítmicas", "autonomia de sistemas de IA na escola", "validação humana de resultados de IA".
 ---
@@ -43,6 +43,7 @@ description: >
 ## Exemplos
 - **HITL (alto risco)**: Sistema de IA sugere nota para redação. Professor deve validar antes do lançamento. Pode aceitar, ajustar ou rejeitar. Todas as decisões são registradas.
 - **HOTL (médio risco)**: Chatbot educacional interage com estudantes, oferece explicações e exercícios. Professor monitora conversas periodicamente e intervém quando identifica problemas.
+- **HITL (avaliação de alto impacto)**: Sistema de alerta precoce sinaliza risco de evasão. A equipe pedagógica investiga o caso, contextualiza com informações que a IA não tem (situação familiar, saúde) e decide a intervenção — o score da IA abre investigação, não fixa rótulo.
 
 ## Limitações
 - A supervisão humana pode ser comprometida por sobrecarga de trabalho ou falta de capacitação

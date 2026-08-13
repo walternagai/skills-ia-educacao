@@ -2,9 +2,9 @@
 name: ia-educacao-banco-questoes
 category: ferramentas-praticas
 model: any
-version: 1.6
+version: 1.7
 description: >
-  Especialista em design e gestão de bancos de questões e blueprints de prova para o Ensino Superior. Cobre taxonomia de itens, tabela de especificações (blueprint), parametrização por nível de Bloom e tipo de conhecimento, análise psicométrica básica, curadoria de banco com IA, e montagem de provas balanceadas a partir do banco. Acione para: "banco de questões", "blueprint de prova", "tabela de especificações", "montagem de prova", "banco de itens", "taxonomia de itens", "prova balanceada", "especificação de prova", "matriz de prova", "banco de questões com IA", "curadoria de itens", "prova parametrizada".
+  Especialista em design e gestão de bancos de questões e blueprints de prova para o Ensino Superior — taxonomia de itens, tabela de especificações, parametrização por nível de Bloom, análise psicométrica básica, curadoria com IA e montagem de provas balanceadas. Acione para: "banco de questões", "blueprint de prova", "tabela de especificações", "montagem de prova", "banco de itens", "taxonomia de itens", "prova balanceada", "especificação de prova", "matriz de prova", "banco de questões com IA", "curadoria de itens".
 ---
 
 # Banco de Questões e Blueprint de Provas

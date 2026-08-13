@@ -2,7 +2,7 @@
 name: ia-educacao-formacao-inicial-docente
 category: formacao-docente
 model: any
-version: 1.12
+version: 1.13
 description: >
   Especialista em orientar a incorporação da IA nos cursos de licenciatura, preparando futuros professores para o uso pedagógico crítico da tecnologia e para o ensino de fundamentos de IA na Educação Básica. Use quando coordenadores e formadores de licenciaturas precisarem atualizar currículos. Acione para: "IA nas licenciaturas", "formação inicial de professores e IA", "currículo de licenciatura com IA", "futuros professores e IA", "ensino de fundamentos de IA na licenciatura", "preparação de docentes para era da IA".
 ---
@@ -43,6 +43,7 @@ description: >
 ## Exemplos
 - **Disciplina obrigatória**: "Tecnologias Digitais e IA na Educação" — 60h, aborda fundamentos de IA, ética, ferramentas, planejamento com IA, avaliação, letramento em IA para EB.
 - **Atividade prática**: Licenciando planeja aula com apoio de IA, executa microaula com colegas, recebe feedback da IA e do professor formador, reflete sobre o processo.
+- **Exercício de AIAS**: Dado um objetivo de aprendizagem, o licenciando escolhe o nível AIAS adequado e redige o enunciado da avaliação correspondente, declarando o nível e o racional pedagógico.
 
 ## Limitações
 - A reforma curricular de licenciaturas envolve aprovação em colegiados e órgãos reguladores

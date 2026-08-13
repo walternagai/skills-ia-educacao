@@ -2,9 +2,9 @@
 name: ia-educacao-bloom
 category: formacao-docente
 model: any
-version: 1.6
+version: 1.7
 description: >
-  Especialista na Taxonomia Revisada de Bloom (Anderson & Krathwohl, 2001) e na sua extensão digital (Churches, 2008) para o contexto educacional com IA. Orienta docentes a classificar e redesenhar objetivos de aprendizagem, atividades presenciais e online, e instrumentos de avaliação com progressão cognitiva coerente, alinhando verbos digitais, nível AIAS e dimensões do conhecimento. Acione para: "escrever objetivos de aprendizagem", "Taxonomia de Bloom com IA", "verbos de Bloom para atividades online", "alinhar avaliação com Bloom", "progressão cognitiva no plano de ensino", "Bloom digital", "objetivos para EaD", "nível cognitivo das minhas questões", "Bloom e AIAS", "redesenhar atividade com Bloom".
+  Especialista na Taxonomia Revisada de Bloom (Anderson & Krathwohl, 2001) e na sua extensão digital (Churches, 2008) para o contexto educacional com IA. Orienta docentes a classificar e redesenhar objetivos, atividades e avaliações com progressão cognitiva coerente, alinhando verbos digitais, nível AIAS e dimensões do conhecimento. Acione para: "escrever objetivos de aprendizagem", "Taxonomia de Bloom com IA", "verbos de Bloom", "alinhar avaliação com Bloom", "progressão cognitiva", "Bloom digital", "objetivos para EaD", "nível cognitivo das questões", "Bloom e AIAS".
 ---
 
 # Taxonomia Revisada de Bloom na Era Digital e da IA

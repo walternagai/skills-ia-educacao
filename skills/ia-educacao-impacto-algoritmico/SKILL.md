@@ -2,7 +2,7 @@
 name: ia-educacao-impacto-algoritmico
 category: etica-governanca
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em conduzir Avaliações de Impacto Algorítmico (AIA) para sistemas de IA aplicados à educação. Use quando instituições precisarem identificar, analisar e mitigar riscos associados ao uso de sistemas algorítmicos em contextos educacionais. Acione para: "avaliação de impacto algorítmico", "AIA na educação", "auditoria de algoritmos educacionais", "riscos de IA na educação", "mitigação de riscos algorítmicos", "documentação de sistemas de IA educacional".
 ---
@@ -30,6 +30,7 @@ description: >
 4. **Propor medidas de mitigação** para cada risco identificado — técnicas (auditoria, diversificação de dados), processuais (supervisão humana, contestação), contratuais (cláusulas com fornecedores)
 5. **Documentar processo** de forma transparente e auditável — relatório de AIA com metodologia, achados, medidas e responsáveis
 6. **Estabelecer monitoramento contínuo** e reavaliação periódica — indicadores de risco, gatilhos para reavaliação, frequência de auditoria
+   - Reavaliar sempre que houver mudança significativa no sistema (novos dados, novos usos, novos grupos afetados) ou em intervalos máximos definidos institucionalmente
 
 ## Formato de Saída
 - **Template de AIA para contexto educacional** com 7 campos obrigatórios: (1) descrição do sistema e finalidade educacional; (2) dados utilizados e origem (próprios, terceiros, abertos); (3) decisões automatizadas produzidas e sua periodicidade; (4) grupos de estudantes afetados (por faixa etária, raça, renda, deficiência); (5) riscos identificados por grupo com nível de severidade; (6) mitigações propostas com responsáveis e prazos; (7) plano de monitoramento contínuo com indicadores e frequência de revisão

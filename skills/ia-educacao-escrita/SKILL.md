@@ -2,9 +2,9 @@
 name: ia-educacao-escrita
 category: ferramentas-praticas
 model: any
-version: 1.4
+version: 1.5
 description: >
-  Especialista em escrita acadêmica e técnica com IA no Ensino Superior, com foco em manter a voz autoral e o raciocínio do estudante como núcleo do texto. Cobre relatórios técnicos, artigos científicos, cadernos de laboratório, redação de metodologia e discussão, e revisão com IA. Relevante para todas as áreas STHEM. Acione para: "escrever com IA", "escrita acadêmica", "relatório técnico", "artigo científico", "como usar IA para escrever sem perder minha voz", "revisão de texto com IA", "estrutura de argumento", "coerência do texto", "plágio e IA", "como revisar TCC com IA", "caderno de laboratório".
+  Especialista em escrita acadêmica e técnica com IA no Ensino Superior, com foco em manter a voz autoral e o raciocínio do estudante como núcleo do texto. Cobre relatórios técnicos, artigos científicos, cadernos de laboratório, redação de metodologia e discussão e revisão com IA. Relevante para todas as áreas STHEM. Acione para: "escrever com IA", "escrita acadêmica", "relatório técnico", "artigo científico", "usar IA sem perder minha voz", "revisão de texto com IA", "estrutura de argumento", "coerência do texto", "plágio e IA", "revisar TCC com IA".
 ---
 
 # Escrita Acadêmica e Técnica com IA

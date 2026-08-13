@@ -2,7 +2,7 @@
 name: ia-educacao-permanencia
 category: inclusao-equidade
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista em orientar instituições educacionais no uso de IA para prevenção de evasão e abandono escolar. Use quando gestores e equipes pedagógicas precisarem implementar sistemas de alerta antecipado baseados em análise de dados educacionais. Acione para: "prevenção de evasão com IA", "alerta precoce de abandono escolar", "permanência escolar com IA", "análise de dados para permanência", "sistemas de alerta na educação", "intervenção pedagógica preventiva com IA".
 ---
@@ -23,7 +23,8 @@ description: >
 - Monitoramento de trajetórias educacionais em larga escala
 
 ## Workflow
-1. **Identificar fontes de dados com indicadores contextualizados ao Brasil**: desempenho acadêmico (notas, progresso), frequência (limiar crítico: abaixo de 75% — Art. 24 da LDB), situação no CadÚnico (vulnerabilidade socioeconômica), distância escola-residência em zonas rurais, ocorrência de trabalho infantil (dados PNAD-Contínua), gravidez na adolescência; esses dados compõem o modelo de alerta, mas não substituem o diagnóstico humano contextualizado
+1. **Identificar fontes de dados com indicadores contextualizados ao Brasil**: desempenho acadêmico (notas, progresso), frequência (limiar crítico: abaixo de 75% — Art. 24 da LDB), situação no CadÚnico (vulnerabilidade socioeconômica), distância escola-residência em zonas rurais, ocorrência de trabalho infantil (dados PNAD-Contínua), gravidez na adolescência
+   - Esses dados compõem o modelo de alerta, mas não substituem o diagnóstico humano contextualizado
 2. **Explicar funcionamento** de sistemas de alerta precoce baseados em IA: análise de padrões históricos, identificação de correlações com evasão, geração de scores de risco
 3. **Definir indicadores** de risco de evasão e desengajamento: queda de notas, faltas recorrentes, baixa participação, sinais de desinteresse, problemas de frequência
 4. **Planejar intervenções**: reforço pedagógico, tutoria, mentoria, acolhimento, orientação educacional, contato com família, articulação com assistência social

@@ -5,6 +5,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.1] — 2026-08-12
+
+### Modificado
+- **Sprint 2 de revisão editorial (kata)** — estrutura interna de 36 skills:
+  - **Descrições de frontmatter encurtadas (18 skills)**: as 18 descrições mais longas (>600 chars) consolidadas para ~500–600 chars, removendo gatilhos redundantes e mantendo os essenciais de ativação (planejamento-reverso, avaliacao-competencia, metacognicao, dua, bloom, facilitacao, design-problema, interdisciplinaridade, avaliacao-projeto, mcq, autoavaliacao, avaliacao-diagnostica, avaliacao-grupo, banco-questoes, ecossistema-inovacao, escrita, visualizacao-dados)
+  - **Parágrafos-muralha quebrados em sub-bullets (13 skills)**: contratacao (passo 3), integridade-academica (passo 4 — padrão de citação de IA extraído para bloco), sandbox (passo 3), gestao (passo 3), equidade-digital (passos 5–6), acessibilidade-inclusao (passo 2), basica (passo 2), etica (passo 8), ia-desplugada (passo 3), permanencia (passo 1), transparencia-explicabilidade (passo 5), impacto-algoritmico (passo 6), aprendizagem-ativa e avaliacao (Quando usar)
+  - **Exemplos ampliados para ≥3 cenários (7 skills)**: formacao-inicial-docente, profissional-tecnologica, superior, supervisao-humana, ecossistema-inovacao, planejamento-didatico; duplicação de cenário PBL removida (aprendizagem-ativa)
+- `version` incrementada nas 36 skills afetadas
+
 ## [0.9.0] — 2026-08-12
 
 ### Corrigido

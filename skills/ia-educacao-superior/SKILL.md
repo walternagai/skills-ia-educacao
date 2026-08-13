@@ -2,7 +2,7 @@
 name: ia-educacao-superior
 category: niveis-ensino
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em orientar a incorporação da IA na Educação Superior e Pós-Graduação, abrangendo ensino, pesquisa, extensão e gestão acadêmica. Use quando IES precisarem reorientar currículos, fortalecer comissões de ética e desenvolver competências em IA para estudantes. Acione para: "IA na Educação Superior", "IA na pós-graduação", "currículo universitário e IA", "comissão de ética em IA", "pesquisa acadêmica com IA", "competências em IA para universitários", "IES e IA".
 ---
@@ -45,6 +45,7 @@ description: >
 ## Exemplos
 - **Reforma curricular**: Curso de Direito incorpora módulo sobre "IA e Direito" — vieses algorítmicos, responsabilidade civil, proteção de dados, prova digital. Curso de Medicina incorpora "IA em Diagnóstico" — limites, ética, validação.
 - **Comitê de ética**: Pesquisador submete projeto que usa IA para analisar redações de estudantes. Comitê avalia: consentimento, anonimização, transparência algorítmica, impacto nos participantes.
+- **TCC com AIAS**: Curso de Engenharia define que o TCC1 (planejamento) é Nível 2 (Planejamento Assistido por IA) — IA auxilia na revisão de literatura e estruturação, mas o problema e a metodologia são do estudante; o TCC2 (desenvolvimento) é Nível 3 (Colaboração com IA) — IA colabora na análise de dados com declaração de uso e reflexão sobre o processo.
 
 ## Limitações
 - A reforma curricular é processo complexo que envolve múltiplos atores

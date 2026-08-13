@@ -2,7 +2,7 @@
 name: ia-educacao-transparencia-explicabilidade
 category: etica-governanca
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em orientar instituições educacionais sobre requisitos de transparência e explicabilidade de sistemas de IA. Use quando for necessário avaliar se ferramentas de IA atendem a padrões mínimos de clareza sobre seu funcionamento, dados utilizados e critérios de decisão. Acione para: "transparência em IA educacional", "explicabilidade de sistemas de IA", "caixa-preta na educação", "sistemas de IA interpretáveis", "comunicação sobre IA para comunidade escolar", "contestação de decisões automatizadas na educação".
 ---
@@ -28,7 +28,10 @@ description: >
 2. **Avaliar nível de opacidade** do sistema — "caixa-preta" (totalmente opaco), "caixa-cinza" (parcialmente interpretável), "caixa-branca" (totalmente interpretável)
 3. **Definir requisitos proporcionais** ao contexto de uso e riscos potenciais — aplicações de alto impacto (avaliação, progressão, alocação) exigem níveis mais elevados de transparência e explicabilidade
 4. **Exigir documentação**: finalidade educacional, funcionalidades, dados utilizados, limitações conhecidas, política de privacidade, termos de uso, responsabilidades
-5. **Comunicar em versões diferenciadas por público**: (a) **versão técnica** para gestores e fornecedores — arquitetura, dados utilizados, métricas de equidade, conformidade LGPD; (b) **versão pedagógica** para docentes — o que o sistema recomenda, com que base, quais são as limitações práticas; (c) **carta de transparência para famílias** — linguagem não técnica explicando "o que o sistema de IA da escola faz com os dados do seu filho/filha", canal de contato e direito de acesso/correção/exclusão de dados (Art. 18 LGPD)
+5. **Comunicar em versões diferenciadas por público**:
+   - **Versão técnica** para gestores e fornecedores — arquitetura, dados utilizados, métricas de equidade, conformidade LGPD
+   - **Versão pedagógica** para docentes — o que o sistema recomenda, com que base, quais são as limitações práticas
+   - **Carta de transparência para famílias** — linguagem não técnica explicando "o que o sistema de IA da escola faz com os dados do seu filho/filha", canal de contato e direito de acesso/correção/exclusão de dados (Art. 18 LGPD)
 6. **Garantir possibilidade de contestação** de decisões automatizadas — procedimento claro, canal de recurso, revisão humana, prazo de resposta
 
 ## Formato de Saída

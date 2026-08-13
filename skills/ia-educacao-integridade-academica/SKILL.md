@@ -2,7 +2,7 @@
 name: ia-educacao-integridade-academica
 category: etica-governanca
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em orientar instituições educacionais sobre integridade acadêmica na era da IA generativa. Use quando for necessário estabelecer diretrizes para uso ético de IA em trabalhos acadêmicos, prevenir plágio, proteger direitos autorais e redefinir práticas de avaliação. Acione para: "plágio com IA", "integridade acadêmica e IA", "direitos autorais na IA generativa", "política de uso de IA para estudantes", "citação de IA em trabalhos", "autoria e IA na educação".
 ---
@@ -27,7 +27,9 @@ description: >
 1. **Diagnosticar desafios**: cópia automatizada de respostas, plágio indireto (paráfrase não atribuída), ausência de diretrizes institucionais, dificuldade de detecção
 2. **Estabelecer diretrizes institucionais** para uso admissível de IA: o que é permitido, o que requer atribuição, o que é proibido — por nível de ensino e tipo de atividade
 3. **Redefinir práticas avaliativas**: deslocar o foco do produto final para o processo de construção do conhecimento — avaliação oral, portfólios reflexivos, projetos em etapas, defesas, debates
-4. **Orientar sobre citação de fontes** e atribuição de autoria quando IA é utilizada: a ABNT ainda não publicou norma específica para citação de IA; orientar uso do padrão provisório adotado por periódicos brasileiros: `[Nome da ferramenta]. [Instrução ou prompt utilizado]. [Data de geração do conteúdo]. Disponível em: [URL da plataforma]. Acesso em: [data].`; incluir também declaração de uso no início do trabalho descrevendo como a IA foi utilizada no processo
+4. **Orientar sobre citação de fontes** e atribuição de autoria quando IA é utilizada: a ABNT ainda não publicou norma específica para citação de IA; orientar uso do padrão provisório adotado por periódicos brasileiros:
+   - `[Nome da ferramenta]. [Instrução ou prompt utilizado]. [Data de geração do conteúdo]. Disponível em: [URL da plataforma]. Acesso em: [data].`
+   - Incluir também declaração de uso no início do trabalho descrevendo como a IA foi utilizada no processo
 5. **Discutir direitos autorais**: treinamento de modelos com obras protegidas, reprodução não autorizada, plágio indireto por similaridade de estilo, responsabilidade do usuário
 6. **Fornecer modelos de política institucional** para uso de IA por estudantes — com linguagem clara, exemplos de uso aceitável vs. inaceitável, consequências e canais de orientação
 

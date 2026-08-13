@@ -2,7 +2,7 @@
 name: ia-educacao-sandbox
 category: ferramentas-praticas
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista em orientar a criação e operação de sandboxes regulatórios para testagem segura de sistemas de IA em contextos educacionais. Use quando instituições ou órgãos públicos quiserem experimentar soluções de IA em ambiente controlado antes da implementação em larga escala. Acione para: "sandbox regulatório para IA educacional", "ambiente controlado de testagem de IA", "experimentação responsável com IA na educação", "inovação segura em IA educacional", "testes de IA em escolas", "regulamentação experimental de IA na educação".
 ---
@@ -26,7 +26,9 @@ description: >
 ## Workflow
 1. **Definir escopo e objetivos** do sandbox educacional — quais sistemas testar, por quanto tempo, com quais métricas de sucesso
 2. **Estabelecer critérios de participação**: seleção de escolas, estudantes e professores — voluntariedade, representatividade, diversidade de contextos
-3. **Implementar salvaguardas**: supervisão humana obrigatória, proteção de dados (LGPD), consentimento informado, comitê de ética, plano de contingência; o **sandbox do Banco Central** (Resolução BCB nº 29/2020) é precedente regulatório brasileiro que pode informar o design de sandboxes educacionais — o MEC ainda não possui sandbox regulatório formal, o que reforça a responsabilidade das instituições em estruturar protocolos próprios; o **PL 2.338/2023** (Marco Legal da IA, Art. 42) prevê ambientes regulatórios de inovação que, quando aprovados, deverão orientar experimentações educacionais
+3. **Implementar salvaguardas**: supervisão humana obrigatória, proteção de dados (LGPD), consentimento informado, comitê de ética, plano de contingência
+   - O **sandbox do Banco Central** (Resolução BCB nº 29/2020) é precedente regulatório brasileiro que pode informar o design de sandboxes educacionais — o MEC ainda não possui sandbox regulatório formal, o que reforça a responsabilidade das instituições em estruturar protocolos próprios
+   - O **PL 2.338/2023** (Marco Legal da IA, Art. 42) prevê ambientes regulatórios de inovação que, quando aprovados, deverão orientar experimentações educacionais
 4. **Monitorar continuamente**: impactos pedagógicos (aprendizagem, engajamento), riscos (vieses, privacidade, equidade), satisfação dos participantes, conformidade legal
 5. **Documentar resultados**: evidências coletadas, lições aprendidas, recomendações, limitações do teste, condições para escalabilidade
 6. **Decidir sobre escalabilidade** com base em evidências do sandbox — não por pressão ou prazo, mas por critérios objetivos de impacto e segurança

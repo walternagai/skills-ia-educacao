@@ -2,7 +2,7 @@
 name: ia-educacao-acessibilidade-inclusao
 category: inclusao-equidade
 model: any
-version: 1.10
+version: 1.11
 description: >
   Especialista em orientar o uso de IA para ampliar acessibilidade e promover inclusão educacional, alinhado à Lei Brasileira de Inclusão (LBI) e ao Desenho Universal para a Aprendizagem (DUA). Use quando educadores precisarem adaptar materiais, recursos e ambientes para estudantes com deficiência ou necessidades específicas. Acione para: "acessibilidade com IA", "inclusão educacional e IA", "tecnologia assistiva com IA", "DUA e IA", "LBI e IA na educação", "adaptação de materiais com IA para estudantes com deficiência".
 ---
@@ -25,7 +25,11 @@ description: >
 
 ## Workflow
 1. **Mapear barreiras** de acessibilidade no contexto educacional específico: barreiras físicas, comunicacionais, atitudinais, tecnológicas
-2. **Selecionar ferramentas de IA por tipo de deficiência**: (a) **visual** — TTS, audiodescrição automática de imagens, OCR acessível, leitores de tela com IA; (b) **auditiva** — legendagem automática (YouTube, Teams), tradução para Libras com IA (VLibras — plataforma brasileira do Governo Federal/RNPI), transcrição em tempo real; (c) **motora** — controle por voz, eye tracking com IA, teclados virtuais preditivos; (d) **intelectual e neurodiversidade** — simplificação automática de texto, pictogramas gerados por IA (Arasaac), segmentação de tarefas, sintetização de áudio de textos longos
+2. **Selecionar ferramentas de IA por tipo de deficiência**:
+   - **Visual** — TTS, audiodescrição automática de imagens, OCR acessível, leitores de tela com IA
+   - **Auditiva** — legendagem automática (YouTube, Teams), tradução para Libras com IA (VLibras — plataforma brasileira do Governo Federal/RNPI), transcrição em tempo real
+   - **Motora** — controle por voz, eye tracking com IA, teclados virtuais preditivos
+   - **Intelectual e neurodiversidade** — simplificação automática de texto, pictogramas gerados por IA (Arasaac), segmentação de tarefas, sintetização de áudio de textos longos
 3. **Aplicar princípios do DUA**: múltiplas formas de engajamento (motivação, interesse), representação (conteúdo em diferentes formatos), expressão (múltiplas formas de demonstrar aprendizagem)
 4. **Adaptar conteúdos**: simplificação textual, ajuste de velocidade de leitura, dicionários contextuais, recursos visuais e auditivos complementares
 5. **Considerar diversidade linguística**: tradução automática para línguas indígenas, materiais bilíngues, respeito às especificidades culturais

@@ -2,7 +2,7 @@
 name: ia-educacao-planejamento-didatico
 category: formacao-docente
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em orientar educadores no uso de IA generativa como assistente para planejamento de aulas, produção de materiais didáticos e organização do trabalho docente. Use quando professores precisarem otimizar tempo com tarefas administrativas e pedagógicas recorrentes, liberando espaço para mediação pedagógica. Acione para: "planejamento de aulas com IA", "produção de materiais didáticos com IA", "IA como assistente docente", "otimização do trabalho docente com IA", "criação de planos de aula com IA", "curadoria de materiais com IA".
 ---
@@ -42,6 +42,7 @@ description: >
 ## Exemplos
 - **Bom prompt**: "Crie um plano de aula de 50 minutos sobre frações para o 5º ano do Ensino Fundamental, com objetivos alinhados à BNCC, uma atividade prática com materiais concretos, 3 exercícios de fixação e uma sugestão de avaliação formativa."
 - **Prompt ruim**: "Me dá uma aula de matemática." — vago, sem contexto, sem critérios, sem formato definido.
+- **Plano completo**: Professor de Física pede plano de aula sobre termodinâmica com experimento de baixo custo, alinhado à BNCC, com rubrica de avaliação e adaptação para estudantes com deficiência visual — a IA entrega o rascunho, o professor valida e ajusta antes de usar.
 
 ## Limitações
 - A qualidade do resultado depende diretamente da qualidade do prompt

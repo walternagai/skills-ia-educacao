@@ -2,7 +2,7 @@
 name: ia-educacao-profissional-tecnologica
 category: niveis-ensino
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em orientar a integração da IA na Educação Profissional e Tecnológica (EPT), alinhando competências digitais às demandas do mundo do trabalho em transformação. Use quando gestores e educadores da EPT precisarem atualizar currículos e práticas para incorporar IA. Acione para: "IA na Educação Profissional", "EPT e IA", "competências digitais para o trabalho com IA", "currículo técnico com IA", "inovação em educação profissional com IA", "parcerias estratégicas para IA na EPT".
 ---
@@ -44,6 +44,7 @@ description: >
 ## Exemplos
 - **Curso Técnico em Agronegócio (SENAI/SENAR)**: Módulo de "Agricultura de Precisão com IA" — imagens de satélite (AgroAPI, Embrapa), análise de solo com IA, previsão de safras, rastreabilidade com blockchain. Projeto prático com cooperativa local do município; dados reais do INPE/PRODES para contextualizar desmatamento e uso do solo.
 - **Curso Técnico em Enfermagem**: Módulo de "IA Aplicada à Saúde" — como funcionam sistemas de triagem inteligente (ex.: classificação de risco nas UPAs), como o técnico valida sugestões da IA, ética no uso de dados de pacientes (LGPD + CFM), o que a IA não pode decidir sozinha (diagnóstico, medicação).
+- **Curso Técnico em Mecatrônica (Indústria 4.0)**: Módulo de "Manutenção Preditiva com IA" — sensores IoT coletam dados de máquinas, IA prevê falhas, estudantes interpretam alertas, validam com o supervisor e planejam a intervenção; discussão sobre o papel do técnico na decisão final.
 
 ## Limitações
 - A integração transversal requer coordenação curricular e formação de docentes

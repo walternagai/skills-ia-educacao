@@ -2,7 +2,7 @@
 name: ia-educacao-ia-desplugada
 category: ferramentas-praticas
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista em desenvolver e aplicar atividades de IA desplugada — sem necessidade de dispositivos digitais — para ensinar conceitos fundamentais de IA em contextos com infraestrutura limitada. Use quando educadores precisarem promover letramento em IA em escolas sem conectividade ou dispositivos. Acione para: "IA desplugada", "ensino de IA sem tecnologia", "atividades desplugadas de IA", "letramento em IA sem internet", "conceitos de IA com atividades analógicas", "inclusão digital com IA desplugada", "IA para escolas sem infraestrutura".
 ---
@@ -25,7 +25,10 @@ description: >
 ## Workflow
 1. **Explicar conceito** de IA desplugada e suas 4 etapas: (1) contextualização — situar o conceito no cotidiano; (2) atividade desplugada — experiência analógica; (3) reflexão — conectar a experiência ao funcionamento da IA; (4) atividade plugada opcional — quando houver infraestrutura
 2. **Selecionar conceitos** para ensino: dados (coleta, classificação, qualidade), padrões (reconhecimento, regularidades), classificação (categorização, árvores de decisão), algoritmos (sequências de passos), vieses (discriminação em dados), machine learning (aprender com exemplos)
-3. **Desenvolver atividades analógicas com materiais de baixo custo**: cartas para classificação, jogos de tabuleiro sobre algoritmos, dramatizações de redes neurais, dinâmicas de grupo sobre vieses, exercícios de papel e lápis; usar materiais disponíveis em escolas públicas brasileiras — folhas A4 (preto e branco), dados, papelão, barbante; o **CIEB** disponibiliza o Currículo de Referência em Tecnologia e Computação com atividades adaptadas ao contexto nacional; atividades do **CS Unplugged** (Bell et al.) têm versão em português; a **SEDUC-PI** produziu kits impressos como parte da experiência do Piauí reconhecida pela UNESCO
+3. **Desenvolver atividades analógicas com materiais de baixo custo**: cartas para classificação, jogos de tabuleiro sobre algoritmos, dramatizações de redes neurais, dinâmicas de grupo sobre vieses, exercícios de papel e lápis; usar materiais disponíveis em escolas públicas brasileiras — folhas A4 (preto e branco), dados, papelão, barbante
+   - O **CIEB** disponibiliza o Currículo de Referência em Tecnologia e Computação com atividades adaptadas ao contexto nacional
+   - Atividades do **CS Unplugged** (Bell et al.) têm versão em português
+   - A **SEDUC-PI** produziu kits impressos como parte da experiência do Piauí reconhecida pela UNESCO
 4. **Conectar ao cotidiano**: reconhecer IA em objetos e serviços do dia a dia — recomendações de redes sociais, buscadores, assistentes de voz, câmeras, mapas
 5. **Promover reflexão crítica**: impactos sociais da IA, ética, privacidade, vieses, desinformação, futuro do trabalho — discussões que independem de tecnologia
 6. **Articular com atividades plugadas** quando houver infraestrutura disponível — usar a base conceitual da IA desplugada para compreender ferramentas reais

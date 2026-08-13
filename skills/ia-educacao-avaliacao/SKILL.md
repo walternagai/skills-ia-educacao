@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao
 category: ferramentas-praticas
 model: any
-version: 1.9
+version: 1.10
 description: >
   Especialista em redesenhar instrumentos e processos de avaliação educacional considerando a presença da IA generativa. Use quando educadores precisarem repensar provas, trabalhos e atividades para garantir que avaliem competências genuinamente humanas — análise, síntese, criatividade, pensamento crítico. Acione para: "avaliação com IA", "redesenho de provas na era da IA", "avaliação formativa e IA", "rubricas para atividades com IA", "como avaliar quando os alunos usam IA", "instrumentos avaliativos e IA generativa".
 ---
@@ -17,7 +17,9 @@ description: >
 
 ## Quando usar
 - Reformulação de instrumentos avaliativos tradicionais (provas, trabalhos, redações)
-- **Definição do nível de uso de IA em avaliações (escala AIAS)** — usar o framework de 5 níveis (Sem IA / Planejamento Assistido / Colaboração / IA Integral / Exploração) como ferramenta de decisão prévia ao redesenho de qualquer atividade avaliativa; a escala é **não hierárquica** (nenhum nível é superior) e **cumulativa** (níveis superiores permitem usos dos níveis inferiores, salvo indicação contrária); o nível é definido pelos objetivos de aprendizagem, não pela conveniência; a escolha deve ser declarada explicitamente no plano de ensino e no enunciado da atividade antes de sua realização — em conformidade com o Referencial MEC (2026) e as normas institucionais de graduação vigentes
+- **Definição do nível de uso de IA em avaliações (escala AIAS)** — usar o framework de 5 níveis (Sem IA / Planejamento Assistido / Colaboração / IA Integral / Exploração) como ferramenta de decisão prévia ao redesenho de qualquer atividade avaliativa
+- A escala é **não hierárquica** (nenhum nível é superior) e **cumulativa** (níveis superiores permitem usos dos níveis inferiores, salvo indicação contrária); o nível é definido pelos objetivos de aprendizagem, não pela conveniência
+- A escolha deve ser declarada explicitamente no plano de ensino e no enunciado da atividade antes de sua realização — em conformidade com o Referencial MEC (2026) e as normas institucionais de graduação vigentes
 - Criação de avaliações que valorizem processo sobre produto
 - Desenho de atividades que integrem IA como ferramenta de apoio (não substituta)
 - Desenvolvimento de rubricas para avaliação de interação com IA

@@ -2,7 +2,7 @@
 name: ia-educacao-contratacao
 category: ferramentas-praticas
 model: any
-version: 1.11
+version: 1.12
 description: >
   Especialista em estabelecer critérios técnicos, pedagógicos, éticos e legais para contratação e auditoria de plataformas educacionais que incorporam IA. Use quando gestores públicos ou institucionais precisarem selecionar, contratar e auditar soluções de IA para educação. Acione para: "contratação de plataformas educacionais com IA", "licitação de IA para educação", "auditoria de fornecedores de IA educacional", "critérios para seleção de EdTech", "cláusulas contratuais de proteção de dados", "avaliação de plataformas educacionais com IA".
 ---
@@ -25,7 +25,9 @@ description: >
 ## Workflow
 1. **Definir critérios pedagógicos**: alinhamento curricular, evidências de impacto educacional, adequação etária, acessibilidade, usabilidade pedagógica
 2. **Definir critérios técnicos**: interoperabilidade com sistemas existentes, segurança da informação, escalabilidade, disponibilidade, suporte técnico
-3. **Definir critérios éticos e legais**: conformidade com LGPD, ECA Digital, transparência, explicabilidade, não discriminação, supervisão humana; quando a plataforma for usada em avaliações dos Níveis 3, 4 ou 5 da escala AIAS, exigir contratualmente: (a) não uso de dados dos estudantes para treinar modelos de terceiros; (b) política de retenção de conversas; (c) transparência sobre a versão e atualização do modelo utilizado; para contratações públicas, aplicar a **Lei 14.133/2021** (nova Lei de Licitações e Contratos Administrativos) — especificar critérios éticos e pedagógicos no edital; o Art. 11 permite inclusão de critérios de sustentabilidade que abrangem proteção de dados e conformidade com LGPD
+3. **Definir critérios éticos e legais**: conformidade com LGPD, ECA Digital, transparência, explicabilidade, não discriminação, supervisão humana
+   - Quando a plataforma for usada em avaliações dos Níveis 3, 4 ou 5 da escala AIAS, exigir contratualmente: (a) não uso de dados dos estudantes para treinar modelos de terceiros; (b) política de retenção de conversas; (c) transparência sobre a versão e atualização do modelo utilizado
+   - Para contratações públicas, aplicar a **Lei 14.133/2021** (nova Lei de Licitações e Contratos Administrativos) — especificar critérios éticos e pedagógicos no edital; o Art. 11 permite inclusão de critérios de sustentabilidade que abrangem proteção de dados e conformidade com LGPD
 4. **Exigir documentação**: política de privacidade e proteção de dados, avaliação de impacto algorítmico, termos de uso, relatório de transparência, certificações de segurança
 5. **Estabelecer cláusulas contratuais**: responsabilidade por incidentes, propriedade intelectual, confidencialidade, portabilidade de dados, cláusula de saída, proibição de uso secundário de dados
 6. **Implementar auditoria contínua**: conformidade legal, desempenho pedagógico, equidade de impacto, satisfação de usuários, atualizações e mudanças no sistema

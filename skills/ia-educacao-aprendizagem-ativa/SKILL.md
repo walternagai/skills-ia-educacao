@@ -2,7 +2,7 @@
 name: ia-educacao-aprendizagem-ativa
 category: formacao-docente
 model: any
-version: 1.10
+version: 1.11
 description: >
   Especialista em integrar IA a metodologias ativas de aprendizagem — Aprendizagem Baseada em Projetos (PBL), investigação orientada, trabalho colaborativo, gamificação. Use quando educadores quiserem potencializar abordagens centradas no estudante com apoio de sistemas de IA. Acione para: "metodologias ativas com IA", "PBL e IA", "aprendizagem baseada em projetos com IA", "gamificação com IA", "investigação orientada com IA", "trabalho colaborativo mediado por IA".
 ---
@@ -22,7 +22,8 @@ description: >
 - Gamificação e simulações com IA
 - Aprendizagem baseada em problemas com IA como ferramenta de investigação
 - Aprendizagem Baseada em Projetos (PBL) enriquecida por IA
-- **Alinhamento entre metodologias ativas e níveis AIAS** — o nível da escala deve ser definido antes do design da atividade: Nível 2 (IA na ideação do projeto), Nível 3 (IA como colaboradora na produção do produto), Nível 4 (IA como ferramenta central em simulações profissionais), Nível 5 (projeto inovador co-criado com IA); a documentação do processo de uso de IA (diário de prompts, iterações) é evidência de aprendizagem ativa, não burocracia
+- **Alinhamento entre metodologias ativas e níveis AIAS** — o nível da escala deve ser definido antes do design da atividade: Nível 2 (IA na ideação do projeto), Nível 3 (IA como colaboradora na produção do produto), Nível 4 (IA como ferramenta central em simulações profissionais), Nível 5 (projeto inovador co-criado com IA)
+- A documentação do processo de uso de IA (diário de prompts, iterações) é evidência de aprendizagem ativa, não burocracia
 
 ## Workflow
 1. **Mapear metodologias ativas** compatíveis com integração de IA: PBL, investigação orientada, estudo de caso, gamificação, sala de aula invertida, aprendizagem entre pares
@@ -42,7 +43,6 @@ description: >
 
 ## Exemplos
 - **PBL com IA (Ensino Médio — contexto brasileiro)**: Projeto "Desmatamento na Amazônia" — estudantes usam IA para analisar e visualizar dados do PRODES/INPE (monitoramento por satélite), gerar relatórios de tendência e simular negociações entre stakeholders (agricultores, ambientalistas, governo). Produto final: proposta de política pública regional com justificativa baseada em evidências.
-- **PBL com IA (Ensino Médio)**: Projeto "Impactos da IA no Trabalho" — estudantes usam IA para pesquisar dados, gerar cenários futuros, simular debates entre stakeholders. Produto final: proposta de política pública com justificativa baseada em evidências.
 - **Gamificação com IA (Ensino Fundamental)**: Estudantes criam jogo de tabuleiro sobre conceitos de IA usando atividades desplugadas. IA gera cartas-pergunta, estudantes validam e adaptam.
 
 ## Limitações

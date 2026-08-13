@@ -2,7 +2,7 @@
 name: ia-educacao-basica
 category: niveis-ensino
 model: any
-version: 1.6
+version: 1.7
 description: >
   Especialista em orientar a integração gradual e segura da IA na Educação Básica, seguindo o princípio do Referencial MEC de que estudantes devem primeiro aprender sobre IA para depois aprender com IA. Use quando educadores da EB precisarem planejar o letramento em IA desde os anos iniciais. Acione para: "IA na Educação Básica", "letramento em IA para crianças", "aprender sobre IA antes de aprender com IA", "IA no Ensino Fundamental", "progressão de IA por etapa de ensino", "currículo de IA na educação básica".
 ---
@@ -25,7 +25,11 @@ description: >
 
 ## Workflow
 1. **Aplicar princípio fundamental**: aprender sobre IA antes de aprender com IA — estudantes devem compreender o que é IA, como funciona, quais seus limites e riscos antes de usar ferramentas
-2. **Organizar por etapa com distinção clara**: Educação Infantil (não se recomenda IA generativa, exceto tecnologias assistivas); **EF1 — Anos Iniciais (1º–5º ano)**: priorizar IA desplugada, brincadeiras analógicas de classificação e reconhecimento de padrões, mediação intensiva — sem uso direto de ferramentas generativas; **EF2 — Anos Finais (6º–9º ano)**: iniciar exploração supervisionada de ferramentas simples, sempre com análise crítica das respostas geradas, comparação com fontes; Ensino Médio: aprofundamento, projetos interdisciplinares, análise de impactos sociais
+2. **Organizar por etapa com distinção clara**:
+   - **Educação Infantil**: não se recomenda IA generativa, exceto tecnologias assistivas
+   - **EF1 — Anos Iniciais (1º–5º ano)**: priorizar IA desplugada, brincadeiras analógicas de classificação e reconhecimento de padrões, mediação intensiva — sem uso direto de ferramentas generativas
+   - **EF2 — Anos Finais (6º–9º ano)**: iniciar exploração supervisionada de ferramentas simples, sempre com análise crítica das respostas geradas, comparação com fontes
+   - **Ensino Médio**: aprofundamento, projetos interdisciplinares, análise de impactos sociais
 3. **Utilizar IA desplugada** para contextos sem infraestrutura digital — atividades com cartas, jogos, dramatizações, dinâmicas de grupo que ensinam conceitos de IA sem tecnologia
 4. **Desenvolver pensamento crítico**: reconhecer IA no cotidiano (redes sociais, buscadores, assistentes), entender limitações (alucinações, vieses), questionar resultados
 5. **Progredir para uso com IA**: ferramentas sob supervisão docente intensiva — começar com atividades estruturadas, evoluir para projetos com maior autonomia; no Ensino Médio, o docente pode declarar o nível AIAS em avaliações com IA (Escala AIAS — ver `aias-consultant`), introduzindo os estudantes à cultura de transparência que vigorará na educação superior

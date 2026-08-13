@@ -2,7 +2,7 @@
 name: ia-educacao-etica
 category: etica-governanca
 model: any
-version: 1.9
+version: 1.10
 description: >
   Especialista em fundamentos éticos para IA na educação, alinhado aos princípios do Referencial MEC e marcos internacionais (UNESCO, OCDE, Comissão Europeia). Use quando instituições precisarem estabelecer princípios éticos norteadores para adoção de IA. Acione para: "ética em IA na educação", "princípios éticos para IA educacional", "UNESCO e IA na educação", "valores fundamentais para IA na escola", "código de ética para IA educacional", "responsabilização em IA", "accountability em sistemas de IA educacional".
 ---
@@ -37,7 +37,9 @@ description: >
 5. **Estabelecer compromissos institucionais** explícitos — código de ética, política de uso, comitê de supervisão, canais de denúncia
 6. **Mapear stakeholders afetados** por cada decisão de IA educacional — identificar estudantes, famílias, docentes, gestores, fornecedores e comunidade, mapeando interesses potencialmente conflitantes e responsabilidades de cada ator
 7. **Promover cultura ética** contínua na comunidade escolar — formação, discussão, revisão periódica dos compromissos
-8. **Adotar a Escala AIAS como instrumento de honestidade acadêmica** — a transparência sobre o nível de uso de IA em cada avaliação é uma prática ética concreta e imediata; a ausência de declaração de nível cria zona cinzenta que favorece infrações não intencionais; a escala AIAS operacionaliza o princípio ético de transparência do Referencial MEC (2026) no contexto específico das avaliações acadêmicas
+8. **Adotar a Escala AIAS como instrumento de honestidade acadêmica** — a transparência sobre o nível de uso de IA em cada avaliação é uma prática ética concreta e imediata
+   - A ausência de declaração de nível cria zona cinzenta que favorece infrações não intencionais
+   - A escala AIAS operacionaliza o princípio ético de transparência do Referencial MEC (2026) no contexto específico das avaliações acadêmicas
 
 ## Formato de Saída
 - Template de código de ética para IA educacional
