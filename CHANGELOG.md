@@ -5,6 +5,17 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.0] — 2026-08-12
+
+### Corrigido
+- **Sprint 1 de revisão editorial (kata)** — correções de alta prioridade em 21 skills:
+  - **Typos corrigidos (8)**: `redesenharía` → `redesenharia` (avaliacao-oral), `concludir` → `concluir` (pensamento-critico), `promtar` → `promptar` e `socrátivas` → `socráticas` (metacognicao), `objetos` → `objeções` (debate), `rúbrica` → `rubrica` (estudo-de-caso), `valadas` → `avaliadas` (sala-invertida), `scanneia` → `escaneia` (peer-instruction)
+  - **Numeração de Workflow corrigida (9 skills)**: passos duplicados ou híbridos renumerados sequencialmente — aprendizagem-ativa, equidade-digital, letramento-dados, pensamento-critico, sti, profissional-tecnologica, formacao-inicial-docente, personalizacao, avaliacao
+  - **Duplicações removidas (4)**: referência PERKINS 2024 duplicada (ensino-medio); "Relatório de calibração" ×2 unificado (autoavaliacao); "Relatório de validação" ×2 unificado (mcq); "Checklist de due diligence" ×2 unificado (contratacao)
+  - **Placeholder ABNT substituído**: "Resolução CNE/CES nº ..." → Resolução CNE/CES nº 67/2019 (avaliacao-competencia)
+  - **Indentação corrigida**: bullet do passo 5 do Workflow (aias-consultant)
+- `version` incrementada nas 21 skills afetadas
+
 ## [0.8.3] — 2026-08-12
 
 ### Adicionado

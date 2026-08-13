@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao-competencia
 category: ferramentas-praticas
 model: any
-version: 1.6
+version: 1.7
 description: >
   Especialista em avaliação por competências no Ensino Superior — rubricas de proficiência, certificação de competências, tarefas de desempenho autênticas e alinhamento a marcos regulatórios (BNCC, DCNs, SINAES). Cobre desenho de níveis de proficiência, portfólios de evidências, avaliação de competências transversais e uso de IA para mapear e acompanhar desenvolvimento de competências. Acione para: "avaliação por competências", "competências", "proficiência", "rubrica de competência", "certificação de competências", "tarefa de desempenho", "avaliação autêntica", "DCN", "SINAES", "BNCC competências", "mapeamento de competências", "nível de proficiência", "competências transversais", "avaliação baseada em competências".
 ---
@@ -197,7 +197,7 @@ Evidência: projeto integrador + memorial de cálculo + apresentação para banc
 - `aias-consultant` — definição do nível AIAS para tarefas de desempenho
 
 ## Referências
-- BRASIL. Ministério da Educação. Resolução CNE/CES nº ... — Diretrizes Curriculares Nacionais (DCNs) de cada curso.
+- BRASIL. Ministério da Educação. Conselho Nacional de Educação. Resolução CNE/CES nº 67, de 11 de dezembro de 2019 — Diretrizes Curriculares Nacionais Gerais para os cursos de graduação. Brasília: CNE, 2019.
 - BRASIL. Ministério da Educação. Sistema Nacional de Avaliação da Educação Superior (SINAES). Brasília: INEP, 2004.
 - ZABALA, A.; ARNAU, L. Como Aprender e Ensinar Competências. Porto Alegre: Artmed, 2010.
 - PERRENOUD, P. Construir as Competências desde a Escola. Porto Alegre: Artmed, 1999.

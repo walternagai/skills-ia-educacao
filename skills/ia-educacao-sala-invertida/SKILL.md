@@ -2,7 +2,7 @@
 name: ia-educacao-sala-invertida
 category: formacao-docente
 model: any
-version: 1.5
+version: 1.6
 description: >
   Especialista em Sala de Aula Invertida (Flipped Classroom) com IA generativa. Orienta o design do que vai para o espaço assíncrono (pré-aula), como usar o tempo presencial para aprendizagem ativa de ordem superior, e como integrar IA na produção de materiais e na facilitação em sala. Acione para: "sala de aula invertida", "flipped classroom", "aula invertida", "vídeo pré-aula", "como usar o tempo em sala", "o que mandar para casa", "peer instruction", "pré-aula com IA", "conteúdo assíncrono", "aproveitamento do presencial".
 ---
@@ -63,7 +63,7 @@ Estratégias de verificação de baixo atrito:
 
 | Estratégia | Como funciona | AIAS |
 |------------|--------------|------|
-| **Quiz de entrada** | 5 questões no início da aula; valadas coletivamente nos primeiros 10 min; abre a discussão | AIAS 1 (individual, sem IA) |
+| **Quiz de entrada** | 5 questões no início da aula; avaliadas coletivamente nos primeiros 10 min; abre a discussão | AIAS 1 (individual, sem IA) |
 | **Muddiest point** | Estudante envia antes da aula: "A parte mais confusa do pré foi..." — docente usa para guiar o presencial | Qualquer |
 | **Ticket de entrada** | 1 frase sobre o que mais questionou no pré — entregue ao entrar | Qualquer |
 | **Just-in-time teaching** | Respostas do quiz chegam ao docente antes da aula; docente adapta o plano com base nas dúvidas reais | AIAS 2–3 permitido |

@@ -2,7 +2,7 @@
 name: ia-educacao-formacao-inicial-docente
 category: formacao-docente
 model: any
-version: 1.11
+version: 1.12
 description: >
   Especialista em orientar a incorporação da IA nos cursos de licenciatura, preparando futuros professores para o uso pedagógico crítico da tecnologia e para o ensino de fundamentos de IA na Educação Básica. Use quando coordenadores e formadores de licenciaturas precisarem atualizar currículos. Acione para: "IA nas licenciaturas", "formação inicial de professores e IA", "currículo de licenciatura com IA", "futuros professores e IA", "ensino de fundamentos de IA na licenciatura", "preparação de docentes para era da IA".
 ---
@@ -28,9 +28,9 @@ description: >
 3. **Utilizar ambientes simulados**: microaulas com feedback de IA, análise de prática docente com apoio de IA, simulações de gestão de sala de aula, planejamento colaborativo com IA
 4. **Promover reflexão crítica**: vieses algorítmicos, equidade de acesso, transparência, supervisão humana, dilemas éticos do uso de IA na educação
 5. **Conectar à prática na EB**: preparar licenciandos para ensinar sobre IA (conceitos, letramento) e com IA (ferramentas, mediação) na Educação Básica
-5.1. **Preparar para uso da Escala AIAS**: licenciandos devem aprender a usar a escala AIAS como ferramenta de transparência e integridade acadêmica em suas futuras práticas avaliativas — declarar o nível de uso de IA em cada atividade, redesenhar tarefas coerentemente com o nível escolhido, comunicar o racional pedagógico aos estudantes; incluir exercícios práticos: dado um objetivo de aprendizagem, escolher o nível AIAS adequado e redigir o enunciado correspondente
-6. **Preparar para o estágio supervisionado com IA**: orientar o licenciando a observar e registrar o uso de IA em contextos reais de escola durante o estágio — analisar criticamente adequação ao nível dos estudantes, presença de supervisão docente, transparência com famílias, e como o professor cooperante toma decisões mediadas por IA
-7. **Avaliar impacto**: acompanhamento de egressos e suas práticas com IA, análise de como a formação se reflete na atuação profissional
+6. **Preparar para uso da Escala AIAS**: licenciandos devem aprender a usar a escala AIAS como ferramenta de transparência e integridade acadêmica em suas futuras práticas avaliativas — declarar o nível de uso de IA em cada atividade, redesenhar tarefas coerentemente com o nível escolhido, comunicar o racional pedagógico aos estudantes; incluir exercícios práticos: dado um objetivo de aprendizagem, escolher o nível AIAS adequado e redigir o enunciado correspondente
+7. **Preparar para o estágio supervisionado com IA**: orientar o licenciando a observar e registrar o uso de IA em contextos reais de escola durante o estágio — analisar criticamente adequação ao nível dos estudantes, presença de supervisão docente, transparência com famílias, e como o professor cooperante toma decisões mediadas por IA
+8. **Avaliar impacto**: acompanhamento de egressos e suas práticas com IA, análise de como a formação se reflete na atuação profissional
 
 ## Formato de Saída
 - Matriz de competências em IA para licenciaturas

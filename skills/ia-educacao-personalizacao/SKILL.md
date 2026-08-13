@@ -2,7 +2,7 @@
 name: ia-educacao-personalizacao
 category: ferramentas-praticas
 model: any
-version: 1.9
+version: 1.10
 description: >
   Especialista em orientar a implementação pedagógica de sistemas de personalização do ensino mediados por IA. Use quando educadores e gestores precisarem compreender como sistemas tutoriais inteligentes (STIs) e plataformas adaptativas podem apoiar percursos individualizados de aprendizagem, respeitando equidade e supervisão docente. Acione para: "personalização do ensino com IA", "aprendizagem adaptativa", "sistemas tutoriais inteligentes", "plataformas adaptativas na educação", "percursos individualizados com IA", "feedback personalizado com IA".
 ---
@@ -30,8 +30,8 @@ description: >
 3. **Demonstrar funcionalidades**: feedback imediato, ajuste de complexidade, sequenciamento de conteúdos, recomendação de recursos complementares, identificação precoce de dificuldades
 4. **Discutir limites**: personalização não deve restringir-se à correção de déficits — deve valorizar pontos fortes, interesses e competências prévias dos estudantes
 5. **Enfatizar supervisão docente**: IA gera recomendações e alertas; o professor interpreta, contextualiza e decide as intervenções pedagógicas
-5.1. **Alinhar personalização aos níveis AIAS**: personalização via plataforma adaptativa é uma forma de uso de IA nos estudos; quando a avaliação final for presencial sem IA (Nível 1), o uso de IA adaptativa na preparação é de estudo, não de avaliação; quando a avaliação for Nível 4 (IA Integral), a plataforma adaptativa pode ser parte do processo avaliativo; distinguir claramente os dois contextos
-6. **Alertar sobre riscos**: viés algorítmico (reprodução de desigualdades), redução da autonomia do estudante, dependência tecnológica, exposição de dados sensíveis
+6. **Alinhar personalização aos níveis AIAS**: personalização via plataforma adaptativa é uma forma de uso de IA nos estudos; quando a avaliação final for presencial sem IA (Nível 1), o uso de IA adaptativa na preparação é de estudo, não de avaliação; quando a avaliação for Nível 4 (IA Integral), a plataforma adaptativa pode ser parte do processo avaliativo; distinguir claramente os dois contextos
+7. **Alertar sobre riscos**: viés algorítmico (reprodução de desigualdades), redução da autonomia do estudante, dependência tecnológica, exposição de dados sensíveis
 
 ## Formato de Saída
 - Guia comparativo de tipos de sistemas de personalização (STIs, plataformas adaptativas, assistentes virtuais)

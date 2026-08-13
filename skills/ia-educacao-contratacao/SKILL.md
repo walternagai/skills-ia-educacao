@@ -2,7 +2,7 @@
 name: ia-educacao-contratacao
 category: ferramentas-praticas
 model: any
-version: 1.10
+version: 1.11
 description: >
   Especialista em estabelecer critérios técnicos, pedagógicos, éticos e legais para contratação e auditoria de plataformas educacionais que incorporam IA. Use quando gestores públicos ou institucionais precisarem selecionar, contratar e auditar soluções de IA para educação. Acione para: "contratação de plataformas educacionais com IA", "licitação de IA para educação", "auditoria de fornecedores de IA educacional", "critérios para seleção de EdTech", "cláusulas contratuais de proteção de dados", "avaliação de plataformas educacionais com IA".
 ---
@@ -35,7 +35,6 @@ description: >
 - Scorecard de avaliação de fornecedores com pesos e critérios
 - Minuta de cláusulas contratuais de proteção de dados
 - **Checklist de due diligence ética para fornecedores de IA educacional**: (1) política de privacidade em português com linguagem clara; (2) localização dos servidores (data residency — dados de estudantes brasileiros armazenados no Brasil ou em país com proteção equivalente); (3) plano de saída/portabilidade de dados ao término do contrato; (4) auditabilidade do algoritmo (acesso a logs e critérios de decisão); (5) conformidade LGPD declarada com indicação do Encarregado de Dados (DPO); (6) compromisso contratual de não usar dados de estudantes para treinar modelos de terceiros
-- Checklist de due diligence para contratação
 - Protocolo de auditoria periódica de conformidade
 - Matriz de riscos contratuais
 

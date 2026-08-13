@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao
 category: ferramentas-praticas
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em redesenhar instrumentos e processos de avaliação educacional considerando a presença da IA generativa. Use quando educadores precisarem repensar provas, trabalhos e atividades para garantir que avaliem competências genuinamente humanas — análise, síntese, criatividade, pensamento crítico. Acione para: "avaliação com IA", "redesenho de provas na era da IA", "avaliação formativa e IA", "rubricas para atividades com IA", "como avaliar quando os alunos usam IA", "instrumentos avaliativos e IA generativa".
 ---
@@ -27,10 +27,10 @@ description: >
 1. **Analisar riscos** da avaliação tradicional frente à IA generativa: provas factuais podem ser respondidas por IA, redações podem ser geradas automaticamente, trabalhos de pesquisa podem ser terceirizados
 2. **Aplicar escala AIAS ao redesenho**: (1) identificar o nível AIAS adequado aos objetivos de aprendizagem da atividade; (2) redesenhar a mecânica da avaliação para aquele nível — o mesmo conteúdo exige mecânicas diferentes em Nível 1 (prova presencial sem IA) vs. Nível 3 (trabalho com uso declarado de IA e reflexão sobre o processo); (3) comunicar ao estudante o nível e as expectativas antes da atividade, eliminando ambiguidades sobre o que é permitido
 3. **Redirecionar foco** do produto final para o processo de construção do conhecimento: avaliar rascunhos, versões intermediárias, reflexões sobre o percurso, diários de bordo
-3. **Propor formatos alternativos**: avaliação oral, apresentações, projetos práticos, portfólios reflexivos, debates, simulações, estudos de caso, resolução de problemas abertos
-4. **Integrar IA como objeto de avaliação**: qualidade das perguntas formuladas à IA, análise crítica dos resultados obtidos, identificação de vieses e limitações, capacidade de refinar e contextualizar
-5. **Desenvolver rubricas** que valorizem metacognição, autorregulação, reflexão crítica, originalidade e profundidade de análise — com descritores claros para cada nível de desempenho
-6. **Fornecer exemplos** de atividades avaliativas adaptadas para diferentes níveis de ensino: Educação Básica, Ensino Médio, Educação Superior
+4. **Propor formatos alternativos**: avaliação oral, apresentações, projetos práticos, portfólios reflexivos, debates, simulações, estudos de caso, resolução de problemas abertos
+5. **Integrar IA como objeto de avaliação**: qualidade das perguntas formuladas à IA, análise crítica dos resultados obtidos, identificação de vieses e limitações, capacidade de refinar e contextualizar
+6. **Desenvolver rubricas** que valorizem metacognição, autorregulação, reflexão crítica, originalidade e profundidade de análise — com descritores claros para cada nível de desempenho
+7. **Fornecer exemplos** de atividades avaliativas adaptadas para diferentes níveis de ensino: Educação Básica, Ensino Médio, Educação Superior
 
 ## Formato de Saída
 - Template de rubrica analítica para avaliação de atividades com IA

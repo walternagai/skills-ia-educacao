@@ -2,7 +2,7 @@
 name: ia-educacao-estudo-de-caso
 category: formacao-docente
 model: any
-version: 1.5
+version: 1.6
 description: >
   Especialista em Estudo de Caso como metodologia ativa no Ensino Superior, com integração de IA. Orienta o design de casos mal-estruturados, a facilitação de discussões pelo método Harvard e o uso de IA para gerar perspectivas de stakeholders, atualizar casos e avaliar a qualidade do argumento. Acione para: "estudo de caso", "método de caso", "caso Harvard", "caso para aula", "como criar um caso didático", "facilitação de discussão de caso", "caso de ensino", "análise de caso com IA", "caso interdisciplinar", "caso empresarial para aula".
 ---
@@ -160,7 +160,7 @@ Produto esperado: parecer técnico de uma página com recomendação fundamentad
 - Casos muito simples ou com resposta óbvia não geram discussão de qualidade — revisar o caso com olhar crítico antes de usar pela primeira vez
 - Facilitação de discussão de caso é uma habilidade que requer prática — as primeiras sessões tendem a ser mais expositivas do que o método prevê
 - Casos baseados em situações reais recentes podem ter a resolução facilmente pesquisável — usar IA para criar variações fictícias plausíveis ou casos de situações menos conhecidas
-- Avaliação de participação oral tem desafios de registro e consistência — usar rúbrica e eventual gravação (com consentimento) para garantir equidade
+- Avaliação de participação oral tem desafios de registro e consistência — usar rubrica e eventual gravação (com consentimento) para garantir equidade
 
 ## Dependências
 - `ia-educacao-debate` — técnicas de facilitação de argumentação e gestão de participação

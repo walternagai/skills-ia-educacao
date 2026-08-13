@@ -2,7 +2,7 @@
 name: ia-educacao-autoavaliacao
 category: ferramentas-praticas
 model: any
-version: 1.6
+version: 1.7
 description: >
   Especialista em design de instrumentos de autoavaliação para o Ensino Superior — escalas, rubricas de autoavaliação, diários reflexivos, calibração entre autoavaliação e avaliação docente, e desenvolvimento do juízo avaliativo do estudante. Cobre uso de IA para apoiar a autoavaliação sem substituir a reflexão autêntica. Acione para: "autoavaliação", "como o aluno se autoavalia", "rubrica de autoavaliação", "escala de autoavaliação", "juízo avaliativo", "calibração autoavaliação", "diário reflexivo", "autoavaliação com IA", "feedback do estudante sobre si mesmo", "autoavaliação em grupo", "metacognição e autoavaliação".
 ---
@@ -134,11 +134,10 @@ description: >
 - **Rubrica de autoavaliação**: mesma rubrica do docente em primeira pessoa
 - **Escala de autoavaliação**: afirmações por tópico/competência com escala Likert
 - **Roteiro de perguntas reflexivas**: por área STHEM e por nível de profundidade
-- **Relatório de calibração**: comparação autoavaliação × avaliação docente por estudante
+- **Relatório de calibração**: comparação autoavaliação × avaliação docente por estudante e evolução da precisão da autoavaliação ao longo do semestre
 - **Plano de desenvolvimento do juízo avaliativo**: scaffolding ao longo do semestre
 - **Template de autoavaliação em grupo**: contribuição individual + justificativa
 - **Checklist de verificação pré-implementação**: 6 itens de conferência antes de usar autoavaliação para decisão somativa
-- **Relatório de calibração**: evolução da precisão da autoavaliação ao longo do semestre
 
 ## Exemplos
 

@@ -2,7 +2,7 @@
 name: ia-educacao-aprendizagem-ativa
 category: formacao-docente
 model: any
-version: 1.9
+version: 1.10
 description: >
   Especialista em integrar IA a metodologias ativas de aprendizagem — Aprendizagem Baseada em Projetos (PBL), investigação orientada, trabalho colaborativo, gamificação. Use quando educadores quiserem potencializar abordagens centradas no estudante com apoio de sistemas de IA. Acione para: "metodologias ativas com IA", "PBL e IA", "aprendizagem baseada em projetos com IA", "gamificação com IA", "investigação orientada com IA", "trabalho colaborativo mediado por IA".
 ---
@@ -31,7 +31,7 @@ description: >
 4. **Estimular autonomia**: formulação de perguntas de pesquisa, curadoria de fontes, validação cruzada de informações, síntese crítica de múltiplas perspectivas
 5. **Documentar o processo como evidência de aprendizagem**: portfólio de prompts (os que funcionaram e os que foram refinados), diário de iterações com IA, reflexão sobre decisões tomadas durante a investigação; essa documentação é parte da avaliação, não burocracia — ela demonstra o protagonismo do estudante no processo
 6. **Avaliar processo**: qualidade da interação com IA, profundidade da investigação, originalidade da análise, capacidade de argumentação crítica, reflexão metacognitiva
-6. **Fornecer exemplos práticos** para diferentes níveis de ensino: projetos interdisciplinares, investigações científicas, resolução de problemas da comunidade
+7. **Fornecer exemplos práticos** para diferentes níveis de ensino: projetos interdisciplinares, investigações científicas, resolução de problemas da comunidade
 
 ## Formato de Saída
 - Templates de design de projetos PBL+IA (com etapas, papéis, entregas)

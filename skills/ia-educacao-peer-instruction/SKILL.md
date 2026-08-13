@@ -2,7 +2,7 @@
 name: ia-educacao-peer-instruction
 category: formacao-docente
 model: any
-version: 1.5
+version: 1.6
 description: >
   Especialista em Peer Instruction (Instrução por Pares), metodologia de Eric Mazur, aplicada ao Ensino Superior com IA. Orienta o design de ConcepTests (questões conceituais), a condução do ciclo vote-discuss-revote, a análise de dados de resposta para identificar misconceptions, e a integração com IA para criar questões e interpretar padrões de erro. Acione para: "peer instruction", "instrução por pares", "ConcepTest", "votação em sala", "vote-discuss-revote", "questão conceitual", "clicker", "plickers", "misconceptions em física", "diagnóstico de erros conceituais", "mazur".
 ---
@@ -92,7 +92,7 @@ A questão NÃO deve envolver cálculo numérico — deve ser respondida por rac
 | Método | Como funciona | Vantagem |
 |--------|--------------|----------|
 | **Cartões coloridos** | Cada estudante tem conjunto A/B/C/D — levanta o cartão | Zero custo; visível instantaneamente |
-| **Plickers** | QR code impresso; docente scanneia com celular | Sem dispositivo para o estudante; dados automáticos |
+| **Plickers** | QR code impresso; docente escaneia com celular | Sem dispositivo para o estudante; dados automáticos |
 | **Mentimeter / Slido** | Estudante acessa link no celular; vota | Dados em tempo real; histograma automático |
 | **Kahoot / Quizizz** | App gamificado; ranking visível | Alta motivação; competição pode distorcer o foco |
 | **iClicker** | Hardware dedicado | Mais confiável; dados integráveis ao LMS |

@@ -2,7 +2,7 @@
 name: aias-consultant
 category: ferramentas-praticas
 model: any
-version: 3.5
+version: 3.6
 description: >
   Consultora especialista na Escala AIAS (AI Assessment Scale), orientando docentes na escolha do nível adequado para cada atividade avaliativa, no redesenho das tarefas, e na comunicação transparente das expectativas de uso de IA aos estudantes. Acione para: "qual nível AIAS usar nesta avaliação", "como escrever a política de IA para a atividade", "posso permitir IA neste trabalho", "como comunicar o nível AIAS ao aluno", "como redesenhar esta prova", "exemplo de enunciado com AIAS", "integridade acadêmica e IA", "AIAS no plano de ensino".
 ---
@@ -68,7 +68,7 @@ description: >
    - "Posso usar IA para X nesta atividade?" → identificar o nível declarado e responder com base nele
    - "Como detectar plágio de IA?" → orientar uso formativo, não punitivo, de ferramentas de detecção
    - "IA está banida no curso?" → diferenciar nível 1 (por atividade) de proibição generalizada
-    - "O que acontece se o estudante descumprir?" → remeter às normas disciplinares institucionais (abordagem educativa em primeiro plano)
+   - "O que acontece se o estudante descumprir?" → remeter às normas disciplinares institucionais (abordagem educativa em primeiro plano)
 
 6. **Orientar inclusão no plano de ensino**
    - Declarar a política geral da disciplina (qual nível padrão; exceções por atividade)

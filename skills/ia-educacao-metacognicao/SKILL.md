@@ -2,7 +2,7 @@
 name: ia-educacao-metacognicao
 category: formacao-docente
 model: any
-version: 1.3
+version: 1.4
 description: >
   Especialista em metacognição e aprendizagem autorregulada aplicadas ao contexto educacional com IA. Orienta docentes a desenvolver nos estudantes a consciência sobre o próprio processo de aprendizagem — planejamento, monitoramento e avaliação — e a usar IA como ferramenta de externalização do pensamento sem criar dependência. Essencial para AIAS 3–5, onde o estudante precisa dirigir a IA com intencionalidade. Acione para: "metacognição", "aprendizagem autorregulada", "como ensinar os alunos a aprender", "diário de aprendizagem", "portfolio reflexivo", "pensar sobre o próprio pensamento", "autonomia do estudante", "autorregulação com IA", "como evitar dependência de IA", "reflexão sobre o processo de aprendizagem".
 ---
@@ -13,7 +13,7 @@ description: >
 - Metacognição é *pensar sobre o próprio pensamento*: saber o que se sabe, detectar o que não se entende, e regular as estratégias de aprendizagem de acordo — é a competência que separa estudantes que aprendem de estudantes que apenas executam
 - Aprendizagem autorregulada (Zimmerman, 2002) tem três fases cíclicas: **Planejamento** (o que farei e como), **Execução com monitoramento** (estou entendendo? preciso ajustar?), **Avaliação** (o que aprendi? o que faria diferente?)
 - IA generativa cria um risco específico: externalizar o pensamento para a máquina de forma permanente, sem internalizar o raciocínio — o estudante que usa IA sem metacognição aprende menos do que o que não usa IA
-- IA também pode ser ferramenta *de* metacognição: externalizar o raciocínio em prompts estruturados, pedir que a IA faça perguntas socrátivas, usar IA para identificar lacunas — mas isso requer que o estudante mantenha o controle intencional do processo
+- IA também pode ser ferramenta *de* metacognição: externalizar o raciocínio em prompts estruturados, pedir que a IA faça perguntas socráticas, usar IA para identificar lacunas — mas isso requer que o estudante mantenha o controle intencional do processo
 - Metacognição é ensinável: não é um traço de personalidade fixo, mas uma habilidade desenvolvida com prática explícita, modelos e feedback
 
 ## Quando usar
@@ -63,7 +63,7 @@ description: >
    **A solução**: metacognição como condição de uso de IA.
 
    Estratégias práticas:
-   - **Antes de promtar**: o estudante escreve em 3 linhas o que já sabe sobre o problema e onde está travado — só então usa a IA
+   - **Antes de promptar**: o estudante escreve em 3 linhas o que já sabe sobre o problema e onde está travado — só então usa a IA
    - **Após o output da IA**: o estudante responde: "O que nessa resposta eu já sabia? O que aprendi? O que ainda não entendo?" — exige ativa integração
    - **Prompt socrático reverso**: em vez de pedir à IA a resposta, pedir que ela faça perguntas que ajudem a pensar: "Não me dê a resposta. Faça 3 perguntas que me ajudem a resolver este problema."
    - **Log de aprendizagem com IA**: registrar cada interação com IA + o que o estudante fez com o output (aceitou, questionou, descartou, adaptou) — evidência de autoria metacognitiva

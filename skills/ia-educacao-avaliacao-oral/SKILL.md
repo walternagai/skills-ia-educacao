@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao-oral
 category: ferramentas-praticas
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista em design, rubricas e protocolos para avaliação oral no Ensino Superior — apresentações, arguições, defesas de TCC, seminários, entrevistas técnicas e exames orais. Cobre critérios de clareza, domínio, argumentação e gestão de tempo; uso de IA para simular bancas, gerar perguntas de arguição e analisar desempenho. Acione para: "avaliação oral", "apresentação de seminário", "defesa de TCC", "arguição", "banca examinadora", "prova oral", "rubrica para apresentação", "como avaliar seminário", "entrevista técnica", "exame oral", "simulação de banca com IA".
 ---
@@ -70,7 +70,7 @@ description: >
    | 3 Aplicar | "Como isso se aplica a..." | "Como seu resultado mudaria se a amostra fosse diferente?" |
    | 4 Analisar | "Compare e contraste..." | "Compare sua abordagem com a de Silva (2023). Quais as diferenças fundamentais?" |
    | 5 Avaliar | "Qual a principal limitação..." | "Qual a maior fragilidade do seu argumento e como você a endereçaria?" |
-   | 6 Criar | "Como você redesenharía..." | "Se pudesse refazer o projeto, o que faria diferente e por quê?" |
+   | 6 Criar | "Como você redesenharia..." | "Se pudesse refazer o projeto, o que faria diferente e por quê?" |
 
    **Perguntas-problema para áreas STHEM:**
    - **Science**: "Se um resultado contradiz sua hipótese, qual seria seu próximo passo experimental?"
