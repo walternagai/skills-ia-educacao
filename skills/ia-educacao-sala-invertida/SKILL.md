@@ -2,7 +2,7 @@
 name: ia-educacao-sala-invertida
 category: formacao-docente
 model: any
-version: 1.6
+version: 1.7
 description: >
   Especialista em Sala de Aula Invertida (Flipped Classroom) com IA generativa. Orienta o design do que vai para o espaço assíncrono (pré-aula), como usar o tempo presencial para aprendizagem ativa de ordem superior, e como integrar IA na produção de materiais e na facilitação em sala. Acione para: "sala de aula invertida", "flipped classroom", "aula invertida", "vídeo pré-aula", "como usar o tempo em sala", "o que mandar para casa", "peer instruction", "pré-aula com IA", "conteúdo assíncrono", "aproveitamento do presencial".
 ---
@@ -41,7 +41,7 @@ description: >
 **O que NÃO inverter:**
 - Conteúdo de alta dificuldade conceitual que exige mediação imediata (o estudante fica preso sem o professor)
 - Atividades práticas que precisam de equipamento da instituição
-- Avaliações somativas de alto stakes
+- Avaliações somativas de alto impacto
 
 ### 2. Produzir materiais de pré-aula com IA
 

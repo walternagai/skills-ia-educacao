@@ -2,7 +2,7 @@
 name: ia-educacao-simulacao
 category: formacao-docente
 model: any
-version: 1.4
+version: 1.5
 description: >
   Especialista em simulações educacionais e role-playing com IA generativa no Ensino Superior. Orienta o design de simulações de cenários profissionais complexos (clínicos, jurídicos, de engenharia, diplomáticos, empresariais), o uso de IA como personagem ou interlocutor, e o debriefing estruturado que transforma a experiência em aprendizagem. Acione para: "simulação educacional", "role-playing com IA", "jogo de papéis", "simulação clínica", "simulação jurídica", "negociação simulada", "IA como personagem", "debriefing", "cenário simulado", "simulação de caso profissional".
 ---
@@ -128,7 +128,7 @@ O debriefing transforma experiência em aprendizagem. Modelo em 3 fases (Rudolph
 
 **Cenário 1 — Medicina (Ensino Superior, AIAS 3)**
 Persona: paciente de 67 anos, diabético, resistente ao tratamento prescrito, desconfiado da medicina.
-Objetivo: praticar comunicação em saúde e motivational interviewing.
+Objetivo: praticar comunicação em saúde e entrevista motivacional.
 Debriefing: "Em que momento o paciente ficou mais resistente? O que você fez antes disso que pode ter contribuído?"
 
 **Cenário 2 — Engenharia / Gestão de Projetos (Ensino Superior, AIAS 4)**

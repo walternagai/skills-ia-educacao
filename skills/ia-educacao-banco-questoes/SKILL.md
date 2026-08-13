@@ -2,7 +2,7 @@
 name: ia-educacao-banco-questoes
 category: ferramentas-praticas
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista em design e gestão de bancos de questões e blueprints de prova para o Ensino Superior — taxonomia de itens, tabela de especificações, parametrização por nível de Bloom, análise psicométrica básica, curadoria com IA e montagem de provas balanceadas. Acione para: "banco de questões", "blueprint de prova", "tabela de especificações", "montagem de prova", "banco de itens", "taxonomia de itens", "prova balanceada", "especificação de prova", "matriz de prova", "banco de questões com IA", "curadoria de itens".
 ---
@@ -100,7 +100,7 @@ description: >
    |---------|---------|------|
    | **p (dificuldade)** | acertos / total | p < 0,2: muito difícil — revisar; p > 0,9: muito fácil — revisar ou mover para nível Bloom inferior |
    | **D (discriminação)** | (acertos no terço superior - acertos no terço inferior) / n | D < 0,1: item não discrimina — revisar ou remover; D < 0: item problemático — investigar |
-   | **Eficácia de distratores** | % de escolha por distrator | Distrator com < 5%: substituir; distrator com > gabarito: misconception forte — revisar ensino |
+   | **Eficácia de distratores** | % de escolha por distrator | Distrator com < 5%: substituir; distrator com mais escolhas que o gabarito: misconception forte — revisar ensino |
    | **Confiabilidade (alfa)** | Consistência interna da prova | α < 0,7: prova com baixa consistência — revisar itens problemáticos |
 
 6. **Integrar IA na gestão do banco**

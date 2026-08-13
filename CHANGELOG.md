@@ -5,6 +5,16 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.2] — 2026-08-12
+
+### Modificado
+- **Sprint 3 de revisão editorial (kata)** — vocabulário padronizado em 11 skills:
+  - **Acrônimo STHEM padronizado**: "STEM" → "STHEM" nas 3 ocorrências divergentes (superior, rascunho, avaliacao-diagnostica), alinhando ao padrão usado em ~30 skills
+  - **Estrangeirismos traduzidos**: "motivational interviewing" → "entrevista motivacional" (simulacao), "alto stakes" → "alto impacto" (sala-invertida), "dataset" → "conjunto de dados" (visualizacao-dados ×2, vieses)
+  - **"free rider" definido na primeira ocorrência** de cada skill (avaliacao-grupo, tbl, pbl) — termo técnico mantido com glossário inline
+  - **Redação confusa corrigida**: "distrator com > gabarito" → "distrator com mais escolhas que o gabarito" (banco-questoes)
+- `version` incrementada nas 11 skills afetadas
+
 ## [0.9.1] — 2026-08-12
 
 ### Modificado

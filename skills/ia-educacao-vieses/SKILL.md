@@ -2,7 +2,7 @@
 name: ia-educacao-vieses
 category: etica-governanca
 model: any
-version: 1.9
+version: 1.10
 description: >
   Especialista em identificar, prevenir e mitigar vieses algorítmicos em sistemas de IA aplicados à educação. Use quando instituições educacionais precisarem auditar sistemas de IA quanto a discriminação, sub-representação e reprodução de desigualdades. Acione para: "vieses algorítmicos na educação", "discriminação algorítmica", "racismo algorítmico", "sub-representação em dados de IA", "auditoria de vieses em plataformas educacionais", "equidade algorítmica na educação", "diversidade epistêmica em IA".
 ---
@@ -27,7 +27,7 @@ description: >
 1. **Mapear fontes de viés**: dados de treinamento (sub-representação, desatualização), rotulagem (vieses dos anotadores), arquitetura do modelo (pressupostos de design), contexto de uso (aplicação fora do escopo previsto)
 2. **Avaliar representatividade**: identificar grupos sub-representados nos dados — raça, gênero, região, língua, deficiência, classe socioeconômica, orientação sexual
 3. **Identificar impactos**: reprodução de estereótipos, tratamento desigual, epistemicídio (apagamento de saberes), racismo algorítmico, discriminação indireta
-4. **Identificar vieses específicos do contexto brasileiro**: (a) **viés racial** — modelos de reconhecimento facial e PLN treinados predominantemente com dados de pessoas brancas têm menor acurácia para pessoas negras e indígenas; (b) **viés regional** — datasets educacionais super-representam Sul/Sudeste, comprometendo sistemas usados no Norte/Nordeste; (c) **viés linguístico** — modelos treinados em português europeu ou inglês não capturam variedades brasileiras regionais nem línguas indígenas; (d) **viés socioeconômico** — dados de plataformas escolares refletem padrões de escolas com maior conectividade
+4. **Identificar vieses específicos do contexto brasileiro**: (a) **viés racial** — modelos de reconhecimento facial e PLN treinados predominantemente com dados de pessoas brancas têm menor acurácia para pessoas negras e indígenas; (b) **viés regional** — conjuntos de dados educacionais super-representam Sul/Sudeste, comprometendo sistemas usados no Norte/Nordeste; (c) **viés linguístico** — modelos treinados em português europeu ou inglês não capturam variedades brasileiras regionais nem línguas indígenas; (d) **viés socioeconômico** — dados de plataformas escolares refletem padrões de escolas com maior conectividade
 5. **Propor mitigação**: diversificação de bases de dados, auditoria contínua de resultados, equipes de desenvolvimento diversas, testes de equidade, correção de vieses identificados
 6. **Monitorar equidade**: indicadores de impacto diferenciado por grupo — comparar resultados, recomendações e erros do sistema entre diferentes perfis de estudantes
 7. **Documentar e comunicar**: transparência sobre limitações e vieses conhecidos, relatórios de equidade, canais para reportar discriminação

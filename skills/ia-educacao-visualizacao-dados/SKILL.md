@@ -2,7 +2,7 @@
 name: ia-educacao-visualizacao-dados
 category: ferramentas-praticas
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista em visualização de dados e storytelling com dados para contextos educacionais STHEM (Science, Technology, Humanities, Engineering, Math), com IA como ferramenta de geração e revisão de visualizações. Orienta escolha do gráfico adequado, detecção de visualizações enganosas, comunicação de incerteza e narrativa com dados. Acione para: "visualização de dados", "gráfico para apresentação", "escolher o tipo de gráfico", "storytelling com dados", "dashboard educacional", "gráfico com IA", "dados enganosos", "comunicar resultados", "análise exploratória visual".
 ---
@@ -59,7 +59,7 @@ Toda visualização começa com duas perguntas:
 **Prompt modelo para geração de código Python:**
 ```
 Gere código Python (matplotlib/seaborn) para visualizar os seguintes dados:
-[descrever ou colar o dataset]
+[descrever ou colar o conjunto de dados]
 
 A mensagem principal que o gráfico deve comunicar é:
 [frase da mensagem principal]
@@ -186,7 +186,7 @@ Produto esperado: infográfico de uma página com 3 gráficos, título-afirmaç�
 
 ## Limitações
 - Esta skill cobre visualização estática e narrativa; visualizações interativas (D3.js, Plotly Dash, Shiny) têm curva de aprendizado específica e precisam de contexto de desenvolvimento
-- IA gera código funcional mas não necessariamente otimizado para grandes volumes de dados — verificar desempenho antes de usar com datasets >100k linhas
+- IA gera código funcional mas não necessariamente otimizado para grandes volumes de dados — verificar desempenho antes de usar com conjuntos de dados >100k linhas
 - Mapas coropléticos requerem dados geoespaciais (shapefiles, GeoJSON) que nem sempre estão disponíveis em formato limpo — o docente precisa verificar a disponibilidade antes de solicitar esse tipo de visualização
 
 ## Dependências

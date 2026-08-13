@@ -2,7 +2,7 @@
 name: ia-educacao-tbl
 category: formacao-docente
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista em Team-Based Learning (TBL) com IA no Ensino Superior. Orienta o design do Readiness Assurance Process (iRAT/gRAT), das atividades de aplicação em equipes permanentes e da avaliação entre pares (CATME/IPAC). Amplamente adotado em Medicina, Saúde e Engenharia. Acione para: "TBL", "team-based learning", "aprendizagem baseada em equipes", "iRAT", "gRAT", "readiness assurance", "equipes permanentes", "avaliação entre pares em grupos", "CATME", "aplicação em equipes", "TBL em medicina".
 ---
@@ -129,7 +129,7 @@ TBL exige avaliação entre pares ao menos duas vezes no semestre. Os dois instr
 **Protocolo simplificado (sem CATME):**
 Cada estudante distribui 10 pontos entre os colegas (não para si mesmo) proporcional à contribuição de cada um. Justificativa escrita obrigatória para distribuição desigual. Média das avaliações recebidas multiplica a nota da atividade em grupo (ex: nota do grupo × fator individual).
 
-**Prevenção de free riders:**
+**Prevenção de free riders (membros que se beneficiam do grupo sem contribuir):**
 - Peer assessment com peso real na nota (recomendado: 20–30% da nota do módulo)
 - Discussão aberta na turma sobre o que é contribuição de qualidade — antes da primeira avaliação
 - Protocolo de resolução de conflito dentro da equipe (mediado pelo docente se necessário)

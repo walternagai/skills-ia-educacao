@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao-diagnostica
 category: ferramentas-praticas
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista em avaliação diagnóstica para o Ensino Superior — mapeamento de pré-requisitos, identificação de misconceptions, testes de nivelamento e pré-testes para metodologias ativas, com IA para personalizar o diagnóstico. Acione para: "avaliação diagnóstica", "pré-teste", "teste de nivelamento", "mapear pré-requisitos", "diagnosticar misconceptions", "survey inicial", "pré-requisitos para disciplina", "teste diagnóstico", "nivelamento de turma", "diagnóstico com IA", "pré-avaliação".
 ---
@@ -20,7 +20,7 @@ description: >
 - Primeira semana de aula: mapear o nível da turma para ajustar o plano de ensino
 - Antes de metodologias ativas: PBL (pré-requisitos para o problema), TBL (Readiness Assurance), sala invertida (preparação para o presencial)
 - Antes de módulos com alta dependência de conhecimento prévio (Cálculo antes de Física, Algoritmos antes de Estruturas de Dados)
-- Identificação de misconceptions persistentes em disciplinas STEM (força e movimento, equilíbrio químico, derivada, loops)
+- Identificação de misconceptions persistentes em disciplinas STHEM (força e movimento, equilíbrio químico, derivada, loops)
 - Nivelamento de turmas heterogêneas (ingressantes, transferências, reingressantes)
 - Diagnóstico de competências de leitura, escrita e raciocínio lógico em disciplinas de Humanities
 - Pré-teste para avaliação de ganho de aprendizagem (pré vs. pós)

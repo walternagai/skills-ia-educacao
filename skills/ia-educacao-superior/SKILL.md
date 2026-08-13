@@ -2,7 +2,7 @@
 name: ia-educacao-superior
 category: niveis-ensino
 model: any
-version: 1.9
+version: 1.10
 description: >
   Especialista em orientar a incorporação da IA na Educação Superior e Pós-Graduação, abrangendo ensino, pesquisa, extensão e gestão acadêmica. Use quando IES precisarem reorientar currículos, fortalecer comissões de ética e desenvolver competências em IA para estudantes. Acione para: "IA na Educação Superior", "IA na pós-graduação", "currículo universitário e IA", "comissão de ética em IA", "pesquisa acadêmica com IA", "competências em IA para universitários", "IES e IA".
 ---
@@ -27,7 +27,7 @@ description: >
 ## Workflow
 1. **Reorientar currículos**: competências de ordem superior não substituíveis por IA — pensamento crítico avançado, criatividade, resolução de problemas complexos, análise ética, colaboração interdisciplinar
 2. **Fortalecer comissões de ética**: governança para uso de IA em pesquisa — revisão de protocolos, avaliação de riscos, consentimento informado, transparência metodológica
-3. **Desenvolver letramento em IA** para estudantes de todas as áreas — não apenas STEM, mas também Humanidades, Artes, Ciências Sociais, Saúde
+3. **Desenvolver letramento em IA** para estudantes de todas as áreas — não apenas STHEM, mas também Artes, Ciências Sociais, Saúde
 4. **Integrar IA à pós-graduação**: ferramentas de pesquisa (análise de dados, revisão de literatura, redação), produção acadêmica, metodologia, ética na pesquisa com IA
 5. **Promover papel da IES** na formação de professores para a EB com IA — licenciaturas devem preparar para ensinar sobre IA e com IA
 6. **Estabelecer políticas institucionais** de uso ético e responsável de IA — diretrizes para estudantes, docentes e pesquisadores

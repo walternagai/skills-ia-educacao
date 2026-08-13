@@ -2,7 +2,7 @@
 name: ia-educacao-pbl
 category: formacao-docente
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista em Aprendizagem Baseada em Problemas (PBL) e Aprendizagem Baseada em Projetos (PjBL) com IA, com foco no Ensino Superior. Orienta o design de problemas mal-estruturados, o papel do tutor, a facilitação do processo em grupo e a avaliação do aprendizado individual dentro da equipe. Acione para: "PBL", "aprendizagem baseada em problemas", "aprendizagem baseada em projetos", "PjBL", "problema-gatilho", "tutor PBL", "avaliação PBL", "como criar problema para PBL", "currículo baseado em problemas", "aprendizado autodirigido", "interdisciplinaridade no ensino superior".
 ---
@@ -140,7 +140,7 @@ Produto esperado: cartaz informativo para a comunidade escolar + apresentação 
 ## Limitações
 - PBL exige formação específica do tutor — um professor que nunca foi treinado em tutoria PBL tende a usar o tempo de tutoria como mini-aula expositiva, esvaziando o método
 - Problemas bem construídos levam tempo para design — não é possível improvisar no dia; reservar pelo menos 3–4 horas por problema-gatilho novo
-- Avaliação de contribuição individual em grupo é trabalhosa — sem protocolo estruturado, tende a notas coletivas que mascaram free riders
+- Avaliação de contribuição individual em grupo é trabalhosa — sem protocolo estruturado, tende a notas coletivas que mascaram free riders (membros que se beneficiam do grupo sem contribuir)
 - Currículo PBL integral exige redesign institucional; implementações parciais (uma disciplina isolada) têm menos impacto mas são viáveis como ponto de entrada
 
 ## Dependências
