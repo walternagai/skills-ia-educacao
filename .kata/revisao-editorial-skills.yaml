@@ -1,0 +1,90 @@
+task: revisao-editorial-skills
+status: approved
+domain: docs
+done: "cada skill de skills/ (62) foi lida e recebeu lista priorizada de melhorias de clareza, precisão e concisão, entregue em relatório outcome-first; nenhum SKILL.md editado"
+base_commit: "465d42fb33cc36d676e210d9f4b37d0344af0bde"
+fit:
+  trivial: false
+  route: research
+  reason: "Revisão editorial de conteúdo de 62 skills (clareza, precisão, concisão). Não é tarefa de edição; entrega lista de melhorias. Rota research: análise documental ampla, sem mudança de código."
+  answered: true
+  skipped: false
+preflight:
+  skills_missing: []
+  nota: "Módulo Python kata NÃO instalado (python3 -m kata: No module named kata). Instalação ausente por completo — não é instalação parcial; ciclo executado com contrato mínimo e skills de fase carregadas via tool skill. Fases VERIFY/JUDGE degradadas: lógica do CLI indisponível, verificações executadas manualmente."
+think:
+  problem: "Revisar editorialmente as 62 skills do acervo (skills/*/SKILL.md) quanto a clareza, precisão e concisão, e entregar lista priorizada de melhorias — sem editar nenhum arquivo."
+  assumptions:
+    - "Critério de revisão: clareza (ambiguidade, jargão sem definição), precisão (afirmações vagas, números sem fonte, AIAS/Bloom incorretos, ABNT mal formada, dependências quebradas), concisão (redundâncias, descrições longas) e conformidade com o padrão do repo (8 seções canônicas, model: any, version X.Y, slug correto, name == diretório, dependências internas)"
+    - "Formato de entrega: relatório outcome-first em PT-BR, por skill, com prioridade alta/média/baixa e localização aproximada"
+    - "Dependências válidas = diretório existe em skills/; slug canônico = campo name do frontmatter da skill referenciada"
+    - "62 skills lidas integralmente; leitura completa de todas é viável dentro da sessão"
+    - "Referências ABNT avaliadas estruturalmente (autor, título, local, editora, ano presentes) — não contra a fonte original"
+    - "A escala AIAS de 5 níveis usa os nomes canônicos da tabela do CLAUDE.md"
+  alternatives:
+    - "alt A: revisão estrutural via ./audit.sh — descartado: verifica integridade, não clareza de conteúdo; o prompt pede revisão editorial"
+    - "alt B: amostragem de 10-15 skills — descartado: o pedido é 'cada uma' das skills"
+    - "alt C: revisão completa das 62 skills com leitura integral — escolhido"
+  unknowns: |
+    RESOLVIDO via investigação:
+    1. Padrão canônico de seções/frontmatter → CLAUDE.md e CONTRIBUTING.md (8 seções: Princípios, Quando usar, Workflow, Formato de Saída, Exemplos, Limitações, Dependências, Referências)
+    2. Nomes canônicos AIAS → tabela no CLAUDE.md (5 níveis)
+    3. Contagem real → 62 skills (ls skills | wc -l)
+    4. Ferramentas de verificação disponíveis → módulo kata NÃO instalado (python3 -m kata falha); ./audit.sh disponível como apoio
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: "Tarefa de análise/revisão documental — não há código novo. SIMPLIFY não se aplica: o entregável é uma lista de melhorias, não diff. Aplicado o espírito da fase na revisão de concisão das próprias skills (descrições longas, redundâncias)."
+  answered: true
+  skipped: true
+intent:
+  code_does: "não se aplica — nenhum código alterado"
+  check_expects: "não se aplica — sem testes no repositório (acervo documental)"
+  spec_says: "spec = CLAUDE.md/CONTRIBUTING.md (padrão canônico das skills); spec = pedido do usuário (revisão sem edição)"
+  all_agree: true
+  conflict_resolution: ""
+  answered: true
+  skipped: true
+surgical:
+  files: []
+  removed_imports_clean: true
+  notes: "Nenhum arquivo alterado (git status: apenas apresentacao-skills.pdf deletado, fora do escopo desta tarefa)."
+  answered: true
+  skipped: true
+verify:
+  ruff_clean: true
+  tests_pass: true
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true
+  attempts: 1
+  hand_back: false
+  notas: "Repositório é acervo documental — não há ruff/pytest/coverage aplicáveis (AGENTS.md confirma). Verificação real = leitura integral das 62 skills + greps transversais (dependências quebradas, typos, duplicatas, placeholders) + confirmação de que nenhum SKILL.md foi editado. Critério de sucesso (done) satisfeito: 62/62 skills revisadas com melhorias listadas."
+twins:
+  pattern: "não se aplica"
+  result: "Nenhum defeito de código corrigido — tarefa de revisão sem edição; padrões transversais documentados no relatório como candidatos a correção futura (ex.: numeração de passos duplicada em 8 skills, placeholder de referência em avaliacao-competencia)."
+  searched: true
+  defect_fixed: false
+  matches_count: 0
+  files_count: 0
+  fix_applied: false
+artifact:
+  intent_owed: false
+  intent_present: true
+  auth_owed: false
+  auth_present: true
+  pending_owed: true
+  pending_present: true
+  twins_owed: false
+  twins_present: true
+pending:
+  action: "Aplicar as melhorias listadas no relatório (edição dos SKILL.md) — aguarda autorização explícita do usuário; nenhuma edição foi feita nesta tarefa"
+  documented: true
+auth:
+  action_taken: false
+  authorized: false
+  action: "nenhuma ação irreversível tomada"
+  quote: ""

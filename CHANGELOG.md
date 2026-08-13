@@ -5,6 +5,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.5] — 2026-08-12
+
+### Modificado
+- **`apresentacao-skills.md` revisada com o estado atual do acervo**:
+  - **"Como usar" atualizado** — `npx skills add` (específico do Claude Code) substituído pelo `install-skills.sh`/`uninstall-skills.sh` multi-CLI, com as flags principais (`--all`, destinos explícitos, `--dry-run`)
+  - **Seções canônicas da skill** — adicionada "Quando usar" à lista de seções do slide Visão Geral (8 seções, conforme `CLAUDE.md`)
+  - **Tabela da Escala AIAS** — adicionada coluna "Produto final", alinhando à tabela canônica de `CLAUDE.md`
+  - Contagens verificadas e mantidas: 62 skills, categorias 5+18+8+5+26, hubs do grafo e nomes AIAS inalterados
+
 ## [0.9.4] — 2026-08-12
 
 ### Corrigido

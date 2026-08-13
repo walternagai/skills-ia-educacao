@@ -48,7 +48,7 @@ Repositório de skills para CLIs de IA (`skills/*/SKILL.md`) para apoiar educado
 | `inclusao-equidade` | 5 |
 | `ferramentas-praticas` | 26 |
 
-Cada skill: frontmatter YAML + Princípios, Workflow, Formato de Saída, Exemplos, Limitações, Dependências, Referências (ABNT).
+Cada skill: frontmatter YAML + Princípios, Quando usar, Workflow, Formato de Saída, Exemplos, Limitações, Dependências, Referências (ABNT).
 
 ---
 
@@ -238,13 +238,13 @@ Avaliação, produção de conteúdo e operação
 
 5 níveis não-hierárquicos e cumulativos de uso de IA em avaliações (Perkins, Furze, Roe & MacVaugh, 2024–2025):
 
-| Nível | Nome | IA permitida |
-|:-:|:--|:--|
-| 1 | Sem IA | Nenhuma |
-| 2 | Planejamento Assistido por IA | Ideação e estruturação |
-| 3 | Colaboração com IA | Elaboração e refinamento |
-| 4 | IA Integral | Uso estratégico e abrangente |
-| 5 | Exploração de IA | Co-criação e inovação |
+| Nível | Nome | IA permitida | Produto final |
+|:-:|:--|:--|:--|
+| 1 | Sem IA | Nenhuma | Totalmente do estudante |
+| 2 | Planejamento Assistido por IA | Ideação e estruturação | Do estudante; IA apenas no processo |
+| 3 | Colaboração com IA | Elaboração e refinamento | Do estudante com auxílio de IA |
+| 4 | IA Integral | Uso estratégico e abrangente | Dirigido pelo estudante com IA |
+| 5 | Exploração de IA | Co-criação e inovação | Co-autoria estudante + IA |
 
 Detalhada pela skill **aias-consultant** e usada como referência transversal em `rubrica`, `avaliacao` e demais skills de avaliação.
 
@@ -253,17 +253,21 @@ Detalhada pela skill **aias-consultant** e usada como referência transversal em
 # Como usar
 
 ```bash
-# Instalar uma skill específica
-npx skills add ./skills/ia-educacao-avaliacao
+# Instalar em todos os CLIs detectados (Claude Code, OpenCode, Codex, Antigravity, Gemini CLI)
+./install-skills.sh
 
-# Instalar todas as skills
-for d in skills/*/; do npx skills add "./$d"; done
+# Opções
+./install-skills.sh --claude --opencode   # destinos explícitos
+./install-skills.sh --all                 # todos os destinos, mesmo sem CLI instalado
+./install-skills.sh --dry-run             # pré-visualizar sem copiar
+./uninstall-skills.sh --all               # remover de todos os destinos
 ```
 
-Cada skill é invocada com `/ia-educacao-<sufixo>`
-Exceção: `/aias-consultant` (sem prefixo)
+Slug de cada skill: `ia-educacao-<sufixo>`
+Exceção: `aias-consultant` (sem prefixo)
 
-Listar skills instaladas: `/skills`
+Cada CLI descobre as skills instaladas com seu próprio comando de listagem
+(ex: `/skills` no Claude Code, system prompt no OpenCode)
 
 ---
 
