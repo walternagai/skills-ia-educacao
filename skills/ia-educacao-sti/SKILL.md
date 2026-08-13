@@ -2,7 +2,7 @@
 name: ia-educacao-sti
 category: ferramentas-praticas
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em orientar educadores no uso pedagógico de Sistemas Tutoriais Inteligentes (STIs) em sala de aula. Use quando professores precisarem compreender como STIs funcionam, como integrá-los à prática docente e como interpretar dados gerados para planejar intervenções. Acione para: "sistemas tutoriais inteligentes", "STIs na educação", "tutores inteligentes com IA", "plataformas adaptativas de aprendizagem", "dados de STIs para intervenção pedagógica", "feedback em tempo real com IA".
 ---
@@ -28,9 +28,8 @@ description: >
 3. **Orientar integração**: STI como complemento à instrução direta e à interação humana — não substitui a explicação do professor, a discussão em grupo ou o acompanhamento individualizado
 4. **Ensinar a ler dados gerados pelo STI**: interpretar relatórios de progresso, identificar padrões de erro sistemático (ex.: estudante travado num mesmo nó de conhecimento por mais de 3 sessões), reconhecer áreas de atenção, diferenciar dificuldade pontual de lacuna estrutural; usar o dashboard como ponto de partida para intervenção presencial — não como substituto do conhecimento que o professor tem sobre cada estudante
 5. **Alinhar uso do STI à Escala AIAS**: quando o STI gera evidências que compõem formalmente a avaliação (notas, relatórios de domínio), o docente deve declarar o Nível 4 (IA Integral) no enunciado da atividade — a plataforma adaptativa é a ferramenta de IA utilizada; quando o STI é apenas suporte ao estudo e a avaliação final ocorre sem IA, declarar Nível 1 na avaliação e esclarecer que o uso do STI durante os estudos não viola o nível da avaliação
-6. **Exemplo com plataforma nacional**: Khan Academy em português (disponível gratuitamente; parceria MEC para escolas públicas) gera relatórios individuais por padrão de conhecimento, mostrando quais exercícios o estudante acertou, onde travou e quanto tempo levou; o professor usa esses dados para planejar reforço direcionado na aula seguinte
-7. **Discutir limitações**: domínio restrito de conhecimento, vieses nos dados de treinamento, necessidade de curadoria docente, impossibilidade de avaliar aspectos socioemocionais
-8. **Alertar sobre equidade**: acesso desigual a dispositivos e conectividade pode ampliar disparidades se não houver políticas compensatórias
+6. **Discutir limitações**: domínio restrito de conhecimento, vieses nos dados de treinamento, necessidade de curadoria docente, impossibilidade de avaliar aspectos socioemocionais
+7. **Alertar sobre equidade**: acesso desigual a dispositivos e conectividade pode ampliar disparidades se não houver políticas compensatórias
 
 ## Formato de Saída
 - Guia de interpretação de relatórios de STI (com exemplos reais)
@@ -42,6 +41,7 @@ description: >
 ## Exemplos
 - **Cenário 1**: STI de matemática aponta que 60% da turma erra questões sobre proporcionalidade. Professor planeja aula específica sobre o tema, usando os exemplos de erro do relatório para discussão coletiva.
 - **Cenário 2**: STI identifica estudante com desempenho consistentemente baixo em interpretação de texto. Professor investiga causas (dificuldade de leitura, desengajamento, problema socioemocional) antes de intervir.
+- **Cenário 3 (plataforma nacional)**: Khan Academy em português (disponível gratuitamente; parceria MEC para escolas públicas) gera relatórios individuais por padrão de conhecimento, mostrando quais exercícios o estudante acertou, onde travou e quanto tempo levou; o professor usa esses dados para planejar reforço direcionado na aula seguinte.
 
 ## Limitações
 - STIs atuais têm domínio restrito (funcionam bem em áreas estruturadas como matemática, menos em habilidades complexas)

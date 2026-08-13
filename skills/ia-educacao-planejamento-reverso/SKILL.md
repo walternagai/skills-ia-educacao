@@ -2,7 +2,7 @@
 name: ia-educacao-planejamento-reverso
 category: formacao-docente
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista no framework Planejamento Reverso (Backward Design / UbD — Wiggins & McTighe) aplicado ao design de disciplinas e cursos com IA. Guia docentes pelos três estágios: resultados desejados, evidências de aprendizagem com nível AIAS definido e plano de experiências alinhado a WHERETO. Acione para: "design de disciplina", "planejar um curso do zero", "planejamento reverso", "backward design", "UbD", "alinhamento construtivo", "compreensões duradouras", "questões essenciais", "tarefas de desempenho", "reformular ementa".
 ---
@@ -113,7 +113,7 @@ Este estágio é projetado **antes** de planejar qualquer aula. A avaliação de
    | **H** — Engajar e manter | Conectar o conteúdo a problemas reais e interesses dos estudantes | Caso provocador, dado surpreendente, dilema ético, questão essencial sem resposta fácil |
    | **E** — Equipar | Fornecer conhecimento, habilidade e ferramentas para a tarefa de desempenho | Aulas, leituras, laboratórios, tutoriais, modelos a imitar |
    | **R** — Rever e refletir | Criar oportunidades de feedback e revisão antes da entrega final | Rascunhos comentados, revisão por pares, autoavaliação com rubrica |
-   | **E** — Avaliar | Avaliar o próprio aprendizado e o produto | Autoavaliação estruturada, portfólio reflexivo, arguição oral |
+   | **E** — Avaliar | Avaliar o próprio aprendizado e o produto (segundo E do acrônimo — "Equipar" e "Avaliar" são distintos) | Autoavaliação estruturada, portfólio reflexivo, arguição oral |
    | **T** — Personalizar | Adaptar para diferentes perfis e ritmos de aprendizagem | DUA: múltiplos meios, opções de entrega, scaffolding diferenciado |
    | **O** — Organizar | Sequenciar para maximizar a aprendizagem | Do concreto ao abstrato; do simples ao complexo; do individual ao colaborativo |
 

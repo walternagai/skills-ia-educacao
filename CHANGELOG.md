@@ -5,6 +5,23 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.4] — 2026-08-12
+
+### Corrigido
+- **Sprint 5 de revisão editorial (kata)** — consistência entre skills irmãs em 6 skills:
+  - **Fator de ajuste padronizado em 0,5–1,25** (avaliacao-projeto alinhado a avaliacao-grupo, skill especialista em peer assessment; teto justificado "para evitar inflação")
+  - **Nível Bloom corrigido para 1–6 (Lembrar a Criar)** em banco-questoes — a taxonomia revisada tem 6 níveis; a tabela de metadados e o cenário 2 omitiam "Criar"
+  - **Duplicação TCC/AIAS removida** em superior — "Quando usar" agora referencia o Workflow (passo 7) em vez de repetir o conteúdo
+  - **WHERETO esclarecido** em planejamento-reverso — nota explicando que o acrônimo tem dois E's distintos ("Equipar" e "Avaliar")
+  - **Limiar de palavras esclarecido** em rascunho — nota explicando por que a síntese de leitura usa ≤10 palavras e os passos de raciocínio ≤5
+  - **Exemplo Khan Academy movido do Workflow para Exemplos** em sti (passo 6 era específico demais para uma skill genérica)
+- `version` incrementada nas 6 skills afetadas
+
+### Verificado sem alteração
+- Cenários de avaliacao-competencia usam níveis de proficiência (1–5) e AIAS como escalas distintas — sem conflito
+- Descrição AIAS em avaliacao, integridade-academica e transparencia é contextual, não duplicada literalmente
+- Bloom×AIAS em bloom (linha 17) já explica a independência das escalas
+
 ## [0.9.3] — 2026-08-12
 
 ### Corrigido

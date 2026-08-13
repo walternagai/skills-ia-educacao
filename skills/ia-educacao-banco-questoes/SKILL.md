@@ -2,7 +2,7 @@
 name: ia-educacao-banco-questoes
 category: ferramentas-praticas
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em design e gestão de bancos de questões e blueprints de prova para o Ensino Superior — taxonomia de itens, tabela de especificações, parametrização por nível de Bloom, análise psicométrica básica, curadoria com IA e montagem de provas balanceadas. Acione para: "banco de questões", "blueprint de prova", "tabela de especificações", "montagem de prova", "banco de itens", "taxonomia de itens", "prova balanceada", "especificação de prova", "matriz de prova", "banco de questões com IA", "curadoria de itens".
 ---
@@ -35,7 +35,7 @@ description: >
    |-------|-----------|---------|
    | **ID** | Identificador único | CALC-2026-001 |
    | **Tópico** | Assunto específico | Derivadas: regra da cadeia |
-   | **Nível Bloom** | 1–5 (Lembrar a Avaliar) | 3 (Aplicar) |
+   | **Nível Bloom** | 1–6 (Lembrar a Criar) | 3 (Aplicar) |
    | **Tipo de conhecimento** | Factual, Conceitual, Procedimental | Procedimental |
    | **Dificuldade estimada** | Fácil, Médio, Difícil | Médio |
    | **Dificuldade observada (p)** | Índice pós-prova (0–1) | 0,65 |
@@ -161,7 +161,7 @@ description: >
 
 **Cenário 1 — Blueprint para prova de Cálculo I (Engineering, AIAS 1)**
 Disciplina com 3 turmas. Blueprint: 10 questões, 100 min.
-Banco: 45 itens classificados por tópico (limites, derivadas, aplicações) e nível Bloom (1–5).
+Banco: 45 itens classificados por tópico (limites, derivadas, aplicações) e nível Bloom (1–6).
 Montagem: versão A e B a partir do mesmo blueprint, itens diferentes.
 Análise pós-prova: 3 itens com D < 0,1 — revisados e substituídos no banco.
 

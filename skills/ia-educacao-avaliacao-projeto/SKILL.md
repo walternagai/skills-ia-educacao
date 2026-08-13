@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao-projeto
 category: ferramentas-praticas
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista em avaliação de projetos no Ensino Superior — rubricas e processos para avaliar projetos interdisciplinares, PBL/PjBL, iniciação científica, extensão e projetos integradores, incluindo marcos, entregas parciais, apresentação final, trabalho em equipe e uso de IA. Acione para: "avaliação de projeto", "projeto integrador", "PBL avaliação", "PjBL avaliação", "rubrica de projeto", "avaliação de projeto interdisciplinar", "projeto final", "TCC projeto", "iniciação científica", "extensão avaliação", "marcos de projeto", "entrega parcial de projeto".
 ---
@@ -57,12 +57,12 @@ description: >
    | **Peer assessment calibrado** | Cada membro avalia contribuição dos colegas em critérios definidos | Projetos com 3–6 membros |
    | **Diário de bordo individual** | Cada estudante registra suas contribuições semanais | Projetos longos (semestre) |
    | **Entrevista individual** | Docente entrevista cada membro sobre o processo | Projetos de alto impacto (TCC, IC) |
-   | **Fator de ajuste** | Nota da equipe × fator individual (0,5–1,5) calculado a partir do peer assessment | Qualquer projeto em equipe |
+   | **Fator de ajuste** | Nota da equipe × fator individual (0,5–1,25) calculado a partir do peer assessment | Qualquer projeto em equipe |
 
    **Fórmula de fator de ajuste:**
    - Média das avaliações dos pares para o estudante = A
    - Média das avaliações dos pares para a equipe = E
-   - Fator = A / E (limitado a 0,5–1,5)
+   - Fator = A / E (limitado a 0,5–1,25; teto para evitar inflação)
    - Nota individual = Nota da equipe × fator
 
 4. **Integrar IA na avaliação de projetos**
