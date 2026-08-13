@@ -2,7 +2,7 @@
 name: ia-educacao-planejamento-reverso
 category: formacao-docente
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista no framework Planejamento Reverso (Backward Design / UbD — Wiggins & McTighe) aplicado ao design de disciplinas e cursos com IA. Guia docentes pelos três estágios: resultados desejados, evidências de aprendizagem com nível AIAS definido e plano de experiências alinhado a WHERETO. Acione para: "design de disciplina", "planejar um curso do zero", "planejamento reverso", "backward design", "UbD", "alinhamento construtivo", "compreensões duradouras", "questões essenciais", "tarefas de desempenho", "reformular ementa".
 ---
@@ -174,7 +174,7 @@ Docente tem ementa antiga centrada em tópicos; quer reformular com Planejamento
 ## Referências
 - WIGGINS, G.; McTIGHE, J. Understanding by Design. 2. ed. Alexandria, VA: ASCD, 2005.
 - WIGGINS, G.; McTIGHE, J. The Understanding by Design Guide to Creating High-Quality Units. Alexandria, VA: ASCD, 2011.
-- BIGGS, J.; TANG, C. Teaching for Quality Learning at University. 4. ed. Berkshire: McGraw-Hill, 2011. [Alinhamento construtivo]
+- BIGGS, J.; TANG, C. Teaching for Quality Learning at University. 4. ed. Berkshire: McGraw-Hill, 2011.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seções 4.1 (Objetivos de Aprendizagem) e 4.2 (Avaliação)
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
 - FINK, L. D. Creating Significant Learning Experiences: An Integrated Approach to Designing College Courses. 2. ed. San Francisco: Jossey-Bass, 2013.

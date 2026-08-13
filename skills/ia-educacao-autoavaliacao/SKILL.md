@@ -2,7 +2,7 @@
 name: ia-educacao-autoavaliacao
 category: ferramentas-praticas
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em design de instrumentos de autoavaliação para o Ensino Superior — escalas, rubricas, diários reflexivos, calibração entre autoavaliação e avaliação docente e desenvolvimento do juízo avaliativo, com IA como apoio sem substituir a reflexão autêntica. Acione para: "autoavaliação", "como o aluno se autoavalia", "rubrica de autoavaliação", "escala de autoavaliação", "juízo avaliativo", "calibração autoavaliação", "diário reflexivo", "autoavaliação com IA", "autoavaliação em grupo".
 ---
@@ -184,7 +184,7 @@ Disciplina de Teoria Literária. Ao longo do semestre, estudante:
 - `aias-consultant` — definição do nível AIAS para autoavaliação com IA
 
 ## Referências
-- ANDRADE, H. L. A Critical Review of Research on Student Self-Assessment. Frontiers in Education, v. 4, 2019.
+- ANDRADE, H. L. A Critical Review of Research on Student Self-Assessment. Frontiers in Education, v. 4, p. 87, 2019. Disponível em: https://doi.org/10.3389/feduc.2019.00087. Acesso em: 12 ago. 2026.
 - PANADERO, E.; BROWN, G. T. L.; STRIJBOS, J. W. The Future of Student Self-Assessment: A Review of Known Unknowns and Potential Directions. Educational Psychology Review, v. 28, p. 803–828, 2016.
 - SADLER, D. R. Formative Assessment and the Design of Instructional Systems. Instructional Science, v. 18, n. 2, p. 119–144, 1989.
 - BIGGS, J.; TANG, C. Teaching for Quality Learning at University. 4. ed. Berkshire: McGraw-Hill, 2011.

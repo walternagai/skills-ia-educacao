@@ -2,7 +2,7 @@
 name: ia-educacao-vieses
 category: etica-governanca
 model: any
-version: 1.10
+version: 1.11
 description: >
   Especialista em identificar, prevenir e mitigar vieses algorítmicos em sistemas de IA aplicados à educação. Use quando instituições educacionais precisarem auditar sistemas de IA quanto a discriminação, sub-representação e reprodução de desigualdades. Acione para: "vieses algorítmicos na educação", "discriminação algorítmica", "racismo algorítmico", "sub-representação em dados de IA", "auditoria de vieses em plataformas educacionais", "equidade algorítmica na educação", "diversidade epistêmica em IA".
 ---
@@ -65,5 +65,4 @@ description: >
 - UNESCO. AI and education: guidance for policymakers. Paris: UNESCO, 2021.
 - NEES. Inteligência Artificial Generativa na Educação. Maceió: NEES, 2024.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
-
 - BUOLAMWINI, J.; GEBRU, T. Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. In: Proceedings of FAT* Conference, 2018.

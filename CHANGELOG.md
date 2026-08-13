@@ -5,6 +5,19 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.3] — 2026-08-12
+
+### Corrigido
+- **Sprint 4 de revisão editorial (kata)** — referências ABNT e precisão normativa em 18 skills:
+  - **ANDRADE (2019) completada** com volume, página e DOI verificados na fonte (Frontiers in Education, v. 4, p. 87, doi 10.3389/feduc.2019.00087) em autoavaliacao, portfolio, rubrica
+  - **Referências com campos ausentes completadas**: OEdvig (local + URL verificada em educacaovigiada.org.br) em contratacao e ecossistema-inovacao; CUGLER (editora InternetLab); TAYLOR (local Paris: UNESCO); SEDUC-PI ×2 (local + URL); MARITACA (local); HERREID e ESPEY (DOIs/URLs)
+  - **Duplicação UNESCO unificada** em ensino-medio: "AI competency framework for students (2024a)" e "Marco referencial (2024)" — mesmo documento, uma única entrada com nota de tradução
+  - **Formatação ABNT**: notas entre colchetes removidas (LYMAN, BIGGS); linha em branco no meio de listas removida (governanca-dados, seguranca-digital, vieses); STAA com iniciais dos organizadores completas
+- `version` incrementada nas 18 skills afetadas
+
+### Caveats
+- ISSNs de RBIE/SBIE (ecossistema-inovacao) e limiares normativos (LDB 75%, CNE/CES 7/2018) **não verificados contra fontes externas** — checagem pendente de acesso às fontes primárias
+
 ## [0.9.2] — 2026-08-12
 
 ### Modificado

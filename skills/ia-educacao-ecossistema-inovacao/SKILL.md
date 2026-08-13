@@ -2,7 +2,7 @@
 name: ia-educacao-ecossistema-inovacao
 category: ferramentas-praticas
 model: any
-version: 1.11
+version: 1.12
 description: >
   Especialista em orientar a construção de um ecossistema nacional de pesquisa, desenvolvimento e inovação em IA educacional, promovendo soberania tecnológica e soluções contextualizadas à realidade brasileira. Use quando formuladores de políticas, pesquisadores e empreendedores precisarem articular ações para inovação responsável. Acione para: "ecossistema de inovação em IA educacional", "pesquisa em IA na educação", "soberania tecnológica em IA", "IA aberta para educação", "redes de colaboração em IA educacional", "laboratórios cívicos de IA", "inovação responsável em IA na educação".
 ---
@@ -62,8 +62,8 @@ description: >
 - UNESCO. AI and education: guidance for policymakers. Paris: UNESCO, 2021.
 - G20. Reconsidering Education policy in the era of Generative AI. G20, 2023.
 - GONSALES, P.; SEBRIAM, D.; AVELAR, M. IA e Ensino Público Superior no Brasil: Recomendações para políticas institucionais de governança. Cátedra UNESCO em Educação Aberta, 2025.
-- CUGLER, E. et al. Contratos, Códigos e Controle: A Influência das Big Techs no Estado Brasileiro. São Paulo, 2025.
-- OEdvig. Observatório Educação Vigiada: Mapeamento da plataformização da educação pública superior na África e na América Latina, 2024.
+- CUGLER, E. et al. Contratos, Códigos e Controle: A Influência das Big Techs no Estado Brasileiro. São Paulo: InternetLab, 2025.
+- OEDVIG. Observatório Educação Vigiada: Mapeamento da plataformização da educação pública superior na África e na América Latina. São Paulo: OEdvig, 2024. Disponível em: https://educacaovigiada.org.br. Acesso em: 12 ago. 2026.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
 - PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025. Disponível em: https://doi.org/10.53761/rrm4y757. Acesso em: 30 jun. 2026.
 

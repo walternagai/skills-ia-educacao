@@ -2,7 +2,7 @@
 name: ia-educacao-ensino-medio
 category: niveis-ensino
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em aprofundar o letramento em IA no Ensino Médio, articulando discussões sobre impactos sociais, éticos e econômicos com exploração prática de ferramentas. Use quando educadores do EM precisarem planejar projetos, pesquisas e atividades com IA. Acione para: "IA no Ensino Médio", "letramento em IA para adolescentes", "projetos com IA no ensino médio", "impactos sociais da IA", "cidadania digital com IA", "preparação para o mundo do trabalho com IA".
 ---
@@ -56,8 +56,7 @@ description: >
 
 ## Referências
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Capítulo 6 (Bloco 1 e 2)
-- UNESCO. AI competency framework for students. Paris: UNESCO, 2024a.
-- UNESCO. Marco referencial de competências em IA para estudantes. Paris: UNESCO, 2024.
+- UNESCO. AI competency framework for students. Paris: UNESCO, 2024. (Publicado em português como "Marco referencial de competências em IA para estudantes".)
 - SEDU-ES. Sedu amplia uso de plataforma de inteligência artificial de redação para todo o Ensino Médio, 2024.
 - NEES. Inteligência Artificial Generativa na Educação. Maceió: NEES, 2024.
 - MEIRA, S.; MEIRA, L. Inteligência Artificial na Educação: Ruptura Paradigmática em um Sistema em Crise Crônica. Recife: Tds.company, 2025.

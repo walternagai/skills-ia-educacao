@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao
 category: ferramentas-praticas
 model: any
-version: 1.10
+version: 1.11
 description: >
   Especialista em redesenhar instrumentos e processos de avaliação educacional considerando a presença da IA generativa. Use quando educadores precisarem repensar provas, trabalhos e atividades para garantir que avaliem competências genuinamente humanas — análise, síntese, criatividade, pensamento crítico. Acione para: "avaliação com IA", "redesenho de provas na era da IA", "avaliação formativa e IA", "rubricas para atividades com IA", "como avaliar quando os alunos usam IA", "instrumentos avaliativos e IA generativa".
 ---
@@ -60,7 +60,7 @@ description: >
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Seção 4.2, 4.3, Desafio 6
 - MEIRA, S.; MEIRA, L. Inteligência Artificial na Educação: Ruptura Paradigmática em um Sistema em Crise Crônica. Recife: Tds.company, 2025.
 - U.S. DEPARTMENT OF EDUCATION. Artificial Intelligence and the future of teaching and learning: insights and recommendations. Washington, DC: Department of Education, 2023.
-- STAA, B. V. Como usar a Inteligência Artificial Generativa na educação sem abrir mão de pensar. In: CRIVELARO; STEIN (Orgs.). A escola com inteligência artificial. Campinas: Alínea, 2025.
+- STAA, B. V. Como usar a Inteligência Artificial Generativa na educação sem abrir mão de pensar. In: CRIVELARO, R.; STEIN, M. (Orgs.). A escola com inteligência artificial. Campinas: Alínea, 2025.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - BASTANI, H. et al. Generative AI can harm learning. The Wharton School Research Paper, 2024.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.

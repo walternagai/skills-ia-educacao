@@ -2,7 +2,7 @@
 name: ia-educacao-contratacao
 category: ferramentas-praticas
 model: any
-version: 1.12
+version: 1.13
 description: >
   Especialista em estabelecer critérios técnicos, pedagógicos, éticos e legais para contratação e auditoria de plataformas educacionais que incorporam IA. Use quando gestores públicos ou institucionais precisarem selecionar, contratar e auditar soluções de IA para educação. Acione para: "contratação de plataformas educacionais com IA", "licitação de IA para educação", "auditoria de fornecedores de IA educacional", "critérios para seleção de EdTech", "cláusulas contratuais de proteção de dados", "avaliação de plataformas educacionais com IA".
 ---
@@ -64,4 +64,4 @@ description: >
 - COLONNA, L. Artificial Intelligence in Education (AIED): Towards More Effective Regulation. European Journal of Risk Regulation, 2025.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
 
-- OEdvig. Observatório Educação Vigiada: Mapeamento da plataformização da educação pública superior na África e na América Latina, 2024.
+- OEDVIG. Observatório Educação Vigiada: Mapeamento da plataformização da educação pública superior na África e na América Latina. São Paulo: OEdvig, 2024. Disponível em: https://educacaovigiada.org.br. Acesso em: 12 ago. 2026.

@@ -2,7 +2,7 @@
 name: ia-educacao-fundamentos
 category: formacao-docente
 model: any
-version: 1.6
+version: 1.7
 description: >
   Especialista em fundamentos de Inteligência Artificial para profissionais da educação, com base no Referencial do MEC (2026). Use quando educadores precisarem compreender conceitos básicos de IA — machine learning, dados, algoritmos, modelos fundacionais, IA preditiva vs. generativa, alucinações, vieses — e suas implicações pedagógicas. Acione para: "o que é IA", "como funciona machine learning", "diferença entre IA generativa e preditiva", "alucinações em IA", "fundamentos de IA para professores", "conceitos básicos de IA na educação".
 ---
@@ -66,5 +66,5 @@ Resposta estruturada em linguagem acessível para educadores, com:
 - UNESCO. Guia para a IA generativa na educação e na pesquisa. França: UNESCO, 2024c.
 - VICARI, R. M. et al. Inteligência Artificial na Educação Básica: Prática na Escola. São Paulo: Novatec, 2023.
 - COMISSÃO EUROPEIA. Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators. Luxemburgo: Publicações da UE, 2022.
-- MARITACA AI. Sabiá: Portuguese Large Language Model. 2023. Disponível em: https://maritaca.ai. Acesso em: 30 jun. 2026.
+- MARITACA AI. Sabiá: Portuguese Large Language Model. São Paulo: Maritaca AI, 2023. Disponível em: https://maritaca.ai. Acesso em: 30 jun. 2026.
 - PIRES, R. et al. BERTimbau: Pre-trained BERT models for Brazilian Portuguese. In: CERRI, R.; PRATI, R. C. (eds.) Intelligent Systems. BRACIS 2020. Lecture Notes in Computer Science. Springer, 2020.

@@ -2,7 +2,7 @@
 name: ia-educacao-ia-desplugada
 category: ferramentas-praticas
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em desenvolver e aplicar atividades de IA desplugada — sem necessidade de dispositivos digitais — para ensinar conceitos fundamentais de IA em contextos com infraestrutura limitada. Use quando educadores precisarem promover letramento em IA em escolas sem conectividade ou dispositivos. Acione para: "IA desplugada", "ensino de IA sem tecnologia", "atividades desplugadas de IA", "letramento em IA sem internet", "conceitos de IA com atividades analógicas", "inclusão digital com IA desplugada", "IA para escolas sem infraestrutura".
 ---
@@ -62,8 +62,8 @@ description: >
 - NEES. Inteligência Artificial Desplugada na Educação. Maceió: NEES, 2025.
 - UNESCO. Currículos de IA para a educação básica: um mapeamento de currículos de IA aprovados pelos governos. Paris; Brasília: UNESCO, 2022a.
 - VICARI, R. M. et al. Inteligência Artificial na Educação Básica: Prática na Escola. São Paulo: Novatec, 2023.
-- SEDUC-PI. UNESCO reconhece Piauí como primeiro território nas Américas a implementar o ensino de IA na educação básica, 2024.
-- SEDUC-PI. Educação pública do Piauí vira referência com salto digital e uso de inteligência artificial, 2025.
+- SEDUC-PI. UNESCO reconhece Piauí como primeiro território nas Américas a implementar o ensino de IA na educação básica. Teresina: SEDUC-PI, 2024. Disponível em: https://www.seduc.pi.gov.br. Acesso em: 12 ago. 2026.
+- SEDUC-PI. Educação pública do Piauí vira referência com salto digital e uso de inteligência artificial. Teresina: SEDUC-PI, 2025. Disponível em: https://www.seduc.pi.gov.br. Acesso em: 12 ago. 2026.
 - CHOI, J. H. et al. Are LLMs Useful in the Poorest Schools? TheTeacher.AI in Sierra Leone. arXiv:2310.02982, 2024.
 - BELL, T. et al. CS Unplugged: An Enrichment and Extension Programme for Primary-Aged Students. Canterbury: University of Canterbury, 2015. Disponível em: https://csunplugged.org. Acesso em: 30 jun. 2026.
 - CIEB. Currículo de Referência em Tecnologia e Computação: da Educação Infantil ao Ensino Fundamental. São Paulo: CIEB, 2018.
