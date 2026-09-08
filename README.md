@@ -4,7 +4,10 @@ Acervo de skills que orientam a integração responsável de Inteligência Artif
 
 ## O que há neste repositório
 
-- **Skills temáticas** (`skills/*/SKILL.md`) — prontas para instalar em CLIs de IA (contagem atual: `ls skills | wc -l`)
+- **Manual AvalIA** (`manual/`) — *AvalIA: Kit de Avaliação Formativa com Inteligência Artificial para Professores do Ensino Superior*: manual em LaTeX (10 capítulos) com instalação do OpenCode, catálogo das skills e casos de uso validados (PDF compilado em `manual/main.pdf`)
+- **Skills temáticas** (`skills/*/SKILL.md`) — 62 skills prontas para instalar em CLIs de IA (contagem atual: `ls skills | wc -l`)
+- **Subagentes** (`agents/` e `.opencode/agents/`) — 6 agentes especializados (formatado/OpenCode, ex.: `artesao-de-skills`, `planejador-pedagogico`)
+- **Scripts de instalação** (`install-skills.sh` / `uninstall-skills.sh`) — instalam/removem as skills em Claude Code, OpenCode, Codex, Gemini CLI e Antigravity
 - **PDFs normativos** (`raw-pdfs/`) — Referencial MEC, artigos AIAS originais
 - **CLAUDE.md** — instruções de contexto para instâncias do Claude Code neste repositório
 
@@ -28,10 +31,15 @@ A escala é **não hierárquica** (nenhum nível é superior a outro) e **cumula
 
 ```bash
 # A partir do diretório raiz deste repositório
-npx skills add ./skills/aias-consultant
-npx skills add ./skills/ia-educacao-avaliacao
-# ou todas de uma vez
-for d in skills/*/; do npx skills add "./$d"; done
+./install-skills.sh --all                  # instala em todos os destinos (mesmo sem CLI)
+./install-skills.sh --claude --opencode    # destinos explícitos
+./install-skills.sh --dry-run              # mostra o que seria feito sem copiar
+```
+
+O script instala somente as skills; os subagentes de `agents/` e `.opencode/agents/` são específicos do OpenCode e não são instalados por ele (ver "Compatibilidade entre CLIs" abaixo). Para remover:
+
+```bash
+./uninstall-skills.sh --all
 ```
 
 ### Invocar em CLIs de IA
@@ -49,6 +57,10 @@ Após instalada, chame a skill pelo nome:
 As 62 skills são o conteúdo multiplataforma deste repositório. Elas podem ser instaladas no OpenCode, Claude Code, Codex, Gemini CLI, Antigravity e outros clientes que reconheçam o padrão Agent Skills, desde que sejam respeitados os caminhos, campos de frontmatter e comandos de cada cliente.
 
 Os seis subagentes são diferentes: seus arquivos em `agents/` e `.opencode/agents/` seguem a configuração do OpenCode e não são instalados pelo procedimento de skills nos demais CLIs. Para usá-los em Claude Code ou outra ferramenta, seria necessário adaptar os arquivos ao formato de agentes desse cliente e copiá-los para o diretório de agentes correspondente.
+
+## Manual AvalIA
+
+O manual *AvalIA: Kit de Avaliação Formativa com Inteligência Artificial para Professores do Ensino Superior* (`manual/`) é o guia completo do acervo: apresenta a Escala AIAS, instala o OpenCode passo a passo, cataloga as 62 skills e os 6 subagentes, e traz casos de uso validados em sala. Compile-o com `manual/compilar.sh` ou `make -C manual`; o PDF pronto está em `manual/main.pdf`.
 
 ## Skills disponíveis
 
