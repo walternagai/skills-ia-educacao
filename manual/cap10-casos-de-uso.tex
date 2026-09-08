@@ -26,7 +26,7 @@ Este cap{\'i}tulo foi desenhado para servir como um guia de aplica{\c c}{\~a}o r
     \addlinespace
     Elaborar uma avalia{\c c}{\~a}o formativa completa (enunciado, rubrica e quest{\~o}es objetivas) & Caso~2 -- \emph{Banco de Dados} (Ci{\^e}ncia da Computa{\c c}{\~a}o / Engenharias) \\
     \addlinespace
-    Gerar feedback formativo inclusivo para estudantes com dislexia ou TDAH & Caso~3 -- Qualquer {\'a}rea com entrega escrita ou c{\'o}digo-fonte \\
+    Gerar feedback formativo inclusivo para estudantes que solicitam apoio de acessibilidade ou organiza{\c c}{\~a}o & Caso~3 -- Qualquer {\'a}rea com entrega escrita ou c{\'o}digo-fonte \\
     \addlinespace
     Transformar uma aula expositiva em atividade ativa de \emph{Peer Instruction} & Caso~4 -- \emph{Termodin{\^a}mica} (F{\'i}sica / Engenharias) \\
     \bottomrule
@@ -34,6 +34,8 @@ Este cap{\'i}tulo foi desenhado para servir como um guia de aplica{\c c}{\~a}o r
 \end{table}
 
 Cada caso segue uma estrutura fixa -- \emph{Contexto e Desafio}, \emph{Execu{\c c}{\~a}o no OpenCode} e \emph{Artefato Entregue} -- facilitando a leitura transversal e a adapta{\c c}{\~a}o para outras disciplinas.
+
+Para reproduzir qualquer caso, trabalhe sempre nesta ordem: (1) substitua o tema e os objetivos pelos da sua disciplina; (2) forne{\c c}a somente os insumos necess{\'a}rios; (3) execute o prompt; (4) salve a resposta como rascunho; (5) valide fatos, fontes, acessibilidade, n{\'i}vel AIAS e privacidade; e (6) somente ent{\~a}o adapte o artefato para os estudantes. Os textos de ``Artefato Entregue'' descrevem o resultado m{\'i}nimo esperado, n{\~a}o uma garantia de que toda execu{\c c}{\~a}o produzir{\'a} exatamente o mesmo conte{\'u}do.
 
 \begin{atencaopedagogica}
 \textbf{Como invocar skills e subagentes}: \textbf{Skills} s{\~a}o invocadas com a barra (\texttt{/ia-educacao-rubrica}, \texttt{/aias-consultant}) ou mencionadas no texto do \emph{prompt} pelo slug; \textbf{subagentes}, com o arroba (\texttt{@planejador-pedagogico}, \texttt{@coach-de-feedback-formativo}) ou pela sele{\c c}{\~a}o no menu da interface. Os conceitos e os cat{\'a}logos completos encontram-se nos Cap{\'i}tulos~\ref{cap:skills-opencode} e~\ref{cap:agentes-skills}.
@@ -94,18 +96,18 @@ O subagente gera um arquivo Markdown/LaTeX contendo:
       \item Crit{\'e}rio 3: Integridade Referencial e Restri{\c c}{\~o}es;
       \item Crit{\'e}rio 4: Transpar{\^e}ncia no Uso de IA (coer{\^e}ncia com AIAS~2).
     \end{itemize}
-  \item \textbf{Dois Itens MCQs Diagn{\'o}sticos}: Cada distrator com uma nota explicativa indicando exatamente a falha de racioc{\'i}nio do aluno que escolheu aquela alternativa (e.g., confundir depend{\^e}ncia parcial com transitiva).
+  \item \textbf{Dois Itens MCQs Diagn{\'o}sticos}: Cada distrator com uma nota explicativa indicando a falha de racioc{\'i}nio que ele representa (por exemplo, confundir depend{\^e}ncia parcial com transitiva).
 \end{enumerate}
 
 \section{Caso 3: Ciclo de Feedback Formativo e Inclus{\~a}o}
 
 \subsection{Contexto e Desafio}
-O professor recebeu a entrega de um estudante de gradua{\c c}{\~a}o com diagn{\'o}stico de dislexia. O trabalho apresenta excelentes solu{\c c}{\~o}es algor{\'i}tmicas, mas o relat{\'o}rio textual possui estrutura{\c c}{\~a}o truncada e falta a an{\'a}lise de casos de teste de borda.
+O professor recebeu a entrega de um estudante de gradua{\c c}{\~a}o que solicitou um feedback com linguagem mais concisa e organiza{\c c}{\~a}o em etapas. O trabalho apresenta excelentes solu{\c c}{\~o}es algor{\'i}tmicas, mas o relat{\'o}rio textual possui estrutura{\c c}{\~a}o truncada e falta a an{\'a}lise de casos de teste de borda.
 
 \subsection{Execu{\c c}{\~a}o no OpenCode}
 \begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Comando Enviado pelo Professor}]
 \small
-``Atue como o subagente \path{@coach-de-feedback-formativo}. Analise a submiss{\~a}o anexa em rela{\c c}{\~a}o {\`a} nossa rubrica. O estudante possui laudo de dislexia. Elabore um feedback formativo nas tr{\^e}s dimens{\~o}es (\emph{Feed Up}, \emph{Feed Back}, \emph{Feed Forward}) aplicando as diretrizes de DUA da skill \path{ia-educacao-dua}: use frases curtas em ordem direta, listas pontuadas, limite as a{\c c}{\~o}es de melhoria a duas prioridades e adicione uma pergunta ativadora da metacogni{\c c}{\~a}o.''
+``Atue como o subagente \path{@coach-de-feedback-formativo}. Analise a submiss{\~a}o anexa em rela{\c c}{\~a}o {\`a} nossa rubrica. O estudante solicitou linguagem concisa e organiza{\c c}{\~a}o em etapas; n{\~a}o inclua diagn{\'o}sticos ou dados cl{\'i}nicos no feedback. Elabore um feedback formativo nas tr{\^e}s dimens{\~o}es (\emph{Feed Up}, \emph{Feed Back}, \emph{Feed Forward}) aplicando as diretrizes de DUA da skill \path{ia-educacao-dua}: use frases curtas em ordem direta, listas pontuadas, limite as a{\c c}{\~o}es de melhoria a duas prioridades e adicione uma pergunta ativadora da metacogni{\c c}{\~a}o.''
 \end{tcolorbox}
 
 \subsection{Artefato Entregue}
@@ -141,7 +143,7 @@ O OpenCode estrutura:
 As quatro disciplinas ilustrativas dos casos anteriores concentram-se nas {\'a}reas de tecnologia e ci{\^e}ncias exatas. Para evidenciar que o acervo atende a todo o espectro STHEM (Science, Technology, Humanities, Engineering, Mathematics), esta se{\c c}{\~a}o apresenta um cen{\'a}rio adicional por {\'a}rea, com a skill que o OpenCode seleciona espontaneamente ao receber o \emph{prompt}. Os cinco cen{\'a}rios foram validados no OpenCode real: em todos eles, o agente identificou corretamente as skills do acervo a partir da descri{\c c}{\~a}o da tarefa, sem necessidade de citar o nome da skill no \emph{prompt} -- demonstrando que a detec{\c c}{\~a}o sem{\^a}ntica funciona a partir do objetivo pedag{\'o}gico.
 
 \begin{dicaopencode}
-\textbf{Valida{\c c}{\~a}o emp{\'i}rica dos roteiros deste cap{\'i}tulo}: os quatro casos de uso (Casos~1 a~4) e os cinco cen{\'a}rios STHEM desta se{\c c}{\~a}o foram executados no OpenCode real (vers{\~a}o 1.18.29, modo headless \texttt{opencode run}). Em todos, as skills citadas foram efetivamente carregadas pela ferramenta \texttt{skill()} e os artefatos esperados foram produzidos (planos, rubricas com r{\'o}tulos can{\^o}nicos, feedbacks tridimensionais e ConcepTests). Um detalhe t{\'e}cnico observado: ao delegar via \texttt{@subagente}, o OpenCode atual exige um identificador de modelo v{\'a}lido no frontmatter do agente (ex.: \texttt{model: opencode/glm-5.3-flash}); o valor \texttt{model: any} do acervo -- um marcador de independ{\^e}ncia de provedor -- n{\~a}o {\'e} interpretado como ID e faz a delega{\c c}{\~a}o direta falhar. Nesse caso, o agente principal assume o papel do subagente e executa as mesmas skills, preservando o resultado; para restaurar a delega{\c c}{\~a}o via Task, basta substituir \texttt{model: any} por um ID de modelo real no arquivo do agente em \texttt{.opencode/agents/}.
+\textbf{Valida{\c c}{\~a}o emp{\'i}rica dos roteiros deste cap{\'i}tulo}: os quatro casos de uso (Casos~1 a~4) e os cinco cen{\'a}rios STHEM desta se{\c c}{\~a}o foram executados no OpenCode real (vers{\~a}o 1.18.29, modo headless \texttt{opencode run}). Em todos, as skills citadas foram efetivamente carregadas pela ferramenta \texttt{skill()} e os artefatos esperados foram produzidos (planos, rubricas com r{\'o}tulos can{\^o}nicos, feedbacks tridimensionais e ConcepTests). A disponibilidade de modelos, a sele{\c c}{\~a}o autom{\'a}tica de skills e o formato da delega{\c c}{\~a}o podem variar conforme a vers{\~a}o e o provedor. Os arquivos de subagentes deste acervo n{\~a}o fixam um modelo: quando instalados na configura{\c c}{\~a}o global ou no projeto, eles usam o modelo selecionado pelo agente principal. Se a men{\c c}{\~a}o \texttt{@subagente} n{\~a}o aparecer, siga as instru{\c c}{\~o}es de instala{\c c}{\~a}o de subagentes do Cap{\'i}tulo~\ref{cap:instalacao}.
 \end{dicaopencode}
 
 Os perfis por {\'a}rea seguem a tabela de adapta{\c c}{\~o}es embutida nos subagentes do reposit{\'o}rio, que orientam n{\'i}veis AIAS t{\'i}picos e formatos preferenciais de avalia{\c c}{\~a}o para cada {\'a}rea (Tabela~\ref{tab:sthem-cenarios}).
@@ -219,7 +221,7 @@ Os perfis por {\'a}rea seguem a tabela de adapta{\c c}{\~o}es embutida nos subag
 
 \section{Checklist de Valida{\c c}{\~a}o Docente Pr{\'e}-Aplica{\c c}{\~a}o}
 
-Antes de disponibilizar qualquer material gerado com o aux{\'i}lio do OpenCode aos estudantes, o professor deve realizar a checagem dos cinco pontos da Tabela~\ref{tab:checklist-docente}.
+Antes de disponibilizar qualquer material gerado com o aux{\'i}lio do OpenCode aos estudantes, o professor deve realizar a checagem dos seis pontos da Tabela~\ref{tab:checklist-docente}.
 
 \begin{table}[htbp]
   \centering
@@ -239,6 +241,8 @@ Antes de disponibilizar qualquer material gerado com o aux{\'i}lio do OpenCode a
     \textbf{4} & Acessibilidade DUA & A linguagem {\'e} clara e inclusiva? & Simplifique par{\'a}grafos densos com \path{ia-educacao-dua}. \\
     \addlinespace
     \textbf{5} & Autonomia Humana & A avalia{\c c}{\~a}o final depende do professor? & Garanta que o parecer passe pelo seu crivo cr{\'i}tico. \\
+    \addlinespace
+    \textbf{6} & Prote{\c c}{\~a}o de Dados & Os insumos podem ser enviados a este provedor? & Remova identificadores, reduza os dados ou use um fluxo institucional autorizado. \\
     \bottomrule
   \end{tabularx}
 \end{table}

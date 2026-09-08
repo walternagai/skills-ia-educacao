@@ -4,8 +4,8 @@
 \begin{objetivos}
 \begin{itemize}
   \item Instalar o OpenCode no seu sistema operacional (Windows, Linux ou macOS) pelo m{\'e}todo mais adequado ao seu perfil;
-  \item Conectar o OpenCode a um provedor de modelos e listar os provedores configurados;
-  \item Sincronizar as 62 skills do acervo com o ambiente local e conferir a instala{\c c}{\~a}o;
+  \item Conectar o OpenCode a um provedor de modelos e selecionar um modelo dispon{\'i}vel;
+  \item Sincronizar as 62 skills e os 6 subagentes do acervo com o ambiente local e conferir a instala{\c c}{\~a}o;
   \item Aplicar, opcionalmente, o controle de vers{\~a}o com Git para proteger seus materiais did{\'a}ticos.
 \end{itemize}
 \end{objetivos}
@@ -128,19 +128,19 @@ A sa{\'i}da dever{\'a} exibir o n{\'u}mero da vers{\~a}o instalada (por exemplo,
 
 \section{Configura{\c c}{\~a}o de Provedores e Modelos de IA}
 
-O OpenCode gerencia credenciais de forma segura por meio do comando \texttt{providers}.
+Na vers{\~a}o atual do OpenCode, a configura{\c c}{\~a}o inicial de credenciais ocorre dentro da interface interativa. Inicie o programa e use o comando \texttt{/connect}; depois, use \texttt{/models} para conferir e selecionar os modelos dispon{\'i}veis:
 
-\begin{lstlisting}[language=bash, caption={Gerenciamento de provedores e credenciais}]
-# Listar os provedores configurados atualmente
-opencode providers list
+\begin{lstlisting}[language=bash, caption={Configurando um provedor na interface do OpenCode}]
+opencode
 
-# Iniciar o assistente interativo de login em um provedor
-opencode providers login
+# Dentro da TUI:
+/connect
+/models
 \end{lstlisting}
 
-Durante a autentica{\c c}{\~a}o, o terminal solicitar{\'a} a chave de API (\emph{API Key}) do servi{\c c}o escolhido:
+O fluxo de autentica{\c c}{\~a}o varia conforme o provedor: alguns abrem uma p{\'a}gina de login, outros solicitam uma chave de API. Nunca cole uma chave em um arquivo versionado, em um prompt ou em um material entregue aos estudantes. Para verificar os provedores e modelos dispon{\'i}veis, consulte o menu exibido pelo pr{\'o}prio OpenCode, pois o cat{\'a}logo muda com o tempo:
 \begin{itemize}
-  \item \textbf{Anthropic}: Chave da API Claude (\texttt{sk-ant-...}), recomendada para modelos com forte racioc{\'i}nio instrucional e reflexivo (e.g., Claude 3.5 Sonnet ou Claude 3.7 Sonnet);
+  \item \textbf{Anthropic}: Chave da API Claude; a disponibilidade de modelos e o fluxo de autentica{\c c}{\~a}o devem ser conferidos no menu \texttt{/connect};
   \item \textbf{OpenAI}: Chave da API OpenAI (\texttt{sk-...}) para a fam{\'i}lia GPT-4o e modelos da s{\'e}rie \emph{o1};
   \item \textbf{Google Gemini}: Chave do Google AI Studio para acesso ao Gemini 2.0 Flash e Gemini 1.5 Pro;
   \item \textbf{Modelos Locais (Ollama)}: Para institui{\c c}{\~o}es com pol{\'i}ticas restritas de privacidade de dados que n{\~a}o admitem tr{\'a}fego de dados discentes para nuvens comerciais, {\'e} poss{\'i}vel conectar o OpenCode a inst{\^a}ncias locais do Ollama (\url{http://localhost:11434}).
@@ -179,7 +179,7 @@ cd skills-ia-educacao
 \end{lstlisting}
 
 \begin{dicaopencode}
-\textbf{Windows}: execute o comando acima no \textbf{Git Bash} (instalado junto com o Git -- ver Passe~1 da se{\c c}{\~a}o de controle de vers{\~a}o). \textbf{Linux/macOS/WSL2}: no terminal padr{\~a}o. Para atualizar o acervo depois, basta executar \texttt{git pull} dentro da pasta e rodar o \texttt{install-skills.sh} novamente.
+\textbf{Windows}: execute o comando acima no \textbf{Git Bash} (instalado junto com o Git -- ver Passo~1 da se{\c c}{\~a}o de controle de vers{\~a}o). \textbf{Linux/macOS/WSL2}: no terminal padr{\~a}o. Para atualizar o acervo depois, basta executar \texttt{git pull} dentro da pasta e rodar o \texttt{install-skills.sh} novamente.
 \end{dicaopencode}
 
 \subsubsection{Op{\c c}{\~a}o B -- Baixar o ZIP (sem Git)}
@@ -217,6 +217,24 @@ No \textbf{Windows nativo} (PowerShell), o mesmo cheque pode ser feito com:
 
 O retorno dever{\'a} apontar 61 skills com o prefixo institucional (mais a skill especial \texttt{aias-consultant}, totalizando 62 unidades).
 
+\subsection{Disponibilizando os Subagentes}
+
+O script \texttt{install-skills.sh} instala as skills, mas n{\~a}o copia automaticamente os seis subagentes. Se o OpenCode for executado em uma pasta separada da c{\'o}pia do reposit{\'o}rio, copie os arquivos dos subagentes para a configura{\c c}{\~a}o global do usu{\'a}rio:
+
+\begin{lstlisting}[language=bash, caption={Instalando os subagentes no escopo global (Linux, macOS, WSL2 ou Git Bash)}]
+mkdir -p ~/.config/opencode/agents
+cp .opencode/agents/*.md ~/.config/opencode/agents/
+\end{lstlisting}
+
+No PowerShell, a opera{\c c}{\~a}o equivalente {\'e}:
+
+\begin{lstlisting}[language=bash, caption={Instalando os subagentes no Windows PowerShell}]
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.config\opencode\agents"
+Copy-Item ".opencode\agents\*.md" "$env:USERPROFILE\.config\opencode\agents\"
+\end{lstlisting}
+
+Execute os comandos a partir da raiz clonada do reposit{\'o}rio. Depois de atualizar o acervo com \texttt{git pull}, repita a c{\'o}pia e reinicie o OpenCode. Os arquivos dos agentes n{\~a}o fixam um provedor: eles usam o modelo selecionado pelo agente principal.
+
 \section{Primeiros Comandos no OpenCode}
 
 \subsection{Iniciando a Interface Interativa (TUI)}
@@ -243,6 +261,16 @@ Para manter o OpenCode sempre na {\'u}ltima vers{\~a}o est{\'a}vel:
 \begin{lstlisting}[language=bash]
 opencode upgrade
 \end{lstlisting}
+
+\section{Problemas Comuns na Primeira Execu{\c c}{\~a}o}
+
+\begin{itemize}
+  \item \textbf{O comando \texttt{/connect} n{\~a}o aparece}: confirme que o programa foi iniciado com \texttt{opencode}, e n{\~a}o com \texttt{opencode run}; em seguida, atualize o OpenCode com \texttt{opencode upgrade}.
+  \item \textbf{A skill n{\~a}o aparece}: confirme o caminho de instala{\c c}{\~a}o, feche e abra o OpenCode novamente e verifique a contagem apresentada na subse{\c c}{\~a}o de confer{\^e}ncia.
+  \item \textbf{O subagente n{\~a}o aparece no menu \texttt{@}}: copie os arquivos de \texttt{.opencode/agents/} para \texttt{~/.config/opencode/agents/}, conforme a subse{\c c}{\~a}o anterior, e reinicie a aplica{\c c}{\~a}o.
+  \item \textbf{O script n{\~a}o executa no Windows}: use Git Bash ou WSL2 e execute-o na raiz extra{\'i}da ou clonada do reposit{\'o}rio; o PowerShell n{\~a}o interpreta scripts Bash diretamente.
+  \item \textbf{O modelo gratuito n{\~a}o est{\'a} dispon{\'i}vel}: abra \texttt{/models} e escolha outro modelo. Disponibilidade, limites e nomes podem mudar sem altera{\c c}{\~a}o deste manual.
+\end{itemize}
 
 \section{Controle de Vers{\~a}o com Git para Iniciantes (Opcional)}
 

@@ -20,7 +20,6 @@ No OpenCode, os agentes s{\~a}o declarados com frontmatter YAML e regras de perm
 ---
 description: Planejamento pedagogico para ensino superior com IA.
 mode: subagent
-model: any
 permission:
   edit: deny
   bash: deny
@@ -29,6 +28,8 @@ permission:
   grep: allow
 ---
 \end{lstlisting}
+
+Quando o campo \texttt{model} n{\~a}o {\'e} informado, o subagente herda o modelo selecionado pelo agente principal. Essa op{\c c}{\~a}o mant{\'e} o acervo independente de provedor e evita fixar no arquivo um identificador que pode n{\~a}o existir na instala{\c c}{\~a}o do docente.
 
 \begin{conceitochave}
 \textbf{Invoca{\c c}{\~a}o por Arroba (\emph{Agent Mention})}: Todo subagente deste acervo {\'e} acionado pelo usu{\'a}rio por meio da sintaxe \texttt{@nome-do-subagente}, com o arroba antecedendo o identificador can{\^o}nico. Por exemplo, o consultor de planejamento pedag{\'o}gico {\'e} invocado como \texttt{@planejador-pedagogico}, o construtor de avalia{\c c}{\~o}es como \texttt{@construtor-de-avaliacoes} e o coach de feedback como \texttt{@coach-de-feedback-formativo}. A men{\c c}{\~a}o pode ser feita diretamente no campo de mensagem ou no texto do \emph{prompt}; o OpenCode reconhece o identificador precedido por \texttt{@} e delega a tarefa ao subagente correspondente. Uma alternativa equivalente {\'e} selecionar o agente no menu suspenso da interface gr{\'a}fica.
@@ -74,7 +75,7 @@ Para garantir que as instru{\c c}{\~o}es estejam sempre atualizadas, o reposit{\
 
 \subsection{5. Coach de Feedback Formativo (\texttt{coach-de-feedback-formativo})}
 \begin{itemize}
-  \item \textbf{Foco}: Elabora{\c c}{\~a}o de feedback formativo tridimensional (\emph{Feed Up}, \emph{Feed Back}, \emph{Feed Forward}) com calibra{\c c}{\~a}o inclusiva para estudantes t{\'i}picos, com dislexia e com TDAH;
+  \item \textbf{Foco}: Elabora{\c c}{\~a}o de feedback formativo tridimensional (\emph{Feed Up}, \emph{Feed Back}, \emph{Feed Forward}) com calibra{\c c}{\~a}o inclusiva conforme as necessidades e prefer{\^e}ncias informadas pelos estudantes;
   \item \textbf{Permiss{\~o}es}: Leitura e escrita (\texttt{edit: allow}, \texttt{bash: allow});
   \item \textbf{Skills Orquestradas}: \path{ia-educacao-feedback}, \path{ia-educacao-verificacao}, \path{ia-educacao-dua}, \path{ia-educacao-aprendizagem-ativa}, \path{ia-educacao-rubrica}.
 \end{itemize}
@@ -102,7 +103,7 @@ Para garantir que as instru{\c c}{\~o}es estejam sempre atualizadas, o reposit{\
     \addlinespace
     \path{aplicador-de-rubricas} & Leitura/Escrita & Entrega discente e rubrica declarada & Notas por crit{\'e}rio, parecer e an{\'a}lise de vi{\'e}s \\
     \addlinespace
-    \path{coach-de-feedback-formativo} & Leitura/Escrita & Produ{\c c}{\~a}o discente e perfil neurodivergente & Feedback formativo adaptado (\emph{Feed Up/Back/Forward}) \\
+    \path{coach-de-feedback-formativo} & Leitura/Escrita & Produ{\c c}{\~a}o discente e prefer{\^e}ncias de acessibilidade & Feedback formativo adaptado (\emph{Feed Up/Back/Forward}) \\
     \addlinespace
     \path{artesao-de-skills} & Leitura/Escrita & Demandas pedag{\'o}gicas e regras de schema & M{\'o}dulo \texttt{SKILL.md} v{\'a}lido e auditado \\
     \bottomrule

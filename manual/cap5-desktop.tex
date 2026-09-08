@@ -22,7 +22,9 @@ O OpenCode disponibiliza dois modos gr{\'a}ficos complementares:
 
 \section{Iniciando a Interface Web e Desktop}
 
-Para inicializar a interface gr{\'a}fica no diret{\'o}rio da sua disciplina ou material did{\'a}tico, basta executar no terminal:
+Esta se{\c c}{\~a}o descreve a Interface Web iniciada pelo terminal. O aplicativo Desktop {\'e} uma modalidade separada; quando estiver dispon{\'i}vel para o seu sistema, abra-o pelo menu de aplicativos e selecione a pasta da disciplina. O fluxo de sess{\~a}o, modelo, permiss{\~o}es e revis{\~a}o de arquivos {\'e} equivalente, mas os menus podem variar conforme a vers{\~a}o.
+
+Para inicializar a Interface Web no diret{\'o}rio da sua disciplina ou material did{\'a}tico, execute no terminal:
 
 \begin{lstlisting}[language=bash, caption={Iniciando a interface visual do OpenCode}]
 # Inicia o servidor local e abre automaticamente o navegador padrao
@@ -46,8 +48,8 @@ A interface gr{\'a}fica do OpenCode foi concebida para priorizar a clareza, a er
   \item \textbf{Barra Lateral de Hist{\'o}rico e Sess{\~o}es (\emph{Sidebar})}: Permite criar, alternar e renomear m{\'u}ltiplas sess{\~o}es de trabalho. O professor pode manter uma sess{\~a}o dedicada ao ``Planejamento da Aula 04'', outra para ``Elabora{\c c}{\~a}o da Prova P1'' e uma terceira para ``Revis{\~a}o de Artigo'';
   \item \textbf{Explorador de Arquivos e Contexto}: Exibe a {\'a}rvore de diret{\'o}rios do projeto. Permite arrastar arquivos (como PDFs normativos, ementas em \texttt{.txt} ou tabelas de notas) diretamente para a {\'a}rea de conversa;
   \item \textbf{Painel Central de Di{\'a}logo e Renderiza{\c c}{\~a}o}: Apresenta as mensagens com formata{\c c}{\~a}o rica em Markdown, suporte a f{\'o}rmulas matem{\'a}ticas em \LaTeX, tabelas din{\^a}micas e realce colorido de sintaxe de c{\'o}digo;
-  \item \textbf{Painel de Auditoria e Aprova{\c c}{\~a}o de A{\c c}{\~o}es (\emph{Diff Viewer})}: Quando um subagente prop{\~o}e criar ou editar um documento no disco, a interface exibe uma visualiza{\c c}{\~a}o comparativa em duas colunas (\emph{diff} com cores verde para inclus{\~o}es e vermelho para remo{\c c}{\~o}es). Nenhuma modifica{\c c}{\~a}o {\'e} persistida sem a autoriza{\c c}{\~a}o expl{\'i}cita do usu{\'a}rio no bot{\~a}o de confirma{\c c}{\~a}o;
-  \item \textbf{Seletor Superior de Modelos e Agentes}: Um menu suspenso permite alternar rapidamente entre provedores (Anthropic, OpenAI, modelos gratuitos do OpenCode ou Ollama local) e definir se a tarefa ser{\'a} conduzida pelo agente geral ou por um subagente especializado (e.g., \texttt{@construtor-de-avaliacoes}). O detalhamento completo dos seis subagentes do acervo encontra-se no Cap{\'i}tulo~\ref{cap:agentes-skills}.
+  \item \textbf{Painel de Auditoria e Aprova{\c c}{\~a}o de A{\c c}{\~o}es (\emph{Diff Viewer})}: Quando um subagente prop{\~o}e criar ou editar um documento no disco, a interface pode exibir uma visualiza{\c c}{\~a}o comparativa em duas colunas (\emph{diff} com cores verde para inclus{\~o}es e vermelho para remo{\c c}{\~o}es). A solicita{\c c}{\~a}o de aprova{\c c}{\~a}o depende das permiss{\~o}es configuradas: para manter controle manual, configure edi{\c c}{\~o}es e comandos como \texttt{ask} e revise o \emph{diff} antes de aceitar;
+  \item \textbf{Seletor Superior de Modelos e Agentes}: Um menu suspenso pode permitir alternar entre provedores (Anthropic, OpenAI, modelos gratuitos do OpenCode ou Ollama local) e selecionar um subagente especializado (por exemplo, \texttt{@construtor-de-avaliacoes}). Os menus variam conforme a vers{\~a}o e a configura{\c c}{\~a}o; o detalhamento dos seis subagentes encontra-se no Cap{\'i}tulo~\ref{cap:agentes-skills}.
 \end{enumerate}
 
 \section{O Fluxo de Trabalho Docente na Interface Gr{\'a}fica}

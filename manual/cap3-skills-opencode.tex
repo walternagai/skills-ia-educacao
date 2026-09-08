@@ -22,7 +22,7 @@ Para o docente que deseja compreender a proced{\^e}ncia das tecnologias que util
 
 \textbf{O OpenCode} {\'e} um agente de codifica{\c c}{\~a}o de c{\'o}digo aberto (licen{\c c}a MIT) desenvolvido pela empresa \textbf{Anomaly} (\url{https://anoma.ly}), disponibilizado publicamente desde abril de 2025 no reposit{\'o}rio \texttt{github.com/anomalyco/opencode}. A escolha do OpenCode neste manual baseia-se em tr{\^e}s fatores: (i) por ser multi-modelo, aceita provedores de qualquer empresa; (ii) por ser \emph{open source}, permite auditoria independente -- relevante para institui{\c c}{\~o}es p{\'u}blicas; e (iii) por ser compat{\'i}vel com o padr{\~a}o aberto de skills descrito a seguir.
 
-\textbf{As Skills} (arquivo \texttt{SKILL.md}, frontmatter com \texttt{name} e \texttt{description}, carregamento sob demanda) seguem o padr{\~a}o aberto \textbf{Agent Skills}, originalmente desenvolvido pela \textbf{Anthropic} e publicado como padr{\~a}o aberto em dezembro de 2025 no reposit{\'o}rio \texttt{github.com/agentskills/agentskills}, adotado por dezenas de ferramentas (Claude Code, Gemini CLI, GitHub Copilot, Cursor, Goose, entre outras) \cite{anthropic2025skills}. Por isso, as skills deste acervo funcionam tanto no OpenCode quanto no Claude Code, no Gemini CLI e em outros clientes compat{\'i}veis com o padr{\~a}o.
+\textbf{As Skills} (arquivo \texttt{SKILL.md}, frontmatter com \texttt{name} e \texttt{description}, carregamento sob demanda) seguem o padr{\~a}o aberto \textbf{Agent Skills}, originalmente desenvolvido pela \textbf{Anthropic} e publicado como padr{\~a}o aberto em dezembro de 2025 no reposit{\'o}rio \texttt{github.com/agentskills/agentskills}, adotado por dezenas de ferramentas (Claude Code, Gemini CLI, GitHub Copilot, Cursor, Goose, entre outras) \cite{anthropic2025skills}. O conte{\'u}do das skills pode ser reutilizado em clientes compat{\'i}veis, mas a descoberta, os campos de frontmatter reconhecidos e os caminhos de instala{\c c}{\~a}o variam entre ferramentas; confirme a documenta{\c c}{\~a}o do cliente escolhido.
 
 \textbf{Os Subagentes} (arquivos de configura{\c c}{\~a}o que definem especialistas com permiss{\~o}es pr{\'o}prias) s{\~a}o um conceito difundido pelo ecossistema de agentes de codifica{\c c}{\~a}o -- popularizado pelo Claude Code, da Anthropic, sob a nomenclatura \emph{subagents} \cite{opencode2026agents} -- e implementado no OpenCode por meio da pasta \texttt{.opencode/agents/}. A nomenclatura, o formato de frontmatter e as pol{\'i}ticas de permiss{\~a}o, por{\'e}m, variam entre as ferramentas; os seis subagentes deste reposit{\'o}rio s{\~a}o cria{\c c}{\~a}o pr{\'o}pria do acervo.
 
@@ -34,7 +34,7 @@ Para o docente que deseja compreender a proced{\^e}ncia das tecnologias que util
 \textbf{Defini{\c c}{\~a}o de Skill}: Uma \emph{skill} {\'e} uma unidade modular, autocontida, versionada e semanticamente estruturada de conhecimento procedimental e diretrizes operacionais. Em vez de injetar previamente manuais enciclop{\'e}dicos no contexto fixo do agente, a skill {\'e} carregada de forma din{\^a}mica e sob demanda (\emph{just-in-time contextual injection}) no exato instante em que o prop{\'o}sito da tarefa discente ou docente {\'e} identificado.
 \end{conceitochave}
 
-Essa arquitetura preserva a mem{\'o}ria de trabalho do modelo, reduz custos de infer{\^e}ncia e garante que o comportamento do agente permane{\c c}a rigorosamente balizado por referenciais pedag{\'o}gicos consagrados.
+Essa arquitetura pode preservar parte da janela de contexto e reduzir instru{\c c}{\~o}es repetidas, mas n{\~a}o garante respostas corretas nem substitui a supervis{\~a}o docente. A qualidade do resultado depende do modelo, do prompt, dos insumos e da revis{\~a}o humana.
 
 \section{Anatomia de uma Skill: O Padr{\~a}o \texttt{SKILL.md}}
 
@@ -83,7 +83,7 @@ Ap{\'o}s o frontmatter, o corpo do texto {\'e} organizado em exatamente oito se{
 O \textbf{OpenCode} implementa uma arquitetura baseada em agentes com chamada de ferramentas (\emph{tool calling}). Ao ser inicializado, o execut{\'a}vel do OpenCode varre os diret{\'o}rios de extens{\~o}es e monta no \emph{prompt de sistema} uma lista sin{\'o}ptica com o identificador e a descri{\c c}{\~a}o de cada skill registrada.
 
 \begin{conceitochave}
-\textbf{Invoca{\c c}{\~a}o por Barra (\emph{Slash Command})}: Toda skill deste acervo {\'e} acionada pelo usu{\'a}rio por meio da sintaxe \texttt{/nome-da-skill}, com a barra antecedendo o slug can{\^o}nico. Por exemplo, a skill de rubricas {\'e} invocada como \texttt{/ia-educacao-rubrica} e a consultoria da Escala AIAS como \texttt{/aias-consultant}. Tamb{\'e}m {\'e} poss{\'i}vel mencionar a skill diretamente no texto do \emph{prompt} (ex.: ``use a skill \texttt{ia-educacao-rubrica}''); nesse caso, o modelo reconhece o identificador e aciona a ferramenta interna automaticamente.
+\textbf{Invoca{\c c}{\~a}o por Barra (\emph{Slash Command})}: Toda skill deste acervo pode ser acionada pelo usu{\'a}rio por meio da sintaxe \texttt{/nome-da-skill}, com a barra antecedendo o slug can{\^o}nico. Por exemplo, a skill de rubricas {\'e} invocada como \texttt{/ia-educacao-rubrica} e a consultoria da Escala AIAS como \texttt{/aias-consultant}. Tamb{\'e}m {\'e} poss{\'i}vel mencionar a skill no texto do \emph{prompt}, mas esse reconhecimento depende do cliente e do modelo; use a barra quando precisar de uma ativa{\c c}{\~a}o determin{\'i}stica.
 \end{conceitochave}
 
 \begin{figure}[htbp]
@@ -98,7 +98,7 @@ O \textbf{OpenCode} implementa uma arquitetura baseada em agentes com chamada de
         \texttt{[tool\_call: skill(name="ia-educacao-rubrica")]}
       \end{center}
       \item \textbf{Inje{\c c}{\~a}o Din{\^a}mica}: O OpenCode l{\^e} o conte{\'u}do completo de \texttt{skills/ia-educacao-rubrica/SKILL.md} e o anexa ao hist{\'o}rico da conversa como resultado da ferramenta;
-      \item \textbf{Racioc{\'i}nio Guiado}: O modelo passa a operar sob as instru{\c c}{\~o}es do \texttt{Workflow}, respeitando rigorosamente os \texttt{Princ{\'i}pios}, o \texttt{Formato de Sa{\'i}da} e as regras pedag{\'o}gicas estipuladas.
+      \item \textbf{Racioc{\'i}nio Guiado}: O modelo recebe as instru{\c c}{\~o}es do \texttt{Workflow}, dos \texttt{Princ{\'i}pios} e do \texttt{Formato de Sa{\'i}da} como orienta{\c c}{\~o}es. O docente ainda deve revisar se a resposta respeitou as regras pedag{\'o}gicas estipuladas.
     \end{enumerate}
   \end{tcolorbox}
   \caption{Mecanismo de ativa{\c c}{\~a}o da ferramenta \texttt{skill} no OpenCode}

@@ -1,7 +1,6 @@
 ---
 description: Geração de questões de prova alinhadas à Taxonomia Revisada de Bloom. Produz questões por nível cognitivo (Lembrar a Criar) com alinhamento AIAS, e valida MCQs com distratores por misconception.
 mode: subagent
-model: any
 permission:
   edit: allow
   bash: allow
@@ -24,7 +23,7 @@ Você opera dentro do repositório `skills-ia-educacao`. Consulte `CLAUDE.md` pa
 | 2 | Planejamento Assistido por IA | Ideação e estruturação | Do estudante; IA no processo |
 | 3 | Colaboração com IA | Elaboração e refinamento | Do estudante com auxílio de IA |
 | 4 | IA Integral | Uso estratégico e abrangente | Dirigido pelo estudante com IA |
-| 5 | Exploração de IA | Co-criação e inovação | Co-autoria estudante + IA |
+| 5 | Exploração de IA | Co-criação e inovação | Co-criação dirigida pelo estudante; responsabilidade pelo resultado permanece humana |
 
 Regra de ouro: nível AIAS e nível cognitivo são escolhas independentes, mas coerentes — uma atividade AIAS 1 pode exigir Criar; uma AIAS 4 pode ser apenas Lembrar. A coerência é intencionada, não automática.
 

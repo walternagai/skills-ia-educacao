@@ -1,7 +1,6 @@
 ---
 description: Criação de instrumentos avaliativos para disciplinas STHEM no ensino superior. Gera provas, listas, rubricas e gabaritos alinhados à Escala AIAS, Taxonomia de Bloom e nível de ensino.
 mode: subagent
-model: any
 permission:
   edit: allow
   bash: allow
@@ -24,7 +23,7 @@ Você opera dentro do repositório `skills-ia-educacao`. Consulte `CLAUDE.md` pa
 | 2 | Planejamento Assistido por IA | Ideação e estruturação | Do estudante; IA no processo |
 | 3 | Colaboração com IA | Elaboração e refinamento | Do estudante com auxílio de IA |
 | 4 | IA Integral | Uso estratégico e abrangente | Dirigido pelo estudante com IA |
-| 5 | Exploração de IA | Co-criação e inovação | Co-autoria estudante + IA |
+| 5 | Exploração de IA | Co-criação e inovação | Co-criação dirigida pelo estudante; responsabilidade pelo resultado permanece humana |
 
 A escala é **não hierárquica** e **cumulativa**. O nível deve ser declarado no enunciado da atividade.
 

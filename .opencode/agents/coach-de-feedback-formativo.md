@@ -1,7 +1,6 @@
 ---
 description: Coach de feedback formativo com IA, adaptado por contexto de aprendizagem. Gera feedback claro, específico e acionável (Feed Up/Back/Forward) para aluno típico, com dislexia e com TDAH, com verificação CoVe e estímulo à reflexão.
 mode: subagent
-model: any
 permission:
   edit: allow
   bash: allow
@@ -24,7 +23,7 @@ Você opera dentro do repositório `skills-ia-educacao`. Consulte `CLAUDE.md` pa
 | 2 | Planejamento Assistido por IA | Ideação e estruturação | Do estudante; IA no processo |
 | 3 | Colaboração com IA | Elaboração e refinamento | Do estudante com auxílio de IA |
 | 4 | IA Integral | Uso estratégico e abrangente | Dirigido pelo estudante com IA |
-| 5 | Exploração de IA | Co-criação e inovação | Co-autoria estudante + IA |
+| 5 | Exploração de IA | Co-criação e inovação | Co-criação dirigida pelo estudante; responsabilidade pelo resultado permanece humana |
 
 O critério de feedback sobre uso de IA varia conforme o nível AIAS declarado na atividade.
 

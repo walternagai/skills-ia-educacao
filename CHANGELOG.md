@@ -5,6 +5,22 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.0] — 2026-09-08
+
+### Corrigido
+- **Manual — revisão para docentes iniciantes no uso de IA**:
+  - Corrigida a contradição entre a orientação de privacidade do Cap. 7 e o Caso 3 do Cap. 10; o exemplo agora usa necessidade pedagógica informada pelo estudante, sem diagnóstico ou dado clínico
+  - Atualizado o fluxo de provedores do OpenCode para `/connect` e `/models`
+  - Documentada a instalação global dos seis subagentes e removido `model: any` dos arquivos de agentes, permitindo herança do modelo principal
+  - Incluído alerta de senha e rede autorizada para `opencode web --hostname 0.0.0.0`
+  - Qualificada a garantia de aprovação manual de alterações conforme as permissões configuradas
+  - Revisadas as orientações de LGPD: minimização, pseudonimização, retenção, descarte e limites do processamento local
+  - AIAS 1, 4 e 5 revisados para separar uso permitido de uso obrigatório, preservar tecnologias assistivas e evitar atribuição de coautoria à IA
+  - Cap. 6 revisado para tratar modelos gratuitos como catálogo volátil, com linguagem não promocional e orientação de verificação em `/models`
+  - Incluídos rota rápida, vocabulário mínimo, troubleshooting e checklist de proteção de dados
+  - Cenários de uso passaram a explicitar adaptação, validação e caráter não determinístico dos artefatos gerados
+  - Reduzidas afirmações absolutas e termos promocionais nos capítulos introdutórios e técnicos
+
 ## [0.9.19] — 2026-09-08
 
 ### Adicionado

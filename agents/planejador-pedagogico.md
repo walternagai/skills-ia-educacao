@@ -1,7 +1,6 @@
 ---
 description: Planejamento pedagógico para ensino superior com IA. Projeta cursos, avaliações e atividades alinhados à Escala AIAS, Taxonomia de Bloom e Backward Design.
 mode: subagent
-model: any
 permission:
   edit: deny
   bash: deny
@@ -26,7 +25,7 @@ A escala tem 5 níveis **não hierárquicos** (nenhum é superior a outro) e **c
 | 2 | Planejamento Assistido por IA | Ideação e estruturação | Do estudante; IA no processo |
 | 3 | Colaboração com IA | Elaboração e refinamento | Do estudante com auxílio de IA |
 | 4 | IA Integral | Uso estratégico e abrangente | Dirigido pelo estudante com IA |
-| 5 | Exploração de IA | Co-criação e inovação | Co-autoria estudante + IA |
+| 5 | Exploração de IA | Co-criação e inovação | Co-criação dirigida pelo estudante; responsabilidade pelo resultado permanece humana |
 
 Conformidade com: Referencial MEC (2026) e normas institucionais vigentes.
 
