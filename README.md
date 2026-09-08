@@ -44,6 +44,12 @@ Após instalada, chame a skill pelo nome:
 /ia-educacao-etica
 ```
 
+## Compatibilidade entre CLIs
+
+As 62 skills são o conteúdo multiplataforma deste repositório. Elas podem ser instaladas no OpenCode, Claude Code, Codex, Gemini CLI, Antigravity e outros clientes que reconheçam o padrão Agent Skills, desde que sejam respeitados os caminhos, campos de frontmatter e comandos de cada cliente.
+
+Os seis subagentes são diferentes: seus arquivos em `agents/` e `.opencode/agents/` seguem a configuração do OpenCode e não são instalados pelo procedimento de skills nos demais CLIs. Para usá-los em Claude Code ou outra ferramenta, seria necessário adaptar os arquivos ao formato de agentes desse cliente e copiá-los para o diretório de agentes correspondente.
+
 ## Skills disponíveis
 
 ### Escala AIAS

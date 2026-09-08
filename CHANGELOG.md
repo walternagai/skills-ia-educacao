@@ -5,6 +5,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.1] — 2026-09-08
+
+### Corrigido
+- **Compatibilidade entre CLIs**:
+  - Manual e README agora distinguem explicitamente as 62 skills multiplataforma dos 6 subagentes específicos do OpenCode
+  - `install-skills.sh` passou a declarar explicitamente que instala somente skills e não agentes
+  - Documentada a necessidade de adaptar os subagentes ao formato de agentes de Claude Code, Codex, Gemini CLI ou outros clientes
+
 ## [0.10.0] — 2026-09-08
 
 ### Corrigido

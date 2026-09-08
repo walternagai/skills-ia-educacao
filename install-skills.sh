@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# install-skills.sh — instala as skills do acervo skills-ia-educacao em CLIs de IA
+# install-skills.sh — instala somente as skills do acervo em CLIs de IA
 # Uso: ./install-skills.sh [--all] [--claude] [--opencode] [--codex] [--antigravity] [--gemini] [--dry-run]
 # Sem flags: instala em todos os CLIs detectados (instalados na máquina).
 # --all: instala em todos os destinos, mesmo sem o CLI instalado.
@@ -108,3 +108,4 @@ done
 
 echo ""
 echo "Pronto. Reinicie o CLI para que as skills sejam detectadas."
+echo "Observação: os 6 subagentes são configurações específicas do OpenCode e não são instalados por este script."
