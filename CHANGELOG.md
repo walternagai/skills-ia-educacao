@@ -5,6 +5,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.13] — 2026-09-08
+
+### Modificado
+- **Manual (`manual/`) — parágrafos explicativos no catálogo de skills (seção 9.3)**:
+  - Adicionado parágrafo de abertura na seção "Catálogo das 62 Skills", explicando a lógica progressiva das cinco categorias (ensino → docência → salvaguardas → equidade → instrumentos) e como usar os slugs canônicos na invocação `/slug`
+  - Cada categoria (Níveis de Ensino, Formação Docente, Ética e Governança, Inclusão e Equidade, Ferramentas Práticas) recebeu parágrafo introdutório com pergunta orientadora própria (para quem, como ensina, sob quais condições, quem pode ser deixado para trás, o que produzir agora), aproximando a navegação pelo catálogo à necessidade concreta do docente
+  - Manual recompilado (`main.pdf` atualizado)
+
 ## [0.9.12] — 2026-09-08
 
 ### Modificado
