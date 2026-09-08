@@ -5,6 +5,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.10] — 2026-09-08
+
+### Modificado
+- **Manual (`manual/`) — remissões cruzadas entre capítulos**:
+  - Adicionadas referências diretas (`Capítulo~\ref{...}`) nos pontos de uso antecipado de conceitos: Cap. 2 cita `ia-educacao-dua` e `coach-de-feedback-formativo` remetendo aos Cap. 3 e 9; Cap. 5 remete o detalhamento dos subagentes ao Cap. 9; Cap. 6 remete os subagentes recomendados ao Cap. 9; Cap. 7 remete os seis subagentes ao Cap. 9
+  - Cap. 9 ganhou remissão reversa ao Cap. 3 (definição de skill, padrão `SKILL.md` e invocação por barra)
+  - Cap. 10 ampliou o box de convenções com remissão aos Cap. 3 e 9
+  - Ordem dos capítulos preservada; manual recompilado (`main.pdf` atualizado)
+
 ## [0.9.9] — 2026-09-08
 
 ### Modificado
