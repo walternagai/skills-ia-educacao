@@ -5,6 +5,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.6] — 2026-09-08
+
+### Corrigido
+- **Manual (`manual/`) — ajustes tipográficos no Cap. 10 (casos de uso)**:
+  - Tabela 10.1 (Como Escolher o Caso de Uso Adequado): coluna "Necessidade Docente" alargada (3,2cm → 6,5cm) para acomodar os textos sem quebra forçada
+  - Tabela 10.2 (Cenários Validados por Área STHEM): colunas de cenário e skills rebalanceadas (4,6/3,6cm → 4,5/3,5cm) e rótulos das áreas (Science, Technology, Humanities, Engineering, Mathematics) em itálico
+  - Tabela 10.3 (Checklist de Validação Docente): coluna "Pergunta de Checagem" alargada (3,5cm → 4,4cm)
+  - Manual recompilado (`main.pdf` atualizado)
+
 ## [0.10.5] — 2026-09-08
 
 ### Adicionado
