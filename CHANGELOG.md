@@ -5,6 +5,17 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.15] — 2026-09-08
+
+### Adicionado
+- **Manual (`manual/`) — autoria e procedência dos conceitos utilizados**:
+  - Nova subseção no Cap. 3 ("Quem Criou as Skills, os Subagentes e o OpenCode?"): OpenCode como projeto MIT da empresa Anomaly (abril/2025); Skills como padrão aberto Agent Skills proposto pela Anthropic (dez/2025), adotado por Claude Code, Gemini CLI, GitHub Copilot, Cursor e Goose; Subagentes como conceito difundido pelo Claude Code e implementado via `.opencode/agents/` — os seis subagentes e as 62 skills são criação própria do acervo
+  - MCP (Model Context Protocol) creditado à Anthropic (David Soria Parra e Justin Spahr-Summers, nov/2024), doado à Agentic AI Foundation (Linux Foundation) em dez/2025; demais conceitos não-autorais documentados (tool calling, TUI, Ollama)
+  - Cap. 4: nota de autoria na visão geral (Anomaly, MIT, padrões abertos)
+  - Cap. 6: nota de procedência dos modelos gratuitos (Nemotron/NVIDIA, Ling/inclusionAI, MiMo/Xiaomi, Muse Spark/Meta — o OpenCode apenas orquestra o acesso)
+  - Cinco novas entradas ABNT verificadas em `referencias.bib` (ANTHROPIC 2024; 2025; PARRA; OPENCODE 2026; OLLAMA 2025)
+  - Manual recompilado (`main.pdf` atualizado)
+
 ## [0.9.14] — 2026-09-08
 
 ### Corrigido
