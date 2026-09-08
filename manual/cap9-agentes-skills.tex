@@ -21,6 +21,10 @@ permission:
 ---
 \end{lstlisting}
 
+\begin{conceitochave}
+\textbf{Invoca{\c c}{\~a}o por Arroba (\emph{Agent Mention})}: Todo subagente deste acervo {\'e} acionado pelo usu{\'a}rio por meio da sintaxe \texttt{@nome-do-subagente}, com o arroba antecedendo o identificador can{\^o}nico. Por exemplo, o consultor de planejamento pedag{\'o}gico {\'e} invocado como \texttt{@planejador-pedagogico}, o construtor de avalia{\c c}{\~o}es como \texttt{@construtor-de-avaliacoes} e o coach de feedback como \texttt{@coach-de-feedback-formativo}. A men{\c c}{\~a}o pode ser feita diretamente no campo de mensagem ou no texto do \emph{prompt}; o OpenCode reconhece o identificador precedido por \texttt{@} e delega a tarefa ao subagente correspondente. Uma alternativa equivalente {\'e} selecionar o agente no menu suspenso da interface gr{\'a}fica.
+\end{conceitochave}
+
 \subsection{Sincronia Can{\^o}nica entre \texttt{agents/} e \texttt{.opencode/agents/}}
 
 Para garantir que as instru{\c c}{\~o}es estejam sempre atualizadas, o reposit{\'o}rio mant{\'e}m duas pastas sincronizadas com verifica{\c c}{\~a}o autom{\'a}tica via \texttt{./audit.sh}:

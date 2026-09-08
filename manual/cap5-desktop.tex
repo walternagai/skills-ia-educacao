@@ -38,7 +38,7 @@ A interface gr{\'a}fica do OpenCode foi concebida para priorizar a clareza, a er
   \item \textbf{Explorador de Arquivos e Contexto}: Exibe a {\'a}rvore de diret{\'o}rios do projeto. Permite arrastar arquivos (como PDFs normativos, ementas em \texttt{.txt} ou tabelas de notas) diretamente para a {\'a}rea de conversa;
   \item \textbf{Painel Central de Di{\'a}logo e Renderiza{\c c}{\~a}o}: Apresenta as mensagens com formata{\c c}{\~a}o rica em Markdown, suporte a f{\'o}rmulas matem{\'a}ticas em \LaTeX, tabelas din{\^a}micas e realce colorido de sintaxe de c{\'o}digo;
   \item \textbf{Painel de Auditoria e Aprova{\c c}{\~a}o de A{\c c}{\~o}es (\emph{Diff Viewer})}: Quando um subagente prop{\~o}e criar ou editar um documento no disco, a interface exibe uma visualiza{\c c}{\~a}o comparativa em duas colunas (\emph{diff} com cores verde para inclus{\~o}es e vermelho para remo{\c c}{\~o}es). Nenhuma modifica{\c c}{\~a}o {\'e} persistida sem a autoriza{\c c}{\~a}o expl{\'i}cita do usu{\'a}rio no bot{\~a}o de confirma{\c c}{\~a}o;
-  \item \textbf{Seletor Superior de Modelos e Agentes}: Um menu suspenso permite alternar rapidamente entre provedores (Anthropic, OpenAI, modelos gratuitos do OpenCode ou Ollama local) e definir se a tarefa ser{\'a} conduzida pelo agente geral ou por um subagente especializado (e.g., \texttt{construtor-de-avaliacoes}).
+  \item \textbf{Seletor Superior de Modelos e Agentes}: Um menu suspenso permite alternar rapidamente entre provedores (Anthropic, OpenAI, modelos gratuitos do OpenCode ou Ollama local) e definir se a tarefa ser{\'a} conduzida pelo agente geral ou por um subagente especializado (e.g., \texttt{@construtor-de-avaliacoes}).
 \end{enumerate}
 
 \section{O Fluxo de Trabalho Docente na Interface Gr{\'a}fica}
@@ -51,9 +51,9 @@ Para ilustrar a din{\^a}mica de trabalho na interface desktop, a Figura~\ref{fig
     \small
     \begin{enumerate}
       \item \textbf{Abertura do Espa{\c c}o de Trabalho}: Inicia-se o OpenCode no diret{\'o}rio da disciplina contendo as ementas e objetivos institucionais;
-      \item \textbf{Sele{\c c}{\~a}o do Modelo e do Subagente}: No menu superior, o docente seleciona o agente desejado (ex.: \texttt{planejador-pedagogico}) e o modelo apropriado (gratuito ou avan{\c c}ado);
+      \item \textbf{Sele{\c c}{\~a}o do Modelo e do Subagente}: No menu superior, o docente seleciona o agente desejado (ex.: \texttt{@planejador-pedagogico}) e o modelo apropriado (gratuito ou avan{\c c}ado);
       \item \textbf{Envio de Insumos}: O docente formula a necessidade educacional e anexa o arquivo da ementa com um clique;
-      \item \textbf{Inspe{\c c}{\~a}o do Racioc{\'i}nio e Chamada de Skills}: A interface destaca visualmente a ativa{\c c}{\~a}o das skills correspondentes (ex.: \texttt{ia-educacao-bloom}, \texttt{aias-consultant});
+      \item \textbf{Inspe{\c c}{\~a}o do Racioc{\'i}nio e Chamada de Skills}: A interface destaca visualmente a ativa{\c c}{\~a}o das skills correspondentes (ex.: \texttt{/ia-educacao-bloom}, \texttt{/aias-consultant});
       \item \textbf{Aprova{\c c}{\~a}o Visual de Arquivos}: Ap{\'o}s revisar a pr{\'e}-visualiza{\c c}{\~a}o do plano ou rubrica gerada, o docente clica em \emph{Aprovar e Salvar};
       \item \textbf{Exporta{\c c}{\~a}o Final}: O artefato {\'e} salvo como arquivo \texttt{.md}, \texttt{.tex} ou \texttt{.html}, pronto para upload no ambiente virtual de aprendizagem (Moodle/SIGAA) ou impress{\~a}o.
     \end{enumerate}

@@ -13,20 +13,41 @@ O \textbf{OpenCode} (\url{https://opencode.ai}) {\'e} um agente aut{\^o}nomo de 
 
 \section{Pr{\'e}-requisitos de Sistema}
 
-O OpenCode {\'e} compat{\'i}vel com os principais sistemas operacionais modernos:
+O OpenCode {\'e} multiplataforma e compat{\'i}vel com os tr{\^e}s principais sistemas operacionais utilizados pelo corpo docente: \textbf{Windows} (predominante em muitos campi), \textbf{Linux} e \textbf{macOS}. A Tabela~\ref{tab:so-suporte} apresenta o panorama de suporte por sistema.
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \caption{Suporte do OpenCode por Sistema Operacional}
+  \label{tab:so-suporte}
+  \begin{tabularx}{\linewidth}{p{2.2cm}p{4.6cm}p{4.6cm}X}
+    \toprule
+    \textbf{Sistema} & \textbf{Terminal Recomendado} & \textbf{M{\'e}todos de Instala{\c c}{\~a}o} & \textbf{Diret{\'o}rio das Skills} \\
+    \midrule
+    \textbf{Windows} & PowerShell 5.1+/7, Windows Terminal ou Git Bash & Script cURL via WSL2, Scoop ou Chocolatey & \texttt{C:\textbackslash{}Users\textbackslash{}<usuario>\textbackslash{}.\textbackslash{}config\textbackslash{}opencode\textbackslash{}skills} \\
+    \addlinespace
+    \textbf{Linux} & Bash ou Zsh & Script cURL, npm/pnpm/bun & \texttt{\~{}/.config/opencode/skills} \\
+    \addlinespace
+    \textbf{macOS} & Terminal.app ou iTerm 2 (Zsh padr{\~a}o) & Script cURL, npm/pnpm/bun, Homebrew & \texttt{\~{}/.config/opencode/skills} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\subsection{Detalhamento por Sistema Operacional}
+
 \begin{itemize}
-  \item \textbf{Linux}: Qualquer distribui{\c c}{\~a}o contempor{\^a}nea com arquitetura x86\_64 ou ARM64 (Ubuntu 20.04+, Debian 11+, Fedora, Arch Linux, etc.);
-  \item \textbf{macOS}: Vers{\~a}o 12 (Monterey) ou superior, tanto em processadores Apple Silicon (M1/M2/M3/M4) quanto Intel;
-  \item \textbf{Windows}: Recomenda-se enfaticamente a utiliza{\c c}{\~a}o por meio do \textbf{WSL2} (\emph{Windows Subsystem for Linux}), que oferece ambiente Linux nativo com m{\'a}ximo desempenho e compatibilidade. Tamb{\'e}m {\'e} poss{\'i}vel a instala{\c c}{\~a}o direta no PowerShell via gerenciadores de pacotes Windows.
+  \item \textbf{Windows}: H{\'a} duas trilhas equivalentes. A primeira, recomendada para desempenho total, {\'e} a utiliza{\c c}{\~a}o do \textbf{WSL2} (\emph{Windows Subsystem for Linux}), que fornece um ambiente Linux nativo dentro do Windows e permite seguir integralmente as instru{\c c}{\~o}es da se{\c c}{\~a}o de Linux. A segunda {\'e} a instala{\c c}{\~a}o \textbf{nativa no PowerShell} por meio dos gerenciadores Scoop ou Chocolatey (ver M{\'e}todo 4). Para a interface gr{\'a}fica, o navegador padr{\~a}o (Edge ou Chrome) abre a interface web normalmente;
+  \item \textbf{Linux}: Qualquer distribui{\c c}{\~a}o contempor{\^a}nea com arquitetura x86\_64 ou ARM64 (Ubuntu 20.04+, Debian 11+, Fedora, Arch Linux, etc.); o script de instala{\c c}{\~a}o detecta automaticamente a arquitetura;
+  \item \textbf{macOS}: Vers{\~a}o 12 (Monterey) ou superior, tanto em processadores Apple Silicon (M1/M2/M3/M4) quanto Intel; o script oficial produz bin{\'a}rios nativos para ambas as arquiteturas.
 \end{itemize}
 
 Ferramentas utilit{\'a}rias b{\'a}sicas no terminal: \texttt{curl}, \texttt{git} e uma conex{\~a}o ativa com a internet para baixa dos bin{\'a}rios e comunica{\c c}{\~a}o com as APIs.
 
 \section{Passo a Passo de Instala{\c c}{\~a}o}
 
-O OpenCode disponibiliza m{\'u}ltiplos m{\'e}todos de instala{\c c}{\~a}o oficiais. O usu{\'a}rio pode optar pelo que melhor se adeque ao seu ambiente de trabalho.
+O OpenCode disponibiliza m{\'u}ltiplos m{\'e}todos de instala{\c c}{\~a}o oficiais, equivalentes entre si. O usu{\'a}rio pode optar pelo que melhor se adeque ao seu sistema operacional e ao seu ambiente de trabalho.
 
-\subsection{M{\'e}todo 1: Script Autom{\'a}tico via cURL (Recomendado para Linux e macOS)}
+\subsection{M{\'e}todo 1: Script Autom{\'a}tico via cURL (Linux, macOS e Windows via WSL2)}
 
 O m{\'e}todo mais r{\'a}pido e direto consiste em executar o script oficial de instala{\c c}{\~a}o no terminal:
 
@@ -34,16 +55,19 @@ O m{\'e}todo mais r{\'a}pido e direto consiste em executar o script oficial de i
 curl -fsSL https://opencode.ai/install | bash
 \end{lstlisting}
 
-O script detecta a arquitetura do processador, baixa o bin{\'a}rio est{\'a}tico otimizado, instala o execut{\'a}vel no diret{\'o}rio \texttt{\~{}/.opencode/bin/opencode} e adiciona essa localiza{\c c}{\~a}o ao arquivo de configura{\c c}{\~a}o do \emph{shell} (\texttt{\~{}/.bashrc} ou \texttt{\~{}/.zshrc}).
+O script detecta o sistema operacional e a arquitetura do processador, baixa o bin{\'a}rio est{\'a}tico otimizado, instala o execut{\'a}vel no diret{\'o}rio \texttt{\~{}/.opencode/bin/opencode} e adiciona essa localiza{\c c}{\~a}o ao arquivo de configura{\c c}{\~a}o do \emph{shell} (\texttt{\~{}/.bashrc}, \texttt{\~{}/.zshrc} ou \texttt{\~{}/.profile}).
 
 Ap{\'o}s a conclus{\~a}o, recarregue as vari{\'a}veis de ambiente do terminal:
-\begin{lstlisting}[language=bash]
-source ~/.bashrc   # ou source ~/.zshrc se estiver no zsh
+\begin{lstlisting}[language=bash, caption={Recarga do shell (Linux/macOS/WSL2)}]
+source ~/.bashrc   # bash
+source ~/.zshrc    # zsh (padrao no macOS)
 \end{lstlisting}
+
+Este m{\'e}todo {\'e} igualmente v{\'a}lido no Windows quando executado dentro do ambiente WSL2 (aberto com o comando \texttt{wsl} no PowerShell ou pelo menu Iniciar).
 
 \subsection{M{\'e}todo 2: Gerenciadores de Pacotes JavaScript (Node.js / npm)}
 
-Caso o ambiente j{\'a} conte com o Node.js (vers{\~a}o 18 ou superior) configurado, o OpenCode pode ser instalado globalmente via \texttt{npm}, \texttt{pnpm} ou \texttt{bun}:
+Funciona nos tr{\^e}s sistemas operacionais. Caso o ambiente j{\'a} conte com o Node.js (vers{\~a}o 18 ou superior) configurado, o OpenCode pode ser instalado globalmente via \texttt{npm}, \texttt{pnpm} ou \texttt{bun}:
 
 \begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o global via npm, pnpm ou bun}]
 # Via npm
@@ -56,17 +80,21 @@ pnpm add -g opencode-ai
 bun add -g opencode-ai
 \end{lstlisting}
 
+No \textbf{Windows}, os mesmos comandos s{\~a}o executados no \textbf{PowerShell} (com o Node.js instalado a partir de \url{https://nodejs.org}); no \textbf{macOS} e \textbf{Linux}, no terminal padr{\~a}o.
+
 \subsection{M{\'e}todo 3: Homebrew (macOS e Linux)}
 
-Usu{\'a}rios do gerenciador \textbf{Homebrew} podem instalar com um {\'u}nico comando:
+Usu{\'a}rios dos sistemas com Unix dispon{\'i}vel (macOS e Linux) que j{\'a} adotam o gerenciador \textbf{Homebrew} podem instalar com um {\'u}nico comando:
 
 \begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o via Homebrew}]
 brew install opencode
 \end{lstlisting}
 
+Esse m{\'e}todo {\'e} particularmente c{\^o}modo no macOS, pois o Homebrew {\'e} o gerenciador de pacotes mais difundido nesse sistema.
+
 \subsection{M{\'e}todo 4: Windows Nativo (Scoop ou Chocolatey)}
 
-Para instala{\c c}{\~a}o direta no Windows sem WSL, abra o PowerShell como Administrador:
+Para instala{\c c}{\~a}o direta no Windows, sem depender do WSL2, abra o \textbf{PowerShell como Administrador} e utilize um dos dois gerenciadores de pacotes:
 
 \begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o no Windows via Scoop ou Chocolatey}]
 # Via Scoop
@@ -75,6 +103,10 @@ scoop install opencode
 # Ou via Chocolatey
 choco install opencode
 \end{lstlisting}
+
+\begin{dicaopencode}
+\textbf{Windows: qual trilha escolher?} Se a m{\'a}quina do docente j{\'a} utiliza o WSL2 para outras atividades acad{\^e}micas ou de pesquisa, a trilha Linux (M{\'e}todo 1 ou 2) {\'e} a mais fluida. Para quem prefere permanecer exclusivamente no ambiente gráfico do Windows, a instala{\c c}{\~a}o nativa via Scoop ou Chocolatey atende igualmente ao mesmo conjunto de skills e comandos. A {\'u}nica diferen{\c c}a relevante {\'e} o caminho de armazenamento das skills (ver se{\c c}{\~a}o de sincroniza{\c c}{\~a}o).
+\end{dicaopencode}
 
 \subsection{Verifica{\c c}{\~a}o da Instala{\c c}{\~a}o}
 
@@ -107,12 +139,22 @@ Durante a autentica{\c c}{\~a}o, o terminal solicitar{\'a} a chave de API (\emph
 
 \section{Instala{\c c}{\~a}o e Sincroniza{\c c}{\~a}o das Skills no OpenCode}
 
-Para que as 62 skills do reposit{\'o}rio fiquem dispon{\'i}veis no seu ambiente local do OpenCode, as pastas de skills precisam residir no diret{\'o}rio de extens{\~o}es do usu{\'a}rio:
+Para que as 62 skills do reposit{\'o}rio fiquem dispon{\'i}veis no seu ambiente local do OpenCode, as pastas de skills precisam residir no diret{\'o}rio de extens{\~o}es do usu{\'a}rio, cuja localiza{\c c}{\~a}o varia conforme o sistema operacional:
+
 \begin{center}
-  \texttt{\~{}/.config/opencode/skills/<slug>/SKILL.md}
+  \small
+  \begin{tabularx}{\linewidth}{p{2.4cm}X}
+    \toprule
+    \textbf{Sistema} & \textbf{Localiza{\c c}{\~a}o das Skills} \\
+    \midrule
+    Linux e macOS/WSL2 & \texttt{\~{}/.config/opencode/skills/<slug>/SKILL.md} \\
+    \addlinespace
+    Windows nativo & \texttt{C:\textbackslash{}Users\textbackslash{}<usuario>\textbackslash{}.config\textbackslash{}opencode\textbackslash{}skills\textbackslash{}<slug>\textbackslash{}SKILL.md} \\
+    \bottomrule
+  \end{tabularx}
 \end{center}
 
-O reposit{\'o}rio prov{\^e} um script de instala{\c c}{\~a}o automatizado que realiza a c{\'o}pia e organiza{\c c}{\~a}o de forma segura.
+O reposit{\'o}rio prov{\^e} um script de instala{\c c}{\~a}o automatizado que realiza a c{\'o}pia e organiza{\c c}{\~a}o de forma segura. Como o script \texttt{install-skills.sh} {\'e} um script \emph{bash}, ele deve ser executado em um ambiente Unix: terminal Linux, macOS, WSL2 ou \textbf{Git Bash} no Windows nativo.
 
 \subsection{Executando a Instala{\c c}{\~a}o}
 
@@ -126,13 +168,23 @@ Na raiz do reposit{\'o}rio \texttt{skills-ia-educacao}, execute:
 ./install-skills.sh --opencode
 \end{lstlisting}
 
+O script detecta a pasta pessoal (\texttt{\$HOME}) do usu{\'a}rio e aplica o caminho correto do sistema operacional em uso.
+
 \subsection{Confer{\^e}ncia da Instala{\c c}{\~a}o}
 
 Para certificar-se de que todas as skills foram copiadas com sucesso:
 
-\begin{lstlisting}[language=bash, caption={Verificando as skills instaladas}]
+\begin{lstlisting}[language=bash, caption={Verificando as skills instaladas (Bash: Linux, macOS e WSL2)}]
 ls ~/.config/opencode/skills/ | grep ia-educacao | wc -l
 \end{lstlisting}
+
+No \textbf{Windows nativo} (PowerShell), o mesmo cheque pode ser feito com:
+
+\begin{lstlisting}[language=bash, caption={Verificando as skills instaladas (PowerShell)}]
+(Get-ChildItem "$env:USERPROFILE\.config\opencode\skills" | Where-Object Name -like "ia-educacao-*").Count
+(Test-Path "$env:USERPROFILE\.config\opencode\skills\aias-consultant")
+\end{lstlisting}
+
 O retorno dever{\'a} apontar 61 skills com o prefixo institucional (mais a skill especial \texttt{aias-consultant}, totalizando 62 unidades).
 
 \section{Primeiros Comandos no OpenCode}
@@ -145,11 +197,11 @@ Basta digitar o comando no terminal dentro do diret{\'o}rio do seu projeto acad{
 opencode
 \end{lstlisting}
 
-Uma interface limpa e intuitiva ser{\'a} renderizada no terminal, permitindo enviar mensagens, aprovar a{\c c}{\~o}es de leitura/escrita e selecionar o modelo desejado em tempo real.
+Uma interface limpa e intuitiva ser{\'a} renderizada no terminal, permitindo enviar mensagens, aprovar a{\c c}{\~o}es de leitura/escrita e selecionar o modelo desejado em tempo real. Dentro da interface, as skills s{\~a}o invocadas por meio da barra inicial: por exemplo, digite \texttt{/ia-educacao-rubrica} ou \texttt{/aias-consultant} e pressione Enter para acionar a skill desejada.
 
 \subsection{Execu{\c c}{\~a}o Direta de Comandos (\emph{Headless Mode})}
 
-Para instru{\c c}{\~o}es r{\'a}pidas ou integra{\c c}{\~a}o com scripts do professor, utilize o subcomando \texttt{run}:
+Para instru{\c c}{\~o}es r{\'a}pidas ou integra{\c c}{\~a}o com scripts do professor, utilize o subcomando \texttt{run} mencionando a skill pelo slug (a barra pode ser omitida em modo headless, pois o texto do \emph{prompt} j{\'a} identifica o identificador):
 
 \begin{lstlisting}[language=bash, caption={Exemplo de execu{\c c}{\~a}o direta com skill}]
 opencode run "Utilize a skill ia-educacao-rubrica para estruturar uma rubrica analitica para uma apresentacao oral de estagio com nivel AIAS 1."

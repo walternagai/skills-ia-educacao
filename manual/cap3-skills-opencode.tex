@@ -59,14 +59,18 @@ Ap{\'o}s o frontmatter, o corpo do texto {\'e} organizado em exatamente oito se{
 
 O \textbf{OpenCode} implementa uma arquitetura baseada em agentes com chamada de ferramentas (\emph{tool calling}). Ao ser inicializado, o execut{\'a}vel do OpenCode varre os diret{\'o}rios de extens{\~o}es e monta no \emph{prompt de sistema} uma lista sin{\'o}ptica com o identificador e a descri{\c c}{\~a}o de cada skill registrada.
 
+\begin{conceitochave}
+\textbf{Invoca{\c c}{\~a}o por Barra (\emph{Slash Command})}: Toda skill deste acervo {\'e} acionada pelo usu{\'a}rio por meio da sintaxe \texttt{/nome-da-skill}, com a barra antecedendo o slug can{\^o}nico. Por exemplo, a skill de rubricas {\'e} invocada como \texttt{/ia-educacao-rubrica} e a consultoria da Escala AIAS como \texttt{/aias-consultant}. Tamb{\'e}m {\'e} poss{\'i}vel mencionar a skill diretamente no texto do \emph{prompt} (ex.: ``use a skill \texttt{ia-educacao-rubrica}''); nesse caso, o modelo reconhece o identificador e aciona a ferramenta interna automaticamente.
+\end{conceitochave}
+
 \begin{figure}[htbp]
   \centering
   \begin{tcolorbox}[colback=boxbg, colframe=primary, arc=2mm, title={\bfseries Ciclo de Vida e Ativa{\c c}{\~a}o de uma Skill no OpenCode}]
     \small
     \begin{enumerate}
       \item \textbf{Declara{\c c}{\~a}o Inicial}: O OpenCode exp{\~o}e a ferramenta interna \texttt{skill(name="...")} e lista os metadados de todas as skills instaladas em \texttt{\~{}/.config/opencode/skills/};
-      \item \textbf{Detec{\c c}{\~a}o de Inten{\c c}{\~a}o}: O usu{\'a}rio formula uma demanda docente (ex.: \emph{``Gere uma rubrica anal{\'i}tica para um semin{\'a}rio de f{\'i}sica experimental com 4 crit{\'e}rios e n{\'i}vel AIAS 2''});
-      \item \textbf{Invoca{\c c}{\~a}o da Ferramenta}: O modelo de IA reconhece a correspond{\^e}ncia com a descri{\c c}{\~a}o da skill e executa a chamada de fun{\c c}{\~a}o:
+      \item \textbf{Detec{\c c}{\~a}o de Inten{\c c}{\~a}o}: O usu{\'a}rio formula uma demanda docente (ex.: \emph{``Gere uma rubrica anal{\'i}tica para um semin{\'a}rio de f{\'i}sica experimental com 4 crit{\'e}rios e n{\'i}vel AIAS 2''}) ou digita diretamente o comando de barra \texttt{/ia-educacao-rubrica};
+      \item \textbf{Invoca{\c c}{\~a}o da Ferramenta}: O OpenCode (ou o modelo, quando a skill {\'e} mencionada no texto) reconhece o identificador e executa a chamada de fun{\c c}{\~a}o:
       \begin{center}
         \texttt{[tool\_call: skill(name="ia-educacao-rubrica")]}
       \end{center}
@@ -79,7 +83,7 @@ O \textbf{OpenCode} implementa uma arquitetura baseada em agentes com chamada de
 \end{figure}
 
 \begin{dicaopencode}
-\textbf{Prontid{\~a}o de Execu{\c c}{\~a}o no Reposit{\'o}rio}: Ao contr{\'a}rio de ambientes que exigem o comando manual de adi{\c c}{\~a}o de pacotes externos, no OpenCode as skills disponibilizadas no diret{\'o}rio de configura{\c c}{\~a}o j{\'a} ficam imediatamente acess{\'i}veis. N{\~a}o {\'e} necess{\'a}rio executar comandos como \texttt{npx skills add}; a detec{\c c}{\~a}o e o acionamento ocorrem de maneira fluida e nativa.
+\textbf{Prontid{\~a}o de Execu{\c c}{\~a}o no Reposit{\'o}rio}: Ao contr{\'a}rio de ambientes que exigem o comando manual de adi{\c c}{\~a}o de pacotes externos, no OpenCode as skills disponibilizadas no diret{\'o}rio de configura{\c c}{\~a}o j{\'a} ficam imediatamente acess{\'i}veis por meio do comando de barra \texttt{/nome-da-skill}. N{\~a}o {\'e} necess{\'a}rio executar comandos como \texttt{npx skills add}; a detec{\c c}{\~a}o e o acionamento ocorrem de maneira fluida e nativa.
 \end{dicaopencode}
 
 \section{O Grafo de Depend{\^e}ncias e a Integridade do Reposit{\'o}rio}

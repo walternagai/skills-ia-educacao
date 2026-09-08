@@ -5,6 +5,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.9] — 2026-09-08
+
+### Modificado
+- **Manual (`manual/`) — convenções de invocação e suporte multiplataforma**:
+  - **Sintaxe de invocação de skills (`/`)** — Cap. 3 define a convenção `\emph{slash command}` (`/nome-da-skill`, ex.: `/ia-educacao-rubrica`, `/aias-consultant`), com distinção entre digitação direta na interface e menção do slug dentro do prompt; Cap. 4 (TUI) e Cap. 5 (Desktop) atualizados com exemplos com barra
+  - **Sintaxe de invocação de subagentes (`@`)** — Cap. 9 define a convenção `\emph{agent mention}` (`@nome-do-subagente`, ex.: `@planejador-pedagogico`, `@construtor-de-avaliacoes`); menções em Cap. 5, 6, 7 e 10 padronizadas para a forma com arroba; tabela de síntese e esquemas YAML preservam os identificadores canônicos sem `@`
+  - **Suporte multiplataforma (Windows predominante, Linux e macOS)** — Cap. 4 reestruturado: nova tabela de suporte por SO (terminais, métodos de instalação e diretório das skills), detalhamento das trilhas Windows (WSL2 vs. nativa via Scoop/Chocolatey), métodos de instalação nomeados por SO, caminhos de skills por sistema (`~/.config/opencode/skills` vs. `C:\Users\<usuario>\.config\opencode\skills`), limitação do `install-skills.sh` a ambientes Unix (Linux/macOS/WSL2/Git Bash) e comandos de conferência equivalentes em Bash e PowerShell
+  - Manual recompilado (`main.pdf` atualizado)
+
 ## [0.9.8] — 2026-09-08
 
 ### Corrigido
