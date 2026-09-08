@@ -5,6 +5,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.2] — 2026-09-08
+
+### Modificado
+- **`README.md` — documentação do acervo atualizada**:
+  - Inventário do repositório expandido: **Manual AvalIA** (`manual/`, com PDF compilado em `manual/main.pdf`), **subagentes** (`agents/` e `.opencode/agents/`) e **scripts de instalação** (`install-skills.sh` / `uninstall-skills.sh`)
+  - Instalação migrada de `npx skills add` (Claude Code) para `./install-skills.sh` com flags (`--all`, destinos explícitos, `--dry-run`) e remoção via `uninstall-skills.sh`
+  - Nova seção "Manual AvalIA" com instruções de compilação (`manual/compilar.sh` ou `make -C manual`)
+
 ## [0.10.1] — 2026-09-08
 
 ### Corrigido
