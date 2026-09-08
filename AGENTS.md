@@ -82,7 +82,6 @@ awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | 
 ├── raw-pdfs/          # PDFs normativos (não versionados)
 ├── assets/            # SVGs do grafo (hub-chart, hub-star, hub-network)
 ├── agents/            # Specs de agentes (também em .opencode/agents/)
-├── apresentacao-skills.md  # Marp presentation
 └── skills/            # N skills (confira com `ls skills | wc -l`)
 ```
 
