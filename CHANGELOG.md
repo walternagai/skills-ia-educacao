@@ -5,6 +5,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.19] — 2026-09-08
+
+### Adicionado
+- **Manual (`manual/`) — identificação institucional do Projeto AvalIA**:
+  - Capa renomeada para o título principal do projeto: *AvalIA: Kit de Avaliação Formativa com Inteligência Artificial para Professores do Ensino Superior*
+  - Inclusão do autor Walter Aoiama Nagai, ICT/UNIFEI — Campus de Itabira
+  - Metadados PDF atualizados com autoria e título do projeto
+  - Inclusão de instruções para clonar ou baixar o repositório do GitHub antes da instalação das skills
+
 ## [0.9.18] — 2026-09-08
 
 ### Corrigido

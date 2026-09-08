@@ -165,6 +165,27 @@ Para que as 62 skills do reposit{\'o}rio fiquem dispon{\'i}veis no seu ambiente 
 
 O reposit{\'o}rio prov{\^e} um script de instala{\c c}{\~a}o automatizado que realiza a c{\'o}pia e organiza{\c c}{\~a}o de forma segura. Como o script \texttt{install-skills.sh} {\'e} um script \emph{bash}, ele deve ser executado em um ambiente Unix: terminal Linux, macOS, WSL2 ou \textbf{Git Bash} no Windows nativo.
 
+\subsection{Obtendo o Reposit{\'o}rio (GitHub)}
+
+Antes de executar o script, {\'e} necess{\'a}rio obter o reposit{\'o}rio \texttt{skills-ia-educacao} no seu computador. Ele est{\'a} hospedado publicamente no GitHub em \url{https://github.com/walternagai/skills-ia-educacao}. H{\'a} dois caminhos equivalentes:
+
+\subsubsection{Op{\c c}{\~a}o A -- Clonar com Git (recomendada)}
+
+A clonagem cria uma c{\'o}pia local que pode ser atualizada com um {\'u}nico comando sempre que o acervo crescer:
+
+\begin{lstlisting}[language=bash, caption={Clonando o reposit{\'o}rio do projeto AvalIA}]
+git clone https://github.com/walternagai/skills-ia-educacao.git
+cd skills-ia-educacao
+\end{lstlisting}
+
+\begin{dicaopencode}
+\textbf{Windows}: execute o comando acima no \textbf{Git Bash} (instalado junto com o Git -- ver Passe~1 da se{\c c}{\~a}o de controle de vers{\~a}o). \textbf{Linux/macOS/WSL2}: no terminal padr{\~a}o. Para atualizar o acervo depois, basta executar \texttt{git pull} dentro da pasta e rodar o \texttt{install-skills.sh} novamente.
+\end{dicaopencode}
+
+\subsubsection{Op{\c c}{\~a}o B -- Baixar o ZIP (sem Git)}
+
+Para docentes que preferem n{\~a}o instalar o Git: acesse \url{https://github.com/walternagai/skills-ia-educacao} no navegador, clique no bot{\~a}o verde \textbf{Code} e escolha \textbf{Download ZIP}. Extraia o arquivo baixado em uma pasta de sua prefer{\^e}ncia; a pasta extra{\'i}da ser{\'a} a raiz do reposit{\'o}rio para os comandos seguintes. A desvantagem {\'e} que atualiza{\c c}{\~o}es futuras do acervo exigem repetir o download manual.
+
 \subsection{Executando a Instala{\c c}{\~a}o}
 
 Na raiz do reposit{\'o}rio \texttt{skills-ia-educacao}, execute:
