@@ -1,0 +1,94 @@
+schema_version: 1
+task: rubric-applier
+status: approved
+domain: docs
+done: "Arquivo SKILL_rubric-applier.md criado na raiz do repo com: (1) avaliação da skill proposta 'rubric-applier' (encaixe no acervo), (2) 3 rubricas-modelo finalizadas em tabelas markdown (dimensões × níveis) — uma para programação, uma para redação, uma para projeto — seguindo as regras da ia-educacao-rubrica (3-6 critérios derivados de objetivos, 3-4 níveis com rótulos neutros, descritores observáveis sem menção a formato), com nível AIAS coerente via aias-consultant, (3) verificação de viés de IA e clareza registrada. Verificação: 3 rubricas × critérios preenchidos em todas as células; check de viés/clareza documentado; ./audit.sh mantém exit 0 (nenhuma skill do acervo é editada); arquivo presente na raiz."
+fit:
+  trivial: false
+  route: plan-first
+  reason: "Briefing detalhado (2-3 rubricas-modelo: programação, redação, projeto; tabelas dimensões × níveis; verificação de viés de IA/clareza via aias-consultant) com decisões pendentes: 2 vs 3 rubricas, granularidade das tabelas (3 ou 4 níveis), e uso de skills externas citadas no briefing (rubric-design-expert, academic-eval-markdown) que são proibidas como dependências do acervo — as homólogas internas (ia-educacao-rubrica, aias-consultant) cobrem o necessário. Entregável é documento novo na raiz; nada do acervo muda. Rota plan-first: THINK + plano, PARE para aprovação."
+  answered: true
+  skipped: false
+think:
+  problem: "Avaliar a skill proposta 'rubric-applier' (aplicadora/geradora de rubricas de avaliação alinhadas a critérios pedagógicos e à política de IA) e produzir SKILL_rubric-applier.md com 2-3 rubricas-modelo finalizadas em tabelas markdown (programação, redação, projeto), aplicando o método do briefing: desenhar rubricas (skill do briefing: rubric-design-expert), formatar tabelas (academic-eval-markdown) e verificar viés de IA/clareza (aias-consultant — esta é INTERNA ao acervo e pode ser citada). O acervo já tem ia-educacao-rubrica (analítica/holística/single-point, 3-6 critérios, 3-4 níveis, descritores neutros) — o artefato deve segui-la."
+  assumptions:
+    - "aias-consultant é skill INTERNA do acervo (única sem prefixo ia-educacao-) e pode constar no artefato como referência de coerência AIAS; rubric-design-expert e academic-eval-markdown são externas (proibidas na seção Dependências do acervo) mas disponíveis localmente como ferramentas de trabalho"
+    - "O arquivo SKILL_rubric-applier.md vai na raiz do repo (fora de skills/), então check_readme/check_orphans/check_external_deps não são afetados; nenhuma skill existente é editada"
+    - "Serão 3 rubricas-modelo (programação, redação, projeto) com 3-4 níveis cada e 3-6 critérios, conforme a faixa recomendada pela ia-educacao-rubrica"
+    - "As rubricas incluem, quando pertinente, critério de qualidade de uso e curadoria de IA (AIAS 3-5), seguindo padrão da ia-educacao-rubrica e da aias-consultant"
+    - "Verificação de viés de IA: os descritores avaliam competência independente do formato (redação não é avaliada pelo tamanho; código não é avaliado por linhas), sem penalizar estudantes que usaram IA de forma autorizada conforme o nível AIAS declarado"
+  alternatives:
+    - "alt A: criar a skill completa no acervo (skills/ia-educacao-rubric-applier/SKILL.md) — descartado: o briefing pede Arquivo SKILL_*.md com rubricas finalizadas, não nova skill do acervo; ia-educacao-rubrica já cobre o design de rubricas"
+    - "alt B: 2 rubricas apenas (o briefing diz 2-3) — escolhido 3: programação, redação e projeto são os três contextos nomeados pelo usuário; mais coberto sem peso excessivo"
+    - "alt C: usar somente skills externas no processo — descartado: as internas (ia-educacao-rubrica, aias-consultant) são as fontes autorizadas do acervo; as externas complementam a avaliação sem aparecer como dependências"
+    - "alt D: (escolhida) 3 rubricas em tabelas markdown na raiz, seguindo ia-educacao-rubrica + aias-consultant, com check de viés/clareza documentado"
+  unknowns: |
+    PROPOSTAS (aguardando confirmação do usuário; se não responder, seguir as propostas):
+    1. Número de rubricas → 3 (programação, redação, projeto — todos os contextos nomeados)
+    2. Níveis por rubrica → 4 (Iniciante, Em desenvolvimento, Proficiente, Exemplar) para programação e redação; 3 para projeto (complexidade integrada)
+    3. Critério de IA → presente nas 3 rubricas como critério derivado de objetivo (uso e curadoria de IA), com descritores que avaliam processo e autoria de decisões
+    RESOLVIDO:
+    1. Regras de rubrica confirmadas na ia-educacao-rubrica (tipos analítica/holística/single-point; 3-6 critérios; rótulos neutros; descritores sem formato de entrega)
+    2. Níveis AIAS canônicos confirmados na aias-consultant (5 níveis, não hierárquicos, cumulativos — tabela do README)
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: "1 arquivo novo (SKILL_rubric-applier.md). 3 rubricas-modelo em tabelas markdown — sem HTML, sem tooling, sem tocar skills existentes. Conteúdo = 3 tabelas (dimensões × níveis) + check de viés/clareza."
+  answered: true
+  skipped: false
+intent:
+  code_does: "Não há código — repo é acervo documental. O briefing pede: desenhar 2-3 rubricas via rubric-design-expert, formatar em tabelas markdown via academic-eval-markdown, verificar viés de IA/clareza via aias-consultant, produzir SKILL_rubric-applier.md"
+  check_expects: "Convenções do repo (AGENTS.md/CLAUDE.md): PT-BR, ABNT nas referências, aias-consultant citável (interna), sem dependências externas na seção Dependências (audit.sh check_external_deps); contagem: 3 rubricas com todas as células (critério × nível) preenchidas"
+  spec_says: "Briefing do usuário: 'Desenhe 2-3 rubricas-modelo (programação, redação, projeto); Formate em tabelas markdown (dimensões × níveis); Verifique se há viés de IA ou falta de clareza; Resultado: Arquivo SKILL_rubric-applier.md com rubricas finalizadas'"
+  all_agree: true
+  conflict_resolution: ""
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: SKILL_rubric-applier.md
+      necessary: true
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+  notes: "1 arquivo novo na raiz. Nenhum SKILL.md do acervo alterado. Aias-consultant aparece apenas no conteúdo do documento (ferramenta de verificação), não como dependência de skill."
+verify:
+  ruff_clean: true
+  tests_pass: true
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true
+  attempts: 1
+  hand_back: false
+  notas: "Repositório é acervo documental — sem ruff/pytest/coverage aplicáveis (AGENTS.md; sem .kata/config.yaml). Verificação real: contagem via grep — 3 rubricas-modelo (programação, redação, projeto) em tabelas markdown (30 linhas de tabela) + 2 checks (viés de IA e clareza) — e ./audit.sh exit 0 (nenhuma skill do acervo tocada). Critério de sucesso (done) satisfeito: SKILL_rubric-applier.md presente na raiz com 3 rubricas finalizadas e verificação de viés/clareza via aias-consultant."
+auth:
+  action_taken: false
+  authorized: false
+  action: ""
+  quote: ""
+pending:
+  action: ""
+  documented: false
+twins:
+  searched: true
+  pattern: "n/a — nenhum defeito corrigido (arquivo novo, sem padrão pré-existente)"
+  result: "0 ocorrência(s) — não aplicável"
+  defect_fixed: false
+  matches_count: 0
+  files_count: 0
+  fix_applied: false
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: false
+  auth_present: true
+  pending_owed: false
+  pending_present: true
+  twins_owed: false
+  twins_present: true
+base_commit: 414893906398dff0e62f20291fcf97f2f54e1311

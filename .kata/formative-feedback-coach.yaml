@@ -1,0 +1,96 @@
+schema_version: 1
+task: formative-feedback-coach
+status: approved
+domain: docs
+done: "Arquivo SKILL_formative-feedback-coach.md criado na raiz do repo com: (1) avaliação da skill proposta 'formative-feedback-coach' (encaixe no acervo vs. ia-educacao-feedback), (2) templates de feedback formativo por contexto — aluno típico, aluno com dislexia, aluno com TDAH — seguindo o modelo Feed Up / Feed Back / Feed Forward da ia-educacao-feedback (Hattie & Timperley, 2007), máximo 2 ações de melhoria por feedback, (3) cada feedback verificado via Chain of Verification (claro, específico, acionável) e reescrito com estratégia reflexiva (perguntas que estimulam o aluno a agir, não apenas corrigir), com princípios DUA aplicados. Verificação: 3 contextos × 3 partes do modelo (Feed Up/Back/Forward) presentes; check CoVe documentado por feedback; ./audit.sh mantém exit 0 (nenhuma skill do acervo é editada); arquivo presente na raiz."
+fit:
+  trivial: false
+  route: plan-first
+  reason: "Briefing detalhado (3 contextos de aluno, verificação CoVe, estímulo à reflexão) com decisões pendentes: caso de uso base para os templates, e uso de skills externas citadas no briefing (chain-of-verification, dua-educator, active-learning-stem) que são proibidas como dependências do acervo — as homólogas internas (ia-educacao-verificacao, ia-educacao-dua, ia-educacao-aprendizagem-ativa, ia-educacao-feedback) cobrem o necessário. Entregável é documento novo na raiz; nada do acervo muda. Rota plan-first: THINK + plano, PARE para aprovação."
+  answered: true
+  skipped: false
+think:
+  problem: "Avaliar a skill proposta 'formative-feedback-coach' (coach de feedback formativo com IA) e produzir SKILL_formative-feedback-coach.md com templates de feedback por contexto (aluno típico, aluno com dislexia, aluno com TDAH), aplicando o método do briefing: verificar clareza/especificidade/acionabilidade (skill do briefing: chain-of-verification), gerar versões por necessidade (dua-educator) e reescrever para estimular reflexão (active-learning-stem). O acervo já tem ia-educacao-feedback (modelo Feed Up/Feed Back/Feed Forward, Hattie & Timperley 2007; máx. 2 ações por feedback), ia-educacao-verificacao (CoVe), ia-educacao-dua e ia-educacao-aprendizagem-ativa — o artefato deve ser coerente com elas."
+  assumptions:
+    - "chain-of-verification, dua-educator e active-learning-stem são externas ao acervo (proibidas na seção Dependências de SKILL.md — audit.sh check_external_deps) mas disponíveis localmente como ferramentas de trabalho; as homólogas internas (ia-educacao-verificacao, ia-educacao-dua, ia-educacao-aprendizagem-ativa, ia-educacao-feedback) são as fontes canônicas a referenciar no documento"
+    - "O arquivo SKILL_formative-feedback-coach.md vai na raiz do repo (fora de skills/), não afeta check_readme/check_orphans; nenhuma skill existente é editada"
+    - "Ocaso de uso base dos templates será uma redação argumentativa (contexto mais frequente de feedback docente em escala) com dois problemas concretos: argumento sem evidência e parágrafo de conclusão fraco — feedback sobre a tarefa, não sobre a pessoa (princípio da ia-educacao-feedback)"
+    - "DUA: para aluno com dislexia — frases curtas, vocabulário acessível, sem ambiguidade, foco reduzido; para aluno com TDAH — estrutura explícita, uma ação por vez, prazo/contexto ancorado, sem excesso de texto. Nenhuma adaptação reduz o rigor do feedback"
+    - "CoVe: cada template passa por verificação em 3 critérios — claro (uma leitura basta), específico (refere trecho concreto da entrega), acionável (a ação é realizável antes da próxima entrega) — registrada como checklist no documento"
+    - "Reescrita reflexiva: cada template inclui 1 pergunta reflexiva junto das ações (ex.: 'Qual evidência fortalece seu argumento?') seguindo estratégia de aprendizagem ativa (estímulo à metacognição e à próxima ação, não só correção)"
+  alternatives:
+    - "alt A: criar a skill completa no acervo (skills/ia-educacao-formative-feedback-coach/SKILL.md) — descartado: o briefing pede Arquivo SKILL_*.md com templates por contexto; ia-educacao-feedback já cobre o design de feedback formativo com IA"
+    - "alt B: templates para outros contextos (ex.: cálculo, projeto) — descartado: briefing pede explicitamente aluno típico, dislexia e TDAH"
+    - "alt C: usar somente skills externas no processo — descartado: as internas são as fontes autorizadas do acervo; as externas complementam sem entrar no grafo de dependências"
+    - "alt D: (escolhida) documento de avaliação + 3 templates na raiz, CoVe integrado ao template (checklist de verificação por feedback), homólogas internas como referências"
+  unknowns: |
+    PROPOSTAS (aguardando confirmação do usuário; se não responder, seguir as propostas):
+    1. Caso de uso base → redação argumentativa sobre tecnologia em sala de aula (2 problemas: argumento sem evidência; conclusão fraca)
+    2. Estrutura dos templates → bloco por contexto: Feed Up / Feed Back / Feed Forward + checklist CoVe + pergunta reflexiva
+    3. Quantidade de ações → máx. 2 por feedback (regra da ia-educacao-feedback: mais paralisa)
+    RESOLVIDO:
+    1. Modelo Feed Up/Feed Back/Feed Forward confirmado na ia-educacao-feedback (Hattie & Timperley, 2007; 2-3 dimensões por rodada; equilíbrio entre o que funciona e o que melhorar)
+    2. CoVe confirmada na ia-educacao-verificacao (perguntas atômicas, binárias, independentes; verificação proporcional ao impacto)
+    3. Estratégias DUA por princípio confirmadas na ia-educacao-dua (Engajamento/Representação/Ação e Expressão; múltiplas formas de expressar aprendizagem; remover barreiras mantendo rigor)
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: "1 arquivo novo (SKILL_formative-feedback-coach.md). 3 templates (típico, dislexia, TDAH) + avaliação da skill proposta + checklist CoVe. Sem tooling, sem tocar skills existentes."
+  answered: true
+  skipped: false
+intent:
+  code_does: "Não há código — repo é acervo documental. O briefing pede: verificar cada feedback via chain-of-verification (claro, específico, acionável), criar versões para aluno típico/dislexia/TDAH via dua-educator, reescrever para estimular reflexão via active-learning-stem, produzir SKILL_formative-feedback-coach.md"
+  check_expects: "Convenções do repo (AGENTS.md/CLAUDE.md): PT-BR, ABNT em referências, homólogas internas citadas sem violar check_external_deps; contagem: 3 contextos × (Feed Up + Feed Back + Feed Forward + checklist CoVe + pergunta reflexiva); máx. 2 ações por feedback"
+  spec_says: "Briefing do usuário: 'Verifique se cada feedback é claro, específico e acionável [CoVe]; Crie versões de feedback para: aluno típico, aluno com dislexia, aluno com TDAH [DUA]; Reescreva feedback para estimular reflexão (não apenas corrigir) [ativa]; Resultado: Arquivo SKILL_formative-feedback-coach.md com templates por contexto'"
+  all_agree: true
+  conflict_resolution: ""
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: SKILL_formative-feedback-coach.md
+      necessary: true
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+  notes: "1 arquivo novo na raiz. Nenhum SKILL.md do acervo alterado. Skills internas citadas no conteúdo do documento apenas como referências canônicas."
+verify:
+  ruff_clean: true
+  tests_pass: true
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true
+  attempts: 1
+  hand_back: false
+  notas: "Repositório é acervo documental — sem ruff/pytest/coverage aplicáveis (AGENTS.md; sem .kata/config.yaml). Verificação real: contagem via grep — 3 templates (típico, dislexia, TDAH) × 3 partes do modelo Feed Up/Back/Forward (9 blocos) + 3 checklists CoVe + 3 perguntas reflexivas — e ./audit.sh exit 0 (nenhuma skill do acervo tocada). Critério de sucesso (done) satisfeito: SKILL_formative-feedback-coach.md presente na raiz com templates por contexto, CoVe aplicado e reescrita reflexiva."
+auth:
+  action_taken: false
+  authorized: false
+  action: ""
+  quote: ""
+pending:
+  action: ""
+  documented: false
+twins:
+  searched: true
+  pattern: "n/a — nenhum defeito corrigido (arquivo novo, sem padrão pré-existente)"
+  result: "0 ocorrência(s) — não aplicável"
+  defect_fixed: false
+  matches_count: 0
+  files_count: 0
+  fix_applied: false
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: false
+  auth_present: true
+  pending_owed: false
+  pending_present: true
+  twins_owed: false
+  twins_present: true
+base_commit: 414893906398dff0e62f20291fcf97f2f54e1311

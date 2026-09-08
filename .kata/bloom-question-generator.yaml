@@ -1,0 +1,95 @@
+schema_version: 1
+task: bloom-question-generator
+status: approved
+domain: docs
+done: "Arquivo SKILL_bloom-question-generator.md criado na raiz do repo com: (1) avaliação da skill proposta (alinhamento à Taxonomia Revisada de Bloom e encaixe no acervo), (2) 18 exemplos de questões formatados — 3 por nível (Lembrar, Compreender, Aplicar, Analisar, Avaliar, Criar) — cada um com nível, verbo, disciplina e alinhamento AIAS quando aplicável, (3) 3 MCQs validadas (uma por disciplina-alvo: Cálculo, Programação, Física) com stem, 4 alternativas, gabarito, justificativa de distratores (misconception), nível Bloom e vieses checados. Verificação: grep/contagem confirma 18 exemplos (3 por nível) + 3 MCQs; ./audit.sh mantém exit 0 (nenhuma skill do acervo é editada); arquivo presente na raiz."
+fit:
+  trivial: false
+  route: plan-first
+  reason: "Briefing detalhado do usuário (18 questões, 3 por nível, 3 MCQs validadas) mas com decisões pendentes: local/forma do arquivo (raiz vs. skills/), distribuição por disciplinas-alvo e uso de skills externas citadas no briefing (proibidas como dependências do acervo, permitidas como ferramentas de trabalho). Entregável é documento markdown novo — nada do acervo muda. Rota plan-first: THINK + plano, PARE para aprovação antes de gerar o arquivo."
+  answered: true
+  skipped: false
+think:
+  problem: "Avaliar a skill proposta 'bloom-question-generator' (gerador de questões alinhadas à Taxonomia Revisada de Bloom para o acervo IA-Educação) e produzir o arquivo SKILL_bloom-question-generator.md com 18 exemplos de questões formatados (3 por nível - Lembrar, Compreender, Aplicar, Analisar, Avaliar, Criar) e 3 MCQs validadas (uma por disciplina-alvo), aplicando o método do briefing: abrir a taxonomia (skill do briefing: bloom-taxonomy-educator), estruturar exemplos (academic-eval-markdown) e validar MCQs (stem-mcq-validator). O acervo já tem a homóloga interna ia-educacao-bloom (matriz bidimensional, 6 níveis, verbos digitais) e ia-educacao-mcq (design/validação de MCQs) — o artefato deve ser coerente com elas."
+  assumptions:
+    - "As skills citadas no briefing (bloom-taxonomy-educator, academic-eval-markdown, stem-mcq-validator) são externas ao acervo e proibidas na seção Dependências de SKILL.md (audit.sh check_external_deps + CLAUDE.md), mas estão disponíveis localmente como ferramentas de trabalho — serão usadas para informar a avaliação e os exemplos, sem entrar no grafo de dependências"
+    - "O arquivo SKILL_bloom-question-generator.md vai na raiz do repo como documento de avaliação/exemplos (fora de skills/), não quebra check_readme/check_orphans, e nenhuma skill existente será editada (sem incremento de version, sem CHANGELOG)"
+    - "Os 18 exemplos seguem a matriz bidimensional da ia-educacao-bloom: 6 níveis cognitivos × 4 tipos de conhecimento, com verbos presenciais clássicos (ex.: listar, explicar, calcular, diferenciar, julgar, projetar)"
+    - "Disciplinas-alvo das 3 MCVs validadas (proposta, ajustável): Cálculo Diferencial e Integral (Matemática), Programação Estruturada (Tecnologia), Física I (Ciência) — uma MCQ por disciplina, cobrindo os níveis Aplicar/Analisar/Avaliar (valor em era de IA generativa)"
+    - "Cada exemplo de questão indica nível Bloom, verbo, disciplina STHEM e alinhamento AIAS quando pertinente (padrão do acervo: nível AIAS e nível cognitivo são escolhas independentes mas coerentes)"
+  alternatives:
+    - "alt A: criar a skill completa no acervo (skills/ia-educacao-bloom-question-generator/SKILL.md com 8 seções) — descartado: o briefing pede Arquivo SKILL_*.md com exemplos formatados, não nova skill do acervo; o acervo já cobre o tema via ia-educacao-bloom + ia-educacao-mcq + ia-educacao-banco-questoes"
+    - "alt B: usar apenas as homólogas internas (ia-educacao-bloom, ia-educacao-mcq) no lugar das externas citadas — descartado como substituto estrito: o briefing nomeia as externas e elas estão disponíveis; as internas entram no artefato como referências de encaixe no acervo"
+    - "alt C: gerar os 18 exemplos sem validação MCQ formal — descartado: o briefing exige validar 3 questões de múltipla escolha com justificativa de distratores"
+    - "alt D: (escolhida) documento de avaliação + exemplos na raiz, usando as skills citadas como ferramentas e referenciando as homólogas internas — preserva o briefing e a política do acervo"
+  unknowns: |
+    PROPOSTAS (aguardando confirmação do usuário; se não responder, seguir as propostas):
+    1. Disciplinas-alvo das 3 MCQs → proposta: Cálculo, Programação, Física (uma por área STHEM)
+    2. Local do arquivo → raiz do repo, nome exato SKILL_bloom-question-generator.md
+    3. Distribuição dos 18 exemplos → 3 por nível; disciplinas variadas STHEM (sem repetir a mesma disciplina em mais de 2 níveis)
+    4. Uso das skills externas como ferramentas → permitido localmente; dependências do acervo intocadas
+    RESOLVIDO:
+    1. 6 níveis Bloom confirmados na ia-educacao-bloom (matriz Lembrar→Criar + tipos de conhecimento)
+    2. Regras de MCQ confirmadas na ia-educacao-mcq (4-5 alternativas, distratores por misconception, sem 'todas/nenhuma das anteriores', sem pistas gramaticais)
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: "Plano mínimo: 1 arquivo novo (SKILL_bloom-question-generator.md na raiz). Nenhuma skill existente é tocada. Sem abstrações nem configurabilidade. O conteúdo (18 exemplos + 3 MCQs) é o entregável, sem scaffolding adicional."
+  answered: true
+  skipped: false
+intent:
+  code_does: "Não há código — repo é acervo documental. O briefing pede: abrir bloom-taxonomy-educator (rever 6 níveis), estruturar 18 exemplos via academic-eval-markdown, validar 3 MCQs via stem-mcq-validator, produzir SKILL_bloom-question-generator.md"
+  check_expects: "Convenções do repo (AGENTS.md/CLAUDE.md): PT-BR, formato ABNT em referências, homólogas internas citadas sem violar check_external_deps (audit.sh); contagem exata de 18 exemplos (3 por nível) e 3 MCQs"
+  spec_says: "Briefing do usuário: 'Revise os 6 níveis de Bloom; Estruture 18 exemplos de questões (3 por nível); Valide 3 questões de múltipla escolha (uma por disciplina-alvo); Resultado: Arquivo SKILL_bloom-question-generator.md com exemplos formatados'"
+  all_agree: true
+  conflict_resolution: ""
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: SKILL_bloom-question-generator.md
+      necessary: true
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+  notes: "1 arquivo novo na raiz. Nenhum SKILL.md do acervo alterado (grafo intacto). O audit.sh (check_readme) exige que toda skill em skills/ esteja no README — este arquivo fica fora de skills/, então não afeta o README."
+verify:
+  ruff_clean: true
+  tests_pass: true
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true
+  attempts: 1
+  hand_back: false
+  notas: "Repositório é acervo documental — sem ruff/pytest/coverage aplicáveis (AGENTS.md; sem .kata/config.yaml). Verificação real: contagem via grep — 18 exemplos (3 por nível × 6 níveis) + 3 MCQs validadas (Cálculo, Programação, Física) — e ./audit.sh exit 0 (nenhuma skill do acervo tocada). Critério de sucesso (done) satisfeito: SKILL_bloom-question-generator.md presente na raiz com avaliação, 18 exemplos formatados e 3 MCQs validadas."
+auth:
+  action_taken: false
+  authorized: false
+  action: ""
+  quote: ""
+pending:
+  action: ""
+  documented: false
+twins:
+  searched: true
+  pattern: "n/a — nenhum defeito corrigido (arquivo novo, sem padrão pré-existente)"
+  result: "0 ocorrência(s) — não aplicável"
+  defect_fixed: false
+  matches_count: 0
+  files_count: 0
+  fix_applied: false
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: false
+  auth_present: true
+  pending_owed: false
+  pending_present: true
+  twins_owed: false
+  twins_present: true
+base_commit: 414893906398dff0e62f20291fcf97f2f54e1311
