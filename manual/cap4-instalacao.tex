@@ -234,6 +234,18 @@ No \textbf{Windows nativo} (PowerShell), o mesmo cheque pode ser feito com:
 
 O retorno dever{\'a} apontar 61 skills com o prefixo institucional (mais a skill especial \texttt{aias-consultant}, totalizando 62 unidades).
 
+Alternativamente, o reposit{\'o}rio prov{\^e} o script de relat{\'o}rio \texttt{info-skills}, que resume o estado da instala{\c c}{\~a}o em todos os CLIs de uma vez (skills completo/parcial/nada por destino e os seis subagentes do OpenCode), dispensando os comandos manuais:
+
+\begin{lstlisting}[language=bash, caption={Estado da instala{\c c}{\~a}o via script de relat{\'o}rio (Bash e Windows nativo)}]
+# Linux, macOS e WSL2 (ou Git Bash no Windows)
+./info-skills.sh --all --verbose
+
+# Windows nativo (CMD ou PowerShell)
+.\info-skills.bat --all --verbose
+\end{lstlisting}
+
+Antes da instala{\c c}{\~a}o, o par \texttt{doctor-skills.sh}/\texttt{doctor-skills.bat} averigua os pr{\'e}-requisitos do computador (bash, curl, git, node 18 ou superior, npm e os CLIs alvo); a flag \texttt{-{}-fix} instala os CLIs ausentes via \texttt{npm} quando poss{\'i}vel (ex.: \texttt{./doctor-skills.sh --all -{}-fix}).
+
 \subsection{Disponibilizando os Subagentes}
 
 O script \texttt{install-skills.sh} (ou \texttt{install-skills.bat} no Windows nativo) instala as skills, mas n{\~a}o copia automaticamente os seis subagentes. Se o OpenCode for executado em uma pasta separada da c{\'o}pia do reposit{\'o}rio, copie os arquivos dos subagentes para a configura{\c c}{\~a}o global do usu{\'a}rio:

@@ -8,6 +8,8 @@ Acervo de skills que orientam a integração responsável de Inteligência Artif
 - **Skills temáticas** (`skills/*/SKILL.md`) — 62 skills prontas para instalar em CLIs de IA (contagem atual: `ls skills | wc -l`)
 - **Subagentes** (`agents/` e `.opencode/agents/`) — 6 agentes especializados (formatado/OpenCode, ex.: `artesao-de-skills`, `planejador-pedagogico`)
 - **Scripts de instalação** (`install-skills.sh` / `uninstall-skills.sh`) — instalam/removem as skills em Claude Code, OpenCode, Codex, Gemini CLI e Antigravity
+- **Scripts de diagnóstico** (`doctor-skills.sh` / `info-skills.sh`) — verificam pré-requisitos do ambiente e o estado da instalação do acervo por CLI
+- **Equivalente Windows nativo** (`*.bat`) — as quatro funções acima em batch para CMD/PowerShell do Windows 10/11: `install-skills.bat`, `uninstall-skills.bat`, `doctor-skills.bat`, `info-skills.bat`
 - **PDFs normativos** (`raw-pdfs/`) — Referencial MEC, artigos AIAS originais
 - **CLAUDE.md** — instruções de contexto para instâncias do Claude Code neste repositório
 
@@ -41,6 +43,20 @@ O script instala somente as skills; os subagentes de `agents/` e `.opencode/agen
 ```bash
 ./uninstall-skills.sh --all
 ```
+
+No **Windows nativo** (CMD ou PowerShell), use os equivalentes em batch: `.\install-skills.bat --all` e `.\uninstall-skills.bat --all` (mesmas flags).
+
+### Diagnosticar o ambiente
+
+Antes de instalar, `doctor-skills` verifica os pré-requisitos (bash, curl, git, node >= 18, npm, CLIs); depois de instalar, `info-skills` informa o estado da instalação por CLI:
+
+```bash
+./doctor-skills.sh --all          # averigua pré-requisitos (add --fix para instalar CLIs ausentes via npm)
+./info-skills.sh                  # estado da instalação nos CLIs detectados
+./info-skills.sh --all --verbose  # todos os destinos + lista skills faltantes
+```
+
+No Windows nativo: `.\doctor-skills.bat --all` e `.\info-skills.bat --all --verbose`. Ambos reportam também os 6 subagentes do OpenCode.
 
 ### Invocar em CLIs de IA
 

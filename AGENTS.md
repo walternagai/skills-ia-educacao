@@ -16,7 +16,7 @@ Leia `CLAUDE.md` antes de qualquer operação. Ele contém: arquitetura das skil
 - **Sincronia**: `.opencode/agents/` é a cópia que o OpenCode carrega; `agents/` é a fonte canônica. Ao editar um agente, atualize **as duas** cópias (audit.sh verifica identidade).
 - `CLAUDE.md` é para Claude Code; `AGENTS.md` é o complemento para OpenCode.
 
-## Instalação de skills em CLIs
+## Instalação e diagnóstico de skills em CLIs
 
 Use `./install-skills.sh` / `./uninstall-skills.sh` — **exigem flags** (invocação sem argumentos só imprime usage; o auto-detect documentado no cabeçalho é código morto):
 
@@ -27,6 +27,16 @@ Use `./install-skills.sh` / `./uninstall-skills.sh` — **exigem flags** (invoca
 ./uninstall-skills.sh --all               # remove de todos os destinos
 ./uninstall-skills.sh --codex --dry-run   # mostra o que seria removido
 ```
+
+Scripts de diagnóstico (mesmos destinos/flags):
+
+```bash
+./doctor-skills.sh --all        # verifica pré-requisitos (bash, curl, git, node >= 18, npm, CLIs); --fix instala CLIs ausentes via npm
+./info-skills.sh                # informa estado da instalação nos CLIs detectados (completo/parcial/nada + subagentes)
+./info-skills.sh --all --verbose # todos os destinos + skills faltantes
+```
+
+**Windows nativo (CMD/PowerShell)**: os quatro scripts têm equivalente em batch — `install-skills.bat`, `uninstall-skills.bat`, `doctor-skills.bat` (com `--fix`) e `info-skills.bat` — chamados como `.\install-skills.bat --all` etc. (mesmas flags e códigos de saída; o `.bat` oferece instalação do CLI via winget/npm).
 
 | CLI | Onde as skills ficam | Verificação |
 |-----|----------------------|-------------|
@@ -72,6 +82,9 @@ awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | 
 ├── audit.sh          # Auditoria de integridade (rode após mudanças)
 ├── install-skills.sh  # Instala skills nos CLIs (exige flags)
 ├── uninstall-skills.sh # Remove skills dos CLIs (exige flags)
+├── doctor-skills.sh   # Diagnóstico de pré-requisitos (--fix para corrigir)
+├── info-skills.sh     # Estado da instalação por CLI (auto-detect sem flags)
+├── *.bat              # Equivalente Windows dos 4 scripts acima (CMD/PowerShell)
 ├── CLAUDE.md          # Instruções principais (leia primeiro)
 ├── CONTRIBUTING.md    # Template e checklist para criar/editar skills
 ├── CHANGELOG.md       # Histórico de versões (atualize ao modificar)
