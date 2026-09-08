@@ -5,6 +5,15 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.8] — 2026-09-08
+
+### Corrigido
+- **Prompts de subagentes no manual (validação CoVe)** — auditoria cruzada entre `manual/cap9-agentes-skills.tex`, `manual/cap10-casos-de-uso.tex` e as fontes canônicas (`agents/*.md`, `skills/*/SKILL.md`):
+  - **`planejador-pedagogico` no Cap. 9** — lista de skills recomendadas corrigida para refletir o passo 7 do workflow real do agente (`aias-consultant`, `ia-educacao-avaliacao`, `ia-educacao-rubrica`, `ia-educacao-planejamento-didatico`, `ia-educacao-integridade-academica`, `ia-educacao-etica`); removidas citações sem suporte (`planejamento-reverso`, `bloom`, `dua`)
+  - **Sintaxe de invocação no Cap. 10** — padronizada a menção canônica de subagentes do OpenCode (`@planejador-pedagogico`, `@construtor-de-avaliacoes`, `@coach-de-feedback-formativo`) e adicionada nota explicativa sobre a forma canônica de acionamento
+  - **Caso 1 do Cap. 10** — descrição de skills acionadas alinhada às recomendações reais do agente
+  - Manual recompilado (`main.pdf` atualizado)
+
 ## [0.9.7] — 2026-09-08
 
 ### Adicionado

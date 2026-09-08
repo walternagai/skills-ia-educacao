@@ -19,11 +19,13 @@ opencode
 
 \begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Comando Enviado pelo Professor}]
 \small
-``Atue como o subagente \path{planejador-pedagogico}. Analise a ementa de \emph{Estruturas de Dados} (listas, pilhas, filas, {\'a}rvores bin{\'a}rias, grafos e algoritmos de ordena{\c c}{\~a}o). Proponha um planejamento reverso de 15 semanas com tr{\^e}s momentos avaliativos formativos e especifique o n{\'i}vel AIAS recomendado para cada unidade tem{\'a}tica.''
+``Atue como o subagente \path{@planejador-pedagogico}. Analise a ementa de \emph{Estruturas de Dados} (listas, pilhas, filas, {\'a}rvores bin{\'a}rias, grafos e algoritmos de ordena{\c c}{\~a}o). Proponha um planejamento reverso de 15 semanas com tr{\^e}s momentos avaliativos formativos e especifique o n{\'i}vel AIAS recomendado para cada unidade tem{\'a}tica.''
 \end{tcolorbox}
 
+No OpenCode, a forma can{\^o}nica de acionar o subagente {\'e} a men{\c c}{\~a}o pelo nome no pr{\'o}prio texto do \emph{prompt}, na sintaxe ``\path{@planejador-pedagogico}'', ou a sele{\c c}{\~a}o do agente no menu suspenso da interface gr{\'a}fica.
+
 \subsection{Artefato Entregue}
-O subagente aciona as skills \path{ia-educacao-planejamento-reverso}, \path{ia-educacao-bloom} e \path{aias-consultant}, gerando:
+O subagente aplica os frameworks (AIAS, Bloom e \emph{Backward Design}) e indica as skills do reposit{\'o}rio que apoiam a implementa{\c c}{\~a}o do plano (incluindo \path{aias-consultant}, \path{ia-educacao-avaliacao}, \path{ia-educacao-rubrica} e \path{ia-educacao-planejamento-didatico}), gerando:
 \begin{itemize}
   \item \textbf{Resultados Desejados}: Compet{\^e}ncias centrais focadas nos n{\'i}veis \emph{Analisar} e \emph{Criar} (avaliar complexidade assint{\'o}tica e projetar estruturas adequadas para problemas reais);
   \item \textbf{Enquadramento AIAS Progressivo}:
@@ -43,7 +45,7 @@ Para o fechamento da segunda unidade de uma disciplina de \emph{Banco de Dados},
 \subsection{Execu{\c c}{\~a}o no OpenCode}
 \begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Comando Enviado pelo Professor}]
 \small
-``Atue como o subagente \path{construtor-de-avaliacoes}. Crie uma avalia{\c c}{\~a}o formativa sobre \emph{Modelagem Relacional e Normaliza{\c c}{\~a}o (1FN a 3FN)} para um cen{\'a}rio de com{\'e}rcio eletr{\^o}nico. A atividade ser{\'a} realizada no n{\'i}vel AIAS~2. Em seguida, elabore a rubrica anal{\'i}tica em 4 n{\'i}veis com a skill \path{ia-educacao-rubrica} e adicione duas quest{\~o}es de m{\'u}ltipla escolha diagn{\'o}sticas com distratores baseados em equ{\'i}vocos conceituais t{\'i}picos usando a skill \path{ia-educacao-mcq}.''
+``Atue como o subagente \path{@construtor-de-avaliacoes}. Crie uma avalia{\c c}{\~a}o formativa sobre \emph{Modelagem Relacional e Normaliza{\c c}{\~a}o (1FN a 3FN)} para um cen{\'a}rio de com{\'e}rcio eletr{\^o}nico. A atividade ser{\'a} realizada no n{\'i}vel AIAS~2. Em seguida, elabore a rubrica anal{\'i}tica em 4 n{\'i}veis com a skill \path{ia-educacao-rubrica} e adicione duas quest{\~o}es de m{\'u}ltipla escolha diagn{\'o}sticas com distratores baseados em equ{\'i}vocos conceituais t{\'i}picos usando a skill \path{ia-educacao-mcq}.''
 \end{tcolorbox}
 
 \subsection{Artefato Entregue}
@@ -69,7 +71,7 @@ O professor recebeu a entrega de um estudante de gradua{\c c}{\~a}o com diagn{\'
 \subsection{Execu{\c c}{\~a}o no OpenCode}
 \begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Comando Enviado pelo Professor}]
 \small
-``Atue como o subagente \path{coach-de-feedback-formativo}. Analise a submiss{\~a}o anexa em rela{\c c}{\~a}o {\`a} nossa rubrica. O estudante possui laudo de dislexia. Elabore um feedback formativo nas tr{\^e}s dimens{\~o}es (\emph{Feed Up}, \emph{Feed Back}, \emph{Feed Forward}) aplicando as diretrizes de DUA da skill \path{ia-educacao-dua}: use frases curtas em ordem direta, listas pontuadas, limite as a{\c c}{\~o}es de melhoria a duas prioridades e adicione uma pergunta ativadora da metacogni{\c c}{\~a}o.''
+``Atue como o subagente \path{@coach-de-feedback-formativo}. Analise a submiss{\~a}o anexa em rela{\c c}{\~a}o {\`a} nossa rubrica. O estudante possui laudo de dislexia. Elabore um feedback formativo nas tr{\^e}s dimens{\~o}es (\emph{Feed Up}, \emph{Feed Back}, \emph{Feed Forward}) aplicando as diretrizes de DUA da skill \path{ia-educacao-dua}: use frases curtas em ordem direta, listas pontuadas, limite as a{\c c}{\~o}es de melhoria a duas prioridades e adicione uma pergunta ativadora da metacogni{\c c}{\~a}o.''
 \end{tcolorbox}
 
 \subsection{Artefato Entregue}
