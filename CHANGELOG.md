@@ -5,6 +5,17 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.3] — 2026-09-08
+
+### Corrigido
+- **`install-skills.sh` e `uninstall-skills.sh` — portabilidade e robustez**:
+  - **Compatibilidade com bash 3.2 (macOS)**: `declare -A` (arrays associativos, bash 4+) substituído por funções `case` (`dest_of`/`bin_of`), permitindo execução no bash nativo do macOS, Git Bash e WSL2
+  - **Aninhamento em re-instalação**: `install-skills.sh` agora remove o destino prévio de cada skill antes do `cp -r`, evitando `dest/slug/slug/SKILL.md` ao atualizar o acervo
+  - **Falha de cópia detectada**: `cp` com verificação de erro — aborta a instalação com mensagem em caso de falha
+  - **`rm -rf` protegido**: `${dest:?}` impede expansão acidental para `/` (SC2115)
+  - **Contagens por glob**: substituídas as contagens com `ls` por globs (SC2012), contando apenas skills do acervo na verificação
+  - Shellcheck limpo (exit 0) e testes de instalação/re-instalação/remoção validados em ambiente isolado
+
 ## [0.10.2] — 2026-09-08
 
 ### Modificado
