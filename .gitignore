@@ -1,1 +1,10 @@
 raw-pdfs/
+manual/*.aux
+manual/*.bbl
+manual/*.blg
+manual/*.log
+manual/*.out
+manual/*.toc
+manual/*.fls
+manual/*.fdb_latexmk
+manual/*.synctex.gz
