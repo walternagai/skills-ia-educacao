@@ -10,18 +10,17 @@ Leia `CLAUDE.md` antes de qualquer operação. Ele contém: arquitetura das skil
 
 ## OpenCode vs. Claude Code
 
-- Skills deste repo **já estão disponíveis** no system prompt via tool `skill` — **não** execute `npx skills add` (Claude Code).
+- Skills deste repo **já estão disponíveis** no system prompt via tool `skill` — **não** execute `npx skills add` (comando do Claude Code).
 - `opencode.json` na raiz com schema mínimo (`$schema` apenas).
-- `agents/` e `.opencode/agents/` contêm specs para 3 agentes: `artesao-de-skills`, `construtor-de-avaliacoes`, `planejador-pedagogico`. Use via Task tool com `subagent_type`.
-- **Sincronia**: `.opencode/agents/` é a cópia que o OpenCode carrega; `agents/` é a fonte canônica. Ao editar um agente, atualize **as duas** cópias (hoje idênticas).
+- `agents/` e `.opencode/agents/` contêm specs de 6 agentes: `artesao-de-skills`, `construtor-de-avaliacoes`, `planejador-pedagogico`, `aplicador-de-rubricas`, `coach-de-feedback-formativo`, `gerador-de-questoes-bloom`. Use via Task tool com `subagent_type`.
+- **Sincronia**: `.opencode/agents/` é a cópia que o OpenCode carrega; `agents/` é a fonte canônica. Ao editar um agente, atualize **as duas** cópias (audit.sh verifica identidade).
 - `CLAUDE.md` é para Claude Code; `AGENTS.md` é o complemento para OpenCode.
 
-## CLIs e disponibilidade de skills
+## Instalação de skills em CLIs
 
-Cada CLI descobre skills de forma diferente. Use `./install-skills.sh` para instalar e `./uninstall-skills.sh` para remover — ambos detectam os CLIs instalados e operam nos diretórios de cada um:
+Use `./install-skills.sh` / `./uninstall-skills.sh` — **exigem flags** (invocação sem argumentos só imprime usage; o auto-detect documentado no cabeçalho é código morto):
 
 ```bash
-./install-skills.sh                       # auto-detect: instala nos CLIs instalados
 ./install-skills.sh --all                 # instala em todos os destinos (mesmo sem CLI)
 ./install-skills.sh --claude --opencode   # destinos explícitos
 ./install-skills.sh --dry-run             # mostra o que seria feito sem copiar
@@ -32,7 +31,7 @@ Cada CLI descobre skills de forma diferente. Use `./install-skills.sh` para inst
 | CLI | Onde as skills ficam | Verificação |
 |-----|----------------------|-------------|
 | **Claude Code** | `~/.claude/skills/<slug>/SKILL.md` | `ls ~/.claude/skills/ \| grep -c ia-educacao` |
-| **OpenCode** | System prompt via tool `skill` (automático) | `opencode agent list` |
+| **OpenCode** | `~/.config/opencode/skills/<slug>/SKILL.md` | `ls ~/.config/opencode/skills/ \| grep -c ia-educacao` |
 | **Codex** | `~/.agents/skills/<slug>/SKILL.md` | `ls ~/.agents/skills/ \| grep -c ia-educacao` |
 | **Antigravity 2.0** | `~/.gemini/antigravity/skills/<slug>/SKILL.md` | `ls ~/.gemini/antigravity/skills/ \| grep -c ia-educacao` |
 | **Antigravity CLI** | `~/.gemini/antigravity-cli/skills/<slug>/SKILL.md` | `ls ~/.gemini/antigravity-cli/skills/ \| grep -c ia-educacao` |
@@ -46,7 +45,7 @@ Cada CLI descobre skills de forma diferente. Use `./install-skills.sh` para inst
 - **Dependências**: referenciar **apenas** skills dentro de `skills/` deste repo — nunca skills externas (ex: `bloom-taxonomy-educator`).
 - **AIAS**: 5 níveis fixos com nomes canônicos (tabela no `CLAUDE.md`). Não alterar sem revisar todas as skills.
 - **Versionamento**: ao editar skill, incremente `version` no frontmatter (ex: `1.2` → `1.3`).
-- **`TMP_VERSION_PLACEHOLDER`**: linha literal que existiu no frontmatter de todas as 62 skills (commitada por engano) — removida em massa em 2026-08 (v0.8.0). Não reintroduzir.
+- **`TMP_VERSION_PLACEHOLDER`**: não reintroduzir (audit.sh falha se presente).
 - **Referências**: formato ABNT.
 - **`raw-pdfs/`**: no `.gitignore` — PDFs normativos não versionados.
 - **`CHANGELOG.md`**: atualizar a cada mudança relevante (formato Keep a Changelog).
@@ -71,12 +70,12 @@ awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md | 
 ```
 .
 ├── audit.sh          # Auditoria de integridade (rode após mudanças)
-├── install-skills.sh  # Instala skills nos CLIs detectados
-├── uninstall-skills.sh # Remove skills dos CLIs detectados
+├── install-skills.sh  # Instala skills nos CLIs (exige flags)
+├── uninstall-skills.sh # Remove skills dos CLIs (exige flags)
 ├── CLAUDE.md          # Instruções principais (leia primeiro)
 ├── CONTRIBUTING.md    # Template e checklist para criar/editar skills
 ├── CHANGELOG.md       # Histórico de versões (atualize ao modificar)
-├── README.md          # Visão geral e listagem de skills
+├── README.md          # Visão geral e listagem de skills (audit.sh exige sincronia)
 ├── AGENTS.md          # Este arquivo
 ├── opencode.json      # Config OpenCode (schema mínimo)
 ├── .gitignore         # raw-pdfs/ ignorado
