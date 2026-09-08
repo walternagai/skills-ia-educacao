@@ -5,6 +5,19 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.5] — 2026-09-08
+
+### Adicionado
+- **`doctor-skills.sh` — diagnóstico de pré-requisitos (Linux, macOS e Windows via Git Bash/WSL2)**: verifica ambiente base (bash, curl, git, node >= 18, npm, acervo, subagentes no repositório) e, por CLI, se o binário está no PATH e se o diretório de skills existe. Flags `--all`/destinos explícitos, `--fix` (instala CLIs ausentes via npm quando possível) e `--help`. Placar final com código de saída (0 = OK, 1 = faltam pré-requisitos essenciais).
+- **`info-skills.sh` — relatório do estado da instalação**: informa, por CLI, se o binário está no PATH e quantas skills do acervo estão instaladas (completo/parcial/nada), com `--verbose` para listar faltantes; sempre relata os 6 subagentes do OpenCode e exibe os comandos de conferência manual do Cap. 4 do manual. Auto-detect de CLIs instalados (ou `--all`/destinos explícitos). Código de saída: 0 = há instalação, 1 = nada instalado.
+- **`doctor-skills.bat` e `info-skills.bat` — equivalentes nativos do Windows**: mesmos diagnósticos/relatórios em batch para CMD e PowerShell. `doctor-skills.bat` verifica bash (opcional, trilha Git Bash/WSL2), curl, git, node >= 18, npm, acervo, subagentes e CLIs, com `--fix` via npm; `info-skills.bat` reporta CLI/skills/subagentes por destino (completo/parcial/nada, `--verbose`), com comandos de conferência em PowerShell. Mesmos códigos de saída dos pares `.sh`.
+
+## [0.10.4] — 2026-09-08
+
+### Adicionado
+- **`install-skills.bat` e `uninstall-skills.bat` — suporte nativo ao Windows 11**: espelhos em batch dos scripts shell, executáveis no CMD e no PowerShell, com as mesmas flags (`--all`, destinos explícitos, `--dry-run`). Quando o CLI alvo não é encontrado no PATH, o `install-skills.bat` oferece a instalação via `winget` (se disponível) ou sugere o pacote npm equivalente. Destinos em `%USERPROFILE%` (`.claude\skills`, `.config\opencode\skills`, `.agents\skills`, `.gemini\antigravity\skills`, `.gemini\antigravity-cli\skills`, `.gemini\skills`); remoção preserva skills de terceiros; cópia com `xcopy` remove o destino prévio para evitar aninhamento na re-instalação.
+- **Manual AvalIA — Cap. 4 documenta a trilha Windows nativa**: nova subseção "Trilha alternativa: Windows nativo (CMD ou PowerShell)" com os comandos `.\install-skills.bat` (dry-run, instalação, `--all`), comportamento de auto-detect e oferta de instalação do CLI via winget/npm; referências ao script bash atualizadas em todo o capítulo (clonagem/atualização, subagentes). PDF recompilado (66 páginas).
+
 ## [0.10.3] — 2026-09-08
 
 ### Corrigido

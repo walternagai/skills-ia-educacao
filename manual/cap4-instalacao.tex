@@ -163,7 +163,7 @@ Para que as 62 skills do reposit{\'o}rio fiquem dispon{\'i}veis no seu ambiente 
   \end{tabularx}
 \end{center}
 
-O reposit{\'o}rio prov{\^e} um script de instala{\c c}{\~a}o automatizado que realiza a c{\'o}pia e organiza{\c c}{\~a}o de forma segura. Como o script \texttt{install-skills.sh} {\'e} um script \emph{bash}, ele deve ser executado em um ambiente Unix: terminal Linux, macOS, WSL2 ou \textbf{Git Bash} no Windows nativo.
+O reposit{\'o}rio prov{\^e} um script de instala{\c c}{\~a}o automatizado que realiza a c{\'o}pia e organiza{\c c}{\~a}o de forma segura. Como o script \texttt{install-skills.sh} {\'e} um script \emph{bash}, ele deve ser executado em um ambiente Unix: terminal Linux, macOS, WSL2 ou \textbf{Git Bash} no Windows nativo. Para quem prefere permanecer no ambiente nativo do Windows, o reposit{\'o}rio prov{\^e} o equivalente em batch, \texttt{install-skills.bat}, execut{\'a}vel diretamente no CMD e no PowerShell (ver \emph{Trilha alternativa: Windows nativo} ao final desta se{\c c}{\~a}o).
 
 \subsection{Obtendo o Reposit{\'o}rio (GitHub)}
 
@@ -179,7 +179,7 @@ cd skills-ia-educacao
 \end{lstlisting}
 
 \begin{dicaopencode}
-\textbf{Windows}: execute o comando acima no \textbf{Git Bash} (instalado junto com o Git -- ver Passo~1 da se{\c c}{\~a}o de controle de vers{\~a}o). \textbf{Linux/macOS/WSL2}: no terminal padr{\~a}o. Para atualizar o acervo depois, basta executar \texttt{git pull} dentro da pasta e rodar o \texttt{install-skills.sh} novamente.
+\textbf{Windows}: execute o comando acima no \textbf{Git Bash} (instalado junto com o Git -- ver Passo~1 da se{\c c}{\~a}o de controle de vers{\~a}o) ou use o \texttt{install-skills.bat} no PowerShell (ver trilha alternativa abaixo). \textbf{Linux/macOS/WSL2}: no terminal padr{\~a}o. Para atualizar o acervo depois, basta executar \texttt{git pull} dentro da pasta e rodar o \texttt{install-skills.sh} (ou \texttt{install-skills.bat}) novamente.
 \end{dicaopencode}
 
 \subsubsection{Op{\c c}{\~a}o B -- Baixar o ZIP (sem Git)}
@@ -200,6 +200,23 @@ Na raiz do reposit{\'o}rio \texttt{skills-ia-educacao}, execute:
 
 O script detecta a pasta pessoal (\texttt{\$HOME}) do usu{\'a}rio e aplica o caminho correto do sistema operacional em uso.
 
+\subsubsection{Trilha alternativa: Windows nativo (CMD ou PowerShell)}
+
+Quem instalou o OpenCode pela trilha nativa (M{\'e}todo 4) pode dispensar o Git Bash para a sincroniza{\c c}{\~a}o das skills: o reposit{\'o}rio prov{\^e} o script equivalente em batch, \texttt{install-skills.bat}, execut{\'a}vel diretamente no CMD ou no PowerShell. As flags s{\~a}o as mesmas do script bash:
+
+\begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o automatizada das skills no Windows (CMD ou PowerShell)}]
+# 1. Simular a instalacao para inspecionar os caminhos de destino (dry-run)
+.\install-skills.bat --opencode --dry-run
+
+# 2. Efetivar a instalacao de todas as 62 skills
+.\install-skills.bat --opencode
+
+# Instalar em todos os CLIs reconhecidos (Claude Code, OpenCode, Codex, ...)
+.\install-skills.bat --all
+\end{lstlisting}
+
+O script detecta a pasta pessoal do usu{\'a}rio (\texttt{\%USERPROFILE\%}) e aplica o caminho correto. Sem flags, exibe o uso; com destinos expl{\'i}citos, instala mesmo sem o CLI correspondente no \texttt{PATH}, avisando o docente. Quando o CLI alvo n{\~a}o {\'e} encontrado e o \texttt{winget} est{\'a} dispon{\'i}vel, o script oferece instalar o CLI automaticamente (ex.: \texttt{winget install -e --id sst.opencode}); sem \texttt{winget}, sugere o comando \texttt{npm} equivalente. A remo{\c c}{\~a}o do acervo tem o par correspondente \texttt{uninstall-skills.bat}, com as mesmas flags.
+
 \subsection{Confer{\^e}ncia da Instala{\c c}{\~a}o}
 
 Para certificar-se de que todas as skills foram copiadas com sucesso:
@@ -219,7 +236,7 @@ O retorno dever{\'a} apontar 61 skills com o prefixo institucional (mais a skill
 
 \subsection{Disponibilizando os Subagentes}
 
-O script \texttt{install-skills.sh} instala as skills, mas n{\~a}o copia automaticamente os seis subagentes. Se o OpenCode for executado em uma pasta separada da c{\'o}pia do reposit{\'o}rio, copie os arquivos dos subagentes para a configura{\c c}{\~a}o global do usu{\'a}rio:
+O script \texttt{install-skills.sh} (ou \texttt{install-skills.bat} no Windows nativo) instala as skills, mas n{\~a}o copia automaticamente os seis subagentes. Se o OpenCode for executado em uma pasta separada da c{\'o}pia do reposit{\'o}rio, copie os arquivos dos subagentes para a configura{\c c}{\~a}o global do usu{\'a}rio:
 
 \begin{lstlisting}[language=bash, caption={Instalando os subagentes no escopo global (Linux, macOS, WSL2 ou Git Bash)}]
 mkdir -p ~/.config/opencode/agents
