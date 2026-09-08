@@ -5,6 +5,28 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.17] — 2026-09-08
+
+### Adicionado
+- **Manual (`manual/`) — cenários validados por área STHEM (Cap. 10)**:
+  - Nova seção "Cenários por Área STHEM" com um cenário por área (Science, Technology, Humanities, Engineering, Mathematics), tabela de cenários validados (necessidade docente, skills selecionadas, nível AIAS típico) e prompts comprovados no OpenCode real (headless `opencode run`, v1.18.29)
+  - Testes empíricos documentados: em todos os cenários o OpenCode selecionou corretamente as skills a partir da descrição da tarefa, sem citar slugs (ex.: História → `ia-educacao-avaliacao`; Biologia → `escrita` + `avaliacao-projeto`; Eng. Civil → `rubrica`; Cálculo 1 → `banco-questoes` + `mcq`; Ci. da Computação → `pbl` + `avaliacao-projeto`)
+  - Dica Prática declarando a validação empírica dos 4 casos de uso + 5 cenários STHEM (skills carregadas via `skill()` confirmadas pelos agentes) e documentação do caveat técnico `model: any` na delegação via Task (exige ID de modelo real; o agente principal assume o papel quando a delegação falha, preservando o resultado)
+
+### Corrigido
+- **Manual (`manual/`) — auditoria dos modelos do Cap. 6 (fontes primárias)**:
+  - Ling: "consórcio aberto" corrigido para "laboratório inclusionAI (iniciativa de projetos abertos da Ant Group)", conforme GitHub oficial verificado
+  - Big Pickle: procedência adicionada — stealth model mantido pelo próprio OpenCode Zen (plataforma curada da Anomaly)
+  - Nemotron 3 Ultra: perfil corrigido com dados verificados (MoE 550B/55B ativos, arquitetura híbrida Transformer-Mamba)
+  - Aviso de privacidade do período gratuito (coleta de dados por provedor) com remissão ao Cap. 7 (LGPD)
+  - Removido bloco de `itemize` duplicado do Nemotron 3.5 Lightning
+  - Manual recompilado (`main.pdf` atualizado)
+
+## [0.9.16] — 2026-09-08
+
+### Adicionado
+- **Manual (`manual/`) — cenários de uso por área STHEM (Cap. 10)**: cinco cenários testados no OpenCode real com a skill identificada espontaneamente pelo agente a partir do objetivo pedagógico
+
 ## [0.9.15] — 2026-09-08
 
 ### Adicionado

@@ -136,6 +136,87 @@ O OpenCode estrutura:
   \item \textbf{Quest{\~o}es Conceituais}: Itens qualitativos sem f{\'o}rmulas num{\'e}ricas que for{\c c}am os estudantes a discutir em duplas sobre entropia e irreversibilidade antes da segunda vota{\c c}{\~a}o.
 \end{itemize}
 
+\section{Cen{\'a}rios por {\'A}rea STHEM}
+
+As quatro disciplinas ilustrativas dos casos anteriores concentram-se nas {\'a}reas de tecnologia e ci{\^e}ncias exatas. Para evidenciar que o acervo atende a todo o espectro STHEM (Science, Technology, Humanities, Engineering, Mathematics), esta se{\c c}{\~a}o apresenta um cen{\'a}rio adicional por {\'a}rea, com a skill que o OpenCode seleciona espontaneamente ao receber o \emph{prompt}. Os cinco cen{\'a}rios foram validados no OpenCode real: em todos eles, o agente identificou corretamente as skills do acervo a partir da descri{\c c}{\~a}o da tarefa, sem necessidade de citar o nome da skill no \emph{prompt} -- demonstrando que a detec{\c c}{\~a}o sem{\^a}ntica funciona a partir do objetivo pedag{\'o}gico.
+
+\begin{dicaopencode}
+\textbf{Valida{\c c}{\~a}o emp{\'i}rica dos roteiros deste cap{\'i}tulo}: os quatro casos de uso (Casos~1 a~4) e os cinco cen{\'a}rios STHEM desta se{\c c}{\~a}o foram executados no OpenCode real (vers{\~a}o 1.18.29, modo headless \texttt{opencode run}). Em todos, as skills citadas foram efetivamente carregadas pela ferramenta \texttt{skill()} e os artefatos esperados foram produzidos (planos, rubricas com r{\'o}tulos can{\^o}nicos, feedbacks tridimensionais e ConcepTests). Um detalhe t{\'e}cnico observado: ao delegar via \texttt{@subagente}, o OpenCode atual exige um identificador de modelo v{\'a}lido no frontmatter do agente (ex.: \texttt{model: opencode/glm-5.3-flash}); o valor \texttt{model: any} do acervo -- um marcador de independ{\^e}ncia de provedor -- n{\~a}o {\'e} interpretado como ID e faz a delega{\c c}{\~a}o direta falhar. Nesse caso, o agente principal assume o papel do subagente e executa as mesmas skills, preservando o resultado; para restaurar a delega{\c c}{\~a}o via Task, basta substituir \texttt{model: any} por um ID de modelo real no arquivo do agente em \texttt{.opencode/agents/}.
+\end{dicaopencode}
+
+Os perfis por {\'a}rea seguem a tabela de adapta{\c c}{\~o}es embutida nos subagentes do reposit{\'o}rio, que orientam n{\'i}veis AIAS t{\'i}picos e formatos preferenciais de avalia{\c c}{\~a}o para cada {\'a}rea (Tabela~\ref{tab:sthem-cenarios}).
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \caption{Cen{\'a}rios Validados por {\'A}rea STHEM}
+  \label{tab:sthem-cenarios}
+  \begin{tabularx}{\linewidth}{p{2.2cm}p{4.6cm}p{3.6cm}X}
+    \toprule
+    \textbf{{\'A}rea} & \textbf{Cen{\'a}rio Docente} & \textbf{Skills Selecionadas (validado)} & \textbf{N{\'i}vel AIAS T{\'i}pico} \\
+    \midrule
+    Science & Relat{\'o}rio de laborat{\'o}rio de microbiologia com an{\'a}lise de dados (Biologia) & \path{ia-educacao-escrita}, \path{ia-educacao-avaliacao-projeto} & 1 (prova), 3 (relat{\'o}rio), 4 (dados) \\
+    \addlinespace
+    Technology & Projeto em equipe de API com IA integral e auditoria discente (Ci. da Computa{\c c}{\~a}o) & \path{ia-educacao-pbl}, \path{ia-educacao-avaliacao-projeto} & 3 (c{\'o}digo assistido), 4 (projeto), 5 (fronteiras) \\
+    \addlinespace
+    Humanities & Quest{\~o}es discursivas de an{\'a}lise de fontes prim{\'a}rias (Hist{\'o}ria) & \path{ia-educacao-avaliacao} & 2 (pesquisa), 3 (escrita), 5 (co-cria{\c c}{\~a}o) \\
+    \addlinespace
+    Engineering & Rubrica de memorial de c{\'a}lculo com crit{\'e}rio de transpar{\^e}ncia de IA (Eng. Civil) & \path{ia-educacao-rubrica} & 1 (c{\'a}lculo), 3 (projeto), 4 (otimiza{\c c}{\~a}o) \\
+    \addlinespace
+    Mathematics & Banco de quest{\~o}es de limites com distratores por equ{\'i}voco (C{\'a}lculo 1) & \path{ia-educacao-banco-questoes}, \path{ia-educacao-mcq} & 1 (dom{\'i}nio), 2 (explora{\c c}{\~a}o), 3 (verifica{\c c}{\~a}o) \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\subsection{Science: Relat{\'o}rio de Laborat{\'o}rio (Biologia)}
+
+\begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Prompt Validado -- Science}]
+\small
+``Sou professor de Biologia e preciso elaborar o roteiro de um relat{\'o}rio de laborat{\'o}rio de microbiologia que avalie m{\'e}todo cient{\'i}fico e an{\'a}lise de dados, com n{\'i}vel AIAS 3.''
+\end{tcolorbox}
+
+\textbf{Resposta do OpenCode (validada)}: o agente seleciona espontaneamente \path{ia-educacao-escrita} (roteiro de relat{\'o}rio t{\'e}cnico, metodologia com IA como apoio sem perder a voz autoral) e \path{ia-educacao-avaliacao-projeto} (rubrica com crit{\'e}rios de an{\'a}lise de dados e marcos de entrega), sinalizando ainda que a declara{\c c}{\~a}o do n{\'i}vel AIAS~3 deve ser calibrada com \path{aias-consultant}.
+
+\subsection{Technology: Projeto Colaborativo com IA Integral (Ci{\^e}ncia da Computa{\c c}{\~a}o)}
+
+\begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Prompt Validado -- Technology}]
+\small
+``Quero planejar uma atividade de projeto onde equipes desenvolvem uma API com assist{\^e}ncia integral de IA (n{\'i}vel AIAS 4), com entregas incrementais e auditoria discente do c{\'o}digo gerado.''
+\end{tcolorbox}
+
+\textbf{Resposta do OpenCode (validada)}: o agente seleciona \path{ia-educacao-pbl} (din{\^a}mica de equipes com entregas incrementais) e \path{ia-educacao-avaliacao-projeto} (rubricas e auditoria de projeto com IA, coerentes com o n{\'i}vel AIAS~4).
+
+\subsection{Humanities: An{\'a}lise de Fontes Prim{\'a}rias (Hist{\'o}ria)}
+
+\begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Prompt Validado -- Humanities}]
+\small
+``Elabore tr{\^e}s quest{\~o}es discursivas sobre a Revolu{\c c}{\~a}o Industrial que avaliem an{\'a}lise de fontes prim{\'a}rias.''
+\end{tcolorbox}
+
+\textbf{Resposta do OpenCode (validada)}: o agente seleciona \path{ia-educacao-avaliacao} -- e distingue corretamente que, por se tratarem de quest{\~o}es \emph{discursivas} (e n{\~a}o de m{\'u}ltipla escolha), a skill \path{ia-educacao-mcq} n{\~a}o {\'e} a adequada. A arg{\'u}cia de sele{\c c}{\~a}o demonstra que as descri{\c c}{\~o}es das skills guiam a escolha com precis{\~a}o.
+
+\subsection{Engineering: Rubrica de Memorial de C{\'a}lculo (Engenharia Civil)}
+
+\begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Prompt Validado -- Engineering}]
+\small
+``Crie uma rubrica anal{\'i}tica de 4 n{\'i}veis para avaliar o memorial de c{\'a}lculo de estruturas de concreto armado, incluindo crit{\'e}rio de transpar{\^e}ncia no uso de IA (n{\'i}vel AIAS 1 para o c{\'a}lculo).''
+\end{tcolorbox}
+
+\textbf{Resposta do OpenCode (validada)}: o agente seleciona \path{ia-educacao-rubrica} -- rubricas anal{\'i}ticas em n{\'i}veis, alinhadas a Bloom, AIAS e DUA, com o crit{\'e}rio de transpar{\^e}ncia no uso de IA. O cen{\'a}rio evidencia a independ{\^e}ncia entre Bloom e AIAS: o c{\'a}lculo pode ser AIAS~1 enquanto a an{\'a}lise cr{\'i}tica do memorial admite n{\'i}veis superiores.
+
+\subsection{Mathematics: Banco de Quest{\~o}es com Distratores (C{\'a}lculo 1)}
+
+\begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Prompt Validado -- Mathematics}]
+\small
+``Monte um banco de 15 quest{\~o}es sobre limites, categorizadas por n{\'i}vel de Bloom, com distratores baseados em equ{\'i}vocos conceituais t{\'i}picos (ex.: confundir limite com valor da fun{\c c}{\~a}o).''
+\end{tcolorbox}
+
+\textbf{Resposta do OpenCode (validada)}: o agente seleciona \path{ia-educacao-banco-questoes} (estrutura do banco e blueprint por n{\'i}vel de Bloom) e \path{ia-educacao-mcq} (distratores plaus{\'i}veis ancorados em equ{\'i}vocos reais de racioc{\'i}nio).
+
+\begin{atencaopedagogica}
+\textbf{Como reproduzir os cen{\'a}rios}: os cinco \emph{prompts} acima foram testados no OpenCode real e selecionam corretamente as skills sem cit{\'a}-las pelo nome -- basta descrever a tarefa com clareza. O docente pode adaptar o tema (ex.: trocar ``Revolu{\c c}{\~a}o Industrial'' por ``Modernismo brasileiro'') mantendo a estrutura do pedido; a sele{\c c}{\~a}o sem{\^a}ntica da skill permanece a mesma. Para maior determinismo, a skill pode ainda ser citada explicitamente (\texttt{/slug} ou men{\c c}{\~a}o no texto).
+\end{atencaopedagogica}
+
 \section{Checklist de Valida{\c c}{\~a}o Docente Pr{\'e}-Aplica{\c c}{\~a}o}
 
 Antes de disponibilizar qualquer material gerado com o aux{\'i}lio do OpenCode aos estudantes, o professor deve realizar a checagem dos cinco pontos da Tabela~\ref{tab:checklist-docente}.

@@ -15,7 +15,7 @@ Um dos maiores obst{\'a}culos enfrentados por professores de institui{\c c}{\~o}
 
 Para superar essa barreira de acesso e permitir que qualquer docente possa planejar aulas e construir instrumentos avaliativos sem {\^o}nus financeiro, o ecossistema \textbf{OpenCode} disponibiliza uma seleta camada de \textbf{modelos gratuitos da comunidade} (\emph{Free Tier / Community Models}). Esses modelos s{\~a}o mantidos e hospedados por grandes centros de pesquisa, cons{\'o}rcios abertos e pela infraestrutura do pr{\'o}prio ecossistema, oferecendo cotas generosas de requisi{\c c}{\~o}es di{\'a}rias.
 
-Vale registrar que os modelos n{\~a}o s{\~a}o criados pela Anomaly (empresa desenvolvedora do OpenCode): cada um {\'e} propriedade de seu respectivo laborat{\'o}rio de origem -- por exemplo, a fam{\'i}lia \textbf{Nemotron} {\'e} desenvolvida pela \textbf{NVIDIA}, o \textbf{Ling} pelo cons{\'o}rcio aberto \textbf{inclusionAI}, o \textbf{MiMo} pela \textbf{Xiaomi} e o \textbf{Muse Spark} pela \textbf{Meta}. O OpenCode atua apenas como cliente que orquestra o acesso a esses modelos por meio dos identificadores \texttt{opencode/<modelo>}.
+Vale registrar que os modelos n{\~a}o s{\~a}o criados pela Anomaly (empresa desenvolvedora do OpenCode): cada um {\'e} propriedade de seu respectivo laborat{\'o}rio de origem -- a fam{\'i}lia \textbf{Nemotron} {\'e} desenvolvida pela \textbf{NVIDIA} (arquitetura h{\'i}brida \emph{Transformer-Mamba} de mistura de especialistas), o \textbf{Ling} pelo laborat{\'o}rio \textbf{inclusionAI} (iniciativa de projetos abertos da \textbf{Ant Group}), o \textbf{MiMo} pela \textbf{Xiaomi} (modelo nativamente omnimodal) e o \textbf{Muse Spark} pela \textbf{Meta} (modelo de racioc{\'i}nio). O \textbf{Big Pickle}, por sua vez, {\'e} um modelo discreto (\emph{stealth model}) mantido pelo pr{\'o}prio \textbf{OpenCode Zen}, a plataforma de modelos curados da Anomaly. O OpenCode atua apenas como cliente que orquestra o acesso a esses modelos por meio dos identificadores \texttt{opencode/<modelo>}; durante o per{\'i}odo gratuito, cada provedor coleta dados de uso para aprimorar o modelo, o que o docente deve considerar {\'a} luz das diretrizes de privacidade do Cap{\'i}tulo~\ref{cap:etica-transparencia}.
 
 Neste cap{\'i}tulo, analisamos detalhadamente os sete modelos gratuitos mais destacados no OpenCode, suas propriedades arquiteturais e as tarefas pedag{\'o}gicas para as quais cada um {\'e} mais indicado. Os subagentes mencionados nas recomenda{\c c}{\~o}es (ex.: \path{@planejador-pedagogico}, \path{@construtor-de-avaliacoes}) s{\~a}o apresentados integralmente no Cap{\'i}tulo~\ref{cap:agentes-skills}.
 
@@ -70,8 +70,8 @@ Neste cap{\'i}tulo, analisamos detalhadamente os sete modelos gratuitos mais des
 
 \begin{itemize}
   \item \textbf{Identificador}: \path{opencode/nemotron-3-ultra-free};
-  \item \textbf{Perfil Arquitetural}: Modelo denso de alt{\'i}ssima capacidade baseado na arquitetura aberta da NVIDIA, com bilh{\~o}es de par{\^a}metros otimizados para racioc{\'i}nio l{\'o}gico avan{\c c}ado;
-  \item \textbf{For{\c c}as Pedag{\'o}gicas}: Compreens{\~a}o profunda de c{\'o}digo-fonte (C, C++, Python, Java, Rust), arquitetura de software, teoremas matem{\'a}ticos e demonstra{\c c}{\~o}es formais;
+  \item \textbf{Perfil Arquitetural}: Modelo de racioc{\'i}nio de fronteira da NVIDIA, com arquitetura de mistura de especialistas (\emph{MoE}) de 550 bilh{\~o}es de par{\^a}metros (55 bilh{\~o}es ativos) em arquitetura h{\'i}brida \emph{Transformer-Mamba};
+  \item \textbf{For{\c c}as Pedag{\'o}gicas}: Racioc{\'i}nio l{\'o}gico avan{\c c}ado, compreens{\~a}o profunda de c{\'o}digo-fonte (C, C++, Python, Java, Rust), teoremas matem{\'a}ticos e demonstra{\c c}{\~o}es formais;
   \item \textbf{Quando Usar}: Avalia{\c c}{\~a}o de projetos t{\'e}cnicos em Ci{\^e}ncia da Computa{\c c}{\~a}o e Engenharias, resolu{\c c}{\~a}o anal{\'i}tica de exerc{\'i}cios de f{\'i}sica avan{\c c}ada e auditoria cr{\'i}tica de gabaritos com o subagente \path{@construtor-de-avaliacoes}.
 \end{itemize}
 
@@ -79,15 +79,9 @@ Neste cap{\'i}tulo, analisamos detalhadamente os sete modelos gratuitos mais des
 
 \begin{itemize}
   \item \textbf{Identificador}: \path{opencode/nemotron-3.5-lightning-free};
-  \item \textbf{Perfil Arquitetural}: Variante de resposta quase instant{\^a}nea (\emph{lightning}), balanceando a for{\c c}a l{\'o}gica da arquitetura Nemotron com lat{\^e}ncia ultrabaixa;
+  \item \textbf{Perfil Arquitetural}: Variante de resposta quase instant{\^a}nea da fam{\'i}lia Nemotron, combinando a for{\c c}a l{\'o}gica da arquitetura com lat{\^e}ncia ultrabaixa;
   \item \textbf{For{\c c}as Pedag{\'o}gicas}: Devolutivas r{\'a}pidas em fra{\c c}{\~o}es de segundo, mantendo coer{\^e}ncia em disciplinas STEM;
-  \item \textbf{Quando Usar}: Sess{\~o}es interativas em tempo real (como a gera{\c c}{\~a}o dinâmica de testes conceituais durante a aula para \emph{Peer Instruction} via \path{ia-educacao-peer-instruction}) e devolu{\c c}{\~a}o r{\'a}pida de feedback para m{\'u}ltiplos estudantes.
-\end{itemize}
-
-\begin{itemize}
-  \item \textbf{Perfil Arquitetural}: Variante de resposta quase instant{\^a}nea (\emph{lightning}), balanceando a for{\c c}a l{\'o}gica da arquitetura Nemotron com lat{\^e}ncia ultrabaixa;
-  \item \textbf{For{\c c}as Pedag{\'o}gicas}: Devolutivas r{\'a}pidas em fra{\c c}{\~o}es de segundo, mantendo coer{\^e}ncia em disciplinas STEM;
-  \item \textbf{Quando Usar}: Sess{\~o}es interativas em tempo real (como a gera{\c c}{\~a}o dinâmica de testes conceituais durante a aula para \emph{Peer Instruction} via \path{ia-educacao-peer-instruction}) e devolu{\c c}{\~a}o r{\'a}pida de feedback para m{\'u}ltiplos estudantes.
+  \item \textbf{Quando Usar}: Sess{\~o}es interativas em tempo real (como a gera{\c c}{\~a}o din{\^a}mica de testes conceituais durante a aula para \emph{Peer Instruction} via \path{ia-educacao-peer-instruction}) e devolu{\c c}{\~a}o r{\'a}pida de feedback para m{\'u}ltiplos estudantes.
 \end{itemize}
 
 \section{Matriz de Decis{\~a}o Docente: Qual Modelo Escolher?}
