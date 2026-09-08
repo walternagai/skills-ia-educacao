@@ -5,6 +5,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.11] — 2026-09-08
+
+### Adicionado
+- **Manual (`manual/`) — guia de controle de versão com Git para iniciantes (opcional)**:
+  - Nova seção no Cap. 4: "Controle de Versão com Git para Iniciantes" — conceito explicado para não-programadores (analogia das "fotografias"/commits), instalação por SO (Windows/Git Bash, Linux via apt/dnf, macOS), configuração inicial, `git init`, ciclo básico (`git add`/`git commit`), recuperação de versões (`git log`, `git restore`, `git checkout`) e dica de segurança com o painel de histórico do OpenCode
+  - Cap. 5 (Desktop): box "Segurança e Controle de Versão" reformulado — Git apresentado como medida **facultativa** (antes parecia obrigatório), com remissão ao novo guia do Cap. 4 e reforço de que a aprovação visual de alterações já protege o trabalho docente
+  - Manual recompilado (`main.pdf` atualizado)
+
 ## [0.9.10] — 2026-09-08
 
 ### Modificado
