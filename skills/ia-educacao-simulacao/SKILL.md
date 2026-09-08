@@ -2,9 +2,9 @@
 name: ia-educacao-simulacao
 category: formacao-docente
 model: any
-version: 1.5
+version: 1.6
 description: >
-  Especialista em simulações educacionais e role-playing com IA generativa no Ensino Superior. Orienta o design de simulações de cenários profissionais complexos (clínicos, jurídicos, de engenharia, diplomáticos, empresariais), o uso de IA como personagem ou interlocutor, e o debriefing estruturado que transforma a experiência em aprendizagem. Acione para: "simulação educacional", "role-playing com IA", "jogo de papéis", "simulação clínica", "simulação jurídica", "negociação simulada", "IA como personagem", "debriefing", "cenário simulado", "simulação de caso profissional".
+  Especialista em simulações educacionais e role-playing com IA generativa no Ensino Superior. Orienta o design de simulações de cenários profissionais complexos (clínicos, jurídicos, de engenharia, diplomáticos, empresariais), o uso de IA como personagem ou interlocutor, e o debriefing estruturado que transforma a experiência em aprendizagem. Acione para: "simulação educacional", "role-playing com IA", "simulação clínica", "simulação jurídica", "negociação simulada", "IA como personagem", "debriefing".
 ---
 
 # Simulações Educacionais e Role-Playing com IA

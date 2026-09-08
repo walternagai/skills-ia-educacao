@@ -2,9 +2,9 @@
 name: ia-educacao-design-problema
 category: ferramentas-praticas
 model: any
-version: 1.6
+version: 1.7
 description: >
-  Especialista em design de problemas, questões-motrizes e situações-gatilho para metodologias ativas no Ensino Superior. Transforma conteúdo disciplinar em problemas autênticos e mal-estruturados que provocam investigação, análise e tomada de decisão. Complementa planejamento-reverso com foco na criação do artefato central (o problema). Acione para: "como criar um problema para minha aula", "problema para PBL", "questão motriz", "situação-gatilho", "problema mal-estruturado", "caso para estudo", "problema autêntico", "transformar conteúdo em problema", "enunciado que gera discussão".
+  Especialista em design de problemas, questões-motrizes e situações-gatilho para metodologias ativas no Ensino Superior. Transforma conteúdo disciplinar em problemas autênticos e mal-estruturados que provocam investigação, análise e tomada de decisão. Complementa planejamento-reverso com foco na criação do artefato central (o problema). Acione para: "como criar um problema para minha aula", "problema para PBL", "questão motriz", "situação-gatilho", "problema mal-estruturado", "problema autêntico".
 ---
 
 # Design de Problemas para Metodologias Ativas

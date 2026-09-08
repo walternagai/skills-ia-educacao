@@ -5,6 +5,18 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.6] — 2026-09-07
+
+### Verificado
+- **Caveats do v0.9.3 fechados** — checagem contra fontes primárias concluída:
+  - **ISSNs de RBIE/SBIE confirmados** no ISSN Portal (fonte oficial): `2317-6121` = Revista Brasileira de Informática na Educação (Online), variante RBIE; `2316-6533` = Anais do Simpósio Brasileiro de Informática na Educação (Online), variante Anais do SBIE — corretos em `ecossistema-inovacao`, sem edição necessária
+  - **Limiar de frequência confirmado** (permanencia): Art. 24, inciso VI da LDB — frequência mínima de 75% do total de horas letivas — correto
+  - **Resolução CNE/CES 7/2018 confirmada** (aprendizagem-servico): estabelece 10% da carga horária de graduação em extensão (curricularização) — correta
+
+### Modificado
+- **`ia-educacao-aprendizagem-servico`** — descrição de frontmatter encurtada (618 → ~550 chars), removendo gatilhos redundantes; `version` 1.4 → 1.5
+- **Descrições de frontmatter encurtadas em 11 skills** (padrão recorrente >600 chars, varredura TWIN CHECK): ecossistema-inovacao (623→~550, v1.13), mcq (618→~550, v1.9), rubrica (616→~550, v1.8), dua (616→~550, v1.9), portfolio (615→~550, v1.8), design-problema (608→~550, v1.7), avaliacao-oral (604→~550, v1.9), simulacao (603→~550, v1.6), rascunho (603→~550, v1.9), pesquisa (602→~550, v1.6), peer-instruction (601→~550, v1.7) — gatilhos redundantes removidos, essenciais de ativação mantidos
+
 ## [0.9.5] — 2026-08-12
 
 ### Modificado

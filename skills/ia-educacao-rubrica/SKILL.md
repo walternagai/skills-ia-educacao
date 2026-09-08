@@ -2,9 +2,9 @@
 name: ia-educacao-rubrica
 category: ferramentas-praticas
 model: any
-version: 1.7
+version: 1.8
 description: >
-  Especialista em design de rubricas analíticas e holísticas para avaliação educacional, alinhadas à Taxonomia de Bloom, ao nível AIAS e aos princípios do DUA. Orienta docentes a criar critérios claros, descritores de desempenho precisos e instrumentos que avaliem competência independente do formato de entrega. Acione para: "criar rubrica", "rubrica analítica", "rubrica holística", "critérios de avaliação", "descritores de desempenho", "rubrica para trabalho com IA", "rubrica alinhada a Bloom", "rubrica inclusiva", "como avaliar com critérios claros", "rubrica para TCC", "rubrica para projeto".
+  Especialista em design de rubricas analíticas e holísticas para avaliação educacional, alinhadas à Taxonomia de Bloom, ao nível AIAS e aos princípios do DUA. Orienta docentes a criar critérios claros, descritores de desempenho precisos e instrumentos que avaliem competência independente do formato de entrega. Acione para: "criar rubrica", "rubrica analítica", "rubrica holística", "critérios de avaliação", "descritores de desempenho", "rubrica para trabalho com IA", "rubrica alinhada a Bloom", "rubrica inclusiva".
 ---
 
 # Design de Rubricas para Avaliação

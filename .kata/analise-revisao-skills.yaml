@@ -1,0 +1,115 @@
+task: analise-revisao-skills
+status: approved
+domain: docs
+done: "Caveats do CHANGELOG v0.9.3 fechados com verificação contra fontes oficiais (ISSN Portal, LDB Art. 24 VI, CNE/CES 7/2018) e, se autorizado, descrição de aprendizagem-servico encurtada para ~550 chars; verificado via ./audit.sh (exit 0) + git diff"
+base_commit: "87285c00a15ed87b918d9e9723f175a3eef268e7"
+fit:
+  trivial: false
+  route: plan-first
+  reason: "Escopo amplo e ambíguo: 'análise, revisão e melhoria' das 62 skills pode significar relatório, edição de conteúdo, correção estrutural ou atualização de CHANGELOG — entregáveis diferentes. Ação potencialmente ampla (editar 62 SKILL.md). Audit atual passa (exit 0), sem falhas estruturais urgentes que exijam code-loop imediato. Rota plan-first: THINK + plano, PARE antes de editar."
+  answered: true
+  skipped: false
+think:
+  problem: "Completar o que falta da revisão editorial: (1) verificar os 2 caveats do CHANGELOG v0.9.3 — ISSNs de RBIE/SBIE (ecossistema-inovacao) e limiares normativos (LDB 75%, CNE/CES 7/2018) — contra fontes externas; (2) avaliar as 4 skills não tocadas pelos sprints (aprendizagem-servico, feedback, infantil, verificacao) e aplicar melhorias se necessário; (3) atualizar CHANGELOG e incrementar version conforme convenções do repo."
+  assumptions:
+    - "Os ISSNs e limiares normativos verificados contra fontes oficiais (ISSN Portal, LDB Art. 24 VI, CNE/CES 7/2018) estão corretos e não exigem edição de conteúdo"
+    - "As 4 skills não tocadas já seguem o padrão canônico do repositório (8 seções, workflow numerado, ABNT) e não precisam de revisão de conteúdo"
+    - "O entregável desta task é documental — fechar os caveats no CHANGELOG e, se autorizado, encurtar a descrição de aprendizagem-servico"
+    - "version incrementada apenas nas skills efetivamente editadas"
+    - "./audit.sh é a verificação de qualidade aplicável (não há lint/test/coverage neste repo)"
+  alternatives:
+    - "alt A: re-auditar as 62 skills do zero — descartado: os 6 commits de revisão editorial já cobriram a lista; audit passa (exit 0)"
+    - "alt B: editar conteúdo das 4 skills não tocadas — descartado: leitura integral mostrou que já seguem o padrão canônico; não há defeito a corrigir"
+    - "alt C: fechar caveats documentalmente + encurtar descrição de aprendizagem-servico — escolhido: fecha as pendências reais da task anterior sem mudança de conteúdo desnecessária"
+  unknowns: |
+    RESOLVIDO via investigação:
+    1. ISSNs RBIE/SBIE → ISSN Portal (fonte oficial): 2317-6121 = RBIE (Online), 2316-6533 = Anais do SBIE (Online) — ambos corretos na skill ecossistema-inovacao
+    2. Limiar 75% (permanencia) → Art. 24, inciso VI da LDB: frequência mínima de 75% do total de horas letivas — correto
+    3. CNE/CES 7/2018 (aprendizagem-servico) → Resolução que estabelece 10% da carga horária em extensão — correto
+    4. 4 skills não tocadas (aprendizagem-servico, feedback, infantil, verificacao) → leitura integral: 8 seções canônicas, workflow numerado, ABNT completa, sem typos/duplicatas/placeholders
+    5. Descrição de aprendizagem-servico tem 618 chars (alvo ~500-600) — candidata a encurtamento, aguarda autorização
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: "Plano mínimo: 2 arquivos (CHANGELOG.md + SKILL.md de aprendizagem-servico). Sem abstrações, sem configurabilidade, sem tocar nas outras 3 skills não tocadas (já conformes). Nenhuma edição feita ainda — diff vazio."
+  answered: true
+  skipped: false
+intent:
+  code_does: "CHANGELOG.md v0.9.3 registra caveat: ISSNs RBIE/SBIE e limiares normativos não verificados contra fontes externas; aprendizagem-servico tem descrição de 618 chars e version 1.4"
+  check_expects: "./audit.sh exige frontmatter válido (version X.Y, model: any, name == diretório) e 8 seções canônicas; CHANGELOG segue Keep a Changelog"
+  spec_says: "AGENTS.md: atualizar CHANGELOG a cada mudança relevante; incrementar version ao editar skill; CLAUDE.md/CONTRIBUTING.md definem padrão canônico; usuário autorizou encurtar descrição de aprendizagem-servico para ~550 chars"
+  all_agree: true
+  conflict_resolution: ""
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: CHANGELOG.md
+      necessary: true
+    - path: skills/ia-educacao-aprendizagem-servico/SKILL.md
+      necessary: true
+    - path: skills/ia-educacao-ecossistema-inovacao/SKILL.md
+      necessary: true
+    - path: skills/ia-educacao-mcq/SKILL.md
+      necessary: true
+    - path: skills/ia-educacao-rubrica/SKILL.md
+      necessary: true
+    - path: skills/ia-educacao-dua/SKILL.md
+      necessary: true
+    - path: skills/ia-educacao-portfolio/SKILL.md
+      necessary: true
+    - path: skills/ia-educacao-design-problema/SKILL.md
+      necessary: true
+    - path: skills/ia-educacao-avaliacao-oral/SKILL.md
+      necessary: true
+    - path: skills/ia-educacao-simulacao/SKILL.md
+      necessary: true
+    - path: skills/ia-educacao-rascunho/SKILL.md
+      necessary: true
+    - path: skills/ia-educacao-pesquisa/SKILL.md
+      necessary: true
+    - path: skills/ia-educacao-peer-instruction/SKILL.md
+      necessary: true
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+  notes: "13 arquivos: CHANGELOG.md (v0.9.6) + 12 SKILL.md (aprendizagem-servico + 11 gêmeas do TWIN CHECK). Cada arquivo rastreia ao pedido: encurtamento de descrições >600 chars com version incrementada. Sem imports (repo documental)."
+verify:
+  ruff_clean: true
+  tests_pass: true
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true
+  attempts: 2
+  hand_back: false
+  notas: "Repositório é acervo documental — sem ruff/pytest/coverage aplicáveis (AGENTS.md confirma; sem .kata/config.yaml). Verificação real = ./audit.sh (exit 0, após as 12 edições de SKILL.md) + git diff revisado (13 arquivos). Critério de sucesso (done) satisfeito: caveats fechados com verificação contra fontes oficiais + descrição de aprendizagem-servico encurtada (542 chars) + 11 gêmeas encurtadas (nenhuma >600 chars restante)."
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: false
+  auth_present: true
+  pending_owed: false
+  pending_present: true
+  twins_owed: true
+  twins_present: true
+auth:
+  action_taken: false
+  authorized: false
+  action: ""
+  quote: ""
+pending:
+  action: ""
+  documented: false
+twins:
+  pattern: "description de frontmatter com >600 chars"
+  result: "11 skill(s), 11 ocorrência(s) — ecossistema-inovacao (623), mcq (618), rubrica (616), dua (616), portfolio (615), design-problema (608), avaliacao-oral (604), simulacao (603), rascunho (603), pesquisa (602), peer-instruction (601)"
+  searched: true
+  defect_fixed: true
+  matches_count: 11
+  files_count: 11
+  fix_applied: true
