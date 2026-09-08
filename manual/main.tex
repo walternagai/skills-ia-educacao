@@ -182,6 +182,11 @@
 % --- Citações no Formato ABNT ---
 \usepackage[alf]{abntex2cite}
 
+% O abntex2cite impoe os delimitadores < > ao comando \path (do pacote url),
+% exibindo <slug> ao inves de slug. Restauramos os delimitadores vazios.
+\def\UrlLeft{}
+\def\UrlRight{}
+
 % Ajuste no recuo do parágrafo
 \setlength{\parindent}{1.5cm}
 \setlength{\parskip}{0.3em}

@@ -5,6 +5,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.14] — 2026-09-08
+
+### Corrigido
+- **Manual (`manual/`) — colchetes angulares `< >` indesejados nos identificadores**:
+  - Causa raiz: o `abntex2cite.sty` impõe `\UrlLeft{<}` e `\UrlRight{>}`, fazendo com que todo comando `\path{...}` renderizasse `<@subagente>` e `<skill-slug>` ao invés de `@subagente` e `skill-slug` (afetava o Cap. 10 e demais referências ao longo do manual)
+  - Correção no preâmbulo (`main.tex`): restaurados os delimitadores vazios após o carregamento do estilo ABNT
+  - PDF recompilado e verificado: zero ocorrências de `< >` remanescentes
+
 ## [0.9.13] — 2026-09-08
 
 ### Modificado
