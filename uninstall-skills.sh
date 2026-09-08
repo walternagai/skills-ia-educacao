@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # uninstall-skills.sh — remove as skills do acervo skills-ia-educacao dos CLIs de IA
 # Uso: ./uninstall-skills.sh [--all] [--claude] [--opencode] [--codex] [--antigravity] [--gemini] [--dry-run]
-# Sem flags: remove dos CLIs detectados (instalados na máquina).
+# Sem flags: mostra o uso (as flags são obrigatórias).
 # --all: remove de todos os destinos, mesmo sem o CLI instalado.
 set -u
 
@@ -12,22 +12,26 @@ TARGETS=""
 EXPLICIT=0
 
 # --- destinos por CLI (mesmos do install-skills.sh) ---
-declare -A DEST=(
-  [claude]="$HOME/.claude/skills"
-  [opencode]="$HOME/.config/opencode/skills"
-  [codex]="$HOME/.agents/skills"
-  [antigravity]="$HOME/.gemini/antigravity/skills"
-  [antigravity-cli]="$HOME/.gemini/antigravity-cli/skills"
-  [gemini]="$HOME/.gemini/skills"
-)
-declare -A BIN=(
-  [claude]="claude"
-  [opencode]="opencode"
-  [codex]="codex"
-  [antigravity]="antigravity"
-  [antigravity-cli]="antigravity"
-  [gemini]="gemini"
-)
+# (funções case em vez de arrays associativos: compatíveis com bash 3.2 do macOS)
+dest_of() {
+  case "$1" in
+    claude) echo "$HOME/.claude/skills" ;;
+    opencode) echo "$HOME/.config/opencode/skills" ;;
+    codex) echo "$HOME/.agents/skills" ;;
+    antigravity) echo "$HOME/.gemini/antigravity/skills" ;;
+    antigravity-cli) echo "$HOME/.gemini/antigravity-cli/skills" ;;
+    gemini) echo "$HOME/.gemini/skills" ;;
+  esac
+}
+bin_of() {
+  case "$1" in
+    claude) echo "claude" ;;
+    opencode) echo "opencode" ;;
+    codex) echo "codex" ;;
+    antigravity|antigravity-cli) echo "antigravity" ;;
+    gemini) echo "gemini" ;;
+  esac
+}
 
 usage() {
   sed -n '2,4p' "$0" | sed 's/^# //'
@@ -59,21 +63,21 @@ done
 if [ "$EXPLICIT" -eq 0 ]; then
   FILTERED=""
   for t in $TARGETS; do
-    command -v "${BIN[$t]}" >/dev/null 2>&1 && FILTERED="$FILTERED $t"
+    command -v "$(bin_of "$t")" >/dev/null 2>&1 && FILTERED="$FILTERED $t"
   done
   TARGETS="$FILTERED"
   [ -z "$TARGETS" ] && { echo "Nenhum CLI alvo instalado. Use --all para remover mesmo assim."; exit 1; }
 fi
 
 echo "== Removendo skills de: $TARGETS =="
-echo "  Skills do acervo: $(ls -d "$SKILLS_DIR"/*/ | wc -l)"
+echo "  Skills do acervo: $(for d in "$SKILLS_DIR"/*/; do [ -d "$d" ] && echo x; done | wc -l)"
 
 for t in $TARGETS; do
-  dest="${DEST[$t]}"
+  dest="$(dest_of "$t")"
   echo ""
   echo "== $t → $dest =="
   [ -d "$dest" ] || { echo "  Diretório não existe — nada a remover"; continue; }
-  if ! command -v "${BIN[$t]}" >/dev/null 2>&1; then
+  if ! command -v "$(bin_of "$t")" >/dev/null 2>&1; then
     echo "  ⚠ CLI '$t' não instalado — removendo mesmo assim (use --all para silenciar)"
   fi
   removed=0
@@ -83,7 +87,7 @@ for t in $TARGETS; do
       if [ "$DRY_RUN" -eq 1 ]; then
         echo "  (dry-run) removeria $dest/$slug"
       else
-        rm -rf "$dest/$slug"
+        rm -rf "${dest:?}/$slug"
       fi
       removed=$((removed + 1))
     fi
@@ -98,15 +102,14 @@ done
 echo ""
 echo "== Verificação =="
 for t in $TARGETS; do
-  dest="${DEST[$t]}"
+  dest="$(dest_of "$t")"
   if [ "$DRY_RUN" -eq 1 ]; then
     echo "  $t: (dry-run, nada removido)"
   elif [ ! -d "$dest" ]; then
     echo "  $t: diretório não existe"
   else
-    n=$(ls -d "$dest"/*/ 2>/dev/null | wc -l)
     restantes=$(for d in "$SKILLS_DIR"/*/; do slug=$(basename "$d"); [ -d "$dest/$slug" ] && echo "$slug"; done | wc -l)
-    echo "  $t: $restantes skills do acervo restantes (total de $n diretórios)"
+    echo "  $t: $restantes skills do acervo restantes"
   fi
 done
 
