@@ -1,6 +1,15 @@
 \chapter{O que s{\~a}o Skills? Como Funcionam com o OpenCode?}
 \label{cap:skills-opencode}
 
+\begin{objetivos}
+\begin{itemize}
+  \item Diferenciar uma skill de um \emph{prompt} solto e compreender a inje{\c c}{\~a}o de contexto sob demanda;
+  \item Reconhecer a estrutura de um arquivo \texttt{SKILL.md} (frontmatter YAML e as oito se{\c c}{\~o}es fixas);
+  \item Invocar skills pela sintaxe \texttt{/nome-da-skill} na interface do OpenCode;
+  \item Entender o ciclo de vida de uma skill, da instala{\c c}{\~a}o ao racioc{\'i}nio guiado.
+\end{itemize}
+\end{objetivos}
+
 \section{O Paradigma de Skills em Assistentes de Intelig{\^e}ncia Artificial}
 
 Nas primeiras gera{\c c}{\~o}es de ferramentas baseadas em intelig{\^e}ncia artificial generativa, a intera{\c c}{\~a}o com modelos de linguagem restringia-se ao envio de \emph{prompts} soltos na interface web. Essa abordagem apresentava graves fragilidades para o uso docente e acad{\^e}mico: aus{\^e}ncia de reprodutibilidade, variabilidade excessiva nas respostas, perda constante de diretrizes metodol{\'o}gicas e risco acentuado de alucina{\c c}{\~a}o factual.
@@ -87,6 +96,10 @@ O \textbf{OpenCode} implementa uma arquitetura baseada em agentes com chamada de
 \end{dicaopencode}
 
 \section{O Grafo de Depend{\^e}ncias e a Integridade do Reposit{\'o}rio}
+
+\begin{dicaopencode}
+\textbf{Voc{\^e} n{\~a}o precisa conhecer o funcionamento interno das skills para utiliz{\'a}-las}: esta se{\c c}{\~a}o descreve como o acervo {\'e} mantido e auditado ({\'u}til para quem deseja criar ou modificar skills). Para o uso em sala de aula, basta digitar \texttt{/nome-da-skill} ou mencionar o slug no \emph{prompt} -- o restante {\'e} transparente para o usu{\'a}rio. Se voc{\^e} n{\~a}o pretende criar skills, pode seguir diretamente para o Cap{\'i}tulo~\ref{cap:instalacao}.
+\end{dicaopencode}
 
 As 62 skills do reposit{\'o}rio n{\~a}o operam isoladamente; constituem um \textbf{grafo direcionado e ac{\'i}clico de conhecimento pedag{\'o}gico}. 
 

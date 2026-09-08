@@ -5,6 +5,16 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.12] — 2026-09-08
+
+### Modificado
+- **Manual (`manual/`) — revisão metodológica e pedagógica extensa**:
+  - **Objetivos de aprendizagem em todos os capítulos**: novo ambiente tipográfico `objetivos` ("Ao final deste capítulo, você será capaz de...") adicionado no preâmbulo e aplicado aos 10 capítulos, alinhando o manual à pedagogia que ensina (resultados desejados antes do conteúdo)
+  - **Cap. 1 reestruturado**: seção "Propósito do Manual" movida do final para a abertura do capítulo (antes o leitor só descobria o mapa de leitura após ler toda a teoria sobre IA/AIAS); duplicata removida
+  - **Cap. 3**: escopo explícito para a seção técnica "Grafo de Dependências" — dica pedagógica avisa que o conteúdo é para quem cria/modifica skills e oferece rota direta ao Cap. 4
+  - **Cap. 10**: nova tabela "Como Escolher o Caso de Uso Adequado" com índice de navegação por necessidade docente (planejar, avaliar, feedback inclusivo, aula ativa), facilitando a localização rápida do caso relevante
+  - Manual recompilado (`main.pdf` atualizado)
+
 ## [0.9.11] — 2026-09-08
 
 ### Adicionado

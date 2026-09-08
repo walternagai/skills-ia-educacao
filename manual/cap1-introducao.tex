@@ -1,6 +1,33 @@
 \chapter{Introdu{\c c}{\~a}o {\`a} Avalia{\c c}{\~a}o Formativa e {\`a} IA}
 \label{cap:introducao}
 
+\section{O Prop{\'o}sito deste Manual e do Reposit{\'o}rio}
+
+O reposit{\'o}rio \texttt{skills-ia-educacao} constitui um acervo documental e tecnol{\'o}gico concebido para preencher a lacuna entre as diretrizes normativas (como o Referencial do MEC \cite{brasil2026referencial} e as resolu{\c c}{\~o}es universit{\'a}rias, e.g., da UNIFEI \cite{unifei2025graduacao}) e a pr{\'a}tica cotidiana do corpo docente.
+
+Em vez de exigir que cada professor se torne um especialista em engenharia de \emph{prompts} complexos, o reposit{\'o}rio disponibiliza \textbf{62 skills tem{\'a}ticas} e \textbf{6 subagentes aut{\^o}nomos} desenvolvidos especificamente para operar no \textbf{OpenCode} (\url{https://opencode.ai}).
+
+\begin{objetivos}
+\begin{itemize}
+  \item Compreender por que a avalia{\c c}{\~a}o formativa se torna central quando a IA generativa transforma as tarefas acad{\^e}micas;
+  \item Conhecer os cinco n{\'i}veis da Escala AIAS e diferenciar seu car{\'a}ter n{\~a}o hier{\'a}rquico de outras taxonomias;
+  \item Visualizar o percurso completo do manual e saber a que cap{\'i}tulo recorrer em cada necessidade docente.
+\end{itemize}
+\end{objetivos}
+
+Ao longo dos pr{\'o}ximos cap{\'i}tulos, este manual apresentar{\'a} em detalhes:
+\begin{itemize}
+  \item Os fundamentos pedag{\'o}gicos de feedback, taxonomia cognitiva e rubricas anal{\'i}ticas (Cap{\'i}tulo~\ref{cap:fundamentos});
+  \item A arquitetura das skills e seu mecanismo de execu{\c c}{\~a}o com OpenCode (Cap{\'i}tulo~\ref{cap:skills-opencode});
+  \item O passo a passo completo de instala{\c c}{\~a}o do OpenCode e sincroniza{\c c}{\~a}o do acervo (Cap{\'i}tulo~\ref{cap:instalacao});
+  \item O fluxo de trabalho na interface gr{\'a}fica e desktop (Cap{\'i}tulo~\ref{cap:desktop});
+  \item A escolha de modelos gratuitos no OpenCode (Cap{\'i}tulo~\ref{cap:modelos-gratuitos});
+  \item Princ{\'i}pios de {\'e}tica, limita{\c c}{\~o}es, LGPD e transpar{\^e}ncia (Cap{\'i}tulo~\ref{cap:etica-transparencia});
+  \item Estrat{\'e}gias para explicar a IA e a Escala AIAS aos estudantes (Cap{\'i}tulo~\ref{cap:explicar-estudantes});
+  \item A especifica{\c c}{\~a}o dos seis subagentes e o cat{\'a}logo das 62 skills (Cap{\'i}tulo~\ref{cap:agentes-skills});
+  \item Casos de uso iniciais e roteiros pr{\'a}ticos para sala de aula (Cap{\'i}tulo~\ref{cap:casos-de-uso}).
+\end{itemize}
+
 \section{O Desafio Pedag{\'o}gico na Era da Intelig{\^e}ncia Artificial}
 
 A r{\'a}pida difus{\~a}o de modelos de linguagem de grande escala (\emph{Large Language Models} -- LLMs) e de ferramentas baseadas em Intelig{\^e}ncia Artificial Generativa (IAGen) trouxe transforma{\c c}{\~o}es irrevers{\'i}veis para a educa{\c c}{\~a}o b{\'a}sica e superior. Tarefas cl{\'a}ssicas de avalia{\c c}{\~a}o, como reda{\c c}{\~a}o de ensaios curtos, resolu{\c c}{\~a}o de quest{\~o}es conceituais elementares e gera{\c c}{\~a}o de trechos introdut{\'o}rios de c{\'o}digo-fonte, tornaram-se opera{\c c}{\~o}es triviais para assistentes computacionais \cite{unesco2021guidance,mollick2024instructors}.
@@ -65,22 +92,3 @@ Duas propriedades estruturais da Escala AIAS s{\~a}o essenciais e devem orientar
 \begin{atencaopedagogica}
 \textbf{Declara{\c c}{\~a}o Pr{\'e}via Obrigat{\'o}ria}: O n{\'i}vel AIAS deve ser declarado de forma inequ{\'i}voca no enunciado da atividade e no plano de ensino \emph{antes} do in{\'i}cio da tarefa. Exigir do aluno uma postura em rela{\c c}{\~a}o {\`a} IA sem defini{\c c}{\~a}o formal pr{\'e}via compromete a seguran{\c c}a jur{\'i}dica e pedag{\'o}gica da avalia{\c c}{\~a}o.
 \end{atencaopedagogica}
-
-\section{O Prop{\'o}sito deste Manual e do Reposit{\'o}rio}
-
-O reposit{\'o}rio \texttt{skills-ia-educacao} constitui um acervo documental e tecnol{\'o}gico concebido para preencher a lacuna entre as diretrizes normativas (como o Referencial do MEC e as resolu{\c c}{\~o}es universit{\'a}rias, e.g., da UNIFEI \cite{unifei2025graduacao}) e a pr{\'a}tica cotidiana do corpo docente.
-
-Em vez de exigir que cada professor se torne um especialista em engenharia de \emph{prompts} complexos, o reposit{\'o}rio disponibiliza \textbf{62 skills tem{\'a}ticas} e \textbf{6 subagentes aut{\^o}nomos} desenvolvidos especificamente para operar em ambientes de linha de comando baseados no \textbf{OpenCode} (\url{https://opencode.ai}). 
-
-Ao longo dos pr{\'o}ximos cap{\'i}tulos, este manual apresentar{\'a} em detalhes:
-\begin{itemize}
-  \item Os fundamentos pedag{\'o}gicos de feedback, taxonomia cognitiva e rubricas anal{\'i}ticas (Cap{\'i}tulo~\ref{cap:fundamentos});
-  \item A arquitetura das skills e seu mecanismo de execu{\c c}{\~a}o com OpenCode (Cap{\'i}tulo~\ref{cap:skills-opencode});
-  \item O passo a passo completo de instala{\c c}{\~a}o do OpenCode e sincroniza{\c c}{\~a}o do acervo (Cap{\'i}tulo~\ref{cap:instalacao});
-  \item O fluxo de trabalho na interface gr{\'a}fica e desktop (Cap{\'i}tulo~\ref{cap:desktop});
-  \item A escolha de modelos gratuitos no OpenCode (Cap{\'i}tulo~\ref{cap:modelos-gratuitos});
-  \item Princ{\'i}pios de {\'e}tica, limita{\c c}{\~o}es, LGPD e transpar{\^e}ncia (Cap{\'i}tulo~\ref{cap:etica-transparencia});
-  \item Estrat{\'e}gias para explicar a IA e a Escala AIAS aos estudantes (Cap{\'i}tulo~\ref{cap:explicar-estudantes});
-  \item A especifica{\c c}{\~a}o dos seis subagentes e o cat{\'a}logo das 62 skills (Cap{\'i}tulo~\ref{cap:agentes-skills});
-  \item Casos de uso iniciais e roteiros pr{\'a}ticos para sala de aula (Cap{\'i}tulo~\ref{cap:casos-de-uso}).
-\end{itemize}

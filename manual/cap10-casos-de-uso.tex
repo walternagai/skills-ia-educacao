@@ -1,9 +1,39 @@
 \chapter{Casos de Uso Iniciais}
 \label{cap:casos-de-uso}
 
+\begin{objetivos}
+\begin{itemize}
+  \item Reproduzir, no seu contexto, os quatro roteiros pr{\'a}ticos apresentados (planejamento, avalia{\c c}{\~a}o, feedback e sala de aula ativa);
+  \item Adaptar os exemplos de \emph{prompts} {\`a} sua {\'a}rea do conhecimento e {\`a} sua disciplina;
+  \item Aplicar o checklist de valida{\c c}{\~a}o docente antes de disponibilizar materiais gerados com IA.
+\end{itemize}
+\end{objetivos}
+
 \section{Introdu{\c c}{\~a}o aos Cen{\'a}rios Pr{\'a}ticos}
 
-Este cap{\'i}tulo foi desenhado para servir como um guia de aplica{\c c}{\~a}o r{\'a}pida. Nele, apresentamos quatro casos de uso t{\'i}picos enfrentados por professores do ensino superior e da educa{\c c}{\~a}o profissional, detalhando as entradas do docente, as chamadas de agentes e os artefatos finais resultantes.
+Este cap{\'i}tulo foi desenhado para servir como um guia de aplica{\c c}{\~a}o r{\'a}pida. Nele, apresentamos quatro casos de uso t{\'i}picos enfrentados por professores do ensino superior e da educa{\c c}{\~a}o profissional, detalhando as entradas do docente, as chamadas de agentes e os artefatos finais resultantes. A Tabela~\ref{tab:casos-indice} permite localizar rapidamente o caso mais pr{\'o}ximo da sua necessidade.
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \caption{Como Escolher o Caso de Uso Adequado}
+  \label{tab:casos-indice}
+  \begin{tabularx}{\linewidth}{p{3.2cm}X}
+    \toprule
+    \textbf{Necessidade Docente} & \textbf{Caso e {\'A}rea Ilustrativa} \\
+    \midrule
+    Estruturar uma disciplina inteira, definir n{\'i}veis AIAS e cronograma semestral & Caso~1 -- \emph{Estruturas de Dados e Algoritmos} (Ci{\^e}ncia da Computa{\c c}{\~a}o / Engenharias) \\
+    \addlinespace
+    Elaborar uma avalia{\c c}{\~a}o formativa completa (enunciado, rubrica e quest{\~o}es objetivas) & Caso~2 -- \emph{Banco de Dados} (Ci{\^e}ncia da Computa{\c c}{\~a}o / Engenharias) \\
+    \addlinespace
+    Gerar feedback formativo inclusivo para estudantes com dislexia ou TDAH & Caso~3 -- Qualquer {\'a}rea com entrega escrita ou c{\'o}digo-fonte \\
+    \addlinespace
+    Transformar uma aula expositiva em atividade ativa de \emph{Peer Instruction} & Caso~4 -- \emph{Termodin{\^a}mica} (F{\'i}sica / Engenharias) \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+Cada caso segue uma estrutura fixa -- \emph{Contexto e Desafio}, \emph{Execu{\c c}{\~a}o no OpenCode} e \emph{Artefato Entregue} -- facilitando a leitura transversal e a adapta{\c c}{\~a}o para outras disciplinas.
 
 \begin{atencaopedagogica}
 \textbf{Como invocar skills e subagentes}: O OpenCode adota duas sintaxes distintas de acionamento. \textbf{Skills} s{\~a}o invocadas com a barra no campo de mensagem, na forma \texttt{/ia-educacao-rubrica} (ou \texttt{/aias-consultant}); alternativamente, podem ser mencionadas no texto do \emph{prompt} pelo slug. \textbf{Subagentes} s{\~a}o acionados com o arroba, na forma \texttt{@planejador-pedagogico} (ou \texttt{@coach-de-feedback-formativo}), ou pela sele{\c c}{\~a}o no menu suspenso da interface. Nos exemplos deste cap{\'i}tulo, os \emph{prompts} seguem essas conven{\c c}{\~o}es: \texttt{@} para o subagente e slug simples (ou \texttt{/} quando isolado) para a skill. Os conceitos de skill e de subagente, bem como os cat{\'a}logos completos, encontram-se respectivamente nos Cap{\'i}tulos~\ref{cap:skills-opencode} e~\ref{cap:agentes-skills}.
