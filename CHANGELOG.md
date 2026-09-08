@@ -5,6 +5,17 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.18] — 2026-09-08
+
+### Corrigido
+- **Manual (`manual/`) — auditoria geométrica de layout (Caps. 4, 5, 7, 8, 10 e geral)**:
+  - Tabela 4.1 (Suporte por SO): eliminados overfull hbox de até 178pt (~63mm) — caminhos migrados de `\texttt` para `\path` (hifenização automática) e colunas redimensionadas
+  - Causa raiz do overfull vbox de 11pt corrigida: `setheadfoot` elevado de 18pt para 30pt (cabeçalhos com títulos de seção em 2 linhas esticavam a página; warning do memoir eliminado)
+  - Cap. 9: uniformização tipográfica das 6 tabelas de catálogo para `\footnotesize` e remoção dos `\addlinespace` das tabelas de 13 linhas (Ferramentas Partes 1–2)
+  - Cap. 10: box de convenções de invocação encurtado (9 → 4 linhas) e Tabela 10.1 em float `[tbp]`
+  - Verificação por bounding-box (`pdftotext -bbox`) com layout espelhado twoside: **zero palavras fora das margens** no corpo de todo o documento; zero overfull hbox/vbox; zero warnings de cabeçalho
+  - Manual recompilado (`main.pdf`, 62 páginas)
+
 ## [0.9.17] — 2026-09-08
 
 ### Adicionado

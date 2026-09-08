@@ -26,18 +26,18 @@ O OpenCode {\'e} multiplataforma e compat{\'i}vel com os tr{\^e}s principais sis
 
 \begin{table}[htbp]
   \centering
-  \small
+  \footnotesize
   \caption{Suporte do OpenCode por Sistema Operacional}
   \label{tab:so-suporte}
-  \begin{tabularx}{\linewidth}{p{2.2cm}p{4.6cm}p{4.6cm}X}
+  \begin{tabularx}{\linewidth}{p{1.8cm}p{4.2cm}p{4.4cm}X}
     \toprule
     \textbf{Sistema} & \textbf{Terminal Recomendado} & \textbf{M{\'e}todos de Instala{\c c}{\~a}o} & \textbf{Diret{\'o}rio das Skills} \\
     \midrule
-    \textbf{Windows} & PowerShell 5.1+/7, Windows Terminal ou Git Bash & Script cURL via WSL2, Scoop ou Chocolatey & \texttt{C:\textbackslash{}Users\textbackslash{}<usuario>\textbackslash{}.\textbackslash{}config\textbackslash{}opencode\textbackslash{}skills} \\
+    \textbf{Windows} & PowerShell 5.1+/7, Windows Terminal ou Git Bash & Script cURL via WSL2, Scoop ou Chocolatey & \path{C:\Users\<usuario>\.config\opencode\skills} \\
     \addlinespace
-    \textbf{Linux} & Bash ou Zsh & Script cURL, npm/pnpm/bun & \texttt{\~{}/.config/opencode/skills} \\
+    \textbf{Linux} & Bash ou Zsh & Script cURL, npm/pnpm/bun & \path{~/.config/opencode/skills} \\
     \addlinespace
-    \textbf{macOS} & Terminal.app ou iTerm 2 (Zsh padr{\~a}o) & Script cURL, npm/pnpm/bun, Homebrew & \texttt{\~{}/.config/opencode/skills} \\
+    \textbf{macOS} & Terminal.app ou iTerm 2 (Zsh padr{\~a}o) & Script cURL, npm/pnpm/bun, Homebrew & \path{~/.config/opencode/skills} \\
     \bottomrule
   \end{tabularx}
 \end{table}
@@ -151,14 +151,14 @@ Durante a autentica{\c c}{\~a}o, o terminal solicitar{\'a} a chave de API (\emph
 Para que as 62 skills do reposit{\'o}rio fiquem dispon{\'i}veis no seu ambiente local do OpenCode, as pastas de skills precisam residir no diret{\'o}rio de extens{\~o}es do usu{\'a}rio, cuja localiza{\c c}{\~a}o varia conforme o sistema operacional:
 
 \begin{center}
-  \small
-  \begin{tabularx}{\linewidth}{p{2.4cm}X}
+  \footnotesize
+  \begin{tabularx}{\linewidth}{p{3.2cm}X}
     \toprule
     \textbf{Sistema} & \textbf{Localiza{\c c}{\~a}o das Skills} \\
     \midrule
-    Linux e macOS/WSL2 & \texttt{\~{}/.config/opencode/skills/<slug>/SKILL.md} \\
+    Linux e macOS/WSL2 & \path{~/.config/opencode/skills/<slug>/SKILL.md} \\
     \addlinespace
-    Windows nativo & \texttt{C:\textbackslash{}Users\textbackslash{}<usuario>\textbackslash{}.config\textbackslash{}opencode\textbackslash{}skills\textbackslash{}<slug>\textbackslash{}SKILL.md} \\
+    Windows nativo & \path{C:\Users\<usuario>\.config\opencode\skills\<slug>\SKILL.md} \\
     \bottomrule
   \end{tabularx}
 \end{center}
