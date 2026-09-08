@@ -1,0 +1,226 @@
+\documentclass[12pt,openright,twoside,a4paper,english,brazil]{memoir}
+
+% --- Codificação, Fontes e Idioma ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{babel}
+\usepackage{microtype}
+\usepackage[htt]{hyphenat}
+
+% --- Ajustes de Página e Margens (Memoir) ---
+\settrimmedsize{297mm}{210mm}{*}
+\settypeblocksize{230mm}{155mm}{*}
+\setlrmarginsandblock{30mm}{25mm}{*}
+\setulmarginsandblock{30mm}{25mm}{*}
+\setheadfoot{18pt}{25pt}
+\checkandfixthelayout
+
+% --- Cores e Gráficos ---
+\usepackage{xcolor}
+\definecolor{primary}{RGB}{16, 54, 92}        % Azul marinho profundo institucional
+\definecolor{secondary}{RGB}{35, 110, 160}    % Azul médio técnico
+\definecolor{accent}{RGB}{185, 75, 45}        % Terracota pedagógico
+\definecolor{neutraldark}{RGB}{40, 44, 52}    % Cinza carvão para texto e códigos
+\definecolor{boxbg}{RGB}{246, 249, 252}       % Fundo suave de destaque
+\definecolor{boxborder}{RGB}{190, 210, 230}   % Borda de destaque azulada
+\definecolor{daborange}{RGB}{253, 246, 227}   % Fundo de atenção
+\definecolor{borderorange}{RGB}{230, 160, 90} % Borda de atenção
+\definecolor{codebg}{RGB}{247, 248, 250}      % Fundo para código
+
+% --- Tabelas e Listas ---
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.5em, itemsep=2pt, parsep=0pt}
+\setlist[enumerate]{leftmargin=1.5em, itemsep=2pt, parsep=0pt}
+
+% --- Caixas de Texto (tcolorbox) ---
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% Caixa para Fundamentos / Conceitos Chave
+\newtcolorbox{conceitochave}[1][]{%
+  enhanced,
+  breakable,
+  colback=boxbg,
+  colframe=primary,
+  fonttitle=\bfseries\color{white},
+  coltitle=white,
+  coltext=neutraldark,
+  boxrule=1pt,
+  arc=3mm,
+  left=8pt,
+  right=8pt,
+  top=6pt,
+  bottom=6pt,
+  title={Conceito Pedag{\'o}gico Chave},
+  #1
+}
+
+% Caixa para Dicas Práticas do OpenCode
+\newtcolorbox{dicaopencode}[1][]{%
+  enhanced,
+  breakable,
+  colback=boxbg,
+  colframe=secondary,
+  fonttitle=\bfseries\color{white},
+  coltitle=white,
+  coltext=neutraldark,
+  boxrule=0.8pt,
+  arc=3mm,
+  left=8pt,
+  right=8pt,
+  top=6pt,
+  bottom=6pt,
+  title={Dica Pr{\'a}tica OpenCode},
+  #1
+}
+
+% Caixa de Atenção / Cuidado Pedagógico
+\newtcolorbox{atencaopedagogica}[1][]{%
+  enhanced,
+  breakable,
+  colback=daborange,
+  colframe=borderorange,
+  fonttitle=\bfseries\color{white},
+  coltitle=white,
+  coltext=neutraldark,
+  boxrule=1pt,
+  arc=3mm,
+  left=8pt,
+  right=8pt,
+  top=6pt,
+  bottom=6pt,
+  title={Aten{\c c}{\~a}o \& Integridade {\'E}tica},
+  #1
+}
+
+% --- Formatação de Código-fonte (listings) ---
+\usepackage{listings}
+\lstset{
+  backgroundcolor=\color{codebg},
+  basicstyle=\ttfamily\footnotesize\color{neutraldark},
+  keywordstyle=\bfseries\color{primary},
+  stringstyle=\color{accent},
+  commentstyle=\itshape\color{secondary},
+  breaklines=true,
+  frame=single,
+  rulecolor=\color{boxborder},
+  numbers=none,
+  tabsize=2,
+  showstringspaces=false,
+  captionpos=b
+}
+
+% --- Estilo dos Capítulos no Memoir ---
+\makechapterstyle{manualtheme}{%
+  \setlength{\beforechapskip}{20pt}
+  \setlength{\afterchapskip}{25pt}
+  \renewcommand*{\chapnamefont}{\normalfont\Large\scshape\color{secondary}}
+  \renewcommand*{\chapnumfont}{\normalfont\HUGE\bfseries\color{primary}}
+  \renewcommand*{\chaptitlefont}{\normalfont\LARGE\bfseries\color{primary}\raggedright}
+  \renewcommand*{\printchaptername}{\chapnamefont \MakeUppercase{\chaptername}}
+  \renewcommand*{\printchapternum}{\chapnumfont \thechapter}
+  \renewcommand*{\afterchapternum}{\par\nobreak\vskip 5pt\color{boxborder}\hrule height 1.5pt\vskip 15pt}
+  \renewcommand*{\printchaptertitle}[1]{\chaptitlefont ##1}
+}
+\chapterstyle{manualtheme}
+
+% --- Estilo de Cabeçalhos e Rodapés ---
+\makepagestyle{manualheadings}
+\makeevenhead{manualheadings}{\small\color{secondary}\thepage}{}{\small\color{secondary}\leftmark}
+\makeoddhead{manualheadings}{\small\color{secondary}\rightmark}{}{\small\color{secondary}\thepage}
+\makeevenfoot{manualheadings}{}{}{}
+\makeoddfoot{manualheadings}{}{}{}
+\makeheadrule{manualheadings}{\textwidth}{0.4pt}
+
+\pagestyle{manualheadings}
+
+% Formatação das seções e subseções
+\setsecheadstyle{\Large\bfseries\color{primary}}
+\setsubsecheadstyle{\large\bfseries\color{secondary}}
+\setsubsubsecheadstyle{\normalsize\bfseries\color{neutraldark}}
+
+% --- Hiperlinks (carregado antes de abntex2cite) ---
+\usepackage{hyperref}
+\usepackage{xurl}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  citecolor=primary,
+  filecolor=secondary,
+  urlcolor=secondary,
+  bookmarksnumbered=true,
+  pdfauthor={Equipe de Forma{\c c}{\~a}o Docente e IA no Ensino Superior},
+  pdftitle={Manual de Skills e Agentes para OpenCode: Avalia{\c c}{\~a}o Formativa e Intelig{\^e}ncia Artificial na Educa{\c c}{\~a}o},
+  pdfkeywords={Educa{\c c}{\~a}o Superior, Intelig{\^e}ncia Artificial, Avalia{\c c}{\~a}o Formativa, OpenCode, Skills, Agentes, Escala AIAS, Taxonomia de Bloom, Rubricas}
+}
+
+% --- Citações no Formato ABNT ---
+\usepackage[alf]{abntex2cite}
+
+% Ajuste no recuo do parágrafo
+\setlength{\parindent}{1.5cm}
+\setlength{\parskip}{0.3em}
+
+% =========================================================================
+% INÍCIO DO DOCUMENTO
+% =========================================================================
+\begin{document}
+
+\frontmatter
+
+% --- Capa Elegante ---
+\begin{titlingpage}
+  \begin{center}
+    \vspace*{1.5cm}
+    {\large\scshape\bfseries\color{primary} UNIVERSIDADE FEDERAL DE ITAJUB{\'A} -- UNIFEI}\\[0.3cm]
+    {\small\scshape\color{secondary} Acervo Documental e Tecnol{\'o}gico de Intelig{\^e}ncia Artificial na Educa{\c c}{\~a}o}\\[2.5cm]
+
+    \color{boxborder}\rule{\linewidth}{2pt}\\[0.5cm]
+    {\huge\bfseries\color{primary} Manual de Skills e Agentes\\ para OpenCode}\\[0.4cm]
+    {\Large\color{secondary} Integra{\c c}{\~a}o Pedag{\'o}gica, Avalia{\c c}{\~a}o Formativa e\\ Racioc{\'i}nio Aumentado por IA}\\[0.4cm]
+    \color{boxborder}\rule{\linewidth}{2pt}\\[3cm]
+
+    \begin{minipage}{0.85\linewidth}
+      \centering
+      \itshape\color{neutraldark}
+      Guia te{\'o}rico e pr{\'a}tico para docentes e desenvolvedores educacionais.
+      Aborda fundamentos de avalia{\c c}{\~a}o formativa, Taxonomia de Bloom Revisada,
+      rubricas anal{\'i}ticas, a Escala AIAS e a opera{\c c}{\~a}o do CLI OpenCode com o acervo
+      de 62 skills tem{\'a}ticas e 6 subagentes especializados.
+    \end{minipage}
+
+    \vfill
+    {\small\bfseries\color{secondary} Itajub{\'a} -- MG}\\[0.2cm]
+    {\small\color{secondary} 2026}
+  \end{center}
+\end{titlingpage}
+
+% --- Sumário ---
+\tableofcontents*
+\clearpage
+
+\mainmatter
+
+% --- Inclusão dos Capítulos ---
+\include{cap1-introducao}
+\include{cap2-fundamentos}
+\include{cap3-skills-opencode}
+\include{cap4-instalacao}
+\include{cap5-desktop}
+\include{cap6-modelos-gratuitos}
+\include{cap7-etica-transparencia}
+\include{cap8-explicar-estudantes}
+\include{cap9-agentes-skills}
+\include{cap10-casos-de-uso}
+
+% --- Bibliografia ABNT ---
+\backmatter
+\bibliography{referencias}
+
+\end{document}

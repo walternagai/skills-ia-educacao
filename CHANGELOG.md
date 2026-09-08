@@ -5,6 +5,25 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.9.7] — 2026-09-08
+
+### Adicionado
+- **Manual de Skills e Agentes para OpenCode (`manual/`)** — documentação abrangente em LaTeX com classe `memoir`, divisão modular em 10 capítulos e referências bibliográficas no padrão ABNT via ABNTeX2:
+  - Cap. 1: Introdução (avaliação formativa e a Escala AIAS)
+  - Cap. 2: Fundamentos pedagógicos (feedback Hattie/Timperley, Taxonomia de Bloom, rubricas, Backward Design e DUA)
+  - Cap. 3: O que são skills e como funcionam com OpenCode (arquitetura `SKILL.md` e injeção dinâmica)
+  - Cap. 4: Instalação e configuração do OpenCode.ai (passo a passo CLI, providers e sincronização de skills)
+  - Cap. 5: Fluxo de trabalho na interface gráfica e Desktop (OpenCode Web UI e aprovação de ações)
+  - Cap. 6: Escolha de modelos gratuitos no OpenCode (Big Pickle, Ling 3.0 Flash Fin, Mimo V2.5, Muse Spark 1.2/1.3, Nemotron 3 Ultra e 3.5 Lightning)
+  - Cap. 7: Ética, limitações, LGPD e transparência (supervisão humana e mitigação via Chain-of-Verification)
+  - Cap. 8: Como explicar IA aos estudantes (contrato pedagógico, metáforas e tradução da AIAS)
+  - Cap. 9: Agentes especializados e catálogo de skills (os 6 subagentes e as 62 skills do repositório)
+  - Cap. 10: Casos de uso iniciais e checklist de validação docente
+- Script de compilação automatizada `manual/compilar.sh` e `manual/Makefile`, com PDF compilado `manual/main.pdf`
+
+### Removido
+- Arquivos legados e apresentações antigas substituídos pelos subagentes oficiais em `agents/` e `.opencode/agents/` (`SKILL_bloom-question-generator.md`, `SKILL_formative-feedback-coach.md`, `SKILL_rubric-applier.md`, `apresentacao-skills.html`, `apresentacao-skills.md`)
+
 ## [0.9.6] — 2026-09-07
 
 ### Verificado

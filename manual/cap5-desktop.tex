@@ -1,0 +1,67 @@
+\chapter{Fluxo de Trabalho na Interface Gr{\'a}fica e Desktop}
+\label{cap:desktop}
+
+\section{Para al{\'e}m do Terminal: A Interface Visual do OpenCode}
+
+Embora o OpenCode tenha nascido com foco em ambientes de linha de comando (\emph{Command Line Interface} -- CLI), o ecossistema evoluiu para oferecer suporte pleno a ambientes gr{\'a}ficos interativos. Essa caracter{\'i}stica {\'e} especialmente valiosa para o corpo docente, uma vez que professores de diferentes {\'a}reas do conhecimento nem sempre possuem familiaridade com a manipula{\c c}{\~a}o direta de comandos no \emph{shell}.
+
+O OpenCode disponibiliza dois modos gr{\'a}ficos complementares:
+\begin{itemize}
+  \item \textbf{OpenCode Web UI}: Servidor local embutido iniciado por comando de terminal que disponibiliza uma interface completa no navegador web (\emph{browser});
+  \item \textbf{OpenCode Desktop App}: Aplicativo nativo empacotado que integra o motor do agente a uma janela aut{\^o}noma com gerenciamento de janelas e notifica{\c c}{\~o}es do sistema.
+\end{itemize}
+
+\section{Iniciando a Interface Web e Desktop}
+
+Para inicializar a interface gr{\'a}fica no diret{\'o}rio da sua disciplina ou material did{\'a}tico, basta executar no terminal:
+
+\begin{lstlisting}[language=bash, caption={Iniciando a interface visual do OpenCode}]
+# Inicia o servidor local e abre automaticamente o navegador padrao
+opencode web
+
+# Ou apontando diretamente para a pasta de uma disciplina especifica
+opencode web ~/documentos/disciplinas/calculo-1/
+\end{lstlisting}
+
+O terminal exibir{\'a} o endere{\c c}o de acesso local (por padr{\~a}o, \url{http://127.0.0.1:4096} ou porta din{\^a}mica equivalente), abrindo instantaneamente uma sess{\~a}o gr{\'a}fica interativa.
+
+\begin{dicaopencode}
+\textbf{Acesso Remoto ou em Rede Local}: {\'E} poss{\'i}vel iniciar o servidor definindo portas e dom{\'i}nios locais customizados (por exemplo, \texttt{opencode web -{}-port 8080 -{}-hostname 0.0.0.0}) para que o professor acesse seu assistente a partir de um tablet ou outro computador conectado {\`a} rede da universidade.
+\end{dicaopencode}
+
+\section{Anatomia da Interface Gr{\'a}fica}
+
+A interface gr{\'a}fica do OpenCode foi concebida para priorizar a clareza, a ergonomia e o controle humano sobre as a{\c c}{\~o}es aut{\^o}nomas do agente. A tela organiza-se em cinco regi{\~o}es fundamentais:
+
+\begin{enumerate}
+  \item \textbf{Barra Lateral de Hist{\'o}rico e Sess{\~o}es (\emph{Sidebar})}: Permite criar, alternar e renomear m{\'u}ltiplas sess{\~o}es de trabalho. O professor pode manter uma sess{\~a}o dedicada ao ``Planejamento da Aula 04'', outra para ``Elabora{\c c}{\~a}o da Prova P1'' e uma terceira para ``Revis{\~a}o de Artigo'';
+  \item \textbf{Explorador de Arquivos e Contexto}: Exibe a {\'a}rvore de diret{\'o}rios do projeto. Permite arrastar arquivos (como PDFs normativos, ementas em \texttt{.txt} ou tabelas de notas) diretamente para a {\'a}rea de conversa;
+  \item \textbf{Painel Central de Di{\'a}logo e Renderiza{\c c}{\~a}o}: Apresenta as mensagens com formata{\c c}{\~a}o rica em Markdown, suporte a f{\'o}rmulas matem{\'a}ticas em \LaTeX, tabelas din{\^a}micas e realce colorido de sintaxe de c{\'o}digo;
+  \item \textbf{Painel de Auditoria e Aprova{\c c}{\~a}o de A{\c c}{\~o}es (\emph{Diff Viewer})}: Quando um subagente prop{\~o}e criar ou editar um documento no disco, a interface exibe uma visualiza{\c c}{\~a}o comparativa em duas colunas (\emph{diff} com cores verde para inclus{\~o}es e vermelho para remo{\c c}{\~o}es). Nenhuma modifica{\c c}{\~a}o {\'e} persistida sem a autoriza{\c c}{\~a}o expl{\'i}cita do usu{\'a}rio no bot{\~a}o de confirma{\c c}{\~a}o;
+  \item \textbf{Seletor Superior de Modelos e Agentes}: Um menu suspenso permite alternar rapidamente entre provedores (Anthropic, OpenAI, modelos gratuitos do OpenCode ou Ollama local) e definir se a tarefa ser{\'a} conduzida pelo agente geral ou por um subagente especializado (e.g., \texttt{construtor-de-avaliacoes}).
+\end{enumerate}
+
+\section{O Fluxo de Trabalho Docente na Interface Gr{\'a}fica}
+
+Para ilustrar a din{\^a}mica de trabalho na interface desktop, a Figura~\ref{fig:fluxo-desktop} resume o ciclo iterativo t{\'i}pico percorrido pelo professor ao preparar materiais pedag{\'o}gicos.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tcolorbox}[colback=boxbg, colframe=primary, arc=2mm, title={\bfseries Ciclo de Trabalho Docente no OpenCode Desktop}]
+    \small
+    \begin{enumerate}
+      \item \textbf{Abertura do Espa{\c c}o de Trabalho}: Inicia-se o OpenCode no diret{\'o}rio da disciplina contendo as ementas e objetivos institucionais;
+      \item \textbf{Sele{\c c}{\~a}o do Modelo e do Subagente}: No menu superior, o docente seleciona o agente desejado (ex.: \texttt{planejador-pedagogico}) e o modelo apropriado (gratuito ou avan{\c c}ado);
+      \item \textbf{Envio de Insumos}: O docente formula a necessidade educacional e anexa o arquivo da ementa com um clique;
+      \item \textbf{Inspe{\c c}{\~a}o do Racioc{\'i}nio e Chamada de Skills}: A interface destaca visualmente a ativa{\c c}{\~a}o das skills correspondentes (ex.: \texttt{ia-educacao-bloom}, \texttt{aias-consultant});
+      \item \textbf{Aprova{\c c}{\~a}o Visual de Arquivos}: Ap{\'o}s revisar a pr{\'e}-visualiza{\c c}{\~a}o do plano ou rubrica gerada, o docente clica em \emph{Aprovar e Salvar};
+      \item \textbf{Exporta{\c c}{\~a}o Final}: O artefato {\'e} salvo como arquivo \texttt{.md}, \texttt{.tex} ou \texttt{.html}, pronto para upload no ambiente virtual de aprendizagem (Moodle/SIGAA) ou impress{\~a}o.
+    \end{enumerate}
+  \end{tcolorbox}
+  \caption{Fluxo de trabalho integrado na interface gr{\'a}fica do OpenCode}
+  \label{fig:fluxo-desktop}
+\end{figure}
+
+\begin{atencaopedagogica}
+\textbf{Seguran{\c c}a e Controle de Vers{\~a}o}: Ao usar a interface gr{\'a}fica, mantenha o diret{\'o}rio do curso sob controle de vers{\~a}o Git. A interface do OpenCode exibe automaticamente o estado dos ramos e altera{\c c}{\~o}es n{\~a}o salvas, conferindo seguran{\c c}a total contra exclus{\~o}es acidentais.
+\end{atencaopedagogica}

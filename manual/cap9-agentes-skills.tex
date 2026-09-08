@@ -1,0 +1,307 @@
+\chapter{Agentes Especializados e Cat{\'a}logo de Skills}
+\label{cap:agentes-skills}
+
+\section{A Arquitetura de Subagentes no OpenCode}
+
+Enquanto uma \emph{skill} fornece o conhecimento procedimental para uma a{\c c}{\~a}o circunscrita, um \textbf{agente} (ou \emph{subagente}) atua como um especialista aut{\^o}nomo orientado a metas educacionais complexas, coordenando m{\'u}ltiplas skills e operando sob pol{\'i}ticas de permiss{\~a}o estritas de seguran{\c c}a.
+
+No OpenCode, os agentes s{\~a}o declarados com frontmatter YAML e regras de permiss{\~a}o por ferramenta (\texttt{read}, \texttt{glob}, \texttt{grep}, \texttt{edit} e \texttt{bash}):
+
+\begin{lstlisting}[language=bash, caption={Esquema de configura{\c c}{\~a}o de um subagente no OpenCode}]
+---
+description: Planejamento pedagogico para ensino superior com IA.
+mode: subagent
+model: any
+permission:
+  edit: deny
+  bash: deny
+  read: allow
+  glob: allow
+  grep: allow
+---
+\end{lstlisting}
+
+\subsection{Sincronia Can{\^o}nica entre \texttt{agents/} e \texttt{.opencode/agents/}}
+
+Para garantir que as instru{\c c}{\~o}es estejam sempre atualizadas, o reposit{\'o}rio mant{\'e}m duas pastas sincronizadas com verifica{\c c}{\~a}o autom{\'a}tica via \texttt{./audit.sh}:
+\begin{itemize}
+  \item \texttt{agents/} -- Diret{\'o}rio fonte can{\^o}nico do reposit{\'o}rio;
+  \item \texttt{.opencode/agents/} -- Diret{\'o}rio lido automaticamente pelo OpenCode no espa{\c c}o de trabalho.
+\end{itemize}
+
+\section{Os Seis Subagentes do Reposit{\'o}rio}
+
+\subsection{1. Planejador Pedag{\'o}gico (\texttt{planejador-pedagogico})}
+\begin{itemize}
+  \item \textbf{Foco}: Consultor s{\^e}nior de design instrucional e planejamento curricular para o ensino superior. Analisa ementas e projetos pedag{\'o}gicos de curso (PPC), sugerindo metodologias ativas e alinhamento {\`a} Escala AIAS;
+  \item \textbf{Permiss{\~o}es}: Somente leitura (\texttt{edit: deny}, \texttt{bash: deny});
+  \item \textbf{Skills Orquestradas}: \path{ia-educacao-planejamento-didatico}, \path{ia-educacao-planejamento-reverso}, \path{ia-educacao-bloom}, \path{aias-consultant}, \path{ia-educacao-dua}.
+\end{itemize}
+
+\subsection{2. Construtor de Avalia{\c c}{\~o}es (\texttt{construtor-de-avaliacoes})}
+\begin{itemize}
+  \item \textbf{Foco}: Cria{\c c}{\~a}o de instrumentos avaliativos prontos para aplica{\c c}{\~a}o (provas, exames, listas contextualizadas, matrizes e gabaritos comentados com declara{\c c}{\~a}o formal do n{\'i}vel AIAS no cabe{\c c}alho);
+  \item \textbf{Permiss{\~o}es}: Leitura e escrita (\texttt{edit: allow}, \texttt{bash: allow});
+  \item \textbf{Skills Orquestradas}: \path{ia-educacao-avaliacao}, \path{ia-educacao-rubrica}, \path{ia-educacao-design-problema}, \path{ia-educacao-bloom}, \path{ia-educacao-planejamento-reverso}.
+\end{itemize}
+
+\subsection{3. Gerador de Quest{\~o}es Bloom (\texttt{gerador-de-questoes-bloom})}
+\begin{itemize}
+  \item \textbf{Foco}: Formula{\c c}{\~a}o de itens alinhados {\`a} Taxonomia Revisada de Bloom. Em quest{\~o}es de m{\'u}ltipla escolha, calibra distratores baseados em equ{\'i}vocos conceituais t{\'i}picos (\emph{misconceptions}) dos estudantes;
+  \item \textbf{Permiss{\~o}es}: Leitura e escrita (\texttt{edit: allow}, \texttt{bash: allow});
+  \item \textbf{Skills Orquestradas}: \path{ia-educacao-bloom}, \path{ia-educacao-mcq}, \path{ia-educacao-banco-questoes}, \path{ia-educacao-verificacao}, \path{aias-consultant}.
+\end{itemize}
+
+\subsection{4. Aplicador de Rubricas (\texttt{aplicador-de-rubricas})}
+\begin{itemize}
+  \item \textbf{Foco}: Avalia{\c c}{\~a}o formativa de trabalhos e c{\'o}digos de estudantes contra rubricas anal{\'i}ticas pr{\'e}-estabelecidas, emitindo notas descritivas por crit{\'e}rio e parecer sobre conformidade AIAS;
+  \item \textbf{Permiss{\~o}es}: Leitura e escrita (\texttt{edit: allow}, \texttt{bash: allow});
+  \item \textbf{Skills Orquestradas}: \path{ia-educacao-rubrica}, \path{ia-educacao-avaliacao}, \path{ia-educacao-bloom}, \path{aias-consultant}.
+\end{itemize}
+
+\subsection{5. Coach de Feedback Formativo (\texttt{coach-de-feedback-formativo})}
+\begin{itemize}
+  \item \textbf{Foco}: Elabora{\c c}{\~a}o de feedback formativo tridimensional (\emph{Feed Up}, \emph{Feed Back}, \emph{Feed Forward}) com calibra{\c c}{\~a}o inclusiva para estudantes t{\'i}picos, com dislexia e com TDAH;
+  \item \textbf{Permiss{\~o}es}: Leitura e escrita (\texttt{edit: allow}, \texttt{bash: allow});
+  \item \textbf{Skills Orquestradas}: \path{ia-educacao-feedback}, \path{ia-educacao-verificacao}, \path{ia-educacao-dua}, \path{ia-educacao-aprendizagem-ativa}, \path{ia-educacao-rubrica}.
+\end{itemize}
+
+\subsection{6. Artes{\~a}o de Skills (\texttt{artesao-de-skills})}
+\begin{itemize}
+  \item \textbf{Foco}: Engenheiro de prompt e guardi{\~a}o da integridade do reposit{\'o}rio. Cria novas skills, refatora m{\'o}dulos existentes e audita o grafo com \texttt{audit.sh};
+  \item \textbf{Permiss{\~o}es}: Leitura e escrita (\texttt{edit: allow}, \texttt{bash: allow}).
+\end{itemize}
+
+\begin{table}[htbp]
+  \centering
+  \footnotesize
+  \caption{S{\'i}ntese dos Subagentes Pedag{\'o}gicos para OpenCode}
+  \label{tab:agentes-sintese}
+  \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{4.2cm}cp{3.8cm}X}
+    \toprule
+    \textbf{Subagente} & \textbf{Permiss{\~a}o} & \textbf{Insumos Principais} & \textbf{Entreg{\'a}veis Chave} \\
+    \midrule
+    \path{planejador-pedagogico} & Somente Leitura & Ementas, PPCs, carga hor{\'a}ria e objetivos & Plano de curso, cronograma e diretrizes AIAS \\
+    \addlinespace
+    \path{construtor-de-avaliacoes} & Leitura/Escrita & Objetivos de aprendizagem e n{\'i}vel AIAS & Provas, exerc{\'i}cios e gabaritos comentados \\
+    \addlinespace
+    \path{gerador-de-questoes-bloom} & Leitura/Escrita & T{\'o}pico t{\'e}cnico, n{\'i}vel de Bloom e AIAS & Quest{\~o}es discursivas e MCQs com distratores \\
+    \addlinespace
+    \path{aplicador-de-rubricas} & Leitura/Escrita & Entrega discente e rubrica declarada & Notas por crit{\'e}rio, parecer e an{\'a}lise de vi{\'e}s \\
+    \addlinespace
+    \path{coach-de-feedback-formativo} & Leitura/Escrita & Produ{\c c}{\~a}o discente e perfil neurodivergente & Feedback formativo adaptado (\emph{Feed Up/Back/Forward}) \\
+    \addlinespace
+    \path{artesao-de-skills} & Leitura/Escrita & Demandas pedag{\'o}gicas e regras de schema & M{\'o}dulo \texttt{SKILL.md} v{\'a}lido e auditado \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\section{O Cat{\'a}logo das 62 Skills do Acervo}
+
+As 62 skills encontram-se agrupadas em cinco categorias operacionais.
+
+\subsection{Categoria 1: N{\'i}veis de Ensino (5 Skills)}
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \caption{Skills de N{\'i}veis de Ensino}
+  \label{tab:cat1-niveis}
+  \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash\ttfamily\small}p{5.4cm}X}
+    \toprule
+    \textbf{\textnormal{\textbf{Skill (Slug)}}} & \textbf{Objetivo e Escopo Pedag{\'o}gico} \\
+    \midrule
+    \path{ia-educacao-infantil} & Orienta o uso conforme o Referencial MEC: veda telas e intera{\c c}{\~a}o direta de crian{\c c}as; foca no apoio {\`a} gest{\~a}o docente e planejamento l{\'u}dico. \\
+    \addlinespace
+    \path{ia-educacao-basica} & Integra{\c c}{\~a}o gradual nos anos fundamentais com salvaguardas de privacidade e letramento inicial. \\
+    \addlinespace
+    \path{ia-educacao-ensino-medio} & Letramento em IA, impactos no mundo do trabalho, c{\'o}digo introdut{\'o}rio e pensamento cr{\'i}tico. \\
+    \addlinespace
+    \path{ia-educacao-profissional-tecnologica} & Integra{\c c}{\~a}o na EPT, alinhando compet{\^e}ncias de IA {\`a}s demandas dos setores produtivos e ind{\'u}stria 4.0. \\
+    \addlinespace
+    \path{ia-educacao-superior} & Incorpora{\c c}{\~a}o na gradua{\c c}{\~a}o e p{\'o}s-gradua{\c c}{\~a}o, abrangendo ensino, pesquisa e extens{\~a}o universit{\'a}ria. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\subsection{Categoria 2: Forma{\c c}{\~a}o Docente (18 Skills)}
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \caption{Skills de Forma{\c c}{\~a}o Docente}
+  \label{tab:cat2-formacao}
+  \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash\ttfamily\small}p{5.4cm}X}
+    \toprule
+    \textbf{\textnormal{\textbf{Skill (Slug)}}} & \textbf{Objetivo e Escopo Pedag{\'o}gico} \\
+    \midrule
+    \path{ia-educacao-fundamentos} & Princ{\'i}pios essenciais de IA generativa para educadores alinhados ao Referencial MEC. \\
+    \addlinespace
+    \path{ia-educacao-formacao-inicial-docente} & Orienta{\c c}{\~a}o para licenciaturas, capacitando futuros professores a mediar a IA. \\
+    \addlinespace
+    \path{ia-educacao-planejamento-didatico} & Planejamento de aulas completas, sequ{\^e}ncias did{\'a}ticas e engajamento ativo. \\
+    \addlinespace
+    \path{ia-educacao-planejamento-reverso} & Framework \emph{Backward Design} (Wiggins \& McTighe): resultados, evid{\^e}ncias e plano. \\
+    \addlinespace
+    \path{ia-educacao-aprendizagem-ativa} & Integra{\c c}{\~a}o de IA com m{\'e}todos ativos, superando o consumo passivo. \\
+    \addlinespace
+    \path{ia-educacao-bloom} & Alinhamento {\`a} Taxonomia Revisada de Bloom com {\^e}nfase em processos superiores. \\
+    \addlinespace
+    \path{ia-educacao-metacognicao} & Desenvolvimento da auto-observa{\c c}{\~a}o cognitiva e autorregula{\c c}{\~a}o com IA. \\
+    \addlinespace
+    \path{ia-educacao-pensamento-critico} & Desenho de tarefas onde a IA atua como est{\'i}mulo e contraponto argumentativo. \\
+    \addlinespace
+    \path{ia-educacao-pbl} & Aprendizagem Baseada em Problemas e Projetos com co-design inteligente. \\
+    \addlinespace
+    \path{ia-educacao-sala-invertida} & Estrutura{\c c}{\~a}o dos momentos pr{\'e}-classe e aplica{\c c}{\~a}o ativa presencial. \\
+    \addlinespace
+    \path{ia-educacao-peer-instruction} & Metodologia de Mazur: formula{\c c}{\~a}o de \emph{ConcepTests} e modera{\c c}{\~a}o por pares. \\
+    \addlinespace
+    \path{ia-educacao-tbl} & \emph{Team-Based Learning}: elabora{\c c}{\~a}o de iRAT, tRAT e resolu{\c c}{\~a}o em equipe. \\
+    \addlinespace
+    \path{ia-educacao-estudo-de-caso} & Reda{\c c}{\~a}o de estudos de caso aut{\^e}nticos, complexos e multidisciplinares. \\
+    \addlinespace
+    \path{ia-educacao-simulacao} & Simula{\c c}{\~o}es de cen{\'a}rios reais e din{\^a}micas de \emph{role-playing} com IA. \\
+    \addlinespace
+    \path{ia-educacao-debate} & Debates acad{\^e}micos estruturados: identifica{\c c}{\~a}o de fal{\'a}cias e contra-argumenta{\c c}{\~a}o. \\
+    \addlinespace
+    \path{ia-educacao-facilitacao} & T{\'e}cnicas de media{\c c}{\~a}o de oficinas e trabalhos colaborativos mediados por IA. \\
+    \addlinespace
+    \path{ia-educacao-aprendizagem-servico} & Integra{\c c}{\~a}o de extens{\~a}o universit{\'a}ria e demandas sociais com solu{\c c}{\~o}es de IA. \\
+    \addlinespace
+    \path{ia-educacao-interdisciplinaridade} & Articula{\c c}{\~a}o de m{\'u}ltiplas {\'a}reas do saber em projetos curriculares integrados. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\subsection{Categoria 3: {\'E}tica e Governan{\c c}a (8 Skills)}
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \caption{Skills de {\'E}tica e Governan{\c c}a}
+  \label{tab:cat3-etica}
+  \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash\ttfamily\small}p{5.4cm}X}
+    \toprule
+    \textbf{\textnormal{\textbf{Skill (Slug)}}} & \textbf{Objetivo e Escopo Pedag{\'o}gico} \\
+    \midrule
+    \path{ia-educacao-etica} & Fundamenta{\c c}{\~a}o {\'e}tica geral, autonomia humana e justi{\c c}a distributiva em IA. \\
+    \addlinespace
+    \path{ia-educacao-governanca-dados} & Estrutura{\c c}{\~a}o de pol{\'i}ticas de governan{\c c}a de dados e consentimento discente. \\
+    \addlinespace
+    \path{ia-educacao-supervisao-humana} & Mecanismos \emph{human-in-the-loop}, vedando avalia{\c c}{\~o}es puramente algor{\'i}tmicas. \\
+    \addlinespace
+    \path{ia-educacao-transparencia-explicabilidade} & Requisitos de explicabilidade de modelos adotados no ambiente universit{\'a}rio. \\
+    \addlinespace
+    \path{ia-educacao-vieses} & Identifica{\c c}{\~a}o e mitiga{\c c}{\~a}o de vieses culturais e preconceitos algor{\'i}tmicos. \\
+    \addlinespace
+    \path{ia-educacao-impacto-algoritmico} & Condu{\c c}{\~a}o de Avalia{\c c}{\~o}es de Impacto Algor{\'i}tmico (AIA) institucionais. \\
+    \addlinespace
+    \path{ia-educacao-seguranca-digital} & Higiene cibern{\'e}tica e prote{\c c}{\~a}o de dados escolares contra incidentes de seguran{\c c}a. \\
+    \addlinespace
+    \path{ia-educacao-integridade-academica} & Diretrizes de combate ao pl{\'a}gio e contrato pedag{\'o}gico de autoria respons{\'a}vel. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\subsection{Categoria 4: Inclus{\~a}o e Equidade (5 Skills)}
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \caption{Skills de Inclus{\~a}o e Equidade}
+  \label{tab:cat4-inclusao}
+  \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash\ttfamily\small}p{5.4cm}X}
+    \toprule
+    \textbf{\textnormal{\textbf{Skill (Slug)}}} & \textbf{Objetivo e Escopo Pedag{\'o}gico} \\
+    \midrule
+    \path{ia-educacao-acessibilidade-inclusao} & Recursos de acessibilidade, leitores de tela e tecnologias assistivas com IA. \\
+    \addlinespace
+    \path{ia-educacao-dua} & Opera{\c c}{\~a}o do Desenho Universal para a Aprendizagem (engajamento, representa{\c c}{\~a}o, a{\c c}{\~a}o). \\
+    \addlinespace
+    \path{ia-educacao-equidade-digital} & Enfrentamento de desigualdades materiais de conectividade e acesso a computadores. \\
+    \addlinespace
+    \path{ia-educacao-letramento-dados} & Alfabetiza{\c c}{\~a}o cr{\'i}tica em estat{\'i}stica e visualiza{\c c}{\~a}o de dados educacionais. \\
+    \addlinespace
+    \path{ia-educacao-permanencia} & Uso preditivo e preventivo de dados acad{\^e}micos para mitigar a evas{\~a}o discente. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\subsection{Categoria 5: Ferramentas Pr{\'a}ticas (26 Skills)}
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \caption{Skills de Ferramentas Pr{\'a}ticas (Parte 1)}
+  \label{tab:cat5-ferramentas-1}
+  \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash\ttfamily\small}p{5.4cm}X}
+    \toprule
+    \textbf{\textnormal{\textbf{Skill (Slug)}}} & \textbf{Objetivo e Escopo Pedag{\'o}gico} \\
+    \midrule
+    \path{aias-consultant} & Consultoria especializada nos 5 n{\'i}veis da Escala AIAS e pol{\'i}ticas de avalia{\c c}{\~a}o. \\
+    \addlinespace
+    \path{ia-educacao-avaliacao} & Redesenho de instrumentos avaliativos para cen{\'a}rios com presen{\c c}a de IA. \\
+    \addlinespace
+    \path{ia-educacao-avaliacao-competencia} & Avalia{\c c}{\~a}o baseada em compet{\^e}ncias: rubricas de profici{\^e}ncia e evid{\^e}ncias. \\
+    \addlinespace
+    \path{ia-educacao-avaliacao-diagnostica} & Mapeamento de pr{\'e}-requisitos conceituais e lacunas no in{\'i}cio da disciplina. \\
+    \addlinespace
+    \path{ia-educacao-avaliacao-grupo} & Avalia{\c c}{\~a}o do trabalho colaborativo com foco na contribui{\c c}{\~a}o individual. \\
+    \addlinespace
+    \path{ia-educacao-avaliacao-oral} & Roteiros, rubricas e protocolos para semin{\'a}rios e defesas de projetos. \\
+    \addlinespace
+    \path{ia-educacao-avaliacao-projeto} & Avalia{\c c}{\~a}o de projetos semestrais e TCCs com entregas intermedi{\'a}rias. \\
+    \addlinespace
+    \path{ia-educacao-autoavaliacao} & Instrumentos reflexivos para autoavalia{\c c}{\~a}o e autorregula{\c c}{\~a}o discente. \\
+    \addlinespace
+    \path{ia-educacao-banco-questoes} & Gest{\~a}o de bancos de quest{\~o}es categorizadas por n{\'i}vel de Bloom e blueprints. \\
+    \addlinespace
+    \path{ia-educacao-mcq} & Design e valida{\c c}{\~a}o de itens de m{\'u}ltipla escolha com distratores calibrados. \\
+    \addlinespace
+    \path{ia-educacao-portfolio} & Design de portf{\'o}lios avaliativos e di{\'a}rios de bordo com reflex{\~a}o metacognitiva. \\
+    \addlinespace
+    \path{ia-educacao-rubrica} & Constru{\c c}{\~a}o de rubricas anal{\'i}ticas com r{\'o}tulos neutros e coer{\^e}ncia AIAS. \\
+    \addlinespace
+    \path{ia-educacao-feedback} & Design de feedback formativo no modelo \emph{Feed Up/Back/Forward}. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \caption{Skills de Ferramentas Pr{\'a}ticas (Parte 2)}
+  \label{tab:cat5-ferramentas-2}
+  \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash\ttfamily\small}p{5.4cm}X}
+    \toprule
+    \textbf{\textnormal{\textbf{Skill (Slug)}}} & \textbf{Objetivo e Escopo Pedag{\'o}gico} \\
+    \midrule
+    \path{ia-educacao-rascunho} & T{\'e}cnica \emph{Chain of Draft} (CoD): gera{\c c}{\~a}o de esbo{\c c}os intermedi{\'a}rios para reflex{\~a}o. \\
+    \addlinespace
+    \path{ia-educacao-verificacao} & T{\'e}cnica \emph{Chain of Verification} (CoVe): auditoria independente contra alucina{\c c}{\~o}es. \\
+    \addlinespace
+    \path{ia-educacao-personalizacao} & Trilhas de aprendizagem diferenciadas conforme o ritmo e dificuldades do aluno. \\
+    \addlinespace
+    \path{ia-educacao-sti} & Sistemas Tutoriais Inteligentes (STIs) para resolu{\c c}{\~a}o assistida de problemas. \\
+    \addlinespace
+    \path{ia-educacao-ia-desplugada} & Atividades sem dispositivos digitais para ensino de l{\'o}gica de IA e {\'e}tica. \\
+    \addlinespace
+    \path{ia-educacao-sandbox} & Ambientes controlados para testagem segura de novas aplica{\c c}{\~o}es educacionais. \\
+    \addlinespace
+    \path{ia-educacao-gestao} & Compet{\^e}ncias de gest{\~a}o acad{\^e}mica para coordenadores e dirigentes de curso. \\
+    \addlinespace
+    \path{ia-educacao-ecossistema-inovacao} & Parcerias universidade-empresa e laborat{\'o}rios de inova{\c c}{\~a}o pedag{\'o}gica. \\
+    \addlinespace
+    \path{ia-educacao-contratacao} & Crit{\'e}rios t{\'e}cnicos, jur{\'i}dicos e pedag{\'o}gicos para licita{\c c}{\~a}o de solu{\c c}{\~o}es de IA. \\
+    \addlinespace
+    \path{ia-educacao-design-problema} & Formula{\c c}{\~a}o de desafios aut{\^e}nticos e situa{\c c}{\~o}es-gatilho para disciplinas STHEM. \\
+    \addlinespace
+    \path{ia-educacao-pesquisa} & Metodologia de pesquisa cient{\'i}fica, revis{\~a}o integrativa e an{\'a}lise com IA. \\
+    \addlinespace
+    \path{ia-educacao-escrita} & Escrita acad{\^e}mica assistida por IA garantindo preserva{\c c}{\~a}o da voz autoral. \\
+    \addlinespace
+    \path{ia-educacao-visualizacao-dados} & Comunica{\c c}{\~a}o cient{\'i}fica visual, gr{\'a}ficos informativos e \emph{storytelling} com dados. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}

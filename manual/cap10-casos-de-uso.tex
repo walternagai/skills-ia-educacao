@@ -1,0 +1,127 @@
+\chapter{Casos de Uso Iniciais}
+\label{cap:casos-de-uso}
+
+\section{Introdu{\c c}{\~a}o aos Cen{\'a}rios Pr{\'a}ticos}
+
+Este cap{\'i}tulo foi desenhado para servir como um guia de aplica{\c c}{\~a}o r{\'a}pida. Nele, apresentamos quatro casos de uso t{\'i}picos enfrentados por professores do ensino superior e da educa{\c c}{\~a}o profissional, detalhando as entradas do docente, as chamadas de agentes e os artefatos finais resultantes.
+
+\section{Caso 1: Planejando uma Disciplina do Zero com \emph{Backward Design}}
+
+\subsection{Contexto e Desafio}
+O professor assume a disciplina de \emph{Estruturas de Dados e Algoritmos} (60 horas) e deseja estruturar um plano de ensino inovador, alinhado ao \emph{Referencial do MEC} \cite{brasil2026referencial}, com metodologias ativas e enquadramento intencional na Escala AIAS.
+
+\subsection{Execu{\c c}{\~a}o no OpenCode}
+No terminal ou na interface gr{\'a}fica, o professor invoca o subagente consultivo:
+
+\begin{lstlisting}[language=bash]
+opencode
+\end{lstlisting}
+
+\begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Comando Enviado pelo Professor}]
+\small
+``Atue como o subagente \path{planejador-pedagogico}. Analise a ementa de \emph{Estruturas de Dados} (listas, pilhas, filas, {\'a}rvores bin{\'a}rias, grafos e algoritmos de ordena{\c c}{\~a}o). Proponha um planejamento reverso de 15 semanas com tr{\^e}s momentos avaliativos formativos e especifique o n{\'i}vel AIAS recomendado para cada unidade tem{\'a}tica.''
+\end{tcolorbox}
+
+\subsection{Artefato Entregue}
+O subagente aciona as skills \path{ia-educacao-planejamento-reverso}, \path{ia-educacao-bloom} e \path{aias-consultant}, gerando:
+\begin{itemize}
+  \item \textbf{Resultados Desejados}: Compet{\^e}ncias centrais focadas nos n{\'i}veis \emph{Analisar} e \emph{Criar} (avaliar complexidade assint{\'o}tica e projetar estruturas adequadas para problemas reais);
+  \item \textbf{Enquadramento AIAS Progressivo}:
+    \begin{itemize}
+      \item \emph{Semanas 1 a 4 (Ponteiros e Listas)}: N{\'i}vel AIAS~1 (Sem IA), garantindo fixa{\c c}{\~a}o manual de refer{\^e}ncias de mem{\'o}ria;
+      \item \emph{Semanas 5 a 10 ({\'A}rvores e Algoritmos)}: N{\'i}vel AIAS~2 (Planejamento Assistido) e AIAS~3 (Colabora{\c c}{\~a}o na depura{\c c}{\~a}o de casos de teste);
+      \item \emph{Semanas 11 a 15 (Projeto com Grafos)}: N{\'i}vel AIAS~4 (IA Integral), onde a equipe projeta um sistema de rotas usando IA para co-gerar implementa{\c c}{\~o}es sob rigorosa auditoria discente.
+    \end{itemize}
+  \item \textbf{Plano de Aulas}: Cronograma de 15 semanas articulado com desafios pr{\'a}ticos em laborat{\'o}rio.
+\end{itemize}
+
+\section{Caso 2: Elaborando uma Avalia{\c c}{\~a}o Formativa com Rubrica e MCQs}
+
+\subsection{Contexto e Desafio}
+Para o fechamento da segunda unidade de uma disciplina de \emph{Banco de Dados}, o docente precisa de um instrumento avaliativo aut{\^e}ntico com declara{\c c}{\~a}o formal AIAS e uma rubrica anal{\'i}tica detalhada.
+
+\subsection{Execu{\c c}{\~a}o no OpenCode}
+\begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Comando Enviado pelo Professor}]
+\small
+``Atue como o subagente \path{construtor-de-avaliacoes}. Crie uma avalia{\c c}{\~a}o formativa sobre \emph{Modelagem Relacional e Normaliza{\c c}{\~a}o (1FN a 3FN)} para um cen{\'a}rio de com{\'e}rcio eletr{\^o}nico. A atividade ser{\'a} realizada no n{\'i}vel AIAS~2. Em seguida, elabore a rubrica anal{\'i}tica em 4 n{\'i}veis com a skill \path{ia-educacao-rubrica} e adicione duas quest{\~o}es de m{\'u}ltipla escolha diagn{\'o}sticas com distratores baseados em equ{\'i}vocos conceituais t{\'i}picos usando a skill \path{ia-educacao-mcq}.''
+\end{tcolorbox}
+
+\subsection{Artefato Entregue}
+O subagente gera um arquivo Markdown/LaTeX contendo:
+\begin{enumerate}
+  \item \textbf{Cabe{\c c}alho Institucional com AIAS}: T{\'i}tulo, instru{\c c}{\~o}es de entrega e a declara{\c c}{\~a}o expl{\'i}cita: ``\emph{Esta atividade adota o N{\'i}vel AIAS 2 -- Planejamento Assistido por IA. Voc{\^e} pode debater ideias de tabelas com a ferramenta, mas os diagramas l{\'o}gicos e as senten{\c c}as DDL devem ser integralmente redigidos por voc{\^e}}'';
+  \item \textbf{Desafio Aut{\^e}ntico}: Um cen{\'a}rio real de um e-commerce com anomalias de inser{\c c}{\~a}o e atualiza{\c c}{\~a}o propositais para o discente normalizar;
+  \item \textbf{Rubrica Anal{\'i}tica em 4 N{\'i}veis}:
+    \begin{itemize}
+      \item Crit{\'e}rio 1: Identifica{\c c}{\~a}o de Chaves e Depend{\^e}ncias Funcionais;
+      \item Crit{\'e}rio 2: Aplica{\c c}{\~a}o das Formas Normais (1FN a 3FN);
+      \item Crit{\'e}rio 3: Integridade Referencial e Restri{\c c}{\~o}es;
+      \item Crit{\'e}rio 4: Transpar{\^e}ncia no Uso de IA (coer{\^e}ncia com AIAS~2).
+    \end{itemize}
+  \item \textbf{Dois Itens MCQs Diagn{\'o}sticos}: Cada distrator com uma nota explicativa indicando exatamente a falha de racioc{\'i}nio do aluno que escolheu aquela alternativa (e.g., confundir depend{\^e}ncia parcial com transitiva).
+\end{enumerate}
+
+\section{Caso 3: Ciclo de Feedback Formativo e Inclus{\~a}o}
+
+\subsection{Contexto e Desafio}
+O professor recebeu a entrega de um estudante de gradua{\c c}{\~a}o com diagn{\'o}stico de dislexia. O trabalho apresenta excelentes solu{\c c}{\~o}es algor{\'i}tmicas, mas o relat{\'o}rio textual possui estrutura{\c c}{\~a}o truncada e falta a an{\'a}lise de casos de teste de borda.
+
+\subsection{Execu{\c c}{\~a}o no OpenCode}
+\begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Comando Enviado pelo Professor}]
+\small
+``Atue como o subagente \path{coach-de-feedback-formativo}. Analise a submiss{\~a}o anexa em rela{\c c}{\~a}o {\`a} nossa rubrica. O estudante possui laudo de dislexia. Elabore um feedback formativo nas tr{\^e}s dimens{\~o}es (\emph{Feed Up}, \emph{Feed Back}, \emph{Feed Forward}) aplicando as diretrizes de DUA da skill \path{ia-educacao-dua}: use frases curtas em ordem direta, listas pontuadas, limite as a{\c c}{\~o}es de melhoria a duas prioridades e adicione uma pergunta ativadora da metacogni{\c c}{\~a}o.''
+\end{tcolorbox}
+
+\subsection{Artefato Entregue}
+O subagente gera um parecer acolhedor, objetivo e isento de sobrecarga textual:
+\begin{itemize}
+  \item \textbf{Feed Up}: Relembra a meta principal (implementar o algoritmo de Dijkstra com fila de prioridades em complexidade $O(E \log V)$);
+  \item \textbf{Feed Back}: Destaca em primeiro lugar o acerto do c{\'o}digo (estrutura de dados correta e boa modulariza{\c c}{\~a}o); aponta em seguida a aus{\^e}ncia de testes com grafos desconexos;
+  \item \textbf{Feed Forward}: Duas micro-a{\c c}{\~o}es imediatas (passo 1: adicionar uma condi{\c c}{\~a}o de parada para v{\'e}rtices inalcan{\c c}{\~a}veis; passo 2: testar uma entrada com 3 v{\'e}rtices isolados);
+  \item \textbf{Pergunta Metacognitiva}: ``Como voc{\^e} explicaria a l{\'o}gica de parada do algoritmo para um colega sem usar jarg{\~o}es t{\'e}cnicos?''
+\end{itemize}
+
+\section{Caso 4: Din{\^a}mica Ativa de Sala Invertida e \emph{Peer Instruction}}
+
+\subsection{Contexto e Desafio}
+O docente quer transformar uma aula te{\'o}rica expositiva sobre \emph{Termodin{\^a}mica (Segunda Lei)} em uma sess{\~a}o ativa presencial de 100 minutos baseada em discuss{\~a}o por pares.
+
+\subsection{Execu{\c c}{\~a}o no OpenCode}
+\begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Comando Enviado pelo Professor}]
+\small
+``Utilize as skills \path{ia-educacao-sala-invertida} e \path{ia-educacao-peer-instruction} para estruturar a aula de Segunda Lei da Termodin{\^a}mica. Preciso do roteiro de leitura pr{\'e}-aula com tr{\^e}s perguntas disparadoras de d{\'u}vida e tr{\^e}s \emph{ConcepTests} conceituais para vota{\c c}{\~a}o presencial com flashcards/celular.''
+\end{tcolorbox}
+
+\subsection{Artefato Entregue}
+O OpenCode estrutura:
+\begin{itemize}
+  \item \textbf{Guia Pr{\'e}-Aula (15 minutos discentes)}: Leitura dirigida de duas p{\'a}ginas com perguntas de autorreflex{\~a}o para o aluno trazer anotadas;
+  \item \textbf{Din{\^a}mica Presencial}: Divis{\~a}o dos 100 minutos em mini-blocos explicativos de 10 minutos intercalados por \emph{ConcepTests};
+  \item \textbf{Quest{\~o}es Conceituais}: Itens qualitativos sem f{\'o}rmulas num{\'e}ricas que for{\c c}am os estudantes a discutir em duplas sobre entropia e irreversibilidade antes da segunda vota{\c c}{\~a}o.
+\end{itemize}
+
+\section{Checklist de Valida{\c c}{\~a}o Docente Pr{\'e}-Aplica{\c c}{\~a}o}
+
+Antes de disponibilizar qualquer material gerado com o aux{\'i}lio do OpenCode aos estudantes, o professor deve realizar a checagem dos cinco pontos da Tabela~\ref{tab:checklist-docente}.
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \caption{Checklist de Valida{\c c}{\~a}o Docente}
+  \label{tab:checklist-docente}
+  \begin{tabularx}{\linewidth}{clp{3.5cm}X}
+    \toprule
+    \textbf{Item} & \textbf{Crit{\'e}rio de Controle} & \textbf{Pergunta de Checagem} & \textbf{A{\c c}{\~a}o em Caso de N{\~a}o} \\
+    \midrule
+    \textbf{1} & Coer{\^e}ncia Pedag{\'o}gica & A tarefa espelha os objetivos reais do curso? & Ajuste os verbos com a skill \path{ia-educacao-bloom}. \\
+    \addlinespace
+    \textbf{2} & Declara{\c c}{\~a}o AIAS & O n{\'i}vel de IA est{\'a} expl{\'i}cito no enunciado? & Adicione a cl{\'a}usula de integridade com \path{aias-consultant}. \\
+    \addlinespace
+    \textbf{3} & Auditoria Factual & As f{\'o}rmulas e c{\'o}digos foram rodados? & Execute o teste real e audite com \path{ia-educacao-verificacao}. \\
+    \addlinespace
+    \textbf{4} & Acessibilidade DUA & A linguagem {\'e} clara e inclusiva? & Simplifique par{\'a}grafos densos com \path{ia-educacao-dua}. \\
+    \addlinespace
+    \textbf{5} & Autonomia Humana & A avalia{\c c}{\~a}o final depende do professor? & Garanta que o parecer passe pelo seu crivo cr{\'i}tico. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}

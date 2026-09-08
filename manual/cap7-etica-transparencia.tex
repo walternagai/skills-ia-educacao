@@ -1,0 +1,57 @@
+\chapter{{\'E}tica, Limita{\c c}{\~o}es e Transpar{\^e}ncia}
+\label{cap:etica-transparencia}
+
+\section{Fundamenta{\c c}{\~a}o {\'E}tica na Educa{\c c}{\~a}o Superior}
+
+A integra{\c c}{\~a}o de sistemas de intelig{\^e}ncia artificial na educa{\c c}{\~a}o n{\~a}o constitui uma quest{\~a}o estritamente t{\'e}cnica, mas primordialmente {\'e}tica, social e pol{\'i}tica. Como preconizam o \emph{Referencial do MEC} \cite{brasil2026referencial} e as orienta{\c c}{\~o}es da UNESCO \cite{unesco2021guidance}, a tecnologia deve servir {\`a} emancipa{\c c}{\~a}o humana, {\`a} equidade de oportunidades e ao florescimento do pensamento cr{\'i}tico, nunca {\`a} vigil{\^a}ncia punitiva ou {\`a} desumaniza{\c c}{\~a}o do percurso formativo.
+
+No {\^a}mbito deste acervo, quatro princ{\'i}pios {\'e}ticos estruturantes orientam cada skill e subagente:
+\begin{enumerate}
+  \item \textbf{Centralidade e Ag{\^e}ncia Humana}: A intelig{\^e}ncia artificial atua como co-planejadora e ferramenta de amplia{\c c}{\~a}o cognitiva; o discernimento pedag{\'o}gico e a autoridade final pertencem incondicionalmente ao docente;
+  \item \textbf{Transpar{\^e}ncia e Explicabilidade}: Regras claras, pol{\'i}ticas de avalia{\c c}{\~a}o compreens{\'i}veis e declara{\c c}{\~a}o aberta sobre como e quando a IA {\'e} utilizada em sala de aula;
+  \item \textbf{Equidade e Inclus{\~a}o}: Garantia de que a ado{\c c}{\~a}o da tecnologia n{\~a}o amplie desigualdades sociais ou prejudique estudantes com menor acesso a recursos digitais avan{\c c}ados;
+  \item \textbf{Privacidade e Salvaguarda de Dados}: Tratamento rigoroso de informa{\c c}{\~o}es discentes em conson{\^a}ncia com a legisla{\c c}{\~a}o nacional de prote{\c c}{\~a}o de dados.
+\end{enumerate}
+
+\section{Supervis{\~a}o Humana Obrigat{\'o}ria (\emph{Human-in-the-Loop})}
+
+A automa{\c c}{\~a}o cega de processos avaliativos {\'e} expressamente vedada pelas diretrizes deste reposit{\'o}rio (conforme formalizado na skill \path{ia-educacao-supervisao-humana}).
+
+\begin{atencaopedagogica}
+\textbf{Veda{\c c}{\~a}o a Decis{\~o}es Automatizadas Punitivas}: {\'E} terminantemente contr{\'a}rio {\`a} {\'e}tica acad{\^e}mica reprovar, penalizar ou atribuir conceitos finais a um estudante com base exclusiva em relat{\'o}rios automatizados gerados por IA ou por supostos ``detectores de pl{\'a}gio por IA'' (os quais apresentam elevados {\'i}ndices de falsos-positivos, especialmente contra estudantes n{\~a}o nativos ou neurodivergentes). Toda avalia{\c c}{\~a}o requer o escrut{\'i}nio reflexivo e a valida{\c c}{\~a}o do professor.
+\end{atencaopedagogica}
+
+Os subagentes avaliativos (como o \path{aplicador-de-rubricas}) geram \emph{propostas formativas} de parecer. Cabe ao docente revisar o texto, ajustar a pontua{\c c}{\~a}o, acolher as particularidades contextuais do estudante e assinar a avalia{\c c}{\~a}o final.
+
+\section{Privacidade Discente e Conformidade com a LGPD}
+
+No Brasil, a Lei Geral de Prote{\c c}{\~a}o de Dados Pessoais (Lei n{\textordmasculine} 13.709/2018 -- LGPD) imp{\~o}e salvaguardas r{\'i}gidas sobre o tratamento de dados de estudantes. Ao utilizar o OpenCode em disciplinas universit{\'a}rias, o corpo docente deve seguir os seguintes protocolos:
+
+\begin{itemize}
+  \item \textbf{Anonimiza{\c c}{\~a}o Prévia Obrigat{\'o}ria}: Antes de submeter trabalhos de estudantes para an{\'a}lise ou gera{\c c}{\~a}o de feedback por modelos de nuvem, remova nomes completos, n{\'u}meros de matr{\'i}cula, CPFs, endere{\c c}os eletr{\^o}nicos e quaisquer metadados que permitam a re-identifica{\c c}{\~a}o do indiv{\'i}duo;
+  \item \textbf{Vedada a Inser{\c c}{\~a}o de Dados Sens{\'i}veis}: Jamais insira em \emph{prompts} informa{\c c}{\~o}es sobre laudos m{\'e}dicos discentes, condi{\c c}{\~o}es socioecon{\^o}micas vulner{\'a}veis, cren{\c c}as religiosas ou processos disciplinares em andamento;
+  \item \textbf{Ado{\c c}{\~a}o de Modelos Locais}: Para dados de pesquisas acad{\^e}micas com exig{\^e}ncia de sigilo {\'e}tico (aprovadas por Comit{\^e} de {\'E}tica em Pesquisa -- CEP), configure o OpenCode para operar com modelos executados 100\% localmente via Ollama (\url{http://localhost:11434}), eliminando qualquer tr{\'a}fego de dados para servidores externos.
+\end{itemize}
+
+\section{Limita{\c c}{\~o}es Intr{\'i}nsecas dos Modelos de Linguagem}
+
+Os modelos de linguagem contempor{\^a}neos n{\~a}o s{\~a}o bancos de dados relacionais e n{\~a}o realizam racioc{\'i}nio l{\'o}gico dedutivo infal{\'i}vel. Eles s{\~a}o sistemas probabil{\'i}sticos complexos treinados para prever a sequ{\^e}ncia mais veross{\'i}mil de palavras (\emph{tokens}). Compreender suas limita{\c c}{\~o}es intr{\'i}nsecas {\'e} essencial para evitar armadilhas pedag{\'o}gicas:
+
+\begin{enumerate}
+  \item \textbf{Alucina{\c c}{\~a}o Factual (\emph{Hallucination})}: Os modelos s{\~a}o capazes de gerar cita{\c c}{\~o}es bibliogr{\'a}ficas fict{\'i}cias com autores inexistentes, inventar datas hist{\'o}ricas ou apresentar dedu{\c c}{\~o}es matem{\'a}ticas aparentemente elegantes com erros conceituais sutis;
+  \item \textbf{Vi{\'e}s de Concord{\^a}ncia (\emph{Sycophancy})}: Os LLMs tendem a concordar com as premissas do usu{\'a}rio, mesmo quando o professor comete um equ{\'i}voco intencional no \emph{prompt} (por exemplo, afirmando que uma integral impr{\'o}pria diverge quando na verdade ela converge);
+  \item \textbf{Vieses Algor{\'i}tmicos e Culturais}: Devido {\`a} predomin{\^a}ncia de textos em l{\'i}ngua inglesa e corpora gerados no Norte Global, os modelos podem reproduzir estere{\'o}tipos de g{\^e}nero, sub-representar autores latino-americanos e demonstrar desconhecimento da legisla{\c c}{\~a}o educacional brasileira;
+  \item \textbf{Cegueira Temporal}: Os modelos possuem cortes fixos de treinamento (\emph{knowledge cutoff}), n{\~a}o tendo conhecimento imediato de leis, editais ou acontecimentos recentes sem que esses dados sejam injetados expressamente no contexto.
+\end{enumerate}
+
+\section{Mitiga{\c c}{\~a}o de Alucina{\c c}{\~o}es com a T{\'e}cnica CoVe}
+
+Para combater as alucina{\c c}{\~o}es e assegurar o rigor cient{\'i}fico dos instrumentos did{\'a}ticos gerados, o reposit{\'o}rio incorpora nativamente a t{\'e}cnica \textbf{Chain-of-Verification (CoVe)}, implementada na skill \path{ia-educacao-verificacao}.
+
+O processo decomp{\~o}e a valida{\c c}{\~a}o em quatro passos l{\'o}gicos independentes:
+\begin{enumerate}
+  \item \textbf{Gera{\c c}{\~a}o da Resposta Base}: O modelo produz o rascunho inicial do instrumento did{\'a}tico;
+  \item \textbf{Planejamento de Perguntas de Checagem}: O agente identifica todas as afirma{\c c}{\~o}es factuais cr{\'i}ticas (f{\'o}rmulas, teoremas, artigos de lei) e formula perguntas objetivas de verifica{\c c}{\~a}o;
+  \item \textbf{Execu{\c c}{\~a}o Independente}: As perguntas s{\~a}o respondidas de modo isolado, sem que o modelo seja induzido pela resposta anterior;
+  \item \textbf{S{\'i}ntese e Corre{\c c}{\~a}o Final}: O documento final s{\'o} {\'e} entregue ap{\'o}s confrontar a vers{\~a}o inicial com as respostas validadas, expurgando imprecis{\~o}es.
+\end{enumerate}

@@ -1,0 +1,163 @@
+\chapter{Instala{\c c}{\~a}o e Configura{\c c}{\~a}o do OpenCode.ai}
+\label{cap:instalacao}
+
+\section{Vis{\~a}o Geral do OpenCode}
+
+O \textbf{OpenCode} (\url{https://opencode.ai}) {\'e} um agente aut{\^o}nomo de terminal e assistente de desenvolvimento de c{\'o}digo aberto concebido para operar diretamente sobre o sistema de arquivos local. Ao contr{\'a}rio de plataformas propriet{\'a}rias fechadas, o OpenCode oferece:
+
+\begin{itemize}
+  \item Total flexibilidade na escolha de provedores de modelos de linguagem (OpenAI, Anthropic, Google, Groq, DeepSeek ou modelos de c{\'o}digo aberto rodando localmente via Ollama);
+  \item Interface interativa de terminal rica em recursos visuais (\emph{Terminal User Interface} -- TUI), al{\'e}m de suporte a execu{\c c}{\~a}o em lote (\emph{headless});
+  \item Suporte nativo a ferramentas de inspe{\c c}{\~a}o de arquivos (\texttt{read}, \texttt{glob}, \texttt{grep}), edi{\c c}{\~a}o segura (\texttt{edit}, \texttt{write}), execu{\c c}{\~a}o de comandos de terminal (\texttt{bash}), extens{\~o}es via \emph{Model Context Protocol} (MCP) e gerenciamento de \emph{skills} modulares.
+\end{itemize}
+
+\section{Pr{\'e}-requisitos de Sistema}
+
+O OpenCode {\'e} compat{\'i}vel com os principais sistemas operacionais modernos:
+\begin{itemize}
+  \item \textbf{Linux}: Qualquer distribui{\c c}{\~a}o contempor{\^a}nea com arquitetura x86\_64 ou ARM64 (Ubuntu 20.04+, Debian 11+, Fedora, Arch Linux, etc.);
+  \item \textbf{macOS}: Vers{\~a}o 12 (Monterey) ou superior, tanto em processadores Apple Silicon (M1/M2/M3/M4) quanto Intel;
+  \item \textbf{Windows}: Recomenda-se enfaticamente a utiliza{\c c}{\~a}o por meio do \textbf{WSL2} (\emph{Windows Subsystem for Linux}), que oferece ambiente Linux nativo com m{\'a}ximo desempenho e compatibilidade. Tamb{\'e}m {\'e} poss{\'i}vel a instala{\c c}{\~a}o direta no PowerShell via gerenciadores de pacotes Windows.
+\end{itemize}
+
+Ferramentas utilit{\'a}rias b{\'a}sicas no terminal: \texttt{curl}, \texttt{git} e uma conex{\~a}o ativa com a internet para baixa dos bin{\'a}rios e comunica{\c c}{\~a}o com as APIs.
+
+\section{Passo a Passo de Instala{\c c}{\~a}o}
+
+O OpenCode disponibiliza m{\'u}ltiplos m{\'e}todos de instala{\c c}{\~a}o oficiais. O usu{\'a}rio pode optar pelo que melhor se adeque ao seu ambiente de trabalho.
+
+\subsection{M{\'e}todo 1: Script Autom{\'a}tico via cURL (Recomendado para Linux e macOS)}
+
+O m{\'e}todo mais r{\'a}pido e direto consiste em executar o script oficial de instala{\c c}{\~a}o no terminal:
+
+\begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o r{\'a}pida via cURL}]
+curl -fsSL https://opencode.ai/install | bash
+\end{lstlisting}
+
+O script detecta a arquitetura do processador, baixa o bin{\'a}rio est{\'a}tico otimizado, instala o execut{\'a}vel no diret{\'o}rio \texttt{\~{}/.opencode/bin/opencode} e adiciona essa localiza{\c c}{\~a}o ao arquivo de configura{\c c}{\~a}o do \emph{shell} (\texttt{\~{}/.bashrc} ou \texttt{\~{}/.zshrc}).
+
+Ap{\'o}s a conclus{\~a}o, recarregue as vari{\'a}veis de ambiente do terminal:
+\begin{lstlisting}[language=bash]
+source ~/.bashrc   # ou source ~/.zshrc se estiver no zsh
+\end{lstlisting}
+
+\subsection{M{\'e}todo 2: Gerenciadores de Pacotes JavaScript (Node.js / npm)}
+
+Caso o ambiente j{\'a} conte com o Node.js (vers{\~a}o 18 ou superior) configurado, o OpenCode pode ser instalado globalmente via \texttt{npm}, \texttt{pnpm} ou \texttt{bun}:
+
+\begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o global via npm, pnpm ou bun}]
+# Via npm
+npm install -g opencode-ai
+
+# Ou via pnpm
+pnpm add -g opencode-ai
+
+# Ou via bun
+bun add -g opencode-ai
+\end{lstlisting}
+
+\subsection{M{\'e}todo 3: Homebrew (macOS e Linux)}
+
+Usu{\'a}rios do gerenciador \textbf{Homebrew} podem instalar com um {\'u}nico comando:
+
+\begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o via Homebrew}]
+brew install opencode
+\end{lstlisting}
+
+\subsection{M{\'e}todo 4: Windows Nativo (Scoop ou Chocolatey)}
+
+Para instala{\c c}{\~a}o direta no Windows sem WSL, abra o PowerShell como Administrador:
+
+\begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o no Windows via Scoop ou Chocolatey}]
+# Via Scoop
+scoop install opencode
+
+# Ou via Chocolatey
+choco install opencode
+\end{lstlisting}
+
+\subsection{Verifica{\c c}{\~a}o da Instala{\c c}{\~a}o}
+
+Para confirmar se o execut{\'a}vel est{\'a} operando corretamente, consulte a vers{\~a}o no terminal:
+
+\begin{lstlisting}[language=bash]
+opencode --version
+\end{lstlisting}
+A sa{\'i}da dever{\'a} exibir o n{\'u}mero da vers{\~a}o instalada (por exemplo, \texttt{1.18.29}).
+
+\section{Configura{\c c}{\~a}o de Provedores e Modelos de IA}
+
+O OpenCode gerencia credenciais de forma segura por meio do comando \texttt{providers}.
+
+\begin{lstlisting}[language=bash, caption={Gerenciamento de provedores e credenciais}]
+# Listar os provedores configurados atualmente
+opencode providers list
+
+# Iniciar o assistente interativo de login em um provedor
+opencode providers login
+\end{lstlisting}
+
+Durante a autentica{\c c}{\~a}o, o terminal solicitar{\'a} a chave de API (\emph{API Key}) do servi{\c c}o escolhido:
+\begin{itemize}
+  \item \textbf{Anthropic}: Chave da API Claude (\texttt{sk-ant-...}), recomendada para modelos com forte racioc{\'i}nio instrucional e reflexivo (e.g., Claude 3.5 Sonnet ou Claude 3.7 Sonnet);
+  \item \textbf{OpenAI}: Chave da API OpenAI (\texttt{sk-...}) para a fam{\'i}lia GPT-4o e modelos da s{\'e}rie \emph{o1};
+  \item \textbf{Google Gemini}: Chave do Google AI Studio para acesso ao Gemini 2.0 Flash e Gemini 1.5 Pro;
+  \item \textbf{Modelos Locais (Ollama)}: Para institui{\c c}{\~o}es com pol{\'i}ticas restritas de privacidade de dados que n{\~a}o admitem tr{\'a}fego de dados discentes para nuvens comerciais, {\'e} poss{\'i}vel conectar o OpenCode a inst{\^a}ncias locais do Ollama (\url{http://localhost:11434}).
+\end{itemize}
+
+\section{Instala{\c c}{\~a}o e Sincroniza{\c c}{\~a}o das Skills no OpenCode}
+
+Para que as 62 skills do reposit{\'o}rio fiquem dispon{\'i}veis no seu ambiente local do OpenCode, as pastas de skills precisam residir no diret{\'o}rio de extens{\~o}es do usu{\'a}rio:
+\begin{center}
+  \texttt{\~{}/.config/opencode/skills/<slug>/SKILL.md}
+\end{center}
+
+O reposit{\'o}rio prov{\^e} um script de instala{\c c}{\~a}o automatizado que realiza a c{\'o}pia e organiza{\c c}{\~a}o de forma segura.
+
+\subsection{Executando a Instala{\c c}{\~a}o}
+
+Na raiz do reposit{\'o}rio \texttt{skills-ia-educacao}, execute:
+
+\begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o automatizada das skills no OpenCode}]
+# 1. Simular a instalacao para inspecionar os caminhos de destino (dry-run)
+./install-skills.sh --opencode --dry-run
+
+# 2. Efetivar a instalacao de todas as 62 skills
+./install-skills.sh --opencode
+\end{lstlisting}
+
+\subsection{Confer{\^e}ncia da Instala{\c c}{\~a}o}
+
+Para certificar-se de que todas as skills foram copiadas com sucesso:
+
+\begin{lstlisting}[language=bash, caption={Verificando as skills instaladas}]
+ls ~/.config/opencode/skills/ | grep ia-educacao | wc -l
+\end{lstlisting}
+O retorno dever{\'a} apontar 61 skills com o prefixo institucional (mais a skill especial \texttt{aias-consultant}, totalizando 62 unidades).
+
+\section{Primeiros Comandos no OpenCode}
+
+\subsection{Iniciando a Interface Interativa (TUI)}
+
+Basta digitar o comando no terminal dentro do diret{\'o}rio do seu projeto acad{\^e}mico ou disciplina:
+
+\begin{lstlisting}[language=bash]
+opencode
+\end{lstlisting}
+
+Uma interface limpa e intuitiva ser{\'a} renderizada no terminal, permitindo enviar mensagens, aprovar a{\c c}{\~o}es de leitura/escrita e selecionar o modelo desejado em tempo real.
+
+\subsection{Execu{\c c}{\~a}o Direta de Comandos (\emph{Headless Mode})}
+
+Para instru{\c c}{\~o}es r{\'a}pidas ou integra{\c c}{\~a}o com scripts do professor, utilize o subcomando \texttt{run}:
+
+\begin{lstlisting}[language=bash, caption={Exemplo de execu{\c c}{\~a}o direta com skill}]
+opencode run "Utilize a skill ia-educacao-rubrica para estruturar uma rubrica analitica para uma apresentacao oral de estagio com nivel AIAS 1."
+\end{lstlisting}
+
+\subsection{Atualiza{\c c}{\~a}o do OpenCode}
+
+Para manter o OpenCode sempre na {\'u}ltima vers{\~a}o est{\'a}vel:
+\begin{lstlisting}[language=bash]
+opencode upgrade
+\end{lstlisting}
