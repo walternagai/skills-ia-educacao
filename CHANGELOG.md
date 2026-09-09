@@ -5,6 +5,11 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.8] — 2026-09-09
+
+### Adicionado
+- **`install-skills.sh` — instala os 6 subagentes do OpenCode** (paridade com `install-skills.bat`): nova etapa `Subagentes do OpenCode` após a verificação; copia `.opencode/agents/*.md` → `~/.config/opencode/agents` somente quando o destino `opencode` foi selecionado (`--opencode`/`--all`), com suporte a `--dry-run`, guarda de pasta ausente e ajuda atualizada. Nota final "não são instalados por este script" substituída. Validado no Linux: `--opencode` instala 62/62 skills + 6/6 subagentes (cópia idêntica verificada); `--claude` e `--opencode --dry-run` pulam os subagentes corretamente
+
 ## [0.10.7] — 2026-09-09
 
 ### Adicionado

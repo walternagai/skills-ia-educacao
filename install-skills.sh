@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# install-skills.sh — instala somente as skills do acervo em CLIs de IA
+# install-skills.sh — instala as skills do acervo em CLIs de IA + subagentes do OpenCode
 # Uso: ./install-skills.sh [--all] [--claude] [--opencode] [--codex] [--antigravity] [--gemini] [--dry-run]
 # Sem flags: mostra o uso (as flags são obrigatórias).
 # --all: instala em todos os destinos, mesmo sem o CLI instalado.
@@ -7,6 +7,8 @@ set -u
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SKILLS_DIR="$REPO_DIR/skills"
+AGENTS_SRC="$REPO_DIR/.opencode/agents"
+AGENTS_DIR="$HOME/.config/opencode/agents"
 DRY_RUN=0
 TARGETS=""
 EXPLICIT=0
@@ -49,7 +51,40 @@ usage() {
   echo "  --antigravity-cli Antigravity CLI (~/.gemini/antigravity-cli/skills)"
   echo "  --gemini         Gemini CLI (~/.gemini/skills)"
   echo "  --dry-run        mostra o que seria feito sem copiar"
+  echo "  (o destino opencode inclui também os 6 subagentes em ~/.config/opencode/agents)"
   exit 0
+}
+
+install_agents() {
+  # subagentes são específicos do OpenCode: só instala quando opencode está nos destinos
+  case " $TARGETS " in
+    *" opencode "*) ;;
+    *)
+      echo "  Destino opencode não selecionado — subagentes não instalados."
+      return 0
+      ;;
+  esac
+  echo "  Origem: $AGENTS_SRC"
+  echo "  Destino: $AGENTS_DIR"
+  if [ ! -d "$AGENTS_SRC" ]; then
+    echo "  ⚠ Pasta de subagentes não encontrada no repositório — nada a instalar."
+    return 0
+  fi
+  if [ "$DRY_RUN" -eq 1 ]; then
+    echo "  (dry-run) copiaria $AGENTS_SRC/*.md → $AGENTS_DIR"
+    return 0
+  fi
+  mkdir -p "$AGENTS_DIR"
+  local n=0
+  for f in "$AGENTS_SRC"/*.md; do
+    [ -f "$f" ] || continue
+    if ! cp -p "$f" "$AGENTS_DIR/$(basename "$f")"; then
+      echo "  ✗ Falha ao copiar $(basename "$f") — abortando instalação dos subagentes"
+      exit 1
+    fi
+    n=$((n + 1))
+  done
+  echo "  Instalados: $n subagentes em $AGENTS_DIR"
 }
 
 [ $# -eq 0 ] && usage
@@ -116,5 +151,9 @@ for t in $TARGETS; do
 done
 
 echo ""
+echo "== Subagentes do OpenCode =="
+install_agents
+
+echo ""
 echo "Pronto. Reinicie o CLI para que as skills sejam detectadas."
-echo "Observação: os 6 subagentes são configurações específicas do OpenCode e não são instalados por este script."
+echo "Observação: os subagentes são específicos do OpenCode e são instalados apenas com o destino opencode."
