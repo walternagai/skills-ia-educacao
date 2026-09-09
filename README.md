@@ -38,7 +38,7 @@ A escala é **não hierárquica** (nenhum nível é superior a outro) e **cumula
 ./install-skills.sh --dry-run              # mostra o que seria feito sem copiar
 ```
 
-O script instala somente as skills; os subagentes de `agents/` e `.opencode/agents/` são específicos do OpenCode e não são instalados por ele (ver "Compatibilidade entre CLIs" abaixo). Para remover:
+O `install-skills.sh` instala somente as skills; os subagentes de `agents/` e `.opencode/agents/` são específicos do OpenCode e não são instalados por ele (ver "Compatibilidade entre CLIs" abaixo). No Windows nativo, o `install-skills.bat` inclui também os 6 subagentes quando o destino `opencode` é selecionado (`--opencode`/`--all`). Para remover:
 
 ```bash
 ./uninstall-skills.sh --all

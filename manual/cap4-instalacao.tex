@@ -248,7 +248,7 @@ Antes da instala{\c c}{\~a}o, o par \texttt{doctor-skills.sh}/\texttt{doctor-ski
 
 \subsection{Disponibilizando os Subagentes}
 
-O script \texttt{install-skills.sh} (ou \texttt{install-skills.bat} no Windows nativo) instala as skills, mas n{\~a}o copia automaticamente os seis subagentes. Se o OpenCode for executado em uma pasta separada da c{\'o}pia do reposit{\'o}rio, copie os arquivos dos subagentes para a configura{\c c}{\~a}o global do usu{\'a}rio:
+O script \texttt{install-skills.sh} instala as skills, mas n{\~a}o copia automaticamente os seis subagentes. No Windows nativo, o \texttt{install-skills.bat} copia os seis subagentes automaticamente quando o destino \texttt{opencode} {\'e} selecionado (\texttt{-{}-opencode}/\texttt{-{}-all}). Nos demais casos, se o OpenCode for executado em uma pasta separada da c{\'o}pia do reposit{\'o}rio, copie os arquivos dos subagentes para a configura{\c c}{\~a}o global do usu{\'a}rio:
 
 \begin{lstlisting}[language=bash, caption={Instalando os subagentes no escopo global (Linux, macOS, WSL2 ou Git Bash)}]
 mkdir -p ~/.config/opencode/agents

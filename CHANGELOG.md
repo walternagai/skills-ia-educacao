@@ -5,7 +5,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
-## [Não publicado]
+## [0.10.7] — 2026-09-09
 
 ### Adicionado
 - **`install-skills.bat` — instala os 6 subagentes do OpenCode**: nova etapa `Subagentes do OpenCode` após a verificação das skills; copia `.opencode/agents/*.md` → `%USERPROFILE%\.config\opencode\agents` somente quando o destino `opencode` foi selecionado (`--opencode`/`--all`), com suporte a `--dry-run`, verificação de contagem e ajuda atualizada. A nota final "não são instalados por este script" foi substituída
@@ -19,6 +19,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
   - **`install-skills.bat` — IDs winget**: OpenCode `sst.opencode` → `SST.opencode` (a busca exata `-e` do winget diferencia maiúsculas; o ID minúsculo causava "Nenhum pacote encontrou os critérios"); removido `Google.GeminiCLI` (pacote inexistente no winget — Gemini CLI é só npm) com fallback que sugere `npm install -g @google/gemini-cli` quando não há ID winget
   - **`doctor-skills.bat` — dica do OpenCode**: `winget: sst.opencode` → `winget: SST.opencode`
   - Validado no Windows: `info --all` (exit 0, `Resultado: OK`), `doctor --all/--opencode` (diagnóstico completo até o placar), `install --opencode` (62/62) e `install --gemini --dry-run` (dica npm, sem prompt)
+- **Documentação — subagentes no `.bat` vs. `.sh`**: `README.md` e manual Cap. 4 afirmavam que o script de instalação não copia os subagentes — agora distinguem o `install-skills.sh` (só skills) do `install-skills.bat` (inclui os 6 subagentes com o destino `opencode`); `main.pdf` segue pendente de recompilação
 
 ## [0.10.6] — 2026-09-08
 
