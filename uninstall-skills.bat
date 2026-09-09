@@ -1,15 +1,17 @@
 @echo off
-REM uninstall-skills.bat - remove as skills do acervo skills-ia-educacao dos CLIs de IA
+REM uninstall-skills.bat - remove as skills do acervo skills-ia-educacao dos CLIs de IA + subagentes do OpenCode
 REM Uso (CMD ou PowerShell): .\uninstall-skills.bat [--all] [--claude] [--opencode] [--codex] [--antigravity] [--antigravity-cli] [--gemini] [--dry-run]
 REM Sem flags: mostra o uso (as flags sao obrigatorias).
 REM --all: remove de todos os destinos, mesmo sem o CLI instalado.
-REM Remove apenas skills do acervo (preserva outras skills do usuario).
+REM Remove apenas skills do acervo e subagentes do repo (preserva skills e agentes de terceiros).
 setlocal EnableExtensions EnableDelayedExpansion
 
 REM --- diretorio do repositorio (pasta deste script) ---
 set "REPO_DIR=%~dp0"
 if "%REPO_DIR:~-1%"=="\" set "REPO_DIR=%REPO_DIR:~0,-1%"
 set "SKILLS_DIR=%REPO_DIR%\skills"
+set "AGENTS_SRC=%REPO_DIR%\.opencode\agents"
+set "AGENTS_DIR=%USERPROFILE%\.config\opencode\agents"
 
 set "DRY_RUN=0"
 set "TARGETS="
@@ -34,7 +36,12 @@ echo == Verificacao ==
 for %%T in (%TARGETS%) do call :verify_one %%T
 
 echo.
+echo == Subagentes do OpenCode ==
+call :remove_agents
+
+echo.
 echo Pronto. Reinicie o CLI para que as skills deixem de ser detectadas.
+echo Observacao: subagentes removidos apenas com o destino opencode.
 exit /b 0
 
 REM ---------- funcoes ----------
@@ -107,6 +114,7 @@ echo   --antigravity      Antigravity 2.0 (~/.gemini/antigravity/skills)
 echo   --antigravity-cli  Antigravity CLI (~/.gemini/antigravity-cli/skills)
 echo   --gemini           Gemini CLI (~/.gemini/skills)
 echo   --dry-run          mostra o que seria feito sem remover
+echo   (o destino opencode remove tambem os 6 subagentes em ~/.config/opencode/agents)
 exit /b 0
 
 :dest_of
@@ -177,4 +185,36 @@ if not exist "!DEST!\" (
 set /a RESTANTES=0
 for /d %%D in ("%SKILLS_DIR%\*") do if exist "!DEST!\%%~nxD\" set /a RESTANTES+=1
 echo   !T!: !RESTANTES! skills do acervo restantes em !DEST!
+exit /b 0
+
+:remove_agents
+REM Subagentes sao especificos do OpenCode: so remove quando opencode esta nos destinos.
+REM Remove apenas os 6 arquivos do repo (preserva agentes de terceiros).
+set "HAS_OPENCODE=0"
+for %%T in (%TARGETS%) do if /i "%%T"=="opencode" set "HAS_OPENCODE=1"
+if "%HAS_OPENCODE%"=="0" (
+  echo   Destino opencode nao selecionado - subagentes mantidos.
+  exit /b 0
+)
+echo   Destino: %AGENTS_DIR%
+if not exist "%AGENTS_DIR%\" (
+  echo   Diretorio nao existe - nada a remover.
+  exit /b 0
+)
+set /a REMOVED=0
+for %%F in ("%AGENTS_SRC%\*.md") do (
+  if exist "%AGENTS_DIR%\%%~nxF" (
+    if "!DRY_RUN!"=="1" (
+      echo   ^(dry-run^) removeria %AGENTS_DIR%\%%~nxF
+    ) else (
+      del /q "%AGENTS_DIR%\%%~nxF"
+    )
+    set /a REMOVED+=1
+  )
+)
+if "!DRY_RUN!"=="1" (
+  echo   ^(dry-run^) !REMOVED! subagentes seriam removidos de %AGENTS_DIR%
+) else (
+  echo   Removidos: !REMOVED! subagentes de %AGENTS_DIR%
+)
 exit /b 0

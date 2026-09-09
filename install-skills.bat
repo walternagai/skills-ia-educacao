@@ -1,5 +1,5 @@
 @echo off
-REM install-skills.bat - instala somente as skills do acervo em CLIs de IA
+REM install-skills.bat - instala as skills do acervo em CLIs de IA + subagentes do OpenCode
 REM Uso (CMD ou PowerShell): .\install-skills.bat [--all] [--claude] [--opencode] [--codex] [--antigravity] [--antigravity-cli] [--gemini] [--dry-run]
 REM Sem flags: mostra o uso (as flags sao obrigatorias).
 REM --all: instala em todos os destinos, mesmo sem o CLI instalado.
@@ -10,6 +10,8 @@ REM --- diretorio do repositorio (pasta deste script) ---
 set "REPO_DIR=%~dp0"
 if "%REPO_DIR:~-1%"=="\" set "REPO_DIR=%REPO_DIR:~0,-1%"
 set "SKILLS_DIR=%REPO_DIR%\skills"
+set "AGENTS_SRC=%REPO_DIR%\.opencode\agents"
+set "AGENTS_DIR=%USERPROFILE%\.config\opencode\agents"
 
 set "DRY_RUN=0"
 set "TARGETS="
@@ -44,8 +46,16 @@ echo == Verificacao ==
 for %%T in (%TARGETS%) do call :verify_one %%T
 
 echo.
+echo == Subagentes do OpenCode ==
+call :install_agents
+if errorlevel 1 (
+  echo Falha na instalacao dos subagentes - abortando
+  exit /b 1
+)
+
+echo.
 echo Pronto. Reinicie o CLI para que as skills sejam detectadas.
-echo Observacao: os 6 subagentes sao configuracoes especificas do OpenCode e nao sao instalados por este script.
+echo Observacao: os subagentes sao especificos do OpenCode e sao instalados apenas com o destino opencode.
 exit /b 0
 
 REM ---------- funcoes ----------
@@ -118,6 +128,7 @@ echo   --antigravity      Antigravity 2.0 (~/.gemini/antigravity/skills)
 echo   --antigravity-cli  Antigravity CLI (~/.gemini/antigravity-cli/skills)
 echo   --gemini           Gemini CLI (~/.gemini/skills)
 echo   --dry-run          mostra o que seria feito sem copiar
+echo   (o destino opencode inclui tambem os 6 subagentes em ~/.config/opencode/agents)
 exit /b 0
 
 :dest_of
@@ -232,4 +243,33 @@ if not exist "!DEST!\" (
 set /a MATCH=0
 for /d %%D in ("%SKILLS_DIR%\*") do if exist "!DEST!\%%~nxD\" set /a MATCH+=1
 echo   !T!: !MATCH! skills do acervo em !DEST!
+exit /b 0
+
+:install_agents
+REM Subagentes sao especificos do OpenCode: so instala quando opencode esta nos destinos.
+set "HAS_OPENCODE=0"
+for %%T in (%TARGETS%) do if /i "%%T"=="opencode" set "HAS_OPENCODE=1"
+if "%HAS_OPENCODE%"=="0" (
+  echo   Destino opencode nao selecionado - subagentes nao instalados.
+  exit /b 0
+)
+echo   Origem: %AGENTS_SRC%
+echo   Destino: %AGENTS_DIR%
+if not exist "%AGENTS_SRC%\" (
+  echo   AVISO: pasta de subagentes nao encontrada no repositorio - nada a instalar.
+  exit /b 0
+)
+if "!DRY_RUN!"=="1" (
+  echo   ^(dry-run^) copiaria %AGENTS_SRC%\*.md -^> %AGENTS_DIR%
+  exit /b 0
+)
+if not exist "%AGENTS_DIR%\" mkdir "%AGENTS_DIR%"
+copy /y "%AGENTS_SRC%\*.md" "%AGENTS_DIR%\" >nul
+if errorlevel 1 (
+  echo   X Falha ao copiar subagentes - abortando instalacao dos subagentes
+  exit /b 1
+)
+set /a AG_COUNT=0
+for %%F in ("%AGENTS_SRC%\*.md") do if exist "%AGENTS_DIR%\%%~nxF" set /a AG_COUNT+=1
+echo   Instalados: !AG_COUNT! subagentes em %AGENTS_DIR%
 exit /b 0

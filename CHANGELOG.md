@@ -7,6 +7,11 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ## [Não publicado]
 
+### Adicionado
+- **`install-skills.bat` — instala os 6 subagentes do OpenCode**: nova etapa `Subagentes do OpenCode` após a verificação das skills; copia `.opencode/agents/*.md` → `%USERPROFILE%\.config\opencode\agents` somente quando o destino `opencode` foi selecionado (`--opencode`/`--all`), com suporte a `--dry-run`, verificação de contagem e ajuda atualizada. A nota final "não são instalados por este script" foi substituída
+- Validado no Windows: `install --opencode` real instala 62/62 skills + 6/6 subagentes (`info --opencode` confirma "completos"); `--codex --dry-run` pula os subagentes corretamente
+- **`uninstall-skills.bat` — remove os 6 subagentes do OpenCode**: nova etapa `Subagentes do OpenCode` após a verificação; apaga apenas os `.md` do repo em `%USERPROFILE%\.config\opencode\agents` (preserva agentes de terceiros), somente com o destino `opencode`, com `--dry-run` e ajuda atualizada. Validado com `--opencode/--codex --dry-run` (remoção real não executada; `info` segue 62/62 + 6/6)
+
 ### Corrigido
 - **Scripts Windows (`.bat`) — correção de defeitos na trilha nativa**:
   - **`info-skills.bat` abortava no final (exit 255, sem linha `Resultado`)**: `)` não escapado em `echo` dentro de bloco `if` — corrigido com `^)` (causa: `. foi inesperado neste momento`)
