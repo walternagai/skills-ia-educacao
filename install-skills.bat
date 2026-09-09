@@ -141,13 +141,14 @@ set "%~2="
 exit /b 1
 
 REM IDs no winget (melhor esforco; alguns CLIs sao distribuidos via npm)
+REM Nota: a busca exata (-e) do winget diferencia maiusculas - use o ID com a capitalizacao exata.
+REM Gemini CLI nao tem pacote winget - cai no fallback npm via :npm_pkg_of.
 :winget_id_of
 if /i "%~1"=="claude"          ( set "%~2=Anthropic.Claude"     & exit /b 0 )
-if /i "%~1"=="opencode"        ( set "%~2=sst.opencode"         & exit /b 0 )
+if /i "%~1"=="opencode"        ( set "%~2=SST.opencode"         & exit /b 0 )
 if /i "%~1"=="codex"           ( set "%~2=OpenAI.Codex"         & exit /b 0 )
 if /i "%~1"=="antigravity"     ( set "%~2=Google.Antigravity"   & exit /b 0 )
 if /i "%~1"=="antigravity-cli" ( set "%~2=Google.Antigravity"   & exit /b 0 )
-if /i "%~1"=="gemini"          ( set "%~2=Google.GeminiCLI"     & exit /b 0 )
 set "%~2="
 exit /b 1
 
@@ -191,6 +192,11 @@ if errorlevel 1 (
       call :npm_pkg_of "!T!" NPKG
       if defined NPKG echo   Dica alternativa: npm install -g !NPKG!
     )
+  )
+  REM Sem ID winget (ex.: Gemini CLI, so via npm): sugere o pacote npm.
+  if not defined WID (
+    call :npm_pkg_of "!T!" NPKG
+    if defined NPKG echo   Dica: npm install -g !NPKG!
   )
 )
 if "!DRY_RUN!"=="1" (

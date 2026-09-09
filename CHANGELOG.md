@@ -5,6 +5,16 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [Não publicado]
+
+### Corrigido
+- **Scripts Windows (`.bat`) — correção de defeitos na trilha nativa**:
+  - **`info-skills.bat` abortava no final (exit 255, sem linha `Resultado`)**: `)` não escapado em `echo` dentro de bloco `if` — corrigido com `^)` (causa: `. foi inesperado neste momento`)
+  - **`doctor-skills.bat` abortava após a checagem do git (exit 255)**: `)` não escapado quebrava o bloco, justamente no ramo "CLI ausente" (node/npm/CLIs faltantes). Como `call :rotulo` dentro de bloco corrompe qualquer escape de `)` (vira `^^)` literal ou quebra o bloco), as mensagens via `call` foram reformuladas sem parênteses (`(texto)` → `- texto`); `^)` mantido apenas nos `echo` diretos, onde funciona. Comentário de guarda adicionado ao cabeçalho do script
+  - **`install-skills.bat` — IDs winget**: OpenCode `sst.opencode` → `SST.opencode` (a busca exata `-e` do winget diferencia maiúsculas; o ID minúsculo causava "Nenhum pacote encontrou os critérios"); removido `Google.GeminiCLI` (pacote inexistente no winget — Gemini CLI é só npm) com fallback que sugere `npm install -g @google/gemini-cli` quando não há ID winget
+  - **`doctor-skills.bat` — dica do OpenCode**: `winget: sst.opencode` → `winget: SST.opencode`
+  - Validado no Windows: `info --all` (exit 0, `Resultado: OK`), `doctor --all/--opencode` (diagnóstico completo até o placar), `install --opencode` (62/62) e `install --gemini --dry-run` (dica npm, sem prompt)
+
 ## [0.10.6] — 2026-09-08
 
 ### Corrigido

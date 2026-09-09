@@ -5,6 +5,9 @@ REM Sem flags: diagnostica todos os destinos, mesmo sem o CLI instalado.
 REM --fix: tenta corrigir o que faltar (instala CLIs ausentes via npm quando possivel).
 REM Codigos de saida: 0 = OK; 1 = faltam pre-requisitos essenciais.
 REM Compativel com Windows 10/11 (CMD e PowerShell).
+REM AVISO batch: nao use parenteses em textos passados via "call :rotulo" dentro de blocos
+REM if/for - o duplo parse do call corrompe ")" ou quebra o bloco. Prefira " - texto".
+REM Em "echo" direto dentro de bloco, ")" isolado exige escape ("^)").
 setlocal EnableExtensions EnableDelayedExpansion
 
 REM --- diretorio do repositorio (pasta deste script) ---
@@ -42,7 +45,7 @@ where bash >nul 2>&1
 if not errorlevel 1 (
   call :pass "bash no PATH (trilha Git Bash/WSL2 disponivel)"
 ) else (
-  call :info "bash ausente (opcional: somente para a trilha Unix via Git Bash/WSL2)"
+  call :info "bash ausente - opcional: somente para a trilha Unix via Git Bash/WSL2"
 )
 where curl >nul 2>&1
 if not errorlevel 1 (
@@ -54,7 +57,7 @@ where git >nul 2>&1
 if not errorlevel 1 (
   call :pass "git no PATH - recomendado para clonar/atualizar o repositorio"
 ) else (
-  call :warn "git ausente - recomendado para clonar/atualizar o repositorio (ZIP dispensa o git)"
+  call :warn "git ausente - recomendado para clonar/atualizar o repositorio - ZIP dispensa o git"
 )
 where node >nul 2>&1
 if not errorlevel 1 (
@@ -62,19 +65,19 @@ if not errorlevel 1 (
   set "NODE_MAJOR=!NODE_VER:v=!"
   for /f "tokens=1 delims=." %%M in ("!NODE_MAJOR!") do set "NODE_MAJOR=%%M"
   if !NODE_MAJOR! GEQ 18 (
-    echo   [OK] node (!NODE_VER!) - requerido: ^>= 18
+    echo   [OK] node (!NODE_VER!^) - requerido: ^>= 18
     set /a OK+=1
   ) else (
-    call :fail "node !NODE_VER! e anterior ao minimo (18) - atualize em https://nodejs.org"
+    call :fail "node !NODE_VER! e anterior ao minimo exigido, 18 - atualize em https://nodejs.org"
   )
 ) else (
-  call :fail "node ausente (requerido 18 ou superior) - necessario para os CLIs distribuidos via npm"
+  call :fail "node ausente - requerido: 18 ou superior - necessario para os CLIs distribuidos via npm"
 )
 where npm >nul 2>&1
 if not errorlevel 1 (
   call :pass "npm no PATH - distribui a maioria dos CLIs"
 ) else (
-  call :warn "npm ausente - distribui a maioria dos CLIs (instale com o Node.js)"
+  call :warn "npm ausente - distribui a maioria dos CLIs - instale com o Node.js"
 )
 if exist "%SKILLS_DIR%\" (
   call :count_repo_skills
@@ -106,7 +109,7 @@ if !FAIL! GTR 0 (
 )
 if !WARN! GTR 0 (
   echo.
-  echo Resultado: AVISO ambiente utilizavel, com ressalvas (veja os avisos).
+  echo Resultado: AVISO ambiente utilizavel, com ressalvas (veja os avisos^).
   exit /b 0
 )
 echo.
@@ -229,7 +232,7 @@ exit /b 1
 
 :pkg_of
 if /i "%~1"=="claude"          ( set "%~2=npm: @anthropic-ai/claude-code" & exit /b 0 )
-if /i "%~1"=="opencode"        ( set "%~2=npm: opencode-ai | winget: sst.opencode | scoop/choco" & exit /b 0 )
+if /i "%~1"=="opencode"        ( set "%~2=npm: opencode-ai | winget: SST.opencode | scoop/choco" & exit /b 0 )
 if /i "%~1"=="codex"           ( set "%~2=npm: @openai/codex" & exit /b 0 )
 if /i "%~1"=="antigravity"     ( set "%~2=download: https://antigravity.google" & exit /b 0 )
 if /i "%~1"=="antigravity-cli" ( set "%~2=download: https://antigravity.google" & exit /b 0 )
@@ -253,7 +256,7 @@ if not errorlevel 1 (
   call :pass "CLI '!BIN!' no PATH"
 ) else (
   call :pkg_of "!T!" PKG
-  call :fail "CLI '!BIN!' nao encontrado no PATH (pacote: !PKG!)"
+  call :fail "CLI '!BIN!' nao encontrado no PATH - pacote: !PKG!"
   call :fix_hint_of "!T!" NPKG
   if defined NPKG (
     if "!FIX!"=="1" (
@@ -265,10 +268,10 @@ if not errorlevel 1 (
         call :warn "instalacao via npm falhou - execute manualmente: npm install -g !NPKG!"
       )
     ) else (
-      call :info "correcao possivel com: npm install -g !NPKG! (ou use --fix)"
+      call :info "correcao possivel com: npm install -g !NPKG! - ou use --fix"
     )
   ) else (
-    call :info "instalacao manual necessaria (sem pacote npm conhecido)"
+    call :info "instalacao manual necessaria - sem pacote npm conhecido"
   )
 )
 if exist "!DEST!\" (
@@ -287,11 +290,11 @@ if exist "%AGENTS_DIR%\" (
     if exist "%AGENTS_DIR%\%%~nxF" set /a AG_OK+=1
   )
   if !AG_OK! EQU !AG_TOTAL! (
-    call :pass "todos os subagentes instalados em %AGENTS_DIR% (!AG_OK!/!AG_TOTAL!)"
+    call :pass "todos os subagentes instalados em %AGENTS_DIR% - !AG_OK!/!AG_TOTAL!"
   ) else (
-    call :warn "subagentes instalados: !AG_OK!/!AG_TOTAL! (copie com: xcopy .opencode\agents\*.md %AGENTS_DIR%\ /y)"
+    call :warn "subagentes instalados: !AG_OK!/!AG_TOTAL! - copie com: xcopy .opencode\agents\*.md %AGENTS_DIR%\ /y"
   )
 ) else (
-  call :warn "diretorio de agentes nao existe (%AGENTS_DIR%) - copie com: New-Item -ItemType Directory -Force %AGENTS_DIR%; Copy-Item .opencode\agents\*.md %AGENTS_DIR%\"
+  call :warn "diretorio de agentes nao existe em %AGENTS_DIR% - copie com: New-Item -ItemType Directory -Force %AGENTS_DIR%; Copy-Item .opencode\agents\*.md %AGENTS_DIR%\"
 )
 exit /b 0

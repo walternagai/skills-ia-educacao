@@ -58,7 +58,7 @@ for %%T in (!TARGETS!) do (
 
 if "%INSTALLED_SOMETHING%"=="1" (
   echo.
-  echo Resultado: OK ha instalacao do acervo nesta maquina (detalhes acima).
+  echo Resultado: OK ha instalacao do acervo nesta maquina (detalhes acima^).
   exit /b 0
 ) else (
   echo.
