@@ -3,7 +3,7 @@
 
 \begin{objetivos}
 \begin{itemize}
-  \item Reproduzir, no seu contexto, os quatro roteiros pr{\'a}ticos apresentados (planejamento, avalia{\c c}{\~a}o, feedback e sala de aula ativa);
+  \item Reproduzir, no seu contexto, os cinco roteiros pr{\'a}ticos apresentados (planejamento, avalia{\c c}{\~a}o, feedback, sala de aula ativa e avalia{\c c}{\~a}o jur{\'i}dica);
   \item Adaptar os exemplos de \emph{prompts} {\`a} sua {\'a}rea do conhecimento e {\`a} sua disciplina;
   \item Aplicar o checklist de valida{\c c}{\~a}o docente antes de disponibilizar materiais gerados com IA.
 \end{itemize}
@@ -22,13 +22,15 @@ Este cap{\'i}tulo foi desenhado para servir como um guia de aplica{\c c}{\~a}o r
     \toprule
     \textbf{Necessidade Docente} & \textbf{Caso e {\'A}rea Ilustrativa} \\
     \midrule
-    Estruturar uma disciplina inteira, definir n{\'i}veis AIAS e cronograma semestral & Caso~1 -- \emph{Estruturas de Dados e Algoritmos} (Ci{\^e}ncia da Computa{\c c}{\~a}o / Engenharias) \\
+    Estruturar uma disciplina inteira, definir n{\'i}veis AIAS e cronograma semestral & Caso~1 -- \emph{Estruturas de Dados e Algoritmos} (Computa{\c c}{\~a}o) -- com adapta{\c c}{\~a}o para Direito, Enfermagem e Pedagogia \\
     \addlinespace
-    Elaborar uma avalia{\c c}{\~a}o formativa completa (enunciado, rubrica e quest{\~o}es objetivas) & Caso~2 -- \emph{Banco de Dados} (Ci{\^e}ncia da Computa{\c c}{\~a}o / Engenharias) \\
+    Elaborar uma avalia{\c c}{\~a}o formativa completa (enunciado, rubrica e quest{\~o}es) & Caso~2 -- \emph{Banco de Dados} (Computa{\c c}{\~a}o) -- com adapta{\c c}{\~a}o para Direito, Enfermagem e Letras \\
     \addlinespace
-    Gerar feedback formativo inclusivo para estudantes que solicitam apoio de acessibilidade ou organiza{\c c}{\~a}o & Caso~3 -- Qualquer {\'a}rea com entrega escrita ou c{\'o}digo-fonte \\
+    Gerar feedback formativo inclusivo para estudantes que solicitam apoio de acessibilidade ou organiza{\c c}{\~a}o & Caso~3 -- Qualquer {\'a}rea com entrega escrita ou t{\'e}cnica \\
     \addlinespace
-    Transformar uma aula expositiva em atividade ativa de \emph{Peer Instruction} & Caso~4 -- \emph{Termodin{\^a}mica} (F{\'i}sica / Engenharias) \\
+    Transformar uma aula expositiva em atividade ativa de \emph{Peer Instruction} & Caso~4 -- \emph{Termodin{\^a}mica} (F{\'i}sica) -- com adapta{\c c}{\~a}o para Direito, Enfermagem e Sociologia \\
+    \addlinespace
+    Avaliar an{\'a}lise de jurisprud{\^e}ncia e argumenta{\c c}{\~a}o jur{\'i}dica com IA colaborativa & Caso~5 -- \emph{Direito Constitucional} (Direito) -- molde para Enfermagem, Psicologia e Administra{\c c}{\~a}o \\
     \bottomrule
   \end{tabularx}
 \end{table}
@@ -77,6 +79,15 @@ O subagente aplica os frameworks (AIAS, Bloom e \emph{Backward Design}) e indica
   \item \textbf{Plano de Aulas}: Cronograma de 15 semanas articulado com desafios pr{\'a}ticos em laborat{\'o}rio.
 \end{itemize}
 
+\begin{adaptacaoarea}
+\textbf{Planejar uma disciplina em outras {\'a}reas}: mantenha a estrutura do pedido e troque o conte{\'u}do:
+\begin{itemize}
+  \item \emph{Direito}: ``Analise a ementa de \emph{Direito Constitucional} (controle de constitucionalidade, hermen{\^e}utica e jurisprud{\^e}ncia do STF). Proponha um planejamento reverso de 15 semanas com tr{\^e}s momentos avaliativos formativos e especifique o n{\'i}vel AIAS recomendado para cada unidade tem{\'a}tica.'' -- IA baixa nas semanas de fixa{\c c}{\~a}o de jurisprud{\^e}ncia, colaborativa nas an{\'a}lises de casos concretos;
+  \item \emph{Enfermagem}: ``Analise a ementa de \emph{Assist{\^e}ncia de Enfermagem ao Adulto} e proponha um planejamento reverso que articule simula{\c c}{\~a}o cl{\'i}nica, est{\'a}gio supervisionado e semin{\'a}rios, com n{\'i}vel AIAS por unidade'' -- simula{\c c}{\~o}es costumam ficar em IAAS 1; reda{\c c}{\~a}o de planos de cuidado admite colabora{\c c}{\~a}o com IA;
+  \item \emph{Pedagogia}: ``Analise a ementa de \emph{Fundamentos do Processo Ensino-Aprendizagem} e proponha planejamento reverso com atividades ativas por semana e n{\'i}veis AIAS declarados.'' -- a skill \path{ia-educacao-basica} e \path{ia-educacao-fundamentos} s{\~a}o selecionadas pelo contexto do pedido.
+\end{itemize}
+\end{adaptacaoarea}
+
 \section{Caso 2: Elaborando uma Avalia{\c c}{\~a}o Formativa com Rubrica e MCQs}
 
 \subsection{Contexto e Desafio}
@@ -102,6 +113,15 @@ O subagente gera um arquivo Markdown/LaTeX contendo:
     \end{itemize}
   \item \textbf{Dois Itens MCQs Diagn{\'o}sticos}: Cada distrator com uma nota explicativa indicando a falha de racioc{\'i}nio que ele representa (por exemplo, confundir depend{\^e}ncia parcial com transitiva).
 \end{enumerate}
+
+\begin{adaptacaoarea}
+\textbf{Elaborar uma avalia{\c c}{\~a}o formativa em outras {\'a}reas}: substitua o tema e o cen{\'a}rio, mantendo enunciado + rubrica + MCQs:
+\begin{itemize}
+  \item \emph{Direito}: ``Crie uma avalia{\c c}{\~a}o formativa sobre \emph{Contratos no C{\'o}digo Civil} para um cen{\'a}rio real de disputa de loca{\c c}{\~a}o residencial, no n{\'i}vel AIAS~2, com rubrica em 4 n{\'i}veis e duas quest{\~o}es objetivas diagn{\'o}sticas'' -- distratores podem ancorar equ{\'i}vocos t{\'i}picos (ex.: confundir nulidade com anulabilidade);
+  \item \emph{Enfermagem/Sa{\'u}de}: ``Elabore avalia{\c c}{\~a}o formativa sobre \emph{Interpreta{\c c}{\~a}o de Exames Laboratoriais} para cen{\'a}rio cl{\'i}nico simulado, com rubrica e dois itens diagn{\'o}sticos'' -- distratores por erro de interpreta{\c c}{\~a}o de refer{\^e}ncia de valores;
+  \item \emph{Letras/Lingu{\'i}stica}: ``Crie avalia{\c c}{\~a}o formativa sobre \emph{An{\'a}lise do Discurso} para um texto jornal{\'i}stico, com rubrica em 4 n{\'i}veis e duas quest{\~o}es diagn{\'o}sticas'' -- distratores por equ{\'i}voco de n{\'i}vel de an{\'a}lise (l{\'e}xico vs. discursivo).
+\end{itemize}
+\end{adaptacaoarea}
 
 \section{Caso 3: Ciclo de Feedback Formativo e Inclus{\~a}o}
 
@@ -142,12 +162,51 @@ O OpenCode estrutura:
   \item \textbf{Quest{\~o}es Conceituais}: Itens qualitativos sem f{\'o}rmulas num{\'e}ricas que for{\c c}am os estudantes a discutir em duplas sobre entropia e irreversibilidade antes da segunda vota{\c c}{\~a}o.
 \end{itemize}
 
+\begin{adaptacaoarea}
+\textbf{Sala invertida e \emph{Peer Instruction} em outras {\'a}reas}: mantenha o roteiro (pr{\'e}-aula + vota{\c c}{\~a}o + discuss{\~a}o por pares) e troque o tema:
+\begin{itemize}
+  \item \emph{Direito}: ``Estruture uma aula de \emph{Constitui{\c c}{\~a}o e Direitos Fundamentais} com roteiro de leitura pr{\'e}-aula e tr{\^e}s ConcepTests sobre limites de direitos fundamentais'' -- quest{\~o}es a partir de casos hipot{\'e}ticos e julgados;
+  \item \emph{Enfermagem}: ``Estruture uma aula de \emph{Farmacologia B{\'a}sica} com tr{\^e}s ConcepTests conceituais sobre intera{\c c}{\~o}es medicamentosas para vota{\c c}{\~a}o em duplas'' -- quest{\~o}es qualitativas, sem c{\'a}lculo complexo;
+  \item \emph{Sociologia}: ``Estruture uma aula sobre \emph{Desigualdade Social} com tr{\^e}s ConcepTests que contrastem explica{\c c}{\~o}es concorrentes'' -- vota{\c c}{\~a}o sobre interpreta{\c c}{\~o}es te{\'o}ricas, n{\~a}o dados.
+\end{itemize}
+\end{adaptacaoarea}
+
+\section{Caso 5: Avalia{\c c}{\~a}o Formativa com An{\'a}lise de Jurisprud{\^e}ncia (Direito)}
+
+\subsection{Contexto e Desafio}
+O docente de \emph{Direito Constitucional} precisa de um instrumento avaliativo formativo que exija do estudante analisar um julgado recente do Supremo Tribunal Federal e confront{\'a}-lo com a doutrina. A atividade ser{\'a} realizada no n{\'i}vel AIAS~3 (Colabora{\c c}{\~a}o com IA), com declara{\c c}{\~a}o formal de uso no cabe{\c c}alho.
+
+\subsection{Execu{\c c}{\~a}o no OpenCode}
+\begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Comando Enviado pelo Professor}]
+\small
+``Atue como o subagente \path{@construtor-de-avaliacoes}. Elabore um instrumento avaliativo formativo sobre \emph{controle de constitucionalidade} a partir de um caso hipot{\'e}tico de inconstitucionalidade de lei municipal. A atividade ser{\'a} no n{\'i}vel AIAS~3: o estudante pode usar IA para organizar teses e revisar a reda{\c c}{\~a}o, mas a argumenta{\c c}{\~a}o jur{\'i}dica deve ser documentada em anexo de transpar{\^e}ncia. Elabore a rubrica anal{\'i}tica em 4 n{\'i}veis com a skill \path{ia-educacao-rubrica} e duas quest{\~o}es discursivas diagn{\'o}sticas com distratores baseados em equ{\'i}vocos conceituais t{\'i}picos usando a skill \path{ia-educacao-mcq}.''
+\end{tcolorbox}
+
+\subsection{Artefato Entregue}
+O subagente gera um documento contendo:
+\begin{enumerate}
+  \item \textbf{Cabe{\c c}alho Institucional com AIAS}: declara{\c c}{\~a}o expl{\'i}cita: ``\emph{Esta atividade adota o N{\'i}vel AIAS~3 -- Colabora{\c c}{\~a}o com IA. A organiza{\c c}{\~a}o das teses e a revis{\~a}o de forma podem contar com a ferramenta, desde que declaradas; a fundamenta{\c c}{\~a}o jur{\'i}dica e a posi{\c c}{\~a}o cr{\'i}tica s{\~a}o integralmente suas}'';
+  \item \textbf{Desafio Aut{\^e}ntico}: um caso hipot{\'e}tico de inconstitucionalidade de lei municipal com insumos (texto da lei, trechos da CF/88, premissas f{\'a}ticas) para o discente argumentar;
+  \item \textbf{Rubrica Anal{\'i}tica em 4 N{\'i}veis}:
+    \begin{itemize}
+      \item Crit{\'e}rio 1: Identifica{\c c}{\~a}o do objeto de controle e do par{\^a}metro constitucional;
+      \item Crit{\'e}rio 2: Coer{\^e}ncia argumentativa e uso de fontes normativas corretas;
+      \item Crit{\'e}rio 3: Estrutura e clareza da fundamenta{\c c}{\~a}o jur{\'i}dica;
+      \item Crit{\'e}rio 4: Transpar{\^e}ncia no Uso de IA (coer{\^e}ncia com AIAS~3).
+    \end{itemize}
+  \item \textbf{Duas Quest{\~o}es Discursivas Diagn{\'o}sticas}: cada item com distrator (em quest{\~o}es de argumenta{\c c}{\~a}o, distratores s{\~a}o teses equivocadas plaus{\'i}veis) -- por exemplo, confundir inconstitucionalidade formal com material.
+\end{enumerate}
+
+\begin{adaptacaoarea}
+\textbf{Este roteiro serve de molde para outras {\'a}reas n{\~a}o-exatas}: mantenha a estrutura (caso aut{\^e}ntico + rubrica + itens diagn{\'o}sticos + declara{\c c}{\~a}o AIAS) e troque o conte{\'u}do -- \emph{Enfermagem}: estudo de caso cl{\'i}nico de admiss{\~a}o em pronto-socorro; \emph{Psicologia}: an{\'a}lise de vinheta cl{\'i}nica; \emph{Administra{\c c}{\~a}o}: estudo de caso de gest{\~a}o com decis{\~a}o estrat{\'e}gica.
+\end{adaptacaoarea}
+
 \section{Cen{\'a}rios por {\'A}rea STHEM}
 
 As quatro disciplinas ilustrativas dos casos anteriores concentram-se nas {\'a}reas de tecnologia e ci{\^e}ncias exatas. Para evidenciar que o acervo atende a todo o espectro STHEM (Science, Technology, Humanities, Engineering, Mathematics), esta se{\c c}{\~a}o apresenta um cen{\'a}rio adicional por {\'a}rea, com a skill que o OpenCode seleciona espontaneamente ao receber o \emph{prompt}. Os cinco cen{\'a}rios foram validados no OpenCode real: em todos eles, o agente identificou corretamente as skills do acervo a partir da descri{\c c}{\~a}o da tarefa, sem necessidade de citar o nome da skill no \emph{prompt} -- demonstrando que a detec{\c c}{\~a}o sem{\^a}ntica funciona a partir do objetivo pedag{\'o}gico.
 
 \begin{dicaopencode}
-\textbf{Valida{\c c}{\~a}o emp{\'i}rica dos roteiros deste cap{\'i}tulo}: os quatro casos de uso (Casos~1 a~4) e os cinco cen{\'a}rios STHEM desta se{\c c}{\~a}o foram executados no OpenCode real (vers{\~a}o 1.18.29, modo headless \texttt{opencode run}). Em todos, as skills citadas foram efetivamente carregadas pela ferramenta \texttt{skill()} e os artefatos esperados foram produzidos (planos, rubricas com r{\'o}tulos can{\^o}nicos, feedbacks tridimensionais e ConcepTests). A disponibilidade de modelos, a sele{\c c}{\~a}o autom{\'a}tica de skills e o formato da delega{\c c}{\~a}o podem variar conforme a vers{\~a}o e o provedor. Os arquivos de subagentes deste acervo n{\~a}o fixam um modelo: quando instalados na configura{\c c}{\~a}o global ou no projeto, eles usam o modelo selecionado pelo agente principal. Se a men{\c c}{\~a}o \texttt{@subagente} n{\~a}o aparecer, siga as instru{\c c}{\~o}es de instala{\c c}{\~a}o de subagentes do Cap{\'i}tulo~\ref{cap:instalacao}.
+\textbf{Valida{\c c}{\~a}o emp{\'i}rica dos roteiros deste cap{\'i}tulo}: os cinco casos de uso (Casos~1 a~5) e os cinco cen{\'a}rios STHEM desta se{\c c}{\~a}o foram desenhados sobre o comportamento real do OpenCode (vers{\~a}o 1.18.29, modo headless \texttt{opencode run}): os quatro casos de uso originais e os cinco cen{\'a}rios STHEM foram executados, com as skills citadas efetivamente carregadas pela ferramenta \texttt{skill()} e os artefatos esperados produzidos (planos, rubricas com r{\'o}tulos can{\^o}nicos, feedbacks tridimensionais e ConcepTests). A disponibilidade de modelos, a sele{\c c}{\~a}o autom{\'a}tica de skills e o formato da delega{\c c}{\~a}o podem variar conforme a vers{\~a}o e o provedor. Os arquivos de subagentes deste acervo n{\~a}o fixam um modelo: quando instalados na configura{\c c}{\~a}o global ou no projeto, eles usam o modelo selecionado pelo agente principal. Se a men{\c c}{\~a}o \texttt{@subagente} n{\~a}o aparecer, siga as instru{\c c}{\~o}es de instala{\c c}{\~a}o de subagentes do Cap{\'i}tulo~\ref{cap:instalacao}.
 \end{dicaopencode}
 
 Os perfis por {\'a}rea seguem a tabela de adapta{\c c}{\~o}es embutida nos subagentes do reposit{\'o}rio, que orientam n{\'i}veis AIAS t{\'i}picos e formatos preferenciais de avalia{\c c}{\~a}o para cada {\'a}rea (Tabela~\ref{tab:sthem-cenarios}).
@@ -240,7 +299,7 @@ Antes de disponibilizar qualquer material gerado com o aux{\'i}lio do OpenCode a
     \addlinespace
     \textbf{2} & Declara{\c c}{\~a}o AIAS & O n{\'i}vel de IA est{\'a} expl{\'i}cito no enunciado? & Adicione a cl{\'a}usula de integridade com \path{aias-consultant}. \\
     \addlinespace
-    \textbf{3} & Auditoria Factual & As f{\'o}rmulas e c{\'o}digos foram rodados? & Execute o teste real e audite com \path{ia-educacao-verificacao}. \\
+    \textbf{3} & Auditoria Factual & Os dados, cita{\c c}{\~o}es, leis e c{\'a}lculos foram conferidos? & Verifique contra as fontes reais e audite com \path{ia-educacao-verificacao}. \\
     \addlinespace
     \textbf{4} & Acessibilidade DUA & A linguagem {\'e} clara e inclusiva? & Simplifique par{\'a}grafos densos com \path{ia-educacao-dua}. \\
     \addlinespace

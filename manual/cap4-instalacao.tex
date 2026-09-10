@@ -14,6 +14,28 @@
 \textbf{Caminho recomendado na primeira instala{\c c}{\~a}o (cerca de 20 minutos)}: Linux, macOS ou Windows com WSL2/Git Bash use o M{\'e}todo~1 (cURL), depois \texttt{/connect} e \path{./install-skills.sh --opencode}; no Windows nativo (CMD ou PowerShell) use o M{\'e}todo~4 (Scoop ou Chocolatey) e \path{.\install-skills.bat --opencode}. Ignore os demais m{\'e}todos por enquanto. \textbf{Pronto quando}: \texttt{opencode -{}-version} exibe a vers{\~a}o, a contagem de skills confere (ver Se{\c c}{\~a}o Confer{\^e}ncia) e o relat{\'o}rio \texttt{info-skills} lista as skills e os seis subagentes. O controle de vers{\~a}o com Git, ao final do cap{\'i}tulo, {\'e} opcional e pode ficar para depois.
 \end{dicaopencode}
 
+\begin{conceitochave}
+\textbf{Vocabul{\'a}rio de instala{\c c}{\~a}o (apenas o que aparece neste cap{\'i}tulo)}: voc{\^e} n{\~a}o precisa dominar nenhum destes termos -- basta copiar e colar os comandos indicados:
+\begin{itemize}
+  \item \textbf{Terminal}: a ``tela de comandos'' do computador, onde se digita texto em vez de clicar. No Windows, {\'e} o PowerShell; no Linux e macOS, o Terminal;
+  \item \textbf{Comando}: uma linha de texto que voc{\^e} digita (ou cola) e confirma com Enter, como se fosse uma instru{\c c}{\~a}o por escrito;
+  \item \textbf{Terminal do OpenCode (TUI)}: ao digitar \texttt{opencode}, abre-se uma interface com menus dentro do pr{\'o}prio terminal;
+  \item \textbf{Reposit{\'o}rio}: a pasta do projeto com todos os arquivos do acervo, baixada do GitHub (como uma pasta compactada, com hist{\'o}rico);
+  \item \textbf{Script}: um arquivo de comandos prontos (\texttt{install-skills.sh} ou \texttt{install-skills.bat}) que voc{\^e} executa sem digitar cada comando individualmente;
+  \item \textbf{Termos avan{\c c}ados que aparecem e podem ser ignorados}: \emph{PATH} (lista de pastas que o sistema consulta para achar programas), \emph{WSL2} (Linux rodando dentro do Windows), \emph{npm}, \emph{Scoop}, \emph{Chocolatey}, \emph{Homebrew} e \emph{cURL} (modos alternativos de instalar programas). O caminho recomendado usa apenas um deles, e o restante deste cap{\'i}tulo explica cada op{\c c}{\~a}o quando for necess{\'a}ria.
+\end{itemize}
+\end{conceitochave}
+
+\begin{atencaopedagogica}
+\textbf{Pe{\c c}a apoio ao suporte de TI da institui{\c c}{\~a}o}: instalar programas no computador institucional pode exigir permiss{\~a}o administrativa. Se voc{\^e} n{\~a}o tem conforto com o terminal, o caminho mais simples {\'e} encaminhar o pedido abaixo ao setor de inform{\'a}tica da sua institui{\c c}{\~a}o (e retomar o Cap{\'i}tulo~\ref{cap:desktop}, que dispensa o terminal no dia a dia):
+\begin{center}
+\begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Texto pronto para enviar ao suporte de TI}]
+\small
+``Sou docente e preciso instalar, no meu computador de trabalho, o assistente OpenCode (\url{https://opencode.ai}) para uso pedag{\'o}gico no projeto AvalIA: (1) instalar o OpenCode (Windows: via Scoop ou Chocolatey; Linux/macOS: via script \texttt{curl -fsSL https://opencode.ai/install | bash}); (2) instalar o Git para Windows (\url{https://git-scm.com/download/win}) quando houver; (3) sincronizar as skills do acervo com o script \texttt{install-skills.bat --opencode} (ou \texttt{.sh}) a partir do reposit{\'o}rio \url{https://github.com/walternagai/skills-ia-educacao}. A configura{\c c}{\~a}o e o uso depois disso s{\~a}o pela interface gr{\'a}fica.''
+\end{tcolorbox}
+\end{center}
+\end{atencaopedagogica}
+
 \section{Vis{\~a}o Geral do OpenCode}
 
 O \textbf{OpenCode} (\url{https://opencode.ai}) {\'e} um agente aut{\^o}nomo de terminal e assistente de desenvolvimento de c{\'o}digo aberto concebido para operar diretamente sobre o sistema de arquivos local. Trata-se de projeto de c{\'o}digo aberto (licen{\c c}a MIT) mantido pela empresa \textbf{Anomaly} (\url{https://anoma.ly}); por adotar padr{\~o}es abertos como as \emph{Agent Skills} (propostos pela Anthropic) e o protocolo MCP, integra-se a um ecossistema mais amplo de ferramentas -- ver a se{\c c}{\~a}o de autoria no Cap{\'i}tulo~\ref{cap:skills-opencode}. Ao contr{\'a}rio de plataformas propriet{\'a}rias fechadas, o OpenCode oferece:
