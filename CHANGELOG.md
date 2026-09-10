@@ -5,6 +5,18 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.11] — 2026-09-10
+
+### Adicionado
+- **`instrumento-tam-docentes.md` + `instrumento-tam-docentes-resumo.md` — instrumento de avaliação da aceitação de IA por docentes do ensino superior**: versão curta do TAM (PU/PEOU/BI) com bloco complementar de preocupações éticas e profissionais (PEP), perguntas abertas, guia de aplicação e leitura formativa; resumo de uma página em arquivo separado, para impressão avulsa; referências em ABNT (Davis, 1989; Venkatesh & Davis, 2000; Venkatesh & Bala, 2008; Pinto et al., 2019; Cintra, 2024; Referencial MEC, 2026; LGPD; UNESCO, 2023)
+
+### Corrigido
+- **`manual/cap3-skills-opencode.tex` e `manual/main.pdf`**: quebra de página do quadro "Compatibilidade entre CLIs" ajustada (`\newpage` antecede o quadro) e PDF recompilado — 72 páginas (antes 74)
+- **`README.md`**: contagem de páginas do manual corrigida de 74 para 72, alinhada ao PDF recompilado
+- **`manual/cap1-introducao.tex`, `manual/cap8-explicar-estudantes.tex` e `manual/cap10-casos-de-uso.tex`**: nomes dos níveis AIAS normalizados para os nomes canônicos do `CLAUDE.md` ("Planejamento Assistido por IA" e "Colaboração com IA") em tabelas e exemplos; PDF recompilado (72 páginas, sem avisos de overfull)
+
+---
+
 ## [0.10.10] — 2026-09-10
 
 ### Corrigido

@@ -34,11 +34,10 @@ Para o docente que deseja compreender a proced{\^e}ncia das tecnologias que util
 
 \textbf{Outros conceitos} empregados pelo OpenCode igualmente n{\~a}o lhe s{\~a}o autorais: o mecanismo de \emph{tool calling} (chamada de ferramentas) decorre da interface de \emph{function calling} introduzida pelos provedores de modelos; a interface de terminal (TUI) deriva de uma longa tradi{\c c}{\~a}o de ferramentas Unix; e o suporte a modelos locais via Ollama \cite{ollama2025ollama} corresponde a um projeto comunit{\'a}rio independente. Em s{\'i}ntese: a Anomaly criou o OpenCode; os padr{\~o}es que ele adota -- Agent Skills e MCP -- s{\~a}o abertos e foram propostos pela Anthropic; as 62 skills deste manual s{\~a}o reutiliz{\'a}veis em clientes compat{\'i}veis, enquanto os seis subagentes s{\~a}o configura{\c c}{\~o}es pr{\'o}prias do OpenCode no acervo \texttt{skills-ia-educacao}.
 
+\newpage 
 \begin{atencaopedagogica}
 \textbf{Compatibilidade entre CLIs}: as 62 skills podem ser instaladas no OpenCode, Claude Code, Codex, Gemini CLI, Antigravity e outros clientes compat{\'i}veis com Agent Skills. O conte{\'u}do pode ser reutilizado, mas os caminhos, comandos, campos de \emph{frontmatter} e formas de invoca{\c c}{\~a}o variam entre clientes. Os seis subagentes deste acervo s{\~a}o configura{\c c}{\~o}es espec{\'i}ficas do OpenCode: o script de instala{\c c}{\~a}o de skills n{\~a}o os copia para os demais CLIs, e seu uso neles exigiria adapta{\c c}{\~a}o ao formato de agentes correspondente.
 \end{atencaopedagogica}
-
-\newpage
 
 \begin{conceitochave}
 \textbf{Defini{\c c}{\~a}o de Skill}: Uma \emph{skill} {\'e} uma unidade modular, autocontida, versionada e semanticamente estruturada de conhecimento procedimental e diretrizes operacionais. Em vez de injetar previamente manuais enciclop{\'e}dicos no contexto fixo do agente, a skill {\'e} carregada de forma din{\^a}mica e sob demanda (\emph{just-in-time contextual injection}, ou seja: a ficha da tarefa entra na conversa s{\'o} na hora do uso) no exato instante em que o prop{\'o}sito da tarefa discente ou docente {\'e} identificado.
