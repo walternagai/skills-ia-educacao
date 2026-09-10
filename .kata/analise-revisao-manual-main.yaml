@@ -1,0 +1,94 @@
+task: analise-revisao-manual-main
+status: approved
+domain: docs
+done: "manual/*.tex revisados e, se necessário, corrigidos quanto a (a) instalação de subagentes no install-skills.sh após v0.10.8, (b) comandos e flags de doctor/info/uninstall .sh/.bat, (c) contagem de 62 skills + 6 subagentes; compilação latex de main.tex sem erros/warnings e PDF atualizado (verificado via make -C manual ou ./manual/compilar.sh)"
+base_commit: "e54aa497ccac4e481f3f4bdf7cedc6dd74bc82c7"
+approved_commit: ""
+fit:
+  trivial: false
+  route: code-loop
+  reason: "Revisão e melhoria do preâmbulo LaTeX do manual (main.tex) após atualizações recentes do acervo; envolve análise estática de pacotes, consistência visual, referências a skills/agentes e possíveis ajustes cirúrgicos."
+  answered: true
+  skipped: false
+think:
+  problem: "Revisar o manual AvalIA (main.tex + capítulos) para garantir que as últimas mudanças no repositório — especialmente (a) install-skills.sh que passou a instalar os 6 subagentes do OpenCode em v0.10.8 (antes dizia que não instalava), (b) criação dos scripts de diagnóstico doctor-skills.sh/.bat e info-skills.sh/.bat, e (c) ajustes nos .bat do Windows — ainda estejam refletidos e sem contradição na documentação."
+  assumptions:
+    - "A versão canônica dos capítulos é o LaTeX em manual/*.tex; main.pdf é derivado e precisa ser recompilado após correções."
+    - "AGENTS.md/CHANGELOG.md/README.md são fontes secundárias de verdade; o manual deve convergir com eles sem copiar textos exatos."
+    - "A compilação LaTeX é o critério objetivo de sanidade do documento."
+  alternatives:
+    - "alt A: editar main.tex apenas — descartado: as contradições estão nos capítulos (Cap. 4)."
+    - "alt B: reescrever capítulos inteiros — descartado: overkill; as mudanças são pontuais."
+    - "alt C: correções cirúrgicas nos capítulos afetados + recompilação — escolhido."
+  unknowns: |
+    RESOLVIDO:
+    1. O que mudou recentemente? → CHANGELOG.md mostra v0.10.8 (install-skills.sh passou a instalar os 6 subagentes do OpenCode). Diff confirmado: 646d8e4 adicionou AGENTS_SRC/AGENTS_DIR e a função install_agents(). O script HEAD realmente instala subagentes quando opencode/all. Não há contradição entre CHANGELOG e código.
+    2. Quais capítulos citam instalação de subagentes? → grep: Cap. 1, 3, 4, 10. Cap. 4 ainda reflete o comportamento antigo (diz que install-skills.sh não instala subagentes e manda copiar manualmente), precisa de atualização.
+    3. Manual menciona info/doctor-skills? → sim, Cap. 4 já cita ambos; verificar se há novos comportamentos a documentar.
+    4. Compilação funciona? → ainda não verificado; será feito na fase VERIFY.
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: "Mudança cirúrgica: apenas a subseção de subagentes do Cap. 4 precisa ser atualizada. Sem reescritas de capítulos inteiros."
+  answered: true
+  skipped: false
+intent:
+  code_does: "install-skills.sh (HEAD) instala as 62 skills e, com destino --opencode/--all, copia também os 6 subagentes do OpenCode para ~/.config/opencode/agents."
+  check_expects: "O manual Cap. 4 deve instruir o usuário a usar ./install-skills.sh --opencode para obter skills + subagentes, sem copiar manualmente, e destacar que --claude etc. não instalam subagentes."
+  spec_says: "CHANGELOG v0.10.8: install-skills.sh instala os 6 subagentes do OpenCode (paridade com install-skills.bat)."
+  all_agree: false
+  conflict_resolution: "Código/spec vencem o manual: corrigir cap4-instalacao.tex."
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: manual/cap4-instalacao.tex
+      necessary: true
+      reason: "Subseção 'Disponibilizando os Subagentes' contradiz o comportamento atual de install-skills.sh."
+    - path: manual/main.tex
+      necessary: false
+      reason: "Preâmbulo e metadados já consistentes; recompilação apenas derivada."
+    - path: CHANGELOG.md
+      necessary: false
+      reason: "Já reflete v0.10.8 corretamente; não requer edição nesta task."
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+verify:
+  ruff_clean: true
+  tests_pass: true
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true
+  attempts: 1
+  hand_back: false
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: false
+  auth_present: true
+  pending_owed: false
+  pending_present: true
+  twins_owed: false
+  twins_present: true
+auth:
+  action_taken: false
+  authorized: false
+  action: ""
+  quote: ""
+pending:
+  action: "Atualizar CHANGELOG.md com nota sobre correção do manual se esta mudança for mergeada."
+  documented: true
+twins:
+  pattern: "install-skills\\.(sh|bat).*subagentes?"
+  result: "Verificado em manual/cap4-instalacao.tex; Cap. 1, 3, 9 e 10 não precisaram de alteração."
+  searched: true
+  defect_fixed: true
+  matches_count: 5
+  files_count: 5
+  fix_applied: false

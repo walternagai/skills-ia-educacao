@@ -1,0 +1,111 @@
+task: revisao-pedagogica-manual-iniciantes
+status: approved
+domain: docs
+done: "Caps. 1, 3, 4, 5, 6, 8, 9 e 10 com apoios a iniciantes (analogia 3 frases, kit 5 skills, modelo default + /models, caminho recomendado de instalação, templates AIAS coláveis, glossário ampliado, sinalização de leitura opcional); manual compila sem erros via make -C manual e ./audit.sh OK"
+base_commit: "e54aa497ccac4e481f3f4bdf7cedc6dd74bc82c7"
+approved_commit: ""
+fit:
+  trivial: false
+  route: code-loop
+  reason: "Revisão pedagógica do manual completo (11 arquivos, ~1950 linhas) para docentes iniciantes em OpenCode/skills/agentes; não trivial, escopo de docs com fontes acessíveis, ciclo completo."
+  answered: true
+  skipped: false
+think:
+  problem: "Docentes iniciantes em OpenCode/skills/agentes acham o manual denso e técnico demais para a primeira semana: conceitos (OpenCode vs skill vs subagente) aparecem antes de exemplos mãos-na-massa, Cap. 3-4-9 trazem detalhes de mantenedor (frontmatter, grafo, audit.sh, 4 métodos de instalação, catálogo de 62 skills) sem um caminho padrão, e falta um kit mínimo (por onde começo, qual modelo, qual skill, o que colar no plano de ensino)."
+  assumptions:
+    - "Público-alvo é docente de qualquer área, sem familiaridade com terminal/Git/YAML, que quer gerar o primeiro material em até 60 minutos."
+    - "O manual continua sendo referência completa; a revisão é aditiva e cirúrgica (caixas de iniciante, defaults, templates coláveis), não reescrita total nem remoção de conteúdo avançado."
+    - "62 skills e 6 subagentes seguem válidos; Cap. 6 (modelos gratuitos) é volátil e precisa de recomendação default + instrução de verificação via /models."
+  alternatives:
+    - "alt A: reescrever todos os capítulos em linguagem simples — descartado: perderia rigor, quebraria citações ABNT e tabelas validadas."
+    - "alt B: criar guia separado para iniciantes — descartado: duplicaria manutenção com o manual."
+    - "alt C: revisão cirúrgica no manual atual (caixas 'Comece por aqui', kit de 5 skills, modelo default, templates AIAS, glossário ampliado, progressive disclosure no Cap. 3/4/9) — escolhido."
+  unknowns: |
+    RESOLVIDO:
+    1. Estrutura atual? → 11 arquivos, 1952 linhas; Cap. 1 já tem Rota Rápida e Vocabulário Mínimo (8 termos); Cap. 3 detalha frontmatter/8 seções/grafo; Cap. 4 tem 389 linhas e 4 métodos; Cap. 9 cataloga 62 skills em tabelas; Cap. 10 tem 4 casos + 5 cenários STHEM validados.
+    2. Pontos de atrito para iniciantes? → jargão precoce (TUI, headless, frontmatter, MCP, few-shot), sobrecarga de escolha (4 instalações, 7 modelos, 62 skills), falta de default e de templates coláveis.
+    3. Verificação? → compilação LaTeX via make -C manual + ./audit.sh; conferência manual de comandos citados.
+    RESOLVIDO COM O USUÁRIO (2026-09-10):
+    1. Escopo: framing confirmado; autorizado editar os .tex diretamente.
+    2. Modelo default: sem preferido institucional → recomendação genérica do "faz-tudo" da edição + verificação obrigatória via /models.
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: "Revisão aditiva e cirúrgica: só caixas e parágrafos-guia com ambientes já existentes (dicaopencode, conceitochave, atencaopedagogica); nenhum pacote LaTeX novo, nenhuma reestruturação de capítulos, nenhum comando novo sem fonte."
+  answered: true
+  skipped: false
+intent:
+  code_does: "Manual descreve corretamente OpenCode/skills/agentes, mas em registro técnico de mantenedor (frontmatter, grafo, 4 métodos, 7 modelos, 62 skills) sem caminho padrão para iniciantes."
+  check_expects: "Docente iniciante conclui em ~60 min: instala pelo caminho recomendado, roda 1 caso, valida com checklist e declara AIAS à turma."
+  spec_says: "Usuário confirmou framing e autorizou edição direta dos .tex; convenções do repo (PT-BR, ABNT, 62 skills + 6 subagentes) preservadas."
+  all_agree: false
+  conflict_resolution: "Usuário > spec: adicionar guias de iniciante sem remover conteúdo avançado (progressive disclosure, leitura opcional sinalizada)."
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: manual/cap1-introducao.tex
+      necessary: true
+      reason: "Analogia 3 frases + glossário ampliado + tempo estimado na Rota Rápida."
+    - path: manual/cap3-skills-opencode.tex
+      necessary: true
+      reason: "Caixa 'leia assim' + gloss de jargão + marcar grafo/audit como leitura opcional."
+    - path: manual/cap4-instalacao.tex
+      necessary: true
+      reason: "Caixa caminho recomendado + checklist 'pronto quando'."
+    - path: manual/cap5-desktop.tex
+      necessary: true
+      reason: "Acolhimento a quem evita terminal + equivalência dos fluxos."
+    - path: manual/cap6-modelos-gratuitos.tex
+      necessary: true
+      reason: "Modelo default para começar + verificação via /models."
+    - path: manual/cap8-explicar-estudantes.tex
+      necessary: true
+      reason: "Texto pronto colável para plano de ensino."
+    - path: manual/cap9-agentes-skills.tex
+      necessary: true
+      reason: "Kit inicial 5 skills + 2 subagentes + guia de escolha."
+    - path: manual/cap10-casos-de-uso.tex
+      necessary: true
+      reason: "Pré-requisitos, tempo estimado e ordem de execução por caso."
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+verify:
+  ruff_clean: true
+  tests_pass: true
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true
+  attempts: 2
+  hand_back: false
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: false
+  auth_present: true
+  pending_owed: false
+  pending_present: true
+  twins_owed: false
+  twins_present: true
+auth:
+  action_taken: false
+  authorized: false
+  action: ""
+  quote: ""
+pending:
+  action: "Se esta mudança for mergeada, registrar nota no CHANGELOG.md sobre os apoios a iniciantes no manual."
+  documented: true
+twins:
+  pattern: "few-shot|just-in-time|headless|frontmatter sem gloss"
+  result: "Busca em manual/*.tex: corrigidos just-in-time e few-shot no Cap. 3 e headless no Cap. 4 (primeira ocorrência); demais ocorrências estão em seção opcional de mantenedor ou cobertas pelo glossário do Cap. 1."
+  searched: true
+  defect_fixed: true
+  matches_count: 11
+  files_count: 5
+  fix_applied: true

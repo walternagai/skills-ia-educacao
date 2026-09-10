@@ -7,6 +7,10 @@ O reposit{\'o}rio \texttt{skills-ia-educacao} constitui um acervo documental e t
 
 Em vez de exigir que cada professor se torne um especialista em engenharia de \emph{prompts} complexos, o reposit{\'o}rio disponibiliza \textbf{62 skills tem{\'a}ticas}, reutiliz{\'a}veis em CLIs compat{\'i}veis com o padr{\~a}o Agent Skills, e \textbf{6 subagentes} configurados especificamente para operar no \textbf{OpenCode} (\url{https://opencode.ai}).
 
+\begin{conceitochave}
+\textbf{OpenCode, skill e subagente em tr{\^e}s frases}: pense no \textbf{OpenCode} como a oficina (o programa que executa as tarefas); na \textbf{skill} como a ficha de instru{\c c}{\~o}es de uma tarefa (ex.: \texttt{/ia-educacao-rubrica} ensina a montar uma rubrica); e no \textbf{subagente} como o especialista que segue v{\'a}rias fichas para entregar um trabalho completo (ex.: \texttt{@construtor-de-avaliacoes} monta prova com rubrica e gabarito). Voc{\^e} n{\~a}o precisa decorar nada: basta descrever o que quer ou digitar a barra (\texttt{/}) para skills e o arroba (\texttt{@}) para subagentes.
+\end{conceitochave}
+
 \begin{objetivos}
 \begin{itemize}
   \item Compreender por que a avalia{\c c}{\~a}o formativa se torna central quando a IA generativa transforma as tarefas acad{\^e}micas;
@@ -17,14 +21,14 @@ Em vez de exigir que cada professor se torne um especialista em engenharia de \e
 
 \section{Rota R{\'a}pida para Come{\c c}ar}
 
-Se esta {\'e} a sua primeira experi{\^e}ncia com IA generativa, n{\~a}o {\'e} necess{\'a}rio dominar todo o manual antes de realizar a primeira atividade. Siga este percurso:
+Se esta {\'e} a sua primeira experi{\^e}ncia com IA generativa, n{\~a}o {\'e} necess{\'a}rio dominar todo o manual antes de realizar a primeira atividade. O percurso abaixo leva cerca de 60 minutos e termina com um material rascunhado, revisado e com a pol{\'i}tica de IA declarada. Siga nesta ordem:
 
 \begin{enumerate}
-  \item Leia este cap{\'i}tulo e o Cap{\'i}tulo~\ref{cap:fundamentos} para compreender a finalidade pedag{\'o}gica da IA;
-  \item Instale o OpenCode, configure um provedor e instale as skills e os subagentes seguindo o Cap{\'i}tulo~\ref{cap:instalacao};
-  \item Execute um caso simples do Cap{\'i}tulo~\ref{cap:casos-de-uso}, substituindo a disciplina e o tema pelos seus;
-  \item Revise o resultado com o checklist do pr{\'o}prio Cap{\'i}tulo~\ref{cap:casos-de-uso} antes de entregar qualquer material aos estudantes;
-  \item Use o Cap{\'i}tulo~\ref{cap:explicar-estudantes} para declarar a pol{\'i}tica de uso de IA da turma. Os Cap{\'i}tulos~\ref{cap:skills-opencode} e~\ref{cap:agentes-skills} podem ser consultados depois, quando voc{\^e} quiser entender ou manter o acervo.
+  \item Leia este cap{\'i}tulo e o Cap{\'i}tulo~\ref{cap:fundamentos} para compreender a finalidade pedag{\'o}gica da IA (cerca de 15 minutos; leitura conceitual, sem computador);
+  \item Instale o OpenCode, configure um provedor e instale as skills e os subagentes seguindo o Cap{\'i}tulo~\ref{cap:instalacao} (cerca de 20 minutos; use apenas o \emph{caminho recomendado} do seu sistema e ignore os m{\'e}todos alternativos por enquanto);
+  \item Execute um caso simples do Cap{\'i}tulo~\ref{cap:casos-de-uso}, substituindo a disciplina e o tema pelos seus (cerca de 15 minutos; o Caso~2 {\'e} uma boa primeira escolha para quem avalia, o Caso~1 para quem planeja);
+  \item Revise o resultado com o checklist do pr{\'o}prio Cap{\'i}tulo~\ref{cap:casos-de-uso} antes de entregar qualquer material aos estudantes (cerca de 5 minutos; nada vai aos estudantes sem passar por esta revis{\~a}o);
+  \item Use o Cap{\'i}tulo~\ref{cap:explicar-estudantes} para declarar a pol{\'i}tica de uso de IA da turma (cerca de 5 minutos; copie o texto pronto de declara{\c c}{\~a}o). Os Cap{\'i}tulos~\ref{cap:skills-opencode} e~\ref{cap:agentes-skills} s{\~a}o refer{\^e}ncia de consulta: podem ficar para depois, quando voc{\^e} quiser entender ou manter o acervo.
 \end{enumerate}
 
 \subsection{Vocabul{\'a}rio M{\'i}nimo}
@@ -37,7 +41,13 @@ Se esta {\'e} a sua primeira experi{\^e}ncia com IA generativa, n{\~a}o {\'e} ne
   \item \textbf{Subagente}: especialista configurado para coordenar uma tarefa complexa e, conforme suas permiss{\~o}es, usar v{\'a}rias skills;
   \item \textbf{AIAS}: escala que explicita como a IA pode participar de uma atividade avaliativa;
   \item \textbf{DUA}: abordagem que reduz barreiras oferecendo m{\'u}ltiplos meios de engajamento, representa{\c c}{\~a}o e express{\~a}o;
-  \item \textbf{CoVe}: procedimento de verifica{\c c}{\~a}o independente de afirma{\c c}{\~o}es produzidas por IA.
+  \item \textbf{CoVe}: procedimento de verifica{\c c}{\~a}o independente de afirma{\c c}{\~o}es produzidas por IA;
+  \item \textbf{CLI e TUI}: \emph{CLI} {\'e} o terminal (tela escura de comandos); \emph{TUI} {\'e} a interface interativa que abre ao digitar \texttt{opencode} no terminal;
+  \item \textbf{Provedor e modelo}: o \emph{provedor} {\'e} a empresa ou servi{\c c}o que oferece a IA; o \emph{modelo} {\'e} o ``c{\'e}rebro'' escolhido na hora (ver Cap{\'i}tulo~\ref{cap:modelos-gratuitos});
+  \item \textbf{Headless}: modo de usar o OpenCode com uma {\'u}nica linha de comando, sem abrir a interface (ex.: \texttt{opencode run "..."});
+  \item \textbf{Frontmatter}: pequeno cabe{\c c}alho t{\'e}cnico no in{\'i}cio de cada skill; voc{\^e} n{\~a}o precisa edit{\'a}-lo para usar as skills;
+  \item \textbf{MCP}: padr{\~a}o aberto que liga o OpenCode a ferramentas externas; citado aqui s{\'o} para registro de proced{\^e}ncia;
+  \item \textbf{ConcepTest e blueprint}: \emph{ConcepTest} {\'e} uma quest{\~a}o conceitual curta para vota{\c c}{\~a}o em sala; \emph{blueprint} {\'e} o mapa da prova (quantas quest{\~o}es por t{\'o}pico e n{\'i}vel).
 \end{itemize}
 
 Ao longo dos pr{\'o}ximos cap{\'i}tulos, este manual apresentar{\'a} em detalhes:

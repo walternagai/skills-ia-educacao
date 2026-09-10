@@ -5,6 +5,23 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.9] — 2026-09-10
+
+### Adicionado
+- **Manual (`manual/`) — apoios a docentes iniciantes em OpenCode/skills/agentes (Caps. 1, 3–6, 8–10)**:
+  - Cap. 1: analogia "oficina / ficha / especialista" (OpenCode vs. skill `/` vs. subagente `@`), Rota Rápida com tempos (~60 min) e glossário ampliado (CLI/TUI, provedor/modelo, headless, frontmatter, MCP, ConcepTest/blueprint)
+  - Cap. 3: caixa "como ler na primeira semana" e seção do grafo marcada como leitura opcional; gloss inline de `just-in-time` e `few-shot learning`
+  - Cap. 4: caixa de caminho recomendado por sistema + checklist "pronto quando"; gloss de `headless` na primeira ocorrência
+  - Cap. 5: acolhimento a quem evita terminal (equivalência terminal/web/desktop)
+  - Cap. 6: recomendação de modelo "faz-tudo" para começar + verificação obrigatória via `/models`
+  - Cap. 8: texto pronto colável para o plano de ensino (AIAS + tecnologias assistivas)
+  - Cap. 9: kit inicial (5 skills + `@planejador-pedagogico` / `@construtor-de-avaliacoes`); catálogo como referência
+  - Cap. 10: caixa "antes de rodar" (pré-requisitos, 15–30 min/caso, fallback se `@` não aparecer)
+  - Manual recompilado (`main.pdf`, 74 páginas)
+
+### Corrigido
+- **Manual Cap. 4 — instalação de subagentes no `install-skills.sh`**: a subseção "Disponibilizando os Subagentes" afirmava que o script não copiava os subagentes; desde a v0.10.8 ele copia com `--opencode`/`--all` — comandos, conferência e cópia manual (agora fallback) atualizados
+
 ## [0.10.8] — 2026-09-09
 
 ### Adicionado

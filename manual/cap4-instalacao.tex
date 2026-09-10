@@ -10,13 +10,17 @@
 \end{itemize}
 \end{objetivos}
 
+\begin{dicaopencode}
+\textbf{Caminho recomendado na primeira instala{\c c}{\~a}o (cerca de 20 minutos)}: Linux, macOS ou Windows com WSL2/Git Bash use o M{\'e}todo~1 (cURL), depois \texttt{/connect} e \path{./install-skills.sh --opencode}; no Windows nativo (CMD ou PowerShell) use o M{\'e}todo~4 (Scoop ou Chocolatey) e \path{.\install-skills.bat --opencode}. Ignore os demais m{\'e}todos por enquanto. \textbf{Pronto quando}: \texttt{opencode -{}-version} exibe a vers{\~a}o, a contagem de skills confere (ver Se{\c c}{\~a}o Confer{\^e}ncia) e o relat{\'o}rio \texttt{info-skills} lista as skills e os seis subagentes. O controle de vers{\~a}o com Git, ao final do cap{\'i}tulo, {\'e} opcional e pode ficar para depois.
+\end{dicaopencode}
+
 \section{Vis{\~a}o Geral do OpenCode}
 
 O \textbf{OpenCode} (\url{https://opencode.ai}) {\'e} um agente aut{\^o}nomo de terminal e assistente de desenvolvimento de c{\'o}digo aberto concebido para operar diretamente sobre o sistema de arquivos local. Trata-se de projeto de c{\'o}digo aberto (licen{\c c}a MIT) mantido pela empresa \textbf{Anomaly} (\url{https://anoma.ly}); por adotar padr{\~o}es abertos como as \emph{Agent Skills} (propostos pela Anthropic) e o protocolo MCP, integra-se a um ecossistema mais amplo de ferramentas -- ver a se{\c c}{\~a}o de autoria no Cap{\'i}tulo~\ref{cap:skills-opencode}. Ao contr{\'a}rio de plataformas propriet{\'a}rias fechadas, o OpenCode oferece:
 
 \begin{itemize}
   \item Total flexibilidade na escolha de provedores de modelos de linguagem (OpenAI, Anthropic, Google, Groq, DeepSeek ou modelos de c{\'o}digo aberto rodando localmente via Ollama);
-  \item Interface interativa de terminal rica em recursos visuais (\emph{Terminal User Interface} -- TUI), al{\'e}m de suporte a execu{\c c}{\~a}o em lote (\emph{headless});
+  \item Interface interativa de terminal rica em recursos visuais (\emph{Terminal User Interface} -- TUI), al{\'e}m de suporte a execu{\c c}{\~a}o em lote (\emph{headless}, ou seja: com uma {\'u}nica linha de comando, sem abrir a interface);
   \item Suporte nativo a ferramentas de inspe{\c c}{\~a}o de arquivos (\texttt{read}, \texttt{glob}, \texttt{grep}), edi{\c c}{\~a}o segura (\texttt{edit}, \texttt{write}), execu{\c c}{\~a}o de comandos de terminal (\texttt{bash}), extens{\~o}es via \emph{Model Context Protocol} (MCP) e gerenciamento de \emph{skills} modulares.
 \end{itemize}
 
@@ -190,28 +194,28 @@ Para docentes que preferem n{\~a}o instalar o Git: acesse \url{https://github.co
 
 Na raiz do reposit{\'o}rio \texttt{skills-ia-educacao}, execute:
 
-\begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o automatizada das skills no OpenCode}]
+\begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o automatizada das skills e subagentes no OpenCode}]
 # 1. Simular a instalacao para inspecionar os caminhos de destino (dry-run)
 ./install-skills.sh --opencode --dry-run
 
-# 2. Efetivar a instalacao de todas as 62 skills
+# 2. Efetivar a instalacao das 62 skills e dos 6 subagentes
 ./install-skills.sh --opencode
 \end{lstlisting}
 
-O script detecta a pasta pessoal (\texttt{\$HOME}) do usu{\'a}rio e aplica o caminho correto do sistema operacional em uso.
+O script detecta a pasta pessoal (\texttt{\$HOME}) do usu{\'a}rio e aplica o caminho correto do sistema operacional em uso. Com o destino \texttt{-{}-opencode}, ele copia tanto as skills quanto os seis subagentes do acervo.
 
 \subsubsection{Trilha alternativa: Windows nativo (CMD ou PowerShell)}
 
-Quem instalou o OpenCode pela trilha nativa (M{\'e}todo 4) pode dispensar o Git Bash para a sincroniza{\c c}{\~a}o das skills: o reposit{\'o}rio prov{\^e} o script equivalente em batch, \texttt{install-skills.bat}, execut{\'a}vel diretamente no CMD ou no PowerShell. As flags s{\~a}o as mesmas do script bash:
+Quem instalou o OpenCode pela trilha nativa (M{\'e}todo 4) pode dispensar o Git Bash para a sincroniza{\c c}{\~a}o das skills e subagentes: o reposit{\'o}rio prov{\^e} o script equivalente em batch, \texttt{install-skills.bat}, execut{\'a}vel diretamente no CMD ou no PowerShell. As flags s{\~a}o as mesmas do script bash:
 
-\begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o automatizada das skills no Windows (CMD ou PowerShell)}]
+\begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o automatizada das skills e subagentes no Windows (CMD ou PowerShell)}]
 # 1. Simular a instalacao para inspecionar os caminhos de destino (dry-run)
 .\install-skills.bat --opencode --dry-run
 
-# 2. Efetivar a instalacao de todas as 62 skills
+# 2. Efetivar a instalacao das 62 skills e dos 6 subagentes
 .\install-skills.bat --opencode
 
-# Instalar em todos os CLIs reconhecidos (Claude Code, OpenCode, Codex, ...)
+# Instalar em todos os CLIs reconhecidos (inclui subagentes no destino opencode)
 .\install-skills.bat --all
 \end{lstlisting}
 
@@ -232,7 +236,7 @@ No \textbf{Windows nativo} (PowerShell), o mesmo cheque pode ser feito com:
 (Test-Path "$env:USERPROFILE\.config\opencode\skills\aias-consultant")
 \end{lstlisting}
 
-O retorno dever{\'a} apontar 61 skills com o prefixo institucional (mais a skill especial \texttt{aias-consultant}, totalizando 62 unidades).
+O retorno dever{\'a} apontar 61 skills com o prefixo institucional (mais a skill especial \texttt{aias-consultant}, totalizando 62 unidades). Para conferir os subagentes, o mesmo script de relat{\'o}rio indica se os seis arquivos est{\~a}o presentes em \path{~/.config/opencode/agents/}.
 
 Alternativamente, o reposit{\'o}rio prov{\^e} o script de relat{\'o}rio \texttt{info-skills}, que resume o estado da instala{\c c}{\~a}o em todos os CLIs de uma vez (skills completo/parcial/nada por destino e os seis subagentes do OpenCode), dispensando os comandos manuais:
 
@@ -248,21 +252,33 @@ Antes da instala{\c c}{\~a}o, o par \texttt{doctor-skills.sh}/\texttt{doctor-ski
 
 \subsection{Disponibilizando os Subagentes}
 
-O script \texttt{install-skills.sh} instala as skills, mas n{\~a}o copia automaticamente os seis subagentes. No Windows nativo, o \texttt{install-skills.bat} copia os seis subagentes automaticamente quando o destino \texttt{opencode} {\'e} selecionado (\texttt{-{}-opencode}/\texttt{-{}-all}). Nos demais casos, se o OpenCode for executado em uma pasta separada da c{\'o}pia do reposit{\'o}rio, copie os arquivos dos subagentes para a configura{\c c}{\~a}o global do usu{\'a}rio:
+A partir da vers{\~a}o v0.10.8, os scripts \texttt{install-skills.sh} e \texttt{install-skills.bat} copiam automaticamente os seis subagentes do OpenCode quando o destino \texttt{opencode} {\'e} selecionado (\texttt{-{}-opencode}/\texttt{-{}-all}). Basta executar o mesmo comando usado para as skills:
 
-\begin{lstlisting}[language=bash, caption={Instalando os subagentes no escopo global (Linux, macOS, WSL2 ou Git Bash)}]
+\begin{lstlisting}[language=bash, caption={Instalando skills e subagentes no Linux, macOS, WSL2 ou Git Bash}]
+./install-skills.sh --opencode
+\end{lstlisting}
+
+No Windows nativo (CMD ou PowerShell), o equivalente {\'e}:
+
+\begin{lstlisting}[language=bash, caption={Instalando skills e subagentes no Windows nativo}]
+.\install-skills.bat --opencode
+\end{lstlisting}
+
+Nos demais destinos (\texttt{-{}-claude}, \texttt{-{}-codex}, \texttt{-{}-antigravity}, \texttt{-{}-gemini}) os subagentes n{\~a}o s{\~a}o copiados, pois eles s{\~a}o configura{\c c}{\~o}es espec{\'i}ficas do OpenCode. Se o OpenCode for executado em uma pasta separada da c{\'o}pia do reposit{\'o}rio, ou se voc{\^e} preferir copiar os arquivos manualmente, a opera{\c c}{\~a}o equivalente {\'e}:
+
+\begin{lstlisting}[language=bash, caption={C{\'o}pia manual dos subagentes (Linux, macOS, WSL2 ou Git Bash)}]
 mkdir -p ~/.config/opencode/agents
 cp .opencode/agents/*.md ~/.config/opencode/agents/
 \end{lstlisting}
 
 No PowerShell, a opera{\c c}{\~a}o equivalente {\'e}:
 
-\begin{lstlisting}[language=bash, caption={Instalando os subagentes no Windows PowerShell}]
+\begin{lstlisting}[language=bash, caption={C{\'o}pia manual dos subagentes (Windows PowerShell)}]
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.config\opencode\agents"
 Copy-Item ".opencode\agents\*.md" "$env:USERPROFILE\.config\opencode\agents\"
 \end{lstlisting}
 
-Execute os comandos a partir da raiz clonada do reposit{\'o}rio. Depois de atualizar o acervo com \texttt{git pull}, repita a c{\'o}pia e reinicie o OpenCode. Os arquivos dos agentes n{\~a}o fixam um provedor: eles usam o modelo selecionado pelo agente principal.
+Execute os comandos a partir da raiz clonada do reposit{\'o}rio. Depois de atualizar o acervo com \texttt{git pull}, repita a instala{\c c}{\~a}o e reinicie o OpenCode. Os arquivos dos agentes n{\~a}o fixam um provedor: eles usam o modelo selecionado pelo agente principal.
 
 \section{Primeiros Comandos no OpenCode}
 

@@ -10,6 +10,10 @@
 \end{itemize}
 \end{objetivos}
 
+\begin{dicaopencode}
+\textbf{Como ler este cap{\'i}tulo na primeira semana}: se voc{\^e} s{\'o} quer usar as skills em sala, leia as Se{\c c}{\~o}es ``O Paradigma'', ``Anatomia'' (s{\'o} o exemplo de \texttt{/ia-educacao-rubrica}) e ``Como o OpenCode Opera as Skills'' e pule o resto. A se{\c c}{\~a}o ``O Grafo de Depend{\^e}ncias'' {\'e} leitura opcional para quem mant{\'e}m o acervo (criar ou auditar skills) e pode ficar para depois do Cap{\'i}tulo~\ref{cap:casos-de-uso}.
+\end{dicaopencode}
+
 \section{O Paradigma de Skills em Assistentes de Intelig{\^e}ncia Artificial}
 
 Nas primeiras gera{\c c}{\~o}es de ferramentas baseadas em intelig{\^e}ncia artificial generativa, a intera{\c c}{\~a}o com modelos de linguagem restringia-se ao envio de \emph{prompts} soltos na interface web. Essa abordagem apresentava graves fragilidades para o uso docente e acad{\^e}mico: aus{\^e}ncia de reprodutibilidade, variabilidade excessiva nas respostas, perda constante de diretrizes metodol{\'o}gicas e risco acentuado de alucina{\c c}{\~a}o factual.
@@ -37,7 +41,7 @@ Para o docente que deseja compreender a proced{\^e}ncia das tecnologias que util
 \newpage
 
 \begin{conceitochave}
-\textbf{Defini{\c c}{\~a}o de Skill}: Uma \emph{skill} {\'e} uma unidade modular, autocontida, versionada e semanticamente estruturada de conhecimento procedimental e diretrizes operacionais. Em vez de injetar previamente manuais enciclop{\'e}dicos no contexto fixo do agente, a skill {\'e} carregada de forma din{\^a}mica e sob demanda (\emph{just-in-time contextual injection}) no exato instante em que o prop{\'o}sito da tarefa discente ou docente {\'e} identificado.
+\textbf{Defini{\c c}{\~a}o de Skill}: Uma \emph{skill} {\'e} uma unidade modular, autocontida, versionada e semanticamente estruturada de conhecimento procedimental e diretrizes operacionais. Em vez de injetar previamente manuais enciclop{\'e}dicos no contexto fixo do agente, a skill {\'e} carregada de forma din{\^a}mica e sob demanda (\emph{just-in-time contextual injection}, ou seja: a ficha da tarefa entra na conversa s{\'o} na hora do uso) no exato instante em que o prop{\'o}sito da tarefa discente ou docente {\'e} identificado.
 \end{conceitochave}
 
 Essa arquitetura pode preservar parte da janela de contexto e reduzir instru{\c c}{\~o}es repetidas, mas n{\~a}o garante respostas corretas nem substitui a supervis{\~a}o docente. A qualidade do resultado depende do modelo, do prompt, dos insumos e da revis{\~a}o humana.
@@ -78,7 +82,7 @@ Ap{\'o}s o frontmatter, o corpo do texto {\'e} organizado em exatamente oito se{
   \item \textbf{\texttt{\#\# Quando usar}}: Define as situa{\c c}{\~o}es t{\'i}picas, gatilhos de contexto e solicita{\c c}{\~o}es do usu{\'a}rio que demandam o acionamento da skill;
   \item \textbf{\texttt{\#\# Workflow}}: Apresenta o passo a passo cognitivo numerado (decomposto em etapas claras) que a IA deve executar mentalmente para resolver o problema sem queimar etapas;
   \item \textbf{\texttt{\#\# Formato de Sa{\'i}da}}: Descreve as estruturas, tabelas, campos obrigat{\'o}rios e modelos de documentos gerados como resultado final;
-  \item \textbf{\texttt{\#\# Exemplos}}: Fornece ao menos um cen{\'a}rio aut{\^e}ntico de entrada e a correspondente sa{\'i}da esperada, servindo como refer{\^e}ncia para a calibra{\c c}{\~a}o do modelo (\emph{few-shot learning});
+  \item \textbf{\texttt{\#\# Exemplos}}: Fornece ao menos um cen{\'a}rio aut{\^e}ntico de entrada e a correspondente sa{\'i}da esperada, servindo como refer{\^e}ncia para a calibra{\c c}{\~a}o do modelo (\emph{few-shot learning}, isto {\'e}: o exemplo mostra ao modelo o formato esperado);
   \item \textbf{\texttt{\#\# Limita{\c c}{\~o}es}}: Circunscreve explicitamente o escopo da skill, delimitando o que ela n{\~a}o realiza e quando o professor deve buscar outros instrumentos ou an{\'a}lise humana;
   \item \textbf{\texttt{\#\# Depend{\^e}ncias}}: Lista formal de outras skills do reposit{\'o}rio (identificadas exclusivamente pelos seus slugs can{\^o}nicos) que complementam a a{\c c}{\~a}o da skill atual;
   \item \textbf{\texttt{\#\# Refer{\^e}ncias}}: Bibliografia cient{\'i}fica e normativa que ancora as t{\'e}cnicas apresentadas, formatada integralmente no padr{\~a}o ABNT.
@@ -115,10 +119,10 @@ O \textbf{OpenCode} implementa uma arquitetura baseada em agentes com chamada de
 \textbf{Prontid{\~a}o de Execu{\c c}{\~a}o no Reposit{\'o}rio}: Ao contr{\'a}rio de ambientes que exigem o comando manual de adi{\c c}{\~a}o de pacotes externos, no OpenCode as skills disponibilizadas no diret{\'o}rio de configura{\c c}{\~a}o j{\'a} ficam imediatamente acess{\'i}veis por meio do comando de barra \texttt{/nome-da-skill}. N{\~a}o {\'e} necess{\'a}rio executar comandos como \texttt{npx skills add}; a detec{\c c}{\~a}o e o acionamento ocorrem de maneira fluida e nativa.
 \end{dicaopencode}
 
-\section{O Grafo de Depend{\^e}ncias e a Integridade do Reposit{\'o}rio}
+\section{O Grafo de Depend{\^e}ncias e a Integridade do Reposit{\'o}rio \emph{(leitura opcional)}}
 
 \begin{dicaopencode}
-\textbf{Voc{\^e} n{\~a}o precisa conhecer o funcionamento interno das skills para utiliz{\'a}-las}: esta se{\c c}{\~a}o descreve como o acervo {\'e} mantido e auditado ({\'u}til para quem deseja criar ou modificar skills). Para o uso em sala de aula, basta digitar \texttt{/nome-da-skill} ou mencionar o slug no \emph{prompt} -- o restante {\'e} transparente para o usu{\'a}rio. Se voc{\^e} n{\~a}o pretende criar skills, pode seguir diretamente para o Cap{\'i}tulo~\ref{cap:instalacao}.
+\textbf{Voc{\^e} n{\~a}o precisa conhecer o funcionamento interno das skills para utiliz{\'a}-las}: esta se{\c c}{\~a}o descreve como o acervo {\'e} mantido e auditado ({\'u}til para quem deseja criar ou modificar skills). Para o uso em sala de aula, basta digitar \texttt{/nome-da-skill} ou mencionar o slug no \emph{prompt} -- o restante {\'e} transparente para o usu{\'a}rio. Se voc{\^e} n{\~a}o pretende criar skills, pode seguir diretamente para o Cap{\'i}tulo~\ref{cap:casos-de-uso} e voltar aqui depois.
 \end{dicaopencode}
 
 As 62 skills do reposit{\'o}rio n{\~a}o operam isoladamente; constituem um \textbf{grafo direcionado e ac{\'i}clico de conhecimento pedag{\'o}gico}. 
