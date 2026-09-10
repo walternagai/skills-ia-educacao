@@ -5,6 +5,20 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.14] — 2026-09-10
+
+### Corrigido
+- **Manual — revisão textual (caps. 1, 4, 6–10)**:
+  - Correções de digitação: "IAAS~1" → "AIAS~1" (cap. 10); "peses" → "pesos" (cap. 6)
+  - Contagens desatualizadas: "quatro casos de uso" → "cinco casos" (cap. 10); frase da seção STHEM reescrita ("Os casos anteriores cobrem Computação, Física e Direito...")
+  - Precisão de exemplos: viés de concordância com "julgado que não adotou a tese" (cap. 7); "artigo de lei citado com dispositivo incorreto" (cap. 8)
+  - Clareza: vocabulário de instalação separa gerenciadores de pacotes de cURL (cap. 4); texto de apoio ao TI com "caso ainda não esteja instalado" (cap. 4); "apoio de acessibilidade ou de organização" (cap. 10)
+  - Classificação de área: Direito movido para a trilha de Ciências Sociais Aplicadas (cap. 9, conforme CNPq)
+  - Sigla STHEM incluída no Vocabulário Mínimo (cap. 1)
+- **`CHANGELOG.md`**: correções em entradas recentes (peses → pesos; não-exatas → não exatas; atende → atendem)
+
+---
+
 ## [0.10.13] — 2026-09-10
 
 ### Modificado
@@ -16,11 +30,11 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 ## [0.10.12] — 2026-09-10
 
 ### Modificado
-- **Manual — acolhimento a docentes de áreas não-exatas (caps. 2, 4–10)**:
+- **Manual — acolhimento a docentes de áreas não exatas (caps. 2, 4–10)**:
   - Cap. 10: novo Caso 5 de Direito Constitucional (avaliação de jurisprudência com AIAS 3, molde para Enfermagem/Psicologia/Administração); caixas "Adaptação para Outras Áreas" nos Casos 1, 2 e 4 (Direito, Enfermagem, Pedagogia, Letras, Sociologia); tabela índice com os 5 casos; checklist generalizado ("dados, citações, leis e cálculos conferidos?")
   - Cap. 9: trilhas por grande área (Humanas, Saúde, Sociais Aplicadas, Engenharias/Exatas) com 5 skills cada, após o kit inicial
   - Cap. 4: caixa "Vocabulário de instalação" (terminal, comando, script, termos avançados) + caixa "Peça apoio ao suporte de TI" com texto pronto para enviar ao suporte
-  - Cap. 6: recomendações e matriz de modelos por tarefa multi-área (peses de banca em Enfermagem, critérios de julgamento em Direito; nota de que todos os modelos atende tarefas textuais de qualquer área)
+  - Cap. 6: recomendações e matriz de modelos por tarefa multiárea (pesos de banca em Enfermagem, critérios de julgamento em Direito; nota de que todos os modelos atendem a tarefas textuais de qualquer área)
   - Caps. 2, 5, 7 e 8: exemplos pontuais de exatas substituídos por multi-área (vocações/área; análise de relações, laudos, ensaios ou códigos; defesa oral; julgado; `minha-disciplina`)
   - `main.tex`: nova caixa `adaptacaoarea` ("Adaptação para Outras Áreas")
   - Manual recompilado (`main.pdf`, 76 páginas)
