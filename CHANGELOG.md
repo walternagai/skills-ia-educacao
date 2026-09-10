@@ -5,6 +5,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.10] — 2026-09-10
+
+### Corrigido
+- **`README.md` — instalação de subagentes no `install-skills.sh`**: a seção "Como usar as skills" afirmava que o script instalava somente as skills; desde a v0.10.8 ele instala também os 6 subagentes com `--opencode`/`--all` — texto alinhado ao comportamento real dos scripts `.sh`/`.bat`
+
+### Modificado
+- **`README.md` — Manual AvalIA**: inventário e seção do manual passam a informar 74 páginas, rota de 60 minutos para iniciantes, kit inicial de 5 skills e textos prontos para o plano de ensino (conteúdo da v0.10.9)
+
 ## [0.10.9] — 2026-09-10
 
 ### Adicionado

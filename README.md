@@ -4,7 +4,7 @@ Acervo de skills que orientam a integração responsável de Inteligência Artif
 
 ## O que há neste repositório
 
-- **Manual AvalIA** (`manual/`) — *AvalIA: Kit de Avaliação Formativa com Inteligência Artificial para Professores do Ensino Superior*: manual em LaTeX (10 capítulos) com instalação do OpenCode, catálogo das skills e casos de uso validados (PDF compilado em `manual/main.pdf`)
+- **Manual AvalIA** (`manual/`) — *AvalIA: Kit de Avaliação Formativa com Inteligência Artificial para Professores do Ensino Superior*: manual em LaTeX (10 capítulos, 74 páginas) com rota de 60 minutos para iniciantes, instalação do OpenCode, catálogo das skills e casos de uso validados (PDF compilado em `manual/main.pdf`)
 - **Skills temáticas** (`skills/*/SKILL.md`) — 62 skills prontas para instalar em CLIs de IA (contagem atual: `ls skills | wc -l`)
 - **Subagentes** (`agents/` e `.opencode/agents/`) — 6 agentes especializados (formatado/OpenCode, ex.: `artesao-de-skills`, `planejador-pedagogico`)
 - **Scripts de instalação** (`install-skills.sh` / `uninstall-skills.sh`) — instalam/removem as skills em Claude Code, OpenCode, Codex, Gemini CLI e Antigravity
@@ -38,7 +38,7 @@ A escala é **não hierárquica** (nenhum nível é superior a outro) e **cumula
 ./install-skills.sh --dry-run              # mostra o que seria feito sem copiar
 ```
 
-O `install-skills.sh` instala somente as skills; os subagentes de `agents/` e `.opencode/agents/` são específicos do OpenCode e não são instalados por ele (ver "Compatibilidade entre CLIs" abaixo). No Windows nativo, o `install-skills.bat` inclui também os 6 subagentes quando o destino `opencode` é selecionado (`--opencode`/`--all`). Para remover:
+O `install-skills.sh` instala as skills e, quando o destino `opencode` é selecionado (`--opencode`/`--all`), também os 6 subagentes de `agents/` e `.opencode/agents/` (específicos do OpenCode; nos demais destinos, só as skills — ver "Compatibilidade entre CLIs" abaixo). O mesmo vale para o `install-skills.bat` no Windows nativo. Para remover:
 
 ```bash
 ./uninstall-skills.sh --all
@@ -76,7 +76,7 @@ Os seis subagentes são diferentes: seus arquivos em `agents/` e `.opencode/agen
 
 ## Manual AvalIA
 
-O manual *AvalIA: Kit de Avaliação Formativa com Inteligência Artificial para Professores do Ensino Superior* (`manual/`) é o guia completo do acervo: apresenta a Escala AIAS, instala o OpenCode passo a passo, cataloga as 62 skills e os 6 subagentes, e traz casos de uso validados em sala. Compile-o com `manual/compilar.sh` ou `make -C manual`; o PDF pronto está em `manual/main.pdf`.
+O manual *AvalIA: Kit de Avaliação Formativa com Inteligência Artificial para Professores do Ensino Superior* (`manual/`) é o guia completo do acervo (74 páginas): apresenta a Escala AIAS, instala o OpenCode passo a passo, cataloga as 62 skills e os 6 subagentes, e traz casos de uso validados em sala. Para quem está começando, há rota de 60 minutos, kit inicial de 5 skills e textos prontos para o plano de ensino. Compile-o com `manual/compilar.sh` ou `make -C manual`; o PDF pronto está em `manual/main.pdf`.
 
 ## Skills disponíveis
 
