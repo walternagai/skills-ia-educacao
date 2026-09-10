@@ -4,7 +4,7 @@ Acervo de skills que orientam a integração responsável de Inteligência Artif
 
 ## O que há neste repositório
 
-- **Manual AvalIA** (`manual/`) — *AvalIA: Kit de Avaliação Formativa com Inteligência Artificial para Professores do Ensino Superior*: manual em LaTeX (10 capítulos, 72 páginas) com rota de 60 minutos para iniciantes, instalação do OpenCode, catálogo das skills e casos de uso validados (PDF compilado em `manual/main.pdf`)
+- **Manual AvalIA** (`manual/`) — *AvalIA: Kit de Avaliação Formativa com Inteligência Artificial para Professores do Ensino Superior*: manual em LaTeX (10 capítulos, 76 páginas) com rota de 60 minutos para iniciantes, instalação do OpenCode, catálogo das skills e casos de uso validados (PDF compilado em `manual/main.pdf`)
 - **Skills temáticas** (`skills/*/SKILL.md`) — 62 skills prontas para instalar em CLIs de IA (contagem atual: `ls skills | wc -l`)
 - **Subagentes** (`agents/` e `.opencode/agents/`) — 6 agentes especializados (formatado/OpenCode, ex.: `artesao-de-skills`, `planejador-pedagogico`)
 - **Scripts de instalação** (`install-skills.sh` / `uninstall-skills.sh`) — instalam/removem as skills em Claude Code, OpenCode, Codex, Gemini CLI e Antigravity
@@ -76,7 +76,7 @@ Os seis subagentes são diferentes: seus arquivos em `agents/` e `.opencode/agen
 
 ## Manual AvalIA
 
-O manual *AvalIA: Kit de Avaliação Formativa com Inteligência Artificial para Professores do Ensino Superior* (`manual/`) é o guia completo do acervo (72 páginas): apresenta a Escala AIAS, instala o OpenCode passo a passo, cataloga as 62 skills e os 6 subagentes, e traz casos de uso validados em sala. Para quem está começando, há rota de 60 minutos, kit inicial de 5 skills e textos prontos para o plano de ensino. Compile-o com `manual/compilar.sh` ou `make -C manual`; o PDF pronto está em `manual/main.pdf`.
+O manual *AvalIA: Kit de Avaliação Formativa com Inteligência Artificial para Professores do Ensino Superior* (`manual/`) é o guia completo do acervo (76 páginas): apresenta a Escala AIAS, instala o OpenCode passo a passo, cataloga as 62 skills e os 6 subagentes, e traz casos de uso validados em sala. Para quem está começando, há rota de 60 minutos, kit inicial de 5 skills e textos prontos para o plano de ensino. Compile-o com `manual/compilar.sh` ou `make -C manual`; o PDF pronto está em `manual/main.pdf`.
 
 ## Skills disponíveis
 

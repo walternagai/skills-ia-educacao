@@ -5,6 +5,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.13] — 2026-09-10
+
+### Modificado
+- **Manual — validação empírica do Caso 5 nas cinco áreas STHEM**: o roteiro de avaliação formativa do Caso 5 (Direito) foi executado no OpenCode 1.18.30 (modo headless) e replicado em Biologia, Computação, História, Engenharia Civil e Cálculo; em todas as execuções, as skills de rubrica e de itens diagnósticos foram carregadas (por leitura dos arquivos `SKILL.md` ou pela ferramenta de skill, conforme a versão) e os instrumentos entregues apresentaram declaração AIAS, rubrica em 4 níveis e itens diagnósticos com mapas de equívocos. O Caso 5 ganha o registro "Resposta do OpenCode (validada)" e a caixa de validação empírica do cap. 10 é atualizada (versões 1.18.29/1.18.30; tarefa delegada ao subagente ou executada pelo agente principal)
+- **`README.md`**: contagem de páginas do manual corrigida de 72 para 76, alinhada ao PDF recompilado na v0.10.12
+
+---
+
 ## [0.10.12] — 2026-09-10
 
 ### Modificado
