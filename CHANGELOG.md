@@ -5,6 +5,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.21] — 2026-09-10
+
+### Corrigido
+- **`ia-educacao-etica` — dependências explícitas**: a linha informal "Todas as skills do eixo ética-transversal" foi substituída pelos slugs canônicos das três skills restantes do eixo (`ia-educacao-impacto-algoritmico`, `ia-educacao-seguranca-digital` e `ia-educacao-integridade-academica`); versão 1.10 → 1.11
+- **Validação das referências das 62 skills**: 62 slugs de dependência únicos, todos existentes e no padrão `ia-educacao-*`/`aias-consultant`; zero referências a skills externas em qualquer seção; zero linhas de `## Dependências` fora do formato; referências dos 6 subagentes também conferidas
+
+---
+
 ## [0.10.20] — 2026-09-10
 
 ### Adicionado

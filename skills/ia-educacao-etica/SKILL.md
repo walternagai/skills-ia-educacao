@@ -2,7 +2,7 @@
 name: ia-educacao-etica
 category: etica-governanca
 model: any
-version: 1.10
+version: 1.11
 description: >
   Especialista em fundamentos éticos para IA na educação, alinhado aos princípios do Referencial MEC e marcos internacionais (UNESCO, OCDE, Comissão Europeia). Use quando instituições precisarem estabelecer princípios éticos norteadores para adoção de IA. Acione para: "ética em IA na educação", "princípios éticos para IA educacional", "UNESCO e IA na educação", "valores fundamentais para IA na escola", "código de ética para IA educacional", "responsabilização em IA", "accountability em sistemas de IA educacional".
 ---
@@ -64,7 +64,9 @@ description: >
 - `ia-educacao-vieses` — para equidade algorítmica
 - `ia-educacao-transparencia-explicabilidade` — para transparência
 - `ia-educacao-governanca-dados` — para proteção de dados
-- Todas as skills do eixo ética-transversal
+- `ia-educacao-impacto-algoritmico` — para avaliações de impacto algorítmico
+- `ia-educacao-seguranca-digital` — para segurança e bem-estar digital
+- `ia-educacao-integridade-academica` — para integridade e autoria responsável
 
 ## Referências
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Capítulo 3

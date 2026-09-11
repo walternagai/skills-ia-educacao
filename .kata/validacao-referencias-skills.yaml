@@ -1,0 +1,92 @@
+task: validacao-referencias-skills
+status: approved
+domain: docs
+done: "Referências das 62 skills validadas: todos os slugs de ## Dependências existem neste repositório e seguem o padrão ia-educacao-*/aias-consultant; zero referências a skills externas em qualquer seção; zero linhas fora do formato; referências dos 6 subagentes existentes; ./audit.sh OK"
+base_commit: "e424a33058bedb1a091a387893c23c0449a05176"
+approved_commit: ""
+fit:
+  trivial: false
+  route: code-loop
+  reason: "Validação do grafo de referências das 62 skills (dependências, referências externas em qualquer seção, formato das linhas e referências dos agentes) com uma correção pontual em ia-educacao-etica."
+  answered: true
+  skipped: false
+think:
+  problem: "Garantir que as skills ia-educacao-* (e aias-consultant) referenciem somente skills deste repositório. O audit.sh cobre dependências quebradas e uma lista fixa de 7 skills externas apenas na seção Dependências, sem varredura ampla nem checagem do formato das linhas."
+  assumptions:
+    - "Fonte de verdade do grafo: skills/*/SKILL.md, seção ## Dependências, com slugs canônicos entre crases."
+    - "O audit.sh é o baseline oficial, mas a validação deve ir além (qualquer seção, nomes externos conhecidos, formato das linhas)."
+  alternatives:
+    - "alt A: rodar apenas ./audit.sh -- descartada: cobre só a lista fixa de externas e linhas que já começam com '- `'."
+    - "alt B: reescrever o check do audit.sh em regex -- adiada: mudança de ferramenta fora do pedido (registrada como pendência)."
+    - "alt C: varredura completa por comandos + correção do único achado -- escolhida."
+  unknowns: |
+    RESOLVIDO:
+    1. Slugs de dependência -> 62 únicos, todos existentes e no padrão.
+    2. Linhas fora do formato -> apenas 'Todas as skills do eixo ética-transversal' (ia-educacao-etica), substituída por 3 slugs explícitos.
+    3. Skills externas -> zero em qualquer seção (lista conhecida + varredura de tokens).
+    4. Agentes -> referências dos 6 subagentes todas existentes.
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: "Uma linha substituída por três slugs + bump de versão 1.10 -> 1.11; nenhuma mudança de ferramenta."
+  answered: true
+  skipped: false
+intent:
+  code_does: "ia-educacao-etica listava 4 slugs + a linha informal 'Todas as skills do eixo ética-transversal'."
+  check_expects: "Dependências devem ser slugs canônicos existentes; a varredura deve acusar zero anomalias."
+  spec_says: "Usuário pediu validação para que as referências apontem somente para skills deste repositório."
+  all_agree: false
+  conflict_resolution: "Usuário > estado atual: explicitar os três slugs restantes do eixo; nenhuma referência externa encontrada para remover."
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: skills/ia-educacao-etica/SKILL.md
+      necessary: true
+      reason: "Única anomalia: linha informal convertida em 3 slugs canônicos; versão 1.10 -> 1.11."
+    - path: CHANGELOG.md
+      necessary: true
+      reason: "Convenção do repo."
+    - path: .kata/validacao-referencias-skills.yaml
+      necessary: true
+      reason: "Registro do ciclo kata."
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+verify:
+  ruff_clean: false
+  tests_pass: false
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true
+  attempts: 1
+  hand_back: false
+  notes: "Repo documental: gates Python não se aplicam. Verificação efetiva: 62 slugs únicos todos existentes e no padrão; 0 linhas fora do formato; 0 skills externas em qualquer seção; agentes OK; ./audit.sh exit 0."
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: false
+  auth_present: true
+  pending_owed: true
+  pending_present: true
+auth:
+  action_taken: false
+  authorized: false
+  action: ""
+  quote: ""
+pending:
+  action: "Commit e push da correção em ia-educacao-etica (v1.11) e da entrada no CHANGELOG - aguardando autorização do usuário."
+  documented: true
+twins:
+  pattern: "linhas de ## Dependências fora do formato '- `slug`'"
+  result: "Varredura nas 62 skills: 1 ocorrência (ia-educacao-etica), corrigida; 0 ocorrências restantes."
+  searched: true
+  defect_fixed: true
+  matches_count: 1
+  files_count: 1
+  fix_applied: true
