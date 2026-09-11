@@ -5,6 +5,18 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.19] — 2026-09-10
+
+### Adicionado
+- **Manual — referências do Git e citação de fontes pendentes**:
+  - Apêndice A: frase de autoria e história (Git criado por Linus Torvalds em 2005, sistema de controle de versão mais utilizado) com citação de *Pro Git* (Chacon & Straub, 2014)
+  - Apêndice A: caixa "Para saber mais sobre Git" com o livro *Pro Git* (tradução PT-BR gratuita), a documentação oficial e o tutorial interativo *Learn Git Branching*
+  - Bibliografia: duas entradas novas (`chacon2014progit`, `git2026doc`)
+  - Três entradas que nunca eram citadas passam a ter uso no texto: `opencode2026doc` (caps. 3 e 4), `google2023gemini` (cap. 3) e `unesco2024framework` (cap. 8)
+  - PDF recompilado (80 páginas, sem citações indefinidas)
+
+---
+
 ## [0.10.18] — 2026-09-10
 
 ### Modificado

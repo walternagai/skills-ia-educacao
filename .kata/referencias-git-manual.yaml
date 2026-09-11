@@ -1,0 +1,110 @@
+task: referencias-git-manual
+status: approved
+domain: docs
+done: "Apêndice A com autoria (Linus Torvalds, 2005) e referências (Chacon & Straub, Pro Git; documentação oficial do Git) + caixa 'Para saber mais'; as três entradas órfãs da bibliografia citadas (opencode2026doc nos caps. 3 e 4, google2023gemini no cap. 3, unesco2024framework no cap. 8); manual compila sem erros e ./audit.sh OK"
+base_commit: "a00d49eb9e2b7a60a410d8b89ef2eabfabc0c94e"
+approved_commit: ""
+fit:
+  trivial: false
+  route: code-loop
+  reason: "Rodada docs aprovada pelo usuário (referências do Git + citação das entradas órfãs), com fontes verificadas e verificação objetiva por compilação LaTeX + ./audit.sh."
+  answered: true
+  skipped: false
+think:
+  problem: "O Apêndice A (Git) não tinha autores nem referências bibliográficas -- único link era o instalador git-scm.com/download/win; e a bibliografia do manual tinha três entradas nunca citadas (opencode2026doc, google2023gemini, unesco2024framework)."
+  assumptions:
+    - "Estilo do repo: BibTeX ABNT, author em ordem natural, url sem data de acesso."
+    - "Pro Git (Chacon & Straub) é fonte canônica para a história do Git (criado por Linus Torvalds em 2005) e é gratuito, com tradução PT-BR."
+    - "Citar as entradas órfãs em contextos semanticamente corretos é preferível a removê-las."
+  alternatives:
+    - "alt A: adicionar só o livro do Git -- descartada: deixaria a documentação oficial sem referência e as órfãs pendentes."
+    - "alt B: remover as três entradas órfãs -- descartada: são fontes válidas e úteis (docs do OpenCode, Gemini CLI, marco UNESCO)."
+    - "alt C: referenciar Git (livro + doc oficial) e citar as três órfãs nos contextos corretos -- escolhida."
+  unknowns: |
+    RESOLVIDO:
+    1. Onde citar opencode2026doc? -> cap. 3 (procedencia do OpenCode) e cap. 4 (visao geral).
+    2. Onde citar google2023gemini? -> cap. 3, caixa de compatibilidade entre CLIs (Gemini CLI).
+    3. Onde citar unesco2024framework? -> cap. 8 (marco de competencias em IA para estudantes).
+    4. Formato da bibliografia? -> verificado em referencias.bib (url sem data de acesso, institutional em caixa alta).
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: "Duas entradas novas na bib e cinco pontos de citação; uma frase de contexto e uma caixa com tres links; nenhuma reescrita."
+  answered: true
+  skipped: false
+intent:
+  code_does: "Apêndice A sem citações e bibliografia com três entradas nunca citadas."
+  check_expects: "Compilação sem 'Citation undefined' e ./audit.sh OK; todas as entradas @ usadas no texto."
+  spec_says: "Recomendações apresentadas e aprovadas pelo usuário em 2026-09-10 (mensagem 'Implemente todas recomendações')."
+  all_agree: false
+  conflict_resolution: "Usuário > manual: adicionar as referências e citações conforme proposto."
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: manual/referencias.bib
+      necessary: true
+      reason: "Duas entradas novas: chacon2014progit e git2026doc."
+    - path: manual/apendice-a-git.tex
+      necessary: true
+      reason: "Frase de autoria/história com citação e caixa 'Para saber mais'."
+    - path: manual/cap3-skills-opencode.tex
+      necessary: true
+      reason: "Cita opencode2026doc e google2023gemini."
+    - path: manual/cap4-instalacao.tex
+      necessary: true
+      reason: "Cita opencode2026doc na visão geral."
+    - path: manual/cap8-explicar-estudantes.tex
+      necessary: true
+      reason: "Cita unesco2024framework."
+    - path: manual/main.pdf
+      necessary: true
+      reason: "Derivado obrigatório: PDF recompilado."
+    - path: CHANGELOG.md
+      necessary: true
+      reason: "Convenção do repo."
+    - path: .kata/referencias-git-manual.yaml
+      necessary: true
+      reason: "Registro do ciclo kata da tarefa."
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+verify:
+  ruff_clean: false
+  tests_pass: false
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true
+  attempts: 1
+  hand_back: false
+  notes: "Gates Python não se aplicam (repo documental). Verificação efetiva: make -C manual sem erros, 0 citações indefinidas, entradas novas no .bbl, PDF 80 p.; ./audit.sh exit 0; zero entradas @ sem citação no texto."
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: true
+  auth_present: true
+  pending_owed: false
+  pending_present: true
+  twins_owed: true
+  twins_present: true
+auth:
+  action_taken: true
+  authorized: true
+  action: "Commit e push da rodada de referências (v0.10.19)"
+  quote: "Implemente todas recomendações"
+pending:
+  action: ""
+  documented: false
+twins:
+  pattern: "entradas @ na bibliografia sem \\cite no texto"
+  result: "Antes: 3 entradas órfãs (opencode2026doc, google2023gemini, unesco2024framework); após as citações, a varredura final aponta zero entradas sem uso."
+  searched: true
+  defect_fixed: true
+  matches_count: 3
+  files_count: 3
+  fix_applied: true
