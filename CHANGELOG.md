@@ -5,6 +5,17 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.20] — 2026-09-10
+
+### Adicionado
+- **Manual — figuras no Apêndice B (grafo e auditoria)**:
+  - Figura B.1: diagrama TikZ do subgrafo de exemplo (`ia-educacao-avaliacao` e suas quatro dependências), com explicação de leitura ligada aos checks do `audit.sh` (skill órfã × dependência quebrada)
+  - Figura B.2: panorama dos seis hubs mais referenciados, a partir de `assets/hub-network.svg` convertido para PDF (`manual/figuras/hub-network.pdf`, sem a legenda interna duplicada), com nota de data e de ausência do prefixo nos rótulos
+  - `main.tex`: pacotes `graphicx` e `tikz` (`arrows.meta`) no preâmbulo
+  - PDF recompilado (80 páginas)
+
+---
+
 ## [0.10.19] — 2026-09-10
 
 ### Adicionado

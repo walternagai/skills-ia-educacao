@@ -1,0 +1,107 @@
+task: figuras-apendice-b
+status: approved
+domain: docs
+done: "Apêndice B com duas figuras: diagrama TikZ do subgrafo de exemplo (ia-educacao-avaliacao e suas 4 dependências) com legenda de leitura ligada ao audit.sh; panorama dos 6 hubs a partir de assets/hub-network.svg convertido para PDF e incluído com nota de data; manual compila sem erros, ./audit.sh OK e README atualizado se as páginas mudarem"
+base_commit: "dddce5d"
+approved_commit: ""
+fit:
+  trivial: false
+  route: code-loop
+  reason: "Rodada docs aprovada pelo usuário (opção C): adicionar duas figuras ao Apêndice B (TikZ didático + panorama do asset existente), com nova dependência LaTeX (tikz/graphicx) e conversão SVG->PDF."
+  answered: true
+  skipped: false
+think:
+  problem: "O Apêndice B (grafo e auditoria) é 100% textual: o conceito de grafo aparece só em prosa, e as 3 visualizações em assets/ (hub-chart, hub-star, hub-network), atualizadas, não são usadas em nenhum documento."
+  assumptions:
+    - "O Apêndice B é leitura de mantenedor; uma figura didática pequena + um panorama cobrem 'como funciona' e 'como está o acervo'."
+    - "assets/hub-network.svg está atual (contagens conferidas: aias-consultant 25, avaliacao 22, verificacao 17, bloom 15, rubrica 14, etica 13)."
+    - "tikz.sty e rsvg-convert estão disponíveis no ambiente; o PDF convertido será versionado no manual para builds sem rsvg."
+  alternatives:
+    - "alt A: só TikZ didático -- descartada: perde o panorama do acervo."
+    - "alt B: só o SVG convertido -- descartada: não explica o modelo nó/seta nem o audit."
+    - "alt C: TikZ do exemplo + hub-network convertido como panorama -- escolhida (aprovada pelo usuário)."
+  unknowns: |
+    RESOLVIDO:
+    1. Assets atuais? -> sim: contagens idênticas às do hub-chart (top hubs).
+    2. Ferramentas? -> tikz.sty presente; rsvg-convert presente; inkscape ausente (não necessário).
+    3. Onde colocar o PDF convertido? -> manual/figuras/hub-network.pdf (manual autocontido; fonte SVG citada na legenda).
+    4. Impacto em páginas? -> verificar após compilar e atualizar README se mudar.
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: "Uma figura TikZ compacta (5 nós) e uma figura a partir de asset existente; duas linhas de pacotes no preâmbulo (graphicx/tikz); nenhuma reestruturação do apêndice."
+  answered: true
+  skipped: false
+intent:
+  code_does: "Apêndice B sem figuras; assets SVGs sem uso."
+  check_expects: "Compilação sem erros com as figuras visíveis e referenciadas; ./audit.sh OK."
+  spec_says: "Usuário aprovou a opção C (figura didática + panorama) em 2026-09-10."
+  all_agree: false
+  conflict_resolution: "Usuário > estado atual: adicionar as duas figuras conforme aprovado."
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: manual/main.tex
+      necessary: true
+      reason: "Preâmbulo: graphicx e tikz (arrows.meta)."
+    - path: manual/apendice-b-mantenedor.tex
+      necessary: true
+      reason: "Figura TikZ do exemplo + panorama + remissões."
+    - path: manual/figuras/hub-network.pdf
+      necessary: true
+      reason: "Derivado versionado de assets/hub-network.svg (rsvg-convert)."
+    - path: manual/main.pdf
+      necessary: true
+      reason: "PDF recompilado."
+    - path: README.md
+      necessary: true
+      reason: "Atualizar contagem de páginas se mudar."
+    - path: CHANGELOG.md
+      necessary: true
+      reason: "Convenção do repo."
+    - path: .kata/figuras-apendice-b.yaml
+      necessary: true
+      reason: "Registro do ciclo kata da tarefa."
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+verify:
+  ruff_clean: false
+  tests_pass: false
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true
+  attempts: 1
+  hand_back: false
+  notes: "Gates Python não se aplicam (repo documental). Verificação efetiva: compilação sem erros, 0 referências indefinidas, figuras renderizadas e inspecionadas visualmente (B.1 TikZ; B.2 PDF 547x352 pt), PDF 80 p. (inalterado); ./audit.sh exit 0."
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: true
+  auth_present: true
+  pending_owed: false
+  pending_present: false
+  twins_owed: false
+  twins_present: false
+auth:
+  action_taken: true
+  authorized: true
+  action: "Commit e push da rodada de figuras no Apêndice B (v0.10.20)"
+  quote: "Concordo com a recomendação, (C)"
+pending:
+  action: ""
+  documented: false
+twins:
+  pattern: ""
+  result: ""
+  searched: false
+  defect_fixed: false
+  matches_count: 0
+  files_count: 0
+  fix_applied: false

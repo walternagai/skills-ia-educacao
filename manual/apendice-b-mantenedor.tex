@@ -7,7 +7,30 @@
 
 As 62 skills do reposit{\'o}rio n{\~a}o operam isoladamente; constituem um \textbf{grafo direcionado de conhecimento pedag{\'o}gico}.
 
-Por exemplo, a skill de constru{\c c}{\~a}o de avalia{\c c}{\~o}es (\texttt{ia-educacao-avaliacao}) aponta depend{\^e}ncias formais para \texttt{ia-educacao-bloom} (para alinhamento cognitivo), \texttt{ia-educacao-rubrica} (para crit{\'e}rios de corre{\c c}{\~a}o), \texttt{aias-consultant} (para governan{\c c}a do uso de IA) e \texttt{ia-educacao-planejamento-reverso} (para enquadramento curricular).
+Por exemplo, a skill de constru{\c c}{\~a}o de avalia{\c c}{\~o}es (\texttt{ia-educacao-avaliacao}) aponta depend{\^e}ncias formais para \texttt{ia-educacao-bloom} (para alinhamento cognitivo), \texttt{ia-educacao-rubrica} (para crit{\'e}rios de corre{\c c}{\~a}o), \texttt{aias-consultant} (para governan{\c c}a do uso de IA) e \texttt{ia-educacao-planejamento-reverso} (para enquadramento curricular). A Figura~\ref{fig:subgrafo-exemplo} representa esse trecho do grafo.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[
+    x=1mm, y=1mm,
+    skill/.style={draw=primary, fill=boxbg, rounded corners=2pt, inner sep=3.5pt, font=\footnotesize\ttfamily, text=neutraldark, anchor=west},
+    dep/.style={-{Stealth[length=2.2mm,width=1.8mm]}, draw=secondary, thick}
+  ]
+    \node[skill] (av) at (0,-18) {ia-educacao-avaliacao};
+    \node[skill] (bloom) at (58,3) {ia-educacao-bloom};
+    \node[skill] (rubrica) at (58,-11) {ia-educacao-rubrica};
+    \node[skill] (aias) at (58,-25) {aias-consultant};
+    \node[skill] (plan) at (58,-39) {ia-educacao-planejamento-reverso};
+    \draw[dep] (av.east) -- (bloom.west);
+    \draw[dep] (av.east) -- (rubrica.west);
+    \draw[dep] (av.east) -- (aias.west);
+    \draw[dep] (av.east) -- (plan.west);
+  \end{tikzpicture}
+  \caption{Exemplo de subgrafo de depend{\^e}ncias: a skill \texttt{ia-educacao-avaliacao} e as quatro skills que ela declara em \texttt{\#\# Depend{\^e}ncias}.}
+  \label{fig:subgrafo-exemplo}
+\end{figure}
+
+Nessa representa{\c c}{\~a}o, a seta indica ``A depende de B''; um n{\'o} sem seta de entrada {\'e} uma \emph{skill {\'o}rf{\~a}}, e uma seta apontando para n{\'o} inexistente {\'e} uma \emph{depend{\^e}ncia quebrada} -- os dois casos reprovam no \texttt{audit.sh}.
 
 Para assegurar que o grafo n{\~a}o se degenere com o crescimento do acervo, o reposit{\'o}rio conta com uma rotina de auditoria automatizada no script \texttt{audit.sh}:
 \begin{itemize}
@@ -16,3 +39,12 @@ Para assegurar que o grafo n{\~a}o se degenere com o crescimento do acervo, o re
   \item \textbf{Isolamento de Depend{\^e}ncias Externas}: As skills s{\~a}o autocontidas neste reposit{\'o}rio: nenhuma referencia skills externas ou pacotes n{\~a}o controlados;
   \item \textbf{Conformidade Terminol{\'o}gica}: O script verifica a consist{\^e}ncia exata dos nomes dos 5 n{\'i}veis da Escala AIAS e a grafia institucional em refer{\^e}ncias bibliogr{\'a}ficas normativas do MEC.
 \end{itemize}
+
+Al{\'e}m da verifica{\c c}{\~a}o autom{\'a}tica, vale conhecer o panorama do acervo. A Figura~\ref{fig:hubs} mostra os seis hubs mais referenciados e as rela{\c c}{\~o}es de depend{\^e}ncia entre eles.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth]{figuras/hub-network.pdf}
+  \caption{Panorama do acervo: rela{\c c}{\~o}es de depend{\^e}ncia entre os seis hubs mais referenciados (dados de junho de 2026, conferidos em setembro de 2026; r{\'o}tulos sem o prefixo \texttt{ia-educacao-}).}
+  \label{fig:hubs}
+\end{figure}
