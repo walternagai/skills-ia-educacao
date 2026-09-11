@@ -102,9 +102,9 @@ Este m{\'e}todo {\'e} igualmente v{\'a}lido no Windows quando executado dentro d
 
 \subsection{M{\'e}todo 2: Gerenciadores de Pacotes JavaScript (Node.js / npm)}
 
-Funciona nos tr{\^e}s sistemas operacionais. Caso o ambiente j{\'a} conte com o Node.js (vers{\~a}o 18 ou superior) configurado, o OpenCode pode ser instalado globalmente via \texttt{npm}, \texttt{pnpm} ou \texttt{bun}:
+Funciona nos tr{\^e}s sistemas operacionais. Caso o ambiente j{\'a} conte com o Node.js (vers{\~a}o 18 ou superior) configurado, o OpenCode pode ser instalado globalmente via \texttt{npm}, \texttt{pnpm}, \texttt{bun} ou \texttt{yarn}:
 
-\begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o global via npm, pnpm ou bun}]
+\begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o global via npm, pnpm, bun ou yarn}]
 # Via npm
 npm install -g opencode-ai
 
@@ -113,6 +113,9 @@ pnpm add -g opencode-ai
 
 # Ou via bun
 bun add -g opencode-ai
+
+# Ou via yarn
+yarn global add opencode-ai
 \end{lstlisting}
 
 No \textbf{Windows}, os mesmos comandos s{\~a}o executados no \textbf{PowerShell} (com o Node.js instalado a partir de \url{https://nodejs.org}); no \textbf{macOS} e \textbf{Linux}, no terminal padr{\~a}o.
@@ -124,6 +127,8 @@ Usu{\'a}rios dos sistemas com Unix dispon{\'i}vel (macOS e Linux) que j{\'a} ado
 \begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o via Homebrew}]
 brew install opencode
 \end{lstlisting}
+
+A documenta{\c c}{\~a}o oficial recomenda o tap do projeto, atualizado com mais frequ{\^e}ncia: \texttt{brew install anomalyco/tap/opencode}. A f{\'o}rmula oficial do Homebrew (\texttt{brew install opencode}) {\'e} mantida pela equipe do Homebrew e recebe atualiza{\c c}{\~o}es com menos frequ{\^e}ncia.
 
 Esse m{\'e}todo {\'e} particularmente c{\^o}modo no macOS, pois o Homebrew {\'e} o gerenciador de pacotes mais difundido nesse sistema.
 

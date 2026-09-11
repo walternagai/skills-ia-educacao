@@ -5,6 +5,18 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.16] — 2026-09-10
+
+### Adicionado
+- **Manual — conteúdo com fonte oficial e cobertura multiárea (caps. 4, 5 e 10)**:
+  - Cap. 4, Método 3: nota sobre o tap recomendado do Homebrew (`brew install anomalyco/tap/opencode`, mais atualizado) ao lado da fórmula oficial
+  - Cap. 4, Método 2: `yarn` incluído entre os gerenciadores JavaScript suportados, com o comando correspondente no quadro
+  - Cap. 5: link de download do aplicativo Desktop (beta para macOS, Windows e Linux)
+  - Cap. 10, Caso 3: caixa "Adaptação para Outras Áreas" (Humanas, Saúde, Exatas e Engenharias), alinhando o caso aos demais
+  - PDF recompilado (76 páginas)
+
+---
+
 ## [0.10.15] — 2026-09-10
 
 ### Corrigido
