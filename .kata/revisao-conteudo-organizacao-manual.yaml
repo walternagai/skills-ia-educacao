@@ -1,5 +1,5 @@
 task: revisao-conteudo-organizacao-manual
-status: think-complete
+status: approved
 domain: docs
 done: "Diagnóstico de conteúdo e organização do manual entregue, com oportunidades priorizadas por capítulo (arquivo, linha, evidência e proposta), aprovado pelo usuário; itens autorizados implementados, manual recompilado sem erros (make -C manual), ./audit.sh OK e CHANGELOG.md atualizado."
 base_commit: "a340b3b325c8af18596fc60dcea38db1c3972236"
@@ -107,33 +107,34 @@ verify:
   tests_pass: false
   coverage_pct: 0.0
   coverage_pass: false
-  success_criteria_met: false
-  attempts: 0
+  success_criteria_met: true
+  attempts: 1
   hand_back: false
+  notes: "Gates Python (ruff/pytest/coverage) não se aplicam: repositório documental sem código/testes, e `kata --check-only` usa defaults apontando para tests/ inexistente. Verificação efetiva: make -C manual (pdflatex x3 + bibtex) sem erros, 0 overfull, PDF 80 p. e ./audit.sh exit 0."
 preflight:
   skills_missing: []
 artifact:
-  intent_owed: false
-  intent_present: false
-  auth_owed: false
-  auth_present: false
-  pending_owed: false
-  pending_present: false
-  twins_owed: false
-  twins_present: false
+  intent_owed: true
+  intent_present: true
+  auth_owed: true
+  auth_present: true
+  pending_owed: true
+  pending_present: true
+  twins_owed: true
+  twins_present: true
 auth:
-  action_taken: false
-  authorized: false
-  action: ""
-  quote: ""
+  action_taken: true
+  authorized: true
+  action: "4 commits e 4 pushes na branch main (v0.10.15 a v0.10.18), um por bloco aprovado"
+  quote: "Implemente os blocos em ordem de esforço e correções assertivas. Após a conclusão de cada bloco, atualize o CHANGELOG.md, commit e push."
 pending:
-  action: ""
-  documented: false
+  action: "Sugestão: criar .kata/config.yaml declarando verify.lint/test/coverage adequados a docs (ex.: lint = ./audit.sh --quiet; test = make -C manual), pois kata --check-only usa defaults Python e falha neste repositório sem tests/."
+  documented: true
 twins:
-  pattern: ""
-  result: ""
-  searched: false
-  defect_fixed: false
+  pattern: "(/model\\b|Se{\\\\c c}{\\\\~a}o~[0-9]|1\\\\.18\\\\.29|--antigravity(?!-cli)|o aluno)"
+  result: "Re-verificação em manual/*.tex: zero ocorrências involuntárias restantes; o 1.18.29 remanescente é registro histórico no Cap. 10 e a enumeração de flags está completa."
+  searched: true
+  defect_fixed: true
   matches_count: 0
   files_count: 0
   fix_applied: false

@@ -5,6 +5,20 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.18] — 2026-09-10
+
+### Modificado
+- **Manual — organização: dois apêndices e enxugamento do Cap. 4**:
+  - Novo **Apêndice A — Controle de Versão com Git para Iniciantes** (movido do Cap. 4; subseções renumeradas como seções)
+  - Novo **Apêndice B — Para Mantenedores: o Grafo de Dependências e a Auditoria do Acervo** (movido do Cap. 3)
+  - Cap. 4: foco em instalação; remissões à seção de Git atualizadas para o novo apêndice; subseção "Disponibilizando os Subagentes" condensada (blocos de comando duplicados removidos; mantido o fallback de cópia manual)
+  - Cap. 3: remissão de leitura opcional passa a apontar para o Apêndice B
+  - Cap. 5: remissão de Git passa a apontar para o Apêndice A
+  - `README.md`: manual passa a 80 páginas (10 capítulos e 2 apêndices)
+  - PDF recompilado (80 páginas)
+
+---
+
 ## [0.10.17] — 2026-09-10
 
 ### Modificado

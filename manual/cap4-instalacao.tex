@@ -6,12 +6,12 @@
   \item Instalar o OpenCode no seu sistema operacional (Windows, Linux ou macOS) pelo m{\'e}todo mais adequado ao seu perfil;
   \item Conectar o OpenCode a um provedor de modelos e selecionar um modelo dispon{\'i}vel;
   \item Sincronizar as 62 skills e os 6 subagentes do acervo com o ambiente local e conferir a instala{\c c}{\~a}o;
-  \item Aplicar, opcionalmente, o controle de vers{\~a}o com Git para proteger seus materiais did{\'a}ticos.
+  \item Aplicar, opcionalmente, o controle de vers{\~a}o com Git para proteger seus materiais did{\'a}ticos (passo a passo no Ap{\^e}ndice~\ref{ap:git}).
 \end{itemize}
 \end{objetivos}
 
 \begin{dicaopencode}
-\textbf{Caminho recomendado na primeira instala{\c c}{\~a}o (cerca de 20 minutos)}: Linux, macOS ou Windows com WSL2/Git Bash use o M{\'e}todo~1 (cURL), depois \texttt{/connect} e \path{./install-skills.sh --opencode}; no Windows nativo (CMD ou PowerShell) use o M{\'e}todo~4 (Scoop ou Chocolatey) e \path{.\install-skills.bat --opencode}. Ignore os demais m{\'e}todos por enquanto. \textbf{Pronto quando}: \texttt{opencode -{}-version} exibe a vers{\~a}o, a contagem de skills confere (ver Se{\c c}{\~a}o Confer{\^e}ncia) e o relat{\'o}rio \texttt{info-skills} lista as skills e os seis subagentes. O controle de vers{\~a}o com Git, ao final do cap{\'i}tulo, {\'e} opcional e pode ficar para depois.
+\textbf{Caminho recomendado na primeira instala{\c c}{\~a}o (cerca de 20 minutos)}: Linux, macOS ou Windows com WSL2/Git Bash use o M{\'e}todo~1 (cURL), depois \texttt{/connect} e \path{./install-skills.sh --opencode}; no Windows nativo (CMD ou PowerShell) use o M{\'e}todo~4 (Scoop ou Chocolatey) e \path{.\install-skills.bat --opencode}. Ignore os demais m{\'e}todos por enquanto. \textbf{Pronto quando}: \texttt{opencode -{}-version} exibe a vers{\~a}o, a contagem de skills confere (ver Se{\c c}{\~a}o Confer{\^e}ncia) e o relat{\'o}rio \texttt{info-skills} lista as skills e os seis subagentes. O controle de vers{\~a}o com Git {\'e} opcional, est{\'a} no Ap{\^e}ndice~\ref{ap:git} e pode ficar para depois.
 \end{dicaopencode}
 
 \begin{conceitochave}
@@ -210,7 +210,7 @@ cd skills-ia-educacao
 \end{lstlisting}
 
 \begin{dicaopencode}
-\textbf{Windows}: execute o comando acima no \textbf{Git Bash} (instalado junto com o Git -- ver Passo~1 da se{\c c}{\~a}o de controle de vers{\~a}o) ou use o \texttt{install-skills.bat} no PowerShell (ver trilha alternativa abaixo). \textbf{Linux/macOS/WSL2}: no terminal padr{\~a}o. Para atualizar o acervo depois, basta executar \texttt{git pull} dentro da pasta e rodar o \texttt{install-skills.sh} (ou \texttt{install-skills.bat}) novamente.
+\textbf{Windows}: execute o comando acima no \textbf{Git Bash} (instalado junto com o Git -- ver Ap{\^e}ndice~\ref{ap:git}) ou use o \texttt{install-skills.bat} no PowerShell (ver trilha alternativa abaixo). \textbf{Linux/macOS/WSL2}: no terminal padr{\~a}o. Para atualizar o acervo depois, basta executar \texttt{git pull} dentro da pasta e rodar o \texttt{install-skills.sh} (ou \texttt{install-skills.bat}) novamente.
 \end{dicaopencode}
 
 \subsubsection{Op{\c c}{\~a}o B -- Baixar o ZIP (sem Git)}
@@ -279,19 +279,9 @@ Antes da instala{\c c}{\~a}o, o par \texttt{doctor-skills.sh}/\texttt{doctor-ski
 
 \subsection{Disponibilizando os Subagentes}
 
-A partir da vers{\~a}o v0.10.8, os scripts \texttt{install-skills.sh} e \texttt{install-skills.bat} copiam automaticamente os seis subagentes do OpenCode quando o destino \texttt{opencode} {\'e} selecionado (\texttt{-{}-opencode}/\texttt{-{}-all}). Basta executar o mesmo comando usado para as skills:
+A partir da vers{\~a}o v0.10.8, os scripts \texttt{install-skills.sh} e \texttt{install-skills.bat} copiam automaticamente os seis subagentes quando o destino \texttt{opencode} {\'e} selecionado (\texttt{-{}-opencode}/\texttt{-{}-all}) -- o mesmo comando da se{\c c}{\~a}o anterior, sem passo adicional. Nos demais destinos (\texttt{-{}-claude}, \texttt{-{}-codex}, \texttt{-{}-antigravity}, \texttt{-{}-antigravity-cli}, \texttt{-{}-gemini}) os subagentes n{\~a}o s{\~a}o copiados, pois s{\~a}o configura{\c c}{\~o}es espec{\'i}ficas do OpenCode.
 
-\begin{lstlisting}[language=bash, caption={Instalando skills e subagentes no Linux, macOS, WSL2 ou Git Bash}]
-./install-skills.sh --opencode
-\end{lstlisting}
-
-No Windows nativo (CMD ou PowerShell), o equivalente {\'e}:
-
-\begin{lstlisting}[language=bash, caption={Instalando skills e subagentes no Windows nativo}]
-.\install-skills.bat --opencode
-\end{lstlisting}
-
-Nos demais destinos (\texttt{-{}-claude}, \texttt{-{}-codex}, \texttt{-{}-antigravity}, \texttt{-{}-antigravity-cli}, \texttt{-{}-gemini}) os subagentes n{\~a}o s{\~a}o copiados, pois eles s{\~a}o configura{\c c}{\~o}es espec{\'i}ficas do OpenCode. Se o OpenCode for executado em uma pasta separada da c{\'o}pia do reposit{\'o}rio, ou se voc{\^e} preferir copiar os arquivos manualmente, a opera{\c c}{\~a}o equivalente {\'e}:
+Se o OpenCode for executado em uma pasta separada da c{\'o}pia do reposit{\'o}rio, ou se voc{\^e} preferir copiar os arquivos manualmente, a opera{\c c}{\~a}o equivalente {\'e} (a partir da raiz do reposit{\'o}rio):
 
 \begin{lstlisting}[language=bash, caption={C{\'o}pia manual dos subagentes (Linux, macOS, WSL2 ou Git Bash)}]
 mkdir -p ~/.config/opencode/agents
@@ -344,77 +334,3 @@ opencode upgrade
   \item \textbf{O modelo gratuito n{\~a}o est{\'a} dispon{\'i}vel}: abra \texttt{/models} e escolha outro modelo. Disponibilidade, limites e nomes podem mudar sem altera{\c c}{\~a}o deste manual.
 \end{itemize}
 
-\section{Controle de Vers{\~a}o com Git para Iniciantes (Opcional)}
-
-Conforme indicado no Cap{\'i}tulo~\ref{cap:desktop}, o controle de vers{\~a}o com Git {\'e} uma medida de seguran{\c c}a \textbf{recomendada, por{\'e}m facultativa}. Docentes de qualquer {\'a}rea podem utiliz{\'a}-lo sem conhecimentos pr{\'e}vios de programa{\c c}{\~a}o: o objetivo aqui n{\~a}o {\'e} colaborar em c{\'o}digo, mas simplesmente \textbf{guardar vers{\~o}es de arquivos} (planos de aula, provas, rubricas) e poder voltar no tempo se algo der errado.
-
-\subsection{O Conceito: um Hist{\'o}rico com Fotografias}
-
-Pense no Git como um sistema que tira uma ``fotografia'' da pasta da disciplina em determinados momentos, chamados \textbf{commits}. Cada fotografia {\'e} acompanhada de uma legenda (a mensagem de commit), por exemplo ``vers{\~a}o final da prova P1''. Se um arquivo for apagado ou estragado depois, {\'e} poss{\'i}vel restaurar qualquer fotografia anterior com um {\'u}nico comando.
-
-\subsection{Passe 1: Instalar o Git}
-
-\begin{itemize}
-  \item \textbf{Windows}: Baixe e instale o instalador oficial em \url{https://git-scm.com/download/win}, mantendo as op{\c c}{\~o}es padr{\~a}o. Ao final, o menu Iniciar passa a oferecer o \textbf{Git Bash}, um terminal simples e amig{\'a}vel para os pr{\'o}ximos passos;
-  \item \textbf{Linux}: Instale pelo gerenciador de pacotes da distribui{\c c}{\~a}o, por exemplo \texttt{sudo apt install git} (Ubuntu/Debian) ou \texttt{sudo dnf install git} (Fedora);
-  \item \textbf{macOS}: Digite \texttt{git --version} no Terminal; se o Git n{\~a}o estiver presente, o pr{\'o}prio macOS oferece a instala{\c c}{\~a}o das ferramentas de linha de comando.
-\end{itemize}
-
-Para conferir se a instala{\c c}{\~a}o deu certo, abra o terminal e digite:
-\begin{lstlisting}[language=bash, caption={Verificando a instala{\c c}{\~a}o do Git}]
-git --version
-\end{lstlisting}
-
-\subsection{Passe 2: Configurar o Nome e o E-mail (uma {\'u}nica vez)}
-
-O Git usa essas informa{\c c}{\~o}es para assinar cada fotografia. N{\~a}o {\'e} necess{\'a}rio criar conta em nenhum servi{\c c}o na internet; os dados ficam apenas no seu computador.
-
-\begin{lstlisting}[language=bash, caption={Configura{\c c}{\~a}o inicial do Git (nome e e-mail)}]
-git config --global user.name "Seu Nome"
-git config --global user.email "seu.email@instituicao.edu.br"
-\end{lstlisting}
-
-\subsection{Passe 3: Tornar a Pasta da Disciplina um Reposit{\'o}rio}
-
-Abra o terminal (\textbf{Windows}: Git Bash, clicando com o bot{\~a}o direito dentro da pasta da disciplina e escolhendo ``Git Bash Here''; \textbf{Linux/macOS}: terminal comum) e execute:
-
-\begin{lstlisting}[language=bash, caption={Criando o reposit{\'o}rio da disciplina}]
-git init
-\end{lstlisting}
-
-Esse comando cria, dentro da pasta, uma subpasta oculta \texttt{.git} que guardar{\'a} todo o hist{\'o}rico. N{\~a}o a apague.
-
-\subsection{Passe 4: O Ciclo B{\'a}sico — Fotografar e Legendar}
-
-A partir de agora, adote este ritual r{\'a}pido sempre que terminar uma vers{\~a}o de um material (ap{\'o}s criar ou editar a prova, o plano de aula, a rubrica):
-
-\begin{lstlisting}[language=bash, caption={Salvando uma nova vers{\~a}o (commit)}]
-git add .
-git commit -m "versao final da prova P1"
-\end{lstlisting}
-
-\begin{itemize}
-  \item \texttt{git add .} significa ``prepare todos os arquivos da pasta para a fotografia'';
-  \item \texttt{git commit -m "..."} significa ``tire a fotografia e legende-a''.
-\end{itemize}
-
-\subsection{Passe 5: Recuperar uma Vers{\~a}o Anterior (se algo der errado)}
-
-Para listar as fotografias j{\'a} tiradas, exibindo legenda, data e um c{\'o}digo identificador:
-\begin{lstlisting}[language=bash, caption={Listando o hist{\'o}rico de vers{\~o}es}]
-git log --oneline
-\end{lstlisting}
-
-Para restaurar um \'arquivo espec\'ifico ao estado da \'ultima fotografia (desfazendo edi{\c c}{\~o}es n{\~a}o desejadas):
-\begin{lstlisting}[language=bash, caption={Restaurando um arquivo para a \'ultima vers{\~a}o salva}]
-git restore prova-p1.md
-\end{lstlisting}
-
-Para voltar o \textbf{projeto inteiro} a uma fotografia anterior (por exemplo, a que aparece como \texttt{abc1234}):
-\begin{lstlisting}[language=bash, caption={Restaurando o projeto a uma vers{\~a}o anterior}]
-git checkout abc1234 -- .
-\end{lstlisting}
-
-\begin{dicaopencode}
-\textbf{Seguran{\c c}a antes de tudo}: fa{\c c}a um \texttt{commit} antes de experimentos ousados (reformular inteiramente uma prova, remover uma se{\c c}{\~a}o do plano, etc.). Assim, qualquer resultado inesperado {\'e} revertido em um {\'u}nico comando, e a interface do OpenCode passa a exibir o hist{\'o}rico de vers{\~o}es diretamente no painel lateral, permitindo acompanhar visualmente o que mudou a cada passo.
-\end{dicaopencode}
