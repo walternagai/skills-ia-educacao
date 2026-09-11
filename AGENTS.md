@@ -62,7 +62,7 @@ Scripts de diagnóstico (mesmos destinos/flags):
 
 ## Auditoria
 
-Rode `./audit.sh` após qualquer mudança — cobre: frontmatter (campos, `version X.Y`, fechamento), 8 seções fixas na ordem canônica, `model: any`, placeholder, dependências externas, `name` == diretório, `name` único, slug e categoria válidos, órfãs, dependências quebradas, nomes canônicos AIAS, cobertura AIAS, forma MEC, itálico em referências, README completo e sincronia de agentes. Na falha, mostra o diagnóstico do check. Use `--quiet` para só exit code 0/1 e falhas.
+Rode `./audit.sh` após qualquer mudança — cobre: frontmatter (campos, `version X.Y`, fechamento), 8 seções fixas na ordem canônica, `model: any`, placeholder, dependências apenas do repositório (`ia-educacao-*`/`aias-consultant`, no formato `- \`slug\``), `name` == diretório, `name` único, slug e categoria válidos, órfãs, dependências quebradas, nomes canônicos AIAS, cobertura AIAS, forma MEC, itálico em referências, README completo e sincronia de agentes. Na falha, mostra o diagnóstico do check. Use `--quiet` para só exit code 0/1 e falhas.
 
 ```bash
 ./audit.sh          # completo

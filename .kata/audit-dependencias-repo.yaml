@@ -1,0 +1,93 @@
+task: audit-dependencias-repo
+status: draft
+domain: docs
+done: "audit.sh reprova qualquer slug de dependência fora do padrão do repositório (ia-educacao-*/aias-consultant) e qualquer linha de ## Dependências fora do formato '- `slug`'; testes negativos confirmam as duas falhas e o acervo real segue com AUDITORIA OK"
+base_commit: "2f1db24db3250441e3c4bc142012835b0b9d2750"
+approved_commit: ""
+fit:
+  trivial: false
+  route: code-loop
+  reason: "Evolução do check de dependências do audit.sh (de lista fixa para regex estrutural) aprovada pelo usuário, com testes negativos/positivos e atualização de documentação."
+  answered: true
+  skipped: false
+think:
+  problem: "O check de dependências externas do audit.sh usa uma lista fixa de 7 skills; qualquer outro slug externo ou linha informal de ## Dependências passa despercebido (foi o caso da linha 'Todas as skills do eixo ética-transversal', corrigida fora do audit)."
+  assumptions:
+    - "O padrão canônico de dependência é '- `ia-educacao-<tema>` ...' ou '- `aias-consultant` ...'."
+    - "O audit.sh é a ferramenta oficial; o novo check deve falhar com diagnóstico claro e não gerar falso positivo no acervo atual."
+  alternatives:
+    - "alt A: manter a lista fixa e ampliá-la -- descartada: sempre ficaria incompleta."
+    - "alt B: só checar slugs, sem checar formato das linhas -- descartada: linhas informais continuariam invisíveis."
+    - "alt C: regex de slug + formato das linhas -- escolhida (recomendação aceita pelo usuário)."
+  unknowns: |
+    RESOLVIDO:
+    1. Falso positivo possível? -> no acervo atual, todos os tokens em ## Dependências são slugs válidos; validado com o audit completo.
+    2. Como testar? -> inserir temporariamente um slug externo e uma linha informal em uma skill, rodar o audit (esperado: falha com as duas mensagens) e restaurar via backup.
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: "Uma função reescrita no audit.sh (sem novas dependências), uma linha de descrição, um parágrafo no AGENTS.md; nenhuma mudança de infraestrutura."
+  answered: true
+  skipped: false
+intent:
+  code_does: "audit.sh aceitava qualquer linha que começasse com '- `' e checava externas apenas contra 7 nomes fixos."
+  check_expects: "O acervo real deve passar; violações simuladas (slug externo e linha informal) devem falhar com mensagens específicas."
+  spec_says: "Usuário aceitou a recomendação de tornar o check estrutural (regex ^ia-educacao-|^aias-consultant$ e formato das linhas)."
+  all_agree: true
+  conflict_resolution: ""
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: audit.sh
+      necessary: true
+      reason: "Reescrita do check_external_deps + descrição do check."
+    - path: AGENTS.md
+      necessary: true
+      reason: "Descrição da auditoria alinhada ao novo comportamento."
+    - path: CHANGELOG.md
+      necessary: true
+      reason: "Convenção do repo."
+    - path: .kata/audit-dependencias-repo.yaml
+      necessary: true
+      reason: "Registro do ciclo kata."
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+verify:
+  ruff_clean: false
+  tests_pass: false
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true
+  attempts: 1
+  hand_back: false
+  notes: "Repo documental: gates Python n/a. Teste negativo (slug externo + linha informal inseridos temporariamente em ia-educacao-rascunho): audit exit 1, com 'slugs fora do padrão (use ia-educacao-* ou aias-consultant): bloom-taxonomy-educator' e a linha do arquivo; o check de quebradas também reprovou o slug. Teste positivo (acervo real): audit exit 0; arquivo de teste restaurado (git limpo)."
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: false
+  auth_present: true
+  pending_owed: true
+  pending_present: true
+auth:
+  action_taken: false
+  authorized: false
+  action: ""
+  quote: ""
+pending:
+  action: "Commit e push da evolução do audit.sh - aguardando autorização do usuário."
+  documented: true
+twins:
+  pattern: "linhas de ## Dependências fora do formato ou com slug externo"
+  result: "Teste com violações simuladas cobriu os dois casos; no acervo real, zero ocorrências (62 skills conformes)."
+  searched: true
+  defect_fixed: false
+  matches_count: 0
+  files_count: 0
+  fix_applied: false

@@ -5,6 +5,14 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.22] — 2026-09-10
+
+### Modificado
+- **`audit.sh` — check estrutural de dependências**: o check de `## Dependências` deixa de usar uma lista fixa de 7 skills externas e passa a reprovar (a) qualquer referência que não seja slug do repositório (`ia-educacao-*` ou `aias-consultant`) e (b) qualquer linha útil fora do formato `- \`slug\``; a descrição do check no relatório da auditoria foi atualizada
+- **`AGENTS.md`**: descrição da auditoria alinhada ao novo comportamento (dependências apenas do repositório, com formato)
+
+---
+
 ## [0.10.21] — 2026-09-10
 
 ### Corrigido

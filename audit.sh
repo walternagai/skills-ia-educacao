@@ -70,11 +70,23 @@ check_placeholder() {
   return 0
 }
 
+# Toda referência em ## Dependências deve ser slug deste repositório
+# (ia-educacao-* | aias-consultant) e toda linha útil deve seguir "- `slug` ...".
 check_external_deps() {
-  local hits
-  hits=$(awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md \
-    | grep -E "bloom-taxonomy-educator|backward-design-stem|dua-educator|active-learning-stem|rubric-design-expert|academic-eval-markdown|stem-mcq-validator")
-  [ -z "$hits" ] || { echo "$hits"; return 1; }
+  local bad_slugs bad_lines pattern
+  pattern='^(ia-educacao-[a-z0-9-]+|aias-consultant)$'
+  bad_slugs=$(awk '/^## Dependências/{flag=1; next} /^## /{flag=0} flag' skills/*/SKILL.md \
+    | grep -oE '`[^`]+`' | tr -d '`' \
+    | grep -vE "$pattern" || true)
+  bad_lines=$(for f in skills/*/SKILL.md; do
+    awk -v F="$f" '/^## Dependências/{flag=1; next} /^## /{flag=0} flag && NF && $0 !~ /^- `/ {print F ": " $0}' "$f"
+  done)
+  if [ -n "$bad_slugs" ] || [ -n "$bad_lines" ]; then
+    [ -n "$bad_lines" ] && printf '%s\n' "$bad_lines"
+    [ -n "$bad_slugs" ] && { echo "slugs fora do padrão (use ia-educacao-* ou aias-consultant):"; printf '%s\n' "$bad_slugs"; }
+    return 1
+  fi
+  return 0
 }
 
 check_name_dir() {
@@ -172,7 +184,7 @@ check "frontmatter completo (campos + version X.Y + fechamento)" check_frontmatt
 check "8 seções fixas na ordem canônica" check_sections
 check "model: any em todas as skills" check_model_any
 check "sem TMP_VERSION_PLACEHOLDER" check_placeholder
-check "sem dependências externas na seção Dependências" check_external_deps
+check "Dependências apenas do repositório (slugs e formato)" check_external_deps
 check "name == diretório" check_name_dir
 check "name único" check_name_unique
 check "slug válido (ia-educacao-* | aias-consultant)" check_slug
