@@ -11,7 +11,7 @@
 
 \section{Introdu{\c c}{\~a}o aos Cen{\'a}rios Pr{\'a}ticos}
 
-Este cap{\'i}tulo foi desenhado para servir como um guia de aplica{\c c}{\~a}o r{\'a}pida. Nele, apresentamos cinco casos de uso t{\'i}picos enfrentados por professores do ensino superior e da educa{\c c}{\~a}o profissional, detalhando as entradas do docente, as chamadas de agentes e os artefatos finais resultantes. A Tabela~\ref{tab:casos-indice} permite localizar rapidamente o caso mais pr{\'o}ximo da sua necessidade.
+Este cap{\'i}tulo foi desenhado para servir como um guia de aplica{\c c}{\~a}o r{\'a}pida. Nele, apresentamos cinco casos de uso t{\'i}picos enfrentados por docentes do ensino superior e da educa{\c c}{\~a}o profissional, detalhando as entradas do docente, as chamadas de agentes e os artefatos finais resultantes. A Tabela~\ref{tab:casos-indice} permite localizar rapidamente o caso mais pr{\'o}ximo da sua necessidade.
 
 \begin{table}[tbp]
   \centering
@@ -50,10 +50,10 @@ Para reproduzir qualquer caso, trabalhe sempre nesta ordem: (1) substitua o tema
 \section{Caso 1: Planejando uma Disciplina do Zero com \emph{Backward Design}}
 
 \subsection{Contexto e Desafio}
-O professor assume a disciplina de \emph{Estruturas de Dados e Algoritmos} (60 horas) e deseja estruturar um plano de ensino inovador, alinhado ao \emph{Referencial do MEC} \cite{brasil2026referencial}, com metodologias ativas e enquadramento intencional na Escala AIAS.
+O docente assume a disciplina de \emph{Estruturas de Dados e Algoritmos} (60 horas) e deseja estruturar um plano de ensino inovador, alinhado ao \emph{Referencial do MEC} \cite{brasil2026referencial}, com metodologias ativas e enquadramento intencional na Escala AIAS.
 
 \subsection{Execu{\c c}{\~a}o no OpenCode}
-No terminal ou na interface gr{\'a}fica, o professor invoca o subagente consultivo:
+No terminal ou na interface gr{\'a}fica, o docente invoca o subagente consultivo:
 
 \begin{lstlisting}[language=bash]
 opencode
@@ -126,7 +126,7 @@ O subagente gera um arquivo Markdown/LaTeX contendo:
 \section{Caso 3: Ciclo de Feedback Formativo e Inclus{\~a}o}
 
 \subsection{Contexto e Desafio}
-O professor recebeu a entrega de um estudante de gradua{\c c}{\~a}o que solicitou um feedback com linguagem mais concisa e organiza{\c c}{\~a}o em etapas. O trabalho apresenta excelentes solu{\c c}{\~o}es algor{\'i}tmicas, mas o relat{\'o}rio textual possui estrutura{\c c}{\~a}o truncada e falta a an{\'a}lise de casos de teste de borda.
+O docente recebeu a entrega de um estudante de gradua{\c c}{\~a}o que solicitou um feedback com linguagem mais concisa e organiza{\c c}{\~a}o em etapas. O trabalho apresenta excelentes solu{\c c}{\~o}es algor{\'i}tmicas, mas o relat{\'o}rio textual possui estrutura{\c c}{\~a}o truncada e falta a an{\'a}lise de casos de teste de borda.
 
 \subsection{Execu{\c c}{\~a}o no OpenCode}
 \begin{tcolorbox}[colback=white, colframe=boxborder, arc=1mm, title={Comando Enviado pelo Professor}]
@@ -166,7 +166,7 @@ O docente quer transformar uma aula te{\'o}rica expositiva sobre \emph{Termodin{
 \subsection{Artefato Entregue}
 O OpenCode estrutura:
 \begin{itemize}
-  \item \textbf{Guia Pr{\'e}-Aula (15 minutos discentes)}: Leitura dirigida de duas p{\'a}ginas com perguntas de autorreflex{\~a}o para o aluno trazer anotadas;
+  \item \textbf{Guia Pr{\'e}-Aula (15 minutos discentes)}: Leitura dirigida de duas p{\'a}ginas com perguntas de autorreflex{\~a}o para o estudante trazer anotadas;
   \item \textbf{Din{\^a}mica Presencial}: Divis{\~a}o dos 100 minutos em mini-blocos explicativos de 10 minutos intercalados por \emph{ConcepTests};
   \item \textbf{Quest{\~o}es Conceituais}: Itens qualitativos sem f{\'o}rmulas num{\'e}ricas que for{\c c}am os estudantes a discutir em duplas sobre entropia e irreversibilidade antes da segunda vota{\c c}{\~a}o.
 \end{itemize}
@@ -295,7 +295,7 @@ Os perfis por {\'a}rea seguem a tabela de adapta{\c c}{\~o}es embutida nos subag
 
 \section{Checklist de Valida{\c c}{\~a}o Docente Pr{\'e}-Aplica{\c c}{\~a}o}
 
-Antes de disponibilizar qualquer material gerado com o aux{\'i}lio do OpenCode aos estudantes, o professor deve realizar a checagem dos seis pontos da Tabela~\ref{tab:checklist-docente}.
+Antes de disponibilizar qualquer material gerado com o aux{\'i}lio do OpenCode aos estudantes, o docente deve realizar a checagem dos seis pontos da Tabela~\ref{tab:checklist-docente}.
 
 \begin{table}[htbp]
   \centering
@@ -314,7 +314,7 @@ Antes de disponibilizar qualquer material gerado com o aux{\'i}lio do OpenCode a
     \addlinespace
     \textbf{4} & Acessibilidade DUA & A linguagem {\'e} clara e inclusiva? & Simplifique par{\'a}grafos densos com \path{ia-educacao-dua}. \\
     \addlinespace
-    \textbf{5} & Autonomia Humana & A avalia{\c c}{\~a}o final depende do professor? & Garanta que o parecer passe pelo seu crivo cr{\'i}tico. \\
+    \textbf{5} & Autonomia Humana & A avalia{\c c}{\~a}o final depende do docente? & Garanta que o parecer passe pelo seu crivo cr{\'i}tico. \\
     \addlinespace
     \textbf{6} & Prote{\c c}{\~a}o de Dados & Os insumos podem ser enviados a este provedor? & Remova identificadores, reduza os dados ou use um fluxo institucional autorizado. \\
     \bottomrule

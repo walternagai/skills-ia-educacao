@@ -98,8 +98,11 @@ Para garantir que as instru{\c c}{\~o}es estejam sempre atualizadas, o reposit{\
 \subsection{6. Artes{\~a}o de Skills (\texttt{artesao-de-skills})}
 \begin{itemize}
   \item \textbf{Foco}: Engenheiro de prompt e guardi{\~a}o da integridade do reposit{\'o}rio. Cria novas skills, refatora m{\'o}dulos existentes e audita o grafo com \texttt{audit.sh};
-  \item \textbf{Permiss{\~o}es}: Leitura e escrita (\texttt{edit: allow}, \texttt{bash: allow}).
+  \item \textbf{Permiss{\~o}es}: Leitura e escrita (\texttt{edit: allow}, \texttt{bash: allow});
+  \item \textbf{Skills Orquestradas}: \path{aias-consultant} ({\^a}ncora das restri{\c c}{\~o}es de schema AIAS); as demais skills entram como objetos de cria{\c c}{\~a}o, refatora{\c c}{\~a}o e auditoria.
 \end{itemize}
+
+A Tabela~\ref{tab:agentes-sintese} sintetiza os seis subagentes, suas permiss{\~o}es, insumos e entreg{\'a}veis.
 
 \begin{table}[htbp]
   \centering
@@ -157,7 +160,7 @@ Esta categoria responde a uma pergunta simples, mas decisiva: \emph{para qual et
 
 \subsection{Categoria 2: Forma{\c c}{\~a}o Docente (18 Skills)}
 
-Esta {\'e} a maior categoria do acervo e responde a outra pergunta central: \emph{como o professor ensina?} Ela concentra o aperfei{\c c}oamento do pr{\'o}prio of{\'i}cio docente: o dom{\'i}nio de metodologias ativas (PBL, sala de aula invertida, \emph{Peer Instruction}, TBL), o alinhamento cognitivo das atividades (Taxonomia de Bloom, metacogni{\c c}{\~a}o, pensamento cr{\'i}tico), o planejamento did{\'a}tico (aulas, planejamento reverso, interdisciplinaridade) e as estrat{\'e}gias de forma{\c c}{\~a}o inicial e continuada. Independentemente da {\'a}rea do conhecimento, o docente que deseja renovar sua pr{\'a}tica pedag{\'o}gica com IA encontra aqui o repert{\'o}rio metodol{\'o}gico de que precisa.
+Esta {\'e} a maior categoria do acervo e responde a outra pergunta central: \emph{como o docente ensina?} Ela concentra o aperfei{\c c}oamento do pr{\'o}prio of{\'i}cio docente: o dom{\'i}nio de metodologias ativas (PBL, sala de aula invertida, \emph{Peer Instruction}, TBL), o alinhamento cognitivo das atividades (Taxonomia de Bloom, metacogni{\c c}{\~a}o, pensamento cr{\'i}tico), o planejamento did{\'a}tico (aulas, planejamento reverso, interdisciplinaridade) e as estrat{\'e}gias de forma{\c c}{\~a}o inicial e continuada. Independentemente da {\'a}rea do conhecimento, o docente que deseja renovar sua pr{\'a}tica pedag{\'o}gica com IA encontra aqui o repert{\'o}rio metodol{\'o}gico de que precisa.
 
 \begin{table}[htbp]
   \centering
@@ -267,7 +270,7 @@ Esta categoria responde {\`a} pergunta da justi{\c c}a: \emph{quem pode ser deix
 
 \subsection{Categoria 5: Ferramentas Pr{\'a}ticas (26 Skills)}
 
-Esta categoria responde {\`a} pergunta da execu{\c c}{\~a}o: \emph{o que o docente precisa produzir ou corrigir agora?} Ela concentra os instrumentos prontos da rotina acad{\^e}mica -- avalia{\c c}{\~o}es (formativa, diagn{\'o}stica, por compet{\^e}ncias, oral, em grupo, de projeto e autoavalia{\c c}{\~a}o), rubricas, bancos de quest{\~o}es e MCQs, feedback, portf{\'o}lios, bem como t{\'e}cnicas de racioc{\'i}nio conciso e verifica{\c c}{\~a}o independente (Chain of Draft e Chain of Verification) e apoios para pesquisa, escrita acad{\^e}mica e visualiza{\c c}{\~a}o de dados. {\'E} a categoria mais numerosa justamente por reunir, em um {\'u}nico lugar, a maioria dos chamados \emph{de uso imediato} que o professor faz ao OpenCode no dia a dia. \'E aqui que residem tamb{\'e}m a consultoria da Escala AIAS (\path{aias-consultant}) e as skills de suporte {\`a} gest{\~a}o institucional e {\`a} inova{\c c}{\~a}o educacional.
+Esta categoria responde {\`a} pergunta da execu{\c c}{\~a}o: \emph{o que o docente precisa produzir ou corrigir agora?} Ela concentra os instrumentos prontos da rotina acad{\^e}mica -- avalia{\c c}{\~o}es (formativa, diagn{\'o}stica, por compet{\^e}ncias, oral, em grupo, de projeto e autoavalia{\c c}{\~a}o), rubricas, bancos de quest{\~o}es e MCQs, feedback, portf{\'o}lios, bem como t{\'e}cnicas de racioc{\'i}nio conciso e verifica{\c c}{\~a}o independente (Chain of Draft e Chain of Verification) e apoios para pesquisa, escrita acad{\^e}mica e visualiza{\c c}{\~a}o de dados. {\'E} a categoria mais numerosa justamente por reunir, em um {\'u}nico lugar, a maioria dos chamados \emph{de uso imediato} que o docente faz ao OpenCode no dia a dia. \'E aqui que residem tamb{\'e}m a consultoria da Escala AIAS (\path{aias-consultant}) e as skills de suporte {\`a} gest{\~a}o institucional e {\`a} inova{\c c}{\~a}o educacional.
 
 \begin{table}[htbp]
   \centering
@@ -306,7 +309,7 @@ Esta categoria responde {\`a} pergunta da execu{\c c}{\~a}o: \emph{o que o docen
     \midrule
     \path{ia-educacao-rascunho} & T{\'e}cnica \emph{Chain of Draft} (CoD): gera{\c c}{\~a}o de esbo{\c c}os intermedi{\'a}rios para reflex{\~a}o. \\
     \path{ia-educacao-verificacao} & T{\'e}cnica \emph{Chain of Verification} (CoVe): auditoria independente contra alucina{\c c}{\~o}es. \\
-    \path{ia-educacao-personalizacao} & Trilhas de aprendizagem diferenciadas conforme o ritmo e dificuldades do aluno. \\
+    \path{ia-educacao-personalizacao} & Trilhas de aprendizagem diferenciadas conforme o ritmo e dificuldades do estudante. \\
     \path{ia-educacao-sti} & Sistemas Tutoriais Inteligentes (STIs) para resolu{\c c}{\~a}o assistida de problemas. \\
     \path{ia-educacao-ia-desplugada} & Atividades sem dispositivos digitais para ensino de l{\'o}gica de IA e {\'e}tica. \\
     \path{ia-educacao-sandbox} & Ambientes controlados para testagem segura de novas aplica{\c c}{\~o}es educacionais. \\

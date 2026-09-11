@@ -5,6 +5,18 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.17] — 2026-09-10
+
+### Modificado
+- **Manual — uniformização de vocabulário e remissões (todos os capítulos)**:
+  - "aluno" → "estudante" (11 ocorrências) e referências genéricas a "professor" → "docente" (mantidos título do manual, prompts em primeira pessoa e "futuros professores" na licenciatura)
+  - Voz alinhada nos trechos instrucionais dos caps. 5 e 6 ("Você pode...")
+  - Remissões adicionadas para a figura do ciclo de ativação (cap. 3) e para a tabela-síntese dos subagentes (cap. 9), cujos rótulos não eram citados no texto
+  - Cap. 9: `artesao-de-skills` ganha a lista "Skills Orquestradas" (âncora `aias-consultant`), como os demais subagentes
+  - PDF recompilado (76 páginas)
+
+---
+
 ## [0.10.16] — 2026-09-10
 
 ### Adicionado

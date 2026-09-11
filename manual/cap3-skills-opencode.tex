@@ -82,7 +82,7 @@ Ap{\'o}s o frontmatter, o corpo do texto {\'e} organizado em exatamente oito se{
   \item \textbf{\texttt{\#\# Workflow}}: Apresenta o passo a passo cognitivo numerado (decomposto em etapas claras) que a IA deve executar mentalmente para resolver o problema sem queimar etapas;
   \item \textbf{\texttt{\#\# Formato de Sa{\'i}da}}: Descreve as estruturas, tabelas, campos obrigat{\'o}rios e modelos de documentos gerados como resultado final;
   \item \textbf{\texttt{\#\# Exemplos}}: Fornece ao menos um cen{\'a}rio aut{\^e}ntico de entrada e a correspondente sa{\'i}da esperada, servindo como refer{\^e}ncia para a calibra{\c c}{\~a}o do modelo (\emph{few-shot learning}, isto {\'e}: o exemplo mostra ao modelo o formato esperado);
-  \item \textbf{\texttt{\#\# Limita{\c c}{\~o}es}}: Circunscreve explicitamente o escopo da skill, delimitando o que ela n{\~a}o realiza e quando o professor deve buscar outros instrumentos ou an{\'a}lise humana;
+  \item \textbf{\texttt{\#\# Limita{\c c}{\~o}es}}: Circunscreve explicitamente o escopo da skill, delimitando o que ela n{\~a}o realiza e quando o docente deve buscar outros instrumentos ou an{\'a}lise humana;
   \item \textbf{\texttt{\#\# Depend{\^e}ncias}}: Lista formal de outras skills do reposit{\'o}rio (identificadas exclusivamente pelos seus slugs can{\^o}nicos) que complementam a a{\c c}{\~a}o da skill atual;
   \item \textbf{\texttt{\#\# Refer{\^e}ncias}}: Bibliografia cient{\'i}fica e normativa que ancora as t{\'e}cnicas apresentadas, formatada integralmente no padr{\~a}o ABNT.
 \end{enumerate}
@@ -94,6 +94,8 @@ O \textbf{OpenCode} implementa uma arquitetura baseada em agentes com chamada de
 \begin{conceitochave}
 \textbf{Invoca{\c c}{\~a}o por Barra (\emph{Slash Command})}: Toda skill deste acervo pode ser acionada pelo usu{\'a}rio por meio da sintaxe \texttt{/nome-da-skill}, com a barra antecedendo o slug can{\^o}nico. Por exemplo, a skill de rubricas {\'e} invocada como \texttt{/ia-educacao-rubrica} e a consultoria da Escala AIAS como \texttt{/aias-consultant}. Tamb{\'e}m {\'e} poss{\'i}vel mencionar a skill no texto do \emph{prompt}, mas esse reconhecimento depende do cliente e do modelo; use a barra quando precisar de uma ativa{\c c}{\~a}o determin{\'i}stica.
 \end{conceitochave}
+
+A Figura~\ref{fig:fluxo-skill} sintetiza esse ciclo, da declara{\c c}{\~a}o inicial ao racioc{\'i}nio guiado.
 
 \begin{figure}[htbp]
   \centering

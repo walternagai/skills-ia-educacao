@@ -5,7 +5,7 @@
 
 O reposit{\'o}rio \texttt{skills-ia-educacao} constitui um acervo documental e tecnol{\'o}gico concebido para preencher a lacuna entre as diretrizes normativas (como o Referencial do MEC \cite{brasil2026referencial} e as resolu{\c c}{\~o}es universit{\'a}rias, por exemplo, da UNIFEI \cite{unifei2025graduacao}) e a pr{\'a}tica cotidiana do corpo docente. Trata-se de produto do \textbf{Projeto de Ensino AvalIA -- Kit de Avalia{\c c}{\~a}o Formativa com Intelig{\^e}ncia Artificial para Professores do Ensino Superior}, desenvolvido com o apoio da Pr{\'o}-Reitoria de Gradua{\c c}{\~a}o da UNIFEI: sua finalidade {\'e} instrumentar o corpo docente com recursos prontos de avalia{\c c}{\~a}o formativa mediada por IA, materializando as diretrizes institucionais em ferramentas de uso imediato.
 
-Em vez de exigir que cada professor se torne um especialista em engenharia de \emph{prompts} complexos, o reposit{\'o}rio disponibiliza \textbf{62 skills tem{\'a}ticas}, reutiliz{\'a}veis em CLIs compat{\'i}veis com o padr{\~a}o Agent Skills, e \textbf{6 subagentes} configurados especificamente para operar no \textbf{OpenCode} (\url{https://opencode.ai}).
+Em vez de exigir que cada docente se torne um especialista em engenharia de \emph{prompts} complexos, o reposit{\'o}rio disponibiliza \textbf{62 skills tem{\'a}ticas}, reutiliz{\'a}veis em CLIs compat{\'i}veis com o padr{\~a}o Agent Skills, e \textbf{6 subagentes} configurados especificamente para operar no \textbf{OpenCode} (\url{https://opencode.ai}).
 
 \begin{conceitochave}
 \textbf{OpenCode, skill e subagente em tr{\^e}s frases}: pense no \textbf{OpenCode} como a oficina (o programa que executa as tarefas); na \textbf{skill} como a ficha de instru{\c c}{\~o}es de uma tarefa (ex.: \texttt{/ia-educacao-rubrica} ensina a montar uma rubrica); e no \textbf{subagente} como o especialista que segue v{\'a}rias fichas para entregar um trabalho completo (ex.: \texttt{@construtor-de-avaliacoes} monta prova com rubrica e gabarito). Voc{\^e} n{\~a}o precisa decorar nada: basta descrever o que quer ou digitar a barra (\texttt{/}) para skills e o arroba (\texttt{@}) para subagentes.
@@ -79,7 +79,7 @@ Historicamente, as institui{\c c}{\~o}es de ensino superior priorizaram a \textb
 Embora a certifica{\c c}{\~a}o cumpra papel institucional regulat{\'o}rio, a literatura cient{\'i}fica internacional h{\'a} d{\'e}cadas demonstra que a avalia{\c c}{\~a}o somativa isolada possui impacto limitado sobre a qualidade efetiva da aprendizagem \cite{black1998assessment}. Em contrapartida, a \textbf{avalia{\c c}{\~a}o formativa} concebe a avalia{\c c}{\~a}o como parte intr{\'i}nseca do ato de ensinar e aprender. 
 
 \begin{conceitochave}
-\textbf{Avalia{\c c}{\~a}o Formativa}: Qualquer processo avaliativo planejado e implementado ao longo do percurso de aprendizagem com a finalidade de coletar evid{\^e}ncias sobre a compreens{\~a}o dos estudantes, fornecendo informa{\c c}{\~o}es que permitam a professores e alunos ajustarem o ensino e as estrat{\'e}gias de estudo em tempo real \cite{black1998assessment}.
+\textbf{Avalia{\c c}{\~a}o Formativa}: Qualquer processo avaliativo planejado e implementado ao longo do percurso de aprendizagem com a finalidade de coletar evid{\^e}ncias sobre a compreens{\~a}o dos estudantes, fornecendo informa{\c c}{\~o}es que permitam a docentes e estudantes ajustarem o ensino e as estrat{\'e}gias de estudo em tempo real \cite{black1998assessment}.
 \end{conceitochave}
 
 Segundo a formula{\c c}{\~a}o seminal de \citeonline{sadler1989formative}, a avalia{\c c}{\~a}o formativa eficaz exige que o estudante compreenda tr{\^e}s elementos fundamentais:
@@ -89,13 +89,13 @@ Segundo a formula{\c c}{\~a}o seminal de \citeonline{sadler1989formative}, a ava
   \item \textbf{As a{\c c}{\~o}es de fechamento do hiato (\emph{closing the gap})}: estrat{\'e}gias claras e acion{\'a}veis para mover o desempenho atual em dire{\c c}{\~a}o ao padr{\~a}o desejado.
 \end{enumerate}
 
-Em ambientes educacionais permeados por IA, essa concep{\c c}{\~a}o ganha urg{\^e}ncia. Se uma m{\'a}quina pode redigir a resposta final, o valor pedag{\'o}gico desloca-se para a capacidade do aluno em interrogar o problema, planejar abordagens, validar solu{\c c}{\~o}es, corrigir inconsist{\^e}ncias e justificar decis{\~o}es tomadas.
+Em ambientes educacionais permeados por IA, essa concep{\c c}{\~a}o ganha urg{\^e}ncia. Se uma m{\'a}quina pode redigir a resposta final, o valor pedag{\'o}gico desloca-se para a capacidade do estudante em interrogar o problema, planejar abordagens, validar solu{\c c}{\~o}es, corrigir inconsist{\^e}ncias e justificar decis{\~o}es tomadas.
 
 \section{A Escala AIAS: Transpar{\^e}ncia e Intencionalidade Pedag{\'o}gica}
 
 Para que a integra{\c c}{\~a}o da intelig{\^e}ncia artificial n{\~a}o ocorra em um v{\'a}cuo normativo ou sob regras amb{\'i}guas, a literatura contempor{\^a}nea desenvolveu a \textbf{AIAS} (\emph{Artificial Intelligence Assessment Scale}), proposta originalmente por \citeonline{perkins2024aias} e refinada por \citeonline{perkins2025reimagining}.
 
-A AIAS {\'e} um referencial conceitual que classifica o n{\'i}vel de uso de IA admitido ou exigido em uma determinada atividade avaliativa. Ela n{\~a}o se destina a vigiar o aluno, mas sim a explicitar o contrato pedag{\'o}gico entre docente e discente. A Tabela~\ref{tab:aias-escala} apresenta os cinco n{\'i}veis can{\^o}nicos adotados estritamente em todo o ecossistema deste reposit{\'o}rio.
+A AIAS {\'e} um referencial conceitual que classifica o n{\'i}vel de uso de IA admitido ou exigido em uma determinada atividade avaliativa. Ela n{\~a}o se destina a vigiar o estudante, mas sim a explicitar o contrato pedag{\'o}gico entre docente e discente. A Tabela~\ref{tab:aias-escala} apresenta os cinco n{\'i}veis can{\^o}nicos adotados estritamente em todo o ecossistema deste reposit{\'o}rio.
 
 \begin{table}[htbp]
   \centering
@@ -122,11 +122,11 @@ A AIAS {\'e} um referencial conceitual que classifica o n{\'i}vel de uso de IA a
 Duas propriedades estruturais da Escala AIAS s{\~a}o essenciais e devem orientar todo o desenho instrucional:
 \begin{itemize}
   \item \textbf{Car{\'a}ter n{\~a}o hier{\'a}rquico}: Nenhum n{\'i}vel {\'e} intrinsecamente superior ou mais nobre do que outro. Uma atividade no N{\'i}vel~1 (Sem IA) pode demandar criatividade extrema e racioc{\'i}nio anal{\'i}tico profundo (por exemplo, um debate oral ou uma solu{\c c}{\~a}o manuscrita em sala), enquanto uma atividade no N{\'i}vel~4 pode focar em habilidades de auditoria cr{\'i}tica de c{\'o}digo ou revis{\~a}o de relat{\'o}rios. A escolha do n{\'i}vel deriva estritamente dos \textbf{objetivos de aprendizagem} visados;
-  \item \textbf{Car{\'a}ter cumulativo}: N{\'i}veis superiores autorizam as pr{\'a}ticas dos n{\'i}veis inferiores, salvo proibi{\c c}{\~a}o expressa no enunciado. Por exemplo, uma atividade AIAS~3 admite que o aluno realize idea{\c c}{\~a}o inicial com a ferramenta (pr{\'a}tica do N{\'i}vel~2), avan{\c c}ando para o co-refinamento de se{\c c}{\~o}es espec{\'i}ficas.
+  \item \textbf{Car{\'a}ter cumulativo}: N{\'i}veis superiores autorizam as pr{\'a}ticas dos n{\'i}veis inferiores, salvo proibi{\c c}{\~a}o expressa no enunciado. Por exemplo, uma atividade AIAS~3 admite que o estudante realize idea{\c c}{\~a}o inicial com a ferramenta (pr{\'a}tica do N{\'i}vel~2), avan{\c c}ando para o co-refinamento de se{\c c}{\~o}es espec{\'i}ficas.
 \end{itemize}
 
 \begin{atencaopedagogica}
-\textbf{Declara{\c c}{\~a}o Pr{\'e}via Obrigat{\'o}ria}: O n{\'i}vel AIAS deve ser declarado de forma inequ{\'i}voca no enunciado da atividade e no plano de ensino \emph{antes} do in{\'i}cio da tarefa. Exigir do aluno uma postura em rela{\c c}{\~a}o {\`a} IA sem defini{\c c}{\~a}o formal pr{\'e}via compromete a seguran{\c c}a jur{\'i}dica e pedag{\'o}gica da avalia{\c c}{\~a}o.
+\textbf{Declara{\c c}{\~a}o Pr{\'e}via Obrigat{\'o}ria}: O n{\'i}vel AIAS deve ser declarado de forma inequ{\'i}voca no enunciado da atividade e no plano de ensino \emph{antes} do in{\'i}cio da tarefa. Exigir do estudante uma postura em rela{\c c}{\~a}o {\`a} IA sem defini{\c c}{\~a}o formal pr{\'e}via compromete a seguran{\c c}a jur{\'i}dica e pedag{\'o}gica da avalia{\c c}{\~a}o.
 \end{atencaopedagogica}
 
 Ao planejar uma atividade, separe duas perguntas: a IA generativa est{\'a} \textbf{permitida} e a IA generativa est{\'a} \textbf{obrigat{\'o}ria}? O n{\'i}vel AIAS informa o papel da IA no processo, mas o enunciado deve esclarecer tamb{\'e}m quais evid{\^e}ncias ser{\~a}o avaliadas, como o uso ser{\'a} declarado e quais tecnologias assistivas ou adapta{\c c}{\~o}es institucionais permanecem autorizadas. ``Sem IA'' deve ser entendido como sem IA generativa na tarefa, n{\~a}o como proibi{\c c}{\~a}o de acessibilidade.
