@@ -5,6 +5,19 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.15] — 2026-09-10
+
+### Corrigido
+- **Manual — precisão factual e consistência (caps. 3, 4, 6, 9 e 10)**:
+  - Cap. 6: alternância de modelo corrigida de `/model` para `/models`; remissões "ver Seção 3" trocadas por referência explícita ao modelo 3 (Mimo V2.5 Free), pois as subseções do capítulo não são numeradas
+  - Cap. 4: exemplo de versão alinhado a `1.18.30` (mesmo valor do Cap. 10); enumeração dos destinos de instalação passa a incluir `--antigravity-cli`; remissão ao `info-skills` corrigida (era citado como "o mesmo script de relatório" antes de sua apresentação)
+  - Cap. 3: descrição do campo `name` alinhada ao `audit.sh` (o valor do campo deve coincidir com a pasta, não "o nome do arquivo"); claims da auditoria ajustados ao comportamento real do script (órfãs apenas entre skills, sem checagem de ciclos; "rotina de auditoria automatizada" em vez de "suíte contínua")
+  - Cap. 9: Chain of Draft deixa de ser descrita como "validação anti-alucinação" (agora "raciocínio conciso e verificação independente")
+  - Cap. 10: Caso 5 passa a pedir "questões de múltipla escolha diagnósticas" (antes "discursivas" com distratores e skill de MCQ, em contradição); caixa de validação empírica reescrita para explicitar os escopos (Casos 1–4 e cenários STHEM na 1.18.29; Caso 5 na 1.18.30)
+  - PDF recompilado (76 páginas)
+
+---
+
 ## [0.10.14] — 2026-09-10
 
 ### Corrigido

@@ -150,7 +150,7 @@ Para confirmar se o execut{\'a}vel est{\'a} operando corretamente, consulte a ve
 \begin{lstlisting}[language=bash]
 opencode --version
 \end{lstlisting}
-A sa{\'i}da dever{\'a} exibir o n{\'u}mero da vers{\~a}o instalada (por exemplo, \texttt{1.18.29}).
+A sa{\'i}da dever{\'a} exibir o n{\'u}mero da vers{\~a}o instalada (por exemplo, \texttt{1.18.30}).
 
 \section{Configura{\c c}{\~a}o de Provedores e Modelos de IA}
 
@@ -258,9 +258,9 @@ No \textbf{Windows nativo} (PowerShell), o mesmo cheque pode ser feito com:
 (Test-Path "$env:USERPROFILE\.config\opencode\skills\aias-consultant")
 \end{lstlisting}
 
-O retorno dever{\'a} apontar 61 skills com o prefixo institucional (mais a skill especial \texttt{aias-consultant}, totalizando 62 unidades). Para conferir os subagentes, o mesmo script de relat{\'o}rio indica se os seis arquivos est{\~a}o presentes em \path{~/.config/opencode/agents/}.
+O retorno dever{\'a} apontar 61 skills com o prefixo institucional (mais a skill especial \texttt{aias-consultant}, totalizando 62 unidades). Para conferir os subagentes, o script de relat{\'o}rio \texttt{info-skills} (apresentado a seguir) indica se os seis arquivos est{\~a}o presentes em \path{~/.config/opencode/agents/}.
 
-Alternativamente, o reposit{\'o}rio prov{\^e} o script de relat{\'o}rio \texttt{info-skills}, que resume o estado da instala{\c c}{\~a}o em todos os CLIs de uma vez (skills completo/parcial/nada por destino e os seis subagentes do OpenCode), dispensando os comandos manuais:
+O reposit{\'o}rio prov{\^e} esse relat{\'o}rio pelo script \texttt{info-skills}, que resume o estado da instala{\c c}{\~a}o em todos os CLIs de uma vez (skills completo/parcial/nada por destino e os seis subagentes do OpenCode), dispensando os comandos manuais:
 
 \begin{lstlisting}[language=bash, caption={Estado da instala{\c c}{\~a}o via script de relat{\'o}rio (Bash e Windows nativo)}]
 # Linux, macOS e WSL2 (ou Git Bash no Windows)
@@ -286,7 +286,7 @@ No Windows nativo (CMD ou PowerShell), o equivalente {\'e}:
 .\install-skills.bat --opencode
 \end{lstlisting}
 
-Nos demais destinos (\texttt{-{}-claude}, \texttt{-{}-codex}, \texttt{-{}-antigravity}, \texttt{-{}-gemini}) os subagentes n{\~a}o s{\~a}o copiados, pois eles s{\~a}o configura{\c c}{\~o}es espec{\'i}ficas do OpenCode. Se o OpenCode for executado em uma pasta separada da c{\'o}pia do reposit{\'o}rio, ou se voc{\^e} preferir copiar os arquivos manualmente, a opera{\c c}{\~a}o equivalente {\'e}:
+Nos demais destinos (\texttt{-{}-claude}, \texttt{-{}-codex}, \texttt{-{}-antigravity}, \texttt{-{}-antigravity-cli}, \texttt{-{}-gemini}) os subagentes n{\~a}o s{\~a}o copiados, pois eles s{\~a}o configura{\c c}{\~o}es espec{\'i}ficas do OpenCode. Se o OpenCode for executado em uma pasta separada da c{\'o}pia do reposit{\'o}rio, ou se voc{\^e} preferir copiar os arquivos manualmente, a opera{\c c}{\~a}o equivalente {\'e}:
 
 \begin{lstlisting}[language=bash, caption={C{\'o}pia manual dos subagentes (Linux, macOS, WSL2 ou Git Bash)}]
 mkdir -p ~/.config/opencode/agents

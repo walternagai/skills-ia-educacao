@@ -65,7 +65,7 @@ description: Especialista em design e construcao de rubricas de avaliacao para e
 
 Os campos possuem especifica{\c c}{\~o}es r{\'i}gidas auditadas por script:
 \begin{itemize}
-  \item \texttt{name}: Identificador {\'u}nico (slug) em min{\'u}sculas. Segue o prefixo padronizado \texttt{ia-educacao-<tema>} (com a {\'u}nica exce{\c c}{\~a}o de \texttt{aias-consultant}). O nome do arquivo deve ser rigorosamente id{\^e}ntico ao nome da pasta que o abriga;
+  \item \texttt{name}: Identificador {\'u}nico (slug) em min{\'u}sculas. Segue o prefixo padronizado \texttt{ia-educacao-<tema>} (com a {\'u}nica exce{\c c}{\~a}o de \texttt{aias-consultant}). O valor deste campo deve coincidir rigorosamente com o nome da pasta que abriga a skill;
   \item \texttt{category}: Classifica{\c c}{\~a}o temática em uma das cinco categorias oficiais do acervo: \texttt{niveis-ensino}, \texttt{formacao-docente}, \texttt{etica-governanca}, \texttt{inclusao-equidade} ou \texttt{ferramentas-praticas};
   \item \texttt{model}: Sempre fixado em \texttt{any}. Garante total independ{\^e}ncia tecnol{\'o}gica, indicando que a l{\'o}gica instrucional funciona com modelos de qualquer provedor (OpenAI, Anthropic, Google, DeepSeek ou modelos locais de c{\'o}digo aberto);
   \item \texttt{version}: Controle sem{\^a}ntico de vers{\~a}o em dois d{\'i}gitos (\texttt{X.Y}), sendo incrementado a cada altera{\c c}{\~a}o metodol{\'o}gica ou estrutural;
@@ -124,14 +124,14 @@ O \textbf{OpenCode} implementa uma arquitetura baseada em agentes com chamada de
 \textbf{Voc{\^e} n{\~a}o precisa conhecer o funcionamento interno das skills para utiliz{\'a}-las}: esta se{\c c}{\~a}o descreve como o acervo {\'e} mantido e auditado ({\'u}til para quem deseja criar ou modificar skills). Para o uso em sala de aula, basta digitar \texttt{/nome-da-skill} ou mencionar o slug no \emph{prompt} -- o restante {\'e} transparente para o usu{\'a}rio. Se voc{\^e} n{\~a}o pretende criar skills, pode seguir diretamente para o Cap{\'i}tulo~\ref{cap:casos-de-uso} e voltar aqui depois.
 \end{dicaopencode}
 
-As 62 skills do reposit{\'o}rio n{\~a}o operam isoladamente; constituem um \textbf{grafo direcionado e ac{\'i}clico de conhecimento pedag{\'o}gico}. 
+As 62 skills do reposit{\'o}rio n{\~a}o operam isoladamente; constituem um \textbf{grafo direcionado de conhecimento pedag{\'o}gico}. 
 
 Por exemplo, a skill de constru{\c c}{\~a}o de avalia{\c c}{\~o}es (\texttt{ia-educacao-avaliacao}) aponta depend{\^e}ncias formais para \texttt{ia-educacao-bloom} (para alinhamento cognitivo), \texttt{ia-educacao-rubrica} (para crit{\'e}rios de corre{\c c}{\~a}o), \texttt{aias-consultant} (para governan{\c c}a do uso de IA) e \texttt{ia-educacao-planejamento-reverso} (para enquadramento curricular).
 
-Para assegurar que o grafo n{\~a}o se degenere com o crescimento do acervo, o reposit{\'o}rio conta com uma su{\'i}te cont{\'i}nua de auditoria corporificada no script \texttt{audit.sh}:
+Para assegurar que o grafo n{\~a}o se degenere com o crescimento do acervo, o reposit{\'o}rio conta com uma rotina de auditoria automatizada no script \texttt{audit.sh}:
 \begin{itemize}
-  \item \textbf{Zero Skills {\'O}rf{\~a}s}: Toda skill do acervo deve ser referenciada como depend{\^e}ncia por ao menos uma outra skill ou por um subagente, garantindo relev{\^a}ncia sist{\^e}mica;
+  \item \textbf{Zero Skills {\'O}rf{\~a}s}: Toda skill do acervo deve ser referenciada como depend{\^e}ncia por ao menos uma outra skill, garantindo relev{\^a}ncia sist{\^e}mica;
   \item \textbf{Zero Depend{\^e}ncias Quebradas}: Qualquer refer{\^e}ncia cruzada em \texttt{\#\# Depend{\^e}ncias} deve corresponder a uma pasta real e v{\'a}lida dentro de \texttt{skills/};
-  \item \textbf{Isolamento de Depend{\^e}ncias Externas}: As skills deste reposit{\'o}rio s{\~a}o completamente autocontidas no ecossistema brasileiro. Nenhuma skill referencia pacotes externos n{\~a}o controlados;
+  \item \textbf{Isolamento de Depend{\^e}ncias Externas}: As skills s{\~a}o autocontidas neste reposit{\'o}rio: nenhuma referencia skills externas ou pacotes n{\~a}o controlados;
   \item \textbf{Conformidade Terminol{\'o}gica}: O script verifica a consist{\^e}ncia exata dos nomes dos 5 n{\'i}veis da Escala AIAS e a grafia institucional em refer{\^e}ncias bibliogr{\'a}ficas normativas do MEC.
 \end{itemize}

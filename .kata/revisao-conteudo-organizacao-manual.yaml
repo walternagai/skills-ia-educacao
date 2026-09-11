@@ -1,0 +1,139 @@
+task: revisao-conteudo-organizacao-manual
+status: think-complete
+domain: docs
+done: "Diagnóstico de conteúdo e organização do manual entregue, com oportunidades priorizadas por capítulo (arquivo, linha, evidência e proposta), aprovado pelo usuário; itens autorizados implementados, manual recompilado sem erros (make -C manual), ./audit.sh OK e CHANGELOG.md atualizado."
+base_commit: "a340b3b325c8af18596fc60dcea38db1c3972236"
+approved_commit: ""
+fit:
+  trivial: false
+  route: plan-first
+  reason: "Revisão de conteúdo e organização do manual (11 arquivos .tex, ~2.100 linhas) para identificar oportunidades de melhoria no texto; entregável é diagnóstico priorizado para aprovação antes de qualquer edição. Rotas code-loop e question descartadas com o usuário em 2026-09-10."
+  answered: true
+  skipped: false
+think:
+  problem: "Após as revisões de instalação (v0.10.8-10), pedagógica (v0.10.9) e textual (v0.10.14), o manual ainda não teve varredura sistemática de conteúdo e organização: comandos e referências inconsistentes entre capítulos, descrições do ferramental divergentes do audit.sh e dos scripts reais, referências internas ambíguas (ex.: 'ver Seção 3') e conteúdo opcional misturado a capítulos operacionais (tutorial de Git no Cap. 4, grafo de dependências no Cap. 3), sem plano priorizado para decidir o que editar."
+  assumptions:
+    - "O LaTeX em manual/*.tex é a fonte canônica; main.pdf é derivado e será recompilado após edições."
+    - "Scripts (.sh/.bat), agentes e skills do próprio repositório são a fonte da verdade para comandos, flags e contagens (adapter kata-docs); docs oficiais do OpenCode são fonte para métodos de instalação."
+    - "A revisão é incremental e cirúrgica: sem reescrita de capítulos nem reorganização estrutural (apêndices) sem aprovação explícita do usuário."
+    - "Revisões anteriores cobriram digitação e contagens pontuais; esta foca coerência de conteúdo, navegação e organização, sem repetir o já corrigido."
+  alternatives:
+    - "alt A: varredura automatizada (grep de comandos/contagens) apenas — descartada: não captura ambiguidade textual, fluxo de leitura nem organização."
+    - "alt B: reescrita completa dos capítulos — descartada: risco alto, perderia o estilo e as revisões acumuladas, sem ganho proporcional."
+    - "alt C: leitura integral dos 10 capítulos + verificação fática contra scripts/agentes/skills/bib + diagnóstico priorizado — escolhida."
+  unknowns: |
+    RESOLVIDO (verificado em 2026-09-10):
+    1. Contagens: 62 skills (26+18+8+5+5) e 6 subagentes conferem com skills/ e .opencode/agents/; README e PDF (76 pp) conferem.
+    2. Flags dos scripts: install/uninstall .sh/.bat aceitam --antigravity e --antigravity-cli; o Cap. 4 enumera apenas --antigravity (lacuna).
+    3. audit.sh: deps_slugs lê apenas skills/*/SKILL.md; órfãs NÃO consideram subagentes; não há checagem de ciclos. Claims do Cap. 3 precisam de ajuste.
+    4. referencias.bib: todas as chaves citadas existem; main.log com 0 overfull e 17 underfull.
+    5. Comandos externos: brew/scoop/choco confirmados nos docs oficiais; Homebrew recomenda o tap anomalyco/tap/opencode (o manual cita só a fórmula oficial).
+    6. Comando /model (Cap. 6) diverge do /models usado no restante do manual e nos docs.
+    PENDENTE DE DECISÃO DO USUÁRIO (aprovação do plano):
+    7. Mover tutorial de Git (Cap. 4.8) e seção do grafo (Cap. 3.4) para apêndices?
+    8. Política de vocabulário (aluno→estudante; professor vs docente) e de voz (você vs impessoal)?
+    9. Atualizar CHANGELOG.md nesta revisão?
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: |
+    Edições cirúrgicas, item a item, sem reescrita de capítulos e sem pacote/ambiente LaTeX novo.
+    P4 só acrescenta comandos verificados nos docs oficiais; P2 reusa a estrutura de apêndices do memoir.
+  answered: true
+  skipped: false
+intent:
+  code_does: "O manual descreve o acervo e o OpenCode; divergia das fontes reais em precisão factual (audit.sh, flags dos scripts .sh/.bat, comando /models, versão de exemplo, remissões internas)."
+  check_expects: "Compilação LaTeX limpa (make -C manual) + ./audit.sh OK; comandos e contagens conferidos contra scripts, agentes, skills e docs oficiais (kata-docs: a doc descreve o que existe)."
+  spec_says: "Plano P1–P4 aprovado pelo usuário em 2026-09-10, com implementação em blocos por ordem de esforço e CHANGELOG + commit + push por bloco."
+  all_agree: false
+  conflict_resolution: "Usuário > fontes do repo > manual: o manual é corrigido onde diverge de audit.sh/scripts/agentes; conteúdo novo (P4) só com fonte oficial aberta."
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: manual/cap1-introducao.tex
+      necessary: true
+      reason: "P3: aluno→estudante."
+    - path: manual/cap2-fundamentos.tex
+      necessary: true
+      reason: "P3: aluno→estudante."
+    - path: manual/cap3-skills-opencode.tex
+      necessary: true
+      reason: "P1: precisão sobre name/auditoria; P2: move o grafo (3.4) para o Apêndice B; P3: remissão da figura."
+    - path: manual/cap4-instalacao.tex
+      necessary: true
+      reason: "P1: versão de exemplo e flags; P2: move Git (4.8) para o Apêndice A e condensa 4.5.4; P3: vocabulário; P4: Homebrew/yarn."
+    - path: manual/cap5-desktop.tex
+      necessary: true
+      reason: "P2: remissão ao Apêndice A (Git); P3: voz; P4: download do Desktop."
+    - path: manual/cap6-modelos-gratuitos.tex
+      necessary: true
+      reason: "P1: /models e remissões ao modelo 3; P3: voz."
+    - path: manual/cap9-agentes-skills.tex
+      necessary: true
+      reason: "P1: CoD; P3: vocabulário, remissão da tabela e artesão."
+    - path: manual/cap10-casos-de-uso.tex
+      necessary: true
+      reason: "P1: Caso 5 (MCQs) e caixa de validação; P3: vocabulário; P4: adaptação do Caso 3."
+    - path: manual/main.tex
+      necessary: true
+      reason: "P2: inclusão dos apêndices A e B."
+    - path: manual/apendice-a-git.tex
+      necessary: true
+      reason: "P2: novo (conteúdo movido do Cap. 4.8)."
+    - path: manual/apendice-b-mantenedor.tex
+      necessary: true
+      reason: "P2: novo (conteúdo movido do Cap. 3.4)."
+    - path: manual/main.pdf
+      necessary: true
+      reason: "Derivado obrigatório: PDF recompilado após cada bloco."
+    - path: CHANGELOG.md
+      necessary: true
+      reason: "Convenção do repo: uma entrada por revisão publicada."
+    - path: README.md
+      necessary: true
+      reason: "Atualizar contagem de páginas/capítulos se o PDF mudar (P2)."
+    - path: .kata/revisao-conteudo-organizacao-manual.yaml
+      necessary: true
+      reason: "Registro do ciclo kata da tarefa."
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+verify:
+  ruff_clean: false
+  tests_pass: false
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: false
+  attempts: 0
+  hand_back: false
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: false
+  intent_present: false
+  auth_owed: false
+  auth_present: false
+  pending_owed: false
+  pending_present: false
+  twins_owed: false
+  twins_present: false
+auth:
+  action_taken: false
+  authorized: false
+  action: ""
+  quote: ""
+pending:
+  action: ""
+  documented: false
+twins:
+  pattern: ""
+  result: ""
+  searched: false
+  defect_fixed: false
+  matches_count: 0
+  files_count: 0
+  fix_applied: false

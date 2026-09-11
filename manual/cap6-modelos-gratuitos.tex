@@ -25,7 +25,7 @@ Consulte tamb{\'e}m a documenta{\c c}{\~a}o atual de provedores em \url{https://
 \end{atencaopedagogica}
 
 \begin{dicaopencode}
-\textbf{Se est{\'a} come{\c c}ando, use este padr{\~a}o}: comece pelo modelo ``faz-tudo'' da rotina di{\'a}ria (nesta edi{\c c}{\~a}o, o \path{opencode/mimo-v2.5-free}, ver Se{\c c}{\~a}o~3) e troque s{\'o} se precisar: an{\'a}lise de PPCs longos ou c{\'a}lculos com pesos v{\^e}m na matriz abaixo. O cat{\'a}logo gratuito muda com frequ{\^e}ncia: antes de qualquer atividade, confirme os identificadores com \texttt{/models} e desconsidere nomes que n{\~a}o apare{\c c}am mais na lista.
+\textbf{Se est{\'a} come{\c c}ando, use este padr{\~a}o}: comece pelo modelo ``faz-tudo'' da rotina di{\'a}ria (nesta edi{\c c}{\~a}o, o \path{opencode/mimo-v2.5-free}, descrito no modelo~3 adiante) e troque s{\'o} se precisar: an{\'a}lise de PPCs longos ou c{\'a}lculos com pesos v{\^e}m na matriz abaixo. O cat{\'a}logo gratuito muda com frequ{\^e}ncia: antes de qualquer atividade, confirme os identificadores com \texttt{/models} e desconsidere nomes que n{\~a}o apare{\c c}am mais na lista.
 \end{dicaopencode}
 
 \section{An{\'a}lise dos 7 Modelos Gratuitos do OpenCode}
@@ -81,7 +81,7 @@ Consulte tamb{\'e}m a documenta{\c c}{\~a}o atual de provedores em \url{https://
   \item \textbf{Identificador}: \path{opencode/nemotron-3-ultra-free};
    \item \textbf{Perfil Arquitetural}: Modelo da NVIDIA com arquitetura de mistura de especialistas (\emph{MoE}) e arquitetura h{\'i}brida \emph{Transformer-Mamba}, conforme a descri{\c c}{\~a}o do provedor na data de consulta;
    \item \textbf{For{\c c}as Pedag{\'o}gicas}: Pode ser uma op{\c c}{\~a}o para tarefas de c{\'o}digo, racioc{\'i}nio l{\'o}gico e demonstra{\c c}{\~o}es formais; valide a qualidade no problema espec{\'i}fico antes de usar a resposta em uma avalia{\c c}{\~a}o;
-   \item \textbf{Quando Usar}: Avalia{\c c}{\~a}o de projetos t{\'e}cnicos em Computa{\c c}{\~a}o e Engenharias, resolu{\c c}{\~a}o anal{\'i}tica de exerc{\'i}cios avan{\c c}ados e auditoria cr{\'i}tica de gabaritos com o subagente \path{@construtor-de-avaliacoes}. Para tarefas predominantemente textuais (an{\'a}lise de fontes, pareceres, laudos), qualquer modelo da lista desempenha bem a fun{\c c}{\~a}o; comece pelo padr{\~a}o da Se{\c c}{\~a}o~3.
+   \item \textbf{Quando Usar}: Avalia{\c c}{\~a}o de projetos t{\'e}cnicos em Computa{\c c}{\~a}o e Engenharias, resolu{\c c}{\~a}o anal{\'i}tica de exerc{\'i}cios avan{\c c}ados e auditoria cr{\'i}tica de gabaritos com o subagente \path{@construtor-de-avaliacoes}. Para tarefas predominantemente textuais (an{\'a}lise de fontes, pareceres, laudos), qualquer modelo da lista desempenha bem a fun{\c c}{\~a}o; comece pelo Mimo V2.5 Free (modelo~3).
 \end{itemize}
 
 \subsection{7. Nemotron 3.5 Lightning Free}
@@ -132,6 +132,6 @@ O professor pode selecionar ou alternar o modelo em uso de tr{\^e}s formas simpl
   \begin{lstlisting}[language=bash]
   opencode -m opencode/nemotron-3-ultra-free
   \end{lstlisting}
-  \item \textbf{Na Interface Interativa de Terminal (TUI)}: Pressionando a tecla de atalho \texttt{Ctrl+M} (ou digitando \texttt{/model}) e selecionando o modelo na lista;
+  \item \textbf{Na Interface Interativa de Terminal (TUI)}: Pressionando a tecla de atalho \texttt{Ctrl+M} (ou digitando \texttt{/models}) e selecionando o modelo na lista;
   \item \textbf{Na Interface Web/Desktop}: Clicando no menu suspenso no canto superior direito da janela e escolhendo o modelo gratuito correspondente com o mouse.
 \end{enumerate}
