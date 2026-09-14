@@ -1,13 +1,13 @@
 task: adequacoes-guia-ia-unifei
 status: approved
 domain: docs
-done: "Lote 1 (conformidade dura) executado e verificado: `ia-educacao-integridade-academica` (v1.10), `ia-educacao-pesquisa` (v1.7) e `ia-educacao-escrita` (v1.6) alinhadas ao Guia de referência IAG da UNIFEI (raw-pdfs/GuiadereferênciaIAUnifei.pdf) — vedações de coautoria/geração integral, más condutas, formato de declaração 'Uso de Inteligência Artificial Generativa' com prompts em apêndice, checklist do autor, Turnitin preventivo e referências normativas; ./audit.sh OK; CHANGELOG 0.10.23; nenhum arquivo fora do escopo."
+done: "Os 4 lotes de adequação ao Guia de referência IAG da UNIFEI concluídos e commitados: Lote 1 (v0.10.23, 07f6500), Lote 2 (v0.10.24, f2a9944), Lote 3 (v0.10.25, d23a9fa), Lote 4 (v0.10.26, a47adf8); 14 skills + 2 agentes (×2 cópias) + README + CLAUDE.md + manual/cap1 + CHANGELOG; ./audit.sh OK em todos; zero arquivos fora do escopo por lote; nenhum lote pendente."
 base_commit: "64954d3d6d9079cb5f4526a517e07d6c4ac0323e"
 approved_commit: ""
 fit:
   trivial: false
   route: code-loop
-  reason: "Fase 1: diagnóstico (rota question). Fase 2: usuário autorizou 'Faça a edição do Lote 1' — execução das 3 skills de conformidade dura, verificação pelo ./audit.sh (gate real do repo documental) e TWIN CHECK."
+  reason: "Fase 1: diagnóstico (rota question). Fase 2: usuário autorizou 'Commit Lote 1. Depois, inicie as edições dos lotes restantes. A cada lote concluído, faça commit.' — 4 lotes executados e commitados (07f6500, f2a9944, d23a9fa, a47adf8)."
   answered: true
   skipped: false
 think:
@@ -85,16 +85,16 @@ artifact:
 auth:
   action_taken: true
   authorized: true
-  action: "Edição de 3 skills + CHANGELOG (Lote 1 do diagnóstico de adequação ao Guia UNIFEI)"
-  quote: "Faça a edição do Lote 1"
+  action: "4 lotes de edição (14 skills, 2 agentes ×2 cópias, README, CLAUDE.md, manual/cap1 + PDF, CHANGELOG) + 4 commits (07f6500, f2a9944, d23a9fa, a47adf8)"
+  quote: "Commit Lote 1. Depois, inicie as edições dos lotes restantes. A cada lote concluído, faça commit."
 pending:
-  action: "Lotes 2 (salvaguarda de terceiros em feedback/rubrica/portfolio/avaliacao-grupo e agente aplicador-de-rubricas), 3 (compatibilização AIAS 5 x vedação de coautoria em aias-consultant/README/CLAUDE.md/bloom/debate) e 4 (protocolo de bancas e Turnitin nas referências do eixo) permanecem pendentes"
+  action: "Nenhum — os 4 lotes foram concluídos; decisões de merge/push competem ao usuário"
   documented: true
 twins:
-  pattern: "co-autoria|coautora|integralmente gerado|declaração de uso"
-  result: "co-autoria: 5 ocorrências remanescentes (aias-consultant L51, bloom L104, debate L56, README L26, CLAUDE.md L89) = Lote 3; declaração de uso: 6 skills remanescentes = Lote 4; integralmente gerado: 0 ocorrências (coberto)"
+  pattern: "co-autoria|coautora|integralmente gerado|declaração de uso|salvaguarda/LGPD/sensível|detectores de IA"
+  result: "Lote 2: coach-de-feedback-formativo (agente) encontrado como gêmeo e corrigido; Lote 3: manual/cap1 ('Parceria autoral') encontrado como gêmeo e corrigido; Lote 4: menções a 'banca' em avaliacao-competencia/dua/visualizacao-dados são contextuais, sem protocolo a alinhar"
   searched: true
   defect_fixed: true
-  matches_count: 11
-  files_count: 11
-  fix_applied: false
+  matches_count: 3
+  files_count: 3
+  fix_applied: true
