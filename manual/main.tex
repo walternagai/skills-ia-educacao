@@ -142,6 +142,25 @@
   #1
 }
 
+% Caixa de Nota Institucional de Conformidade
+\newtcolorbox{conformidade}[1][]{%
+  enhanced,
+  breakable,
+  colback=boxbg,
+  colframe=primary,
+  fonttitle=\bfseries\color{white},
+  coltitle=white,
+  coltext=neutraldark,
+  boxrule=1pt,
+  arc=3mm,
+  left=8pt,
+  right=8pt,
+  top=6pt,
+  bottom=6pt,
+  title={Nota Institucional de Conformidade},
+  #1
+}
+
 % --- Formatação de Código-fonte (listings) ---
 \usepackage{listings}
 \lstset{
@@ -252,6 +271,43 @@
     {\small\color{secondary} 2026}
   \end{center}
 \end{titlingpage}
+
+% --- Nota Institucional de Conformidade ---
+\begin{conformidade}
+\small
+Este manual e o acervo de skills e subagentes que ele documenta
+(\texttt{skills-ia-educacao}, Projeto de Ensino AvalIA) \textbf{est{\~a}o em
+conformidade com as normas institucionais da UNIFEI para o uso de
+Intelig{\^e}ncia Artificial Generativa (IAG)}, em especial com o
+\emph{Guia de refer{\^e}ncia: uso de ferramentas de intelig{\^e}ncia artificial
+generativa em trabalhos acad{\^e}micos e na pesquisa} \cite{unifei2026guia},
+elaborado pela Comiss{\~a}o institu{\'i}da pela Portaria 3249/2025-RT, e com a
+Pol{\'i}tica de Integridade na Atividade Cient{\'i}fica do CNPq
+\cite{cnpq2026integridade}, que fundamenta o guia.
+
+\vspace{0.3em}
+Os recursos aqui reunidos observam os quatro princ{\'i}pios do guia ---
+\textbf{integridade cient{\'i}fica}, \textbf{transpar{\^e}ncia},
+\textbf{conduta {\'e}tica} e \textbf{responsabilidade do(a) pesquisador(a)} ---
+e as suas orientações gerais: a IAG {\'e} apoio {\`a} pesquisa e {\`a} reda{\c c}{\~a}o,
+nunca autora ou coautora de trabalhos acad{\^e}micos; os textos n{\~a}o podem ser
+integralmente gerados por IA nem apresentados sem revis{\~a}o humana; dados
+sens{\'i}veis, informa{\c c}{\~o}es pessoais e conte{\'u}dos sigilosos ou de terceiros
+n{\~a}o devem ser inseridos em ferramentas de IAG; e o uso de IAG quando
+significativo para os resultados deve ser declarado, com registro dos
+\emph{prompts} iniciais.
+
+\vspace{0.3em}
+A responsabilidade pela integridade, veracidade, precis{\~a}o e
+confiabilidade das informa{\c c}{\~o}es permanece integralmente com o(a) autor(a)
+do trabalho, independentemente do uso de ferramentas de IAG. Os fundamentos
+{\'e}ticos, os protocolos de privacidade e as salvaguardas de dados de
+terceiros est{\~a}o detalhados no Cap{\'i}tulo~\ref{cap:etica-transparencia}; o
+protocolo de declara{\c c}{\~a}o de uso de IA em atividades avaliativas, no
+Cap{\'i}tulo~\ref{cap:explicar-estudantes}.
+\end{conformidade}
+
+\clearpage
 
 % --- Sumário ---
 \tableofcontents*

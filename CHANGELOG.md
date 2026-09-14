@@ -5,6 +5,20 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.27] — 2026-09-14
+
+### Adicionado
+- **Manual — Nota Institucional de Conformidade com o Guia de IAG da UNIFEI**:
+  - `main.tex`: nova caixa `conformidade` (tcolorbox) no frontmatter, após a capa e antes do sumário, declarando que o manual e o acervo estão em conformidade com as normas institucionais da UNIFEI para uso de IAG — em especial o *Guia de referência* (Comissão Portaria 3249/2025-RT) e a Política de Integridade na Atividade Científica do CNPq (Portaria 2664/2026); enuncia os quatro princípios do guia (integridade científica, transparência, conduta ética, responsabilidade do pesquisador) e as vedações (coautoria de ferramenta, geração integral sem revisão, não inserção de dados sensíveis/sigilosos/de terceiros), com remissão aos caps. 7 e 8
+  - `referencias.bib`: entradas `unifei2026guia` e `cnpq2026integridade`
+  - PDF recompilado (82 páginas, 0 erros e 0 citações indefinidas)
+- **Task `.kata/revisao-manual-pos-guia-unifei.yaml`**: revisão completa do manual contra os 4 lotes de adequação ao Guia UNIFEI (v0.10.23–v0.10.26) — pendente de execução (varredura dos caps. 2–10 e apêndices)
+
+### Corrigido
+- **Precisão normativa do diagnóstico**: o Guia UNIFEI tem **4 princípios** (integridade científica; transparência; conduta ética; responsabilidade do(a) pesquisador(a)) — o relatório do Lote 1 mencionou "5 princípios" por erro de contagem do PDF
+
+---
+
 ## [0.10.26] — 2026-09-14
 
 ### Adicionado
