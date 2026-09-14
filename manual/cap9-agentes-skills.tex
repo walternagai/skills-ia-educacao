@@ -84,6 +84,7 @@ Para garantir que as instru{\c c}{\~o}es estejam sempre atualizadas, o reposit{\
 \subsection{4. Aplicador de Rubricas (\texttt{aplicador-de-rubricas})}
 \begin{itemize}
   \item \textbf{Foco}: Avalia{\c c}{\~a}o formativa de trabalhos e c{\'o}digos de estudantes contra rubricas anal{\'i}ticas pr{\'e}-estabelecidas, emitindo notas descritivas por crit{\'e}rio e parecer sobre conformidade AIAS;
+  \item \textbf{Salvaguarda de Terceiros}: segue protocolo obrigat{\'o}rio de remo{\c c}{\~a}o de identificadores pessoais antes de processar entregas, veda{\c c}{\~a}o de dados sens{\'i}veis e de documentos sigilosos sem autoriza{\c c}{\~a}o expressa (Cap{\'i}tulo~\ref{cap:etica-transparencia});
   \item \textbf{Permiss{\~o}es}: Leitura e escrita (\texttt{edit: allow}, \texttt{bash: allow});
   \item \textbf{Skills Orquestradas}: \path{ia-educacao-rubrica}, \path{ia-educacao-avaliacao}, \path{ia-educacao-bloom}, \path{aias-consultant}.
 \end{itemize}
@@ -91,6 +92,7 @@ Para garantir que as instru{\c c}{\~o}es estejam sempre atualizadas, o reposit{\
 \subsection{5. Coach de Feedback Formativo (\texttt{coach-de-feedback-formativo})}
 \begin{itemize}
   \item \textbf{Foco}: Elabora{\c c}{\~a}o de feedback formativo tridimensional (\emph{Feed Up}, \emph{Feed Back}, \emph{Feed Forward}) com calibra{\c c}{\~a}o inclusiva conforme as necessidades e prefer{\^e}ncias informadas pelos estudantes;
+  \item \textbf{Salvaguarda de Terceiros}: descreve a necessidade pedag{\'o}gica -- nunca o diagn{\'o}stico -- ao adaptar a linguagem, e segue o mesmo protocolo de pseudonimiza{\c c}{\~a}o e veda{\c c}{\~a}o de dados sens{\'i}veis do aplicador de rubricas;
   \item \textbf{Permiss{\~o}es}: Leitura e escrita (\texttt{edit: allow}, \texttt{bash: allow});
   \item \textbf{Skills Orquestradas}: \path{ia-educacao-feedback}, \path{ia-educacao-verificacao}, \path{ia-educacao-dua}, \path{ia-educacao-aprendizagem-ativa}, \path{ia-educacao-rubrica}.
 \end{itemize}
@@ -153,7 +155,7 @@ Esta categoria responde a uma pergunta simples, mas decisiva: \emph{para qual et
     \addlinespace
     \path{ia-educacao-profissional-tecnologica} & Integra{\c c}{\~a}o na EPT, alinhando compet{\^e}ncias de IA {\`a}s demandas dos setores produtivos e ind{\'u}stria 4.0. \\
     \addlinespace
-    \path{ia-educacao-superior} & Incorpora{\c c}{\~a}o na gradua{\c c}{\~a}o e p{\'o}s-gradua{\c c}{\~a}o, abrangendo ensino, pesquisa e extens{\~a}o universit{\'a}ria. \\
+    \path{ia-educacao-superior} & Incorpora{\c c}{\~a}o na gradua{\c c}{\~a}o e p{\'o}s-gradua{\c c}{\~a}o, abrangendo ensino, pesquisa e extens{\~a}o; protocolo de esclarecimento por bancas. \\
     \bottomrule
   \end{tabularx}
 \end{table}
@@ -212,7 +214,7 @@ Esta {\'e} a maior categoria do acervo e responde a outra pergunta central: \emp
 
 \subsection{Categoria 3: {\'E}tica e Governan{\c c}a (8 Skills)}
 
-Esta categoria responde {\`a} pergunta das salvaguardas: \emph{sob quais condi{\c c}{\~o}es a IA pode ser utilizada?} Ela re{\'u}ne o arcabou{\c c}o que protege docentes e discentes -- fundamentos {\'e}ticos, governan{\c c}a e prote{\c c}{\~a}o de dados, supervis{\~a}o humana, transpar{\^e}ncia dos modelos, mitiga{\c c}{\~a}o de vieses, seguran{\c c}a digital e integridade acad{\^e}mica. Para o docente, estas skills funcionam como um guia de conformidade: antes de implementar qualquer pr{\'a}tica com IA, vale consultar as diretrizes aqui reunidas, que traduzem o \emph{Referencial do MEC} e a legisla{\c c}{\~a}o brasileira (como a LGPD) em orienta{\c c}{\~o}es pr{\'a}ticas para a sala de aula e para a gest{\~a}o institucional.
+Esta categoria responde {\`a} pergunta das salvaguardas: \emph{sob quais condi{\c c}{\~o}es a IA pode ser utilizada?} Ela re{\'u}ne o arcabou{\c c}o que protege docentes e discentes -- fundamentos {\'e}ticos, governan{\c c}a e prote{\c c}{\~a}o de dados, supervis{\~a}o humana, transpar{\^e}ncia dos modelos, mitiga{\c c}{\~a}o de vieses, seguran{\c c}a digital e integridade acad{\^e}mica. Para o docente, estas skills funcionam como um guia de conformidade: antes de implementar qualquer pr{\'a}tica com IA, vale consultar as diretrizes aqui reunidas, que traduzem o \emph{Referencial do MEC}, a legisla{\c c}{\~a}o brasileira (como a LGPD) e as \emph{normas institucionais da UNIFEI} -- em especial o Guia de refer{\^e}ncia para uso de IAG e a Pol{\'i}tica de Integridade do CNPq \cite{unifei2026guia,cnpq2026integridade} -- em orienta{\c c}{\~o}es pr{\'a}ticas para a sala de aula e para a gest{\~a}o institucional.
 
 \begin{table}[htbp]
   \centering
@@ -237,7 +239,7 @@ Esta categoria responde {\`a} pergunta das salvaguardas: \emph{sob quais condi{\
     \addlinespace
     \path{ia-educacao-seguranca-digital} & Higiene cibern{\'e}tica e prote{\c c}{\~a}o de dados escolares contra incidentes de seguran{\c c}a. \\
     \addlinespace
-    \path{ia-educacao-integridade-academica} & Diretrizes de combate ao pl{\'a}gio e contrato pedag{\'o}gico de autoria respons{\'a}vel. \\
+    \path{ia-educacao-integridade-academica} & Diretrizes de integridade e conduta {\'e}tica (pl{\'a}gio, autopl{\'a}gio, fabrica{\c c}{\~a}o e falsifica{\c c}{\~a}o de dados), contrato de autoria respons{\'a}vel e declara{\c c}{\~a}o de uso de IAG conforme o Guia da UNIFEI. \\
     \bottomrule
   \end{tabularx}
 \end{table}
@@ -281,19 +283,19 @@ Esta categoria responde {\`a} pergunta da execu{\c c}{\~a}o: \emph{o que o docen
     \toprule
     \textbf{\textnormal{\textbf{Skill (Slug)}}} & \textbf{Objetivo e Escopo Pedag{\'o}gico} \\
     \midrule
-    \path{aias-consultant} & Consultoria especializada nos 5 n{\'i}veis da Escala AIAS e pol{\'i}ticas de avalia{\c c}{\~a}o. \\
+    \path{aias-consultant} & Consultoria especializada nos 5 n{\'i}veis da Escala AIAS e pol{\'i}ticas de avalia{\c c}{\~a}o; enunciados declaram se o uso {\'e} permitido, restrito ou vedado. \\
     \path{ia-educacao-avaliacao} & Redesenho de instrumentos avaliativos para cen{\'a}rios com presen{\c c}a de IA. \\
     \path{ia-educacao-avaliacao-competencia} & Avalia{\c c}{\~a}o baseada em compet{\^e}ncias: rubricas de profici{\^e}ncia e evid{\^e}ncias. \\
     \path{ia-educacao-avaliacao-diagnostica} & Mapeamento de pr{\'e}-requisitos conceituais e lacunas no in{\'i}cio da disciplina. \\
     \path{ia-educacao-avaliacao-grupo} & Avalia{\c c}{\~a}o do trabalho colaborativo com foco na contribui{\c c}{\~a}o individual. \\
-    \path{ia-educacao-avaliacao-oral} & Roteiros, rubricas e protocolos para semin{\'a}rios e defesas de projetos. \\
+    \path{ia-educacao-avaliacao-oral} & Roteiros, rubricas e protocolos para semin{\'a}rios e defesas de projetos, incluindo esclarecimentos sobre uso de IAG na argui{\c c}{\~a}o. \\
     \path{ia-educacao-avaliacao-projeto} & Avalia{\c c}{\~a}o de projetos semestrais e TCCs com entregas intermedi{\'a}rias. \\
     \path{ia-educacao-autoavaliacao} & Instrumentos reflexivos para autoavalia{\c c}{\~a}o e autorregula{\c c}{\~a}o discente. \\
     \path{ia-educacao-banco-questoes} & Gest{\~a}o de bancos de quest{\~o}es categorizadas por n{\'i}vel de Bloom e blueprints. \\
     \path{ia-educacao-mcq} & Design e valida{\c c}{\~a}o de itens de m{\'u}ltipla escolha com distratores calibrados. \\
     \path{ia-educacao-portfolio} & Design de portf{\'o}lios avaliativos e di{\'a}rios de bordo com reflex{\~a}o metacognitiva. \\
-    \path{ia-educacao-rubrica} & Constru{\c c}{\~a}o de rubricas anal{\'i}ticas com r{\'o}tulos neutros e coer{\^e}ncia AIAS. \\
-    \path{ia-educacao-feedback} & Design de feedback formativo no modelo \emph{Feed Up/Back/Forward}. \\
+    \path{ia-educacao-rubrica} & Constru{\c c}{\~a}o de rubricas anal{\'i}ticas com r{\'o}tulos neutros e coer{\^e}ncia AIAS; uso de IAG restrito a insumos n{\~a}o sigilosos. \\
+    \path{ia-educacao-feedback} & Design de feedback formativo no modelo \emph{Feed Up/Back/Forward}, com salvaguarda de dados de terceiros. \\
     \bottomrule
   \end{tabularx}
 \end{table}
@@ -317,8 +319,8 @@ Esta categoria responde {\`a} pergunta da execu{\c c}{\~a}o: \emph{o que o docen
     \path{ia-educacao-ecossistema-inovacao} & Parcerias universidade-empresa e laborat{\'o}rios de inova{\c c}{\~a}o pedag{\'o}gica. \\
     \path{ia-educacao-contratacao} & Crit{\'e}rios t{\'e}cnicos, jur{\'i}dicos e pedag{\'o}gicos para licita{\c c}{\~a}o de solu{\c c}{\~o}es de IA. \\
     \path{ia-educacao-design-problema} & Formula{\c c}{\~a}o de desafios aut{\^e}nticos e situa{\c c}{\~o}es-gatilho para disciplinas STHEM. \\
-    \path{ia-educacao-pesquisa} & Metodologia de pesquisa cient{\'i}fica, revis{\~a}o integrativa e an{\'a}lise com IA. \\
-    \path{ia-educacao-escrita} & Escrita acad{\^e}mica assistida por IA garantindo preserva{\c c}{\~a}o da voz autoral. \\
+    \path{ia-educacao-pesquisa} & Metodologia de pesquisa cient{\'i}fica, revis{\~a}o integrativa e an{\'a}lise com IA; declara{\c c}{\~a}o de uso de IAG no formato institucional. \\
+    \path{ia-educacao-escrita} & Escrita acad{\^e}mica assistida por IA garantindo preserva{\c c}{\~a}o da voz autoral; vedada a gera{\c c}{\~a}o integral sem revis{\~a}o. \\
     \path{ia-educacao-visualizacao-dados} & Comunica{\c c}{\~a}o cient{\'i}fica visual, gr{\'a}ficos informativos e \emph{storytelling} com dados. \\
     \bottomrule
   \end{tabularx}

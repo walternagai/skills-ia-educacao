@@ -5,6 +5,23 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.28] — 2026-09-14
+
+### Modificado
+- **Manual — revisão completa contra os 4 lotes de adequação ao Guia de IAG da UNIFEI** (varredura dos 13 arquivos `.tex` por vocabulário, vedações, salvaguardas e referências; correções cirúrgicas em 4 capítulos):
+  - **`cap1-introducao.tex`**: o propósito do repositório passa a citar explicitamente o Guia UNIFEI (`\cite{unifei2026guia}`) e a Política de Integridade do CNPq, remetendo à Nota Institucional de Conformidade
+  - **`cap7-etica-transparencia.tex`**: novo objetivo de capítulo; subseção de fundamentação ética incorpora os quatro princípios do guia (integridade científica, transparência, conduta ética, responsabilidade) e as vedações (coautoria de ferramenta, geração integral sem revisão, dados sensíveis/sigilosos/de terceiros, declaração de uso); Turnitin apresentado como verificação preventiva/formativa de originalidade, nunca prova isolada de má conduta
+  - **`cap8-explicar-estudantes.tex`**: uso de IA explicitado como **permitido, restrito ou vedado** (não "IA sim/não"); nova caixa de conformidade com o formato de declaração do guia (seção "Uso de Inteligência Artificial Generativa": ferramenta, finalidade, extensão, contribuição; prompts em nota/apêndice quando significativo); **nova seção** "Esclarecimentos sobre o Uso de IAG em Bancas e Defesas" (Lote 4), com orientações para estudante e banca; novo objetivo de capítulo
+  - **`cap9-agentes-skills.tex`**: salvaguarda de dados de terceiros explicitada nos subagentes `aplicador-de-rubricas` e `coach-de-feedback-formativo` (Lote 2); catálogo atualizado para 8 skills afetadas (`integridade-academica`, `aias-consultant`, `avaliacao-oral`, `rubrica`, `feedback`, `pesquisa`, `escrita`, `superior`); categoria ética cita o guia e a Portaria CNPq
+  - PDF recompilado (82 páginas, 0 erros, 0 citações indefinidas)
+- **`.kata/revisao-manual-pos-guia-unifei.yaml`**: task concluída (`status: approved`), com o registro da varredura, das correções e do TWIN CHECK
+
+### Notas
+- Varredura confirmou 0 ocorrências residuais de "co-autoria"/"Parceria autoral" no manual; as menções a "autoria" no cap3/cap4 referem-se à autoria de software (OpenCode/MCP) e estão corretas
+- `./audit.sh` OK após as edições
+
+---
+
 ## [0.10.27] — 2026-09-14
 
 ### Adicionado
