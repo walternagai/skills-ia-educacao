@@ -1,0 +1,100 @@
+task: adequacoes-guia-ia-unifei
+status: approved
+domain: docs
+done: "Lote 1 (conformidade dura) executado e verificado: `ia-educacao-integridade-academica` (v1.10), `ia-educacao-pesquisa` (v1.7) e `ia-educacao-escrita` (v1.6) alinhadas ao Guia de referência IAG da UNIFEI (raw-pdfs/GuiadereferênciaIAUnifei.pdf) — vedações de coautoria/geração integral, más condutas, formato de declaração 'Uso de Inteligência Artificial Generativa' com prompts em apêndice, checklist do autor, Turnitin preventivo e referências normativas; ./audit.sh OK; CHANGELOG 0.10.23; nenhum arquivo fora do escopo."
+base_commit: "64954d3d6d9079cb5f4526a517e07d6c4ac0323e"
+approved_commit: ""
+fit:
+  trivial: false
+  route: code-loop
+  reason: "Fase 1: diagnóstico (rota question). Fase 2: usuário autorizou 'Faça a edição do Lote 1' — execução das 3 skills de conformidade dura, verificação pelo ./audit.sh (gate real do repo documental) e TWIN CHECK."
+  answered: true
+  skipped: false
+think:
+  problem: "Aplicar o Lote 1 (conformidade dura) do diagnóstico: vedações do Guia UNIFEI ausentes nas skills donas do tema — coautoria de IAG, geração integral sem revisão, más condutas científicas, formato institucional de declaração."
+  assumptions:
+    - "O guia aplica-se a toda a comunidade acadêmica da UNIFEI (graduação, pós, docentes, pesquisadores, TAEs), logo dialoga com o acervo — que é produto do Projeto AvalIA/PRG-UNIFEI."
+    - "O acervo é genérico (não institucional), mas cita MEC/UNESCO; o guia UNIFEI entra como fonte normativa da casa no eixo ética-governança."
+    - "AIAS 5 'Co-autoria estudante + IA' é vocabulário pedagógico do repo, não crédito de autoria formal — Lote 3 (compatibilização) fica pendente; nenhuma renomeação da escala canônica."
+    - "O gate de verificação deste repo é ./audit.sh (não há ruff/pytest/coverage — zero .py)."
+  alternatives:
+    - "A) Reescrever a skill inteira — descartada: mudança estrutural exigiria major e quebraria consistência."
+    - "B) Edições cirúrgicas preservando as 8 seções fixas e a ordem canônica — escolhida (exigência do audit.sh)."
+    - "C) Criar skill nova 'ia-educacao-guia-unifei' — descartada: o guia é fonte, não metodologia."
+  unknowns: |
+    RESOLVIDO:
+    1. Escopo do Lote 1: 3 skills (integridade-academica, pesquisa, escrita).
+    2. Formato da declaração do guia: seção no início, intitulada 'Uso de Inteligência Artificial Generativa', com ferramenta + finalidade + extensão + tipo de contribuição; se o uso for significativo, detalhar no corpo e apresentar prompts iniciais em nota/apêndice.
+    3. Checklist do autor (guia): (a) uso declarado; (b) informações/referências/dados conferidos; (c) nenhum dado sensível/sigiloso/pessoal inserido; (d) conformidade com normas de instituição/revista/evento/programa.
+    4. Turnitin: guia o disponibiliza para originalidade/plágio; incorporado de forma preventiva/formativa, compatível com a vedação a detectores punitivos do manual/cap7.
+    5. TWIN CHECK: ocorrências remanescentes de 'co-autoria' (aias-consultant L51, bloom L104, debate L56, README L26, CLAUDE.md L89) são o Lote 3 — não são regressão do Lote 1.
+    6. Ocorrências remanescentes de declaração de uso (avaliacao-competencia, formacao-inicial-docente, planejamento-didatico, portfolio, superior, transparencia-explicabilidade) são o Lote 4.
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: "Sem skill nova, sem seção nova, sem renomeação. 3 bumpes minor (1.9→1.10, 1.6→1.7, 1.5→1.6). Duas referências normativas adicionadas por skill no eixo (UNIFEI + CNPq), conforme CONTRIBUTING 'documente a fonte no campo Referências'."
+  answered: true
+  skipped: false
+intent:
+  code_does: "Skills tinham diretrizes genéricas de integridade (MEC/UNESCO) sem as vedações explícitas do Guia UNIFEI e sem o formato institucional de declaração."
+  check_expects: "audit.sh exige as 8 seções fixas na ordem, frontmatter válido, sem itálico em Referências, slug/categoria válidos, dependências apenas do repo, README em sincronia."
+  spec_says: "Guia UNIFEI: vedações de coautoria e geração integral; 4 más condutas além do plágio; declaração padronizada; prompts em apêndice quando significativo; checklist do autor; esclarecimento por bancas."
+  all_agree: true
+  conflict_resolution: ""
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: skills/ia-educacao-integridade-academica/SKILL.md
+      necessary: true
+      change: "v1.10 — princípios (coautoria/geração integral/responsabilidade), má condutas + Turnitin preventivo, declaração no formato do guia, checklist do autor, 2 cenários, 2 referências normativas"
+    - path: skills/ia-educacao-pesquisa/SKILL.md
+      necessary: true
+      change: "v1.7 — declaração no formato do guia + prompts em apêndice, esclarecimento por bancas, checklist ampliado, vedação de documentos de terceiros, 2 referências"
+    - path: skills/ia-educacao-escrita/SKILL.md
+      necessary: true
+      change: "v1.6 — princípio de não-autoria/geração integral, risco 'geração integral sem revisão', declaração institucional, 1 referência"
+    - path: CHANGELOG.md
+      necessary: true
+      change: "0.10.23 — registro do Lote 1 e das pendências (Lotes 2-4)"
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+verify:
+  ruff_clean: false      # N/A: repositório documental, sem código Python (zero .py, sem pyproject)
+  tests_pass: false      # N/A: sem test suite (AGENTS.md/CLAUDE.md: não há build/testes/lint)
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true   # verificação real: ./audit.sh exit 0 (AUDITORIA OK) + TWIN CHECK por grep + diff revisado
+  attempts: 1
+  hand_back: false
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: true
+  auth_present: true
+  pending_owed: true
+  pending_present: true
+  twins_owed: true
+  twins_present: true
+auth:
+  action_taken: true
+  authorized: true
+  action: "Edição de 3 skills + CHANGELOG (Lote 1 do diagnóstico de adequação ao Guia UNIFEI)"
+  quote: "Faça a edição do Lote 1"
+pending:
+  action: "Lotes 2 (salvaguarda de terceiros em feedback/rubrica/portfolio/avaliacao-grupo e agente aplicador-de-rubricas), 3 (compatibilização AIAS 5 x vedação de coautoria em aias-consultant/README/CLAUDE.md/bloom/debate) e 4 (protocolo de bancas e Turnitin nas referências do eixo) permanecem pendentes"
+  documented: true
+twins:
+  pattern: "co-autoria|coautora|integralmente gerado|declaração de uso"
+  result: "co-autoria: 5 ocorrências remanescentes (aias-consultant L51, bloom L104, debate L56, README L26, CLAUDE.md L89) = Lote 3; declaração de uso: 6 skills remanescentes = Lote 4; integralmente gerado: 0 ocorrências (coberto)"
+  searched: true
+  defect_fixed: true
+  matches_count: 11
+  files_count: 11
+  fix_applied: false

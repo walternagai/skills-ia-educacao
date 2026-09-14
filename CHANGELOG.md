@@ -5,6 +5,20 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.23] — 2026-09-14
+
+### Adicionado
+- **Lote 1 de adequação ao Guia de referência IAG da UNIFEI** (`raw-pdfs/GuiadereferênciaIAUnifei.pdf`) — conformidade dura no eixo integridade acadêmica e pesquisa:
+  - **`ia-educacao-integridade-academica`** (v1.9 → v1.10): princípios de vedação de coautoria de IAG e de geração integral sem revisão humana; as más condutas científicas (*plágio, autoplágio, ocultação de autoria, fabricação/falsificação de dados, manipulação de resultados, salami science*) explicitadas no Workflow; formato da declaração "Uso de Inteligência Artificial Generativa" (ferramenta, finalidade, extensão, tipo de contribuição; prompts em nota/apêndice quando significativo); Checklist do(a) autor(a) pré-submissão; uso preventivo e formativo do Turnitin; novas referências (Guia UNIFEI, Portaria CNPq 2664/2026)
+  - **`ia-educacao-pesquisa`** (v1.6 → v1.7): modelo de declaração alinhado ao formato do guia (seção de abertura + nível AIAS); registro de prompts iniciais em apêndice/nota quando o uso for metodologicamente significativo; esclarecimento por bancas; checklist ampliado (não-inserção de dados sensíveis; conformidade com normas de revista/evento/programa); vedação de inserção de documentos de terceiros sigilosos
+  - **`ia-educacao-escrita`** (v1.5 → v1.6): princípio de que IA não é autora/coautora e não substitui a escrita (vedação de texto integralmente gerado sem revisão); linha de risco "geração integral sem revisão" na tabela de riscos; declaração institucional no formato do guia; referência ao Guia UNIFEI
+
+### Notas
+- Lotes 2 (salvaguarda de terceiros em `feedback`/`rubrica`/`portfolio`/`avaliacao-grupo` e agente `aplicador-de-rubricas`), 3 (compatibilização AIAS 5 × vedação de coautoria) e 4 (protocolo de bancas, Turnitin nas referências do eixo) permanecem pendentes — diagnóstico em `.kata/adequacoes-guia-ia-unifei.yaml`
+- `./audit.sh` OK após as edições
+
+---
+
 ## [0.10.22] — 2026-09-10
 
 ### Modificado

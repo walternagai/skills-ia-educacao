@@ -2,7 +2,7 @@
 name: ia-educacao-escrita
 category: ferramentas-praticas
 model: any
-version: 1.5
+version: 1.6
 description: >
   Especialista em escrita acadêmica e técnica com IA no Ensino Superior, com foco em manter a voz autoral e o raciocínio do estudante como núcleo do texto. Cobre relatórios técnicos, artigos científicos, cadernos de laboratório, redação de metodologia e discussão e revisão com IA. Relevante para todas as áreas STHEM. Acione para: "escrever com IA", "escrita acadêmica", "relatório técnico", "artigo científico", "usar IA sem perder minha voz", "revisão de texto com IA", "estrutura de argumento", "coerência do texto", "plágio e IA", "revisar TCC com IA".
 ---
@@ -14,6 +14,7 @@ description: >
 - Voz autoral não é estilo — é julgamento: a voz do pesquisador aparece nas escolhas de estrutura, nas ênfases, nas ressalvas, nas conexões que o texto estabelece — não na originalidade das palavras; IA pode reformular sem destruir a voz se o pesquisador mantiver o controle das escolhas
 - O ciclo correto com IA: pensar → rascunhar (próprio) → usar IA para melhorar → revisar e decidir o que aceitar; o ciclo errado: pedir à IA o texto → editar superficialmente → entregar
 - Transparência é pré-requisito: declarar o uso de IA na escrita acadêmica não é fraqueza — é prática científica; o que viola a integridade não é usar IA, é omitir o uso
+- IA não é autora nem coautora e não substitui a escrita: o texto não pode ser integralmente gerado por IA nem apresentado sem revisão humana crítica; a contribuição intelectual e a responsabilidade final pelo conteúdo são do(a) autor(a)
 - Escrita técnica e científica têm convenções de gênero específicas: um relatório de laboratório, um artigo IMRD, um TCC e um relatório de engenharia têm estruturas distintas — IA precisa receber esse contexto para gerar outputs úteis
 
 ## Quando usar
@@ -137,6 +138,7 @@ IA útil para:
 | **Alucinação factual** | IA afirma dado empírico sem citar fonte | Verificar cada afirmação factual com `ia-educacao-verificacao` |
 | **Perda de nuance** | IA remove ressalvas e limitações do texto original | Restaurar ressalvas; são marca de maturidade científica, não fraqueza |
 | **Homogeneização de estilo** | Todos os textos da turma soam iguais | Usar IA para revisão, não para geração; exigir rascunho próprio antes |
+| **Geração integral sem revisão** | O texto foi produzido pela IA e apresentado como está, sem contribuição intelectual do(a) autor(a) | Tratar como má conduta: o texto não pode ser integralmente gerado por IA; exigir rascunho próprio, revisão crítica e declaração de uso |
 
 ### 6. Declaração de uso de IA na escrita
 
@@ -151,6 +153,8 @@ IA generativa ([ferramenta]) foi usada para revisão de clareza e coerência
 nas seções [X] e [Y]. O argumento, a interpretação dos dados e as conclusões são
 de autoria exclusiva do(s) autor(es). Nível AIAS: [X].
 ```
+
+Quando o trabalho exigir declaração institucional (TCC, dissertação, tese, artigo submetido), usar a seção de abertura **"Uso de Inteligência Artificial Generativa"**, especificando ferramenta, finalidade, extensão e tipo de contribuição — e, quando o uso for significativo para os resultados, detalhar no corpo do texto e registrar os prompts iniciais em nota de rodapé ou Apêndice.
 
 ## Formato de Saída
 - **Outline estruturado** para o gênero textual solicitado, com checklist de argumento
@@ -199,4 +203,5 @@ Produto esperado: redação dissertativo-argumentativa de 30 linhas com nota-alv
 - DAY, R. A.; GASTEL, B. How to Write and Publish a Scientific Paper. 8. ed. Cambridge: Cambridge University Press, 2016.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6022: Informação e Documentação — Artigo em Publicação Periódica Científica — Apresentação. Rio de Janeiro: ABNT, 2018.
+- UNIVERSIDADE FEDERAL DE ITAJUBÁ. Guia de referência: uso de ferramentas de inteligência artificial generativa em trabalhos acadêmicos e na pesquisa. Itajubá: UNIFEI, 2026. Produção e editoração: Núcleo de Educação Aberta e a Distância (NEaD); Comissão Portaria 3249/2025-RT.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.

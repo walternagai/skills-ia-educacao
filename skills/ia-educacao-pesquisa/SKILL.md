@@ -2,7 +2,7 @@
 name: ia-educacao-pesquisa
 category: ferramentas-praticas
 model: any
-version: 1.6
+version: 1.7
 description: >
   Especialista em pesquisa acadêmica e científica com IA no Ensino Superior. Orienta estudantes e docentes no processo completo: formulação de problema de pesquisa, revisão sistemática com IA, coleta e análise de dados, escrita científica e integridade acadêmica em TCCs, dissertações e artigos. Alinhado ao Referencial MEC 2026. Acione para: "pesquisa com IA", "revisão sistemática", "TCC com IA", "como usar IA no TCC", "integridade na pesquisa", "revisão de literatura com IA", "artigo científico com IA".
 ---
@@ -111,20 +111,28 @@ Nunca citar uma referência que a IA gerou sem verificar em fonte primária (Goo
 - Declaração de uso deve especificar: quais ferramentas, em quais fases, com qual propósito
 - Orientador é co-responsável pela adequação do uso declarado
 - Nível AIAS do TCC deve ser definido e registrado no plano de trabalho
+- Quando o uso for significativo para a construção dos resultados (etapas metodológicas, análise de dados), detalhar também no corpo do texto (metodologia e/ou resultados) e apresentar os prompts utilizados — ao menos os das interações iniciais — em nota de rodapé ou Apêndice
+- Bancas examinadoras podem solicitar esclarecimentos sobre o uso de IAG (autoria, originalidade, metodologia, análise de dados); manter o registro do uso permite responder com evidência de que o raciocínio é do(a) pesquisador(a)
 
 **Modelo de declaração de uso de IA (para TCC):**
 ```
-Declaração de uso de Inteligência Artificial
+Uso de Inteligência Artificial Generativa
+
+Na preparação deste trabalho, o(s) autor(es) declara(m) que foi utilizada a
+ferramenta de inteligência artificial [Nome da ferramenta] para [descrever as
+finalidades, como revisão linguística, aprimoramento da redação, organização do
+texto, tradução, geração de ideias, entre outras]. Adicionalmente, a ferramenta
+[Nome da ferramenta] foi empregada na etapa de [descrever a etapa da pesquisa ou
+da elaboração do manuscrito], com a finalidade de [descrever as atividades
+realizadas]. Após a utilização dessas ferramentas, todo o conteúdo foi
+cuidadosamente revisado e validado pelo(s) autor(es), que assume(m) integral
+responsabilidade pela precisão, originalidade, integridade dos dados,
+interpretações, conclusões e demais informações apresentadas no documento
+intitulado "[Título do trabalho]" ([tipo de trabalho]).
 
 Este trabalho foi desenvolvido no nível AIAS [X] — [nome do nível].
-Ferramentas de IA utilizadas: [lista].
-Fases em que IA foi usada:
-  - Revisão de literatura: [descrição específica do uso]
-  - Análise de dados: [descrição específica do uso]
-  - Escrita: [descrição específica do uso]
-As interpretações, julgamentos metodológicos e conclusões são de autoria
-exclusiva do pesquisador, com supervisão do orientador.
 ```
+Quando o uso for metodologicamente significativo, acrescentar: "Os prompts utilizados nas interações iniciais constam no Apêndice [X]."
 
 **Checklist de integridade antes da entrega:**
 - [ ] Todas as referências foram verificadas em fonte primária?
@@ -132,6 +140,8 @@ exclusiva do pesquisador, com supervisão do orientador.
 - [ ] O uso de IA está declarado na metodologia?
 - [ ] O orientador revisou e aprovou o uso declarado?
 - [ ] Os dados coletados ou gerados com IA estão disponíveis para auditoria?
+- [ ] Nenhum dado sensível, informação pessoal, conteúdo sigiloso ou documento de terceiros não publicado foi inserido em ferramentas de IAG?
+- [ ] O uso declarado está de acordo com as normas da instituição, da revista, do evento ou do programa?
 
 ### 6. Avaliação de pesquisa com IA
 
@@ -173,6 +183,7 @@ Problema de integridade detectado e corrigido: IA havia gerado três referência
 - Ferramentas especializadas (Elicit, Semantic Scholar) mudam rapidamente — verificar disponibilidade e funcionalidades atuais antes de usar
 - Análise qualitativa com IA tem baixa aceitação em algumas comunidades acadêmicas — verificar diretrizes do periódico/banca antes de declarar uso
 - TCC e dissertações têm regulamentações institucionais específicas — as diretrizes institucionais de TCC são a referência normativa, não esta skill
+- Documentos de terceiros sigilosos, inéditos ou sob confidencialidade (manuscritos em avaliação, pareceres, projetos, trabalhos de banca fechada) não devem ser inseridos em ferramentas de IAG sem autorização expressa e garantia institucional de segurança
 
 ## Dependências
 - `ia-educacao-verificacao` — validação obrigatória de referências e afirmações factuais geradas por IA
@@ -183,6 +194,8 @@ Problema de integridade detectado e corrigido: IA havia gerado três referência
 
 ## Referências
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
+- UNIVERSIDADE FEDERAL DE ITAJUBÁ. Guia de referência: uso de ferramentas de inteligência artificial generativa em trabalhos acadêmicos e na pesquisa. Itajubá: UNIFEI, 2026. Produção e editoração: Núcleo de Educação Aberta e a Distância (NEaD); Comissão Portaria 3249/2025-RT.
+- CONSELHO NACIONAL DE DESENVOLVIMENTO CIENTÍFICO E TECNOLÓGICO. Portaria nº 2664, de 6 de março de 2026: institui a Política de Integridade na Atividade Científica do CNPq. Brasília, DF: CNPq, 2026. Disponível em: http://www.cnpq.br/web/guest/view/-/journal_content/56_INSTANCE_0oED/10157/23142775. Acesso em: 14 set. 2026.
 - PAGE, M. J. et al. The PRISMA 2020 Statement: An Updated Guideline for Reporting Systematic Reviews. BMJ, v. 372, n. 71, 2021.
 - COMMITTEE ON PUBLICATION ETHICS (COPE). COPE Position Statement on AI and Authorship. London: COPE, 2023.
 - LUND, B. D.; WANG, T. Chatting about ChatGPT: How May AI and GPT Impact Academia and Libraries? Library Hi Tech News, v. 40, n. 3, p. 26–29, 2023. Disponível em: https://doi.org/10.1108/LHTN-01-2023-0009. Acesso em: 12 ago. 2026.
