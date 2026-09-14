@@ -2,7 +2,7 @@
 name: ia-educacao-superior
 category: niveis-ensino
 model: any
-version: 1.11
+version: 1.12
 description: >
   Especialista em orientar a incorporação da IA na Educação Superior e Pós-Graduação, abrangendo ensino, pesquisa, extensão e gestão acadêmica. Use quando IES precisarem reorientar currículos, fortalecer comissões de ética e desenvolver competências em IA para estudantes. Acione para: "IA na Educação Superior", "IA na pós-graduação", "currículo universitário e IA", "comissão de ética em IA", "pesquisa acadêmica com IA", "competências em IA para universitários", "IES e IA".
 ---
@@ -32,6 +32,7 @@ description: >
 5. **Promover papel da IES** na formação de professores para a EB com IA — licenciaturas devem preparar para ensinar sobre IA e com IA
 6. **Estabelecer políticas institucionais** de uso ético e responsável de IA — diretrizes para estudantes, docentes e pesquisadores
 7. **Orientar sobre TCC e IA**: explicitar nível AIAS para cada etapa do TCC — TCC1 (plano de trabalho): nível 2–3 (planejamento assistido ou colaboração com IA); TCC2 (artigo/monografia + defesa): nível 3–4 conforme objetivos do projeto; a banca avalia critérios de problema/justificativa, fundamentação teórica, metodologia, desenvolvimento, resultados, conclusões, redação e defesa oral — o nível AIAS deve ser declarado no plano de ensino e no enunciado de cada etapa
+8. **Preparar o protocolo de esclarecimento por bancas**: orientadores, membros de bancas e avaliadores podem solicitar esclarecimentos sobre o uso de IAG quando houver dúvida sobre autoria, originalidade, metodologia, análise de dados ou integridade; orientar as bancas a conduzir a arguição de forma formativa — perguntas sobre o processo ("o que a IA fez e o que você decidiu?"), usando a declaração de uso e os prompts registrados como ponto de partida, nunca detectores de IA como prova isolada; a decisão sobre eventual má conduta segue o fluxo institucional, não o juízo monocrático do avaliador
 
 ## Formato de Saída
 - Diretrizes para reforma curricular com integração de IA
@@ -41,6 +42,7 @@ description: >
 - Programa de letramento em IA para universitários
 - Matriz de competências em IA por área do conhecimento
 - Política de uso de IA com mapeamento AIAS por tipo de avaliação e por etapa do TCC (nível 2–3 para TCC1; nível 3–4 para TCC2)
+- Roteiro de esclarecimento sobre IAG para bancas examinadoras (orientador, banca e avaliadores), com perguntas de processo e fluxo institucional
 
 ## Exemplos
 - **Reforma curricular**: Curso de Direito incorpora módulo sobre "IA e Direito" — vieses algorítmicos, responsabilidade civil, proteção de dados, prova digital. Curso de Medicina incorpora "IA em Diagnóstico" — limites, ética, validação.
@@ -61,6 +63,7 @@ description: >
 
 ## Referências
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Capítulo 8
+- UNIVERSIDADE FEDERAL DE ITAJUBÁ. Guia de referência: uso de ferramentas de inteligência artificial generativa em trabalhos acadêmicos e na pesquisa. Itajubá: UNIFEI, 2026. Produção e editoração: Núcleo de Educação Aberta e a Distância (NEaD); Comissão Portaria 3249/2025-RT.
 - UNESCO. AI and education: guidance for policymakers. Paris: UNESCO, 2021.
 - COMISSÃO EUROPEIA. Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators. Luxemburgo: Publicações da UE, 2022.
 - ABMES. Inteligência artificial na educação superior. Brasília: ABMES, 2024.

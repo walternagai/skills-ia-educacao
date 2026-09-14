@@ -5,6 +5,22 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.26] — 2026-09-14
+
+### Adicionado
+- **Lote 4 de adequação ao Guia de referência IAG da UNIFEI** (`raw-pdfs/GuiadereferênciaIAUnifei.pdf`) — protocolo de esclarecimento por bancas e referências normativas do eixo:
+  - **`ia-educacao-avaliacao-oral`** (v1.9 → v1.10): novo passo 8 "Conduzir esclarecimentos sobre uso de IAG na arguição" — perguntas sobre o processo (o que a IA fez × o que o estudante decidiu), uso da declaração/prompts como ponto de partida, vedação de detectores de IA como evidência, encaminhamento pelo fluxo institucional; novo artefato "Roteiro de esclarecimento sobre uso de IAG"; referência ao Guia UNIFEI
+  - **`ia-educacao-superior`** (v1.11 → v1.12): novo passo 8 — protocolo de esclarecimento por bancas (orientador, banca, avaliadores) para TCC/pós-graduação; novo artefato; referência ao Guia UNIFEI
+  - **`aias-consultant`** (v3.7 → v3.8): comunicação ao estudante passa a explicitar se o uso está **permitido, restrito ou vedado** (recomendação do guia), evitando "IA sim/não" genérico
+  - **`ia-educacao-etica`** (v1.11 → v1.12): referências ao Guia UNIFEI e à Portaria CNPq 2664/2026
+  - **`ia-educacao-governanca-dados`** (v1.9 → v1.10): referência ao Guia UNIFEI
+
+### Notas
+- Encerra os 4 lotes de adequação ao Guia de IAG da UNIFEI (v0.10.23–v0.10.26)
+- `./audit.sh` OK após as edições
+
+---
+
 ## [0.10.25] — 2026-09-14
 
 ### Corrigido

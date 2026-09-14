@@ -2,7 +2,7 @@
 name: ia-educacao-etica
 category: etica-governanca
 model: any
-version: 1.11
+version: 1.12
 description: >
   Especialista em fundamentos éticos para IA na educação, alinhado aos princípios do Referencial MEC e marcos internacionais (UNESCO, OCDE, Comissão Europeia). Use quando instituições precisarem estabelecer princípios éticos norteadores para adoção de IA. Acione para: "ética em IA na educação", "princípios éticos para IA educacional", "UNESCO e IA na educação", "valores fundamentais para IA na escola", "código de ética para IA educacional", "responsabilização em IA", "accountability em sistemas de IA educacional".
 ---
@@ -70,6 +70,8 @@ description: >
 
 ## Referências
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026. — Capítulo 3
+- UNIVERSIDADE FEDERAL DE ITAJUBÁ. Guia de referência: uso de ferramentas de inteligência artificial generativa em trabalhos acadêmicos e na pesquisa. Itajubá: UNIFEI, 2026. Produção e editoração: Núcleo de Educação Aberta e a Distância (NEaD); Comissão Portaria 3249/2025-RT.
+- CONSELHO NACIONAL DE DESENVOLVIMENTO CIENTÍFICO E TECNOLÓGICO. Portaria nº 2664, de 6 de março de 2026: institui a Política de Integridade na Atividade Científica do CNPq. Brasília, DF: CNPq, 2026.
 - UNESCO. Consenso de Beijing sobre a inteligência artificial e a educação. Paris: UNESCO, 2019.
 - UNESCO. Recomendações sobre a ética da Inteligência Artificial. Paris: UNESCO, 2022b.
 - OCDE. The potential impact of Artificial Intelligence on Education: opportunities and challenges. Paris: OCDE Publishing, 2024b.

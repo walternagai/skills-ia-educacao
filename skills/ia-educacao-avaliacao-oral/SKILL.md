@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao-oral
 category: ferramentas-praticas
 model: any
-version: 1.9
+version: 1.10
 description: >
   Especialista em design, rubricas e protocolos para avaliação oral no Ensino Superior — apresentações, arguições, defesas de TCC, seminários, entrevistas técnicas e exames orais. Cobre critérios de clareza, domínio, argumentação e gestão de tempo; uso de IA para simular bancas, gerar perguntas de arguição e analisar desempenho. Acione para: "avaliação oral", "apresentação de seminário", "defesa de TCC", "arguição", "banca examinadora", "rubrica para apresentação", "como avaliar seminário", "simulação de banca com IA".
 ---
@@ -144,6 +144,15 @@ description: >
    - [ ] Accommodations para ansiedade e neurodiversidade previstas
    - [ ] Template de feedback preparado (2 pontos fortes + 1 melhoria)
 
+8. **Conduzir esclarecimentos sobre uso de IAG na arguição**
+
+   Quando houver dúvida sobre autoria, originalidade, metodologia, análise de dados ou integridade acadêmica do trabalho, a banca pode solicitar esclarecimentos ao estudante — direito previsto nas normas institucionais de uso de IAG. Conduzir de forma formativa:
+   - Perguntar sobre o processo, não para "pegar": "Como você chegou a esta interpretação?", "O que a IA fez e o que você decidiu?", "Onde você discordou do output da ferramenta?"
+   - Verificar se o estudante consegue defender oralmente as escolhas centrais do trabalho — a defesa do raciocínio é a evidência de autoria
+   - Usar a declaração de uso de IA e, quando houver, os prompts registrados como ponto de partida da conversa — não como prova isolada
+   - Nunca usar detectores de IA como evidência de má conduta (falsos-positivos são frequentes, especialmente contra estudantes não nativos ou neurodivergentes); a conversa com o estudante prevalece sobre qualquer escore automatizado
+   - Registrar as respostas no parecer da banca; se a dúvida persistir, seguir o fluxo institucional (não decidir monocraticamente)
+
 ## Formato de Saída
 - **Rubrica analítica para avaliação oral**: critérios × níveis com descritores e pesos por área STHEM
 - **Roteiro de arguição**: perguntas por nível de Bloom para cada área STHEM
@@ -152,6 +161,7 @@ description: >
 - **Template de feedback**: 2 pontos fortes + 1 ponto de melhoria + nota por critério
 - **Checklist de verificação pré-avaliação**: 7 itens de conferência antes de conduzir a avaliação oral
 - **Relatório de calibração entre avaliadores**: convergência das notas da banca por critério
+- **Roteiro de esclarecimento sobre uso de IAG**: perguntas de processo para a arguição, quando houver dúvida sobre autoria ou integridade
 
 ## Exemplos
 
@@ -196,5 +206,6 @@ Pergunta de nível 5: "Você usou assistente de IA (ex.: Copilot) neste projeto.
 - BROOKHART, S. M. How to Create and Use Rubrics for Formative Assessment and Grading. Alexandria, VA: ASCD, 2013.
 - ANDERSON, L. W.; KRATHWOHL, D. R. (Orgs.). A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom's Taxonomy of Educational Objectives. New York: Longman, 2001.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
+- UNIVERSIDADE FEDERAL DE ITAJUBÁ. Guia de referência: uso de ferramentas de inteligência artificial generativa em trabalhos acadêmicos e na pesquisa. Itajubá: UNIFEI, 2026. Produção e editoração: Núcleo de Educação Aberta e a Distância (NEaD); Comissão Portaria 3249/2025-RT.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
 
