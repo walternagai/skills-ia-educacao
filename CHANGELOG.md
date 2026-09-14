@@ -5,6 +5,22 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.25] — 2026-09-14
+
+### Corrigido
+- **Lote 3 de adequação ao Guia de referência IAG da UNIFEI** (`raw-pdfs/GuiadereferênciaIAUnifei.pdf`) — compatibilização do vocabulário AIAS 5 com a vedação de coautoria de ferramentas de IAG:
+  - **`aias-consultant`** (v3.6 → v3.7): linha do Nível 5 passa a "Co-criação dirigida pelo estudante; responsabilidade pelo resultado permanece humana" (mesma redação já usada nos 6 subagentes); nota no Workflow esclarece que "co-criação" é processo pedagógico, não autoria formal, e orienta usar "co-criação dirigida pelo estudante" em vez de "co-autoria"; limitação explícita; referência ao Guia UNIFEI
+  - **`ia-educacao-bloom`** (v1.7 → v1.8): "Criar com IA como co-autora" → "Criar com IA como parceira de exploração"; referência ao Guia UNIFEI
+  - **`ia-educacao-debate`** (v1.6 → v1.7): questão de debate reformulada — AIAS 5 (Exploração de IA) com a nota de que as normas vedam atribuir coautoria à ferramenta
+  - **`README.md`** e **`CLAUDE.md`**: tabela canônica do Nível 5 alinhada à redação dos subagentes, com nota sobre "co-criação"
+  - **`manual/cap1-introducao.tex`**: "Parceria autoral entre estudante e IA" → "Co-criação dirigida pelo estudante; a responsabilidade pelo resultado permanece humana (a ferramenta não é autora nem coautora)"; PDF recompilado (80 páginas, sem citações indefinidas)
+
+### Notas
+- Lote 4 (protocolo de bancas, Turnitin nas referências do eixo) permanece pendente
+- `./audit.sh` OK após as edições
+
+---
+
 ## [0.10.24] — 2026-09-14
 
 ### Adicionado

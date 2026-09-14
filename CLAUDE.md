@@ -86,9 +86,11 @@ A escala **AIAS (AI Assessment Scale)** — baseada no trabalho de Perkins, Furz
 | 2 | Planejamento Assistido por IA | Ideação e estruturação | Do estudante; IA apenas no processo |
 | 3 | Colaboração com IA | Elaboração e refinamento | Do estudante com auxílio de IA |
 | 4 | IA Integral | Uso estratégico e abrangente | Dirigido pelo estudante com IA |
-| 5 | Exploração de IA | Co-criação e inovação | Co-autoria estudante + IA |
+| 5 | Exploração de IA | Co-criação e inovação | Co-criação dirigida pelo estudante; responsabilidade pelo resultado permanece humana |
 
 Qualquer referência a esses níveis no repositório usa exatamente esses nomes e números — inclusive nos campos `Workflow` e `Formato de Saída` das skills.
+
+**Nota sobre "co-criação"**: no Nível 5, o termo descreve o processo pedagógico de explorar fronteiras com a IA — não confere autoria ou coautoria à ferramenta. As normas institucionais (ex.: Guia de referência para uso de IAG da UNIFEI) vedam indicar a ferramenta como autora ou coautora de trabalhos acadêmicos; a contribuição intelectual e a responsabilidade final são humanas.
 
 ## Convenções de edição
 

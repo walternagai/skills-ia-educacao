@@ -2,7 +2,7 @@
 name: ia-educacao-debate
 category: formacao-docente
 model: any
-version: 1.6
+version: 1.7
 description: >
   Especialista em debate estruturado e argumentação acadêmica com IA no Ensino Superior. Orienta o design e a facilitação de debates (Oxford, Fishbowl, Seminário Socrático), o uso de IA como advogado do diabo e gerador de contra-argumentos, e a avaliação da qualidade argumentativa. Acione para: "debate estruturado", "debate em sala", "seminário socrático", "fishbowl", "Oxford debate", "argumentação acadêmica", "IA como advogado do diabo", "como avaliar argumento", "contra-argumentação", "falácias argumentativas", "discussão filosófica com IA".
 ---
@@ -53,7 +53,7 @@ description: >
 | Medicina / Saúde | "O uso de IA diagnóstica deve ser obrigatório em UBSs antes da consulta médica?" |
 | Direito | "Algoritmos de predição de reincidência criminal deveriam ser permitidos em decisões de liberdade provisória?" |
 | Engenharia | "O custo ambiental de data centers de IA compensa o benefício que essas tecnologias trazem?" |
-| Educação | "O nível AIAS 5 (co-autoria com IA) deveria ser permitido em TCCs de graduação?" |
+| Educação | "O nível AIAS 5 (Exploração de IA) deveria ser permitido em TCCs de graduação, dado que as normas institucionais vedam atribuir coautoria à ferramenta?" |
 | Economia | "A taxação de automação (robot tax) é a política correta para lidar com deslocamento de empregos por IA?" |
 
 ### 3. Conduzir cada formato

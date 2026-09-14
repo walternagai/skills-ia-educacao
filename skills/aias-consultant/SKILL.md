@@ -2,7 +2,7 @@
 name: aias-consultant
 category: ferramentas-praticas
 model: any
-version: 3.6
+version: 3.7
 description: >
   Consultora especialista na Escala AIAS (AI Assessment Scale), orientando docentes na escolha do nível adequado para cada atividade avaliativa, no redesenho das tarefas, e na comunicação transparente das expectativas de uso de IA aos estudantes. Acione para: "qual nível AIAS usar nesta avaliação", "como escrever a política de IA para a atividade", "posso permitir IA neste trabalho", "como comunicar o nível AIAS ao aluno", "como redesenhar esta prova", "exemplo de enunciado com AIAS", "integridade acadêmica e IA", "AIAS no plano de ensino".
 ---
@@ -48,7 +48,9 @@ description: >
    | 2 | Planejamento Assistido por IA | Ideação e estruturação | Do estudante; IA no processo |
    | 3 | Colaboração com IA | Elaboração e refinamento | Do estudante com auxílio de IA |
    | 4 | IA Integral | Uso estratégico e abrangente | Dirigido pelo estudante com IA |
-   | 5 | Exploração de IA | Co-criação e inovação | Co-autoria estudante + IA |
+   | 5 | Exploração de IA | Co-criação e inovação | Co-criação dirigida pelo estudante; responsabilidade pelo resultado permanece humana |
+
+   **Nota sobre "co-criação"**: no Nível 5, "co-criação" descreve o processo pedagógico de explorar fronteiras com a IA — não confere à ferramenta autoria ou coautoria formal. A ferramenta não é autora nem coautora de trabalhos acadêmicos: a contribuição intelectual, as decisões e a responsabilidade final são humanas. Ao redigir enunciados e declarações, usar "co-criação dirigida pelo estudante" ou "exploração de IA" em vez de "co-autoria".
 
 3. **Propor o redesenho da atividade**
    - Nível 1: garantir ambiente controlado; accommodations para tecnologia assistiva
@@ -110,6 +112,7 @@ Orientador quer incentivar inovação com IA no projeto de conclusão.
 - Não detecta automaticamente uso indevido de IA em trabalhos submetidos
 - A escala AIAS não resolve questões de equidade de acesso a ferramentas — apenas aponta quando devem ser consideradas
 - Orientações de integridade acadêmica são complementares, não substitutivas, das normas disciplinares institucionais
+- O Nível 5 (Exploração de IA) não autoriza atribuir autoria ou coautoria à ferramenta em trabalhos acadêmicos — ver a nota sobre "co-criação" no Workflow
 
 ## Dependências
 - `ia-educacao-avaliacao` — redesenho estrutural de avaliações na era da IA
@@ -121,4 +124,5 @@ Orientador quer incentivar inovação com IA no projeto de conclusão.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
 - PERKINS, M.; ROE, J.; FURZE, L. Reimagining the Artificial Intelligence Assessment Scale (AIAS): A refined framework for educational assessment. Journal of University Teaching and Learning Practice, v. 22, n. 7, 2025. Disponível em: https://doi.org/10.53761/rrm4y757. Acesso em: 30 jun. 2026.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
+- UNIVERSIDADE FEDERAL DE ITAJUBÁ. Guia de referência: uso de ferramentas de inteligência artificial generativa em trabalhos acadêmicos e na pesquisa. Itajubá: UNIFEI, 2026. Produção e editoração: Núcleo de Educação Aberta e a Distância (NEaD); Comissão Portaria 3249/2025-RT.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
