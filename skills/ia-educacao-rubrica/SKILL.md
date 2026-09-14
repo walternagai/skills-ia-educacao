@@ -2,7 +2,7 @@
 name: ia-educacao-rubrica
 category: ferramentas-praticas
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em design de rubricas analíticas e holísticas para avaliação educacional, alinhadas à Taxonomia de Bloom, ao nível AIAS e aos princípios do DUA. Orienta docentes a criar critérios claros, descritores de desempenho precisos e instrumentos que avaliem competência independente do formato de entrega. Acione para: "criar rubrica", "rubrica analítica", "rubrica holística", "critérios de avaliação", "descritores de desempenho", "rubrica para trabalho com IA", "rubrica alinhada a Bloom", "rubrica inclusiva".
 ---
@@ -20,6 +20,8 @@ description: >
 - Criação de rubrica do zero para qualquer tipo de atividade (projeto, TCC, apresentação, portfólio, relatório, código)
 - Revisão de rubrica existente para alinhar com objetivos de Bloom ou nível AIAS definido
 - Design de rubrica para atividades que integram IA (AIAS 3–5): como avaliar qualidade de uso, curadoria e autoria
+- Uso de IAG como apoio à elaboração de rubricas e critérios avaliativos — permitido desde que não sejam inseridos conteúdos sigilosos, dados pessoais, documentos inéditos ou trabalhos de terceiros sem autorização; a rubrica gerada requer revisão crítica do docente
+- Uso de IAG para revisar a redação dos descritores e dos comentários já elaborados pelo próprio docente — sem delegar a definição dos critérios
 - Criação de rubrica para avaliação por pares — descritores precisam ser interpretáveis por estudantes, não só por docentes
 - Rubrica de processo vs. produto: avaliar as etapas de construção e não só o artefato final
 - Adaptação de rubricas para seguir princípios do DUA: descritores que não privilegiam um formato específico
@@ -119,5 +121,6 @@ Espaço de feedback: "O que ainda falta para atingir este padrão:" + "O que já
 - ANDRADE, H. L. A Critical Review of Research on Student Self-Assessment. Frontiers in Education, v. 4, p. 87, 2019. Disponível em: https://doi.org/10.3389/feduc.2019.00087. Acesso em: 12 ago. 2026.
 - WIGGINS, G.; McTIGHE, J. Understanding by Design. 2. ed. Alexandria, VA: ASCD, 2005.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
+- UNIVERSIDADE FEDERAL DE ITAJUBÁ. Guia de referência: uso de ferramentas de inteligência artificial generativa em trabalhos acadêmicos e na pesquisa. Itajubá: UNIFEI, 2026. Produção e editoração: Núcleo de Educação Aberta e a Distância (NEaD); Comissão Portaria 3249/2025-RT.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
 

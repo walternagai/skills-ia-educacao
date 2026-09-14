@@ -2,7 +2,7 @@
 name: ia-educacao-feedback
 category: ferramentas-praticas
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista em design e escala de feedback formativo educacional com IA generativa. Orienta docentes a construir feedback específico, acionável e centrado no aprendizado — usando IA para ampliar o alcance sem perder qualidade — e a ensinar estudantes a dar e receber feedback por pares. Acione para: "como dar feedback com IA", "feedback formativo", "feedback em escala", "feedback por pares", "como melhorar o feedback aos alunos", "IA para corrigir trabalhos", "comentários em redações", "feed forward", "feedback eficaz", "rubrica de feedback".
 ---
@@ -15,6 +15,7 @@ description: >
 - IA amplifica, não substitui o julgamento docente: usar IA para gerar rascunhos de feedback acelera o processo, mas o docente valida, ajusta e assina — a responsabilidade epistêmica permanece humana
 - Feedback só tem valor se o estudante consegue agir sobre ele: feedback tardio, genérico ou excessivo bloqueia a ação — menos e mais específico supera mais e mais vago
 - Feedback por pares, quando bem estruturado, desenvolve metacognição e pensamento crítico — o avaliador aprende tanto quanto o avaliado
+- Salvaguarda de terceiros: trabalhos de estudantes são documentos de terceiros — ao usar ferramentas de IAG, remover dados pessoais (nomes, matrículas, contatos) e nunca inserir dados sensíveis (laudos, condições socioeconômicas, crenças, processos disciplinares); documentos inéditos ou confidenciais exigem autorização expressa e garantia institucional de segurança
 
 ## Quando usar
 - Design de ciclos de feedback formativo em disciplinas com entregas progressivas
@@ -57,6 +58,8 @@ description: >
    - Equilibrar o que funciona com o que precisa melhorar (não apenas crítica)
 
 4. **Usar IA para escalar feedback sem perder qualidade**
+
+   **Pré-requisito de privacidade**: antes de submeter qualquer trabalho a uma ferramenta de IAG, remover dados pessoais e metadados (nomes, matrículas, e-mails); nunca inserir dados sensíveis ou documentos de terceiros sigilosos. Em dúvida sobre a conformidade da ferramenta, usar opção institucional ou processamento local — e registrar a decisão.
 
    **Modo 1 — IA gera rascunho; docente edita e assina**
    Prompt modelo para a IA:
@@ -125,6 +128,7 @@ Turma de 28 estudantes do curso Técnico em Informática do IFMG entrega projeto
 - Feedback em escala via IA não substitui as conversas individuais para estudantes com dificuldades persistentes — identificar esses casos é responsabilidade docente
 - Feedback por pares tem eficácia variável por faixa etária: mais eficaz a partir do Ensino Médio e com calibração prévia; menos eficaz com crianças sem suporte estruturado
 - Ciclos de feedback formativo exigem redesenho do calendário — não é possível adicionar feedback sem reduzir conteúdo ou avaliações somativas
+- Trabalhos de estudantes submetidos a ferramentas de IAG externas estão sujeitos a políticas de retenção e treinamento dos provedores — a pseudonimização reduz, mas não elimina o risco; preferir ferramentas institucionais ou locais para dados de avaliação
 
 ## Dependências
 - `ia-educacao-rubrica` — critérios e descritores que fundamentam feedback específico; rubrica é o contrato que torna o feedback interpretável
@@ -139,4 +143,5 @@ Turma de 28 estudantes do curso Técnico em Informática do IFMG entrega projeto
 - BLACK, P.; WILIAM, D. Assessment and Classroom Learning. Assessment in Education: Principles, Policy & Practice, v. 5, n. 1, p. 7–74, 1998.
 - MOLLICK, E. R.; MOLLICK, L. Instructors as Innovators: a Future-focused Approach to New AI Learning Opportunities, With Prompts. The Wharton School Research Paper, 2024.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
+- UNIVERSIDADE FEDERAL DE ITAJUBÁ. Guia de referência: uso de ferramentas de inteligência artificial generativa em trabalhos acadêmicos e na pesquisa. Itajubá: UNIFEI, 2026. Produção e editoração: Núcleo de Educação Aberta e a Distância (NEaD); Comissão Portaria 3249/2025-RT.
 

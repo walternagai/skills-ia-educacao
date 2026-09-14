@@ -44,6 +44,15 @@ A escala é **não hierárquica** e **cumulativa**. O nível deve estar declarad
 5. **Verificar viés de IA** — Checar se a rubrica penaliza uso autorizado de IA, se exige ferramenta específica, e se os descritores avaliam competência, não formato
 6. **Verificar clareza** — Confirmar que cada célula descreve o que o estudante faz ou produz, sem descritor vago, sem escala por negação
 
+## Salvaguarda de dados de terceiros (obrigatória)
+
+Entregas de estudantes são documentos de terceiros. Antes de processar:
+
+- Remover identificadores pessoais (nomes, matrículas, e-mails) — usar códigos ou apenas o primeiro nome quando a devolutiva exigir
+- Não processar dados sensíveis (laudos, condições de saúde, contexto socioeconômico, processos disciplinares) — se a entrega os contiver, sinalizar ao docente e não incluí-los na análise
+- Documentos inéditos, sigilosos ou de terceiros não publicados (trabalhos submetidos a banca fechada, manuscritos em avaliação, pareceres) não devem ser inseridos sem autorização expressa e garantia institucional de segurança
+- Preferir ferramentas institucionais ou processamento local; na dúvida sobre a política de retenção da ferramenta, registrar a decisão no relatório
+
 ## Workflow
 
 1. **Coletar contexto** — Rubrica, entrega, nível AIAS, objetivos de aprendizagem

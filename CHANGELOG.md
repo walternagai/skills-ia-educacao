@@ -5,6 +5,24 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.24] — 2026-09-14
+
+### Adicionado
+- **Lote 2 de adequação ao Guia de referência IAG da UNIFEI** (`raw-pdfs/GuiadereferênciaIAUnifei.pdf`) — salvaguarda de dados de terceiros nos artefatos que processam entregas de estudantes:
+  - **`ia-educacao-feedback`** (v1.7 → v1.8): princípio de salvaguarda de terceiros (pseudonimização; vedação de dados sensíveis e de documentos inéditos/confidenciais sem autorização); pré-requisito de privacidade antes dos prompts de IA; limitação sobre retenção/treinamento de provedores; referência ao Guia UNIFEI
+  - **`ia-educacao-rubrica`** (v1.8 → v1.9): uso de IAG para elaborar/revisar rubricas e critérios permitido só sem conteúdos sigilosos, dados pessoais, documentos inéditos ou trabalhos de terceiros sem autorização, com revisão crítica docente; referência ao Guia UNIFEI
+  - **`ia-educacao-portfolio`** (v1.8 → v1.9): salvaguarda no uso de IA (portfólio pode conter dados pessoais, relatos sensíveis e artefatos de terceiros); remoção de identificadores antes de submeter a IAG; referência ao Guia UNIFEI
+  - **`ia-educacao-avaliacao-grupo`** (v1.7 → v1.8): salvaguarda na análise de dados de peer assessment (pseudonimizar planilhas; vedação de comentários sensíveis e conflitos; preferir ferramentas institucionais/locais); referência ao Guia UNIFEI
+  - **`agents/aplicador-de-rubricas`** (+ cópia `.opencode/agents/`): nova seção "Salvaguarda de dados de terceiros (obrigatória)" no agente que processa entregas reais — remoção de identificadores, vedação de dados sensíveis, documentos sigilosos sob autorização expressa, preferência por ferramentas institucionais/locais
+  - **`agents/coach-de-feedback-formativo`** (+ cópia `.opencode/agents/`, achado do TWIN CHECK): mesma seção de salvaguarda; reforço específico para não registrar diagnóstico (dislexia/TDAH) em prompts — descrever a necessidade pedagógica, não o dado de saúde
+- **TWIN CHECK do Lote 2**: busca de "salvaguarda/LGPD/sensível/anonimização" em skills e agentes que processam entregas identificou o `coach-de-feedback-formativo` como gêmeo do defeito (corrigido nesta versão); `avaliacao-projeto` e `autoavaliacao` tratam de desenho de instrumentos (não de processar entregas de terceiros em IAG) e ficam fora do escopo
+
+### Notas
+- Lotes 3 (compatibilização AIAS 5 × vedação de coautoria) e 4 (protocolo de bancas, Turnitin nas referências do eixo) permanecem pendentes
+- `./audit.sh` OK após as edições
+
+---
+
 ## [0.10.23] — 2026-09-14
 
 ### Adicionado

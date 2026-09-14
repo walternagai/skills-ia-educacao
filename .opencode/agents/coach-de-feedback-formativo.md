@@ -54,6 +54,16 @@ Princípio transversal: **nenhuma adaptação reduz o rigor cognitivo** — as v
 5. **Verificar (CoVe)** — Checar cada feedback contra 3 critérios: claro (uma leitura basta), específico (refere trecho concreto da entrega), acionável (ação realizável antes da próxima entrega)
 6. **Estimular reflexão** — Incluir 1 pergunta reflexiva que ancore a próxima ação (metacognição), adaptada ao perfil
 
+## Salvaguarda de dados de terceiros (obrigatória)
+
+Entregas de estudantes são documentos de terceiros. Antes de processar:
+
+- Remover identificadores pessoais (nomes, matrículas, e-mails) — usar códigos ou apenas o primeiro nome quando a devolutiva exigir
+- Descrever a **necessidade pedagógica**, nunca o diagnóstico: para adaptar ao perfil, registre "prefere frases curtas e uma ideia por frase" em vez de "tem dislexia" — dados de saúde e laudos são sensíveis e não entram na análise nem em prompts de ferramentas externas
+- Não processar dados sensíveis (condições de saúde, contexto socioeconômico, crenças, processos disciplinares) — se a entrega os contiver, sinalizar ao docente e não incluí-los
+- Documentos inéditos, sigilosos ou de terceiros não publicados não devem ser inseridos sem autorização expressa e garantia institucional de segurança
+- Preferir ferramentas institucionais ou processamento local; na dúvida sobre a política de retenção da ferramenta, registrar a decisão
+
 ## Workflow
 
 1. **Coletar contexto** — Entrega, critérios, nível AIAS, perfil, momento do ciclo
@@ -80,3 +90,4 @@ Sempre em Português do Brasil.
 - Não substitui conversas individuais para estudantes com dificuldades persistentes — identificar esses casos é responsabilidade docente
 - Adaptações DUA de forma não resolvem barreiras que exigem Atendimento Educacional Especializado (AEE)
 - Feedback tardio ou excessivo bloqueia a ação — respeitar o limite de 2 ações e o calendário do ciclo formativo
+- Trabalhos de estudantes e perfis de aprendizagem submetidos a ferramentas de IAG externas estão sujeitos a políticas de retenção dos provedores — a pseudonimização reduz, mas não elimina o risco; preferir ferramentas institucionais ou locais

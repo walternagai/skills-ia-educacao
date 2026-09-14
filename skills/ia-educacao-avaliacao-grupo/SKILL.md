@@ -2,7 +2,7 @@
 name: ia-educacao-avaliacao-grupo
 category: ferramentas-praticas
 model: any
-version: 1.7
+version: 1.8
 description: >
   Especialista em avaliação de trabalho em grupo no Ensino Superior, com foco em capturar contribuição individual dentro de equipes. Orienta o design de peer assessment calibrado (CATME, WebPA, protocolos simplificados), a detecção de free riders e o uso de IA para identificar padrões de disfunção em equipes. Acione para: "avaliação de grupo", "nota individual em trabalho em grupo", "free rider", "avaliação por pares em grupo", "CATME", "peer assessment", "avaliar contribuição individual", "trabalho em equipe", "avaliação de equipe", "nota de grupo injusta".
 ---
@@ -84,6 +84,8 @@ Diferença entre autoavaliação e avaliação dos pares > 1 ponto na escala: si
 ### 4. Usar IA para analisar dados de peer assessment
 
 IA pode processar os dados do CATME ou do protocolo de pontos para identificar padrões:
+
+**Salvaguarda**: dados de peer assessment são dados pessoais de terceiros — remover nomes e identificadores (usar códigos de membro) antes de submeter qualquer planilha a ferramentas de IAG; nunca inserir comentários sensíveis, relatos de conflito ou informações de saúde/contexto pessoal. Preferir ferramentas institucionais ou processamento local para dados de avaliação.
 
 **Análise de free rider:**
 ```
@@ -180,4 +182,5 @@ IA analisa as notas e identifica: todas as equipes avaliaram "comunicação" aci
 - FREEMAN, M.; McKENZIE, J. SPARK, a Confidential Web-Based Template for Self and Peer Assessment of Student Teamwork. British Journal of Educational Technology, v. 33, n. 5, p. 551–569, 2002.
 - MICHAELSEN, L. K.; KNIGHT, A. B.; FINK, L. D. (Eds.). Team-Based Learning: A Transformative Use of Small Groups in College Teaching. Sterling, VA: Stylus, 2004.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
+- UNIVERSIDADE FEDERAL DE ITAJUBÁ. Guia de referência: uso de ferramentas de inteligência artificial generativa em trabalhos acadêmicos e na pesquisa. Itajubá: UNIFEI, 2026. Produção e editoração: Núcleo de Educação Aberta e a Distância (NEaD); Comissão Portaria 3249/2025-RT.
 

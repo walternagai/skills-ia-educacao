@@ -2,7 +2,7 @@
 name: ia-educacao-portfolio
 category: ferramentas-praticas
 model: any
-version: 1.8
+version: 1.9
 description: >
   Especialista em design de portfólios avaliativos para o Ensino Superior — portfólios de disciplina, de desenvolvimento profissional, reflexivos e digitais. Cobre curadoria de evidências, rubricas de reflexão, alinhamento a Bloom e AIAS, e uso de IA para organizar, revisar e dar feedback sobre portfólios. Acione para: "portfólio avaliativo", "portfólio reflexivo", "portfólio digital", "portfólio de disciplina", "como avaliar portfólio", "rubrica de portfólio", "curadoria de evidências", "portfólio com IA".
 ---
@@ -87,6 +87,8 @@ description: >
    | Co-criar artefatos do portfólio | 5 | Declarar nível de contribuição da IA em cada artefato |
 
    **Regra fundamental**: a reflexão e a curadoria devem ser do estudante — a IA pode apoiar a organização e a análise, mas a seleção e a justificativa são competências humanas não delegáveis.
+
+   **Salvaguarda**: o portfólio pode conter dados pessoais, relatos sensíveis e artefatos de terceiros (ex.: feedbacks de colegas) — remover identificadores antes de inserir conteúdo em ferramentas de IAG e nunca submeter dados sensíveis, documentos sigilosos ou materiais de terceiros sem autorização.
 
 6. **Avaliar o portfólio**
 
@@ -177,5 +179,6 @@ IA usada para: organizar a linha do tempo, sugerir conexões entre projetos, ger
 - ZUBIZARRETA, J. The Learning Portfolio: Reflective Practice for Improving Student Learning. 2. ed. San Francisco: Jossey-Bass, 2009.
 - ANDRADE, H. L. A Critical Review of Research on Student Self-Assessment. Frontiers in Education, v. 4, p. 87, 2019. Disponível em: https://doi.org/10.3389/feduc.2019.00087. Acesso em: 12 ago. 2026.
 - BRASIL. Ministério da Educação. Referencial para Desenvolvimento e Uso Responsáveis de Inteligência Artificial na Educação. Brasília: MEC, fev. 2026.
+- UNIVERSIDADE FEDERAL DE ITAJUBÁ. Guia de referência: uso de ferramentas de inteligência artificial generativa em trabalhos acadêmicos e na pesquisa. Itajubá: UNIFEI, 2026. Produção e editoração: Núcleo de Educação Aberta e a Distância (NEaD); Comissão Portaria 3249/2025-RT.
 - PERKINS, M.; FURZE, L.; ROE, J.; MACVAUGH, J. The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. Journal of University Teaching and Learning Practice, v. 21, n. 6, 2024. Disponível em: https://doi.org/10.53761/q3azde36. Acesso em: 30 jun. 2026.
 
