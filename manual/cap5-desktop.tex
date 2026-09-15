@@ -34,14 +34,15 @@ Para inicializar a Interface Web no diret{\'o}rio da sua disciplina ou material 
 # Inicia o servidor local e abre automaticamente o navegador padrao
 opencode web
 
-# Ou apontando diretamente para a pasta de uma disciplina especifica
-opencode web ~/documentos/disciplinas/minha-disciplina/
+# Para trabalhar na pasta de uma disciplina especifica, entre nela antes:
+cd ~/documentos/disciplinas/minha-disciplina/
+opencode web
 \end{lstlisting}
 
 O terminal exibir{\'a} o endere{\c c}o de acesso local (por padr{\~a}o, \url{http://127.0.0.1:4096} ou porta din{\^a}mica equivalente), abrindo instantaneamente uma sess{\~a}o gr{\'a}fica interativa.
 
 \begin{dicaopencode}
-\textbf{Acesso Remoto ou em Rede Local}: {\'E} poss{\'i}vel iniciar o servidor definindo portas e dom{\'i}nios locais customizados (por exemplo, \texttt{opencode web -{}-port 8080 -{}-hostname 0.0.0.0}) para que voc{\^e} acesse seu assistente a partir de um tablet ou outro computador conectado {\`a} rede da universidade.
+\textbf{Acesso Remoto ou em Rede Local}: {\'E} poss{\'i}vel iniciar o servidor definindo portas e dom{\'i}nios locais customizados (por exemplo, \texttt{opencode web -{}-port 8080 -{}-hostname 0.0.0.0}) para que voc{\^e} acesse seu assistente a partir de um tablet ou outro computador conectado {\`a} rede da universidade. Como o servi{\c c}o fica acess{\'i}vel a quem alcan{\c c}ar o endere{\c c}o, defina uma senha antes de exp{\^o}-lo na rede: \mbox{\texttt{OPENCODE\_SERVER\_PASSWORD=suasenha}} \mbox{\texttt{opencode}} \mbox{\texttt{web}} \mbox{\texttt{-{}-port}} \mbox{\texttt{8080}} \mbox{\texttt{-{}-hostname}} \mbox{\texttt{0.0.0.0}} (sem a vari{\'a}vel, o servidor sobe sem autentica{\c c}{\~a}o).
 \end{dicaopencode}
 
 \section{Anatomia da Interface Gr{\'a}fica}

@@ -11,7 +11,7 @@
 \end{objetivos}
 
 \begin{dicaopencode}
-\textbf{Caminho recomendado na primeira instala{\c c}{\~a}o (cerca de 20 minutos)}: Linux, macOS ou Windows com WSL2/Git Bash use o M{\'e}todo~1 (cURL), depois \texttt{/connect} e \path{./install-skills.sh --opencode}; no Windows nativo (CMD ou PowerShell) use o M{\'e}todo~4 (Scoop ou Chocolatey) e \path{.\install-skills.bat --opencode}. Ignore os demais m{\'e}todos por enquanto. \textbf{Pronto quando}: \texttt{opencode -{}-version} exibe a vers{\~a}o, a contagem de skills confere (ver Se{\c c}{\~a}o Confer{\^e}ncia) e o relat{\'o}rio \texttt{info-skills} lista as skills e os seis subagentes. O controle de vers{\~a}o com Git {\'e} opcional, est{\'a} no Ap{\^e}ndice~\ref{ap:git} e pode ficar para depois.
+\textbf{Caminho recomendado na primeira instala{\c c}{\~a}o (cerca de 20 minutos)}: Linux, macOS ou Windows com WSL2/Git Bash use o M{\'e}todo~1 (cURL), depois \texttt{/connect} e \texttt{./install-skills.sh --opencode}; no Windows nativo (CMD ou PowerShell) use o M{\'e}todo~4 (Scoop ou Chocolatey) e \texttt{.\textbackslash install-skills.bat --opencode}. Ignore os demais m{\'e}todos por enquanto. \textbf{Pronto quando}: \texttt{opencode -{}-version} exibe a vers{\~a}o, a contagem de skills confere (ver Se{\c c}{\~a}o Confer{\^e}ncia) e o relat{\'o}rio \texttt{info-skills} lista as skills e os seis subagentes. O controle de vers{\~a}o com Git {\'e} opcional, est{\'a} no Ap{\^e}ndice~\ref{ap:git} e pode ficar para depois.
 \end{dicaopencode}
 
 \begin{conceitochave}
@@ -90,7 +90,7 @@ O m{\'e}todo mais r{\'a}pido e direto consiste em executar o script oficial de i
 curl -fsSL https://opencode.ai/install | bash
 \end{lstlisting}
 
-O script detecta o sistema operacional e a arquitetura do processador, baixa o bin{\'a}rio est{\'a}tico otimizado, instala o execut{\'a}vel no diret{\'o}rio \texttt{\~{}/.opencode/bin/opencode} e adiciona essa localiza{\c c}{\~a}o ao arquivo de configura{\c c}{\~a}o do \emph{shell} (\texttt{\~{}/.bashrc}, \texttt{\~{}/.zshrc} ou \texttt{\~{}/.profile}).
+O script detecta o sistema operacional e a arquitetura do processador, baixa o bin{\'a}rio est{\'a}tico otimizado, instala o execut{\'a}vel no diret{\'o}rio \texttt{\textasciitilde/.opencode/bin/opencode} e adiciona essa localiza{\c c}{\~a}o ao arquivo de configura{\c c}{\~a}o do \emph{shell} (\texttt{\textasciitilde/.bashrc}, \texttt{\textasciitilde/.zshrc} ou \texttt{\textasciitilde/.profile}).
 
 Ap{\'o}s a conclus{\~a}o, recarregue as vari{\'a}veis de ambiente do terminal:
 \begin{lstlisting}[language=bash, caption={Recarga do shell (Linux/macOS/WSL2)}]
@@ -134,7 +134,7 @@ Esse m{\'e}todo {\'e} particularmente c{\^o}modo no macOS, pois o Homebrew {\'e}
 
 \subsection{M{\'e}todo 4: Windows Nativo (Scoop ou Chocolatey)}
 
-Para instala{\c c}{\~a}o direta no Windows, sem depender do WSL2, abra o \textbf{PowerShell como Administrador} e utilize um dos dois gerenciadores de pacotes:
+Para instala{\c c}{\~a}o direta no Windows, sem depender do WSL2, utilize um dos dois gerenciadores de pacotes (o Scoop instala no perfil do usu{\'a}rio e n{\~a}o exige privil{\'e}gios administrativos; o Chocolatey exige o PowerShell aberto como Administrador):
 
 \begin{lstlisting}[language=bash, caption={Instala{\c c}{\~a}o no Windows via Scoop ou Chocolatey}]
 # Via Scoop
@@ -246,7 +246,7 @@ Quem instalou o OpenCode pela trilha nativa (M{\'e}todo 4) pode dispensar o Git 
 .\install-skills.bat --all
 \end{lstlisting}
 
-O script detecta a pasta pessoal do usu{\'a}rio (\texttt{\%USERPROFILE\%}) e aplica o caminho correto. Sem flags, exibe o uso; com destinos expl{\'i}citos, instala mesmo sem o CLI correspondente no \texttt{PATH}, avisando o docente. Quando o CLI alvo n{\~a}o {\'e} encontrado e o \texttt{winget} est{\'a} dispon{\'i}vel, o script oferece instalar o CLI automaticamente (ex.: \texttt{winget install -e --id sst.opencode}); sem \texttt{winget}, sugere o comando \texttt{npm} equivalente. A remo{\c c}{\~a}o do acervo tem o par correspondente \texttt{uninstall-skills.bat}, com as mesmas flags.
+O script detecta a pasta pessoal do usu{\'a}rio (\texttt{\%USERPROFILE\%}) e aplica o caminho correto. Sem flags, exibe o uso; com destinos expl{\'i}citos, instala mesmo sem o CLI correspondente no \texttt{PATH}, avisando o docente. Quando o CLI alvo n{\~a}o {\'e} encontrado e o \texttt{winget} est{\'a} dispon{\'i}vel, o script oferece instalar o CLI automaticamente (ex.: \texttt{winget install -e --id SST.opencode} -- o identificador diferencia mai{\'u}sculas e min{\'u}sculas, use exatamente esta grafia); sem \texttt{winget}, sugere o comando \texttt{npm} equivalente. A remo{\c c}{\~a}o do acervo tem o par correspondente \texttt{uninstall-skills.bat}, com as mesmas flags.
 
 \subsection{Confer{\^e}ncia da Instala{\c c}{\~a}o}
 
@@ -327,9 +327,9 @@ opencode upgrade
 \section{Problemas Comuns na Primeira Execu{\c c}{\~a}o}
 
 \begin{itemize}
-  \item \textbf{O comando \texttt{/connect} n{\~a}o aparece}: confirme que o programa foi iniciado com \texttt{opencode}, e n{\~a}o com \texttt{opencode run}; em seguida, atualize o OpenCode com \texttt{opencode upgrade}.
+  \item \textbf{O comando \texttt{/connect} n{\~a}o aparece}: confirme que o programa foi iniciado com \texttt{opencode}, e n{\~a}o com \texttt{opencode run}; em seguida, atualize o OpenCode com \mbox{\texttt{opencode upgrade}}.
   \item \textbf{A skill n{\~a}o aparece}: confirme o caminho de instala{\c c}{\~a}o, feche e abra o OpenCode novamente e verifique a contagem apresentada na subse{\c c}{\~a}o de confer{\^e}ncia.
-  \item \textbf{O subagente n{\~a}o aparece no menu \texttt{@}}: copie os arquivos de \texttt{.opencode/agents/} para \texttt{~/.config/opencode/agents/}, conforme a subse{\c c}{\~a}o anterior, e reinicie a aplica{\c c}{\~a}o.
+  \item \textbf{O subagente n{\~a}o aparece no menu \texttt{@}}: copie os arquivos de \texttt{.opencode/agents/} para \texttt{\textasciitilde/.config/opencode/agents/}, conforme a subse{\c c}{\~a}o anterior, e reinicie a aplica{\c c}{\~a}o.
   \item \textbf{O script n{\~a}o executa no Windows}: use Git Bash ou WSL2 e execute-o na raiz extra{\'i}da ou clonada do reposit{\'o}rio; o PowerShell n{\~a}o interpreta scripts Bash diretamente.
   \item \textbf{O modelo gratuito n{\~a}o est{\'a} dispon{\'i}vel}: abra \texttt{/models} e escolha outro modelo. Disponibilidade, limites e nomes podem mudar sem altera{\c c}{\~a}o deste manual.
 \end{itemize}

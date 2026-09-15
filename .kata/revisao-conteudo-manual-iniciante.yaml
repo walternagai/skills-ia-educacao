@@ -1,0 +1,233 @@
+schema_version: 1
+task: revisao-conteudo-manual-iniciante
+status: approved
+domain: docs
+done: >-
+  Revisão crítica do conteúdo do manual (manual/main.pdf, 82 pp.) concluída pela ótica
+  do professor iniciante em ferramentas de IA: 19 achados verificados (3 blocos), correções
+  aplicadas em 9 arquivos .tex + README, manual recompilado (82 pp., 0 erros, 0 overfull,
+  0 citações indefinidas) e verificação de colabilidade no PDF final por dois extratores
+  (pypdf + pdftotext): 19/19 achados confirmados corrigidos e zero resíduos de ligadura
+  em contexto de comando.
+base_commit: bddfa4fd218d7679f8572765310d3a6348dc060c
+approved_commit: ""
+fit:
+  trivial: false
+  route: plan-first
+  reason: >-
+    O entregável é o diagnóstico crítico priorizado para aprovação, não uma edição:
+    revisão do main.pdf simulando o professor iniciante que lê e copia comandos, com
+    achados verificados contra scripts, skills e documentação oficial. code-loop
+    descartada (editaria sem autorização); question descartada (o ciclo deve seguir
+    pronto para a implementação aprovada).
+  answered: true
+  skipped: false
+think:
+  problem: >-
+    O manual AvalIA (manual/main.pdf, 82 pp.; fonte em manual/*.tex) é o material que
+    o professor iniciante usará sem apoio técnico. As revisões anteriores cobriram
+    instalação, pedagogia, organização, referências e conformidade com o Guia UNIFEI;
+    nenhuma delas simulou o uso real por essa persona — ler o PDF, copiar os comandos
+    e executá-los. Esta revisão assume essa persona e encontra 19 ocorrências em três
+    classes: (a) 8 trechos de código não coláveis no PDF (5 com travessão no lugar de
+    '--' e 3 caminhos com til errado/ausente); (b) 4 instruções que divergem do
+    comportamento atual das ferramentas (Ctrl+M; 'opencode web <dir>'; PowerShell
+    'como Administrador' para Scoop; exposição de rede sem alerta de senha);
+    (c) 7 inconsistências de conteúdo/terminologia (tRAT vs gRAT; IAGen vs IAG;
+    'manté'; 'inalcançãveis'; '5 critérios' vs 4; exemplo com version 1.4; README
+    '80 páginas' vs 82).
+  assumptions:
+    - "O professor iniciante lê o PDF (não o .tex) e copia comandos dele; falha de colagem é falha de conteúdo, não detalhe tipográfico."
+    - "As fontes da verdade são as ferramentas e artefatos reais: opencode 1.18.31 instalado, documentação oficial e os scripts/skills do repositório; o manual foi redigido para 1.18.29/30."
+    - "A revisão é cirúrgica e não edita nada nesta rodada; as correções propostas preservam a voz, a estrutura e as conformidades já revisadas."
+    - "README e CHANGELOG entram apenas como derivação adjacente do manual."
+  alternatives:
+    - "alt A: revisar apenas o LaTeX com grep de comandos — descartada: o defeito de ligadura ('--' → travessão) só existe no PDF compilado."
+    - "alt B: leitura linear dos 10 capítulos 'procurando problemas' — descartada: repetiria as revisões anteriores e não simula o uso real (copiar e executar)."
+    - "alt C: extrair o texto do PDF (pypdf + pdftotext), confrontar cada comando/instrução com scripts, skills e docs oficiais, e registrar achados com arquivo:linha — escolhida."
+  unknowns: |
+    O QUE JÁ ESTÁ SÓLIDO (verificado, para não superdimensionar o diagnóstico):
+      - Contagens corretas: 61 skills com prefixo ia-educacao- + aias-consultant = 62; 6 subagentes.
+      - Permissões dos subagentes conferem com os arquivos reais (.opencode/agents/): planejador com edit/bash deny; os demais allow.
+      - Figura B.2 (hubs 25/22/17/15/14/13) continua correta; ./audit.sh exit 0.
+      - O comando dry-run do cap4:14 (em \path) e o bloco \path{./install-skills.sh --opencode} renderizam corretamente — o defeito de travessão é exclusivo de \texttt.
+
+    ACHADOS VERIFICADOS (severidade; referência na fonte → evidência no PDF → correção):
+    
+    ALTA — código exibido no PDF não é colável (classe única: ligadura '--' e til dentro de \texttt; só aparecem após compilar). 8 ocorrências:
+      A1. cap4-instalacao.tex:34 — \texttt{install-skills.bat --opencode} (texto pronto para o TI) → p.26: 'install-skills.bat –opencode' (U+2013).
+      A2. cap4-instalacao.tex:249 — \texttt{winget install -e --id sst.opencode} → p.32: '-e –id'. Dois defeitos na mesma linha: o travessão e o ID em minúsculas — o próprio install-skills.bat:154-159 avisa que a busca exata (-e) diferencia maiúsculas e usa 'SST.opencode' com capitalização exata.
+      A3. apendice-a-git.tex:15 — \texttt{git --version} → p.75: 'git –version' (o listing vizinho da mesma página está correto).
+      A4. cap3-skills-opencode.tex:54 — \texttt{---} (delimitador do frontmatter) → p.21: '–-'.
+      A5. cap4-instalacao.tex:278 — \texttt{./doctor-skills.sh --all -{}-fix} → p.32: '–all --fix' (mistura: só o --all quebra).
+      A6a. cap4-instalacao.tex:332 — \texttt{~/.config/opencode/agents/} → p.34: '/.config/opencode/agents/' sem o til.
+      A6b. cap3-skills-opencode.tex:105 e cap4-instalacao.tex:93 — \texttt{\~{}/...} → p.23/p.28: '˜' (U+02DC) em vez de '~'.
+      A7 (gêmeo, achado no TWIN CHECK). cap4-instalacao.tex:330 — \texttt{opencode upgrade} hifeniza na quebra de linha e o PDF entrega 'open-code upgrade' (p.34); correção: \mbox{\texttt{opencode upgrade}}. Pré-existente (confirmado no PDF do HEAD).
+      Correção proposta (verificada em documento mínimo com pdflatex): (i) \DisableLigatures[-]{encoding = T1, family = tt*} no preâmbulo do main.tex, após microtype (linha 9) — elimina o travessão em todo \texttt; (ii) trocar '~' por '\textasciitilde' (ou '\string~') nos caminhos em \texttt. Alternativa local: '-{}-' em cada ocorrência. Confirmar com pdftotext após recompilar.
+
+    MÉDIA — instrução diverge da ferramenta que o iniciante vai usar:
+      B1. cap6-modelos-gratuitos.tex:135 — atalho Ctrl+M para trocar de modelo não existe nos keybinds oficiais; usar '/models' (menu) ou '<leader>m' (leader padrão Ctrl+X) ou F2 (cycle recent). Fonte: opencode.ai/docs/keybinds (consultado em 15/09/2026).
+      B2. cap5-desktop.tex:38 — 'opencode web ~/documentos/...': o subcomando web não aceita diretório posicional; teste com opencode 1.18.31 imprimiu a ajuda e saiu com erro. Correção: 'cd' até a pasta e 'opencode web' (ou 'opencode <pasta>' para a TUI).
+      B3. cap4-instalacao.tex:137 — 'PowerShell como Administrador' para Scoop OU Chocolatey: o Scoop instala e roda em PowerShell normal (não-admin); só o Chocolatey exige admin. Fonte: README oficial do Scoop (GitHub).
+      B4. cap5-desktop.tex:44 — dica de expor o servidor com '--hostname 0.0.0.0' sem o aviso de que, sem OPENCODE_SERVER_PASSWORD, o servidor fica sem autenticação na rede. Fonte: opencode.ai/docs/web. Sugestão: incluir a variável de senha e remissão ao Cap. 7.
+
+    BAIXA — consistência de conteúdo e terminologia:
+      C1. cap9-agentes-skills.tex:198 — 'iRAT, tRAT' vs padrão do acervo 'iRAT/gRAT' (skill ia-educacao-tbl; README:118).
+      C2. cap1-introducao.tex:37 — glossário define 'IAGen'; o restante do manual usa 'IAG' (17 ocorrências em cap7–cap9/main) sem defini-lo.
+      C3. cap9-agentes-skills.tex:47 — 'manté' → 'mantém' (p.54).
+      C4. cap10-casos-de-uso.tex:142 — 'inalcançãveis' → 'inalcançáveis' (p.67).
+      C5. cap10-casos-de-uso.tex:213 — 'rubrica em 4 níveis com 5 critérios' contradiz a lista de 4 critérios do mesmo caso (linhas 203–208); conferir e alinhar.
+      C6. cap3-skills-opencode.tex:61 — exemplo de frontmatter com 'version: 1.4' e descrição curta sem acentos, enquanto ia-educacao-rubrica real está em 1.9; marcar como ilustrativo ou atualizar.
+      C7 (adjacente, fora do manual). README.md:7 e :81 — '80 páginas' vs PDF de 82 (pdfinfo); o CHANGELOG 0.10.28 já registra 82.
+
+    VERIFICADO SEM ACHADO (registrado para não reabrir):
+      - A invocação das skills por barra (/ia-educacao-rubrica) é suportada: o binário do OpenCode 1.18.31 expõe o keybind prompt_skills ('Open skill selector') e a issue oficial #15617 descreve o comportamento vigente ('OpenCode requires skills to be invoked via slash commands at the beginning of a prompt'); o pedido aberto #7846 é por descoberta/autocomplete (/skills e /skill:<nome>), não uma correção de ausência.
+      - Contagem '61 com prefixo + aias-consultant = 62' confere (ls skills).
+      - As 5 categorias e a distribuição 26/18/8/5/5 conferem com skills/*/SKILL.md.
+
+    NÃO VERIFICADO:
+      - As alegações 'Resposta do OpenCode (validada)' (cap10) não foram reproduzidas (exigiriam sessão com modelo); valem como relato, não como teste.
+      - B2 foi testado na versão 1.18.31; o manual foi redigido para 1.18.29/30 — diferença de comportamento entre versões não foi descartada.
+      - O comportamento de cópia varia por leitor de PDF; a evidência de U+2013/U+02DC vem de dois extratores (pypdf e pdftotext), não de teste manual de colagem.
+
+    DECISÕES PENDENTES DO USUÁRIO:
+      1. Autorizar o bloco ALTA (escapes + preâmbulo) — maior impacto para o iniciante.
+      2. Autorizar os blocos MÉDIA e BAIXA.
+      3. Autorizar a atualização do README (C7) e do CHANGELOG após as correções.
+      Após autorização: editar os .tex, recompilar (manual/compilar.sh), conferir com pdftotext que os comandos voltaram a ser coláveis, atualizar README/CHANGELOG e seguir o ciclo (VERIFY → ...).
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: |
+    Correção mínima e estrutural: 1 linha de preâmbulo (DisableLigatures) resolve a
+    classe A1–A5 inteira sem tocar cada ocorrência; nenhum pacote LaTeX novo, nenhum
+    ambiente novo, nenhum comando sem fonte. Sem reescrita de capítulos: 52 linhas
+    líquidas em 10 arquivos (9 .tex + README) + CHANGELOG. Onde o texto precisou
+    mudar (incluindo o gêmeo A7) (B1–B4), a mudança é a menor instrução correta (ex.: 'cd' + 'opencode web'
+    no lugar do posicional inexistente). Nenhuma configurabilidade nova.
+  answered: true
+  skipped: false
+intent:
+  code_does: >-
+    O manual (fonte .tex) descrevia comandos e atalhos que, no PDF compilado, não são
+    coláveis (ligadura -- → travessão em \texttt), e 4 instruções que divergiam das
+    ferramentas atuais (Ctrl+M inexistente; 'opencode web <dir>' sem suporte a
+    diretório posicional; Scoop tratado como exigindo Administrador; exposição de
+    rede sem alerta de autenticação).
+  check_expects: >-
+    Não há teste automatizado para o manual; o check é a observação: pdflatex compila
+    82 pp. sem erro e os comandos citados, extraídos do PDF pelos dois extratores,
+    coincidem caractere a caractere com os comandos reais (-- preservado, ~ correto),
+    e as instruções B1–B4 conferem com opencode 1.18.31 e docs oficiais.
+  spec_says: >-
+    Fontes do repo (install-skills.sh/.bat, doctor-skills, skills ia-educacao-tbl e
+    ia-educacao-bloom) + docs oficiais do OpenCode (keybinds, web) + README do Scoop +
+    Guia UNIFEI (vedação de coautoria). Todas convergem para as correções aplicadas.
+  all_agree: true
+  conflict_resolution: ""
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: manual/main.tex
+      necessary: true
+      reason: "Preâmbulo: DisableLigatures[-] preserva -- em todo texttt (A1–A5)."
+    - path: manual/cap4-instalacao.tex
+      necessary: true
+      reason: "A0 (path engolia espaço), A2 (SST.opencode + travessão), A6b, A7 (gêmeo: opencode upgrade hifenizado), B3 (Scoop × Chocolatey)."
+    - path: manual/cap5-desktop.tex
+      necessary: true
+      reason: "B2 (web sem posicional) e B4 (senha do servidor)."
+    - path: manual/cap6-modelos-gratuitos.tex
+      necessary: true
+      reason: "B1 (Ctrl+M → Ctrl+X M)."
+    - path: manual/cap3-skills-opencode.tex
+      necessary: true
+      reason: "A6c (til), C6 (exemplo de frontmatter da rubrica)."
+    - path: manual/cap1-introducao.tex
+      necessary: true
+      reason: "C2 (glossário IAG/IAGen)."
+    - path: manual/cap2-fundamentos.tex
+      necessary: true
+      reason: "C2b (nível Criar: parceira de exploração, não autora)."
+    - path: manual/cap9-agentes-skills.tex
+      necessary: true
+      reason: "C1 (gRAT) e C3 (mantém)."
+    - path: manual/cap10-casos-de-uso.tex
+      necessary: true
+      reason: "C4 (inalcançáveis) e C5 (4 critérios)."
+    - path: manual/main.pdf
+      necessary: true
+      reason: "Derivado obrigatório: recompilado com todas as correções."
+    - path: README.md
+      necessary: true
+      reason: "C7: contagem de páginas do manual (80 → 82)."
+    - path: CHANGELOG.md
+      necessary: true
+      reason: "Convenção do repo: entrada v0.10.29 desta revisão."
+    - path: .kata/revisao-conteudo-manual-iniciante.yaml
+      necessary: true
+      reason: "Registro do ciclo kata da tarefa."
+    - path: manual/apendice-a-git.tex
+      necessary: false
+      reason: "A3 (git --version) resolvido pelo preâmbulo; nenhuma edição necessária na fonte."
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+verify:
+  ruff_clean: false      # N/A: repositório documental sem Python (defaults não se aplicam)
+  tests_pass: false      # N/A: sem test suite; sem .kata/config.yaml declarado
+  coverage_pct: 0.0
+  coverage_pass: false   # N/A
+  success_criteria_met: true  # gate real: pdflatex 0 erros/0 overfull + 19/19 achados no PDF + audit.sh exit 0
+  attempts: 1
+  hand_back: false
+  notes: >-
+    Verificação efetiva (repo documental): (1) ./compilar.sh exit 0, 82 pp., 0 overfull,
+    0 citações indefinidas; (2) 19/19 achados confirmados no PDF final com pypdf e
+    pdftotext (normalização de espaços); (3) U+02DC=0 e os 102 en-dashes restantes são
+    todos de prosa; (4) nenhuma bandeira/flags quebrada no meio; (5) ./audit.sh exit 0.
+    Pendência conhecida e registrada: não criei .kata/config.yaml com lint/test/coverage
+    de docs (sugerido em task anterior), então o gate Python padrão do kata não se aplica.
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: true
+  auth_present: true
+  pending_owed: true
+  pending_present: true
+  twins_owed: true
+  twins_present: true
+auth:
+  action_taken: true
+  authorized: true
+  action: "Correções dos 3 blocos (ALTA/MÉDIA/BAIXA) aplicadas em 9 arquivos .tex + README + CHANGELOG; PDF recompilado; task atualizada; commit na main"
+  quote: "Autorizo as correções em todos os blocos"
+pending:
+  action: >-
+    Commit único na main com a mensagem 'docs: revisao do manual pela otica do
+    iniciante (v0.10.29)' (autorizado pelo usuário: "commit"). Pendência de melhoria
+    permanece aberta: criar .kata/config.yaml com lint=./audit.sh --quiet e
+    test=make -C manual, para que o gate do kata reflita a verificação real de um
+    repositório documental (sem ela, kata --audit gradua VERIFY como faked).
+  documented: true
+twins:
+  pattern: "u2013|u02dc|path-com-espaco|texttt-com-til"
+  result: >-
+    Varredura em manual/*.tex e no PDF final (pypdf + pdftotext): zero \path com espaço
+    na fonte (o único restante foi convertido a \texttt); zero U+02DC; todos os U+2013
+    restantes (102) em prosa legítima; nenhuma flag quebrada no meio. O gêmeo A7
+    ('opencode upgrade' hifenizado como 'open-code' na p.34) foi encontrado por esta
+    varredura, confirmado pré-existente no PDF do HEAD e corrigido com \mbox. Os
+    en-dashes em frases de prosa como 'Opção B – Baixar o ZIP' e 'agents/ – Diretório fonte'
+    são corretos (travessão), não defeito.
+  searched: true
+  defect_fixed: true
+  matches_count: 6
+  files_count: 4
+  fix_applied: true

@@ -5,6 +5,30 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.29] — 2026-09-15
+
+### Corrigido
+- **Manual AvalIA — revisão pela ótica do professor iniciante** (auditoria de conteúdo do PDF como artefato de uso: comandos copiados do PDF, instruções confrontadas com as ferramentas reais e consistência de conteúdo):
+  - **`main.tex`**: adicionado `\DisableLigatures[-]{encoding = T1, family = tt*}` — as ligaduras tipográficas convertiam `--` em travessão nos comandos dentro de `\texttt{...}` e `\path{...}`, de modo que o leitor que copiava comandos do PDF obtinha texto inválido (ex.: `git –version`, `winget install -e –id`, `install-skills.bat –opencode`). A correção preserva `--` em todo texto monoespaçado sem afetar o travessão da prosa
+  - **`cap4-instalacao.tex`**: os dois caminhos na caixa "Caminho recomendado" usavam `\path{...}`, que suprime os espaços (`./install-skills.sh--opencode`) — trocados por `\texttt{...}`; identificador do winget corrigido para a grafia exata `SST.opencode` (a busca `-e` diferencia maiúsculas, conforme nota do próprio `install-skills.bat`); orientação do Windows nativo passa a distinguir Scoop (não exige administrador) de Chocolatey (exige); tils em `\texttt{\~{}...}` substituídos por `\textasciitilde` (o til do teclado não podia ser copiado); `\texttt{opencode upgrade}` não hifeniza mais como `open-code upgrade` na quebra de linha (achado do TWIN CHECK, `\mbox`)
+  - **`cap5-desktop.tex`**: `opencode web <pasta>` (que não aceita diretório posicional) substituído por `cd` + `opencode web`; a dica de acesso remoto passa a alertar que o servidor sobe sem autenticação sem `OPENCODE_SERVER_PASSWORD` e mostra a variável de senha
+  - **`cap6-modelos-gratuitos.tex`**: atalho `Ctrl+M` (inexistente) corrigido para `Ctrl+X M` (o leader do OpenCode por padrão)
+  - **`cap9-agentes-skills.tex`**: "iRAT, tRAT" → "iRAT, gRAT" (consistente com a skill `ia-educacao-tbl` e o padrão do acervo); typo "manté" → "mantém"
+  - **`cap10-casos-de-uso.tex`**: typo "inalcançãveis" → "inalcançáveis"; "rubrica em 4 níveis com 5 critérios" → "4 critérios" (alinhado à lista de 4 critérios do mesmo caso)
+  - **`cap3-skills-opencode.tex`**: exemplo de frontmatter atualizado (`version: 1.9`, descrição da `ia-educacao-rubrica` real) e marcado como ilustrativo
+  - **`cap2-fundamentos.tex`**: menção ao nível Criar explicita que a IA é explorada como "parceira de exploração", nunca como autora (alinhado à `ia-educacao-bloom` e à vedação de coautoria)
+  - **`cap1-introducao.tex`**: glossário passa a registrar "IAG (ou IAGen)", cobrindo as 17 ocorrências de "IAG" no restante do manual
+  - **`README.md`**: contagem de páginas do manual corrigida (80 → 82)
+  - PDF recompilado (82 páginas, 0 erros, 0 overfull, 0 citações indefinidas)
+- **`.kata/revisao-conteudo-manual-iniciante.yaml`**: task do ciclo kata com o diagnóstico completo (19 achados verificados), correções aplicadas e TWIN CHECK
+
+### Notas
+- Achados verificados com OpenCode 1.18.31 e com a documentação oficial (`opencode.ai/docs`): keybinds (`Ctrl+X M`), `opencode web` (sem posicional de diretório; `OPENCODE_SERVER_PASSWORD`), README do Scoop (instalação sem administrador)
+- TWIN CHECK confirmou zero ocorrências residuais do padrão no PDF final e zero `\path{...}` com espaço no LaTeX
+- `./audit.sh` OK após as edições
+
+---
+
 ## [0.10.28] — 2026-09-14
 
 ### Modificado

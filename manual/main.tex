@@ -9,6 +9,12 @@
 \usepackage{microtype}
 \usepackage[htt]{hyphenat}
 
+% --- Fidelidade de comandos em \texttt{...} ---
+% Sem isto, as ligaduras tipográficas convertem '--' em travessão (en-dash) e
+% o leitor que copia comandos do PDF obtém texto inválido (ex.: 'git –version').
+% Afeta apenas a família typewriter; a prosa segue usando '--' como travessão.
+\DisableLigatures[-]{encoding = T1, family = tt*}
+
 % --- Ajustes de Página e Margens (Memoir) ---
 \settrimmedsize{297mm}{210mm}{*}
 \settypeblocksize{230mm}{155mm}{*}

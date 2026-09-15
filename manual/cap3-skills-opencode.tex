@@ -53,13 +53,13 @@ No acervo \texttt{skills-ia-educacao}, cada skill reside em um diret{\'o}rio exc
 
 O in{\'i}cio de cada arquivo \texttt{SKILL.md} cont{\'e}m metadados essenciais delimitados por \texttt{---}, conforme exemplificado a seguir:
 
-\begin{lstlisting}[language=bash, caption={Exemplo de Frontmatter YAML de uma Skill}]
+\begin{lstlisting}[language=bash, caption={Exemplo de Frontmatter YAML de uma Skill (ilustrativo; a vers\~ao real da skill evolui a cada revis\~ao)}]
 ---
 name: ia-educacao-rubrica
 category: ferramentas-praticas
 model: any
-version: 1.4
-description: Especialista em design e construcao de rubricas de avaliacao para ensino superior. Alinha criterios com objetivos de aprendizagem e Taxonomia de Bloom.
+version: 1.9
+description: Especialista em design de rubricas analiticas e holisticas para avaliacao educacional. Alinha criterios com a Taxonomia de Bloom, o nivel AIAS e os principios do DUA.
 ---
 \end{lstlisting}
 
@@ -102,7 +102,7 @@ A Figura~\ref{fig:fluxo-skill} sintetiza esse ciclo, da declara{\c c}{\~a}o inic
   \begin{tcolorbox}[colback=boxbg, colframe=primary, arc=2mm, title={\bfseries Ciclo de Vida e Ativa{\c c}{\~a}o de uma Skill no OpenCode}]
     \small
     \begin{enumerate}
-      \item \textbf{Declara{\c c}{\~a}o Inicial}: O OpenCode exp{\~o}e a ferramenta interna \texttt{skill(name="...")} e lista os metadados de todas as skills instaladas em \texttt{\~{}/.config/opencode/skills/};
+      \item \textbf{Declara{\c c}{\~a}o Inicial}: O OpenCode exp{\~o}e a ferramenta interna \texttt{skill(name="...")} e lista os metadados de todas as skills instaladas em \texttt{\textasciitilde/.config/opencode/skills/};
       \item \textbf{Detec{\c c}{\~a}o de Inten{\c c}{\~a}o}: O usu{\'a}rio formula uma demanda docente (ex.: \emph{``Gere uma rubrica anal{\'i}tica para um semin{\'a}rio de f{\'i}sica experimental com 4 crit{\'e}rios e n{\'i}vel AIAS 2''}) ou digita diretamente o comando de barra \texttt{/ia-educacao-rubrica};
       \item \textbf{Invoca{\c c}{\~a}o da Ferramenta}: O OpenCode (ou o modelo, quando a skill {\'e} mencionada no texto) reconhece o identificador e executa a chamada de fun{\c c}{\~a}o:
       \begin{center}
