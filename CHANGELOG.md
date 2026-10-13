@@ -5,6 +5,24 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.30] — 2026-10-12
+
+### Alterado
+- **Manual AvalIA — Capítulo 6 recatalogado para o OpenCode v2 e referências de CLI atualizadas**. O manual fora redigido para o OpenCode 1.18.x; o binário instalado passou a ser o **v2.0.27**, com catálogo gratuito e interface de linha de comando diferentes:
+  - **`cap6-modelos-gratuitos.tex`** (recatalogação): removidos os perfis de **Big Pickle** e **Muse Spark 1.2** (os identificadores `opencode/big-pickle` e `opencode/muse-spark-1.2-contributor-free` já não existem no catálogo); `opencode/mimo-v2.5-free` → **`opencode/mimo-v2.6-flash-free`**; nova subseção "Outros Modelos Gratuitos no Catálogo" relaciona os cinco gratuitos ainda sem perfil pedagógico (`ling-3.1-flash-free`, `longcat-2.5-preview-free`, `step-5-preview-free`, `exo-free`, `space-bunny-free`); matriz de decisão reduzida aos cinco modelos com perfil; removidas as contagens fixas ("sete perfis"/"7 modelos")
+  - **`cap6` nova seção "Além do Tier Gratuito: Outras Rotas de Acesso sem Custo"**: OpenRouter (modelos `:free`), NVIDIA (build.nvidia.com) e modelos locais (Ollama/LM Studio/llama.cpp); caixa de atenção esclarece que **OpenCode Zen e OpenCode Go são planos pagos** (Zen cobra por uso; Go é assinatura de baixo custo), ainda que ofereçam pré-visualizações `-free`
+  - **`cap6` "Como Alternar entre Modelos"**: o exemplo `opencode -m <modelo>` no comando raiz foi substituído por `/models` (TUI, opção principal) e `opencode run -m <modelo> "…"` (modo não interativo) — a flag `-m` do comando raiz não consta no v2
+  - **`cap5-desktop.tex`**: `opencode web` → **`opencode serve`** (o subcomando `web` foi removido no v2; na v2.0.27 `opencode web` é interpretado como diretório e falha com ENOENT); corrigido também que o servidor **exibe uma senha de acesso gerada automaticamente** (e não que sobe sem autenticação), com `OPENCODE_SERVER_PASSWORD` para fixá-la
+  - PDF recompilado (82 páginas, 0 erros, 0 overfull)
+- **`.kata/revisao-modelos-gratuitos-opcoes-manual.yaml`**: task do ciclo kata (FIT/THINK, achados D1–D6 e O1–O4, execução e verificação)
+
+### Notas
+- Verificado contra o binário instalado (`opencode --version` = v2.0.27; `opencode models`; `opencode serve` executado de fato) e a documentação oficial (`opencode.ai/docs/providers`, `/docs/cli`). A página pública `/docs/web/` ainda descreve `opencode web`, que já não existe na versão instalada — divergência registrada na task.
+- TWIN CHECK: nenhum id descontinuado ou `opencode web` em fonte viva (os restantes estão em entradas históricas deste CHANGELOG, preservadas).
+- `./audit.sh` OK após as edições.
+
+---
+
 ## [0.10.29] — 2026-09-15
 
 ### Corrigido

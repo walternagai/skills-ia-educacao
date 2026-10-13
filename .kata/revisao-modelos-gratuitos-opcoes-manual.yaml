@@ -1,0 +1,211 @@
+schema_version: 1
+task: revisao-modelos-gratuitos-opcoes-manual
+status: approved
+domain: docs
+done: >-
+  Revisão do manual concluída para o OpenCode v2 (base 25fb799): o Capítulo 6
+  ("Escolha de Modelos Gratuitos") lista os modelos gratuitos realmente disponíveis
+  no tier opencode/*-free, com cada identificador conferido contra `opencode models`;
+  as referências de CLI quebradas foram corrigidas (opencode web → opencode serve em
+  cap5; opencode -m no raiz → /models e opencode run -m em cap6); foi acrescentada a
+  seção de rotas gratuitas alternativas (OpenRouter :free, NVIDIA, locais) com a
+  distinção entre grátis e pago; o PDF recompila sem erros (82 pp.) e cada
+  identificador/comando foi reconferido no artefato final.
+base_commit: 25fb799d28f2ef2d456223287376476f73d54cf1
+approved_commit: ""
+fit:
+  trivial: false
+  route: plan-first
+  reason: >-
+    Recorte definido pelo usuário após o FIT: escopo = Capítulo 6 (catálogo de modelos
+    gratuitos) + referências de CLI quebradas; "novas opções" = provedores gratuitos
+    alternativos; e execução autorizada nesta rodada. plan-first mantida na
+    classificação porque o escopo dependia de decisão do usuário (o manual documentava
+    o OpenCode 1.18.x e o binário instalado já é 2.0.27). code-loop descartada na
+    classificação (editaria um catálogo volátil sem o usuário fixar o recorte);
+    research descartada (fonte primária local: o próprio binário).
+  answered: true
+  skipped: false
+think:
+  problem: >-
+    A última edição do manual (commit 25fb799) foi calibrada para o OpenCode 1.18.29/30
+    e validada em 1.18.31. O binário instalado hoje é o 2.0.27: (a) o catálogo de modelos
+    gratuitos mudou — dos 7 perfis do Capítulo 6, três identificadores não existem mais
+    (big-pickle, mimo-v2.5-free, muse-spark-1.2) e cinco gratuitos novos apareceram; e
+    (b) a interface de linha de comando foi reorganizada — o subcomando web foi
+    substituído por serve e há um conjunto novo de subcomandos e flags. O professor
+    iniciante que seguir o Capítulo 6 escolhe um modelo inexistente, e quem seguir o
+    Capítulo 5 digita um comando que não existe mais.
+  assumptions:
+    - "O binário instalado (opencode 2.0.27) e a saída de `opencode models` são a fonte da verdade para o que existe hoje; o manual é um retrato datado e já diz que o catálogo pode mudar."
+    - "No pedido do usuário, 'modelos gratuitos disponíveis' = o tier comunitário opencode/*-free que o Capítulo 6 cobre."
+    - "No pedido do usuário, 'novas opções' = provedores gratuitos alternativos (OpenRouter :free, NVIDIA, modelos locais), conforme a resposta ao questionário."
+    - "A revisão é cirúrgica e mantém a voz, a estrutura pedagógica e o aviso de volatilidade do catálogo."
+    - "README/CHANGELOG entram apenas como derivação adjacente."
+  alternatives:
+    - "alt A: reescrever apenas o Capítulo 6 — descartada isoladamente porque o Capítulo 5 ensinava `opencode web`, removido no v2."
+    - "alt B: varredura completa do manual para o v2 (instalação, config, web/desktop, agentes/skills) — descartada nesta rodada por decisão do usuário (escopo = Cap. 6 + CLI)."
+    - "alt C (escolhida): Capítulo 6 recatalogado + referências de CLI quebradas corrigidas + seção de rotas gratuitas alternativas."
+    - "alt D: só registrar o diagnóstico — descartada: o usuário pediu execução."
+  unknowns: |
+    FONTES: opencode 2.0.27 instalado (`--version`, `--help`, `serve --help`, `run --help`,
+    `models`, `models`), execução real de `opencode serve` e de `opencode web`, o PDF no
+    HEAD 25fb799, os .tex do manual e a documentação oficial (opencode.ai/docs/providers,
+    /docs/cli, /docs/web).
+
+    ACHADOS VERIFICADOS — D: catálogo de modelos gratuitos (cap6), corrigidos:
+      D1. `opencode/big-pickle` não existe mais → perfil do Big Pickle removido; removida
+          também a frase sobre o stealth model do OpenCode Zen.
+      D2. `opencode/mimo-v2.5-free` não existe → substituído por `opencode/mimo-v2.6-flash-free`
+          (dica, perfil e matriz).
+      D3. `opencode/muse-spark-1.2-contributor-free` não existe mais → perfil 1.2 removido.
+      D4. Mantidos e conferidos: ling-3.0-flash-fin-free, muse-spark-1.3-contributor-free,
+          nemotron-3-ultra-free, nemotron-3.5-lightning-free.
+      D5. Novos gratuitos do tier, agora listados na subseção "Outros Modelos Gratuitos no
+          Catálogo": ling-3.1-flash-free, longcat-2.5-preview-free, step-5-preview-free,
+          exo-free, space-bunny-free.
+      D6. Contagens fixas "sete perfis"/"7 modelos" removidas.
+
+    ACHADOS VERIFICADOS — O: opções e CLI do v2, corrigidos:
+      O1. cap5: `opencode web` NÃO é mais subcomando na v2.0.27 — a execução real devolveu
+          `ENOENT: chdir '/tmp/opencode/probes' -> 'web'` (o CLI tratou 'web' como diretório).
+          Substituído por `opencode serve` ("Start the v2 API and web server"), que foi
+          executado com sucesso: "server listening on http://127.0.0.1:4096".
+      O2. cap6: `opencode -m <modelo>` no comando raiz — a flag -m não consta nos flags do
+          raiz no v2; a forma vigente é `/models` na TUI e `opencode run -m <modelo> "…"`.
+      O3. Correção de fatos sobre autenticação: na v2.0.27 o `opencode serve` GERA e EXIBE
+          uma senha de acesso automaticamente (observado sem OPENCODE_SERVER_PASSWORD
+          definida); a edição anterior dizia "sem a variável, o servidor sobe sem
+          autenticação" — corrigido para "exibe uma senha gerada; use
+          OPENCODE_SERVER_PASSWORD para fixar a sua".
+
+    DECISÕES DO USUÁRIO (via questionário, respondidas):
+      1. Escopo: "Cap. 6 + referências de CLI".
+      2. "Novas opções": "Provedores gratuitos alternativos".
+      3. Execução: "Sim, executar após aprovar o escopo; commit, push".
+      Correção de rumo: eu havia proposto incluir opencode-go/* como gratuito; a
+      documentação oficial confirma que OpenCode Go é uma assinatura de baixo custo e
+      OpenCode Zen cobra por uso — ambos são pagos, então foram tratados como tal (não
+      como alternativas gratuitas).
+
+    NÃO VERIFICADO (registrado como caveat):
+      - A documentação pública em /docs/web/ ainda descreve `opencode web`, que já não
+        existe na v2.0.27 instalada: divergência docs×binário, resolvida em favor do
+        binário (o que o usuário executa).
+      - O comportamento do OpenCode Desktop (app nativo) não foi exercitado.
+      - Não reproduzi os casos de uso validados do Capítulo 10.
+  answered: true
+  skipped: false
+simplify:
+  minimum_code: true
+  no_single_use_abstractions: true
+  no_speculative_config: true
+  notes: |
+    Mudança mínima e restrita ao que o usuário autorizou: 2 arquivos .tex (cap6
+    recatalogado, cap5 com 3 comandos + 1 dica) + o PDF recompilado + CHANGELOG. Nenhum
+    pacote/ambiente LaTeX novo. Onde não há evidência para um perfil pedagógico, não se
+    inventou: os cinco modelos gratuitos novos são apenas listados numa subseção
+    ("Outros Modelos Gratuitos no Catálogo"), sem atributos fabricados. Não foi criada
+    uma "seção de novidades do v2" (o usuário não a pediu); apenas a seção de rotas
+    gratuitas alternativas, que era o pedido. Nenhuma configurabilidade nova.
+  answered: true
+  skipped: false
+intent:
+  code_does: >-
+    O manual (fonte .tex) listava sete modelos gratuitos e comandos do OpenCode 1.18.x:
+    três identificadores já não existiam, `opencode web` havia sido removido no v2 e o
+    exemplo `opencode -m` no comando raiz não é mais válido; a dica de rede afirmava que
+    o servidor sobe sem autenticação.
+  check_expects: >-
+    Não há teste automatizado para o manual; o check é a observação: pdflatex compila
+    82 pp. sem erro e cada identificador citado consta de `opencode models` e cada
+    comando citado existe no `--help` do v2.0.27 instalado.
+  spec_says: >-
+    Fontes: o binário instalado (execução real de `opencode serve` e `opencode web`,
+    `--help`, `models`) e a documentação oficial (opencode.ai/docs/cli e /providers).
+    Todas convergem para as correções aplicadas.
+  all_agree: true
+  conflict_resolution: >-
+    Houve um conflito entre a documentação pública (/docs/web/) e o binário instalado
+    (v2.0.27), que já não tem o subcomando `web`. Resolvido em favor do binário — é o
+    que o professor executará; a divergência ficou registrada na task.
+  answered: true
+  skipped: false
+surgical:
+  files:
+    - path: manual/cap6-modelos-gratuitos.tex
+      necessary: true
+      reason: "D1–D6 (recatalogação) + O2 (`-m`) + nova seção de rotas gratuitas alternativas (pedido do usuário)."
+    - path: manual/cap5-desktop.tex
+      necessary: true
+      reason: "O1 (`opencode web` → `opencode serve`) + O3 (senha do servidor)."
+    - path: manual/main.pdf
+      necessary: true
+      reason: "Derivado obrigatório: recompilado com todas as correções."
+    - path: CHANGELOG.md
+      necessary: true
+      reason: "Convenção do repo: entrada v0.10.30."
+    - path: .kata/revisao-modelos-gratuitos-opcoes-manual.yaml
+      necessary: true
+      reason: "Registro do ciclo kata da tarefa."
+    - path: README.md
+      necessary: false
+      reason: "Não alterado: a contagem de páginas do manual permaneceu 82 (nenhuma mudança necessária)."
+    - path: manual/cap4-instalacao.tex
+      necessary: false
+      reason: "Conferido e intacto: `opencode run` e `opencode upgrade` ainda existem no v2."
+  removed_imports_clean: true
+  answered: true
+  skipped: false
+verify:
+  ruff_clean: false
+  tests_pass: false
+  coverage_pct: 0.0
+  coverage_pass: false
+  success_criteria_met: true
+  attempts: 1
+  hand_back: false
+  notes: >-
+    Gate real (repo documental): (1) ./compilar.sh exit 0, 82 pp., 0 erros, 0 overfull,
+    0 citações/refs indefinidas; (2) cada identificador gratuito citado no PDF confere
+    com `opencode models`; (3) `opencode serve` e `opencode run -m` existem no binário e
+    `opencode web` não; (4) U+02DC = 0 e nenhum travessão em contexto de comando; (5)
+    ./audit.sh exit 0. Os campos ruff/tests/coverage são N/A (sem .kata/config.yaml, os
+    defaults Python do kata não se aplicam).
+preflight:
+  skills_missing: []
+artifact:
+  intent_owed: true
+  intent_present: true
+  auth_owed: true
+  auth_present: true
+  pending_owed: true
+  pending_present: true
+  twins_owed: true
+  twins_present: true
+auth:
+  action_taken: true
+  authorized: true
+  action: "Recatalogação do Capítulo 6 (modelos gratuitos) + correção das referências de CLI (web→serve; -m no raiz→/models e run -m) + nova seção de rotas gratuitas alternativas; PDF recompilado; CHANGELOG v0.10.30; task atualizada; commit e push na main"
+  quote: "Cap. 6 + referências de CLI (Recomendado) / Provedores gratuitos alternativos / Sim, executar após aprovar o escopo; commit, push"
+pending:
+  action: >-
+    Commit e push autorizados nesta rodada com a mensagem 'docs: recataloga modelos
+    gratuitos e atualiza CLI para o OpenCode v2 (v0.10.30)'. Pendência de melhoria (de task anterior, ainda aberta): criar .kata/config.yaml com
+    lint=./audit.sh --quiet e test=make -C manual, para que o gate do kata reflita a
+    verificação real de um repositório documental.
+  documented: true
+twins:
+  pattern: "ids gratuitos descontinuados (big-pickle|mimo-v2\\.5|muse-spark-1\\.2) | opencode web | -m no comando raiz"
+  result: >-
+    Varredura no repositório inteiro: nenhuma ocorrência em fonte viva — zero ids
+    descontinuados, zero `opencode web` e zero `opencode -m` no raiz fora do que foi
+    corrigido. Restam apenas 3 menções históricas a `opencode web` no CHANGELOG
+    (entradas v0.10.28/0.10.29 e uma anterior), preservadas por convenção (não se
+    reescreve histórico). Confirmado que nenhuma skill nem o README citam identificadores
+    de modelo. Defeito de classe fechado em cap5 e cap6.
+  searched: true
+  defect_fixed: true
+  matches_count: 9
+  files_count: 2
+  fix_applied: true

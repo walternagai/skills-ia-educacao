@@ -31,18 +31,18 @@ Esta se{\c c}{\~a}o descreve a Interface Web iniciada pelo terminal. O aplicativ
 Para inicializar a Interface Web no diret{\'o}rio da sua disciplina ou material did{\'a}tico, execute no terminal:
 
 \begin{lstlisting}[language=bash, caption={Iniciando a interface visual do OpenCode}]
-# Inicia o servidor local e abre automaticamente o navegador padrao
-opencode web
+# Inicia o servidor local que disponibiliza a interface web
+opencode serve
 
 # Para trabalhar na pasta de uma disciplina especifica, entre nela antes:
 cd ~/documentos/disciplinas/minha-disciplina/
-opencode web
+opencode serve
 \end{lstlisting}
 
-O terminal exibir{\'a} o endere{\c c}o de acesso local (por padr{\~a}o, \url{http://127.0.0.1:4096} ou porta din{\^a}mica equivalente), abrindo instantaneamente uma sess{\~a}o gr{\'a}fica interativa.
+O terminal exibir{\'a} o endere{\c c}o de acesso local (por padr{\~a}o, \url{http://127.0.0.1:4096} ou porta din{\^a}mica equivalente) e uma senha de acesso; abra o endere{\c c}o no navegador e informe essa senha para entrar na sess{\~a}o gr{\'a}fica.
 
 \begin{dicaopencode}
-\textbf{Acesso Remoto ou em Rede Local}: {\'E} poss{\'i}vel iniciar o servidor definindo portas e dom{\'i}nios locais customizados (por exemplo, \texttt{opencode web -{}-port 8080 -{}-hostname 0.0.0.0}) para que voc{\^e} acesse seu assistente a partir de um tablet ou outro computador conectado {\`a} rede da universidade. Como o servi{\c c}o fica acess{\'i}vel a quem alcan{\c c}ar o endere{\c c}o, defina uma senha antes de exp{\^o}-lo na rede: \mbox{\texttt{OPENCODE\_SERVER\_PASSWORD=suasenha}} \mbox{\texttt{opencode}} \mbox{\texttt{web}} \mbox{\texttt{-{}-port}} \mbox{\texttt{8080}} \mbox{\texttt{-{}-hostname}} \mbox{\texttt{0.0.0.0}} (sem a vari{\'a}vel, o servidor sobe sem autentica{\c c}{\~a}o).
+\textbf{Acesso Remoto ou em Rede Local}: {\'E} poss{\'i}vel iniciar o servidor definindo porta e hostname (por exemplo, \texttt{opencode serve -{}-port 8080 -{}-hostname 0.0.0.0}) para que voc{\^e} acesse seu assistente a partir de um tablet ou outro computador conectado {\`a} rede da universidade. Ao subir, o servidor exibe uma senha de acesso gerada automaticamente; para fixar a sua pr{\'o}pria senha, defina a vari{\'a}vel \texttt{OPENCODE\_SERVER\_PASSWORD} antes de iniciar: \mbox{\texttt{OPENCODE\_SERVER\_PASSWORD=suasenha}} \mbox{\texttt{opencode}} \mbox{\texttt{serve}} \mbox{\texttt{-{}-port}} \mbox{\texttt{8080}} \mbox{\texttt{-{}-hostname}} \mbox{\texttt{0.0.0.0}}. Como o servi{\c c}o fica acess{\'i}vel a quem alcan{\c c}ar o endere{\c c}o, mantenha-o apenas na rede local ou institucional (ver Cap{\'i}tulo~\ref{cap:etica-transparencia}).
 \end{dicaopencode}
 
 \section{Anatomia da Interface Gr{\'a}fica}

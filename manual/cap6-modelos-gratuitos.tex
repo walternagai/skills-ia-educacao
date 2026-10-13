@@ -3,7 +3,7 @@
 
 \begin{objetivos}
 \begin{itemize}
-  \item Conhecer os sete perfis de modelos gratuitos registrados no OpenCode no momento da reda{\c c}{\~a}o e compreender que o cat{\'a}logo pode mudar;
+  \item Conhecer os modelos gratuitos registrados no OpenCode no momento da reda{\c c}{\~a}o e compreender que o cat{\'a}logo pode mudar;
   \item Selecionar o modelo mais adequado a cada tarefa pedag{\'o}gica com apoio da matriz de decis{\~a}o;
   \item Alternar entre modelos na linha de comando, na interface TUI e na interface gr{\'a}fica.
 \end{itemize}
@@ -15,9 +15,9 @@ Um dos maiores obst{\'a}culos enfrentados por docentes de institui{\c c}{\~o}es 
 
 Para superar essa barreira de acesso e permitir que qualquer docente possa planejar aulas e construir instrumentos avaliativos sem {\^o}nus financeiro, o ecossistema \textbf{OpenCode} disponibiliza uma seleta camada de \textbf{modelos gratuitos da comunidade} (\emph{Free Tier / Community Models}). Esses modelos s{\~a}o mantidos e hospedados por grandes centros de pesquisa, cons{\'o}rcios abertos e pela infraestrutura do pr{\'o}prio ecossistema, oferecendo cotas generosas de requisi{\c c}{\~o}es di{\'a}rias.
 
-Vale registrar que os modelos n{\~a}o s{\~a}o criados pela Anomaly (empresa desenvolvedora do OpenCode): cada um {\'e} propriedade de seu respectivo laborat{\'o}rio de origem -- a fam{\'i}lia \textbf{Nemotron} {\'e} desenvolvida pela \textbf{NVIDIA} (arquitetura h{\'i}brida \emph{Transformer-Mamba} de mistura de especialistas), o \textbf{Ling} pelo laborat{\'o}rio \textbf{inclusionAI} (iniciativa de projetos abertos da \textbf{Ant Group}), o \textbf{MiMo} pela \textbf{Xiaomi} (modelo nativamente omnimodal) e o \textbf{Muse Spark} pela \textbf{Meta} (modelo de racioc{\'i}nio). O \textbf{Big Pickle}, por sua vez, {\'e} um modelo discreto (\emph{stealth model}) mantido pelo pr{\'o}prio \textbf{OpenCode Zen}, a plataforma de modelos curados da Anomaly. O OpenCode atua apenas como cliente que orquestra o acesso a esses modelos por meio dos identificadores \texttt{opencode/<modelo>}; durante o per{\'i}odo gratuito, cada provedor coleta dados de uso para aprimorar o modelo, o que o docente deve considerar {\'a} luz das diretrizes de privacidade do Cap{\'i}tulo~\ref{cap:etica-transparencia}.
+Vale registrar que os modelos n{\~a}o s{\~a}o criados pela Anomaly (empresa desenvolvedora do OpenCode): cada um {\'e} propriedade de seu respectivo laborat{\'o}rio de origem -- a fam{\'i}lia \textbf{Nemotron} {\'e} desenvolvida pela \textbf{NVIDIA} (arquitetura h{\'i}brida \emph{Transformer-Mamba} de mistura de especialistas), o \textbf{Ling} pelo laborat{\'o}rio \textbf{inclusionAI} (iniciativa de projetos abertos da \textbf{Ant Group}) e o \textbf{Muse Spark} pela \textbf{Meta} (modelo de racioc{\'i}nio). O OpenCode atua apenas como cliente que orquestra o acesso a esses modelos por meio dos identificadores \texttt{opencode/<modelo>}; durante o per{\'i}odo gratuito, cada provedor coleta dados de uso para aprimorar o modelo, o que o docente deve considerar {\`a} luz das diretrizes de privacidade do Cap{\'i}tulo~\ref{cap:etica-transparencia}.
 
-Neste cap{\'i}tulo, analisamos sete perfis de modelos gratuitos registrados no OpenCode em setembro de 2026, data de reda{\c c}{\~a}o desta edi{\c c}{\~a}o. As descri{\c c}{\~o}es s{\~a}o orienta{\c c}{\~o}es de uso observadas no cat{\'a}logo e n{\~a}o substituem benchmarks independentes. Nomes, limites, disponibilidade, desempenho e pol{\'i}ticas de dados podem mudar; antes de uma atividade, confirme o cat{\'a}logo com \texttt{/models}. Os subagentes mencionados nas recomenda{\c c}{\~o}es (por exemplo, \path{@planejador-pedagogico} e \path{@construtor-de-avaliacoes}) s{\~a}o apresentados integralmente no Cap{\'i}tulo~\ref{cap:agentes-skills}.
+Neste cap{\'i}tulo, analisamos os modelos gratuitos registrados no OpenCode em outubro de 2026, data desta revis{\~a}o. As descri{\c c}{\~o}es s{\~a}o orienta{\c c}{\~o}es de uso observadas no cat{\'a}logo e n{\~a}o substituem benchmarks independentes. Nomes, limites, disponibilidade, desempenho e pol{\'i}ticas de dados podem mudar; antes de uma atividade, confirme o cat{\'a}logo com \texttt{/models}. Os subagentes mencionados nas recomenda{\c c}{\~o}es (por exemplo, \path{@planejador-pedagogico} e \path{@construtor-de-avaliacoes}) s{\~a}o apresentados integralmente no Cap{\'i}tulo~\ref{cap:agentes-skills}.
 
 \begin{atencaopedagogica}
 \textbf{Gratuito n{\~a}o significa sem condi{\c c}{\~o}es}: modelos de acesso gratuito podem impor cotas, filas, limites de contexto ou coleta de dados para melhoria do servi{\c c}o. N{\~a}o envie dados pessoais ou trabalhos identific{\'a}veis apenas porque o modelo n{\~a}o cobra uma tarifa direta.
@@ -25,21 +25,12 @@ Consulte tamb{\'e}m a documenta{\c c}{\~a}o atual de provedores em \url{https://
 \end{atencaopedagogica}
 
 \begin{dicaopencode}
-\textbf{Se est{\'a} come{\c c}ando, use este padr{\~a}o}: comece pelo modelo ``faz-tudo'' da rotina di{\'a}ria (nesta edi{\c c}{\~a}o, o \path{opencode/mimo-v2.5-free}, descrito no modelo~3 adiante) e troque s{\'o} se precisar: an{\'a}lise de PPCs longos ou c{\'a}lculos com pesos v{\^e}m na matriz abaixo. O cat{\'a}logo gratuito muda com frequ{\^e}ncia: antes de qualquer atividade, confirme os identificadores com \texttt{/models} e desconsidere nomes que n{\~a}o apare{\c c}am mais na lista.
+\textbf{Se est{\'a} come{\c c}ando, use este padr{\~a}o}: comece pelo modelo ``faz-tudo'' da rotina di{\'a}ria (nesta edi{\c c}{\~a}o, o \path{opencode/mimo-v2.6-flash-free}, descrito adiante) e troque s{\'o} se precisar: an{\'a}lise de PPCs longos ou c{\'a}lculos com pesos v{\^e}m na matriz abaixo. O cat{\'a}logo gratuito muda com frequ{\^e}ncia: antes de qualquer atividade, confirme os identificadores com \texttt{/models} e desconsidere nomes que n{\~a}o apare{\c c}am mais na lista.
 \end{dicaopencode}
 
-\section{An{\'a}lise dos 7 Modelos Gratuitos do OpenCode}
+\section{An{\'a}lise dos Modelos Gratuitos do OpenCode}
 
-\subsection{1. Big Pickle}
-
-\begin{itemize}
-  \item \textbf{Identificador}: \path{opencode/big-pickle};
-  \item \textbf{Perfil Arquitetural}: Modelo concebido com grande janela de contexto e forte capacidade de s{\'i}ntese enciclop{\'e}dica;
-  \item \textbf{For{\c c}as Pedag{\'o}gicas}: Destaca-se na leitura e sumariza{\c c}{\~a}o de longos documentos normativos, projetos pedag{\'o}gicos de curso (PPCs), planos de desenvolvimento institucional (PDIs) e ementas extensas;
-  \item \textbf{Quando Usar}: Ideal para a fase inicial de diagn{\'o}stico com o subagente \path{@planejador-pedagogico}, quando o docente precisa cruzar a ementa oficial da disciplina com as compet{\^e}ncias do egresso estabelecidas pelas DCNs (Diretrizes Curriculares Nacionais).
-\end{itemize}
-
-\subsection{2. Ling 3.0 Flash Fin Free}
+\subsection{Ling 3.0 Flash Fin Free}
 
 \begin{itemize}
   \item \textbf{Identificador}: \path{opencode/ling-3.0-flash-fin-free};
@@ -48,50 +39,45 @@ Consulte tamb{\'e}m a documenta{\c c}{\~a}o atual de provedores em \url{https://
    \item \textbf{Quando Usar}: Perfeito para o c{\'a}lculo e calibra{\c c}{\~a}o de notas em rubricas anal{\'i}ticas complexas e montagem de blueprints de prova com distribui{\c c}{\~a}o de pontos -- tanto em disciplinas quantitativas (estat{\'i}stica, matem{\'a}tica financeira) quanto em avalia{\c c}{\~o}es com pesos de qualquer {\'a}rea, como pesos de banca em Enfermagem e crit{\'e}rios de julgamento em Direito.
 \end{itemize}
 
-\subsection{3. Mimo V2.5 Free}
+\subsection{Mimo V2.6 Flash Free}
 
 \begin{itemize}
-  \item \textbf{Identificador}: \path{opencode/mimo-v2.5-free};
+  \item \textbf{Identificador}: \path{opencode/mimo-v2.6-flash-free};
   \item \textbf{Perfil Arquitetural}: Modelo vers{\'a}til, leve e equilibrado, com excelente alinhamento {\`a}s instru{\c c}{\~o}es fornecidas em l{\'i}ngua portuguesa;
   \item \textbf{For{\c c}as Pedag{\'o}gicas}: Reda{\c c}{\~a}o fluida, tom equilibrado (nem rob{\'o}tico, nem informal), facilidade para organizar respostas em t{\'o}picos e alta fidelidade aos esquemas de frontmatter das skills;
   \item \textbf{Quando Usar}: O modelo ``faz-tudo'' para a rotina di{\'a}ria. Recomendado para a reda{\c c}{\~a}o de enunciados de quest{\~o}es discursivas, esbo{\c c}o de cronogramas semanais e media{\c c}{\~a}o de atividades ativas em sala de aula.
 \end{itemize}
 
-\subsection{4. Muse Spark 1.2 Free}
-
-\begin{itemize}
-  \item \textbf{Identificador}: \path{opencode/muse-spark-1.2-contributor-free};
-  \item \textbf{Perfil Arquitetural}: Modelo com calibra{\c c}{\~a}o voltada para idea{\c c}{\~a}o did{\'a}tica, est{\'i}mulo criativo e gera{\c c}{\~a}o de hip{\'o}teses;
-  \item \textbf{For{\c c}as Pedag{\'o}gicas}: Capacidade de sugerir analogias pedag{\'o}gicas v{\'a}lidas, met{\'a}foras explicativas e cen{\'a}rios originais do mundo real para problematiza{\c c}{\~a}o contextualizada;
-  \item \textbf{Quando Usar}: Na fase de \emph{brainstorming} com a skill \path{ia-educacao-design-problema}, formula{\c c}{\~a}o de situa{\c c}{\~o}es-gatilho para PBL (\emph{Problem-Based Learning}) e din{\^a}micas de debate acad{\^e}mico.
-\end{itemize}
-
-\subsection{5. Muse Spark 1.3 Free}
+\subsection{Muse Spark 1.3 Free}
 
 \begin{itemize}
   \item \textbf{Identificador}: \path{opencode/muse-spark-1.3-contributor-free};
-  \item \textbf{Perfil Arquitetural}: Evolu{\c c}{\~a}o direta da fam{\'i}lia Muse Spark, combinando a criatividade did{\'a}tica da vers{\~a}o anterior com rigor aprimorado na estrutura de sa{\'i}da;
+  \item \textbf{Perfil Arquitetural}: Modelo com calibra{\c c}{\~a}o voltada para idea{\c c}{\~a}o did{\'a}tica, est{\'i}mulo criativo e gera{\c c}{\~a}o de hip{\'o}teses, com rigor aprimorado na estrutura de sa{\'i}da;
    \item \textbf{For{\c c}as Pedag{\'o}gicas}: Boa disposi{\c c}{\~a}o para gerar c{\'o}digo \LaTeX{} e tabelas Markdown estruturadas; a compila{\c c}{\~a}o e a revis{\~a}o sem{\^a}ntica continuam obrigat{\'o}rias;
-  \item \textbf{Quando Usar}: Constru{\c c}{\~a}o de rubricas anal{\'i}ticas tabuladas (\path{ia-educacao-rubrica}) e confec{\c c}{\~a}o de exames formais que exigem diagramas ou equa{\c c}{\~o}es matem{\'a}ticas rigorosas.
+  \item \textbf{Quando Usar}: Constru{\c c}{\~a}o de rubricas anal{\'i}ticas tabuladas (\path{ia-educacao-rubrica}), confec{\c c}{\~a}o de exames formais que exigem diagramas ou equa{\c c}{\~o}es matem{\'a}ticas rigorosas, e fase de \emph{brainstorming} com a skill \path{ia-educacao-design-problema}.
 \end{itemize}
 
-\subsection{6. Nemotron 3 Ultra Free}
+\subsection{Nemotron 3 Ultra Free}
 
 \begin{itemize}
   \item \textbf{Identificador}: \path{opencode/nemotron-3-ultra-free};
    \item \textbf{Perfil Arquitetural}: Modelo da NVIDIA com arquitetura de mistura de especialistas (\emph{MoE}) e arquitetura h{\'i}brida \emph{Transformer-Mamba}, conforme a descri{\c c}{\~a}o do provedor na data de consulta;
    \item \textbf{For{\c c}as Pedag{\'o}gicas}: Pode ser uma op{\c c}{\~a}o para tarefas de c{\'o}digo, racioc{\'i}nio l{\'o}gico e demonstra{\c c}{\~o}es formais; valide a qualidade no problema espec{\'i}fico antes de usar a resposta em uma avalia{\c c}{\~a}o;
-   \item \textbf{Quando Usar}: Avalia{\c c}{\~a}o de projetos t{\'e}cnicos em Computa{\c c}{\~a}o e Engenharias, resolu{\c c}{\~a}o anal{\'i}tica de exerc{\'i}cios avan{\c c}ados e auditoria cr{\'i}tica de gabaritos com o subagente \path{@construtor-de-avaliacoes}. Para tarefas predominantemente textuais (an{\'a}lise de fontes, pareceres, laudos), qualquer modelo da lista desempenha bem a fun{\c c}{\~a}o; comece pelo Mimo V2.5 Free (modelo~3).
+   \item \textbf{Quando Usar}: Avalia{\c c}{\~a}o de projetos t{\'e}cnicos em Computa{\c c}{\~a}o e Engenharias, resolu{\c c}{\~a}o anal{\'i}tica de exerc{\'i}cios avan{\c c}ados e auditoria cr{\'i}tica de gabaritos com o subagente \path{@construtor-de-avaliacoes}. Para tarefas predominantemente textuais (an{\'a}lise de fontes, pareceres, laudos), qualquer modelo da lista desempenha bem a fun{\c c}{\~a}o; comece pelo Mimo V2.6 Flash Free.
 \end{itemize}
 
-\subsection{7. Nemotron 3.5 Lightning Free}
+\subsection{Nemotron 3.5 Lightning Free}
 
 \begin{itemize}
   \item \textbf{Identificador}: \path{opencode/nemotron-3.5-lightning-free};
   \item \textbf{Perfil Arquitetural}: Variante de resposta quase instant{\^a}nea da fam{\'i}lia Nemotron, combinando a for{\c c}a l{\'o}gica da arquitetura com lat{\^e}ncia ultrabaixa;
    \item \textbf{For{\c c}as Pedag{\'o}gicas}: Devolutivas r{\'a}pidas em fra{\c c}{\~o}es de segundo, mantendo coer{\^e}ncia tanto em disciplinas quantitativas quanto em tarefas textuais de qualquer {\'a}rea do conhecimento;
-  \item \textbf{Quando Usar}: Sess{\~o}es interativas em tempo real (como a gera{\c c}{\~a}o din{\^a}mica de testes conceituais durante a aula para \emph{Peer Instruction} via \path{ia-educacao-peer-instruction}) e devolu{\c c}{\~a}o r{\'a}pida de feedback para m{\'u}ltiplos estudantes.
+   \item \textbf{Quando Usar}: Sess{\~o}es interativas em tempo real (como a gera{\c c}{\~a}o din{\^a}mica de testes conceituais durante a aula para \emph{Peer Instruction} via \path{ia-educacao-peer-instruction}) e devolu{\c c}{\~a}o r{\'a}pida de feedback para m{\'u}ltiplos estudantes.
 \end{itemize}
+
+\subsection{Outros Modelos Gratuitos no Cat{\'a}logo}
+
+Al{\'e}m dos perfis acima, o cat{\'a}logo gratuito do OpenCode registrava, no momento desta revis{\~a}o, mais cinco modelos de acesso livre, ainda sem perfil pedag{\'o}gico consolidado: \path{opencode/ling-3.1-flash-free}, \path{opencode/longcat-2.5-preview-free}, \path{opencode/step-5-preview-free}, \path{opencode/exo-free} e \path{opencode/space-bunny-free}. Alguns s{\~a}o modelos de pr{\'e}-visualiza{\c c}{\~a}o, cujo comportamento e limites podem mudar sem aviso. S{\~a}o op{\c c}{\~o}es v{\'a}lidas para experimenta{\c c}{\~a}o, mas valide cada uma no seu caso de uso antes de adot{\'a}-la em uma atividade avaliativa; e confirme o identificador vigente com \texttt{/models}.
 
 \section{Matriz de Decis{\~a}o Docente: Qual Modelo Escolher?}
 
@@ -106,13 +92,9 @@ A Tabela~\ref{tab:modelos-matriz} resume a recomenda{\c c}{\~a}o de uso de cada 
     \toprule
     \textbf{Tarefa Pedag{\'o}gica} & \textbf{Modelo Recomendado} & \textbf{Identificador no OpenCode} \\
     \midrule
-    An{\'a}lise de PPCs e Ementas Longas & Big Pickle & \path{opencode/big-pickle} \\
-    \addlinespace
     C{\'a}lculo de Notas e Pesos & Ling 3.0 Flash Fin Free & \path{opencode/ling-3.0-flash-fin-free} \\
     \addlinespace
-    Reda{\c c}{\~a}o de Aulas e Exerc{\'i}cios & Mimo V2.5 Free & \path{opencode/mimo-v2.5-free} \\
-    \addlinespace
-    Problemas e Estudos de Caso & Muse Spark 1.2 Free & \path{opencode/muse-spark-1.2-contributor-free} \\
+    Reda{\c c}{\~a}o de Aulas e Exerc{\'i}cios & Mimo V2.6 Flash Free & \path{opencode/mimo-v2.6-flash-free} \\
     \addlinespace
     Rubricas e Formata{\c c}{\~a}o \LaTeX{} & Muse Spark 1.3 Free & \path{opencode/muse-spark-1.3-contributor-free} \\
     \addlinespace
@@ -123,15 +105,31 @@ A Tabela~\ref{tab:modelos-matriz} resume a recomenda{\c c}{\~a}o de uso de cada 
   \end{tabularx}
 \end{table}
 
+O cat{\'a}logo n{\~a}o oferece, hoje, um especialista dedicado {\`a} leitura de documentos muito longos (o perfil que antes era coberto por modelos entretanto descontinuados): para analisar PPCs extensos, Ementas e editais, teste os modelos dispon{\'i}veis no momento e valide o resultado, dividindo o documento em partes se necess{\'a}rio.
+
+\section{Al{\'e}m do Tier Gratuito: Outras Rotas de Acesso sem Custo}
+
+Os identificadores terminados em \texttt{-free} (como \texttt{opencode/mimo-v2.6-flash-free}) s{\~a}o a via mais simples, mas n{\~a}o s{\~a}o a {\'u}nica forma de usar IA sem custo direto. O docente disp{\~o}e ainda de:
+
+\begin{itemize}
+  \item \textbf{OpenRouter (modelos \texttt{:free})}: o OpenRouter re{\'u}ne centenas de modelos de v{\'a}rios laborat{\'o}rios; os que terminam em \texttt{:free} podem ser usados sem tarifa, mediante uma conta gratuita e uma chave de API (com limites de uso e eventuais filas). Conecte pelo comando \texttt{/connect} e escolha com \texttt{/models}; exemplos atuais incluem \path{openrouter/nvidia/nemotron-3-ultra-550b-a55b:free} e \path{openrouter/google/gemma-4-31b-it:free};
+  \item \textbf{NVIDIA (\emph{build.nvidia.com})}: a NVIDIA oferece acesso gratuito aos modelos Nemotron e a outros modelos abertos, mediante cadastro e chave de API; no OpenCode, esses modelos entram pelo provedor \texttt{nvidia/...};
+  \item \textbf{Modelos locais (Ollama, LM Studio, llama.cpp)}: rodam no pr{\'o}prio computador, sem tarifa por token nem envio de dados a terceiros; em contrapartida, exigem hardware adequado.
+\end{itemize}
+
+\begin{atencaopedagogica}
+\textbf{{\`A} vista: gr{\'a}tis {\'e} o modelo, n{\~a}o o provedor}. O \textbf{OpenCode Zen} e o \textbf{OpenCode Go} s{\~a}o planos comerciais da pr{\'o}pria Anomaly -- o Zen cobra por uso e o Go {\'e} uma assinatura de baixo custo --, ainda que alguns modelos de pr{\'e}-visualiza{\c c}{\~a}o oferecidos neles terminem em \texttt{-free}. Ao escolher um modelo, confirme o r{\'o}tulo de acesso e as condi{\c c}{\~o}es de dados; e lembre-se de que at{\'e} os modelos gratuitos costumam coletar dados de uso (ver Cap{\'i}tulo~\ref{cap:etica-transparencia}).
+\end{atencaopedagogica}
+
 \section{Como Alternar entre Modelos no OpenCode}
 
 Voc{\^e} pode selecionar ou alternar o modelo em uso de tr{\^e}s formas simples:
 
 \begin{enumerate}
-  \item \textbf{Ao Iniciar o OpenCode}: Passando o identificador pela flag \texttt{-m}:
+  \item \textbf{Na Interface Interativa de Terminal (TUI)}: Digitando \texttt{/models} (ou pressionando a combina{\c c}{\~a}o \texttt{Ctrl+X M}) e selecionando o modelo na lista -- o caminho mais simples para o dia a dia;
+  \item \textbf{Ao Iniciar em Modo N{\~a}o Interativo}: Informando o identificador pela flag \texttt{-m} do subcomando \texttt{run}:
   \begin{lstlisting}[language=bash]
-  opencode -m opencode/nemotron-3-ultra-free
+  opencode run -m opencode/nemotron-3-ultra-free "resuma esta ementa"
   \end{lstlisting}
-  \item \textbf{Na Interface Interativa de Terminal (TUI)}: Pressionando a combina{\c c}{\~a}o \texttt{Ctrl+X M} (ou digitando \texttt{/models}) e selecionando o modelo na lista;
-  \item \textbf{Na Interface Web/Desktop}: Clicando no menu suspenso no canto superior direito da janela e escolhendo o modelo gratuito correspondente com o mouse.
+  \item \textbf{Na Interface Web}: Iniciando o servidor com \texttt{opencode serve} e escolhendo o modelo no seletor da janela do navegador (ver Cap{\'i}tulo~\ref{cap:desktop}).
 \end{enumerate}
