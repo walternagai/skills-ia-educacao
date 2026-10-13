@@ -158,20 +158,21 @@ surgical:
   answered: true
   skipped: false
 verify:
-  ruff_clean: false
-  tests_pass: false
-  coverage_pct: 0.0
-  coverage_pass: false
+  ruff_clean: true
+  tests_pass: true
+  coverage_pct: 100.0
+  coverage_pass: true
   success_criteria_met: true
   attempts: 1
   hand_back: false
   notes: >-
-    Gate real (repo documental): (1) ./compilar.sh exit 0, 82 pp., 0 erros, 0 overfull,
-    0 citações/refs indefinidas; (2) cada identificador gratuito citado no PDF confere
-    com `opencode models`; (3) `opencode serve` e `opencode run -m` existem no binário e
-    `opencode web` não; (4) U+02DC = 0 e nenhum travessão em contexto de comando; (5)
-    ./audit.sh exit 0. Os campos ruff/tests/coverage são N/A (sem .kata/config.yaml, os
-    defaults Python do kata não se aplicam).
+    Reverificado no v0.10.31 com o `.kata/config.yaml`, que passou a declarar os gates
+    reais do repositório: lint = ./audit.sh --quiet (✅), test = make -C manual (✅),
+    coverage = cobertura do acervo pelo manual (✅ 62/62 = 100%, gate 100). `kata
+    --check-only` exit 0. Evidência da revisão em si: ./compilar.sh 82 pp., 0 erros,
+    0 overfull, 0 citações indefinidas; cada identificador gratuito citado no PDF
+    confere com `opencode models`; `opencode serve` e `opencode run -m` existem no
+    binário e `opencode web` não; U+02DC = 0.
 preflight:
   skills_missing: []
 artifact:
@@ -190,10 +191,10 @@ auth:
   quote: "Cap. 6 + referências de CLI (Recomendado) / Provedores gratuitos alternativos / Sim, executar após aprovar o escopo; commit, push"
 pending:
   action: >-
-    Commit e push autorizados nesta rodada com a mensagem 'docs: recataloga modelos
-    gratuitos e atualiza CLI para o OpenCode v2 (v0.10.30)'. Pendência de melhoria (de task anterior, ainda aberta): criar .kata/config.yaml com
-    lint=./audit.sh --quiet e test=make -C manual, para que o gate do kata reflita a
-    verificação real de um repositório documental.
+    Encerrada: commit e push feitos (c56dc97, v0.10.30) e a pendência de melhoria
+    resolvida no v0.10.31 — `.kata/config.yaml` criado com os gates reais do repositório
+    (lint=./audit.sh --quiet, test=make -C manual, coverage=cobertura do acervo pelo
+    manual), e esta task reverificada com eles.
   documented: true
 twins:
   pattern: "ids gratuitos descontinuados (big-pickle|mimo-v2\\.5|muse-spark-1\\.2) | opencode web | -m no comando raiz"

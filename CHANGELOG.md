@@ -5,6 +5,22 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
+## [0.10.31] — 2026-10-12
+
+### Adicionado
+- **`.kata/config.yaml`** — os comandos que de fato verificam este repositório, para os gates do kata (VERIFY / `--check-only` / JUDGE). Sem o arquivo, o kata caía nos defaults Python (ruff/pytest/pytest-cov), inexistentes aqui, e o `--audit` graduava o VERIFY como *faked* (sucesso afirmado sem evidência). Os três gates:
+  - **`lint`** → `./audit.sh --quiet` (integridade do acervo: frontmatter, grafo de dependências, README, sincronia dos agentes, nomes canônicos AIAS)
+  - **`test`** → `make -C manual` (o manual LaTeX compila; a saída bruta é silenciada porque o pdflatex escreve os avisos `Underfull` com a acentuação na *log encoding* (Latin-1, ex.: `ç` = `0xE7`), que não é UTF-8 válido e derrubaria a leitura do kata — o log completo fica em `manual/main.log`)
+  - **`coverage`** → cobertura do acervo pelo manual: toda skill de `skills/` catalogada em `manual/*.tex` (`gate: 100`); hoje 62/62 = 100%
+- `kata --check-only` passa de ponta a ponta (**exit 0**): lint ✅, test ✅, coverage 100% ✅.
+
+### Notas
+- O arquivo não altera conteúdo do manual nem das skills — é infraestrutura de verificação.
+- Achado colateral (fora deste repositório): o `kata` decodifica o `stdout` dos comandos em UTF-8 estrito; ferramentas que emitem Latin-1 no log (como o pdflatex) derrubam o CLI com `UnicodeDecodeError`. O papel `test` contorna isso; a correção definitiva seria `errors="replace"` no `verify.py` do kata.
+- Encerra a pendência registrada nas tasks `.kata/revisao-conteudo-manual-iniciante.yaml` e `.kata/revisao-modelos-gratuitos-opcoes-manual.yaml` (ambas reverificadas com os gates reais).
+
+---
+
 ## [0.10.30] — 2026-10-12
 
 ### Alterado

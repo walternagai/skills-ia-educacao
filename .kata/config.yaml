@@ -1,0 +1,35 @@
+# Verificação do repositório skills-ia-educacao (acervo documental: Markdown + LaTeX; sem Python).
+#
+# Sem este arquivo, o kata cai nos defaults Python (ruff/pytest/pytest-cov), que não existem
+# aqui: o VERIFY não tem o que rodar e o `--audit` gradua a fase como "faked" (sucesso
+# afirmado sem evidência). Estes são os três gates reais do projeto:
+#
+#   lint     → auditoria de integridade do acervo (frontmatter, grafo de dependências,
+#              README, sincronia dos agentes, nomes canônicos AIAS) — ./audit.sh --quiet
+#   test     → o manual LaTeX compila (é o artefato entregue ao professor) — make -C manual
+#   coverage → o manual cobre o acervo: toda skill de skills/ está catalogada em manual/*.tex
+#
+# Notas de implementação:
+#  - O kata executa UM comando por papel, sem shell; papéis que exigem shell vão em `bash -c`.
+#  - O build roda numa cópia temporária de manual/: `make -C manual` regravaria o
+#    manual/main.pdf versionado (o pdfTeX grava /CreationDate, então os bytes sempre mudam)
+#    e o arquivo apareceria como modificado a cada verificação. Para inspecionar o log de uma
+#    falha, rode `make -C manual` à mão.
+#  - A saída bruta do pdflatex é descartada de propósito: os avisos `Underfull` imprimem a
+#    acentuação na "log encoding" (Latin-1, ex.: 'ç' = 0xE7), que não é UTF-8 válido e
+#    derrubaria a leitura do kata (UnicodeDecodeError).
+verify:
+  lint: ./audit.sh --quiet
+  test: >-
+    bash -c 't=$(mktemp -d); cp -a manual/. "$t"/;
+    if (cd "$t" && ./compilar.sh > /dev/null 2>&1); then
+    echo "manual compila: main.pdf OK"; else
+    echo "FALHA na compilacao do manual (rode: make -C manual)"; rm -rf "$t"; exit 1; fi;
+    rm -rf "$t"'
+  coverage: >-
+    bash -c 'tot=$(ls -d skills/*/ | wc -l); cov=0;
+    for d in skills/*/; do
+    grep -rqF -- "$(basename "$d")" manual/*.tex && cov=$((cov+1));
+    done;
+    printf "TOTAL %d %d %d%%\n" "$tot" "$((tot-cov))" "$((cov*100/tot))"'
+  gate: 100
